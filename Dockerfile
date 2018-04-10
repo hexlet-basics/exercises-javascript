@@ -1,6 +1,6 @@
-FROM node
+FROM node:alpine
 
-# RUN apk --update add autoconf automake build-base libtool nasm
+RUN apk --update add autoconf automake build-base libtool nasm
 RUN apk add python3
 RUN pip3 install yamllint
 # RUN pecl update-channels && pecl install xdebug

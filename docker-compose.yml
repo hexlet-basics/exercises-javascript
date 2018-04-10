@@ -1,7 +1,7 @@
 version: '3'
 
 services:
- php:
+ javascript:
     build:
       context: .
       dockerfile: Dockerfile

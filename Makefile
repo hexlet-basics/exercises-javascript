@@ -1,8 +1,8 @@
 compose-test:
-	docker-compose run javascript make test -s
+	docker-compose run javascript make test
 
 compose-install:
-	docker-compose run javascript composer install
+	docker-compose run javascript npm insta  ll
 
 compose-bash:
 	docker-compose run javascript bash
@@ -26,7 +26,7 @@ lint:
 test: $(SUBDIRS)
 $(SUBDIRS):
 	@echo
-	make -C $@ test
+	npm run test -s -- $@
 	@echo
 
 .PHONY: all $(SUBDIRS)
