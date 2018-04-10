@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  sut:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: make lint test
