@@ -1,10 +1,11 @@
 FROM node:10
 
-RUN apk --update add autoconf automake build-base libtool nasm
-RUN apk add python3
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
+
+RUN apt-get update && apt-get install -yqq git python3-pip
+
 RUN pip3 install yamllint
-# RUN pecl update-channels && pecl install xdebug
-# RUN echo "zend_extension=$(find /usr/local/lib/php/extensions/ -name xdebug.so)" > /usr/local/etc/php/conf.d/xdebug.ini
 
 WORKDIR /exercises-javascript
 
