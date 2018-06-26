@@ -10,7 +10,7 @@ RUN pip3 install yamllint
 WORKDIR /exercises-javascript
 
 COPY package.json package.json
-COPY package-lock.json package-lock.json
+# COPY package-lock.json package-lock.json
 RUN npm install
 
 COPY . /exercises-javascript

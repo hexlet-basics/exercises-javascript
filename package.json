@@ -1,12 +1,12 @@
 {
   "scripts": {
-    "test": "jest --useStderr --noStackTrace"
+    "test": "jest --useStderr --noStackTrace 2>&1"
   },
   "jest": {
     "testEnvironment": "node"
   },
   "dependencies": {
-    "jest": "^22",
-    "jest-cli": "^22.4.3"
+    "jest": "^23.2.0",
+    "jest-cli": "^23.2.0"
   }
 }
