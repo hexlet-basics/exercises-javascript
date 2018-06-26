@@ -1,3 +1,3 @@
 test:
-	npm run -s test
+	npm run -s test -- $(CURDIR)
 
