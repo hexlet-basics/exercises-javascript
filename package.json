@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "jest"
+    "test": "jest --noStackTrace"
   },
   "jest": {
     "testEnvironment": "node"

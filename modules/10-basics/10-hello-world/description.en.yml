@@ -1,0 +1,16 @@
+---
+
+name: Hello, World!
+theory: |
+  It's a long-lasting tradition: our first program will be called "Hello, World!". Copy the code precisely from the instructions into the editor and Run it. Notice: case matters! Uppercase characters and lowercase characters are not the same. Remember to notice this in future.
+
+instructions: |
+  Type the following into the editor:
+
+  ```php
+  <?php
+  print_r('Winter is coming!');
+  ```
+
+tips:
+  - "If there are `// BEGIN` and `// END` words in the editor, then write your code between those lines."
