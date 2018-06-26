@@ -17,9 +17,18 @@ theory: |
 
   Вот простой пример: в одном из будущих уроков вам нужно будет написать функцию, которая производит вычисления и выдаёт ответ. Например, вы допустили небольшую ошибку, и функция выдала неправильное число. Система ответит примерно так:
 
-  <pre class='hexlet-basics-output'>Fatal error: Uncaught Assert\InvalidArgumentException: Value "10" does not equal expected value "35".</pre>
+  <pre class='hexlet-basics-output'>
+    ● test
 
-  Самое главное начинается после двоеточия: «значение "10" не равно ожидаемому значению "35"». То есть правильная функция должна была выдать 35, но текущее решение работает неправильно и выдаёт 10.
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected value to be:
+      "Hello, World!"
+    Received:
+      "ello, World!"
+  </pre>
+
+  Expected - ожидаемое значение, а Received, то которое выдал ваш код.
 
 instructions: |
   Выведите на экран `9780262531962`.
@@ -30,4 +39,4 @@ definitions:
 
 tips:
   - |
-    [assert](http://php.net/manual/en/function.assert.php)
+    [jest](http://jestjs.io/)
