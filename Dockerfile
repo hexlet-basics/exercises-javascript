@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:10
 
 RUN apk --update add autoconf automake build-base libtool nasm
 RUN apk add python3
