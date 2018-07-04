@@ -2,7 +2,7 @@ compose-test:
 	docker-compose run javascript make test
 
 compose-install:
-	docker-compose run javascript npm insta  ll
+	docker-compose run javascript npm install
 
 compose-bash:
 	docker-compose run javascript bash
