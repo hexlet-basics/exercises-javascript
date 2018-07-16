@@ -3,7 +3,8 @@
     "test": "jest --colors --noStackTrace 2>&1"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "transform": {}
   },
   "dependencies": {
     "jest": "^23.2.0",
