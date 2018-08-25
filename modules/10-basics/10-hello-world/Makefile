@@ -1,2 +1,2 @@
 test:
-	npm run -s test -- $(CURDIR)
+	node ./test.js

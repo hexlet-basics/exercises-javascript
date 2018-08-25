@@ -26,7 +26,8 @@ lint:
 test: $(SUBDIRS)
 $(SUBDIRS):
 	@echo
-	npm run test -s -- $@
+	# npm run test -s -- $@
+	make test -C $@
 	@echo
 
 .PHONY: all $(SUBDIRS)

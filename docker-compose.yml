@@ -1,7 +1,9 @@
+---
+
 version: '3'
 
 services:
- javascript:
+  javascript:
     build:
       context: .
       dockerfile: Dockerfile

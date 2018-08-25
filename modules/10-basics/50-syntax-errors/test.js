@@ -1,6 +1,7 @@
 const childProcess = require('child_process');
+const assert = require('assert');
 
-test('test', () => {
-  const stdout = childProcess.execSync(`node ${__dirname}/index.js`);
-  expect(stdout.toString().trim()).toBe('What Is Dead May Never Die');
-});
+const stdout = childProcess.execSync(`node ${__dirname}/index.js`);
+const content = stdout.toString().trim();
+console.log(content);
+assert.strictEqual(content, 'What Is Dead May Never Die');

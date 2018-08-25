@@ -1,2 +1,2 @@
 test:
-	@ npm run test
+	node ./test.js
