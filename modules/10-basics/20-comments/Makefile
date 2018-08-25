@@ -1,2 +1,2 @@
 test:
-	node ./test.js
+	node ./test.js 2>&1
