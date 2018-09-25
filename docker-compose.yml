@@ -3,9 +3,10 @@
 version: '3'
 
 services:
-  javascript:
+  exercises:
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
       - .:/exercises-javascript
+    command: make lint test

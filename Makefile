@@ -1,22 +1,22 @@
+compose:
+	docker-compose up
+
+gcloud-builds-submit:
+	gcloud builds submit --config cloudbuild.yaml .
+
 compose-test:
-	docker-compose run javascript make test
+	docker-compose run exercises make test
 
 compose-install:
-	docker-compose run javascript npm install
+	docker-compose run exercises npm install
 
 compose-bash:
-	docker-compose run javascript bash
+	docker-compose run exercises bash
 
 compose-build:
 	docker-compose build
 
 docker-release: docker-build docker-push
-
-docker-build:
-	docker build -t hexlet/hexlet-basics-exercises-javascript .
-
-docker-push:
-	docker push hexlet/hexlet-basics-exercises-javascript
 
 SUBDIRS := $(wildcard modules/**/*/.)
 
