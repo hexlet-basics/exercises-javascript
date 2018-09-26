@@ -1,4 +1,4 @@
-compose:
+compose: compose-build
 	docker-compose up
 
 gcloud-builds-submit:
