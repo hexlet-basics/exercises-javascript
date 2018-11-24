@@ -1,4 +1,4 @@
 // BEGIN
-const DRAGONS_BORN_COUNT = 3;
-console.log(DRAGONS_BORN_COUNT);
+const dragonsBornCount = 3;
+console.log(dragonsBornCount);
 // END
