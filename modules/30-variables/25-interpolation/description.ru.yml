@@ -9,7 +9,7 @@ theory: |
   const firstName = 'Joffrey';
   const greeting = 'Hello';
 
-  console.log(greeting + ", " + firstName + "!");
+  console.log(greeting + ', ' + firstName + '!');
   ```
 
   Это довольно простой случай, но — наверное, вы согласитесь — выглядит это немного безобразно. Нужно следить за несколькими кавычками и пробелами, и без вглядывания не понять, где что начинается и кончается.
