@@ -5,6 +5,6 @@ const firstName = 'Joffrey';
 const greeting = 'Hello';
 
 // BEGIN
-console.log(`${greeting}, ${firstName}!`);
-console.log(`${intro}\n${info}`);
+console.log(greeting + ', ' + firstName + '!');
+console.log(intro + '\n' + info);
 // END
