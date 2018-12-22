@@ -1,0 +1,110 @@
+---
+
+name: else if
+theory: |
+
+  #### Вкратце
+
+  ```
+  if (условие 1) {
+    // код, который будет выполнен
+    // если условие 1 истинно
+  } else if (условие 2) {
+    // код, который будет выполнен
+    // если условие 1 ложно, но условие 2 истинно
+  } else if (условие 3) {
+    // код, который будет выполнен
+    // если условия 1 и 2 ложны, но условие 3 истинно
+  } else {
+    // код, который будет выполнен
+    // в ином случае
+  }
+  ```
+
+  ---
+
+  Функция `getTypeOfSentence` из предыдущего урока различает только вопросительные и обычные предложения. Давайте попробуем добавить поддержку восклицательных предложений:
+
+  ```javascript
+  const getTypeOfSentence = (sentence) => {
+    const lastChar = sentence[sentence.length - 1];
+
+    if (lastChar === '?') {
+        sentenceType = 'question';
+    }
+
+    if (lastChar === '!') {
+        sentenceType = 'exclamation';
+    } else {
+        sentenceType = 'normal';
+    }
+
+    return `Sentence is ${sentenceType}`;
+  }
+
+  getTypeOfSentence('Who?'); // => 'Sentence is question'
+  getTypeOfSentence('No');   // => 'Sentence is normal'
+  getTypeOfSentence('No!');  // => 'Sentence is exclamation'
+  ```
+
+  Мы добавили еще одну проверку ("exclamation" переводится «восклицание»). Технически функция работает, но с точки зрения семантики есть проблемы.
+
+  - Проверка на наличие восклицательного знака происходит в любом случае, даже если уже был обнаружен вопросительный знак.
+  - Ветка `else` описана именно для второго условия, но не для первого.
+
+  Правильнее будет воспользоваться еще одной возможностью условной конструкции:
+
+  ```javascript
+  const getTypeOfSentence = (sentence) => {
+    const lastChar = sentence[sentence.length - 1];
+
+    if (lastChar === '?') {
+        sentenceType = 'question';
+    } else if (lastChar === '!') {
+        sentenceType = 'exclamation';
+    } else {
+        sentenceType = 'normal';
+    }
+
+    return `Sentence is ${sentenceType}`;
+  }
+
+  getTypeOfSentence('Who?'); // => 'Sentence is question'
+  getTypeOfSentence('No');   // => 'Sentence is normal'
+  getTypeOfSentence('No!');  // => 'Sentence is exclamation'
+  ```
+
+  Теперь все условия выстроены в единую конструкцию. `else if` — это «если не выполнено предыдущее условие, но выполнено текущее». Получается такая схема:
+
+  - если последняя буква `?`, то `'question'`
+  - иначе, если последняя буква `!`, то `'exclamation'`
+  - иначе `'normal'`
+
+  Выполнится только один из блоков кода, относящихся ко всей конструкции `if`.
+
+instructions: |
+
+  На электронной карте Вестероса, которую реализовал Сэм, союзники Старков отображены зеленым кружком, враги — красным, а нейтральные семьи — серым.
+
+  Напишите для Сэма функцию `whoIsThisHouseToStarks`, которая принимает на вход фамилию семьи и возвращает одно из трех значений: `'friend'`, `'enemy'`, '`neutral'`.
+
+  Правила определения:
+
+    * Друзья (`'friend'`): 'Karstark', 'Tally'
+    * Враги (`'enemy'`): 'Lannister', 'Frey'
+    * Любые другие семьи считаются нейтральными
+
+  Примеры вызова:
+
+  ```javascript
+  whoIsThisHouseToStarks('Karstark'); // => 'friend'
+  whoIsThisHouseToStarks('Frey');     // => 'enemy'
+  whoIsThisHouseToStarks('Joar');     // => 'neutral'
+  whoIsThisHouseToStarks('Ivanov');   // => 'neutral'
+  ```
+
+tips: []
+
+definitions:
+  - name: "else if"
+    description: "способ задать несколько альтернативных условий"
