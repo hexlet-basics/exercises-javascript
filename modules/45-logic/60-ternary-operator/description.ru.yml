@@ -1,0 +1,101 @@
+---
+
+name: Тернарный оператор
+theory: |
+
+  #### Вкратце
+
+  ```
+  <predicate> ? <expression on true> : <expression on false>
+
+  // например
+  number >= 0 ? number : -number
+  ```
+
+  ---
+
+  Посмотрите на определение функции, которая возвращает модуль переданного числа:
+
+  ```javascript
+  const abs = (number) => {
+    if (number >= 0) {
+      return number;
+    }
+
+    return -number;
+  }
+  ```
+
+  Можно ли записать её лаконичнее? Что-то вроде `return ОТВЕТ В ЗАВИСИМОСТИ ОТ УСЛОВИЯ`? Для этого справа от return должно быть выражение, но `if` — это инструкция, а не выражение.
+
+  В JavaScript существует конструкция, которая по своему действию аналогична конструкции *if-else*, но при этом является выражением. Она называется **тернарный оператор**.
+
+  Тернарный оператор — единственный в своем роде оператор, требующий три операнда:
+
+  ```javascript
+  const abs = (number) => {
+    return number >= 0 ? number : -number;
+  }
+  ```
+
+  Общий паттерн выглядит так: `<predicate> ? <expression on true> : <expression on false>`.
+
+  Давайте перепишем начальный вариант `getTypeOfSentence` аналогично:
+
+  Было:
+
+  ```javascript
+  const getTypeOfSentence = (sentence) => {
+    const lastChar = sentence.substr(-1);
+
+    if (lastChar === '?') {
+        return 'question';
+    }
+
+    return 'normal';
+  }
+
+  getTypeOfSentence('Hodor'); // => normal
+  getTypeOfSentence('Hodor?'); // => question
+  ```
+
+  Стало:
+
+  ```javascript
+  const getTypeOfSentence = (sentence) => {
+    const lastChar = sentence.substr(-1);
+
+    return (lastChar === '?') ? 'question' : 'normal';
+  }
+
+  getTypeOfSentence('Hodor'); // => normal
+  getTypeOfSentence('Hodor?'); // => question
+  ```
+
+  ---
+
+  Если вы помните, в чём сила выражений, то вероятно уже догадались, что тернарный оператор можно вкладывать в тернарный оператор. **Не делайте этого :)** Такой код тяжело и читать и отлаживать, это очень плохая практика.
+
+instructions: |
+
+  Реализуйте функцию `convertString`, которая принимает на вход строку и, если первая буква не заглавная, возвращает перевернутый вариант исходной строки. Если первая буква заглавная, то строка возвращается без изменений.
+
+  Примеры вызова:
+
+  ```javascript
+  convertString('Hello'); // => 'Hello'
+  convertString('hello'); // => 'olleh'
+  ```
+
+  Перевернуть строчку можно используя функцию reverse.
+
+  Есть разные подходы к решению этой задачи. Возможно, вам пригодится метод [toUpperCase](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase) и возможность получения символа из строки (например, `str[0]`).
+
+  Попробуйте написать два варианта функции: с обычным if-else, и с тернарным оператором.
+
+tips: []
+
+definitions:
+  - name: "Тернарный оператор"
+    description: |
+      Способ превратить простую условную инструкцию в выражение, например, `number >= 0 ? number : -number`
