@@ -1,7 +1,7 @@
-const assert = require('assert');
-const isPensioner = require(`${__dirname}/index.js`);
+const assert = require('power-assert');
+const isPensioner = require(__dirname);
 
-assert.strictEqual(isPensioner(23), false);
-assert.strictEqual(isPensioner(70), true);
-assert.strictEqual(isPensioner(60), true);
-assert.strictEqual(isPensioner(59), false);
+assert(isPensioner(23) === false);
+assert(isPensioner(70) === true);
+assert(isPensioner(60) === true);
+assert(isPensioner(59) === false);
