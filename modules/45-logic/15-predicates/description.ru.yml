@@ -1,0 +1,56 @@
+---
+
+name: Предикаты
+theory: |
+
+  Вспомним функцию `isInfant` из прошлого урока:
+
+  ```javascript
+  const isInfant = (age) => {
+    return age < 1;
+  }
+
+  console.log(isInfant(3));
+  ```
+
+  <pre class='hexlet-basics-output'>bool(false)</pre>
+
+  `isInfant` — это функция-предикат.
+
+  **Предикат отвечает на утвердительный вопрос «да» или «нет», возвращая значение типа bool.**
+
+  Предикаты во всех языках принято именовать особым образом для простоты анализа. В PHP предикаты как правило начинаются с префикса `is` или `has`:
+
+    * `isInfant` — «младенец ли?»
+    * `hasChildren` — «есть ли дети?»
+    * `isEmpty` — «пустой ли?»
+    * `hasErrors` — «есть ли ошибки?»
+
+  Функция может считаться предикатом **только** если она возвращает bool.
+
+  ---
+
+  Давайте напишем еще одну функцию-предикат. Она принимает строку и проверяет, является ли она словом `'Castle'`:
+
+  ```javascript
+  const isCastle = (str) => {
+    return str === 'Castle';
+  }
+
+  console.log(isCastle('Sea'));
+  ```
+
+  <pre class='hexlet-basics-output'>bool(false)</pre>
+
+
+instructions: |
+
+  Напишите функцию `isMister`, которая принимает строку и проверяет, является ли она словом `'Mister'`.
+
+tips:
+  - |
+    [Именование в программировании](https://ru.hexlet.io/blog/posts/naming-in-programming)
+
+definitions:
+  - name: "Предикат"
+    description: "выражение, отвечающее на вопрос «да» или «нет» с помощью типа bool."
