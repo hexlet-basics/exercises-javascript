@@ -20,6 +20,7 @@ theory: |
   const firstName = 'Joffrey';
   const greeting = 'Hello';
 
+  // Обратите внимание на ограничители строки, это не одинарная кавычка
   console.log(`${greeting}, ${firstName}!`);
   ```
 
@@ -39,5 +40,5 @@ instructions: |
 tips: []
 
 definitions:
-  - name: "Интерполяция"
+  - name: Интерполяция
     description: "способ соединения строк через вставку значений переменных в строку-шаблон с помощью фигурных скобок. Например, `` `Hi, ${name}!` ``."

@@ -11,9 +11,10 @@ steps:
       '--cache-from', 'gcr.io/$PROJECT_ID/exercises-javascript:latest',
       '.'
     ]
-  - name: 'docker/compose:1.15.0'
+  - name: 'docker/compose:1.19.0'
     args: [
-      'up',
+      'run',
+      'test',
     ]
 
   - name: 'technosophos/slack-notify'

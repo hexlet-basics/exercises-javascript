@@ -1,4 +1,4 @@
-const assert = require('power-assert');
+const assert = require('assert');
 const isPensioner = require(__dirname);
 
 assert(isPensioner(23) === false);

@@ -1,4 +1,4 @@
-const assert = require('power-assert');
+const assert = require('assert');
 const isNotLannisterSoldier = require(__dirname);
 
 assert(isNotLannisterSoldier('blue', null) === true);

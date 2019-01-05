@@ -1,4 +1,4 @@
-const assert = require('power-assert');
+const assert = require('assert');
 const whoIsThisHouseToStarks = require(__dirname);
 
 assert(whoIsThisHouseToStarks('Tally') === 'friend');

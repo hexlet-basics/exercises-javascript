@@ -1,4 +1,4 @@
-const assert = require('power-assert');
+const assert = require('assert');
 const getSentenceTone = require(__dirname);
 
 assert(getSentenceTone('normal') === 'normal');

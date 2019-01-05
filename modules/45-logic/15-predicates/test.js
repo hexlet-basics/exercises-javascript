@@ -1,4 +1,4 @@
-const assert = require('power-assert');
+const assert = require('assert');
 const isMister = require(__dirname);
 
 assert(isMister('8234782') === false);
