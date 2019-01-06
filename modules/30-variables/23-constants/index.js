@@ -1,7 +1,3 @@
-const king = 'King Balon the 6th';
+const army = 'the white walkers';
 
-// BEGIN
-const numberOfCastles = 6;
-const roomsPerCastle = 17;
-console.log(king + ' has ' + numberOfCastles * roomsPerCastle + ' rooms.');
-// END
+console.log(army);
