@@ -18,10 +18,9 @@ instructions: |
 
   ```javascript
   const name = 'Robb';
-  console.log(name.length); // => 4
+  const len = name.length
+  console.log(len); // => 4
   ```
-
-  Свойства как и выражения (а они и есть выражения), возвращают значение, а значит их можно использовать во всех операциях, которые мы рассматривали ранее.
 
   _Вопрос для самопроверки. Что распечает код `console.log(name[name.length])` для `name` определенного выше? Почему такой ответ?_
 
@@ -29,24 +28,9 @@ instructions: |
 
   Однако, JavaScript позволяет обращаться к свойствам которые не существуют (например при опечатках). В таком случае его значением является `undefined`:
 
-    ```javascript
-    const name = 'Robb';
-    console.log(name.whatIsThat); // undefined
-    ```
-
-  Кроме того, к свойствам можно обращаться используя квадратные скобки.
-
   ```javascript
   const name = 'Robb';
-  console.log(name['length']); // 4
-  ```
-
-  Не следует путать такое обращение с взятием символа в строке по его индексу. Хотя синтаксически используются те же ограничители, все же, между этими операциями ничего общего. Квадратные скобки удобны в тех ситуациях, когда имя свойства вычисляется динамически.
-
-  ```javascript
-  const property = 'length';
-  const name = 'Robb';
-  console.log(name[property]); // 4
+  console.log(name.whatIsThat); // undefined
   ```
 
 tips: []
