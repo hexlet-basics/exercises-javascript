@@ -55,8 +55,8 @@ theory: |
     return 'normal';
   }
 
-  getTypeOfSentence('Hodor'); // => normal
-  getTypeOfSentence('Hodor?'); // => question
+  getTypeOfSentence('Hodor'); // normal
+  getTypeOfSentence('Hodor?'); // question
   ```
 
   Стало:
@@ -68,8 +68,8 @@ theory: |
     return (lastChar === '?') ? 'question' : 'normal';
   }
 
-  getTypeOfSentence('Hodor'); // => normal
-  getTypeOfSentence('Hodor?'); // => question
+  getTypeOfSentence('Hodor'); // normal
+  getTypeOfSentence('Hodor?'); // question
   ```
 
   ---

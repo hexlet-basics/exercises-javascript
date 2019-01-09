@@ -6,14 +6,11 @@ theory: |
   Вспомним функцию `isInfant` из прошлого урока:
 
   ```javascript
-  const isInfant = (age) => {
-    return age < 1;
-  }
-
+  const isInfant = age => age < 1;
   console.log(isInfant(3));
   ```
 
-  <pre class='hexlet-basics-output'>bool(false)</pre>
+  <pre class='hexlet-basics-output'>false</pre>
 
   `isInfant` — это функция-предикат.
 
@@ -33,14 +30,12 @@ theory: |
   Давайте напишем еще одну функцию-предикат. Она принимает строку и проверяет, является ли она словом `'Castle'`:
 
   ```javascript
-  const isCastle = (str) => {
-    return str === 'Castle';
-  }
+  const isCastle = type => type === 'Castle';
 
   console.log(isCastle('Sea'));
   ```
 
-  <pre class='hexlet-basics-output'>bool(false)</pre>
+  <pre class='hexlet-basics-output'>false</pre>
 
 
 instructions: |

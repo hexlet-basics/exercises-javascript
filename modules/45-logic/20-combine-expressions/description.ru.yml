@@ -32,12 +32,10 @@ theory: |
   С помощью него напишем функцию проверки чётности:
 
   ```javascript
-  const isEven = (number) => {
-    return number % 2 === 0;
-  }
+  const isEven = number => number % 2 === 0;
 
-  isEven(10); // => true
-  isEven(3);  // => false
+  isEven(10); // true
+  isEven(3);  // false
   ```
 
   В одном выражении мы скомбинировали логический оператор `===` (проверка равенства) и арифметический оператор `%`.
@@ -62,8 +60,8 @@ theory: |
     return firstLetter.toUpperCase() === firstLetter;
   }
 
-  isFirstLetterInUpperCase('marmont'); // => false
-  isFirstLetterInUpperCase('Robb'); // => true
+  isFirstLetterInUpperCase('marmont'); // false
+  isFirstLetterInUpperCase('Robb'); // true
   ```
 
   Мы использовали [метод `toUpperCase`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase). Он возвращает строку, на которой он был вызван, в которой все буквы стали заглавными. Мы вызвали его на первом символе строки.

@@ -28,8 +28,8 @@ theory: |
     return 'normal';
   }
 
-  getTypeOfSentence('Hodor'); // => normal
-  getTypeOfSentence('Hodor?'); // => question
+  getTypeOfSentence('Hodor'); // normal
+  getTypeOfSentence('Hodor?'); // question
   ```
 
   `if` - инструкция. В скобках ей передается выражение-предикат, а затем описывается блок кода в фигурных скобках. Этот **блок кода будет выполнен только если предикат — истина**.
@@ -54,7 +54,6 @@ theory: |
   }
 
   console.log(getTypeOfSentence('Hodor')); // => normal
-  console.log("\n");
   console.log(getTypeOfSentence('Hodor?')); // => question
   ```
 

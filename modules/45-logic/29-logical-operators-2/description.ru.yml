@@ -8,13 +8,11 @@ theory: |
   Попробуем реализовать функцию, проверяющую год на високосность. Год будет високосным, если он кратен 400 или он одновременно кратен 4 и не кратен 100. Как видите, в определении уже заложена вся необходимая логика, осталось только переложить её на код:
 
   ```javascript
-  const isLeapYear = (year) => {
-    return year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0);
-  }
+  const isLeapYear = (year) => year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0);
 
-  isLeapYear(2018); // => false
-  isLeapYear(2017); // => false
-  isLeapYear(2016); // => true
+  isLeapYear(2018); // false
+  isLeapYear(2017); // false
+  isLeapYear(2016); // true
   ```
 
   Разберём по частям:
@@ -39,8 +37,8 @@ instructions: |
   Примеры вызова:
 
   ```javascript
-  isNeutralSoldier('yellow', 'black'); // => true
-  isNeutralSoldier('red', 'black');    // => false
-  isNeutralSoldier('red', 'red');      // => false
+  isNeutralSoldier('yellow', 'black'); // true
+  isNeutralSoldier('red', 'black');    // false
+  isNeutralSoldier('red', 'red');      // false
   ```
 

@@ -28,9 +28,7 @@ theory: |
   Попробуем написать примитивную функцию, которая принимает на вход возраст ребенка и определяет, младенец ли он. Младенцами считаются дети до года:
 
   ```javascript
-  const isInfant = (age) => {
-    return age < 1;
-  };
+  const isInfant = age => age < 1;
   ```
 
   Пользуемся тем фактом, что любая операция — это выражение, поэтому единственной строчкой функции пишем «вернуть то значение, которое получится в результате сравнения `age < 1`».
@@ -38,14 +36,12 @@ theory: |
   В зависимости от пришедшего аргумента, сравнение будет либо истинным (`true`) либо ложным (`false`), и `return` вернёт этот результат.
 
   ```javascript
-  const isInfant = (age) => {
-    return age < 1;
-  };
+  const isInfant = age => age < 1;
 
   console.log(isInfant(3));
   ```
 
-  <pre class='hexlet-basics-output'>bool(false)</pre>
+  <pre class='hexlet-basics-output'>false</pre>
 
   А теперь проверим ребенка, которому полгода:
 
@@ -53,7 +49,7 @@ theory: |
   console.log(isInfant(0.5));
   ```
 
-  <pre class='hexlet-basics-output'>bool(true)</pre>
+  <pre class='hexlet-basics-output'>true</pre>
 
 
 instructions: |

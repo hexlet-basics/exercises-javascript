@@ -21,9 +21,9 @@ theory: |
     return length > 8 && length < 20;
   }
 
-  isCorrectPassword('qwerty'); // => false
-  isCorrectPassword('qwerty1234'); // => true
-  isCorrectPassword('zxcvbnmasdfghjkqwertyui'); // => false
+  isCorrectPassword('qwerty'); // false
+  isCorrectPassword('qwerty1234'); // true
+  isCorrectPassword('zxcvbnmasdfghjkqwertyui'); // false
   ```
 
   `&&` - означает «И» (в математической логике это называют конъюнкцией). Всё выражение считается истинным только если истинен каждый операнд — каждое из составных выражений. Иными словами, `&&` означает «и то, и другое».
@@ -41,17 +41,15 @@ theory: |
   Напишем функцию, проверяющую квартиру. Она принимает два аргумента: площадь (число) и название улицы (строку):
 
   ```javascript
-  const isGoodApartment = (area, street) => {
-    return area >= 100 || (area >= 80 && street === 'Main Street');
-  }
+  const isGoodApartment = (area, street) => area >= 100 || (area >= 80 && street === 'Main Street');
 
-  console.log(isGoodApartment(91, 'Queens Street')); // => false
-  console.log(isGoodApartment(78, 'Queens Street')); // => false
-  console.log(isGoodApartment(70, 'Main Street')); // => false
+  isGoodApartment(91, 'Queens Street'); // false
+  isGoodApartment(78, 'Queens Street'); // false
+  isGoodApartment(70, 'Main Street'); // false
 
-  console.log(isGoodApartment(120, 'Queens Street')); // => true
-  console.log(isGoodApartment(120, 'Main Street')); // => true
-  console.log(isGoodApartment(80, 'Main Street')); // => true
+  isGoodApartment(120, 'Queens Street'); // true
+  isGoodApartment(120, 'Main Street'); // true
+  isGoodApartment(80, 'Main Street'); // true
   ```
 
   Область математики, в которой изучаются логические операторы, называется булевой алгеброй. Ниже показаны «таблицы истинности» — по ним можно определить, каким будет результат применения оператора:
