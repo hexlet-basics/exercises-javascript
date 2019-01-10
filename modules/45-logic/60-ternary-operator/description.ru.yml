@@ -3,17 +3,6 @@
 name: Тернарный оператор
 theory: |
 
-  #### Вкратце
-
-  ```
-  <predicate> ? <expression on true> : <expression on false>
-
-  // например
-  number >= 0 ? number : -number
-  ```
-
-  ---
-
   Посмотрите на определение функции, которая возвращает модуль переданного числа:
 
   ```javascript
