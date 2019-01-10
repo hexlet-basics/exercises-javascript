@@ -7,24 +7,21 @@ theory: |
 
   Посмотрим реализацию переворота строки через цикл `for`:
 
-  ```php
-  <?php
+  ```javascript
+  const reverseString = (str) => {
+    let index = strlen(str) - 1;
+    let result = '';
 
-  function reverseString($str)
-  {
-      $index = strlen($str) - 1;
-      $result = '';
+    for (index; index >= 0; index--) {
+      currChar = str[index];
+      result = "{result}{currChar}";
+    }
 
-      for ($index; $index >= 0; $index--) {
-          $currChar = $str[$index];
-          $result = "{$result}{$currChar}";
-      }
-
-      return $result;
+    return result;
   }
   ```
 
-  Можно читать так: *«цикл с индексом `$index` повторяется пока `$index >= 0` и после каждого шага уменьшает `$index` на 1»*.
+  Можно читать так: *«цикл с индексом `index` повторяется пока `index >= 0` и после каждого шага уменьшает `index` на 1»*.
 
   В определении цикла `for` есть:
 

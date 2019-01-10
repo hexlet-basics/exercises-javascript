@@ -12,26 +12,23 @@ theory: |
 
   Если задуматься, то можно заметить, что достаточно проверять числа не до `x - 1`, а до половины числа. Например, 11 не делится на 2, 3, 4, 5. Но и дальше гарантированно не будет делиться на числа больше своей половины. Значит, можно провести небольшую оптимизацию и проверять деление только до `x / 2`.
 
-  ```php
-  <?php
+  ```javascript
+  const isPrime = (number) => {
+    if (number < 2) {
+        return false;
+    }
 
-  function isPrime($number)
-  {
-      if ($number < 2) {
+    let divider = 2;
+
+    while (divider <= number / 2) {
+      if (number % divider === 0) {
           return false;
       }
 
-      $divider = 2;
+      divider += 1;
+    }
 
-      while ($divider <= $number / 2) {
-          if ($number % $divider === 0) {
-              return false;
-          }
-
-          $divider += 1;
-      }
-
-      return true;
+    return true;
   }
 
   isPrime(1); // false
