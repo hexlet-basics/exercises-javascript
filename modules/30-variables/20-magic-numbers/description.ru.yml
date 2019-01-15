@@ -21,18 +21,18 @@ theory: |
 
   ```javascript
   let dollarsInEuro = 1.25;
-  let roublesInDollar = 60;
+  let rublesInDollar = 60;
 
   let euros = 1000;
   let dollars = euros * dollarsInEuro; // => 1250
-  let rubles = dollars * roublesInDollar; // => 75000
+  let rubles = dollars * rublesInDollar; // => 75000
 
   console.log(rubles);
   ```
 
   Обратите внимание на следующие детали:
 
-  * Именование lowerCamelCase
+  * Именование lowerCamelCase.
   * Две новые переменные отделены от последующих вычислений пустой строчкой. Эти переменные имеют смысл и без вычислений, поэтому такое отделение уместно, оно повышает читаемость.
   * Получился хорошо именованный и структурированный код, но он длиннее прошлой версии. Так часто бывает, и это нормально. Код должен быть читабельным.
 
