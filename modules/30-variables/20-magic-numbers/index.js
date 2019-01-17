@@ -1,7 +1,7 @@
-const king = 'King Balon the 6th';
+let king = 'King Balon the 6th';
 
 // BEGIN
-const numberOfCastles = 6;
-const roomsPerCastle = 17;
+let numberOfCastles = 6;
+let roomsPerCastle = 17;
 console.log(king + ' has ' + numberOfCastles * roomsPerCastle + ' rooms.');
 // END

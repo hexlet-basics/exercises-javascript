@@ -9,7 +9,7 @@ theory: |
 
   ```javascript
   const showCurrentDay = (month, day) => {
-      console.log(`Today is: ${month} ${day}`);
+    console.log(`Today is: ${month} ${day}`);
   }
 
   showDate('January', '29');

@@ -1,2 +1,2 @@
-const myBrothersCount = 2;
+let myBrothersCount = 2;
 console.log(myBrothersCount);

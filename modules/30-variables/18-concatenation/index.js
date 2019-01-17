@@ -1,8 +1,8 @@
-const info = "We couldn't verify you mother's maiden name.";
-const intro = 'Here is important information about your account security.';
+let info = "We couldn't verify you mother's maiden name.";
+let intro = 'Here is important information about your account security.';
 
-const firstName = 'Joffrey';
-const greeting = 'Hello';
+let firstName = 'Joffrey';
+let greeting = 'Hello';
 
 // BEGIN
 console.log(greeting + ', ' + firstName + '!');
