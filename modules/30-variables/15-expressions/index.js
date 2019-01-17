@@ -1,8 +1,8 @@
-const euros = 1000;
+let euros = 100;
 
 // BEGIN
-const dollars = euros * 1.25;
+let dollars = euros * 1.25;
 console.log(dollars);
-const rubles = dollars * 60;
+let rubles = dollars * 60;
 console.log(rubles);
 // END

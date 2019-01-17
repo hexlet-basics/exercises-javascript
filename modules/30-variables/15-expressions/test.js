@@ -4,5 +4,5 @@ const assert = require('assert');
 const stdout = childProcess.execSync(`node ${__dirname}/index.js`);
 const content = stdout.toString().trim();
 console.log(content);
-const expected = '1250\n75000';
+const expected = '125\n7500';
 assert.strictEqual(content, expected);

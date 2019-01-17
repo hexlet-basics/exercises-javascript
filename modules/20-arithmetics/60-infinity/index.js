@@ -1,1 +1,1 @@
-console.log((70 * (3 + 4)) / (8 + 2));
+console.log((Infinity + Infinity) / 10);
