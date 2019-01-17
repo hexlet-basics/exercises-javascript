@@ -1,8 +1,6 @@
-<?php
-
-use function HexletBasics\Functions\calculateDistance;
+const { calculateDistance } = require('../../../src/got');
 
 // BEGIN
-$distance = calculateDistance('Qarth', 'Vaes Dothrak');
-print_r($distance);
+const distance = calculateDistance('Qarth', 'Vaes Dothrak');
+console.log(distance);
 // END
