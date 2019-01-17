@@ -6,7 +6,7 @@ theory: |
   Вспомним код:
 
   ```javascript
-  import { round } from './round';
+  const { round } = './math';
 
   const result = round(10.25); // 10
   ```
@@ -62,12 +62,10 @@ instructions: |
 
   Вам доступна функция `calculateDistanceBetweenTowns`. Она принимает один аргумент, в котором должны содержаться названия двух городов через дефис. В ответ она возвращает расстояние между этими городами. Вот пример использования:
 
-  ```php
-  <?php
-
-  $distance = calculateDistanceBetweenTowns('Lannisport-Bayasabhad');
+  ```javascript
+  const distance = calculateDistanceBetweenTowns('Lannisport-Bayasabhad');
   ```
 
-  Напишите программу, которая использует функцию `calculateDistanceBetweenTowns` и выводит на экран расстояние между городами, записанными в переменные `$from` и `$to`.
+  Напишите программу, которая использует функцию `calculateDistanceBetweenTowns` и выводит на экран расстояние между городами, записанными в переменные `from` и `to`.
 
 tips: []

@@ -1,2 +1,2 @@
 test:
-	@ php Test.php
+	node ./test.js 2>&1
