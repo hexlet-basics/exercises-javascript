@@ -9,7 +9,7 @@ instructions: |
   Данные, которыми мы оперируем в своих программах могут обладать важными свойствами, например, у строк есть длина. Как вы увидите далее, это свойство очень важно для реализации алгоритмов, связанных с преобразованием строки (как пример переворот строки). Как узнать длину строки? Во многих языках длина строки вычисляется с помощью специальной функции и выглядит это примерно так:
 
   ```javascript
-  import { length } from './string';
+  const { length } = require('./string');
   const name = 'Robb';
   console.log(length(name)); // => 4
   ```
@@ -30,7 +30,7 @@ instructions: |
 
   ```javascript
   const name = 'Robb';
-  console.log(name.whatIsThat); // undefined
+  console.log(name.whatIsThat); // => undefined
   ```
 
 tips: []
