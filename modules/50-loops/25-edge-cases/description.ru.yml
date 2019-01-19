@@ -20,9 +20,9 @@ theory: |
   Давайте представим себе расширенную функцию `mysubstr`. Она принимает три аргумента: строку, индекс и длину извлекаемой подстроки. Функция возвращает подстроку указанной длины начиная с указанного индекса. Примеры вызова:
 
   ```php
-  $str = 'If I look back I am lost';
-  mysubstr($str, 0, 1); // => 'I'
-  mysubstr($str, 3, 6); // => 'I look'
+  str = 'If I look back I am lost';
+  mysubstr(str, 0, 1); // => 'I'
+  mysubstr(str, 3, 6); // => 'I look'
   ```
 
   Прикинем, что может пойти не так. Какие **пограничные случаи** стоит учитывать:
@@ -60,13 +60,13 @@ instructions: |
   ```php
   <?php
 
-  $str = 'Sansa Stark';
-  isArgumentsForSubstrCorrect($str, -1, 3); // => false
-  isArgumentsForSubstrCorrect($str, 4, 100); // => false
-  isArgumentsForSubstrCorrect($str, 10, 10); // => false
-  isArgumentsForSubstrCorrect($str, 11, 1); // => false
-  isArgumentsForSubstrCorrect($str, 3, 3); // => true
-  isArgumentsForSubstrCorrect($str, 0, 5); // => true
+  str = 'Sansa Stark';
+  isArgumentsForSubstrCorrect(str, -1, 3); // => false
+  isArgumentsForSubstrCorrect(str, 4, 100); // => false
+  isArgumentsForSubstrCorrect(str, 10, 10); // => false
+  isArgumentsForSubstrCorrect(str, 11, 1); // => false
+  isArgumentsForSubstrCorrect(str, 3, 3); // => true
+  isArgumentsForSubstrCorrect(str, 0, 5); // => true
   ```
 
 tips: []

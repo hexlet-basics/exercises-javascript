@@ -1,17 +1,12 @@
-<?php
+const assert = require('assert');
+const t = require('.');
 
-namespace HexletBasics;
-
-require __DIR__ . '/../../../vendor/autoload.php';
-
-use function HexletBasics\Asserts\expectOutputString;
-
-$path = __DIR__ . '/index.php';
-require $path;
-
-$expected = '0-0-0-0-0-';
-printSeq('0-', 5);
-
-expectOutputString($expected, function () use ($path) {
-    printSeq('0-', 5);
-});
+const logs = [];
+const oldLog = console.log;
+console.log = (...args) => {
+  oldLog(...args);
+  logs.push(args);
+};
+t('0-', 5);
+const expected = '0-0-0-0-0-';
+assert.strictEqual(logs.join('').trim(), expected);

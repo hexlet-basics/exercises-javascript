@@ -1,10 +1,7 @@
-<?php
-
 // BEGIN
-function getNull()
-{
-    return null;
-}
+const doNothing = () => {
+
+};
 // END
 
-module.exports = printJaimesLine;
+module.exports = doNothing;

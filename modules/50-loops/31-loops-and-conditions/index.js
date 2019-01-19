@@ -11,7 +11,7 @@ const shouter = (str) => {
     counterLimit = 10;
 
     while (counter !== counterLimit) {
-      result = "{result}{str}";
+      result = `{result}{str}`;
       counter += 1;
     }
   } else {

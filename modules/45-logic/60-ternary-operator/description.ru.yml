@@ -29,6 +29,14 @@ theory: |
 
   Общий паттерн выглядит так: `<predicate> ? <expression on true> : <expression on false>`.
 
+  Сокращенный вариант функции `abs`, выглядит так:
+
+  ```javascript
+  const abs = number => (number >= 0 ? number : -number);
+  ```
+
+  Обратите внимание на скобки вокруг тернарника. Они не обязательны, но линтер [настоятельно рекомендует](https://eslint.org/docs/rules/no-confusing-arrow<Paste>) их ставить, во избежании неоднозначностей.
+
   Давайте перепишем начальный вариант `getTypeOfSentence` аналогично:
 
   Было:

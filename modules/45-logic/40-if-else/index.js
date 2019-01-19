@@ -1,6 +1,6 @@
 // BEGIN
 const normalizeUrl = (site) => {
-  if (site.includes('https://') === false) {
+  if (site.includes('https://')) {
     return `https://${site}`;
   }
   return site;

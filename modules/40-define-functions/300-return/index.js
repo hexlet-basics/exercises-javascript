@@ -1,10 +1,10 @@
-const { parentFor } = require('../../../got');
+const { getParentFor } = require('../../../src/got');
 
 // BEGIN
 const getParentNamesTotalLength = (child) => {
-  const mother = parentFor(child, 'mother');
-  const father = parentFor(child, 'father');
-  return mother.length + father.lenght;
+  const mother = getParentFor(child, 'mother');
+  const father = getParentFor(child, 'father');
+  return mother.length + father.length;
 };
 // END
 
