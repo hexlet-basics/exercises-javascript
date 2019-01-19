@@ -1,5 +1,5 @@
 const assert = require('assert');
-const isFalsy = require(__dirname);
+const isFalsy = require('.');
 
 assert(isFalsy('') === true);
 assert(isFalsy(' ') === true);

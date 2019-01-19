@@ -1,7 +1,7 @@
 // BEGIN
-const printSeq = (str, num) => {
-  console.log(str.repeat(num));
+const printJaimesLine = (text) => {
+  console.log(`JAIME: ${text}`);
 };
 // END
 
-module.exports = printSeq;
+module.exports = printJaimesLine;

@@ -1,7 +1,5 @@
 // BEGIN
-const isMister = (str) => {
-  return str === 'Mister';
-}
+const isMister = greeting => greeting === 'Mister';
 // END
 
 module.exports = isMister;

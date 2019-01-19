@@ -41,7 +41,7 @@ theory: |
 
   Запустим:
 
-  ```php
+  ```javascript
   console.log(getEvenNumbersUpTo(5));
   ```
 
@@ -49,7 +49,7 @@ theory: |
 
   Работает, но не до конца: последнее число не вывелось. Видимо, цикл работает, но останавливается на один шаг раньше, чем нам нужно. Завершение цикла зависит от предиката в `while`, давайте посмотрим на него внимательнее:
 
-  ```php
+  ```javascript
   while (counter !== num)
   ```
 
@@ -73,7 +73,7 @@ theory: |
 
   Запустим:
 
-  ```php
+  ```javascript
   console.log(getEvenNumbersUpTo(5));
   ```
 
@@ -104,13 +104,13 @@ theory: |
 
   Запустим:
 
-  ```php
+  ```javascript
   console.log(getEvenNumbersUpTo(5));
   ```
 
   <pre class='hexlet-basics-output'>24</pre>
 
-  ```php
+  ```javascript
   console.log(getEvenNumbersUpTo(9));
   ```
 
@@ -128,9 +128,9 @@ instructions: |
 
   #### Задание со звёздочкой
 
-  Попробуйте самостоятельно на [https://repl.it/](https://repl.it/languages/php) реализовать такое решение, чтобы после последнего числа не было запятой, но была точка:
+  Попробуйте самостоятельно на [https://repl.it/](https://repl.it/languages/javascript) реализовать такое решение, чтобы после последнего числа не было запятой, но была точка:
 
-  ```php
+  ```javascript
   console.log(getEvenNumbersUpTo(9));
   ```
 

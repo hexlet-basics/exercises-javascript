@@ -1,9 +1,7 @@
 const isLannisterSoldier = require('./isLannisterSoldier');
 
 // BEGIN
-const isNotLannisterSoldier = (color, shield) => {
-  return !isLannisterSoldier(color, shield);
-}
+const isNotLannisterSoldier = (color, shield) => !isLannisterSoldier(color, shield);
 // END
 
 module.exports = isNotLannisterSoldier;

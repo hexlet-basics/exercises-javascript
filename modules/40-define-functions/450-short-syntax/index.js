@@ -1,8 +1,5 @@
 // BEGIN
-const getAgeDifference = (yearOne, yearTwo) => {
-  const difference = Math.abs(yearOne - yearTwo);
-  return `The age difference is ${difference}`;
-};
+const capitalize = text => `${text[0].toUpperString()}${text.slice(1)}`;
 // END
 
-module.exports = getAgeDifference;
+module.exports = capitalize;

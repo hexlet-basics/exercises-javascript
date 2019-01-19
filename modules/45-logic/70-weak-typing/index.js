@@ -1,7 +1,5 @@
 // BEGIN
-const isFalsy = (value) => {
-  return value == false;
-}
+const isFalsy = value => value == false;
 // END
 
 module.exports = isFalsy;

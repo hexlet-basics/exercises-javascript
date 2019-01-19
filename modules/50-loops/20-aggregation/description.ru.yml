@@ -46,10 +46,8 @@ instructions: |
 
   Пример вызова:
 
-  ```php
-  <?php
-
-  str = 'If I look back I am lost';
+  ```javascript
+  const str = 'If I look back I am lost';
   mysubstr(str, 1); // => 'I'
   mysubstr(str, 7); // => 'If I lo'
   ```

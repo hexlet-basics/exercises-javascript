@@ -1,6 +1,6 @@
-const { parentFor } = require('../../../got');
+const { getParentFor } = require('../../../got');
 
 // BEGIN
-const joffreyMom = parentFor('Joffrey Baratheon');
-console.log(parentFor(joffreyMom, 'father'));
+const joffreyMom = getParentFor('Joffrey Baratheon');
+console.log(getParentFor(joffreyMom, 'father'));
 // END

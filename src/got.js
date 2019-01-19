@@ -3,26 +3,26 @@ const isLannisterSoldier = (color, shield) => {
   return result;
 };
 
-const parentFor = (child, parent = 'mother') => {
+const getParentFor = (child, parentName = 'mother') => {
   switch (child) {
     case 'Daenerys Targaryen': {
       const parents = {
         mother: 'Rhaella Targaryen',
         father: 'Aerys II Targaryen',
       };
-      return parents[parent];
+      return parents[parentName];
     }
     case 'Cersei Lannister': {
       const parents = {
         father: 'Tywin Lannister',
       };
-      return parents[parent];
+      return parents[parentName];
     }
     case 'Joffrey Baratheon': {
       const parents = {
         mother: 'Cersei Lannister',
       };
-      return parents[parent];
+      return parents[parentName];
     }
     default:
       throw new Error(`Wrong child's name '${child}'`);
@@ -57,6 +57,8 @@ const calculateDistance = (source, dest) => {
 
 const calculateDistanceBetweenTowns = param => calculateDistance(...param.split('-'));
 
-const functions = { isLannisterSoldier, calculateDistance, calculateDistanceBetweenTowns };
+const functions = {
+  getParentFor, isLannisterSoldier, calculateDistance, calculateDistanceBetweenTowns,
+};
 
 module.exports = functions;

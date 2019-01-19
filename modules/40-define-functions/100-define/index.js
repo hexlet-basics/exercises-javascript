@@ -1,7 +1,7 @@
 // BEGIN
-const printJaimesLine = (text) => {
-  console.log(`JAIME: ${text}`);
+const printMotto = () => {
+  console.log('Winter is coming');
 };
 // END
 
-module.exports = printJaimesLine;
+module.exports = printMotto;

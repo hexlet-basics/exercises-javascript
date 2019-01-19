@@ -1,8 +1,8 @@
-const { parentFor } = require('../../../got');
+const { getParentFor } = require('../../../src/got');
 
 // BEGIN
 const getCustomParentFor = (child, parent = 'father') => {
-  return parentFor(child, parent);
+  return getParentFor(child, parent);
 };
 // END
 

@@ -1,10 +1,7 @@
-const reverse = require('./reverse');
+const { reverse } = require('lodash');
 
 // BEGIN
-const convertString = (string) => {
-  return string[0] === string[0].toUpperCase() ? string : reverse(string);
-}
+const convertString = string => (string[0] === string[0].toUpperCase() ? string : reverse(string));
 // END
 
 module.exports = convertString;
-
