@@ -1,8 +1,9 @@
-const assert = require('assert');
-const getSentenceTone = require(__dirname);
+const { test, expect } = require('tests');
 
-assert(getSentenceTone('normal') === 'normal');
-assert(getSentenceTone('normal?') === 'normal');
-assert(getSentenceTone('NoRmal?') === 'normal');
-assert(getSentenceTone('SCREAM') === 'scream');
-assert(getSentenceTone('SCREAM!') === 'scream');
+test((f) => {
+  expect(f('normal')).toBe('normal');
+  expect(f('normal?')).toBe('normal');
+  expect(f('NoRmal?')).toBe('normal');
+  expect(f('SCREAM')).toBe('scream');
+  expect(f('SCREAM!')).toBe('scream');
+});

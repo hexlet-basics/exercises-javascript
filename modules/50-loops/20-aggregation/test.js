@@ -1,6 +1,7 @@
-const assert = require('assert');
-const f = require('.');
+const { test, expect } = require('tests');
 
-assert.equal(f('got', 3), 'got');
-assert.equal(f('got', 2), 'go');
-assert.equal(f('got', 1), 'g');
+test((f) => {
+  expect(f('got', 3)).toEqual('got');
+  expect(f('got', 2)).toEqual('go');
+  expect(f('got', 1)).toEqual('g');
+});

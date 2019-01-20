@@ -1,8 +1,9 @@
-const assert = require('assert');
-const isNotLannisterSoldier = require(__dirname);
+const { test, expect } = require('tests');
 
-assert(isNotLannisterSoldier('blue', null) === true);
-assert(isNotLannisterSoldier('red', 'man') === true);
-assert(isNotLannisterSoldier('red', 'lion') === false);
-assert(isNotLannisterSoldier('blue', 'lion') === false);
-assert(isNotLannisterSoldier('red', null) === false);
+test((f) => {
+  expect(f('blue', null)).toBe(true);
+  expect(f('red', 'man')).toBe(true);
+  expect(f('red', 'lion')).toBe(false);
+  expect(f('blue', 'lion')).toBe(false);
+  expect(f('blue', null)).toBe(false);
+});

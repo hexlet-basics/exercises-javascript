@@ -1,8 +1,9 @@
-const assert = require('assert');
-const f = require('.');
-const str = 'Sansa Stark';
+const { test, expect } = require('tests');
 
-assert(!f(str, -1, 100));
-assert(!f(str, 10, 10));
-assert(!f(str, 11, 1));
-assert(f(str, 3, 3));
+test((f) => {
+  const name = 'Sansa Stark';
+  expect(f(name, -1, 100)).toBe(false);
+  expect(f(name, 10, 10)).toBe(false);
+  expect(f(name, 11, 1)).toBe(false);
+  expect(f(name, 3, 3)).toBe(true);
+});

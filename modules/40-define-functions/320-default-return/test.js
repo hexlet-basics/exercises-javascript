@@ -1,7 +1,5 @@
-const assert = require('assert');
-const f = require('.');
+const { test, expect } = require('tests');
 
-const expected = undefined;
-const actual = f();
-console.log(actual);
-assert.equal(actual, expected);
+test((f) => {
+  expect(f).toBeUndefined();
+});

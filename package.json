@@ -7,8 +7,9 @@
     "transform": {}
   },
   "dependencies": {
-    "lodash": "^4.17.11",
-    "jest": "^23.5.0",
-    "jest-cli": "^23.5.0"
+    "chai": "^4.2.0",
+    "clean-stack": "^2.0.0",
+    "expect": "^23.6.0",
+    "lodash": "^4.17.11"
   }
 }

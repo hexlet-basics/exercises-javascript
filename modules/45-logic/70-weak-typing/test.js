@@ -1,10 +1,11 @@
-const assert = require('assert');
-const isFalsy = require('.');
+const { test, expect } = require('tests');
 
-assert(isFalsy('') === true);
-assert(isFalsy(' ') === true);
-assert(isFalsy(null) === false);
-assert(isFalsy(undefined) === false);
-assert(isFalsy(false) === true);
-assert(isFalsy(true) === false);
-assert(isFalsy(3) === false);
+test((f) => {
+  expect(f('')).toBe(false);
+  expect(f('  ')).toBe(false);
+  expect(f(null)).toBe(false);
+  expect(f(undefined)).toBe(false);
+  expect(f(false)).toBe(false);
+  expect(f(true)).toBe(false);
+  expect(f(3)).toBe(false);
+});

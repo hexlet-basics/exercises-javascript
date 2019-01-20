@@ -1,5 +1,6 @@
-const assert = require('assert');
-const normalizeUrl = require(__dirname);
+const { test, expect } = require('tests');
 
-assert(normalizeUrl('yandex.ru') === 'https://yandex.ru');
-assert(normalizeUrl('https://yandex.ru') === 'https://yandex.ru');
+test((f) => {
+  expect(f('yandex.ru')).toBe('https://yandex.ru');
+  expect(f('https://yandex.ru')).toBe('https://yandex.ru');
+});

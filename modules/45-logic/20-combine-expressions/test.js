@@ -1,7 +1,8 @@
-const assert = require('assert');
-const hasTargaryenReference = require(__dirname);
+const { test, expect } = require('tests');
 
-assert(hasTargaryenReference('') === false);
-assert(hasTargaryenReference('Targari') === false);
-assert(hasTargaryenReference('targaryen') === false);
-assert(hasTargaryenReference('Targaryen') === true);
+test((f) => {
+  expect(f('')).toBe(false);
+  expect(f('Targari')).toBe(false);
+  expect(f('targaryen')).toBe(false);
+  expect(f('Targaryen')).toBe(false);
+});

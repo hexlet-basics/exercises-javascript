@@ -1,8 +1,9 @@
-const assert = require('assert');
-const whoIsThisHouseToStarks = require(__dirname);
+const { test, expect } = require('tests');
 
-assert(whoIsThisHouseToStarks('Tally') === 'friend');
-assert(whoIsThisHouseToStarks('Karstark') === 'friend');
-assert(whoIsThisHouseToStarks('Lannister') === 'enemy');
-assert(whoIsThisHouseToStarks('Martell') === 'neutral');
-assert(whoIsThisHouseToStarks('undefined') === 'neutral');
+test((f) => {
+  expect(f('Tally')).toBe('friend');
+  expect(f('Karstark')).toBe('friend');
+  expect(f('Lannister')).toBe('enemy');
+  expect(f('Martell')).toBe('neutral');
+  expect(f('undefined')).toBe('neutral');
+});

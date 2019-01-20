@@ -1,7 +1,7 @@
-const assert = require('assert');
-const f = require('.');
+const { test, expect } = require('tests');
 
-const expected = 'Daenerys';
-const actual = f('daenerys');
-console.log(actual);
-assert.equal(actual, expected);
+test((f) => {
+  const expected1 = 'Daenerys';
+  const actual1 = f('daenerys');
+  expect(f(actual1)).toEqual(expected1);
+});

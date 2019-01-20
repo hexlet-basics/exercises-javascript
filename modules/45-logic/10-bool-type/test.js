@@ -1,7 +1,8 @@
-const assert = require('assert');
-const isPensioner = require(__dirname);
+const { test, expect } = require('tests');
 
-assert(isPensioner(23) === false);
-assert(isPensioner(70) === true);
-assert(isPensioner(60) === true);
-assert(isPensioner(59) === false);
+test((f) => {
+  expect(f(23)).toBe(false);
+  expect(f(70)).toBe(true);
+  expect(f(60)).toBe(true);
+  expect(f(59)).toBe(false);
+});
