@@ -6,12 +6,13 @@ const shouter = (str) => {
 
   if (str.length > 0 && str.length < 5) {
     return str;
-  } else if (str.length === 5) {
+  }
+  if (str.length === 5) {
     counter = 0;
     counterLimit = 10;
 
     while (counter !== counterLimit) {
-      result = `{result}{str}`;
+      result = `${result}${str}`;
       counter += 1;
     }
   } else {
@@ -19,7 +20,7 @@ const shouter = (str) => {
     counterLimit = 100;
 
     while (counter !== counterLimit) {
-      result = "{result}{str}";
+      result = `${result}${str}`;
       counter += 1;
     }
   }

@@ -1,9 +1,5 @@
-<?php
-
-$str = 'a mind needs books as a sword needs a whetstone, if it is to keep its edge.';
+const text = 'When  \n	you play a game of thrones you win or you die.';
 
 // BEGIN
-$str = strtoupper($str);
+console.log(text.substr(5, 10).trim().length);
 // END
-
-print_r($str);

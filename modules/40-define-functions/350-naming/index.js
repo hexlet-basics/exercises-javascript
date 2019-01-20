@@ -1,7 +1,8 @@
 // BEGIN
-const getFormattedBirthday = (day, month, year) => {
-    return sprintf('%02d-%02d-%d', day, month, year);
-}
+const getHiddenCard = (cardNumber, starsCount = 4) => {
+  const last4Digits = cardNumber.slice(-4);
+  return last4Digits.padStart(starsCount + last4Digits.length, '*');
+};
 // END
 
-module.exports = getFormattedBirthday;
+module.exports = getHiddenCard;

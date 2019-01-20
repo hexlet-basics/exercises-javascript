@@ -1,4 +1,4 @@
 const { expectOutput } = require('tests');
 
-const expected = '~^%';
+const expected = '~\n^\n%';
 expectOutput(expected);

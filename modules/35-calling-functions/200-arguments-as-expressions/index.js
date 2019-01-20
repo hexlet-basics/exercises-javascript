@@ -1,4 +1,4 @@
-const { calculateDistanceBetweenTowns } = require('../../../got');
+const { calculateDistanceBetweenTowns } = require('got');
 
 const from = 'The Twins';
 const to = 'The Eyrie';

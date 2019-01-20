@@ -1,9 +1,5 @@
-<?php
-
-$str = 'a mind needs books as a sword needs a whetstone, if it is to keep its edge.';
+const text = 'Never forget what you are, for surely the world will not';
 
 // BEGIN
-$str = strtoupper($str);
+console.log(`First: ${text[0]}\nLast: ${text[text.length - 1]}`);
 // END
-
-print_r($str);

@@ -12,9 +12,9 @@ const expectOutput = (expected, run = f => f()) => {
   if (typeof f === 'function') {
     run(f);
   }
-  const content = logs.toString().trim();
+  const content = logs.join('\n').toString().trim();
   try {
-    expect(content).toBe(expected);
+    expect(content).toBe(expected.toString());
   } catch (e) {
     console.log(cleanStack(e.stack));
     process.exit(1);

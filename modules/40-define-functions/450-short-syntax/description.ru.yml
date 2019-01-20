@@ -50,4 +50,6 @@ instructions: |
     console.log(capitalize(name)); // => Arya
     ```
 
+  Чтобы отрезать первый символ от строки, используйте метод [String.prototype.slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
+
 tips: []

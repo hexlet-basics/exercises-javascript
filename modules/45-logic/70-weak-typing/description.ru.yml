@@ -39,8 +39,6 @@ theory: |
   * Всё остальное превращается в `true`
   * `null` это особый тип данных, который не преобразуется
 
-  В JavaScript console.log может выводить любые типы, в отличие от print_r в php.
-
   ```javascript
   console.log(true);
   ```

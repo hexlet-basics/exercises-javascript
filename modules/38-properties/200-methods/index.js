@@ -1,9 +1,6 @@
-<?php
-
-$str = 'a mind needs books as a sword needs a whetstone, if it is to keep its edge.';
+const text = 'a MIND needs Books as a Sword needS a WHETSTONE, if it is to keep its edge.';
 
 // BEGIN
-$str = strtoupper($str);
+const lowerText = text.toLowerCase(text);
+console.log(lowerText);
 // END
-
-print_r($str);
