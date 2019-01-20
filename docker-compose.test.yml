@@ -1,7 +1,8 @@
 ---
 
-version: '3'
+version: '2'
 
-test:
-  build: .
-  command: make lint test
+services:
+  sut:
+    build: .
+    command: make lint test
