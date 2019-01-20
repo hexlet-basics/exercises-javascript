@@ -26,46 +26,24 @@ theory: |
 
 instructions: |
 
-  В PHP из языка Си перекочевала интересная функция `sprintf`. Она создаёт строку на основе шаблона и данных.
+  Реализуйте функцию, которая принимает на вход номер кредитки (состоящей из 16 букв) и возвращает его скрытую версию, которая может использоваться на сайте для отображения. Если исходная карта имела номер _2034399002125581_,  то скрытая версия выглядит так _****5581_. Другими словами, функция заменяет первые 12 символов, на четыре звездочки. Количество звездочек регулируется вторым необязательным параметром. Значение по умолчанию - 4
 
-  ```php
-  <?php
+  ```javascript
+  const hiddenCardNumber = getHiddenCard(2034399002125581);
+  console.log(hiddenCardNumber); // ****5581
 
-  $result = sprintf('Today is %s %d', 'February', 8);
-  print_r($result);
+  const hiddenCardNumber = getHiddenCard(2034399002125581, 2);
+  console.log(hiddenCardNumber); // **5581
   ```
 
-  <pre class='hexlet-basics-output'>Today is February 8</pre>
+  <pre class='hexlet-basics-output'>
+  ****5581
+  </pre>
 
-  Первый аргумент в `sprintf` — строка-шаблон, в которой кроме самого текста могут присутствовать специальные заполнители. Это «заглушки» для информации, которая передаётся следующими аргументами. `%s` означает «заглушка для строки», `%d` — для числа. Поэтому следующие два аргумента в нашем примере — строка и число.
+  Полезные функции:
 
-  Порядок и тип значений должны совпадать с порядком и типом заглушек.
-
-  При выводе дат иногда требуется фиксировать количество цифр, скажем, всегда писать нули перед числом если число меньше 10. `sprintf` позволяет решить эту задачу:
-
-  ```php
-  <?php
-
-  $result = sprintf('Today is %s %02d', 'February', 8);
-  print_r($result);
-  ```
-
-  <pre class='hexlet-basics-output'>Today is February 08</pre>
-
-  `%02d` — сделать две цифры и заполнить нулями оставшееся пространство. `%03d` — три цифры, и так далее:
-
-  ```php
-  <?php
-
-  $result = sprintf('Today is %s %04d', 'February', 8);
-  print_r($result);
-  ```
-
-  <pre class='hexlet-basics-output'>Today is February 0008</pre>
-
-  Реализуйте функцию `getFormattedBirthday`, которая принимает на вход три параметра: день, месяц и год рождения, а возвращает их строкой в отформатированном виде, например: `30-02-1953`.
-
-  День и месяц нужно форматировать так, чтобы при необходимости добавлялся `0` слева. Например, если в качестве месяца пришла цифра `7`, то в выходной строке она должна быть представлена как `07`.
+  * [String.prototype.slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
+  * [String.prototype.padStart](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart)
 
 tips:
   - |

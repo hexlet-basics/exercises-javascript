@@ -42,7 +42,7 @@ instructions: |
   Вот пример использования, где на экран выводится расстояние между Lannisport и Bayasabhad:
 
   ```javascript
-  const { calculateDistance } = require('../../../got');
+  const { calculateDistance } = require('got');
 
   const distance = calculateDistance('Lannisport', 'Bayasabhad');
   console.log(distance);

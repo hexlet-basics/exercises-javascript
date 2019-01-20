@@ -1,4 +1,4 @@
 const { expectOutput } = require('tests');
 
-const expected = 'Rhaella Targaryen';
+const expected = 'кечолуб хиксзуцнарф хикгям хитэ еще ьшеъс';
 expectOutput(expected);

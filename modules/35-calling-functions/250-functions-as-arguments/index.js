@@ -1,4 +1,4 @@
-const { getParentFor } = require('../../../got');
+const { getParentFor } = require('got');
 
 // BEGIN
 const joffreyMom = getParentFor('Joffrey Baratheon');

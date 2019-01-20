@@ -1,4 +1,4 @@
 const { expectOutput } = require('tests');
 
-const expected = 'undefined';
+const expected = '';
 expectOutput(expected);

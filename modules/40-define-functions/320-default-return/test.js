@@ -1,5 +1,5 @@
 const { test, expect } = require('tests');
 
 test((f) => {
-  expect(f).toBeUndefined();
+  expect(f()).toBeUndefined();
 });

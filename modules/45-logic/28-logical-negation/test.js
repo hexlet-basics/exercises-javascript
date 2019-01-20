@@ -5,5 +5,5 @@ test((f) => {
   expect(f('red', 'man')).toBe(true);
   expect(f('red', 'lion')).toBe(false);
   expect(f('blue', 'lion')).toBe(false);
-  expect(f('blue', null)).toBe(false);
+  expect(f('blue', null)).toBe(true);
 });

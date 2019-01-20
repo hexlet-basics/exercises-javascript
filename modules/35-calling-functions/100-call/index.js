@@ -1,4 +1,4 @@
-const { calculateDistance } = require('../../../src/got');
+const { calculateDistance } = require('got');
 
 // BEGIN
 const distance = calculateDistance('Qarth', 'Vaes Dothrak');

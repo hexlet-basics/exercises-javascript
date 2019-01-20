@@ -1,9 +1,6 @@
-<?php
-
-$str = 'a mind needs books as a sword needs a whetstone, if it is to keep its edge.';
+let firstName = '  Grigor   \n';
 
 // BEGIN
-$str = strtoupper($str);
+firstName = firstName.trim();
+console.log(firstName);
 // END
-
-print_r($str);
