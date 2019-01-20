@@ -1,5 +1,6 @@
-const assert = require('assert');
-const convertString = require(__dirname);
+const { test, expect } = require('tests');
 
-assert(convertString('hey') === 'yeh');
-assert(convertString('Hey') === 'Hey');
+test((f) => {
+  expect(f('hey')).toBe('yeh');
+  expect(f('Hey')).toBe('Hey');
+});

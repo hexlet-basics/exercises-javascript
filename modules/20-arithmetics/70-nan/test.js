@@ -1,7 +1,4 @@
-const childProcess = require('child_process');
-const assert = require('assert');
+const { expectOutput } = require('tests');
 
-const stdout = childProcess.execSync(`node ${__dirname}/index.js`);
-const content = stdout.toString().trim();
-console.log(content);
-assert.strictEqual(content, '49');
+const expected = '49';
+expectOutput(expected);

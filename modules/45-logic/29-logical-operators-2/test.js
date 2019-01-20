@@ -1,7 +1,8 @@
-const assert = require('assert');
-const isNeutralSoldier = require(__dirname);
+const { test, expect } = require('tests');
 
-assert(isNeutralSoldier('yellow', 'black') === true);
-assert(isNeutralSoldier('red', 'yellow') === false);
-assert(isNeutralSoldier('red', 'red') === false);
-assert(isNeutralSoldier('black', 'black') === true);
+test((f) => {
+  expect(f('yellow', 'black')).toBe(true);
+  expect(f('red', 'yellow')).toBe(false);
+  expect(f('red', 'red')).toBe(false);
+  expect(f('black', 'black')).toBe(true);
+});
