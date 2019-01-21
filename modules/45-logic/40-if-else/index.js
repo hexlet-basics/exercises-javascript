@@ -1,9 +1,12 @@
 // BEGIN
-const normalizeUrl = (site) => {
-  if (!site.includes('https://')) {
-    return `https://${site}`;
+const normalizeUrl = (url) => {
+  let normalizedUrl;
+  if (url.startsWith('http://')) {
+    normalizedUrl = url.slice(7);
+  } else {
+    normalizedUrl = url;
   }
-  return site;
+  return `https://${normalizedUrl}`;
 };
 // END
 
