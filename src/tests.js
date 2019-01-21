@@ -8,12 +8,12 @@ const expectOutput = (expected, run = f => f()) => {
     oldLog(...args);
     logs.push(args);
   };
-  const f = require(process.cwd());
-  if (typeof f === 'function') {
-    run(f);
-  }
-  const content = logs.join('\n').toString().trim();
   try {
+    const f = require(process.cwd());
+    if (typeof f === 'function') {
+      run(f);
+    }
+    const content = logs.join('\n').toString().trim();
     expect(content).toBe(expected.toString());
   } catch (e) {
     console.log(cleanStack(e.stack));
@@ -22,8 +22,8 @@ const expectOutput = (expected, run = f => f()) => {
 };
 
 const test = (run) => {
-  const f = require(process.cwd());
   try {
+    const f = require(process.cwd());
     run(f);
   } catch (e) {
     console.log(cleanStack(e.stack));
