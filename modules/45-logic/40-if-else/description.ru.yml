@@ -31,20 +31,20 @@ instructions: |
 
   Реализуйте функцию `normalizeUrl`, которая выполняет так называемую нормализацию данных. Она принимает адрес сайта и возвращает его с `https://` в начале.
 
-  Функция принимает адреса в виде `АДРЕС` или `https://АДРЕС`, но всегда возвращает адрес в виде `https://АДРЕС`
+  Функция принимает адреса в виде `АДРЕС` или `http://АДРЕС`, но всегда возвращает адрес в виде `https://АДРЕС`
 
   Есть два пути решения:
 
   1. Можно сравнить первые 8 символов строки-аргумента со строкой `https://`.
-  2. Можно использовать метод [includes](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/includes) чтобы проверить, содержится ли в строке-аргументе подстрока `https://`
+  2. Можно использовать метод [startsWith](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith) чтобы проверить, содержится ли в строке-аргументе подстрока `http://`
 
   А потом на основе этого добавлять или не добавлять `https://`.
 
   Примеры вызова:
 
   ```javascript
-  normalizeUrl('google.com'); // => 'https://google.com'
-  normalizeUrl('https://ai.fi'); // => 'https://ai.fi'
+  normalizeUrl('google.com'); // 'https://google.com'
+  normalizeUrl('http://ai.fi'); // 'https://ai.fi'
   ```
 
 tips: []
