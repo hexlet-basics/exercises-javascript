@@ -52,7 +52,7 @@ theory: |
 
   ```javascript
   const showCurrentDate = () => {
-      $text = 'Today is: December 5';
+      const text = 'Today is: December 5';
       // какой-нибудь код
   };
   ```
