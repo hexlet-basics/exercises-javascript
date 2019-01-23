@@ -1,6 +1,6 @@
 // BEGIN
 const hasTargaryenReference = (string) => {
-  const prefix = string.substr(0, 9);
+  const prefix = string.substring(0, 9);
   return prefix === 'Targaryen';
 };
 // END
