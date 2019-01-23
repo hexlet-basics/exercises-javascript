@@ -1,5 +1,5 @@
 // BEGIN
-const isPernsioner = age => age >= 60;
+const isPensioner = age => age >= 60;
 // END
 
-module.exports = isPernsioner;
+module.exports = isPensioner;
