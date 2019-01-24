@@ -44,7 +44,7 @@ theory: |
     if (length > 5) {
       let counter = 0;
       while (counter !== 100) {
-        print_r(str);
+        console.log(str);
         counter += 1;
       }
     }
@@ -61,7 +61,7 @@ theory: |
 
   <pre class='hexlet-basics-output'>HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!</pre>
 
-  А теперь давайте модифицируем функцию так, чтобы она возвращала результат, а не выводила его на экран. Воспользуемся тем же приёмом, что был в функции для переворота строки: создадим пустую строку `$result` и будем её наполнять в цикле, а потом вернём из функции.
+  А теперь давайте модифицируем функцию так, чтобы она возвращала результат, а не выводила его на экран. Воспользуемся тем же приёмом, что был в функции для переворота строки: создадим пустую строку `result` и будем её наполнять в цикле, а потом вернём из функции.
 
   ```javascript
   const shouter = (text) => {
@@ -69,8 +69,8 @@ theory: |
 
     if (text.length > 5) {
         let counter = 0;
-        while ($counter !== 100) {
-          const result = result . text;
+        while (counter !== 100) {
+          result += text;
           counter += 1;
         }
     }

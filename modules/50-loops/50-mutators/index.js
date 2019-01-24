@@ -1,3 +1,4 @@
+// BEGIN
 const filterString = (str, char) => {
   let index = 0;
   let result = '';
@@ -11,5 +12,6 @@ const filterString = (str, char) => {
 
   return result;
 };
+// END
 
 module.exports = filterString;

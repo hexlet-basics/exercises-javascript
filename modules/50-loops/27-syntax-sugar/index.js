@@ -1,3 +1,4 @@
+// BEGIN
 const countChars = (str, char) => {
   let index = str.length - 1;
   let result = 0;
@@ -10,5 +11,6 @@ const countChars = (str, char) => {
 
   return result;
 };
+// END
 
 module.exports = countChars;
