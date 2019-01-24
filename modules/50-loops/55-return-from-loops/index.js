@@ -1,3 +1,4 @@
+// BEGIN
 const doesContain = (str, char) => {
   let index = 0;
   while (index < str.length) {
@@ -10,5 +11,6 @@ const doesContain = (str, char) => {
 
   return false;
 };
+// END
 
 module.exports = doesContain;

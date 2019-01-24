@@ -1,3 +1,4 @@
+// BEGIN
 const getEvenNumbersUpTo = (num) => {
   let counter = 1;
   let result = '';
@@ -12,5 +13,6 @@ const getEvenNumbersUpTo = (num) => {
 
   return result;
 };
+// END
 
 module.exports = getEvenNumbersUpTo;

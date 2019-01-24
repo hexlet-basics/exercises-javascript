@@ -1,3 +1,4 @@
+// BEGIN
 const sumOfSeries = (start, finish) => {
   /*
    * Обратите внимание: мы создали новую переменную,
@@ -13,5 +14,6 @@ const sumOfSeries = (start, finish) => {
 
   return sum;
 };
+// END
 
 module.exports = sumOfSeries;

@@ -29,7 +29,7 @@ theory: |
     let result = '';
 
     while (counter !== num) {
-      result = result . counter;
+      result += counter;
       counter += 1;
     }
 
@@ -63,7 +63,7 @@ theory: |
     let result = '';
 
     while (counter <= num) {
-      result = result . counter;
+      result += counter;
       counter += 1;
     }
 
@@ -92,7 +92,7 @@ theory: |
 
     while (counter <= num) {
       if (counter % 2 === 0) {
-          result = result . counter;
+          result += counter;
       }
 
       counter += 1;
