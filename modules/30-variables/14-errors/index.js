@@ -1,7 +1,7 @@
 const family = 'Targaryen';
 
 // BEGIN
-const pet = 'Dragon';
+let pet = 'Dragon';
 // END
 
 console.log(family);
