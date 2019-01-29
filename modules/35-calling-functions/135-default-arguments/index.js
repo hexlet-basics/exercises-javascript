@@ -1,4 +1,4 @@
-const { round } = require('math');
+const { round } = require('hexlet/math');
 
 const number = 10.1234;
 

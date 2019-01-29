@@ -8,7 +8,7 @@ theory: |
   Любой язык программирования позволяет расширять набор операций. Такие новые операции называются «функциями». Давайте сначала научимся пользоваться уже созданными функциями, а уже потом будем создавать новые функции. Ниже пример вызова функции `reverse`, которая переворачивает строку.
 
   ```javascript
-  const { reverse } = require('./string');
+  const { reverse } = require('hexlet/string');
 
   const result = reverse('Hello!');
   console.log(result); // => !olleH
@@ -23,7 +23,7 @@ theory: |
   Вызов функции всегда обозначается скобками `()`, идущими сразу за именем функции. В скобках может быть любое количество аргументов, а иногда — вообще ни одного. Количество зависит от используемой функции, например функция `pow` принимает на вход два аргумента, и возводит число переданное первым параметром, в степень переданную вторым параметром.
 
   ```javascript
-  const { pow } = require('./math');
+  const { pow } = require('hexlet/math');
 
   const result = pow(2, 3); // 2 * 2 * 2
   console.log(result); // => 8
@@ -42,7 +42,7 @@ instructions: |
   Вот пример использования, где на экран выводится расстояние между Lannisport и Bayasabhad:
 
   ```javascript
-  const { calculateDistance } = require('got');
+  const { calculateDistance } = require('hexlet/got');
 
   const distance = calculateDistance('Lannisport', 'Bayasabhad');
   console.log(distance);

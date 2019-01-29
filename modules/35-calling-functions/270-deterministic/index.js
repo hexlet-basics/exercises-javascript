@@ -1,4 +1,4 @@
-const { toUpperCase } = require('string');
+const { toUpperCase } = require('hexlet/string');
 
 const text = 'стучать!';
 // BEGIN

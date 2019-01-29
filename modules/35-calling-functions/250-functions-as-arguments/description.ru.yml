@@ -6,7 +6,7 @@ theory: |
   Продолжаем тему выражений. Как вы помните, **вызов функции — выражение**, а значит мы можем положить вызов функции в вызов функции (…в вызов функции в вызов функции в вызов… а-а-а!).
 
   ```javascript
-  const { round } = require('./math');
+  const { round } = require('hexlet/math');
 
   const number = -100.234203;
   $result = round(Math.abs(number), 2); // 100.23
