@@ -1,4 +1,4 @@
-const { getParentFor } = require('got');
+const { getParentFor } = require('hexlet/got');
 
 // BEGIN
 const getCustomParentFor = (child, parent = 'father') => {
