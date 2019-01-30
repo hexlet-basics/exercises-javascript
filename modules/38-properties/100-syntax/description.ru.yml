@@ -37,4 +37,6 @@ instructions: |
   Напечатайте на экран длину строки `text`.
 
 
-tips: []
+tips:
+  - |
+    [String.length](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/length)
