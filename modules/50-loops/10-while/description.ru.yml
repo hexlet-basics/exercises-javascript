@@ -59,7 +59,9 @@ instructions: |
   // => finished!
   ```
 
-tips: []
+tips:
+  - |
+    [Цикл while](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/while)
 
 definitions:
   - name: Цикл While
