@@ -1,4 +1,4 @@
-FROM node:10
+FROM node:11.6
 
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
@@ -12,5 +12,7 @@ WORKDIR /exercises-javascript
 COPY package.json package.json
 # COPY package-lock.json package-lock.json
 RUN npm install
+
+ENV NODE_PATH /exercises-javascript/src
 
 COPY . /exercises-javascript

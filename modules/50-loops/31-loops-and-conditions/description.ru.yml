@@ -1,0 +1,92 @@
+---
+
+name: Циклы и условия
+theory: |
+
+  Циклы и условия — ключевые инструменты в программировании. Поэтому стоит рассмотреть еще несколько примеров.
+
+  #### Пример 1: Запуск цикла при условии
+
+  Задача: написать функцию `shouter`, которая принимает строку и, если в строке больше 5 символов, выводит её на экран 100 раз. Если в строке 5 символов или меньше, то функция ничего не делает.
+
+  Начнём писать функцию:
+
+  ```javascript
+  const shouter = (text) => {
+
+  }
+  ```
+
+  Как вы наверное догадались, чтобы вывести строку 100 раз на экран, понадобится цикл. Но это нужно только в случае, если строка больше 5 букв.
+
+  Значит, нужно начать с создания условия:
+
+  ```javascript
+  const shouter = (text) => {
+    if (text.length > 5) {
+
+    }
+  }
+  ```
+
+  Внутри фигурных `{ }` скобок после `if`  будет код, который исполнится только при условии `length > 5`. Здесь будет цикл для повторения 100 раз.
+
+  Напомним стратегию для создания подобных циклов:
+
+  1. Создать счётчик и задать ему начальное значение.
+  2. Сделать цикл, который будет повторяться пока счётчик не дошёл до какого-то конечного значения.
+  3. В теле цикла выполнять нужное действие (в нашем случае — вывод на экран) и обновлять счётчик.
+
+  Нам нужно 100 повторений, поэтому сделаем счётчик со значением 0 и будем увеличивать его на 1 каждый шаг, и так до тех пор пока счётчик не станет равным 100.
+
+  ```javascript
+  const shouter = (text) => {
+    if (length > 5) {
+      let counter = 0;
+      while (counter !== 100) {
+        console.log(str);
+        counter += 1;
+      }
+    }
+  }
+  ```
+
+  `counter += 1` это увеличение счётчика на 1.
+
+  Запустим:
+
+  ```javascript
+  shouter('HELLO!');
+  ```
+
+  <pre class='hexlet-basics-output'>HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!HELLO!</pre>
+
+  А теперь давайте модифицируем функцию так, чтобы она возвращала результат, а не выводила его на экран. Воспользуемся тем же приёмом, что был в функции для переворота строки: создадим пустую строку `result` и будем её наполнять в цикле, а потом вернём из функции.
+
+  ```javascript
+  const shouter = (text) => {
+    let result = '';
+
+    if (text.length > 5) {
+        let counter = 0;
+        while (counter !== 100) {
+          result += text;
+          counter += 1;
+        }
+    }
+
+    return result;
+  }
+  ```
+
+instructions: |
+
+  Модифицируйте последний вариант функции `shouter`, добавив такие условия:
+
+  1. Если длина строки больше 0 и меньше 5, то вернуть оригинальную строку без повторений.
+  2. Если длина строки ровно 5 символов, то вернуть строку, повторенную 10 раз.
+
+  Условие «длина больше 5, то вернуть строку, повторенную 100 раз» должно сохраниться.
+
+
+tips: []

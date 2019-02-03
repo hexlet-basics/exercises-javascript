@@ -1,0 +1,29 @@
+---
+
+substitutions:
+  _SLACK_WEBHOOK: 'key'
+
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+      'build',
+      '-t', 'gcr.io/$PROJECT_ID/exercises-javascript:latest',
+      '--cache-from', 'gcr.io/$PROJECT_ID/exercises-javascript:latest',
+      '.'
+    ]
+  - name: 'docker/compose:1.19.0'
+    args: [
+      'run',
+      'test',
+    ]
+
+  - name: 'technosophos/slack-notify'
+    env:
+      - 'SLACK_WEBHOOK=${_SLACK_WEBHOOK}'
+      - 'SLACK_MESSAGE=exercises-javascript was built (${SHORT_SHA})'
+      - 'SLACK_TITLE="${PROJECT_ID}:exercises-javascript:${BRANCH_NAME}"'
+      - 'SLACK_USERNAME=cloudbuild'
+
+images: ['gcr.io/$PROJECT_ID/exercises-javascript:latest']
+
+

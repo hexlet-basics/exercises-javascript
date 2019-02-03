@@ -1,0 +1,54 @@
+---
+
+name: else
+theory: |
+
+  Попробуем изменить функцию из предыдущего примера так, чтобы она возвращала не просто тип предложения, а целую строку `Sentence is normal` или `Sentence is question`.
+
+  ```javascript
+  const getTypeOfSentence = (sentence) => {
+    const lastChar = sentence[sentence.length - 1];
+
+    let sentenceType;
+    if (lastChar === '?') {
+        sentenceType = 'question';
+    } else {
+        sentenceType = 'normal';
+    }
+
+    return `Sentence is ${sentenceType}`;
+  }
+
+  getTypeOfSentence('Hodor');  // => Sentence is normal
+  getTypeOfSentence('Hodor?'); // => Sentence is question
+  ```
+
+  Мы добавили `else` и новый блок с фигурными скобками. Этот блок выполнится только если условие в `if` — ложь.
+
+  "Else" переводится «иначе», «в ином случае».
+
+instructions: |
+
+  Реализуйте функцию `normalizeUrl`, которая выполняет так называемую нормализацию данных. Она принимает адрес сайта и возвращает его с `https://` в начале.
+
+  Функция принимает адреса в виде `АДРЕС` или `http://АДРЕС`, но всегда возвращает адрес в виде `https://АДРЕС`
+
+  Есть два пути решения:
+
+  1. Можно сравнить первые 8 символов строки-аргумента со строкой `https://`.
+  2. Можно использовать метод [startsWith](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith) чтобы проверить, содержится ли в строке-аргументе подстрока `http://`
+
+  А потом на основе этого добавлять или не добавлять `https://`.
+
+  Примеры вызова:
+
+  ```javascript
+  normalizeUrl('google.com'); // 'https://google.com'
+  normalizeUrl('http://ai.fi'); // 'https://ai.fi'
+  ```
+
+tips: []
+
+definitions:
+  - name: "else"
+    description: "способ задать блок кода, который будет выполнен если условие с `if` не удовлетворено"
