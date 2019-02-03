@@ -1,4 +1,4 @@
 const { expectOutput } = require('tests');
 
-const expected = 7;
+const expected = 8;
 expectOutput(expected);
