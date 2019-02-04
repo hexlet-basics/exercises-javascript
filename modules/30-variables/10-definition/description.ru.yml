@@ -48,7 +48,9 @@ instructions: |
 
   Создайте переменную с именем `motto` и содержимым `What Is Dead May Never Die!`. Распечайте содержимое переменной.
 
-tips: []
+tips:
+  - |
+    [let](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let)
 
 definitions:
   - name: Переменная
