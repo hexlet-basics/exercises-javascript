@@ -6,7 +6,6 @@ theory: |
   ```javascript
   'Hello'
   'Goodbye'
-
   'G'
   ' '
   ''
@@ -69,4 +68,6 @@ instructions: |
   Программа должна вывести на экран эту фразу в точности. Обратите внимание на кавычки в начале и в конце фразы.
 
 
-tips: []
+tips:
+  - |
+    [Шаблонные строки](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/template_strings)
