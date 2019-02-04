@@ -43,3 +43,5 @@ definitions:
 tips:
   - |
     [jest](http://jestjs.io/)
+  - |
+    [TDD](https://ru.wikipedia.org/wiki/Разработка_через_тестирование)
