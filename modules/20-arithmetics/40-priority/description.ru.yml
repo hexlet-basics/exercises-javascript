@@ -41,5 +41,6 @@ instructions: |
 
   Расставьте скобки так, чтобы оба сложения (`3 + 4`) и (`8 + 2`) высчитывались в первую очередь. Выведите на экран результат.
 
-
-tips: []
+tips:
+  - |
+    [Приоритет операторов](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
