@@ -9,13 +9,13 @@ theory: |
   const { round } = require('hexlet/math');
 
   const number = -100.234203;
-  $result = round(Math.abs(number), 2); // 100.23
+  const result = round(Math.abs(number), 2); // 100.23
   ```
 
   Мы вызываем функцию `round` и передаем ей два аргумента:
 
   - результат вызова функции `abs` с аргументом `number`
-  - число `2`.
+  - число `2`
 
   Можно сделать то же самое, но с промежуточными шагами:
 
