@@ -46,7 +46,7 @@ theory: |
 
   // выражения в аргументах
   round(8 + 2.25);        // 10
-  console.log('dra' . 'gon'); // 'Dragon'
+  console.log('dra' + 'gon'); // 'Dragon'
 
   // выражения с переменными в аргументах
   number = 1.25;
