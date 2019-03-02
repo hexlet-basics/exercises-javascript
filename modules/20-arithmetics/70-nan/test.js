@@ -1,4 +1,4 @@
 const { expectOutput } = require('tests');
 
-const expected = '49';
+const expected = 'NaN';
 expectOutput(expected);
