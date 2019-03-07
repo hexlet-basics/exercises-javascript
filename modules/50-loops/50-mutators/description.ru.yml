@@ -7,11 +7,11 @@ theory: |
 
   ```javascript
   let i = 0;
+  i++; // 0
   i++; // 1
-  i++; // 2
 
+  i--; // 2
   i--; // 1
-  i--; // 0
   ```
 
   Кроме постфиксной формы, у них есть и префиксная:
@@ -36,7 +36,7 @@ theory: |
   Правило работает одинаково для инкремента и декремента. Для простоты рассмотрим только инкремент:
 
   ```javascript
-  const x = 5;
+  let x = 5;
 
   console.log(++x); // => 6
   console.log(x);   // => 6
@@ -74,7 +74,7 @@ instructions: |
 
   ```javascript
   const str = 'If I look back I am lost';
-  filterString(str, 'I'); // 'f  look back am lost'
+  filterString(str, 'I'); // 'f  look back  am lost'
   filterString(str, 'o'); // 'If I lk back I am lst'
   ```
 
