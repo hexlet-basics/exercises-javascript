@@ -9,16 +9,16 @@ theory: |
 
   ```javascript
   const reverseString = (str) => {
-    let index = strlen(str) - 1;
+    let index = str.length - 1;
     let result = '';
 
     for (index; index >= 0; index--) {
       currChar = str[index];
-      result = "{result}{currChar}";
+      result = `${result}${currChar}`;
     }
 
     return result;
-  }
+  };
   ```
 
   Можно читать так: *«цикл с индексом `index` повторяется пока `index >= 0` и после каждого шага уменьшает `index` на 1»*.
