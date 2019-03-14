@@ -21,7 +21,7 @@ theory: |
 
   ```javascript
   const number = -100.234203;
-  const module = Math.abs($number); // 100.234203
+  const module = Math.abs(number); // 100.234203
   const result = round(module, 2); // 100.23
   ```
 
