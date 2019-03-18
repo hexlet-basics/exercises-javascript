@@ -12,7 +12,7 @@ theory: |
     console.log(`Today is: ${month} ${day}`);
   }
 
-  showDate('January', '29');
+  showCurrentDay('January', '29');
   ```
 
   <pre class='hexlet-basics-output'>Today is: January 29</pre>
