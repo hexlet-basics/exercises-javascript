@@ -39,4 +39,4 @@ instructions: |
 
 tips:
   - |
-    [String.length](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/length)
+    Ознакомьтесь с документацией [String.length](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/length). Обратите внимание, что длина строки — равна количеству символов в ней. Длина пустой строки `''` равна 0.
