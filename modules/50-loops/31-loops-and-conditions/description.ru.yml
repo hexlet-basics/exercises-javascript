@@ -44,7 +44,7 @@ theory: |
     if (length > 5) {
       let counter = 0;
       while (counter !== 100) {
-        console.log(str);
+        console.log(text);
         counter += 1;
       }
     }
