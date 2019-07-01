@@ -46,9 +46,9 @@ theory: |
   Пробел — такой же символ, как и другие, поэтому сколько пробелов поставить в строке — столько и получится:
 
   ```javascript
-  console.log("King's " + ' Landing');   // => Kings  Landing
+  console.log("King's " + ' Landing');   // => King's  Landing
 
-  console.log("King's  " + '  Landing'); // => Kings    Landing
+  console.log("King's  " + '  Landing'); // => King's    Landing
   ```
 
 instructions: |
