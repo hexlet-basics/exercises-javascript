@@ -19,5 +19,5 @@ instructions: |
   Note: if you write `heLLo, woRld!` Instead of `Hello, World!`, this will be considered different text, because upper and lower case letters are different characters. The size of the letter is called _case_, and they say: _case is important! _ This applies to almost everything in the code, so get used to always pay attention to the char case.
 
 tips:
-  - | |
+  - ||
     [A bit about 'Hello, World!'] (https://en.wikipedia.org/wiki/%22Hello,_World!%22_program)
