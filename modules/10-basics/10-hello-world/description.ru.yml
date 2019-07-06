@@ -1,24 +1,23 @@
 ---
 
-name: Привет, Мир!
-theory: |
-  По традиции начнем с написания программы 'Hello, World!'. Эта программа будет выводить на экран текст:
+name: Hello, World!
+theory: |Traditionally, let's start with coding 'Hello, World!'. This program will display the text:
 
-  <pre class='hexlet-basics-output'>
+  <pre class = 'hexlet-basics-output'>
     Hello, World!
   </pre>
 
-  Чтобы вывести что-то на экран, нужно дать компьютеру специальную команду. В языке JavaScript такая команда — `console.log`.
+  To display something on the screen, you need to give the computer a special command. In JavaScript, this command is `console.log`.
 
 instructions: |
-  Наберите в редакторе код из задания символ в символ и нажмите «Проверить».
+  In the code editor, type in the following code letter by letter and click “Check”.
 
-  ```javascript
-  console.log('Hello, World!');
-  ```
+  `` javascript
+  console.log ('Hello, World!');
+  `` `
 
-  Внимание: если вы напишете `heLLo, woRld!` вместо `Hello, World!`, то это будет считаться другим текстом, потому что заглавные и строчные буквы — это разные символы. Размер буквы называют _регистром_, и говорят: _регистр — важен!_ Это касается почти всего в коде, поэтому привыкайте всегда обращать внимание на регистр.
+  Note: if you write `heLLo, woRld!` Instead of `Hello, World!`, this will be considered different text, because upper and lower case letters are different characters. The size of the letter is called _case_, and they say: _case is important! _ This applies to almost everything in the code, so get used to always pay attention to the char case.
 
 tips:
-  - |
-    [Немного о 'Hello, World!'](https://ru.wikipedia.org/wiki/Hello,_world!)
+  - | |
+    [A bit about 'Hello, World!'] (https://en.wikipedia.org/wiki/%22Hello,_World!%22_program)
