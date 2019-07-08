@@ -1,0 +1,30 @@
+---
+
+name: Hello, World!
+theory: |
+  To follow the tradition we'll start with writing 'Hello, World!' program. The 
+program will display following text:
+
+  <pre class='hexlet-basics-output'>
+    Hello, World!
+  </pre>
+
+  To display on screen something, you need to give computer a special command. In 
+JavaScript language the command is — `console.log`.
+
+instructions: |
+  In the text editor type code from the task following to the letter and then press 
+"Submit".
+
+  ```javascript
+  console.log('Hello, World!');
+  ```
+  Attention: If you type `hello, woRld!` instead of `Hello, World!`, then it will 
+be counted us absolutely different text, because in JS capital and small 
+letters are different symbols with no connection at all. Letter size is 
+called _case_ so in programming the frase _case is important_ is frequently used. 
+This rule affects almost everything in code so get used to pay close attantion to 
+case.
+tips:
+  - |
+    [see more about 'Hello, World!'](https://ru.wikipedia.org/wiki/Hello,_world!)
