@@ -2,9 +2,9 @@
 
 name: Comments
 theory: |
-  Almost every programming language allows you to add comments to your code. Interpreter doesn't use comments, their only purpose is to give programmers opportunity to leave notes for themselves and others. There are two types of comments in JS:
+  Almost every programming language allows you to add comments to your code. Interpreter doesn't evaluate comments, their only purpose is to give programmers opportunity to leave notes for themselves and others. There are two types of comments in JS:
 
-  **Single line comments** start with `//`. Following any text or symbols, all of it will not be evaluated or executed.
+  **Single line comments** start with `//`.  Any text or symbols that follow, won't be evaluated or executed.
   
   A comment can take up the whole line:
   
@@ -12,7 +12,7 @@ theory: |
   // For Winterfell!
   ```
   
-  or can stay on the same line after some code:
+  or can follow some code on the same line:
   
   ```javascript
   console.log('I am the King'); // For Lannisters!
