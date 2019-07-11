@@ -1,0 +1,50 @@
+---
+
+name: Comments
+theory: |
+  Almost every programming language allows you to add comments to your code. Interpreter doesn't use comments, their only purpose is to give programmers opportunity to leave notes for themselves and others. There are two types of comments in JS:
+
+  **Single line comments** start with `//`. Following any text or symbols, all of it will not be evaluated or executed.
+  
+  A comment can take up the whole line:
+  
+   ```javascript
+  // For Winterfell!
+  ```
+  
+  or can stay on the same line after some code:
+  
+  ```javascript
+  console.log('I am the King'); // For Lannisters!
+  ```
+  
+  **Multiline comments** start with `/*` and end with `*/`. Each line between them should start with the `*`.
+
+  ```javascript
+  /*
+   * The night is dark and
+   * full of terrors.
+   */
+  console.log('I am the King');
+  ```
+  
+instructions: |
+  Create a single line comment with the folowing text: `You know nothing, Jon Snow!`.
+
+tips: []
+
+
+definitions:
+  - name: "Comment"
+    description: "A comment is just a text and it doesn't affect program execution. Programmers use it to add notes for themselves and for their colleagues"
+    
+    `// single line comment`
+    
+    ```
+    /*
+    * multiline comment
+    * multiline comment
+    */
+    ```
+    
+    
