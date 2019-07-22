@@ -10,9 +10,10 @@ theory: |
   console.log('Mother of Dragons.');
   console.log('Dracarys!');
   ```
- When you run this code you will see two sentences on the screen, one after the other.
+  
+  When you run this code you will see two sentences on the screen, one after the other.
  
- <pre class='hexlet-basics-output'>
+  <pre class='hexlet-basics-output'>
   Mother of Dragons.
   Dracarys!
   </pre>
@@ -43,3 +44,13 @@ instructions: |
     [more about interpreters](https://ru.wikipedia.org/wiki/Интерпретатор)
   - |
     [Statements and declarations by category](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements)
+    
+definitions:
+  - name: interpreter
+    description: |
+    A program executing code in JavaScript
+  - name: Statement
+    description: |
+      a command given to computer. PHP code is a set of instructions separated (most frequently) by `;`.
+ 
+ 
