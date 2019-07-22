@@ -1,0 +1,56 @@
+---
+
+name: Instructions
+theory: |
+  Instruction is a command given to computer. JavaScript code is usually a set of instructions separated by `;`.
+  
+  Here is an example of code with two instructions.
+  
+  ```javascript
+  console.log('Mother of Dragons.');
+  console.log('Dracarys!');
+  ```
+  
+  When you run this code you will see two sentences on the screen, one after the other.
+ 
+  <pre class='hexlet-basics-output'>
+  Mother of Dragons.
+  Dracarys!
+  </pre>
+  
+  Actually, it's possible to put multiple instructions on the same line:
+  
+  ```javascript
+  console.log('Mother of Dragons.'); console.log('Drakarys!');
+  ```
+  
+  but it's considered bad practice as it's hard to read.
+  
+  Interpreter, the program which executes code in JavaScript needs such splitting. This interpreter in JS world is any browser (as it's able to JS code) or Node.js (in the same reason). The operation principle of any interpreter is (approximately) as follows. It reads the file with code, splits it into instructions and then executes them in turn.
+  
+instructions: |
+  Output these three names on the screen, one after the other: "Robert", "Stannis", "Renly".
+  
+  <pre class='hexlet-basics-output'>
+  Robert
+  Stannis
+  Renly
+  </pre>
+  
+  For each name call it's own `console.log` 
+  
+  tips:
+  - |
+    [more about interpreters](https://ru.wikipedia.org/wiki/Интерпретатор)
+  - |
+    [Statements and declarations by category](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements)
+    
+definitions:
+  - name: interpreter
+    description: |
+    A program executing code in JavaScript
+  - name: Statement
+    description: |
+      a command given to computer. PHP code is a set of instructions separated (most frequently) by `;`.
+ 
+ 
