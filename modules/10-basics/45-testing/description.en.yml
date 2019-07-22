@@ -1,0 +1,27 @@
+---
+
+name: How do we verify solutions?
+theory: |
+  Our website verifies your solutions automatically. You may wonder how it works.
+  
+  In the simplest case the system runs your code and analyzes the screen output. Then it compares the actual output against the expected output.
+  
+  The following lessons deal with more complex matters. You will be writing functions: a kind of mini-programs that receive some data from outside and perform operations on it. Verifying solutions gets a little more complicated in that case. The system runs your code sending some data to it. The system knows what result a correctly written function would receive with that particular data and "expects" it.
+  
+  Let's assume your task is to program a function that adds two numbers. The verification system would give it several combinations of numbers and compare your function's answers with correctly calculated ones. If all actual values match the expected ones, your solution would be considered valid.
+  
+  This approach is named testing. It is used extensively in the real life day-to-day development process. Developers usually write tests _first_, and only after proceed to writing the program itself. During that process he runs tests multiple time to check how close he got to the desired solution. 
+  
+  That is why our website says “Tests passed” once you solved the task correctly.
+  
+  One of your tasks in the following lessons will be to write a function that performs certain calculations and returns the result. As an example, let's assume you made a small mistake and the function returned a wrong value. In that case, the system will give you the following message:
+
+  <pre class='hexlet-basics-output'>
+    ● test
+    expect(received).toBe(expected) // Object.is equality
+    Expected value to be:
+      "Hello, World!"
+    Received:
+      "ello, World!"
+  </pre>
+  
