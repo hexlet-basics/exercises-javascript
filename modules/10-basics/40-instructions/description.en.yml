@@ -51,6 +51,6 @@ definitions:
     A program executing code in JavaScript
   - name: Statement
     description: |
-      a command given to computer. PHP code is a set of instructions separated (most frequently) by `;`.
+      a command given to computer. JavaScript code is a set of instructions separated (most frequently) by `;`.
  
  
