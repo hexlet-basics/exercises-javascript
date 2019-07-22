@@ -36,15 +36,16 @@ tips: []
 
 definitions:
   - name: "Comment"
-    description: "A comment is just a text and it doesn't affect program execution. Programmers use it to add notes for themselves and for their colleagues"
+    description: |
+      "A comment is just a text and it doesn't affect program execution. Programmers use it to add notes for themselves and for their colleagues"
     
-    `// single line comment`
-    
-    ```
-    /*
-    * multiline comment
-    * multiline comment
-    */
-    ```
+      `// single line comment`
+      
+      ```
+      /*
+      * multiline comment
+      * multiline comment
+      */
+      ```
     
     
