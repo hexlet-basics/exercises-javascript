@@ -1,0 +1,33 @@
+---
+
+name: Syntax errors
+theory: |
+  If a JavaScript program isn't syntactically correct, interpreter will show a relevant message and a note with a file and line where an error might have occured. **Syntax errors** occur when the code has grammar mistakes. Grammar rules are important in human languages but the lack of it won't affect your ability to read or understand any text. But in programming everything should be strict. Even a tiny violation and your program will not run. A wrong parenthesis order, a `;` that you forgot to add — these are just some examples of such violations.
+  
+  Here is an example of code with a syntax error:
+  
+  ```javascript
+  console.log('Hodor'
+  ```
+  
+  If we run this code we will see the following message: `SyntaxError: missing ) after argument list`. In JavaScript such errors are called "SyntaxError". As we can see it includes a file path and a line number.
+  
+  On one hand, "SyntaxError" are the simplest because they are all about code grammar rules and aren't related to any code logic. They can be easily fixed, you just need to find them.
+  
+  On the other hand, interpreter will not always tell you the correct position of an error. Sometimes you need to add a forgotten bracket to another place as opposed to what the error message says.
+
+instructions: |
+
+  This task isn't related to the lesson directly but it would be useful to practice displaying content to the screen anyway.
+  
+  Display following text `What Is Dead May Never Die`.
+
+tips:
+  - |
+    [JavaScript errors](https://habr.com/ru/post/249525/)
+
+definitions:
+  - name: "Syntax error"
+    description: "violation of grammar rules in a programming language"
+  - name: "SyntaxError (Parse error)"
+    description: "type of errors in JavaScript, which occur when there are syntax errors in the code"
