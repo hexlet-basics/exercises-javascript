@@ -12,7 +12,7 @@ theory: |
   
   If we run this code we will see the following message: `SyntaxError: missing ) after argument list`. In JavaScript such errors are called "SyntaxError". As we can see it includes a file path and a line number.
   
-  On one hand, "SyntaxError" are the simplest because they are all about code grammar rules and aren't related to any code logic. They can be easily fixed, you just need to find them.
+  On one hand, syntax errors are the simplest because they are all about code grammar rules and aren't related to any code logic. They can be easily fixed, you just need to find them.
   
   On the other hand, interpreter will not always tell you the correct position of an error. Sometimes you need to add a forgotten bracket to another place as opposed to what the error message says.
 
