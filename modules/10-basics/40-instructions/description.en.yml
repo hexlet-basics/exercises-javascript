@@ -48,9 +48,7 @@ instructions: |
 definitions:
   - name: interpreter
     description: |
-    A program executing code in JavaScript
+      A program executing code in JavaScript
   - name: Statement
     description: |
-      a command given to computer. PHP code is a set of instructions separated (most frequently) by `;`.
- 
- 
+      A command given to computer. JavaScript code is a set of instructions separated (most frequently) by `;`.
