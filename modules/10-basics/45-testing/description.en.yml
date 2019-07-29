@@ -19,7 +19,7 @@ theory: |
 
   <pre class='hexlet-basics-output'>
     ● test
-    
+
     expect(received).toBe(expected) // Object.is equality
     
     Expected value to be:
@@ -41,4 +41,4 @@ tips:
   - |
     [jest](http://jestjs.io/)
   - |
-    [TDD](https://ru.wikipedia.org/wiki/Test_Driven_Development)
+    [TDD](https://ru.wikipedia.org/wiki/Разработка_через_тестирование)

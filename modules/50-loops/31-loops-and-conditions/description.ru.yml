@@ -41,7 +41,7 @@ theory: |
 
   ```javascript
   const shouter = (text) => {
-    if (length > 5) {
+    if (text.length > 5) {
       let counter = 0;
       while (counter !== 100) {
         console.log(text);
