@@ -1,0 +1,56 @@
+---
+
+name: Arithmetic Operators
+theory: |
+  In math, for example, to add two numbers we write `3 + 4`. The same works in programming. Here is the program that adds two numbers.
+  
+  ```javascript
+  // Don't forget the semicolon, since each line is an instruction
+  3 + 4;
+  ```
+
+  (Remember about comments? In the code above `//` is a comment from the teacher).
+
+  Arithmetics in programming is almost identical to what you've learned in school.
+
+  The line `3 + 4;` will make the interpreter add two numbers and calculate the value. This program will work, but it's not particularly useful. We aren't giving commands really, all we're doing is telling the interpreter "here, sum of 3 and 4". In the real world it's not enough to  tell the interpreter, for instance, to calculate the sum of all the items in a cart. We usually need something like "caulcate the sum AND show the answer to the user".
+
+  We need to ask the interpreter to add numbers **AND** give it a command to do something with the result. Let's display it on the screen:
+
+  ```javascript
+  // remember the simicolon!
+  console.log(3 + 4);
+  ```
+
+  This is the output we get on the screen after we run the program:
+  ```
+  7
+  ```
+  Here are the other operators:
+  * `*` — multiplication
+  * `/` — division
+  * `-` — extracton
+  * `%` — [modulo](https://en.wikipedia.org/wiki/Modulo_operation) (remainder after division)
+  * `**` — power
+
+  Now let's display the result of division and then the result of exponentiation.
+
+  ```javascript
+  console.log(8 / 2);  // => 4
+  console.log(3 ** 2); // => 9
+  ```
+  Sometimes we will show you the result of code execution at the end of a line as a comment, like so:  `=> RESULT`. For example, `// => 4`.
+  
+  The first instruction will output `4` to the screen (since `8 / 2` is `4`), and the second instruction will output 9 (since 3<sup>2</sup> is 9).
+
+instructions: |
+  
+  Print the quotient of `81` and `9` to screen.
+
+tips:
+  - |
+    Always separate operators from numbers (operands). It's a good programming style. This is why our examples we wrote `print_r(3 + 4)`, and not `print_r(3+4)`.
+  - |
+    Dividing by zero will produce Infinity. We'll learn what it means later.
+  - |
+    [Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators)
