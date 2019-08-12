@@ -1,4 +1,4 @@
 const { expectOutput } = require('tests');
 
-const expected = 'СТУЧАТЬ!';
-expectOutput(expected);
+const expected = 'KNOCK!';
+expectOutput(expected)
