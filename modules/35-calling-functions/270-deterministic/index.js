@@ -1,6 +1,6 @@
 const { toUpperCase } = require('hexlet/string');
 
-const text = 'стучать!';
+const text = 'knock!';
 // BEGIN
 console.log(toUpperCase(text));
 // END
