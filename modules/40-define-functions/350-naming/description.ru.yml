@@ -40,10 +40,28 @@ instructions: |
   ****5581
   </pre>
 
-  Полезные функции:
+  Полезные методы:
 
-  * [String.prototype.slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
-  * [String.prototype.padStart](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart)
+  * [String.prototype.slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice) – извлекает часть строки или как говорят "подстроку". Первым параметром принимает индекс элемента, с которого надо начинать извлечение, вторым – индекс элемента, до которого извлекаются символы. По умолчанию, извлекается все до конца строки.
+
+      ```javascript
+      // с третьего индекса до конца строки
+      'java script'.slice(3); // 'a script'
+
+      // с первого индекса по четвертый
+      'java script'.slice(1, 4); // 'ava'
+
+      // можно использовать отрицательные индексы
+      // тогда отсчет берется с конца строки
+      'java script'.slice(-2); // 'pt'
+      ```
+
+  * [String.prototype.padStart](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart) – Дополняет строку "заполнителем" слева, до тех пор пока длина строки не станет равной указанной.
+
+      ```javascript
+      '5'.padStart(2, '*'); // '*5'
+      '10'.padStart(4, '+'); // '++10'
+      ```
 
 tips:
   - |
