@@ -56,7 +56,7 @@ instructions: |
       'java script'.slice(-2); // 'pt'
       ```
 
-  * [String.prototype.padStart](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart) – Дополняет строку "заполнителем" слева, до тех пор пока длина строки не станет равной указанной.
+  * [String.prototype.padStart](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart) – Дополняет строку "заполнителем" слева, до тех пор пока длина строки не станет равной указанной. Первым параметром функция принимает желаемую длинну строки, вторым – заполнитель.
 
       ```javascript
       '5'.padStart(2, '*'); // '*5'
