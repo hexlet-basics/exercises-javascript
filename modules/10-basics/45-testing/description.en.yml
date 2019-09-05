@@ -4,41 +4,39 @@ name: How do we verify solutions?
 theory: |
 
   Our website verifies your solutions automatically. You may wonder how it works.
-  
+
   In the simplest case the system runs your code and analyzes the screen output. Then it compares the actual output against the expected output.
-  
+
   The following lessons deal with more complex matters. You will be writing functions: a kind of mini-programs that receive some data from outside and perform operations on it. Verifying solutions gets a little more complicated in that case. The system runs your code sending some data to it. The system knows what result a correctly written function would receive with that particular data and "expects" it.
-  
+
   Let's assume your task is to program a function that adds two numbers. The verification system would give it several combinations of numbers and compare your function's answers with correctly calculated ones. If all actual values match the expected ones, your solution would be considered valid.
-  
+
   This approach is named testing. It is used extensively in the real life day-to-day development process. A developer usually writes tests _first_, and only after proceeds to writing the program itself. During that process he runs tests multiple times to check how close he/she got to the desired solution.
-  
+
   That is why our website says “Tests passed” once you solved the task correctly.
-  
+
   One of your tasks in the following lessons will be to write a function that performs certain calculations and returns the result. As an example, let's assume you made a small mistake and the function returned a wrong value. In that case, the system will give you the following message:
 
   <pre class='hexlet-basics-output'>
     ● test
 
     expect(received).toBe(expected) // Object.is equality
-    
+
     Expected value to be:
       "Hello, World!"
     Received:
       "ello, World!"
   </pre>
-  
+
   In addition to our tests, it's very useful to experement with code in the console [of a browser](https://developer.mozilla.org/ru/docs/Tools/%D0%9A%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C_%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80%D0%B0). In a situation when something isn't clear for you or you want to experiment with code, feel free to do all of this in the console. Ideally, it's best to execute all the code given in the lessons on your own. In addition to console it's also helpful to use the following service [repl.it](https://repl.it/languages/javascript).
 
 instructions: |
   Display the following number: `9780262531962`.
-  
+
 definitions:
   - name: Tests
     description: |
       code designed to check if a program works correctly; it does so by comparing a set of known valid results against the actual output of the program.
 tips:
-  - |
-    [jest](http://jestjs.io/)
   - |
     [TDD](https://ru.wikipedia.org/wiki/Разработка_через_тестирование)
