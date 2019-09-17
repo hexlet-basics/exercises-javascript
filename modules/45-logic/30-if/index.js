@@ -4,7 +4,7 @@ const getSentenceTone = (sentence) => {
     return 'scream';
   }
   return 'normal';
-}
+};
 // END
 
 module.exports = getSentenceTone;
