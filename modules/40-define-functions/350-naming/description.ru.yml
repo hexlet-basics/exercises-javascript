@@ -63,6 +63,13 @@ instructions: |
       '10'.padStart(4, '+'); // '++10'
       ```
 
+  Примеры:
+
+```javascript
+getHiddenCard('1234567812345678', 2); // '**5678'
+getHiddenCard('1234567812345678', 3); // '***5678'
+```
+
 tips:
   - |
     [Статья про именование в программировании](https://ru.hexlet.io/blog/posts/naming-in-programming)
