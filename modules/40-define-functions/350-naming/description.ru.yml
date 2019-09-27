@@ -65,11 +65,11 @@ instructions: |
 
   Примеры:
 
-```javascript
-getHiddenCard('1234567812345678', 2); // '**5678'
-getHiddenCard('1234567812345678', 3); // '***5678'
-getHiddenCard('1234567812345678'); // '****5678'
-```
+  ```javascript
+  getHiddenCard('1234567812345678', 2); // '**5678'
+  getHiddenCard('1234567812345678', 3); // '***5678'
+  getHiddenCard('1234567812345678'); // '****5678'
+  ```
 
 tips:
   - |
