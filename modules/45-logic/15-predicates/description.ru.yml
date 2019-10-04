@@ -42,6 +42,13 @@ instructions: |
 
   Напишите функцию `isMister`, которая принимает строку и проверяет, является ли она словом `'Mister'`.
 
+  Примеры вызова:
+
+  ```javascript
+  isMister('Mister'); // => true
+  isMister('Miss');   // => false
+  ```
+
 tips:
   - |
     [Именование в программировании](https://ru.hexlet.io/blog/posts/naming-in-programming)

@@ -98,6 +98,13 @@ instructions: |
 
   Функция возвращает `true` если распознан Ланнистер, и `false` если не распознан.
 
+  Примеры вызова:
+
+  ```javascript
+  isLannisterSoldier('red', 'lion'); // => true
+  isLannisterSoldier('blue', null);  // => false
+  ```
+
 tips:
   - |
     [Булева алгебра](https://ru.wikipedia.org/wiki/Булева_алгебра)
