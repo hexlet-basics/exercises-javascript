@@ -41,7 +41,9 @@ instructions: |
   console.log('=-'.repeat(4));
   ```
 
-  <pre class='hexlet-basics-output'>=-=-=-=-</pre>
+  <pre class='hexlet-basics-output'>
+  =-=-=-=-
+  </pre>
 
   Сэм не очень доволен. Ему нужно нарисовать сотни маршрутов разной длины с разными символами. Неудобно вызывать сотни раз `repeat` внутри вызова `console.log`.
 
@@ -50,7 +52,6 @@ instructions: |
   Вот пример того, как Сэм будет использовать написанную вами `printSeq`:
 
   ```javascript
-
   printSeq('=-', 4);
   ```
 

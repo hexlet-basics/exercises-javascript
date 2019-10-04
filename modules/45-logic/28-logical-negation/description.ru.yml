@@ -38,6 +38,13 @@ instructions: |
 
   Вам доступна уже готовая к использованию функция `isLannisterSoldier`. Можете воспользоваться ей чтобы не писать все логические условия заново.
 
+  Примеры вызова:
+
+  ```javascript
+  isLannisterSoldier('red', 'lion'); // => false
+  isLannisterSoldier('blue', null);  // => true
+  ```
+
 tips:
   - |
     [Законы Де Моргана](https://ru.wikipedia.org/wiki/Законы_де_Моргана)
