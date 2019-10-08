@@ -41,8 +41,8 @@ instructions: |
   Примеры вызова:
 
   ```javascript
-  isLannisterSoldier('red', 'lion'); // => false
-  isLannisterSoldier('blue', null);  // => true
+  isNotLannisterSoldier('red', 'lion'); // false
+  isNotLannisterSoldier('blue', null);  // true
   ```
 
 tips:
