@@ -58,7 +58,7 @@ instructions: |
   Примеры вызова:
 
   ```javascript
-  getParentNamesTotalLength('Daenerys Targaryen'); // => 35
+  getParentNamesTotalLength('Daenerys Targaryen'); // 35
   ```
 
   Для получения имён родителей используйте уже существующую функцию `getParentFor`:

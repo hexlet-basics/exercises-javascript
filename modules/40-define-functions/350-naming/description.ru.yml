@@ -30,10 +30,10 @@ instructions: |
 
   ```javascript
   const hiddenCardNumber = getHiddenCard(2034399002125581);
-  console.log(hiddenCardNumber); // ****5581
+  console.log(hiddenCardNumber); // => ****5581
 
   const hiddenCardNumber = getHiddenCard(2034399002125581, 2);
-  console.log(hiddenCardNumber); // **5581
+  console.log(hiddenCardNumber); // => **5581
   ```
 
   <pre class='hexlet-basics-output'>

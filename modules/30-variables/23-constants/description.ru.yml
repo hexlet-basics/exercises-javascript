@@ -10,8 +10,8 @@ theory: |
   let roublesInDollar = 60;
 
   let euros = 1000;
-  let dollars = euros * dollarsInEuro; // => 1250
-  let rubles = dollars * roublesInDollar; // => 75000
+  let dollars = euros * dollarsInEuro;    // 1250
+  let rubles = dollars * roublesInDollar; // 75000
 
   console.log(rubles);
   ```
@@ -23,8 +23,8 @@ theory: |
   const roublesInDollar = 60;
 
   const euros = 1000;
-  const dollars = euros * dollarsInEuro; // => 1250
-  const rubles = dollars * roublesInDollar; // => 75000
+  const dollars = euros * dollarsInEuro;    // 1250
+  const rubles = dollars * roublesInDollar; // 75000
 
   console.log(rubles);
   ```

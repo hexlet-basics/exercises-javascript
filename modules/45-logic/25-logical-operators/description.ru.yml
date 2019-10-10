@@ -45,11 +45,11 @@ theory: |
 
   isGoodApartment(91, 'Queens Street'); // false
   isGoodApartment(78, 'Queens Street'); // false
-  isGoodApartment(70, 'Main Street'); // false
+  isGoodApartment(70, 'Main Street');   // false
 
   isGoodApartment(120, 'Queens Street'); // true
-  isGoodApartment(120, 'Main Street'); // true
-  isGoodApartment(80, 'Main Street'); // true
+  isGoodApartment(120, 'Main Street');   // true
+  isGoodApartment(80, 'Main Street');    // true
   ```
 
   Область математики, в которой изучаются логические операторы, называется булевой алгеброй. Ниже показаны «таблицы истинности» — по ним можно определить, каким будет результат применения оператора:
@@ -101,8 +101,8 @@ instructions: |
   Примеры вызова:
 
   ```javascript
-  isLannisterSoldier('red', 'lion'); // => true
-  isLannisterSoldier('blue', null);  // => false
+  isLannisterSoldier('red', 'lion'); // true
+  isLannisterSoldier('blue', null);  // false
   ```
 
 tips:

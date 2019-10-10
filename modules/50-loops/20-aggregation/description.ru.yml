@@ -47,8 +47,8 @@ instructions: |
 
   ```javascript
   const str = 'If I look back I am lost';
-  mysubstr(str, 1); // => 'I'
-  mysubstr(str, 7); // => 'If I lo'
+  mysubstr(str, 1); // 'I'
+  mysubstr(str, 7); // 'If I lo'
   ```
 
   Используйте тот же подход, что и в функции для переворота строки из текста урока: перебирайте начальную строку в цикле до определенного момента и собирайте строку-результат по символам.

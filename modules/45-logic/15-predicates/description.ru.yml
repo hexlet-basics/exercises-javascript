@@ -45,8 +45,8 @@ instructions: |
   Примеры вызова:
 
   ```javascript
-  isMister('Mister'); // => true
-  isMister('Miss');   // => false
+  isMister('Mister'); // true
+  isMister('Miss');   // false
   ```
 
 tips:

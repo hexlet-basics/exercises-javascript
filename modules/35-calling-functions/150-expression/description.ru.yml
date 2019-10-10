@@ -7,7 +7,7 @@ theory: |
 
   ```javascript
   const distance = calculateDistance('Lannisport', 'Bayasabhad');
-  console.log(distance); // 1280
+  console.log(distance); // => 1280
   ```
 
   Что можно сказать о нём? Какие выводы сделать? Попробуйте закончить эти утверждения самостоятельно:

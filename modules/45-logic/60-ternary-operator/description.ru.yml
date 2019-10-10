@@ -52,7 +52,7 @@ theory: |
     return 'normal';
   }
 
-  getTypeOfSentence('Hodor'); // normal
+  getTypeOfSentence('Hodor');  // normal
   getTypeOfSentence('Hodor?'); // question
   ```
 
@@ -65,7 +65,7 @@ theory: |
     return (lastChar === '?') ? 'question' : 'normal';
   }
 
-  getTypeOfSentence('Hodor'); // normal
+  getTypeOfSentence('Hodor');  // normal
   getTypeOfSentence('Hodor?'); // question
   ```
 
@@ -80,8 +80,8 @@ instructions: |
   Примеры вызова:
 
   ```javascript
-  convertText('Hello'); // => 'Hello'
-  convertText('hello'); // => 'olleh'
+  convertText('Hello'); // 'Hello'
+  convertText('hello'); // 'olleh'
   ```
 
   Перевернуть строчку можно используя функцию reverse.

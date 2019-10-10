@@ -59,8 +59,8 @@ instructions: |
   Примеры вызова:
 
   ```javascript
-  isPensioner(75); // => true
-  isPensioner(18); // => false
+  isPensioner(75); // true
+  isPensioner(18); // false
   ```
 
 definitions:

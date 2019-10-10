@@ -59,12 +59,12 @@ instructions: |
 
   ```javascript
   const str = 'Sansa Stark';
-  isArgumentsForSubstrCorrect(str, -1, 3); // false
+  isArgumentsForSubstrCorrect(str, -1, 3);  // false
   isArgumentsForSubstrCorrect(str, 4, 100); // false
   isArgumentsForSubstrCorrect(str, 10, 10); // false
-  isArgumentsForSubstrCorrect(str, 11, 1); // false
-  isArgumentsForSubstrCorrect(str, 3, 3); // true
-  isArgumentsForSubstrCorrect(str, 0, 5); // true
+  isArgumentsForSubstrCorrect(str, 11, 1);  // false
+  isArgumentsForSubstrCorrect(str, 3, 3);   // true
+  isArgumentsForSubstrCorrect(str, 0, 5);   // true
   ```
 
 tips: []

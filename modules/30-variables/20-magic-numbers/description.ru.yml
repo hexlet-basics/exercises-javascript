@@ -7,8 +7,8 @@ theory: |
 
   ```javascript
   let euros = 1000;
-  let dollars = euros * 1.25; // => 1250
-  let rubles = dollars * 60; // => 75000
+  let dollars = euros * 1.25; // 1250
+  let rubles = dollars * 60;  // 75000
 
   console.log(rubles);
   ```
@@ -24,8 +24,8 @@ theory: |
   let rublesInDollar = 60;
 
   let euros = 1000;
-  let dollars = euros * dollarsInEuro; // => 1250
-  let rubles = dollars * rublesInDollar; // => 75000
+  let dollars = euros * dollarsInEuro;   // 1250
+  let rubles = dollars * rublesInDollar; // 75000
 
   console.log(rubles);
   ```
