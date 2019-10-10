@@ -19,8 +19,8 @@ theory: |
     return `Sentence is ${sentenceType}`;
   }
 
-  getTypeOfSentence('Hodor');  // => Sentence is normal
-  getTypeOfSentence('Hodor?'); // => Sentence is question
+  getTypeOfSentence('Hodor');  // Sentence is normal
+  getTypeOfSentence('Hodor?'); // Sentence is question
   ```
 
   Мы добавили `else` и новый блок с фигурными скобками. Этот блок выполнится только если условие в `if` — ложь.

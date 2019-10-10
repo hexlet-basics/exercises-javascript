@@ -3,7 +3,7 @@
 name: Arithmetic Operators
 theory: |
   In math, for example, to add two numbers we write `3 + 4`. The same works in programming. Here is the program that adds two numbers.
-  
+
   ```javascript
   // Don't forget the semicolon, since each line is an instruction
   3 + 4;
@@ -40,11 +40,11 @@ theory: |
   console.log(3 ** 2); // => 9
   ```
   Sometimes we will show you the result of code execution at the end of a line as a comment, like so:  `=> RESULT`. For example, `// => 4`.
-  
+
   The first instruction will output `4` to the screen (since `8 / 2` is `4`), and the second instruction will output 9 (since 3<sup>2</sup> is 9).
 
 instructions: |
-  
+
   Print the quotient of `81` and `9` to screen.
 
 tips:

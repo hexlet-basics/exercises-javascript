@@ -23,9 +23,9 @@ theory: |
     return `Sentence is ${sentenceType}`;
   }
 
-  getTypeOfSentence('Who?'); // => 'Sentence is question'
-  getTypeOfSentence('No');   // => 'Sentence is normal'
-  getTypeOfSentence('No!');  // => 'Sentence is exclamation'
+  getTypeOfSentence('Who?'); // 'Sentence is question'
+  getTypeOfSentence('No');   // 'Sentence is normal'
+  getTypeOfSentence('No!');  // 'Sentence is exclamation'
   ```
 
   Мы добавили еще одну проверку ("exclamation" переводится «восклицание»). Технически функция работает, но с точки зрения семантики есть проблемы.
@@ -50,9 +50,9 @@ theory: |
     return `Sentence is ${sentenceType}`;
   }
 
-  getTypeOfSentence('Who?'); // => 'Sentence is question'
-  getTypeOfSentence('No');   // => 'Sentence is normal'
-  getTypeOfSentence('No!');  // => 'Sentence is exclamation'
+  getTypeOfSentence('Who?'); // 'Sentence is question'
+  getTypeOfSentence('No');   // 'Sentence is normal'
+  getTypeOfSentence('No!');  // 'Sentence is exclamation'
   ```
 
   Теперь все условия выстроены в единую конструкцию. `else if` — это «если не выполнено предыдущее условие, но выполнено текущее». Получается такая схема:
@@ -78,10 +78,10 @@ instructions: |
   Примеры вызова:
 
   ```javascript
-  whoIsThisHouseToStarks('Karstark'); // => 'friend'
-  whoIsThisHouseToStarks('Frey');     // => 'enemy'
-  whoIsThisHouseToStarks('Joar');     // => 'neutral'
-  whoIsThisHouseToStarks('Ivanov');   // => 'neutral'
+  whoIsThisHouseToStarks('Karstark'); // 'friend'
+  whoIsThisHouseToStarks('Frey');     // 'enemy'
+  whoIsThisHouseToStarks('Joar');     // 'neutral'
+  whoIsThisHouseToStarks('Ivanov');   // 'neutral'
   ```
 
 tips: []

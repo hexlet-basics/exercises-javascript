@@ -61,7 +61,7 @@ theory: |
   }
 
   isFirstLetterInUpperCase('marmont'); // false
-  isFirstLetterInUpperCase('Robb'); // true
+  isFirstLetterInUpperCase('Robb');    // true
   ```
 
   Мы использовали [метод `toUpperCase`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase). Он возвращает строку, на которой он был вызван, в которой все буквы стали заглавными. Мы вызвали его на первом символе строки.
@@ -75,7 +75,7 @@ theory: |
   ```javascript
   const firstName = 'Alexander';
 
-  firstName[0]; // => A
+  firstName[0]; // A
   ```
 
 instructions: |
@@ -90,10 +90,10 @@ instructions: |
   Этот метод позволяет извлечь начало подстроки такой же длины как и слово `Targaryen`, а затем проверить равно ли оно `Targaryen`. Напомню что индексы начинаются с нуля.
 
   ```javascript
-  hasTargaryenReference(''); // => false
-  hasTargaryenReference('Targari'); // => false
-  hasTargaryenReference('targaryen'); // => false
-  hasTargaryenReference('Targaryen'); // => true
+  hasTargaryenReference('');          // false
+  hasTargaryenReference('Targari');   // false
+  hasTargaryenReference('targaryen'); // false
+  hasTargaryenReference('Targaryen'); // true
   ```
 
 tips:
