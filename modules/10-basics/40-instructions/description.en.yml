@@ -41,9 +41,9 @@ instructions: |
 
   tips:
   - |
-    [more about interpreters](https://ru.wikipedia.org/wiki/Интерпретатор)
+    [more about interpreters](https://en.wikipedia.org/wiki/Interpreter_(computing))
   - |
-    [Statements and declarations by category](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements)
+    [Statements and declarations by category](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements)
 
 definitions:
   - name: interpreter
