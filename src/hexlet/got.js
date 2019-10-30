@@ -55,7 +55,7 @@ const calculateDistance = (source, dest) => {
   throw new Error(text);
 };
 
-const calculateDistanceBetweenTowns = param => calculateDistance(...param.split('-'));
+const calculateDistanceBetweenTowns = (param) => calculateDistance(...param.split('-'));
 
 const functions = {
   getParentFor, isLannisterSoldier, calculateDistance, calculateDistanceBetweenTowns,
