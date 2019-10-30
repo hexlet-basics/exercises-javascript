@@ -1,7 +1,7 @@
 const expect = require('expect');
 const cleanStack = require('clean-stack');
 
-const expectOutput = (expected, run = f => f()) => {
+const expectOutput = (expected, run = (f) => f()) => {
   const logs = [];
   const oldLog = console.log;
   console.log = (...args) => {
