@@ -3,7 +3,7 @@ const printNumbers = (firstNumber) => {
   let i = firstNumber;
   while (i >= 1) {
     console.log(i);
-    i = i - 1;
+    i -= 1;
   }
   console.log('finished!');
   // END
