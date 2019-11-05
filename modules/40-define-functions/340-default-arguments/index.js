@@ -1,3 +1,5 @@
+/* eslint arrow-body-style: ["error", "always"] */
+
 const { getParentFor } = require('hexlet/got');
 
 // BEGIN

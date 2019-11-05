@@ -1,3 +1,5 @@
+/* eslint no-else-return: ["error", {allowElseIf: true}] */
+
 // BEGIN
 const whoIsThisHouseToStarks = (houseName) => {
   if (houseName === 'Karstark' || houseName === 'Tally') {

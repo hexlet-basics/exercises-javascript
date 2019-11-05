@@ -26,6 +26,7 @@ SUBDIRS := $(wildcard modules/**/*/.)
 
 lint:
 	yamllint modules
+	npx eslint modules
 
 test: $(SUBDIRS)
 $(SUBDIRS):
