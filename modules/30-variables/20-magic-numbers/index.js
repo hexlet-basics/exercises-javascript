@@ -1,3 +1,4 @@
+/* eslint prefer-const: 0, prefer-template: 0 */
 let king = 'King Balon the 6th';
 
 // BEGIN

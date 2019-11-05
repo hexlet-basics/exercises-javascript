@@ -1,3 +1,4 @@
+/* eslint prefer-const: 0 */
 const family = 'Targaryen';
 
 // BEGIN

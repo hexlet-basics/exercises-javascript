@@ -1,3 +1,4 @@
+/* eslint prefer-const: 0 */
 let firstNumber = 11;
 let secondNumber = -100;
 

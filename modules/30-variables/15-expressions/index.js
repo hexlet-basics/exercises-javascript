@@ -1,3 +1,4 @@
+/* eslint prefer-const: 0 */
 let eurosCount = 100;
 
 // BEGIN

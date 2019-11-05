@@ -1,3 +1,4 @@
+/* eslint operator-assignment: 0 */
 // BEGIN
 const mysubstr = (str, length) => {
   let index = 0;
@@ -5,7 +6,7 @@ const mysubstr = (str, length) => {
   while (index < length) {
     const currentChar = str[index];
     result = `${result}${currentChar}`;
-    index += 1;
+    index = index + 1;
   }
 
   return result;
