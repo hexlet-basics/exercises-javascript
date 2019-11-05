@@ -1,4 +1,5 @@
 /* eslint operator-assignment: 0 */
+
 // BEGIN
 const mysubstr = (str, length) => {
   let index = 0;
