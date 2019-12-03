@@ -4,7 +4,7 @@ const shouter = (str) => {
   let counter;
   let counterLimit;
 
-  if (str.length > 0 && str.length < 5) {
+  if (str.length >= 0 && str.length < 5) {
     return str;
   }
   if (str.length === 5) {
