@@ -5,4 +5,4 @@ version: '2'
 services:
   sut:
     build: .
-    command: make lint test
+    command: make check
