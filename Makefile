@@ -30,6 +30,9 @@ description-lint:
 code-lint:
 	npx eslint modules
 
+compose-test:
+	docker-compose run exercises make test
+
 test:
 	@(for i in $$(find modules/** -type f -name Makefile); do make test -C $$(dirname $$i) || exit 1; done)
 
