@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schema.json",
+  "description": "description schema",
+  "title": "Lesson",
+  "type": "object",
+  "properties": {
+    "instructions": { "type": "string" },
+    "name": { "type": "string" },
+    "theory": { "type": "string" },
+    "tips": { "type": "array" },
+    "definitions": { "type": "array" }
+  },
+  "required": ["instructions", "name", "theory"],
+  "additionalProperties": false
+}
