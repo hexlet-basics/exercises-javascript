@@ -1,11 +1,14 @@
-FROM node:12.4
+FROM node:13.7
 
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
 
-RUN apt-get update && apt-get install -yqq git python3-pip
+RUN apt-get update && apt-get install -yqq git curl python3-pip libyaml-dev zip unzip
 
 RUN pip3 install yamllint
+RUN apt-get install -yqq jq
+RUN pip3 install yq
+RUN npm install -g ajv-cli
 
 WORKDIR /exercises-javascript
 
@@ -15,4 +18,4 @@ RUN npm ci
 
 ENV NODE_PATH /exercises-javascript/src
 
-COPY . /exercises-javascript
+COPY . .

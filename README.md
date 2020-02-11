@@ -1,3 +1,5 @@
+[![Github Actions Status](https://github.com/hexlet-basics/exercises-javascript/workflows/Docker/badge.svg)](https://github.com/hexlet-basics/exercises-javascript/actions)
+
 ## Develop
 
 ```sh
@@ -9,8 +11,10 @@ $ make compose
 # run tests
 $ make compose-test
 
-# run linters
-$ make compose-lint
+# run linters and validators
+$ make compose-code-lint
+$ make compose-description-lint
+$ make compose-schema-validate
 ```
 
 ##
