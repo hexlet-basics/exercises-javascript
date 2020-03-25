@@ -10,14 +10,14 @@ theory: |
     const lastChar = sentence[sentence.length - 1];
     let sentenceType;
 
-    if (lastChar === '?') {
-        sentenceType = 'question';
-    }
-
     if (lastChar === '!') {
         sentenceType = 'exclamation';
     } else {
         sentenceType = 'normal';
+    }
+
+    if (lastChar === '?') {
+        sentenceType = 'question';
     }
 
     return `Sentence is ${sentenceType}`;
