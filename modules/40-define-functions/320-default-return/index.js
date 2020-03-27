@@ -4,4 +4,4 @@ const doNothing = () => {
 };
 // END
 
-module.exports = doNothing;
+export default doNothing;

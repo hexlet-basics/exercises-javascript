@@ -29,4 +29,4 @@ const shouter = (str) => {
 };
 // END
 
-module.exports = shouter;
+export default shouter;

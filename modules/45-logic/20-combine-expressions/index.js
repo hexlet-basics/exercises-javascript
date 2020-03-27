@@ -5,4 +5,4 @@ const hasTargaryenReference = (string) => {
 };
 // END
 
-module.exports = hasTargaryenReference;
+export default hasTargaryenReference;

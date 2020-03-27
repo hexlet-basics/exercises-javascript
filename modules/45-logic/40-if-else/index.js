@@ -10,4 +10,4 @@ const normalizeUrl = (url) => {
 };
 // END
 
-module.exports = normalizeUrl;
+export default normalizeUrl;

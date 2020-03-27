@@ -1,4 +1,4 @@
-const { calculateDistance } = require('hexlet/got');
+import { calculateDistance } from 'hexlet-basics/got';
 
 // BEGIN
 const distance = calculateDistance('Qarth', 'Vaes Dothrak');

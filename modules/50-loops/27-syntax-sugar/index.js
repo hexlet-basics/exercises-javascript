@@ -13,4 +13,4 @@ const countChars = (str, char) => {
 };
 // END
 
-module.exports = countChars;
+export default countChars;

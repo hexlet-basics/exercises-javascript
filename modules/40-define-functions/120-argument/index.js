@@ -4,4 +4,4 @@ const printJaimesLine = (text) => {
 };
 // END
 
-module.exports = printJaimesLine;
+export default printJaimesLine;

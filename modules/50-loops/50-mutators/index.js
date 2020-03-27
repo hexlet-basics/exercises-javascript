@@ -14,4 +14,4 @@ const filterString = (str, char) => {
 };
 // END
 
-module.exports = filterString;
+export default filterString;

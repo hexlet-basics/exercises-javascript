@@ -1,4 +1,4 @@
-const { round } = require('hexlet/math');
+import { round } from 'hexlet-basics/math';
 
 const number = 10.1234;
 

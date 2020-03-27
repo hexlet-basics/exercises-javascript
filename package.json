@@ -1,22 +1,23 @@
 {
-  "scripts": {
-    "test": "jest --colors --noStackTrace 2>&1"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "transform": {}
-  },
+  "name": "hexlet-basics",
+  "type": "module",
   "devDependencies": {
-    "eslint": "^6.0.0",
-    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "babel-eslint": "^10.1.0",
     "eslint-plugin-babel": "^5.3.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2"
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1"
+  },
+  "exports": {
+    "./tests": "./src/tests.js",
+    "./got": "./src/hexlet/got.js",
+    "./math": "./src/hexlet/math.js",
+    "./string": "./src/hexlet/string.js"
   },
   "dependencies": {
     "chai": "^4.2.0",
-    "clean-stack": "^2.0.0",
-    "expect": "^23.6.0",
+    "clean-stack": "^2.2.0",
+    "expect": "^25.2.3",
     "lodash": "^4.17.15"
   }
 }

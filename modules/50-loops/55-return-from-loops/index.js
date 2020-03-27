@@ -13,4 +13,4 @@ const doesContain = (str, char) => {
 };
 // END
 
-module.exports = doesContain;
+export default doesContain;

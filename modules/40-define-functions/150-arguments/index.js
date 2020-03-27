@@ -4,4 +4,4 @@ const printSeq = (str, num) => {
 };
 // END
 
-module.exports = printSeq;
+export default printSeq;

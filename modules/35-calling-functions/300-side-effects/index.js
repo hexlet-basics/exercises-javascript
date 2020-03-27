@@ -1,4 +1,4 @@
-const { toLowerCase, reverse } = require('hexlet/string');
+import { toLowerCase, reverse } from 'hexlet-basics/string';
 
 const text = 'The quick brown fox jumps over the lazy dog';
 // BEGIN

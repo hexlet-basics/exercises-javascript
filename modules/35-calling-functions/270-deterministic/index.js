@@ -1,4 +1,4 @@
-const { toUpperCase } = require('hexlet/string');
+import { toUpperCase } from 'hexlet-basics/string';
 
 const text = 'knock!';
 // BEGIN

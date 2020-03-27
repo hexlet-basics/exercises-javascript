@@ -7,4 +7,4 @@ const getSentenceTone = (sentence) => {
 };
 // END
 
-module.exports = getSentenceTone;
+export default getSentenceTone;

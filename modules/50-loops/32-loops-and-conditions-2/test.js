@@ -1,4 +1,4 @@
-const { test, expect } = require('tests');
+import { test, expect } from 'hexlet-basics/tests';
 
 test((f) => {
   expect(f(9)).toEqual('2,4,6,8,');

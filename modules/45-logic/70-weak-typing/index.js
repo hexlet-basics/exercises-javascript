@@ -4,4 +4,4 @@
 const isFalsy = (value) => value == false;
 // END
 
-module.exports = isFalsy;
+export default isFalsy;

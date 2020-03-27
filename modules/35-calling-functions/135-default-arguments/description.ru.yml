@@ -6,7 +6,7 @@ theory: |
   Рассмотрим функцию `round`, написанную для этого урока. Она округляет переданное число:
 
   ```javascript
-  const { round } = require('hexlet/math');
+  import { round } from 'hexlet-basics/math';
 
   const result = round(10.25, 0); // 10
   ```

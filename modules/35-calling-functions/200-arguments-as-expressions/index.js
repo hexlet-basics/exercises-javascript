@@ -1,4 +1,4 @@
-const { calculateDistanceBetweenTowns } = require('hexlet/got');
+import { calculateDistanceBetweenTowns } from 'hexlet-basics/got';
 
 const from = 'The Twins';
 const to = 'The Eyrie';

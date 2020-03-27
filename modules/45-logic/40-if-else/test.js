@@ -1,4 +1,4 @@
-const { test, expect } = require('tests');
+import { test, expect } from 'hexlet-basics/tests';
 
 test((f) => {
   expect(f('yandex.ru')).toBe('https://yandex.ru');

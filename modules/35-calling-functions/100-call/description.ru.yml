@@ -23,7 +23,7 @@ theory: |
   Вызов функции всегда обозначается скобками `()`, идущими сразу за именем функции. В скобках может быть любое количество аргументов, а иногда — вообще ни одного. Количество зависит от используемой функции, например функция `pow` принимает на вход два аргумента, и возводит число переданное первым параметром, в степень переданную вторым параметром.
 
   ```javascript
-  const { pow } = require('hexlet/math');
+  import { pow } from 'hexlet-basics/math';
 
   const result = pow(2, 3); // 2 * 2 * 2
   console.log(result); // => 8
@@ -42,7 +42,7 @@ instructions: |
   Вот пример использования, где на экран выводится расстояние между городами Lannisport и Bayasabhad:
 
   ```javascript
-  const { calculateDistance } = require('hexlet/got');
+  import { calculateDistance } from 'hexlet-basics/got';
 
   const distance = calculateDistance('Lannisport', 'Bayasabhad');
   console.log(distance);

@@ -1,15 +1,17 @@
-const expect = require('expect');
-const cleanStack = require('clean-stack');
+import expect from 'expect';
+import cleanStack from 'clean-stack';
 
-const expectOutput = (expected, run = (f) => f()) => {
+const getPathToIndex = () => `${process.cwd()}/index.js`;
+
+const expectOutput = async (expected, run = (f) => f()) => {
   const logs = [];
   const oldLog = console.log;
-  console.log = (...args) => {
+  global.console.log = (...args) => {
     oldLog(...args);
     logs.push(args);
   };
   try {
-    const f = require(process.cwd());
+    const { default: f } = await import(getPathToIndex());
     if (typeof f === 'function') {
       run(f);
     }
@@ -21,9 +23,9 @@ const expectOutput = (expected, run = (f) => f()) => {
   }
 };
 
-const test = (run) => {
+const test = async (run) => {
   try {
-    const f = require(process.cwd());
+    const { default: f } = await import(getPathToIndex());
     run(f);
   } catch (e) {
     console.log(cleanStack(e.stack));
@@ -31,4 +33,4 @@ const test = (run) => {
   }
 };
 
-module.exports = { expectOutput, expect, test };
+export { expectOutput, expect, test };

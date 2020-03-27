@@ -1,4 +1,4 @@
-const { test, expect } = require('tests');
+import { test, expect } from 'hexlet-basics/tests';
 
 test((f) => {
   const text = 'If I look back I am lost';

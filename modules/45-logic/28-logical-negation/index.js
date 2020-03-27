@@ -1,7 +1,7 @@
-const isLannisterSoldier = require('./isLannisterSoldier');
+import isLannisterSoldier from './isLannisterSoldier.js';
 
 // BEGIN
 const isNotLannisterSoldier = (color, shield) => !isLannisterSoldier(color, shield);
 // END
 
-module.exports = isNotLannisterSoldier;
+export default isNotLannisterSoldier;

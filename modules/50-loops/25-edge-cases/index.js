@@ -17,4 +17,4 @@ const isArgumentsForSubstrCorrect = (str, index, length) => {
 };
 // END
 
-module.exports = isArgumentsForSubstrCorrect;
+export default isArgumentsForSubstrCorrect;

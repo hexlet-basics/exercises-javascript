@@ -16,4 +16,4 @@ const sumOfSeries = (start, finish) => {
 };
 // END
 
-module.exports = sumOfSeries;
+export default sumOfSeries;

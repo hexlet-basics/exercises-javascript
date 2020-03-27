@@ -1,4 +1,4 @@
-const { getParentFor } = require('hexlet/got');
+import { getParentFor } from 'hexlet-basics/got';
 
 // BEGIN
 const joffreyMom = getParentFor('Joffrey Baratheon');

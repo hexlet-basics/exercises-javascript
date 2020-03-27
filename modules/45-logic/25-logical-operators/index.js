@@ -6,4 +6,4 @@ const isLannisterSoldier = (color, shield) => {
 };
 // END
 
-module.exports = isLannisterSoldier;
+export default isLannisterSoldier;

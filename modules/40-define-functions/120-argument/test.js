@@ -1,4 +1,4 @@
-const { expectOutput } = require('tests');
+import { expectOutput } from 'hexlet-basics/tests';
 
-expectOutput('JAIME: hi', (f) => f('hi'));
-expectOutput('JAIME: attack!', (f) => f('attack!'));
+expectOutput('JAIME: hi', (f) => f('hi'))
+  .then(expectOutput('JAIME: attack!', (f) => f('attack!')));

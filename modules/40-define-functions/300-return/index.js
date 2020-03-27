@@ -1,4 +1,4 @@
-const { getParentFor } = require('hexlet/got');
+import { getParentFor } from 'hexlet-basics/got';
 
 // BEGIN
 const getParentNamesTotalLength = (child) => {
@@ -8,4 +8,4 @@ const getParentNamesTotalLength = (child) => {
 };
 // END
 
-module.exports = getParentNamesTotalLength;
+export default getParentNamesTotalLength;

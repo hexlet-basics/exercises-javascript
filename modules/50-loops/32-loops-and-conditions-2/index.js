@@ -15,4 +15,4 @@ const getEvenNumbersUpTo = (num) => {
 };
 // END
 
-module.exports = getEvenNumbersUpTo;
+export default getEvenNumbersUpTo;

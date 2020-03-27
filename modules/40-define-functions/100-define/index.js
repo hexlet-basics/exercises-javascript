@@ -4,4 +4,4 @@ const printMotto = () => {
 };
 // END
 
-module.exports = printMotto;
+export default printMotto;

@@ -5,4 +5,4 @@ const getHiddenCard = (cardNumber, starsCount = 4) => {
 };
 // END
 
-module.exports = getHiddenCard;
+export default getHiddenCard;

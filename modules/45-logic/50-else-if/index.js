@@ -12,4 +12,4 @@ const whoIsThisHouseToStarks = (houseName) => {
 };
 // END
 
-module.exports = whoIsThisHouseToStarks;
+export default whoIsThisHouseToStarks;

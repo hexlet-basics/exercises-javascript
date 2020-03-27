@@ -1,6 +1,6 @@
 /* eslint arrow-body-style: ["error", "always"] */
 
-const { getParentFor } = require('hexlet/got');
+import { getParentFor } from 'hexlet-basics/got';
 
 // BEGIN
 const getCustomParentFor = (child, parent = 'father') => {
@@ -8,4 +8,4 @@ const getCustomParentFor = (child, parent = 'father') => {
 };
 // END
 
-module.exports = getCustomParentFor;
+export default getCustomParentFor;

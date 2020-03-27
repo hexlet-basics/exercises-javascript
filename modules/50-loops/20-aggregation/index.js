@@ -14,4 +14,4 @@ const mysubstr = (str, length) => {
 };
 // END
 
-module.exports = mysubstr;
+export default mysubstr;
