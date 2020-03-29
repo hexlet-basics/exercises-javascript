@@ -30,7 +30,7 @@ theory: |
   const firstName = 'Tirion';
   const index = 0;
 
-  console.log(firstName[index]); // => 'A'
+  console.log(firstName[index]); // => 'T'
   ```
 
   Технически можно указать индекс за границами слова. Для нашего примера это числа от 6 и выше. JavaScript не считает такое поведение ошибкой. Обращение по несуществующему индексу вернет значение `undefined`.
