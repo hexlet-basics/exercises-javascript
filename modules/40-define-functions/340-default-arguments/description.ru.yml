@@ -28,9 +28,9 @@ theory: |
 
   Аргументов по умолчанию может быть любое количество, но все они должны быть в конце списка аргументов. То есть такие строчки кода синтаксически некорректны:
 
-  - `const getParentFor = (childName = 'Jon', who) {`
-  - `const getParentFor = calculate(a, b = 90, c) {`
-  - `const getParentFor = getPrices(code = 4161, quantity, place) {`
+  - `const getParentFor = (childName = 'Jon', who) => {`
+  - `const calculate = (a, b = 90, c) => {`
+  - `const getPrices = (code = 4161, quantity, place) => {`
 
 instructions: |
 
@@ -50,4 +50,3 @@ instructions: |
   Такой вызов вернёт имя отца.
 
   - Используйте готовую функцию `getParentFor` внутри своей функции.
-  - Не нужно вызывать свою функцию `getCustomParentFor`, только определить её.
