@@ -11,13 +11,13 @@ theory: |
     let sentenceType;
 
     if (lastChar === '!') {
-        sentenceType = 'exclamation';
+      sentenceType = 'exclamation';
     } else {
-        sentenceType = 'normal';
+      sentenceType = 'normal';
     }
 
     if (lastChar === '?') {
-        sentenceType = 'question';
+      sentenceType = 'question';
     }
 
     return `Sentence is ${sentenceType}`;
@@ -41,11 +41,11 @@ theory: |
     let sentenceType;
 
     if (lastChar === '?') {
-        sentenceType = 'question';
+      sentenceType = 'question';
     } else if (lastChar === '!') {
-        sentenceType = 'exclamation';
+      sentenceType = 'exclamation';
     } else {
-        sentenceType = 'normal';
+      sentenceType = 'normal';
     }
 
     return `Sentence is ${sentenceType}`;
@@ -72,9 +72,9 @@ instructions: |
 
   Правила определения:
 
-    * Друзья (`'friend'`): 'Karstark', 'Tally'
-    * Враги (`'enemy'`): 'Lannister', 'Frey'
-    * Любые другие семьи считаются нейтральными
+  * Друзья (`'friend'`): 'Karstark', 'Tally'
+  * Враги (`'enemy'`): 'Lannister', 'Frey'
+  * Любые другие семьи считаются нейтральными
 
   Примеры вызова:
 

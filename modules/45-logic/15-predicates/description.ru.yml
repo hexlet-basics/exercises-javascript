@@ -28,7 +28,7 @@ theory: |
   Давайте напишем еще одну функцию-предикат. Она принимает строку и проверяет, является ли она словом `'Castle'`:
 
   ```javascript
-  const isCastle = type => type === 'Castle';
+  const isCastle = (type) => type === 'Castle';
 
   console.log(isCastle('Sea'));
   ```

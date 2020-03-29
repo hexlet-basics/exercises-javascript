@@ -10,7 +10,7 @@ theory: |
   Если есть функция, проверяющая чётность числа, то с помощью отрицания можно выполнить проверку нечётности:
 
   ```javascript
-  const isEven = number => number % 2 === 0;
+  const isEven = (number) => number % 2 === 0;
 
   isEven(10);  // true
   !isEven(10); // false
@@ -27,7 +27,6 @@ theory: |
   !isEven(10);  // false
   !!isEven(10); // true
   ```
-
 
 instructions: |
 
