@@ -1,19 +1,13 @@
 // BEGIN
-const sumOfSeries = (start, finish) => {
-  /*
-   * Обратите внимание: мы создали новую переменную,
-   * и не используем аргумент в качестве счётчика.
-   * Счётчик будет меняться в процессе выполнения функции,
-   * а изменять аргументы — плохая пратика.
-   */
-
-  let sum = 0;
-  for (let i = start; i <= finish; i += 1) {
-    sum += i;
+const encrypt = (str) => {
+  let result = '';
+  for (let i = 0; i < str.length; i += 2) {
+    const nextSymbol = str[i + 1] || '';
+    result = `${result}${nextSymbol}${str[i]}`;
   }
 
-  return sum;
+  return result;
 };
 // END
 
-export default sumOfSeries;
+export default encrypt;

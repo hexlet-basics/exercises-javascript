@@ -1,7 +1,7 @@
 import { test, expect } from 'hexlet-basics/tests';
 
 test((f) => {
-  const text = 'If I look back I am lost';
-  expect(f(text, 'I')).toEqual('f  look back  am lost');
-  expect(f(text, 'o')).toEqual('If I lk back I am lst');
+  const text = 'I never look back';
+  expect(f(text, 3)).toEqual('I NevEr LooK bAck');
+  expect(f('hello', 2)).toEqual('hElLo');
 });

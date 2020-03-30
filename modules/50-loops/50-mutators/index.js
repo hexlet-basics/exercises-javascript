@@ -1,17 +1,19 @@
 // BEGIN
-const filterString = (str, char) => {
-  let index = 0;
+const makeItFunny = (str, n = 1) => {
+  let i = 0;
   let result = '';
-  while (index < str.length) {
-    const currentChar = str[index];
-    if (currentChar !== char) {
-      result = `${result}${currentChar}`;
+  while (i < str.length) {
+    const current = str[i];
+    if ((i + 1) % n === 0) {
+      result = `${result}${current.toUpperCase()}`;
+    } else {
+      result = `${result}${current}`;
     }
-    index += 1;
+    i += 1;
   }
 
   return result;
 };
 // END
 
-export default filterString;
+export default makeItFunny;

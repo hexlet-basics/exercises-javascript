@@ -1,16 +1,16 @@
 // BEGIN
-const doesContain = (str, char) => {
-  let index = 0;
-  while (index < str.length) {
-    if (str[index] === char) {
+const hasChar = (str, char) => {
+  let i = 0;
+  while (i < str.length) {
+    if (str[i] === char) {
       return true;
     }
 
-    index += 1;
+    i += 1;
   }
 
   return false;
 };
 // END
 
-export default doesContain;
+export default hasChar;
