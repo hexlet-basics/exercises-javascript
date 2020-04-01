@@ -10,7 +10,7 @@ theory: |
   ```javascript
   const reverseString = (str) => {
     let result = '';
-    for (let i = 0; i < str.length; i -= 1) {
+    for (let i = 0; i < str.length; i += 1) {
       result = `${str[i]}${result}`;
     }
 
@@ -18,7 +18,7 @@ theory: |
   };
   ```
 
-  Можно читать так: *цикл с индексом `i` повторяется пока `i < str.length` и после каждого шага уменьшает `i` на 1*.
+  Можно читать так: *цикл с индексом `i` повторяется пока `i < str.length` и после каждого шага увеличивает `i` на 1*.
 
   В определении цикла `for` есть:
 
