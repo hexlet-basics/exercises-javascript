@@ -85,6 +85,9 @@ instructions: |
   ```javascript
   convertText('Hello'); // 'Hello'
   convertText('hello'); // 'olleh'
+
+  // Не забудьте учесть пустую строку!
+  convertText(''); // ''
   ```
 
   Перевернуть строчку можно используя функцию reverse.
