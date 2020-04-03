@@ -26,7 +26,7 @@ theory: |
 
   but it's considered bad practice as it's hard to read.
 
-  Interpreter, the program which executes code in JavaScript needs such splitting. This interpreter in JS world is any browser (as it's able to JS code) or Node.js (in the same reason). The operation principle of any interpreter is (approximately) as follows. It reads the file with code, splits it into instructions and then executes them in turn.
+  Interpreter, the program which executes code in JavaScript needs such splitting. This interpreter in JavaScript world is any browser (as it's able to JavaScript code) or Node.js (in the same reason). The operation principle of any interpreter is (approximately) as follows. It reads the file with code, splits it into instructions and then executes them in turn.
 
 instructions: |
   Output these three names on the screen, one after the other: "Robert", "Stannis", "Renly".
