@@ -9,5 +9,5 @@ test((f) => {
   
   const card2 = 1234567812345678;
   const actual3 = f(card2);
-  expect(actual2).toEqual('****5678');
+  expect(actual3).toEqual('****5678');
 });
