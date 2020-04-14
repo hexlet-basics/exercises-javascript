@@ -1,5 +1,5 @@
 // BEGIN
-const makeItFunny = (str, n = 1) => {
+const makeItFunny = (str, n) => {
   let i = 0;
   let result = '';
   while (i < str.length) {
