@@ -1,7 +1,7 @@
 /* eslint no-tabs: 0 */
 
-const text = 'When you play  \n a game of thrones you win or you die.';
+const text = 'When \t\n you play a \t\n game of thrones you win or you die.';
 
 // BEGIN
-console.log(text.substring(5, 17).trim().length);
+console.log(text.substring(3, 15).trim().length);
 // END
