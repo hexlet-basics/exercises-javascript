@@ -1,7 +1,5 @@
-/* eslint eqeqeq: 0 */
-
 // BEGIN
-const isFalsy = (value) => value == false;
+const getLetter = (text, position) => text[position - 1] || '';
 // END
 
-export default isFalsy;
+export default getLetter;

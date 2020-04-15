@@ -1,12 +1,12 @@
 /* eslint operator-assignment: 0 */
 
 // BEGIN
-const multi = (start, end) => {
+const joinNumbersFromRange = (start, end) => {
   let i = start;
-  let result = 1;
+  let result = '';
 
   while (i <= end) {
-    result = result * i;
+    result = `${result}${i}`;
     i = i + 1;
   }
 
@@ -14,4 +14,4 @@ const multi = (start, end) => {
 };
 // END
 
-export default multi;
+export default joinNumbersFromRange;

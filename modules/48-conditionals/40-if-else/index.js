@@ -1,12 +1,12 @@
 // BEGIN
-const normalizeUrl = (url) => {
+const normalizeUrl = (url, domain) => {
   let normalizedUrl;
-  if (url.startsWith('http://')) {
-    normalizedUrl = url.slice(7);
+  if (url.startsWith('/')) {
+    normalizedUrl = url.slice(1);
   } else {
     normalizedUrl = url;
   }
-  return `https://${normalizedUrl}`;
+  return `https://${domain}/${normalizedUrl}`;
 };
 // END
 

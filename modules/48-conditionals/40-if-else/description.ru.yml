@@ -11,9 +11,9 @@ theory: |
 
     let sentenceType;
     if (lastChar === '?') {
-        sentenceType = 'question';
+      sentenceType = 'question';
     } else {
-        sentenceType = 'normal';
+      sentenceType = 'normal';
     }
 
     return `Sentence is ${sentenceType}`;
@@ -29,23 +29,22 @@ theory: |
 
 instructions: |
 
-  Реализуйте функцию `normalizeUrl`, которая выполняет так называемую нормализацию данных. Она принимает адрес сайта и возвращает его с `https://` в начале.
-
-  Функция принимает адреса только в виде `АДРЕС` или `http://АДРЕС` (адреса вида `https://АДРЕС` в функцию попасть не могут), но всегда возвращает адрес в виде `https://АДРЕС`.
-
-  Есть два пути решения:
-
-  1. Можно сравнить первые 7 символов строки-аргумента со строкой `http://`.
-  2. Можно использовать метод [startsWith](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith) чтобы проверить, содержится ли в строке-аргументе подстрока `http://`
-
-  А потом на основе этого добавлять или не добавлять `https://`.
+  Реализуйте функцию `buildUrl()`, которая выполняет принимает на вход адрес страницы (без указания домена) и имя домена, а возвращает полный url со схемой https.
 
   Примеры вызова:
 
   ```javascript
-  normalizeUrl('google.com'); // 'https://google.com'
-  normalizeUrl('http://ai.fi'); // 'https://ai.fi'
+  buildUrl('pages/about', 'hexlet.io'); // 'https://hexlet.io/pages/about'
+  buildUrl('/pages/about', 'hexlet.io'); // 'https://hexlet.io/pages/about'
+
+  // В конце обязателен слеш
+  buildUrl('/', 'ru.code-basics.com'); // 'https://ru.code-basics.com/'
+  buildUrl('', 'ru.code-basics.com'); // 'https://ru.code-basics.com/'
   ```
+
+  В функцию могут попадать адреса с ведущим слешом `/` и без него. Задача функции обрабатывать эту ситуацию, чтобы слеш не дублировался.
+
+  Для реализации этой функции понадобится функция [slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
 
 tips: []
 
