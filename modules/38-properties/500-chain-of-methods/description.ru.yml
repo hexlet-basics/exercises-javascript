@@ -55,11 +55,9 @@ theory: |
 
 instructions: |
 
-  С помощью метода `substring` получите часть предложения, записанного в константу `text`, c `4` по `15` символ. Полученную подстроку обработайте методом `trim` и выведите на экран длину итоговой подстроки.
-  Ваша задача сделать это, не используя промежуточные переменные.
+  С помощью метода `substring` получите часть предложения, записанного в константу `text`, c `4` по `15` символ. Полученную подстроку обработайте методом `trim` и выведите на экран длину итоговой подстроки. Выполните эти методы подряд в цепочке, без создания промежуточных переменных.
 
-  Про метод `substring` можно почитать в [документации](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring).
-
-  Возможно, вам покажется, что код получился странным. Это типичный пример: переписывание переменных делает код менее понятным и более запутанным.
+  * [substring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring).
+  * [trim](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim).
 
 tips: []
