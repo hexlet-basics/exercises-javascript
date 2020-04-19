@@ -7,9 +7,12 @@ theory: |
 
   ```javascript
   import { send } from 'some-email-package';
+
   const email = 'support@hexlet.io';
   const title = 'Помогите';
   const body = 'Я написал историю успеха, как я могу получить скидку?';
+
+  // Один маленький вызов, и много логики внутри
   send(email, title, body);
   ```
 
