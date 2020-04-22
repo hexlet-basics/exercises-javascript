@@ -44,7 +44,7 @@ instructions: |
 
   В функцию могут попадать адреса с ведущим слешом `/` и без него. Задача функции обрабатывать эту ситуацию, чтобы слеш не дублировался.
 
-  Для реализации этой функции понадобится функция [slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+  Для реализации этой функции вам могут понадобится функции [slice](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/slice) и [startsWith](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith)
 
 tips: []
 
