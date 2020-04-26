@@ -1,4 +1,4 @@
-FROM node:13.12
+FROM node:14
 
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
@@ -12,6 +12,7 @@ RUN npm install -g ajv-cli
 
 WORKDIR /exercises-javascript
 
+RUN npm install -g npm-check-updates
 COPY package.json package.json
 COPY package-lock.json package-lock.json
 RUN npm ci

@@ -1,4 +1,7 @@
+// TODO switch to the jest when it will works with modules
+
 import expect from 'expect';
+import chalk from 'chalk';
 import cleanStack from 'clean-stack';
 
 const getPathToIndex = () => `${process.cwd()}/index.js`;
@@ -27,6 +30,7 @@ const test = async (run) => {
   try {
     const { default: f } = await import(getPathToIndex());
     run(f);
+    console.log(chalk.green('Tests have passed!'));
   } catch (e) {
     console.log(cleanStack(e.stack));
     process.exit(1);

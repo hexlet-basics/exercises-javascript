@@ -16,8 +16,9 @@
   },
   "dependencies": {
     "chai": "^4.2.0",
+    "chalk": "^4.0.0",
     "clean-stack": "^2.2.0",
-    "expect": "^25.2.7",
+    "expect": "^25.4.0",
     "lodash": "^4.17.15"
   }
 }
