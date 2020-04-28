@@ -36,7 +36,7 @@ instructions: |
 
   Реализуйте функцию `getCustomParentFor`, которая принимает два аргумента:
 
-  1. Строку — имя ребёнка.
+  1. Строку с именем ребёнка.
   2. Строку с указанием родителя. Этот аргумент должен по умолчанию быть `'father'`.
 
   Функция должна возвращать имя соответствующего родителя.
@@ -44,9 +44,9 @@ instructions: |
   Пример вызова:
 
   ```javascript
-  getCustomParentFor('Cersei Lannister');
+  getCustomParentFor('Cersei Lannister'); // Tywin Lannister
   ```
 
   Такой вызов вернёт имя отца.
 
-  - Используйте готовую функцию `getParentFor` внутри своей функции.
+  - Внутри своей функции используйте уже готовую функцию `getParentFor`. Как она работает мы подробно [разбирали](https://ru.code-basics.com/languages/javascript/modules/define-functions/lessons/return) раньше.
