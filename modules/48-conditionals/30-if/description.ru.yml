@@ -9,21 +9,21 @@ theory: |
 
   ```javascript
   const getTypeOfSentence = (sentence) => {
-    const lastChar = sentence.substr(-1); // простой способ извлечь последний символ
+    const lastChar = sentence[sentence.length - 1];
     if (lastChar === '?') {
       return 'question';
     }
 
-    return 'normal';
+    return 'general';
   }
 
-  getTypeOfSentence('Hodor');  // normal
+  getTypeOfSentence('Hodor');  // general
   getTypeOfSentence('Hodor?'); // question
   ```
 
   `if` - конструкция языка, управляющая порядком выполнения инструкций. В скобках ей передается выражение-предикат, а затем описывается блок кода в фигурных скобках. Этот блок кода будет выполнен, только если предикат — истина.
 
-  Если предикат — ложь, то блок кода в фигурных скобках пропускается, и функция продолжает свое выполнение дальше. В нашем случае следующая строчка кода — `return 'normal';` — заставит функцию вернуть строку и завершиться.
+  Если предикат — ложь, то блок кода в фигурных скобках пропускается, и функция продолжает свое выполнение дальше. В нашем случае следующая строчка кода — `return 'general';` — заставит функцию вернуть строку и завершиться.
 
   Как видите, `return` может находиться где угодно в функции. В том числе внутри блока кода с условием.
 
@@ -31,14 +31,14 @@ theory: |
 
   ```javascript
   const getTypeOfSentence = (sentence) => {
-    const lastChar = sentence.substr(-1);
+    const lastChar = sentence[sentence.length - 1];
     if (lastChar === '?')
       return 'question';
 
-    return 'normal';
+    return 'general';
   }
 
-  console.log(getTypeOfSentence('Hodor'));  // => normal
+  console.log(getTypeOfSentence('Hodor'));  // => general
   console.log(getTypeOfSentence('Hodor?')); // => question
   ```
 
@@ -46,12 +46,12 @@ theory: |
 
 instructions: |
 
-  Реализуйте функцию `getSentenceTone`, которая принимает строку и определяет тон предложения. Если все символы в верхнем регистре, то это вопль — `'scream'`. В ином случае — нормальное предложение — `'normal'`.
+  Реализуйте функцию `getSentenceTone`, которая принимает строку и определяет тон предложения. Если все символы в верхнем регистре, то это вопль — `'scream'`. В ином случае — нормальное предложение — `'general'`.
 
   Примеры вызова:
 
   ```javascript
-  getSentenceTone('Hello'); // normal
+  getSentenceTone('Hello'); // general
   getSentenceTone('WOW');   // scream
   ```
 
@@ -64,6 +64,4 @@ instructions: |
 
 tips: []
 
-definitions:
-  - name: "Условная конструкция"
-    description: "способ задать условие для выполнения кода. Например, `if (x > 10) { ... }`"
+definitions: []

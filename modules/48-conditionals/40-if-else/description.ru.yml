@@ -3,29 +3,51 @@
 name: else
 theory: |
 
-  Попробуем изменить функцию из предыдущего примера так, чтобы она возвращала не просто тип предложения, а целую строку `Sentence is normal` или `Sentence is question`.
+  Напишем функцию `getDescriptionOfSentence()`, которая анализирует текст и возвращает описание его тона: для обычных предложений – *General sentence*, для вопросительных – *Question sentence*.
+
+  ```javascript
+    getTypeOfSentence('Hodor');  // General sentence
+    getTypeOfSentence('Hodor?'); // Question sentence
+  ```
+
+  Реализация функции:
 
   ```javascript
   const getTypeOfSentence = (sentence) => {
-    const lastChar = sentence[sentence.length - 1];
-
     let sentenceType;
-    if (lastChar === '?') {
-      sentenceType = 'question';
+    // Предикат проверяющий окончание текста
+    // Если он оканчивается на символ '?', то вернется true,
+    // иначе false
+    if (sentence.endsWith('?')) {
+      sentenceType = 'Question';
     } else {
-      sentenceType = 'normal';
+      sentenceType = 'General';
     }
 
-    return `Sentence is ${sentenceType}`;
+    return `${sentenceType} sentence`;
   }
-
-  getTypeOfSentence('Hodor');  // Sentence is normal
-  getTypeOfSentence('Hodor?'); // Sentence is question
   ```
 
-  Мы добавили `else` и новый блок с фигурными скобками. Этот блок выполнится только если условие в `if` — ложь.
+  Мы добавили ключевое слово `else` и новый блок с фигурными скобками. Этот блок выполнится только если условие в `if` — ложь.
 
-  "Else" переводится «иначе», «в ином случае».
+  Существует два способа оформления конструкции *if-else*. С помощью отрицания можно изменить порядок блоков:
+
+  ```javascript
+  const getTypeOfSentence = (sentence) => {
+    let sentenceType;
+    // Добавилось отрицание
+    // Содержимое else переехало в if и наоборот
+    if (!sentence.endsWith('?')) {
+      sentenceType = 'General';
+    } else {
+      sentenceType = 'Question';
+    }
+
+    return `${sentenceType} sentence`;
+  }
+  ```
+
+  Какой способ предпочтительнее? Человеческому мозгу проще мыслить прямолинейно, а не через отрицание. Всегда старайтесь выбирать проверку, которая не содержит отрицаний, и подстраивайте содержимое блоков по нее.
 
 instructions: |
 
