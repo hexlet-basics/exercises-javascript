@@ -1,3 +1,3 @@
 test:
-	node ./test.js
+	@ . ../../../test.sh
 

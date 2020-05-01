@@ -20,6 +20,8 @@ const expectOutput = async (expected, run = (f) => f()) => {
     }
     const content = logs.join('\n').toString().trim();
     expect(content).toBe(expected.toString());
+    console.log();
+    console.log(chalk.green('Tests have passed!'));
   } catch (e) {
     console.log(cleanStack(e.stack));
     process.exit(1);
@@ -30,6 +32,7 @@ const test = async (run) => {
   try {
     const { default: f } = await import(getPathToIndex());
     run(f);
+    console.log();
     console.log(chalk.green('Tests have passed!'));
   } catch (e) {
     console.log(cleanStack(e.stack));
