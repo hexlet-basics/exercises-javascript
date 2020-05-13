@@ -25,7 +25,7 @@ theory: |
     while (i < str.length) {
       if (str[i] === char) {
         // Считаем только подходящие символы
-        count += 1;
+        count = count + 1;
       }
       // Счетчик увеличивается в любом случае
       i = i + 1;
