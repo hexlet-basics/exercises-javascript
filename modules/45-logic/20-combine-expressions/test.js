@@ -5,4 +5,5 @@ test((f) => {
   expect(f('Targari')).toBe(false);
   expect(f('targaryen')).toBe(false);
   expect(f('Targaryen')).toBe(true);
+  expect(f('Targaryen Daenerys')).toBe(true);
 });
