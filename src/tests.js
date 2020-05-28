@@ -20,10 +20,10 @@ const expectOutput = async (expected, run = (f) => f()) => {
     }
     const content = logs.join('\n').toString().trim();
     expect(content).toBe(expected.toString());
-    console.log();
-    console.log(chalk.green('Tests have passed!'));
+    oldLog();
+    oldLog(chalk.green('Tests have passed!'));
   } catch (e) {
-    console.log(cleanStack(e.stack));
+    oldLog(cleanStack(e.stack));
     process.exit(1);
   }
 };
