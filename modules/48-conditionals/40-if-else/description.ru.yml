@@ -59,12 +59,12 @@ instructions: |
   buildUrl('pages/about', 'hexlet.io'); // 'https://hexlet.io/pages/about'
   buildUrl('/pages/about', 'hexlet.io'); // 'https://hexlet.io/pages/about'
 
-  // В конце обязателен слеш
+  // Для главной страницы слэш в конце обязателен
   buildUrl('/', 'ru.code-basics.com'); // 'https://ru.code-basics.com/'
   buildUrl('', 'ru.code-basics.com'); // 'https://ru.code-basics.com/'
   ```
 
-  В функцию могут попадать адреса с ведущим слешом `/` и без него. Задача функции обрабатывать эту ситуацию, чтобы слеш не дублировался.
+  Первым параметром в функцию могут быть переданы адреса с ведущим слешом `/` и без него. Задача функции обрабатывать эту ситуацию, чтобы слеш не дублировался.
 
   Для реализации этой функции вам могут понадобится функции [slice](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/slice) и [startsWith](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith)
 
