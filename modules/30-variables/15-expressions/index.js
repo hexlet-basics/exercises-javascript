@@ -3,8 +3,11 @@
 let eurosCount = 100;
 
 // BEGIN
-let dollarsCount = eurosCount * 1.25;
+let dollarsPerEuro = 1.25;
+let rublesPerDollar = 60;
+
+let dollarsCount = eurosCount * dollarsPerEuro;
 console.log(dollarsCount);
-let rublesCount = dollarsCount * 60;
+let rublesCount = dollarsCount * rublesPerDollar;
 console.log(rublesCount);
 // END
