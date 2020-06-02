@@ -42,13 +42,3 @@ jobs:
 #           name: ${{ env.IMAGE_NAME }}
 #           username: ${{ secrets.DOCKER_USERNAME }}
 #           password: ${{ secrets.DOCKER_PASSWORD }}
-  push:
-    # Ensure test job passes before pushing image.
-    needs: test
-
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push'
-    
-    steps:
-      - name: Push on package
-        run: docker push $REGISTRY_HOST/$REPOSITORY/$IMAGE_NAME:latest
