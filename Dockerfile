@@ -1,5 +1,6 @@
 FROM docker.pkg.github.com/melodyn/base-image/image:base as base
 FROM node:14
+COPY --from=base . .
 
 WORKDIR /exercises-javascript
 ENV NODE_PATH /exercises-javascript/src
