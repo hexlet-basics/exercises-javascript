@@ -31,9 +31,6 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           tags: latest
-      - name: The job has succeeded
-        if: ${{ success() }}
-        run: slack-success-notify
       - name: The job has failed
         if: ${{ failure() }}
         run: slack-fail-notify
