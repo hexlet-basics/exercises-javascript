@@ -28,14 +28,30 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           tags: latest
 
-  slack-notify:
+  slack-success-notify:
     needs: build-push
-    if: always()
+    if: success()
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: rtCamp/action-slack-notify@v2.0.0
         env:
-          SLACK_MESSAGE: Мамочки, что делается! Что делается!
+          SLACK_COLOR: '#0c0'
+          SLACK_TITLE: Github Actions Success
+          SLACK_MESSAGE: Куда это мы собрались? оО
+          SLACK_CHANNEL: basics-code-auto
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
+  slack-fail-notify:
+    needs: build-push
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: rtCamp/action-slack-notify@v2.0.0
+        env:
+          SLACK_COLOR: '#c00'
+          SLACK_TITLE: Github Actions Failure
+          SLACK_MESSAGE: Я упал, поднимите меня!
           SLACK_CHANNEL: basics-code-auto
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
