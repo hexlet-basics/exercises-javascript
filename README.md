@@ -1,6 +1,6 @@
 # hexlet-basics
 
-[![Github Actions Status](../../exercises-javascript/workflows/Docker/badge.svg)](../../actions)
+[![Github Actions Status](../../workflows/Docker/badge.svg)](../../actions)
 
 ### Участие
 
