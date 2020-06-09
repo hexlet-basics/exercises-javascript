@@ -5,5 +5,4 @@ version: '2'
 services:
   sut:
     build: .
-    image: exercises-javascript_exercises:latest
     command: make check
