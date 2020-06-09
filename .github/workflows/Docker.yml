@@ -27,3 +27,15 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           tags: latest
+
+  slack-notify:
+    needs: build-push
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: rtCamp/action-slack-notify@v2.0.0
+        env:
+          SLACK_MESSAGE: Мамочки, что делается! Что делается!
+          SLACK_CHANNEL: basics-code-auto
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
