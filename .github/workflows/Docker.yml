@@ -13,11 +13,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run tests
         run: |
-          docker-compose --file docker-compose.test.yml buildss
+          docker-compose --file docker-compose.test.yml build
           docker-compose --file docker-compose.test.yml run sut
-      - name: The job has succeeded
-        if: ${{ success() }}
-        run: slack-success-notify
       - name: The job has failed
         if: ${{ failure() }}
         run: slack-fail-notify
