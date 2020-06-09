@@ -26,9 +26,9 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     steps:
-      - name: Build and push
       - uses: actions/checkout@v2
-      - uses: docker/build-push-action@v1.1.0
+      - name: Build and push
+        uses: docker/build-push-action@v1.1.0
         with:
           repository: ${{ env.GITHUB_REPOSITORY }}
           username: ${{ secrets.DOCKER_USERNAME }}
