@@ -44,7 +44,7 @@ jobs:
 
   slack-fail-notify:
     needs: build-push
-    if: failure()
+    if: ${{ failure() }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
