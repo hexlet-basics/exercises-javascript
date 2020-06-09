@@ -1,8 +1,8 @@
-FROM docker.pkg.github.com/melodyn/base-image/image:base
+FROM melodyn/base-image:latest
 
 WORKDIR /exercises-javascript
 
-COPY --from=docker.pkg.github.com/melodyn/base-image/image:base /tmp/basics/common/* ./
+COPY --from=melodyn/base-image:latest /tmp/basics/common/* ./
 COPY . .
 
 ENV NODE_PATH /exercises-javascript/src

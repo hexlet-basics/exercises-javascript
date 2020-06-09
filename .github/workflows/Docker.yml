@@ -2,43 +2,18 @@ name: Docker
 
 on:
   push:
-    branches:
-      - master
-
-env:
-  # TODO: Change variable to your image's name.
-  IMAGE_NAME: hexletbasics/exercises-javascript
-  REPOSITORY: melodyn/exercises-javascript
-  REGISTRY_HOST: docker.pkg.github.com
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
-  # Run tests.
-  # See also https://docs.docker.com/docker-hub/builds/automated-testing/
-  test:
+  build-push:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
-      - name: Log into registry
-        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login $REGISTRY_HOST -u ${{ github.actor }} --password-stdin
-
-      - name: Run tests
-        run: |
-            docker-compose --file docker-compose.test.yml build
-            docker-compose --file docker-compose.test.yml run sut
-  # Push image to GitHub Package Registry.
-  # See also https://docs.docker.com/docker-hub/builds/
-#   push:
-#     # Ensure test job passes before pushing image.
-#     needs: test
-
-#     runs-on: ubuntu-latest
-#     if: github.event_name == 'push'
-
-#     steps:
-#       - uses: actions/checkout@master
-#       - uses: elgohr/Publish-Docker-Github-Action@master
-#         with:
-#           name: ${{ env.IMAGE_NAME }}
-#           username: ${{ secrets.DOCKER_USERNAME }}
-#           password: ${{ secrets.DOCKER_PASSWORD }}
+      - uses: actions/checkout@v1
+      - uses: docker/build-push-action@v1.1.0
+        with:
+          repository: ${{ env.GITHUB_REPOSITORY }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          tags: latest
