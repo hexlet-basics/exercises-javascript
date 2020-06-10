@@ -15,6 +15,17 @@ env:
   SLACK_MESSAGE_FAIL: 'Я упал, поднимите меня!'
 
 jobs:
+  set-env-vars:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set base env vars for Slack
+        uses: allenevans/set-env@v1.0.0
+        with:
+          SLACK_USERNAME: Github Actions
+          SLACK_CHANNEL: basics-code-auto
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_ICON: https://ru.code-basics.com/images/logo-601a4d1dc269ba3616ad4663e0c0bbef.png
+
   test-deploy-notify:
     runs-on: ubuntu-latest
     steps:
@@ -32,14 +43,14 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           tags: latest
 
-      - name: Set base env vars for Slack
-        if: ${{ always() }}
-        uses: allenevans/set-env@v1.0.0
-        with:
-          SLACK_USERNAME: Github Actions
-          SLACK_CHANNEL: basics-code-auto
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_ICON: https://ru.code-basics.com/images/logo-601a4d1dc269ba3616ad4663e0c0bbef.png
+#       - name: Set base env vars for Slack
+#         if: ${{ always() }}
+#         uses: allenevans/set-env@v1.0.0
+#         with:
+#           SLACK_USERNAME: Github Actions
+#           SLACK_CHANNEL: basics-code-auto
+#           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+#           SLACK_ICON: https://ru.code-basics.com/images/logo-601a4d1dc269ba3616ad4663e0c0bbef.png
       - name: Set success env vars for Slack
         if: ${{ success() }}
         uses: allenevans/set-env@v1.0.0
@@ -56,4 +67,5 @@ jobs:
           SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_FAIL }}
       - name: Send message to Slack
         if: ${{ always() }}
-        uses: rtCamp/action-slack-notify@v2.0.0
+#         uses: rtCamp/action-slack-notify@v2.0.0
+        run: echo $SLACK_USERNAME $SLACK_COLOR
