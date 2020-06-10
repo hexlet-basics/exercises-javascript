@@ -37,7 +37,9 @@ jobs:
           SLACK_COLOR: ${{ env.SLACK_COLOR_FAIL }}
           SLACK_TITLE: ${{ env.SLACK_TITLE_FAIL }}
           SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_FAIL }}
-        run: slack-notify
+        run: |
+          echo $SLACK_COLOR $SLACK_TITLE $SLACK_MESSAGE
+          slack-notify
 
   build-push:
     needs: test
