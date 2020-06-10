@@ -15,39 +15,43 @@ env:
   SLACK_MESSAGE_FAIL: 'Я упал, поднимите меня!'
 
 jobs:
-  aaa:
+  test-deploy-notify:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - name: Run tests
         run: |
           docker-compose --file docker-compose.test.yml buildss
           docker-compose --file docker-compose.test.yml run sut
+
+      - name: Build and push
+        uses: docker/build-push-action@v1.1.0
+        with:
+          repository: ${{ env.GITHUB_REPOSITORY }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          tags: latest
+
       - name: Set base Slack env vars
-        uses: actions/checkout@v2
         if: ${{ always() }}
-#         uses: allenevans/set-env@v1.0.0
+        uses: allenevans/set-env@v1.0.0
         env:
           SLACK_USERNAME: Github Actions
           SLACK_CHANNEL: basics-code-auto
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
       - name: Set success Slack env vars
         if: ${{ success() }}
-        uses: actions/checkout@v2
-#         uses: allenevans/set-env@v1.0.0
+        uses: allenevans/set-env@v1.0.0
         env:
           SLACK_COLOR: ${{ env.SLACK_COLOR_SUCCESS }}
           SLACK_TITLE: ${{ env.SLACK_TITLE_SUCCESS }}
           SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_SUCCESS }}
       - name: Set failure Slack env vars
-        uses: actions/checkout@v2
         if: ${{ failure() }}
-#         uses: allenevans/set-env@v1.0.0
+        uses: allenevans/set-env@v1.0.0
         env:
           SLACK_COLOR: ${{ env.SLACK_COLOR_FAIL }}
           SLACK_TITLE: ${{ env.SLACK_TITLE_FAIL }}
           SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_FAIL }}
       - name: Send message
         if: ${{ always() }}
-        run: |
-          echo $SLACK_COLOR $SLACK_TITLE $SLACK_MESSAGE
+        run: printenv
