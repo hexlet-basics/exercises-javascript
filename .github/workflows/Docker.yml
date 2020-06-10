@@ -54,4 +54,4 @@ jobs:
           SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_FAIL }}
       - name: Send message
         if: ${{ always() }}
-        run: printenv
+        run: echo $SLACK_COLOR $SLACK_TITLE $SLACK_MESSAGE
