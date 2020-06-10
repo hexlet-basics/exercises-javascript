@@ -9,10 +9,8 @@ on:
 env:
   SLACK_COLOR_SUCCESS: '#0c0'
   SLACK_COLOR_FAIL: '#c00'
-  SLACK_TITLE_SUCCESS: 'Job successed'
-  SLACK_TITLE_FAIL: 'Job failed'
-  SLACK_MESSAGE_SUCCESS: 'Куда это мы собрались? оО'
-  SLACK_MESSAGE_FAIL: 'Я упал, поднимите меня!'
+  SLACK_MESSAGE_SUCCESS: 'Jobs succeed'
+  SLACK_MESSAGE_FAIL: 'Jobs failed'
 
 jobs:
   test-deploy-notify:
@@ -24,7 +22,7 @@ jobs:
           docker-compose --file docker-compose.test.yml build
           docker-compose --file docker-compose.test.yml run sut
 
-      - name: Build and push
+      - name: Build and push into docker hub
         uses: docker/build-push-action@v1.1.0
         with:
           repository: ${{ env.GITHUB_REPOSITORY }}
@@ -34,30 +32,25 @@ jobs:
 
       - name: Set base env vars for Slack
         if: ${{ always() }}
-        uses: allenevans/set-env@v1.0.0
+        uses: allenevans/set-env@v1.1.0
         with:
-          overwrite: true
           SLACK_USERNAME: Github Actions
           SLACK_CHANNEL: basics-code-auto
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_TITLE: ${{ github.repository }} status
           SLACK_ICON: https://ru.code-basics.com/images/logo-601a4d1dc269ba3616ad4663e0c0bbef.png
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
       - name: Set success env vars for Slack
         if: ${{ success() }}
-        uses: allenevans/set-env@v1.0.0
+        uses: allenevans/set-env@v1.1.0
         with:
-          overwrite: true
           SLACK_COLOR: ${{ env.SLACK_COLOR_SUCCESS }}
-          SLACK_TITLE: ${{ env.SLACK_TITLE_SUCCESS }}
           SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_SUCCESS }}
       - name: Set failure env vars for Slack
         if: ${{ failure() }}
-        uses: allenevans/set-env@v1.0.0
+        uses: allenevans/set-env@v1.1.0
         with:
-          overwrite: true
           SLACK_COLOR: ${{ env.SLACK_COLOR_FAIL }}
-          SLACK_TITLE: ${{ env.SLACK_TITLE_FAIL }}
           SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_FAIL }}
-      - name: Send message to Slack
+      - name: Send job result into Slack
         if: ${{ always() }}
-        run: echo $SLACK_MESSAGE
-#         uses: rtCamp/action-slack-notify@v2.0.0
+        uses: rtCamp/action-slack-notify@v2.0.0
