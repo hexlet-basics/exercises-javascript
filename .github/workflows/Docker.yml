@@ -32,27 +32,28 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           tags: latest
 
-      - name: Set base Slack env vars
+      - name: Set base env vars for Slack
         if: ${{ always() }}
         uses: allenevans/set-env@v1.0.0
         with:
           SLACK_USERNAME: Github Actions
           SLACK_CHANNEL: basics-code-auto
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-      - name: Set success Slack env vars
+          SLACK_ICON: https://ru.code-basics.com/images/logo-601a4d1dc269ba3616ad4663e0c0bbef.png
+      - name: Set success env vars for Slack
         if: ${{ success() }}
         uses: allenevans/set-env@v1.0.0
         with:
           SLACK_COLOR: ${{ env.SLACK_COLOR_SUCCESS }}
           SLACK_TITLE: ${{ env.SLACK_TITLE_SUCCESS }}
           SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_SUCCESS }}
-      - name: Set failure Slack env vars
+      - name: Set failure env vars for Slack
         if: ${{ failure() }}
         uses: allenevans/set-env@v1.0.0
         with:
           SLACK_COLOR: ${{ env.SLACK_COLOR_FAIL }}
           SLACK_TITLE: ${{ env.SLACK_TITLE_FAIL }}
           SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_FAIL }}
-      - name: Send message
+      - name: Send message to Slack
         if: ${{ always() }}
-        run: echo $SLACK_COLOR $SLACK_TITLE $SLACK_MESSAGE
+        uses: rtCamp/action-slack-notify@v2.0.0
