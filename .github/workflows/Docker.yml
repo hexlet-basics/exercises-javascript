@@ -17,9 +17,9 @@ env:
   SLACK_USERNAME: Github Actions
   SLACK_CHANNEL: basics-code-auto
   SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-  SLACK_COLOR: ${{ env.SLACK_COLOR_SUCCESS }}
-  SLACK_TITLE: ${{ env.SLACK_TITLE_SUCCESS }}
-  SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_SUCCESS }}
+  SLACK_COLOR: ${SLACK_COLOR_SUCCESS}
+  SLACK_TITLE: ${SLACK_TITLE_SUCCESS}
+  SLACK_MESSAGE: ${SLACK_MESSAGE_SUCCESS}
 
 jobs:
   test:
@@ -33,9 +33,9 @@ jobs:
       - name: The job has failed
         if: ${{ failure() }}
         env:
-          SLACK_COLOR: ${{ env.SLACK_COLOR_FAIL }}
-          SLACK_TITLE: ${{ env.SLACK_TITLE_FAIL }}
-          SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_FAIL }}
+          SLACK_COLOR: ${env.SLACK_COLOR_FAIL}
+          SLACK_TITLE: ${env.SLACK_TITLE_FAIL}
+          SLACK_MESSAGE: ${env.SLACK_MESSAGE_FAIL}
         run: slack-notify
 
   build-push:
@@ -53,9 +53,9 @@ jobs:
       - name: The job has failed
         if: ${{ failure() }}
         env:
-          SLACK_COLOR: ${{ env.SLACK_COLOR_FAIL }}
-          SLACK_TITLE: ${{ env.SLACK_TITLE_FAIL }}
-          SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_FAIL }}
+          SLACK_COLOR: ${env.SLACK_COLOR_FAIL}
+          SLACK_TITLE: ${env.SLACK_TITLE_FAIL}
+          SLACK_MESSAGE: ${env.SLACK_MESSAGE_FAIL}
         run: slack-notify
 
   slack-notify:
