@@ -32,12 +32,14 @@ jobs:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
       - name: Set success Slack env vars
         if: ${{ success() }}
+        uses: actions/checkout@v2
 #         uses: allenevans/set-env@v1.0.0
         env:
           SLACK_COLOR: ${{ env.SLACK_COLOR_SUCCESS }}
           SLACK_TITLE: ${{ env.SLACK_TITLE_SUCCESS }}
           SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_SUCCESS }}
       - name: Set failure Slack env vars
+        uses: actions/checkout@v2
         if: ${{ failure() }}
 #         uses: allenevans/set-env@v1.0.0
         env:
