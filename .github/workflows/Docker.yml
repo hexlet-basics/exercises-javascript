@@ -24,6 +24,7 @@ jobs:
           docker-compose --file docker-compose.test.yml buildss
           docker-compose --file docker-compose.test.yml run sut
       - name: Set base Slack env vars
+        uses: actions/checkout@v2
         if: ${{ always() }}
 #         uses: allenevans/set-env@v1.0.0
         env:
