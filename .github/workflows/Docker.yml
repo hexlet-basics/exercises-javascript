@@ -36,6 +36,7 @@ jobs:
         if: ${{ always() }}
         uses: allenevans/set-env@v1.0.0
         with:
+          overwrite: true
           SLACK_USERNAME: Github Actions
           SLACK_CHANNEL: basics-code-auto
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
@@ -44,6 +45,7 @@ jobs:
         if: ${{ success() }}
         uses: allenevans/set-env@v1.0.0
         with:
+          overwrite: true
           SLACK_COLOR: ${{ env.SLACK_COLOR_SUCCESS }}
           SLACK_TITLE: ${{ env.SLACK_TITLE_SUCCESS }}
           SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_SUCCESS }}
@@ -51,9 +53,11 @@ jobs:
         if: ${{ failure() }}
         uses: allenevans/set-env@v1.0.0
         with:
+          overwrite: true
           SLACK_COLOR: ${{ env.SLACK_COLOR_FAIL }}
           SLACK_TITLE: ${{ env.SLACK_TITLE_FAIL }}
           SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_FAIL }}
       - name: Send message to Slack
         if: ${{ always() }}
-        uses: rtCamp/action-slack-notify@v2.0.0
+        run: echo $SLACK_MESSAGE
+#         uses: rtCamp/action-slack-notify@v2.0.0
