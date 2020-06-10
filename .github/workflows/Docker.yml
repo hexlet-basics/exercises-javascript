@@ -6,6 +6,24 @@ on:
   pull_request:
     branches: [ master ]
 
+env:
+  SLACK_NOTIFICATIONS_MESSAGE_CONFIG:
+    SUCCESS:
+      SLACK_COLOR: '#0c0'
+      SLACK_USERNAME: Github Actions
+      SLACK_TITLE: Job successed
+      SLACK_MESSAGE: Куда это мы собрались? оО
+      SLACK_CHANNEL: basics-code-auto
+      SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+    FAIL:
+      SLACK_COLOR: '#c00'
+      SLACK_USERNAME: Github Actions
+      SLACK_TITLE: Job failed
+      SLACK_MESSAGE: Я упал, поднимите меня!
+      SLACK_CHANNEL: basics-code-auto
+      SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+  SLACK_NOTIFICATION: ${{ env.SLACK_NOTIFICATIONS_MESSAGE_CONFIG.SUCCESS }}
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -13,11 +31,12 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run tests
         run: |
-          docker-compose --file docker-compose.test.yml build
+          docker-compose --file docker-compose.test.yml buildss
           docker-compose --file docker-compose.test.yml run sut
       - name: The job has failed
         if: ${{ failure() }}
-        run: slack-fail-notify
+        env:
+          SLACK_NOTIFICATION: ${{ env.SLACK_NOTIFICATIONS_MESSAGE_CONFIG.FAIL }}
 
   build-push:
     needs: test
@@ -33,32 +52,15 @@ jobs:
           tags: latest
       - name: The job has failed
         if: ${{ failure() }}
-        run: slack-fail-notify
+        env:
+          SLACK_NOTIFICATION: ${{ env.SLACK_NOTIFICATIONS_MESSAGE_CONFIG.FAIL }}
 
-  slack-success-notify:
+  slack-notify:
     needs: [test, build-push]
-    if: success()
+    if: always()
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: rtCamp/action-slack-notify@v2.0.0
-        env:
-          SLACK_COLOR: '#0c0'
-          SLACK_TITLE: Github Actions Success
-          SLACK_MESSAGE: Куда это мы собрались? оО
-          SLACK_CHANNEL: basics-code-auto
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-
-  slack-fail-notify:
-    needs: [test, build-push]
-    if: failure()
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: rtCamp/action-slack-notify@v2.0.0
-        env:
-          SLACK_COLOR: '#c00'
-          SLACK_TITLE: Github Actions Failure
-          SLACK_MESSAGE: Я упал, поднимите меня!
-          SLACK_CHANNEL: basics-code-auto
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      - name: Send message
+        uses: rtCamp/action-slack-notify@v2.0.0
+        env: ${{ env.SLACK_NOTIFICATION }}
