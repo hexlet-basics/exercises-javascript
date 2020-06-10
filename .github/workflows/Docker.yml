@@ -31,8 +31,8 @@ jobs:
           docker-compose --file docker-compose.test.yml buildss
           docker-compose --file docker-compose.test.yml run sut
       - name: The job has failed
-        uses: actions/checkout@v2
         if: ${{ failure() }}
+        uses: allenevans/set-env@v1.0.0
         with:
           SLACK_COLOR: ${{ env.SLACK_COLOR_FAIL }}
           SLACK_TITLE: ${{ env.SLACK_TITLE_FAIL }}
@@ -74,4 +74,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Send message
-        run: echo $SLACK_COLOR $SLACK_TITLE $SLACK_MESSAGE
+        run: |
+          echo $SLACK_COLOR $SLACK_TITLE $SLACK_MESSAGE
+          printenv
