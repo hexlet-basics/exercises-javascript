@@ -7,22 +7,19 @@ on:
     branches: [ master ]
 
 env:
-  SLACK_NOTIFICATIONS_MESSAGE_CONFIG:
-    SUCCESS:
-      SLACK_COLOR: '#0c0'
-      SLACK_USERNAME: Github Actions
-      SLACK_TITLE: Job successed
-      SLACK_MESSAGE: Куда это мы собрались? оО
-      SLACK_CHANNEL: basics-code-auto
-      SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-    FAIL:
-      SLACK_COLOR: '#c00'
-      SLACK_USERNAME: Github Actions
-      SLACK_TITLE: Job failed
-      SLACK_MESSAGE: Я упал, поднимите меня!
-      SLACK_CHANNEL: basics-code-auto
-      SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-  SLACK_NOTIFICATION: ${{ env.SLACK_NOTIFICATIONS_MESSAGE_CONFIG.SUCCESS }}
+  SLACK_COLOR_SUCCESS: '#0c0'
+  SLACK_COLOR_FAIL: '#c00'
+  SLACK_TITLE_SUCCESS: 'Job successed'
+  SLACK_TITLE_FAIL: 'Job failed'
+  SLACK_MESSAGE_SUCCESS: 'Куда это мы собрались? оО'
+  SLACK_MESSAGE_FAIL: 'Я упал, поднимите меня!'
+  # Slack notificatcions config
+  SLACK_USERNAME: Github Actions
+  SLACK_CHANNEL: basics-code-auto
+  SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+  SLACK_COLOR: $SLACK_COLOR_SUCCESS
+  SLACK_TITLE: $SLACK_COLOR_SUCCESS
+  SLACK_MESSAGE: $SLACK_MESSAGE_SUCCESS
 
 jobs:
   test:
@@ -36,7 +33,9 @@ jobs:
       - name: The job has failed
         if: ${{ failure() }}
         env:
-          SLACK_NOTIFICATION: ${{ env.SLACK_NOTIFICATIONS_MESSAGE_CONFIG.FAIL }}
+          SLACK_COLOR: $SLACK_COLOR_FAIL
+          SLACK_TITLE: $SLACK_COLOR_FAIL
+          SLACK_MESSAGE: $SLACK_MESSAGE_FAIL
 
   build-push:
     needs: test
@@ -53,7 +52,9 @@ jobs:
       - name: The job has failed
         if: ${{ failure() }}
         env:
-          SLACK_NOTIFICATION: ${{ env.SLACK_NOTIFICATIONS_MESSAGE_CONFIG.FAIL }}
+          SLACK_COLOR: $SLACK_COLOR_FAIL
+          SLACK_TITLE: $SLACK_COLOR_FAIL
+          SLACK_MESSAGE: $SLACK_MESSAGE_FAIL
 
   slack-notify:
     needs: [test, build-push]
@@ -63,4 +64,3 @@ jobs:
       - uses: actions/checkout@v2
       - name: Send message
         uses: rtCamp/action-slack-notify@v2.0.0
-        env: ${{ env.SLACK_NOTIFICATION }}
