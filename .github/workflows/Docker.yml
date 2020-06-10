@@ -18,21 +18,25 @@ jobs:
   aaa:
     runs-on: ubuntu-latest
     steps:
-      - name: Set env vars
-        uses: allenevans/set-env@v1.0.0
-        with:
-          SLACK_USERNAME: Github Actions
-          SLACK_CHANNEL: basics-code-auto
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_COLOR: ${{ env.SLACK_COLOR_SUCCESS }}
-          SLACK_TITLE: ${{ env.SLACK_TITLE_SUCCESS }}
-          SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_SUCCESS }}
       - uses: actions/checkout@v2
       - name: Run tests
         run: |
           docker-compose --file docker-compose.test.yml buildss
           docker-compose --file docker-compose.test.yml run sut
-      - name: Send message
+      - name: Set base Slack env vars
+        uses: allenevans/set-env@v1.0.0
+        with:
+          SLACK_USERNAME: Github Actions
+          SLACK_CHANNEL: basics-code-auto
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      - name: Set success Slack env vars
+        if: ${{ success() }}
+        uses: allenevans/set-env@v1.0.0
+        with:
+          SLACK_COLOR: ${{ env.SLACK_COLOR_SUCCESS }}
+          SLACK_TITLE: ${{ env.SLACK_TITLE_SUCCESS }}
+          SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_SUCCESS }}
+      - name: Set failure Slack env vars
         if: ${{ failure() }}
         uses: allenevans/set-env@v1.0.0
         with:
