@@ -31,7 +31,7 @@ jobs:
           docker-compose --file docker-compose.test.yml buildss
           docker-compose --file docker-compose.test.yml run sut
       - name: The job has failed
-#         uses: actions/checkout@v2
+        uses: actions/checkout@v2
         if: ${{ failure() }}
         with:
           SLACK_COLOR: ${{ env.SLACK_COLOR_FAIL }}
