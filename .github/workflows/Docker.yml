@@ -17,9 +17,9 @@ env:
   SLACK_USERNAME: Github Actions
   SLACK_CHANNEL: basics-code-auto
   SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-  SLACK_COLOR: ${SLACK_COLOR_SUCCESS}
-  SLACK_TITLE: ${SLACK_TITLE_SUCCESS}
-  SLACK_MESSAGE: ${SLACK_MESSAGE_SUCCESS}
+  SLACK_COLOR: '#c00'
+  SLACK_TITLE: 'Job successed'
+  SLACK_MESSAGE: 'Куда это мы собрались? оО'
 
 jobs:
   test:
@@ -31,12 +31,13 @@ jobs:
           docker-compose --file docker-compose.test.yml buildss
           docker-compose --file docker-compose.test.yml run sut
       - name: The job has failed
+#         uses: actions/checkout@v2
         if: ${{ failure() }}
         env:
-          SLACK_COLOR: ${env.SLACK_COLOR_FAIL}
-          SLACK_TITLE: ${env.SLACK_TITLE_FAIL}
-          SLACK_MESSAGE: ${env.SLACK_MESSAGE_FAIL}
-        run: slack-notify
+          SLACK_COLOR: ${SLACK_COLOR_FAIL}
+          SLACK_TITLE: ${SLACK_TITLE_FAIL}
+          SLACK_MESSAGE: ${SLACK_MESSAGE_FAIL}
+        run: echo $SLACK_COLOR $SLACK_TITLE $SLACK_MESSAGE
 
   build-push:
     needs: test
@@ -50,19 +51,19 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           tags: latest
-      - name: The job has failed
-        if: ${{ failure() }}
-        env:
-          SLACK_COLOR: ${env.SLACK_COLOR_FAIL}
-          SLACK_TITLE: ${env.SLACK_TITLE_FAIL}
-          SLACK_MESSAGE: ${env.SLACK_MESSAGE_FAIL}
-        run: slack-notify
+#       - name: The job has failed
+#         uses: actions/checkout@v2
+#         if: ${{ failure() }}
+#         env:
+#           SLACK_COLOR: ${SLACK_COLOR_FAIL}
+#           SLACK_TITLE: ${SLACK_TITLE_FAIL}
+#           SLACK_MESSAGE: ${SLACK_MESSAGE_FAIL}
 
-  slack-notify:
-    needs: [test, build-push]
-    if: always()
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Send message
-        uses: rtCamp/action-slack-notify@v2.0.0
+#   slack-notify:
+#     needs: [test, build-push]
+#     if: always()
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - name: Send message
+#         uses: rtCamp/action-slack-notify@v2.0.0
