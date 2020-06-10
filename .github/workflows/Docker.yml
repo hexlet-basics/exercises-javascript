@@ -34,9 +34,9 @@ jobs:
 #         uses: actions/checkout@v2
         if: ${{ failure() }}
         env:
-          SLACK_COLOR: ${SLACK_COLOR_FAIL}
-          SLACK_TITLE: ${SLACK_TITLE_FAIL}
-          SLACK_MESSAGE: ${SLACK_MESSAGE_FAIL}
+          SLACK_COLOR: ${{ env.SLACK_COLOR_FAIL }}
+          SLACK_TITLE: ${{ env.SLACK_TITLE_FAIL }}
+          SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_FAIL }}
         run: echo $SLACK_COLOR $SLACK_TITLE $SLACK_MESSAGE
 
   build-push:
