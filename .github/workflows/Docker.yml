@@ -36,6 +36,7 @@ jobs:
           SLACK_COLOR: $SLACK_COLOR_FAIL
           SLACK_TITLE: $SLACK_COLOR_FAIL
           SLACK_MESSAGE: $SLACK_MESSAGE_FAIL
+        run: slack-notify
 
   build-push:
     needs: test
@@ -55,6 +56,7 @@ jobs:
           SLACK_COLOR: $SLACK_COLOR_FAIL
           SLACK_TITLE: $SLACK_COLOR_FAIL
           SLACK_MESSAGE: $SLACK_MESSAGE_FAIL
+        run: slack-notify
 
   slack-notify:
     needs: [test, build-push]
