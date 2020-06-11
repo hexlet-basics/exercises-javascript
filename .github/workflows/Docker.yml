@@ -26,8 +26,8 @@ jobs:
         uses: docker/build-push-action@v1.1.0
         with:
           repository: ${{ env.GITHUB_REPOSITORY }}
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          #username: ${{ secrets.DOCKER_USERNAME }}
+          #password: ${{ secrets.DOCKER_PASSWORD }}
           tags: latest
 
       - name: Set base env vars for Slack
@@ -53,4 +53,5 @@ jobs:
           SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_FAIL }}
       - name: Send job result into Slack
         if: ${{ always() }}
-        uses: rtCamp/action-slack-notify@v2.0.0
+        #uses: rtCamp/action-slack-notify@v2.0.0
+        run: echo $SLACK_MESSAGE
