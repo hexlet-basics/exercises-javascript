@@ -9,7 +9,7 @@ compose-build:
 	docker-compose build
 
 compose-install:
-	docker-compose run exercises npm install
+	docker-compose run exercises npm ci
 
 code-lint:
 	npx eslint modules
