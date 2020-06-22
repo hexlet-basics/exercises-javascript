@@ -19,10 +19,10 @@ theory: |
   Выход из ситуации прост: достаточно создать переменные с правильными именами, как все встанет на свои места.
 
   ```javascript
-  let rublesInDollar = 1.25;
+  let dollarsPerEuro = 1.25;
   let rublesPerDollar = 60;
 
-  let dollarsCount = 50 * rublesInDollar; // 62.5
+  let dollarsCount = 50 * dollarsPerEuro; // 62.5
   let rublesCount = dollarsCount * rublesPerDollar; // 3750
 
   console.log(rublesCount);
