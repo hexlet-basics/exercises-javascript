@@ -6,14 +6,8 @@ on:
   pull_request:
     branches: [ master ]
 
-env:
-  SLACK_COLOR_SUCCESS: '#0c0'
-  SLACK_COLOR_FAIL: '#c00'
-  SLACK_MESSAGE_SUCCESS: 'Jobs succeed'
-  SLACK_MESSAGE_FAIL: 'Jobs failed'
-
 jobs:
-  test-deploy-notify:
+  build-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -22,7 +16,13 @@ jobs:
           docker-compose --file docker-compose.test.yml build
           docker-compose --file docker-compose.test.yml run sut
 
+  build-push:
+    runs-on: ubuntu-latest
+    needs: build-test
+    steps:
+      - uses: actions/checkout@v2
       - name: Build and push into docker hub
+        if: ${{ github.event_name == 'push' }}
         uses: docker/build-push-action@v1.1.0
         with:
           repository: ${{ env.GITHUB_REPOSITORY }}
@@ -30,28 +30,12 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           tags: latest
 
-      - name: Set base env vars for Slack
-        if: ${{ always() }}
-        uses: allenevans/set-env@v1.1.0
+  slack-notification:
+    runs-on: ubuntu-latest
+    needs: build-push
+    steps:
+      - name: Send notification
+        if: ${{github.event_name == 'push' }}
+        uses: rtCamp/action-slack-notify@v2.0.0
         with:
-          SLACK_USERNAME: Github Actions
-          SLACK_CHANNEL: basics-code-auto
-          SLACK_TITLE: ${{ github.repository }} status
-          SLACK_ICON: https://ru.code-basics.com/images/logo-601a4d1dc269ba3616ad4663e0c0bbef.png
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-      - name: Set success env vars for Slack
-        if: ${{ success() }}
-        uses: allenevans/set-env@v1.1.0
-        with:
-          SLACK_COLOR: ${{ env.SLACK_COLOR_SUCCESS }}
-          SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_SUCCESS }}
-      - name: Set failure env vars for Slack
-        if: ${{ failure() }}
-        uses: allenevans/set-env@v1.1.0
-        with:
-          SLACK_COLOR: ${{ env.SLACK_COLOR_FAIL }}
-          SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_FAIL }}
-      - name: Send job result into Slack
-        if: ${{ always() }}
-        #uses: rtCamp/action-slack-notify@v2.0.0
-        run: echo $SLACK_MESSAGE
