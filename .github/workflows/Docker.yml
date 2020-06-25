@@ -2,40 +2,40 @@ name: Docker
 
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
   pull_request:
-
-env:
-  # TODO: Change variable to your image's name.
-  IMAGE_NAME: hexletbasics/exercises-javascript
+    branches: [ master ]
 
 jobs:
-  # Run tests.
-  # See also https://docs.docker.com/docker-hub/builds/automated-testing/
-  test:
+  build-test:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
-
       - name: Run tests
         run: |
-            docker-compose --file docker-compose.test.yml build
-            docker-compose --file docker-compose.test.yml run sut
-  # Push image to GitHub Package Registry.
-  # See also https://docs.docker.com/docker-hub/builds/
-  push:
-    # Ensure test job passes before pushing image.
-    needs: test
+          docker-compose --file docker-compose.test.yml build
+          docker-compose --file docker-compose.test.yml run sut
 
+  build-push:
     runs-on: ubuntu-latest
-    if: github.event_name == 'push'
-
+    needs: build-test
     steps:
-      - uses: actions/checkout@master
-      - uses: elgohr/Publish-Docker-Github-Action@master
+      - uses: actions/checkout@v2
+      - name: Build and push into docker hub
+        if: ${{ github.event_name == 'push' }}
+        uses: docker/build-push-action@v1.1.0
         with:
-          name: ${{ env.IMAGE_NAME }}
+          repository: ${{ env.GITHUB_REPOSITORY }}
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
+          tags: latest
+
+  slack-notification:
+    runs-on: ubuntu-latest
+    needs: build-push
+    steps:
+      - name: Send notification
+        if: ${{github.event_name == 'push' }}
+        uses: rtCamp/action-slack-notify@v2.0.0
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
