@@ -2,40 +2,46 @@ name: Docker
 
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
   pull_request:
+    branches: [ master ]
 
 env:
-  # TODO: Change variable to your image's name.
-  IMAGE_NAME: hexletbasics/exercises-javascript
+  # TODO: Change variable to your registry.
+  REGISTRY_NAME: hexletbasics
 
 jobs:
-  # Run tests.
-  # See also https://docs.docker.com/docker-hub/builds/automated-testing/
-  test:
+  build-test:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
-
       - name: Run tests
         run: |
-            docker-compose --file docker-compose.test.yml build
-            docker-compose --file docker-compose.test.yml run sut
-  # Push image to GitHub Package Registry.
-  # See also https://docs.docker.com/docker-hub/builds/
-  push:
-    # Ensure test job passes before pushing image.
-    needs: test
+          docker-compose --file docker-compose.test.yml build
+          docker-compose --file docker-compose.test.yml run sut
 
+  build-push-notify:
     runs-on: ubuntu-latest
-    if: github.event_name == 'push'
-
+    if: ${{ github.event_name == 'push' }}
+    needs: build-test
     steps:
-      - uses: actions/checkout@master
-      - uses: elgohr/Publish-Docker-Github-Action@master
+      - uses: actions/checkout@v2
+      - name: Set repository name
+        run: |
+          echo ::set-env name=REPOSITORY_NAME::$(echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}')
+      - name: Build and push into docker hub
+        uses: docker/build-push-action@v1.1.0
         with:
-          name: ${{ env.IMAGE_NAME }}
+          repository: ${{ env.REGISTRY_NAME }}/${{ env.REPOSITORY_NAME }}
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
+          tags: latest
+      - name: Set fail Slack env vars
+        if: ${{ failure() }}
+        run: |
+          echo "::set-env name=SLACK_COLOR::#a30200"
+      - name: Send notification into Slack
+        if: ${{ always() }}
+        uses: rtCamp/action-slack-notify@v2.0.0
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}

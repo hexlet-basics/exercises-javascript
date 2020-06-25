@@ -1,22 +1,10 @@
-FROM node:14
-
-ENV LANG C.UTF-8
-ENV LC_ALL C.UTF-8
-
-RUN apt-get update && apt-get install -yqq git curl python3-pip libyaml-dev zip unzip
-
-RUN pip3 install yamllint
-RUN apt-get install -yqq jq
-RUN pip3 install yq
-RUN npm install -g ajv-cli
+FROM hexletbasics/base-image:latest
 
 WORKDIR /exercises-javascript
 
-RUN npm install -g npm-check-updates
-COPY package.json package.json
-COPY package-lock.json package-lock.json
-RUN npm ci
+COPY . .
 
 ENV NODE_PATH /exercises-javascript/src
 
-COPY . .
+RUN npm install -g npm-check-updates
+RUN npm ci
