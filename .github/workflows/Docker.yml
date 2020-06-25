@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ master ]
 
+env:
+  # TODO: Change variable to your registry.
+  REGISTRY_NAME: hexletbasics
+
 jobs:
   build-test:
     runs-on: ubuntu-latest
@@ -22,10 +26,13 @@ jobs:
     needs: build-test
     steps:
       - uses: actions/checkout@v2
+      - name: Set repository name
+        run: |
+          echo ::set-env name=REPOSITORY_NAME::$(echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}')
       - name: Build and push into docker hub
         uses: docker/build-push-action@v1.1.0
         with:
-          repository: ${{ env.GITHUB_REPOSITORY }}
+          repository: "$REGISTRY_NAME/$REPOSITORY_NAME"
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           tags: latest

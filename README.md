@@ -1,4 +1,4 @@
-# hexletbasics
+# hexlet-basics
 
 [![Github Actions Status](../../workflows/Docker/badge.svg)](../../actions)
 
