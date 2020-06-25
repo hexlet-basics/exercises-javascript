@@ -32,7 +32,7 @@ jobs:
       - name: Build and push into docker hub
         uses: docker/build-push-action@v1.1.0
         with:
-          repository: ${{ env.$REGISTRY_NAME }}/${{ env.$REPOSITORY_NAME }}
+          repository: ${{ env.REGISTRY_NAME }}/${{ env.REPOSITORY_NAME }}
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           tags: latest
