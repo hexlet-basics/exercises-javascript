@@ -11,14 +11,14 @@ const expectOutput = async (expected, run = (f) => f()) => {
   const oldLog = console.log;
   global.console.log = (...args) => {
     oldLog(...args);
-    logs.push(args);
+    logs.push(...args);
   };
   try {
     const { default: f } = await import(getPathToIndex());
     if (typeof f === 'function') {
       run(f);
     }
-    const content = logs.join('\n').toString().trim();
+    const content = logs.map(String).join('\n').trim();
     expect(content).toBe(expected.toString());
     oldLog();
     oldLog(chalk.green('Tests have passed!'));
