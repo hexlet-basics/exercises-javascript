@@ -8,7 +8,7 @@ theory: |
     Hello, World!
   </pre>
 
-  To display something on screen, you need to give computer a special command. In the JavaScript language the command is — `console.log`.
+  To display something on screen, you need to give computer a special command. In the JavaScript language the command is — `console.log()`.
 
 instructions: |
   Copy the exact code from the instructions into the editor and run it by pressing the “Submit” button.

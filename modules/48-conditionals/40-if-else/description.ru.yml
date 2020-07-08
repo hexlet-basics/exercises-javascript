@@ -66,7 +66,7 @@ instructions: |
 
   Первым параметром в функцию могут быть переданы адреса с ведущим слешом `/` и без него. Задача функции обрабатывать эту ситуацию, чтобы слеш не дублировался.
 
-  Для реализации этой функции вам могут понадобится функции [slice](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/slice) и [startsWith](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith)
+  Для реализации этой функции вам могут понадобится функции [slice()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/slice) и [startsWith()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith)
 
 tips: []
 

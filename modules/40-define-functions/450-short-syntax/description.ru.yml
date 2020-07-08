@@ -40,14 +40,14 @@ theory: |
 
 instructions: |
 
-  Реализуйте функцию `capitalize`, которая приводит первую букву переданного слова к верхнему регистру:
+  Реализуйте функцию `capitalize()`, которая приводит первую букву переданного слова к верхнему регистру:
 
     ```javascript
     const name = 'arya';
     console.log(capitalize(name)); // => Arya
     ```
 
-  Чтобы получить подстроку (или символ) из строки, используйте метод [slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice):
+  Чтобы получить подстроку (или символ) из строки, используйте метод [slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice):
 
     ```javascript
     'welcome'.slice(2, 5); // lco

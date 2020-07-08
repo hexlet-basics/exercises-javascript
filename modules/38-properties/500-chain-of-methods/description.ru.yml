@@ -36,7 +36,7 @@ theory: |
   console.log(name.toUpperCase().toLowerCase());
   ```
 
-  Подобный код требует небольших умственных усилий. Важно понимать, что `.toLowerCase()` применяется к результату вызова функции, которая находится левее. А функция `toUpperCase` возвращает строку. Новички часто делают ошибки в цепочках с методами, забывая ставить вызов:
+  Подобный код требует небольших умственных усилий. Важно понимать, что `.toLowerCase()` применяется к результату вызова функции, которая находится левее. А функция `toUpperCase()` возвращает строку. Новички часто делают ошибки в цепочках с методами, забывая ставить вызов:
 
   ```javascript
   const name = 'Tirion';
@@ -55,9 +55,9 @@ theory: |
 
 instructions: |
 
-  С помощью метода `substring` получите часть предложения, записанного в константу `text`, c `4` по `15` символ. Полученную подстроку обработайте методом `trim` и выведите на экран длину итоговой подстроки. Выполните эти методы подряд в цепочке, без создания промежуточных переменных.
+  С помощью метода `substring()` получите часть предложения, записанного в константу `text`, c `4` по `15` символ. Полученную подстроку обработайте методом `trim` и выведите на экран длину итоговой подстроки. Выполните эти методы подряд в цепочке, без создания промежуточных переменных.
 
-  * [substring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring).
-  * [trim](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim).
+  * [substring()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring).
+  * [trim()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim).
 
 tips: []
