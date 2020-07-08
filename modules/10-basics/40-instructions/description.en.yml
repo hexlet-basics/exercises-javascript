@@ -37,7 +37,7 @@ instructions: |
   Renly
   </pre>
 
-  For each name call it's own `console.log`
+  For each name call it's own `console.log()`
 
   tips:
   - |

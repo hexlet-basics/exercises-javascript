@@ -47,7 +47,7 @@ instructions: |
   We couldn't verify you mother's maiden name.
   </pre>
 
-  Выполните задание, используя только два `console.log`.
+  Выполните задание, используя только два `console.log()`.
 
 tips:
   - |

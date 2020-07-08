@@ -78,7 +78,7 @@ theory: |
 
 instructions: |
 
-  Реализуйте функцию `printMotto`, которая печатает на экран фразу *Winter is coming*.
+  Реализуйте функцию `printMotto()`, которая печатает на экран фразу *Winter is coming*.
 
   ```javascript
   printMotto(); // => Winter is coming
