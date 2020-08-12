@@ -29,7 +29,7 @@ theory: |
   Here are the other operators:
   * `*` — multiplication
   * `/` — division
-  * `-` — extracton
+  * `-` — subtraction
   * `%` — [modulo](https://en.wikipedia.org/wiki/Modulo_operation) (remainder after division)
   * `**` — power
 
