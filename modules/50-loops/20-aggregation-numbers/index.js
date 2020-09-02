@@ -1,11 +1,11 @@
 /* eslint operator-assignment: 0 */
 
 // BEGIN
-const multiplyNumberFromRange = (start, end) => {
+const multiplyNumberFromRange = (start, finish) => {
   let i = start;
   let result = 1;
 
-  while (i <= end) {
+  while (i <= finish) {
     result = result * i;
     i = i + 1;
   }
