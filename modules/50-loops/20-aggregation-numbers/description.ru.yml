@@ -81,8 +81,8 @@ instructions: |
   Реализуйте функцию `multiplyNumberFromRange()`, которая перемножает числа в указанном диапазоне включая границы диапазона. Пример вызова:
 
   ```javascript
-  multiplyNumberFromRange(1, 5); // 1 * 2 * 3 * 4 * 5
-  multiplyNumberFromRange(2, 3); // 2 * 3
+  multiplyNumberFromRange(1, 5); // 1 * 2 * 3 * 4 * 5 = 120
+  multiplyNumberFromRange(2, 3); // 2 * 3 = 6
   multiplyNumberFromRange(6, 6); // 6
   ```
 
