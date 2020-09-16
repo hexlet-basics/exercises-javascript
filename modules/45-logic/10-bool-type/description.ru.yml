@@ -24,8 +24,8 @@ theory: |
 
   ```javascript
   const result = 5 > 4;
-  console.log(result); // true
-  console.log('one' !== 'one'); // false
+  console.log(result); // => true
+  console.log('one' !== 'one'); // => false
   ```
 
   Наряду со строками (string) и целыми и рациональными числами, тип bool (булеан) — это один из примитивных типов данных в JavaScript.
