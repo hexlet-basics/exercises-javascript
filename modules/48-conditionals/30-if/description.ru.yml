@@ -15,7 +15,7 @@ theory: |
     }
 
     return 'general';
-  }
+  };
 
   getTypeOfSentence('Hodor');  // general
   getTypeOfSentence('Hodor?'); // question
@@ -36,7 +36,7 @@ theory: |
       return 'question';
 
     return 'general';
-  }
+  };
 
   console.log(getTypeOfSentence('Hodor'));  // => general
   console.log(getTypeOfSentence('Hodor?')); // => question
