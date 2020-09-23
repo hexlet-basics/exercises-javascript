@@ -41,7 +41,7 @@ theory: |
 
 instructions: |
 
-  Реализуйте функцию `joinNumbersFromRange()` которая объединяет все числа из диапазона в строку:
+  Реализуйте функцию `joinNumbersFromRange()`, которая объединяет все числа из диапазона в строку:
 
   ```javascript
   joinNumbersFromRange(1, 1); // '1'
