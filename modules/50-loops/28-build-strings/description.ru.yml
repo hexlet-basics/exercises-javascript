@@ -30,7 +30,7 @@ theory: |
   };
 
   const name = 'Bran';
-  reverse('Bran'); // 'narB'
+  reverse(name); // 'narB'
   // Проверка нейтрального элемента
   reverse(''); // ''
   ```
