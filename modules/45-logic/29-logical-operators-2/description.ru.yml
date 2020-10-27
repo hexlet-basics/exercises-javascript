@@ -24,7 +24,6 @@ theory: |
       - `&&` **И**
       - `year % 100 !== 0`: остаток от деления на 100 не равен 0, значит, число не кратно 100
 
-
 instructions: |
 
   Напишите функцию `isNeutralSoldier()`, которая принимает на вход два аргумента:
@@ -41,4 +40,3 @@ instructions: |
   isNeutralSoldier('red', 'black');    // false
   isNeutralSoldier('red', 'red');      // false
   ```
-
