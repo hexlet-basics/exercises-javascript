@@ -16,7 +16,7 @@ theory: |
   const getTypeOfSentence = (sentence) => {
     let sentenceType;
     // Предикат, проверяющий окончание текста
-    // Если он оканчивается на символ '?', то вернется true,
+    // Если он оканчивается на символ '?', то вернётся true,
     // иначе false
     if (sentence.endsWith('?')) {
       sentenceType = 'Question';
