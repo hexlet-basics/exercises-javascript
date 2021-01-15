@@ -41,10 +41,11 @@ instructions: |
 
   Функция должна возвращать имя соответствующего родителя.
 
-  Пример вызова:
+  Примеры вызова:
 
   ```javascript
   getCustomParentFor('Cersei Lannister'); // Tywin Lannister
+  getCustomParentFor('Daenerys Targaryen', 'mother'); // Rhaella Targaryen
   ```
 
   Такой вызов вернёт имя отца.
