@@ -6,11 +6,11 @@ theory: |
   Во всем модуле подавляющее большинство примеров кода использовало переменные в качестве имен (псевдонимы) конкретных значений, а не как переменные, которые меняют свое значение со временем.
 
   ```javascript
-  let rublesInDollar = 1.25
-  let rublesPerDollar = 60;
+  let dollarsInEuro = 1.25
+  let rublesInDollar = 60;
 
-  let dollarsCount = 50 * rublesInDollar; // 62.5
-  let rublesCount = dollarsCount * rublesPerDollar; // 3750
+  let dollarsCount = 50 * dollarsInEuro; // 62.5
+  let rublesCount = dollarsCount * rublesInDollar; // 3750
 
   console.log(rublesCount);
   ```
