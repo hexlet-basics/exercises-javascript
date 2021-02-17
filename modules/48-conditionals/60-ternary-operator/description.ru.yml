@@ -12,7 +12,7 @@ theory: |
     }
 
     return -number;
-  }
+  };
 
   abs(10); // 10
   abs(-10); // 10
@@ -27,7 +27,7 @@ theory: |
   ```javascript
   const abs = (number) => {
     return number >= 0 ? number : -number;
-  }
+  };
   ```
 
   Общий паттерн выглядит так: `<predicate> ? <expression on true> : <expression on false>`.
@@ -53,7 +53,7 @@ theory: |
     }
 
     return 'normal';
-  }
+  };
   ```
 
   Стало:
@@ -63,7 +63,7 @@ theory: |
     const lastChar = sentence.substr(-1);
 
     return (lastChar === '?') ? 'question' : 'normal';
-  }
+  };
 
   getTypeOfSentence('Hodor');  // normal
   getTypeOfSentence('Hodor?'); // question
