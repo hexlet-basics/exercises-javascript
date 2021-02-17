@@ -21,7 +21,7 @@ theory: |
     }
 
     return `Sentence is ${sentenceType}`;
-  }
+  };
 
   getTypeOfSentence('Who?'); // 'Sentence is question'
   getTypeOfSentence('No');   // 'Sentence is normal'
@@ -49,7 +49,7 @@ theory: |
     }
 
     return `Sentence is ${sentenceType}`;
-  }
+  };
 
   getTypeOfSentence('Who?'); // 'Sentence is question'
   getTypeOfSentence('No');   // 'Sentence is normal'
