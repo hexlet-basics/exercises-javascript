@@ -9,18 +9,21 @@
 ## Develop
 
 ```sh
-# setup
-$ make
-# run
-$ make compose
+# run bash
+$ make compose-bash
 
-# run tests
-$ make compose-test
+# inside the container:
 
-# run linters and validators
-$ make compose-code-lint
-$ make compose-description-lint
-$ make compose-schema-validate
+## setup
+$ make setup
+
+## run tests
+$ make test
+
+## run linters and validators
+$ make code-lint
+$ make description-lint
+$ make schema-validate
 ```
 
 ##
