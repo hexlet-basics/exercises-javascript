@@ -1,5 +1,5 @@
 const name = 'Na\nharis';
 
 // BEGIN
-console.log(name[7]);
+console.log(name[name.length - 1]);
 // END
