@@ -72,7 +72,7 @@ theory: |
 
   ## ИЛИ `||`
 
-  | A     | B     | A \|\| B |
+  | A     | B     | A &vert;&vert; B |
   |-------|-------|----------|
   | TRUE  | TRUE  | **TRUE** |
   | TRUE  | FALSE | **TRUE** |
