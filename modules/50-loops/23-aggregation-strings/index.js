@@ -1,11 +1,11 @@
 /* eslint operator-assignment: 0 */
 
 // BEGIN
-const joinNumbersFromRange = (start, end) => {
+const joinNumbersFromRange = (start, finish) => {
   let i = start;
   let result = '';
 
-  while (i <= end) {
+  while (i <= finish) {
     result = `${result}${i}`;
     i = i + 1;
   }
