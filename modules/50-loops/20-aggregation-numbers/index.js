@@ -1,7 +1,7 @@
 /* eslint operator-assignment: 0 */
 
 // BEGIN
-const multiplyNumberFromRange = (start, finish) => {
+const multiplyNumbersFromRange = (start, finish) => {
   let i = start;
   let result = 1;
 
@@ -14,4 +14,4 @@ const multiplyNumberFromRange = (start, finish) => {
 };
 // END
 
-export default multiplyNumberFromRange;
+export default multiplyNumbersFromRange;
