@@ -46,7 +46,7 @@ theory: |
 
   ```javascript
   const getTypeOfSentence = (sentence) => {
-    const lastChar = sentence.substr(-1);
+    const lastChar = sentence.slice(-1);
 
     if (lastChar === '?') {
         return 'question';
@@ -60,7 +60,7 @@ theory: |
 
   ```javascript
   const getTypeOfSentence = (sentence) => {
-    const lastChar = sentence.substr(-1);
+    const lastChar = sentence.slice(-1);
 
     return (lastChar === '?') ? 'question' : 'normal';
   };
