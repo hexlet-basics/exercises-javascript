@@ -10,7 +10,7 @@ theory: |
     // Полученный результат никак не используется
     // и не возвращается наружу
     const answer = a - b;
-  }
+  };
 
   const result = sub(10, 7);
   console.log(result); // undefined
