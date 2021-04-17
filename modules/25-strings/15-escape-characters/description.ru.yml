@@ -86,8 +86,8 @@ theory: |
       Здесь мы сначала выводим строку «перевод строки», а потом делаем вывод обыкновенной строки. Программа выведет на экран:
 
       <pre class='hexlet-basics-output'>
-
-
+      <br>
+      <br>
       Dunsen
       </pre>
 
@@ -109,9 +109,8 @@ theory: |
       <pre class='hexlet-basics-output'>
       Polliver
       Gregor Clegane<br>
-      Chiswyck
-
-
+      Chiswyck<br>
+      <br>
       Dunsen
       </pre>
 
