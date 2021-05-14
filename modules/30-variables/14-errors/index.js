@@ -1,6 +1,6 @@
 /* eslint prefer-const: 0 */
 
-const family = 'Targaryen';
+let family = 'Targaryen';
 
 // BEGIN
 let pet = 'Dragon';
