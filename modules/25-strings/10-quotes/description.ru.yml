@@ -96,7 +96,9 @@ instructions: |
   <pre class='hexlet-basics-output'>
   "Khal Drogo's favorite word is "athjahakar""
   </pre>
-
+  console.log('"Khal Drogo\'s favorite word is "athjahakar""') - более простое решение, не?
 tips:
   - |
     [Шаблонные строки](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/template_strings)
+    
+  
