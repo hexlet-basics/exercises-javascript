@@ -1,6 +1,6 @@
 ---
 
-name: else
+name: Оператор else
 theory: |
 
   Напишем функцию `getTypeOfSentence()`, которая анализирует текст и возвращает описание его тона: для обычных предложений – *General sentence*, для вопросительных – *Question sentence*.
