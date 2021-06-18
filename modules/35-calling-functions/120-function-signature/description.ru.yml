@@ -32,7 +32,7 @@ instructions: |
 
   В `Math` есть функция `ceil()`. Изучите её [документацию](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil).
 
-  Напишите программу, которая использует функцию `Math.ceil()` с переменной `number` и выводит результат на экран.
+  Напишите программу, которая использует функцию `Math.ceil()` с константой `number` и выводит результат на экран.
 
 tips: []
 
