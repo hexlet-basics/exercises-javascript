@@ -1,5 +1,5 @@
 // BEGIN
-const isNeutralSoldier = (color, shield) => color !== 'red' && shield === 'black';
+const isNeutralSoldier = (armorColor, shieldColor) => armorColor !== 'red' && shieldColor === 'black';
 // END
 
 export default isNeutralSoldier;
