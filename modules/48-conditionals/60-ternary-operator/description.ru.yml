@@ -87,7 +87,12 @@ instructions: |
   convertText(''); // ''
   ```
 
-  Перевернуть строчку можно используя функцию `reverse()`.
+  Перевернуть строчку можно используя функцию `reverse()`. В качестве аргумента в неё нужно передать строку, которую мы хотим перевернуть:
+
+  ```javascript
+  const result = reverse('Hello!');
+  console.log(result); // => '!olleH'
+  ```
 
   Есть разные подходы к решению этой задачи. Возможно, вам пригодится метод [toUpperCase()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase) и возможность получения символа из строки (например, `str[0]`).
 
