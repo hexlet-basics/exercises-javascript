@@ -44,4 +44,6 @@ instructions: |
   Приведите строку `text` к нижнему регистру и напечатайте её на экран.
 
 
-tips: []
+tips:
+  - |
+    [Метод строки toLowerCase()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
