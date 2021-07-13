@@ -53,4 +53,7 @@ instructions: |
     'welcome'.slice(2, 5); // lco
     ```
 
+  Для приведения строки к верхнему регистру используйте метод [toUpperCase()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
+
 tips: []
+
