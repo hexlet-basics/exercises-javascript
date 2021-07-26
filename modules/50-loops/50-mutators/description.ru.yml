@@ -80,4 +80,4 @@ instructions: |
 
 tips:
   - |
-    [Оператор остатка от деления (%)](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Остаток_от_деления)
+    [Оператор остатка от деления (%)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder)
