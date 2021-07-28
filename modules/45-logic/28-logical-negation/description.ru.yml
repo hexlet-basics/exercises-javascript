@@ -35,7 +35,7 @@ instructions: |
 
   Вам доступна уже готовая функция `isLannisterSoldier()`. Воспользуйтесь ей, чтобы не писать все логические условия заново.
 
-  Условия распознавания Ланнистера описаны в [прошлом уроке](https://ru.code-basics.com/languages/javascript/modules/logic/lessons/logical-operators).
+  Условия распознавания Ланнистера описаны в [прошлом уроке](https://ru.code-basics.com/languages/javascript/lessons/logical-operators).
 
   Примеры вызова:
 
