@@ -54,4 +54,4 @@ tips:
   - |
     Деление на ноль — это `Infinity` (бесконечность). Мы разберёмся с тем, что это значит, в будущих уроках.
   - |
-    [Арифметические операции](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators)
+    [Арифметические операции](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators#arithmetic_operators)
