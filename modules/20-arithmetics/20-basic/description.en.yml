@@ -18,7 +18,7 @@ theory: |
   We need to ask the interpreter to add numbers **AND** give it a command to do something with the result. Let's display it on the screen:
 
   ```javascript
-  // remember the simicolon!
+  // remember the semicolon!
   console.log(3 + 4);
   ```
 
