@@ -28,7 +28,7 @@ theory: |
       "ello, World!"
   </pre>
 
-  In addition to our tests, it's very useful to experement with code in the console [of a browser](https://developer.mozilla.org/en-US/docs/Tools/Browser_Console). In a situation when something isn't clear for you or you want to experiment with code, feel free to do all of this in the console. Ideally, it's best to execute all the code given in the lessons on your own. In addition to console it's also helpful to use the following service [repl.it](https://repl.it/languages/javascript).
+  In addition to our tests, it's very useful to experiment with code in the console [of a browser](https://developer.mozilla.org/en-US/docs/Tools/Browser_Console). In a situation when something isn't clear for you or you want to experiment with code, feel free to do all of this in the console. Ideally, it's best to execute all the code given in the lessons on your own. In addition to console it's also helpful to use the following service [repl.it](https://repl.it/languages/javascript).
 
 instructions: |
   Display the following number: `9780262531962`.
