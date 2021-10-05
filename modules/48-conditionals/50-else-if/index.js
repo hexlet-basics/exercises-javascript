@@ -1,14 +1,16 @@
-/* eslint no-else-return: ["error", {allowElseIf: true}] */
-
 // BEGIN
 const whoIsThisHouseToStarks = (houseName) => {
+  let status;
+
   if (houseName === 'Karstark' || houseName === 'Tally') {
-    return 'friend';
+    status = 'friend';
   } else if (houseName === 'Lannister' || houseName === 'Frey') {
-    return 'enemy';
+    status = 'enemy';
+  } else {
+    status = 'neutral';
   }
 
-  return 'neutral';
+  return status;
 };
 // END
 
