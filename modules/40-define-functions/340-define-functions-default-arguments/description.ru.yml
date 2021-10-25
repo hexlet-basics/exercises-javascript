@@ -56,4 +56,4 @@ instructions: |
 
   Такой вызов вернёт имя отца.
 
-  - Внутри своей функции используйте уже готовую функцию `getParentFor()`. Как она работает, мы подробно [разбирали](https://ru.code-basics.com/languages/javascript/modules/define-functions/lessons/return) раньше.
+  - Внутри своей функции используйте уже готовую функцию `getParentFor()`. Как она работает, мы подробно [разбирали](https://ru.code-basics.com/languages/javascript/lessons/return) раньше.
