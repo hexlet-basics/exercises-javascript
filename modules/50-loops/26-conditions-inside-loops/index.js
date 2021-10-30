@@ -6,7 +6,7 @@ const countChars = (str, char) => {
   let count = 0;
   while (i < str.length) {
     if (str[i].toLowerCase() === char.toLowerCase()) {
-      count += 1;
+      count = count + 1;
     }
     i = i + 1;
   }
