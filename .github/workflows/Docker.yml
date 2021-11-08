@@ -2,9 +2,11 @@ name: Docker
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - main
   pull_request:
-    branches: [ master ]
+    branches:
+      - main
 
 env:
   # TODO: Change variable to your registry.
