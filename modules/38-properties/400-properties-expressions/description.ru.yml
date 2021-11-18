@@ -34,4 +34,4 @@ instructions: |
 
   Ваша задача извлечь эти символы из строки и вставить в `console.log()`, не используя промежуточные переменные.
 
-tips: []
+tips: [немного о методе .trim() https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/Trim]
