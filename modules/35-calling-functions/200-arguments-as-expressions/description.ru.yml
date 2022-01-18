@@ -66,6 +66,6 @@ instructions: |
   const distance = calculateDistanceBetweenTowns('Lannisport-Bayasabhad');
   ```
 
-  Напишите программу, которая использует функцию `calculateDistanceBetweenTowns()` и выводит на экран расстояние между городами, записанными в переменные `from` и `to`.
+  Напишите программу, которая использует функцию `calculateDistanceBetweenTowns()` и выводит на экран расстояние между городами, записанными в константы `from` и `to`.
 
 tips: []
