@@ -15,8 +15,8 @@ theory: |
   ```javascript
   // greeting - переводится как приветствие
   let greeting = 'Father!';
-  console.log(greeting); // => 'Father!'
-  console.log(greeting); // => 'Father!'
+  console.log(greeting); // => Father!
+  console.log(greeting); // => Father!
   ```
 
   Переменная указывает на данные, которые были в неё записаны. Благодаря этому, данные можно использовать многократно без необходимости их постоянно дублировать. Сама переменная создается и наполняется данными (инициализируется) с помощью инструкции `let greeting = 'Father!'`.
