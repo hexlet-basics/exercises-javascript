@@ -2,9 +2,17 @@
 
 import expect from 'expect';
 import chalk from 'chalk';
-import cleanStack from 'clean-stack';
+import StackTracey from 'stacktracey';
+import _ from 'lodash';
 
 const getPathToIndex = () => `${process.cwd()}/index.js`;
+
+const buildErrorText = (e) => {
+  const stack = new StackTracey(e);
+  const message = e.message;
+  const traceLine = _.head(stack.items).beforeParse;
+  return `${message}\n${traceLine}`;
+};
 
 const expectOutput = async (expected, run = (f) => f()) => {
   const logs = [];
@@ -23,7 +31,7 @@ const expectOutput = async (expected, run = (f) => f()) => {
     oldLog();
     oldLog(chalk.green('Tests have passed!'));
   } catch (e) {
-    oldLog(cleanStack(e.stack));
+    oldLog(buildErrorText(e));
     process.exit(1);
   }
 };
@@ -35,7 +43,7 @@ const test = async (run) => {
     console.log();
     console.log(chalk.green('Tests have passed!'));
   } catch (e) {
-    console.log(cleanStack(e.stack));
+    console.log(buildErrorText(e));
     process.exit(1);
   }
 };
