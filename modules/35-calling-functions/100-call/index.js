@@ -1,6 +1,11 @@
-import { calculateDistance } from 'hexlet-basics/got';
+import { length } from 'hexlet-basics/string';
+
+const company1 = 'Apple';
+const company2 = 'Samsung';
 
 // BEGIN
-const distanceBetweenCities = calculateDistance('Qarth', 'Vaes Dothrak');
-console.log(distanceBetweenCities);
+const company1Length = length(company1);
+const company2Length = length(company2);
+
+console.log(company1Length + company2Length);
 // END

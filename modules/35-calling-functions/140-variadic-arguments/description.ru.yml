@@ -28,6 +28,6 @@ instructions: |
 
 tips: []
 
-definitions:
-  - name: Аргумент по умолчанию
-    description: необязательный аргумент функции.
+# definitions:
+#   - name: Аргумент по умолчанию
+#     description: необязательный аргумент функции.

@@ -56,7 +56,10 @@ instructions: |
 
   (Конечно, можно «обмануть» тесты и просто сделать что-то типа `console.log('~')`, но так будет совсем неинтересно :)
 
-tips: []
+tips:
+  - |
+    [Что такое кодировки?](https://guides.hexlet.io/encoding/)
+
 
 definitions:
   - name: Кодировка

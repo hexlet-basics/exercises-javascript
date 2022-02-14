@@ -1,4 +1,4 @@
 import { expectOutput } from 'hexlet-basics/tests';
 
-const expected = '125';
+const expected = '12';
 expectOutput(expected);

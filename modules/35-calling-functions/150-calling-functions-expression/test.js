@@ -1,4 +1,4 @@
 import { expectOutput } from 'hexlet-basics/tests';
 
-const expected = '20';
+const expected = 'First: N\nLast: t';
 expectOutput(expected);
