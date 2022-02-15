@@ -1,6 +1,3 @@
-import { toUpperCase } from 'hexlet-basics/string';
-
-const text = 'knock!';
 // BEGIN
-console.log(toUpperCase(text));
+console.log(Math.round((Math.random() * 10)));
 // END

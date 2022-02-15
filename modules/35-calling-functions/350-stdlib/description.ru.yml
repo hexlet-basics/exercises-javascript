@@ -21,11 +21,17 @@ instructions: |
 
   Оператор `typeof` позволяет определить тип передаваемого операнда. Название типа возвращается в виде строки. Например, вызов `typeof 'go go go'` вернёт строку `'string'` (number — число).
 
+  ```javascript
+  console.log(typeof 3); // => 'number'
+  ```
+
   Выведите на экран тип значения константы `motto`.
 
 tips:
   - |
     [Описание строковых функций](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+  - |
+    [Как искать техническую информацию](https://guides.hexlet.io/how-to-search/)
 
 definitions:
   - name: Стандартная библиотека
