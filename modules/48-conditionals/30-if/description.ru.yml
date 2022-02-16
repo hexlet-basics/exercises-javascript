@@ -48,8 +48,6 @@ instructions: |
 
   Реализуйте функцию `getSentenceTone()`, которая принимает строку и определяет тон предложения. Если все символы в верхнем регистре, то это вопль — `'scream'`. В ином случае — нормальное предложение — `'general'`.
 
-  Примеры вызова:
-
   ```javascript
   getSentenceTone('Hello'); // general
   getSentenceTone('WOW');   // scream
