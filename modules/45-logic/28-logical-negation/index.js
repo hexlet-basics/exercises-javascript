@@ -1,7 +1,12 @@
-import isLannisterSoldier from './isLannisterSoldier.js';
+import { reverse } from 'hexlet-basics/string';
 
 // BEGIN
-const isNotLannisterSoldier = (color, shield) => !isLannisterSoldier(color, shield);
+const isPalindrome = (word) => {
+  const lowerWord = word.toLowerCase();
+  return lowerWord === reverse(lowerWord);
+};
+
+const isNotPalindrome = (word) => !isPalindrome(word);
 // END
 
-export default isNotLannisterSoldier;
+export default isNotPalindrome;

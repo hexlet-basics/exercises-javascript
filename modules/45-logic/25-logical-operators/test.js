@@ -1,9 +1,9 @@
 import { test, expect } from 'hexlet-basics/tests';
 
 test((f) => {
-  expect(f('blue', null)).toBe(false);
-  expect(f('red', 'man')).toBe(false);
-  expect(f('red', 'lion')).toBe(true);
-  expect(f('blue', 'lion')).toBe(true);
-  expect(f('red', null)).toBe(true);
+  expect(f(2016)).toBe(true);
+  expect(f(2000)).toBe(true);
+  expect(f(2017)).toBe(false);
+  expect(f(2018)).toBe(false);
+  expect(f(1900)).toBe(false);
 });

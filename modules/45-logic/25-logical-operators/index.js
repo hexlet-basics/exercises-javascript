@@ -1,8 +1,8 @@
 // BEGIN
-const isLannisterSoldier = (color, shield) => {
-  const result = (color === 'red' && shield === null) || shield === 'lion';
+const isLeapYear = (year) => {
+  const result = year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0);
   return result;
 };
 // END
 
-export default isLannisterSoldier;
+export default isLeapYear;
