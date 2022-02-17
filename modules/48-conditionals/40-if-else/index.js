@@ -1,13 +1,15 @@
 // BEGIN
-const buildUrl = (url, domain) => {
+const normalizeUrl = (site) => {
   let normalizedUrl;
-  if (url.startsWith('/')) {
-    normalizedUrl = url.slice(1);
+
+  if (site.startsWith('https://')) {
+    normalizedUrl = site;
   } else {
-    normalizedUrl = url;
+    normalizedUrl = `https://${site}`;
   }
-  return `https://${domain}/${normalizedUrl}`;
+
+  return normalizedUrl;
 };
 // END
 
-export default buildUrl;
+export default normalizeUrl;

@@ -57,28 +57,18 @@ theory: |
 
 instructions: |
 
-  URL-адрес, который вы вводите в адресной строке браузера имеет определённую структуру. Давайте разберём URL https://ru.code-basics.com/pages/about на составные части:
+  Реализуйте функцию `normalizeUrl()`, которая выполняет так называемую нормализацию данных. Она принимает адрес сайта и возвращает его с *https://* в начале.
 
-  * https:// — это протокол
-  * ru.code-basics.com — имя хоста (полное имя домена)
-  * /pages/about — путь к странице на сайте
+  Функция принимает адреса в виде *АДРЕС* или *https://АДРЕС*, но всегда возвращает адрес в виде *https://АДРЕС*
 
-  Реализуйте функцию `buildUrl(path, domain)`, которая принимает на вход путь к странице на сайте (без указания домена) и имя домена, а возвращает полный URL с протоколом HTTPS.
+  Можно использовать метод [startsWith()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith), чтобы проверить, начинается ли строка с префикса *https://*. А потом на основе этого добавлять или не добавлять *https://*.
 
   Примеры вызова:
 
   ```javascript
-  buildUrl('pages/about', 'hexlet.io'); // 'https://hexlet.io/pages/about'
-  buildUrl('/pages/about', 'hexlet.io'); // 'https://hexlet.io/pages/about'
-
-  // Для главной страницы слэш в конце обязателен
-  buildUrl('/', 'ru.code-basics.com'); // 'https://ru.code-basics.com/'
-  buildUrl('', 'ru.code-basics.com'); // 'https://ru.code-basics.com/'
+  normalizeUrl("google.com"); // "https://google.com"
+  normalizeUrl("https://ai.fi"); // "https://ai.fi"
   ```
-
-  Первым параметром в функцию могут быть переданы адреса с ведущим слешем `/` и без него. Задача функции обрабатывать эту ситуацию, чтобы слеш не дублировался.
-
-  Для реализации этой функции вам могут понадобиться методы [slice()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/slice) и [startsWith()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith).
 
 tips: []
 
