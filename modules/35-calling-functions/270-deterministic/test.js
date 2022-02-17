@@ -1,4 +1,9 @@
-import { expectOutput } from 'hexlet-basics/tests';
+// @ts-check
 
-const expected = 'KNOCK!';
-expectOutput(expected);
+import { expectOutput, expect } from 'hexlet-basics/tests';
+
+expectOutput((content) => {
+  const value = Number(content);
+  expect(value).toBeGreaterThanOrEqual(1);
+  expect(value).toBeLessThanOrEqual(10);
+});

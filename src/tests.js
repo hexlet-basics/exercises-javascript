@@ -1,3 +1,4 @@
+// @ts-check
 // TODO switch to the jest when it will works with modules
 
 import expect from 'expect';
@@ -7,7 +8,7 @@ import _ from 'lodash';
 
 const getPathToIndex = () => `${process.cwd()}/index.js`;
 
-const buildErrorText = (e) => {
+const buildErrorText = (/** @type Error */ e) => {
   const stack = new StackTracey(e);
   const message = e.message;
   const traceLine = _.head(stack.items).beforeParse;
@@ -17,7 +18,7 @@ const buildErrorText = (e) => {
 const expectOutput = async (expected, run = (f) => f()) => {
   const logs = [];
   const oldLog = console.log;
-  global.console.log = (...args) => {
+  global.console.log = (/** @type {any} */ ...args) => {
     oldLog(...args);
     logs.push(...args);
   };
@@ -27,7 +28,11 @@ const expectOutput = async (expected, run = (f) => f()) => {
       run(f);
     }
     const content = logs.map(String).join('\n').trim();
-    expect(content).toBe(expected.toString());
+    if (typeof expected === 'function') {
+      expected(content);
+    } else {
+      expect(content).toBe(expected.toString());
+    }
     oldLog();
     oldLog(chalk.green('Tests have passed!'));
   } catch (e) {
