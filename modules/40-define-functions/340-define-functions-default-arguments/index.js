@@ -1,6 +1,6 @@
 /* eslint arrow-body-style: ["error", "always"] */
 
-import { getParentFor } from 'hexlet-basics/got';
+import getParentFor from 'hexlet-basics/got';
 
 // BEGIN
 const getCustomParentFor = (child, parent = 'father') => {

@@ -1,4 +1,4 @@
-import { getParentFor } from 'hexlet-basics/got';
+import getParentFor from 'hexlet-basics/got';
 
 // BEGIN
 const getParentNamesTotalLength = (child) => {
