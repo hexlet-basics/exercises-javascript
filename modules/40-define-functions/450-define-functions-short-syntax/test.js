@@ -7,5 +7,5 @@ test((f) => {
   const actual1 = f('daenerys');
   expect(f(actual1)).toEqual(expected1);
 
-  expect(f('Hexlet')).toEqual('hexlet');
+  expect(f('hexlet')).toEqual('Hexlet');
 });
