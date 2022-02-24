@@ -36,7 +36,7 @@ theory: |
   const sum = (a, b) => a + b;
   ```
 
-  Обратите внимание на отсутствие фигурных скобок. Разработчики, которые не привыкли использовать такой синтаксис, иногда пишут подобный код `const sum = (a, b) => { a + b };`, а потом долго не могут понять, почему он не работает. Ответ очень простой: если стоят фигурные скобки, то это не сокращенная форма, а значит, чтобы функция вернула искомое значение, придётся поставить `return`.
+  Обратите внимание на отсутствие фигурных скобок. Разработчики, которые не привыкли использовать такой синтаксис, иногда пишут подобный код `const sum = (a, b) => { a + b };`, а потом долго не могут понять, почему он не работает. Ответ очень простой: если стоят фигурные скобки, то это не сокращенная форма, а значит, чтобы функция вернула значение, придётся поставить `return`.
 
 instructions: |
 
@@ -44,16 +44,20 @@ instructions: |
 
     ```javascript
     const name = 'arya';
-    console.log(capitalize(name)); // => Arya
+    console.log(capitalize(name)); // => "Arya"
     ```
 
   Чтобы получить подстроку (или символ) из строки, используйте метод [slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice):
 
     ```javascript
-    'welcome'.slice(2, 5); // lco
+    'welcome'.slice(2, 5); // "lco"
     ```
 
   Для приведения строки к верхнему регистру используйте метод [toUpperCase()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
+
+  ```javascript
+  'welcome'.toUpperCase(); // "WELCOME"
+  ```
 
 tips: []
 
