@@ -1,4 +1,6 @@
-import { test } from 'hexlet-basics/tests';
+// @ts-check
+
+import { test, expect } from 'hexlet-basics/tests';
 
 test((f) => {
   expect(f()).toBeGreaterThan(0);

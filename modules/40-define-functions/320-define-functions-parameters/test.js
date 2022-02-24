@@ -1,3 +1,5 @@
+// @ts-check
+
 import { test, expect } from 'hexlet-basics/tests';
 
 test((f) => {

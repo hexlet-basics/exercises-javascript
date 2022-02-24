@@ -2,9 +2,10 @@
   "name": "hexlet-basics",
   "type": "module",
   "devDependencies": {
-    "eslint": "^7.9.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.0"
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "npm-check-updates": "^12.4.0"
   },
   "scripts": {
     "test": "jest --colors"
@@ -20,10 +21,10 @@
     "./string": "./src/hexlet/string.js"
   },
   "dependencies": {
-    "chai": "^4.2.0",
-    "chalk": "^4.1.0",
-    "expect": "^26.4.2",
-    "jest": "^26.4.2",
+    "chai": "^4.3.6",
+    "chalk": "^5.0.0",
+    "expect": "^27.5.1",
+    "jest": "^27.5.1",
     "lodash": "^4.17.21",
     "stacktracey": "^2.1.8"
   }
