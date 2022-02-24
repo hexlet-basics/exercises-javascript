@@ -1,6 +1,7 @@
-import { test, expect } from 'hexlet-basics/tests';
+import { test, expect } from '@jest/globals';
+import f from './index.js';
 
-test((f) => {
+test('test', () => {
   expect(f(23)).toBe(false);
   expect(f(70)).toBe(true);
   expect(f(60)).toBe(true);

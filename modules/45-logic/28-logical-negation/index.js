@@ -1,4 +1,4 @@
-import { reverse } from 'hexlet-basics/string';
+import { reverse } from '../../../src/hexlet/string.js';
 
 // BEGIN
 const isPalindrome = (word) => {

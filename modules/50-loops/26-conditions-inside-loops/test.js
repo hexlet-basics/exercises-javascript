@@ -1,6 +1,7 @@
-import { test, expect } from 'hexlet-basics/tests';
+import { test, expect } from '@jest/globals';
+import f from './index.js';
 
-test((f) => {
+test('test', () => {
   expect(f('axe', 'a')).toEqual(1);
   expect(f('', 'a')).toEqual(0);
   expect(f('OpPa', 'p')).toEqual(2);
