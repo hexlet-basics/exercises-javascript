@@ -1,1 +1,1 @@
-npx jest `pwd`/test.js
+npx jest --colors `pwd`/test.js
