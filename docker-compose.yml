@@ -5,6 +5,5 @@ version: '3'
 services:
   exercises:
     build: .
-    volumes:
-      - .:/exercises-javascript
+    image: hexletbasics/exercises-javascript:cached
     command: make check

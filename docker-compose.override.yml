@@ -1,0 +1,8 @@
+---
+
+version: '3'
+
+services:
+  exercises:
+    volumes:
+      - .:/exercises-javascript
