@@ -1,4 +1,5 @@
 // @ts-check
+
 import { expectOutput, expect } from 'hexlet-basics/tests';
 
 expectOutput((content) => {
