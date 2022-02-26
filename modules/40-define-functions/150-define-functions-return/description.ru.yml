@@ -83,13 +83,13 @@ instructions: |
   [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
 
   ```javascript
-  Math.random() # 0.2320000789855705
+  Math.random(); // 0.2320000789855705
   ```
 
   [Math.round()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round)
 
   ```javascript
-  Math.round(0.2320000789855705) # 2
+  Math.round(0.2320000789855705); // 2
   ```
 
 # tips: []
