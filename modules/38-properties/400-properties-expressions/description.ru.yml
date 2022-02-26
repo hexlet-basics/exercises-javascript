@@ -13,7 +13,7 @@ theory: |
   `hi, ${name.toUpperCase()}!`; // hi, SHAYA!
   ```
 
-  Использование в аргументах функций:
+  Использование в параметрах функций:
 
   ```javascript
   const name1 = 'Robb';

@@ -9,8 +9,7 @@ theory: |
   const message = greetHexlet();
   console.log(message);
   ```
-
-  Мы присваиваем переменной результат работы aeyrwbb. Для работы такого кода, функция должна внутри себя использовать инструкцию `return`:
+  Мы присваиваем переменной `message` результат работы функции. Для работы такого кода, функция должна внутри себя использовать инструкцию `return`:
 
   ```javascript
   const greetHexlet = () => {
@@ -32,7 +31,7 @@ theory: |
   Для возврата не обязательно использовать переменную. Так как `return` работает с выражениями, то справа от него может появиться почти все что угодно. Здесь нужно руководствоваться принципами читаемости кода:
 
   ```javascript
-  cosnt greetHexlet = () => {
+  const greetHexlet = () => {
     return 'Hello, Hexlet!';
   };
   ```
@@ -75,13 +74,22 @@ instructions: |
   Реализуйте функцию, которая возвращает случайное число от 0 до 10
 
   ```javascript
-  getRandomNumber(); // => 1
-  getRandomNumber(); // => 9
+  getRandomNumber(); // 1
+  getRandomNumber(); // 9
   ```
 
   Для выполнения этого задания, вам понадобятся:
 
-  * [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
-  * [Math.round()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round)
+  [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+
+  ```javascript
+  Math.random() # 0.2320000789855705
+  ```
+
+  [Math.round()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round)
+
+  ```javascript
+  Math.round(0.2320000789855705) # 2
+  ```
 
 # tips: []
