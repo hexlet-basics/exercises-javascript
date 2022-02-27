@@ -69,6 +69,15 @@ theory: |
   | FALSE | TRUE  | FALSE    |
   | FALSE | FALSE | FALSE    |
 
+  Пара примеров:
+
+  ```javascript
+  // true && true;
+  3 > 2 && 'wow'.startsWith('w'); // true
+
+  // true && false;
+  'start' === 'start' && 8 < 3; // false
+  ```
 
   ## ИЛИ `||`
 
@@ -78,6 +87,16 @@ theory: |
   | TRUE  | FALSE | **TRUE** |
   | FALSE | TRUE  | **TRUE** |
   | FALSE | FALSE | FALSE    |
+
+  Пара примеров:
+
+  ```javascript
+  // true || true;
+  3 > 2 && 'wow'.startsWith('w'); // true
+
+  // false || false;
+  'start' === 'Start' && 3 < 3; // false
+  ```
 
 instructions: |
 
