@@ -30,7 +30,7 @@ instructions: |
 
   1. Реализуйте функцию `isPalindrome()`, которая определяет, является ли слово палиндромом или нет. Палиндром это слово, которое читается одинаково в обоих направлениях.
 
-  ```java
+  ```javascript
   isPalindrome('шалаш'); // true
   isPalindrome('ага'); // true
   isPalindrome('хекслет'); // false
