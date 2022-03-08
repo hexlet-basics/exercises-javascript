@@ -40,13 +40,15 @@ instructions: |
   isPalindrome('Ага'); // true
   ```
 
-  2. На базе функции `isPalindrom()` реализуйте функцию `isNotPalindrome()`, которая проверяет что слово НЕ является палиндромом. Используйте для этого отрицание:
+  2. Реализуйте функцию `isNotPalindrome()`, которая проверяет что слово НЕ является палиндромом:
 
   ```javascript
   isNotPalindrome('шалаш'); // false
   isNotPalindrome('ага'); // false
   isNotPalindrome('хекслет'); // true
   ```
+
+  Для этого, вызовите функцию `isPalindrome()` внутри `isNotPalindrome()` и примените отрицание.
 
 tips:
   - |
