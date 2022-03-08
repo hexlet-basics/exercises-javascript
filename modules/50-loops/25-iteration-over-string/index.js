@@ -1,13 +1,13 @@
 /* eslint operator-assignment: 0 */
 
 // BEGIN
-const printReversedNameBySymbol = (name) => {
-  let i = name.length - 1;
+const printReversedWordBySymbol = (word) => {
+  let i = word.length - 1;
   while (i >= 0) {
-    console.log(name[i]);
+    console.log(word[i]);
     i = i - 1;
   }
 };
 // END
 
-export default printReversedNameBySymbol;
+export default printReversedWordBySymbol;
