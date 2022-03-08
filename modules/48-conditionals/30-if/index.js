@@ -1,10 +1,11 @@
 // BEGIN
-const getSentenceTone = (sentence) => {
-  if (sentence.toUpperCase() === sentence) {
-    return 'scream';
+const guessNumber = (guess) => {
+  if (guess === 42) {
+    return 'You win!';
   }
-  return 'general';
+
+  return 'Try again!';
 };
 // END
 
-export default getSentenceTone;
+export default guessNumber;
