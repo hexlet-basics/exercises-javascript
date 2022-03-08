@@ -29,16 +29,18 @@ theory: |
 
 instructions: |
 
-  Реализуйте функцию `printReversedNameBySymbol()`, которая печатает переданное слово посимвольно, как в примере из теории, но делает это в обратном порядке.
+  Реализуйте функцию `printReversedWordBySymbol()`, которая печатает переданное слово посимвольно, как в примере из теории, но делает это в обратном порядке.
 
   ```javascript
-  const name = 'Arya';
+  const word = 'Hexlet';
 
-  printReversedNameBySymbol(name);
-  // => 'a'
-  // => 'y'
-  // => 'r'
-  // => 'A'
+  printReversedWordBySymbol(word);
+  // => 't'
+  // => 'e'
+  // => 'l'
+  // => 'x'
+  // => 'e'
+  // => 'H'
   ```
 
 tips: []
