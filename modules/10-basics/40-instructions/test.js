@@ -2,5 +2,5 @@
 
 import { expectOutput } from 'hexlet-basics/tests';
 
-const expected = 'Robert\nStannis\nRenly';
+const expected = 'Roman\nMichael\nStephen';
 expectOutput(expected);
