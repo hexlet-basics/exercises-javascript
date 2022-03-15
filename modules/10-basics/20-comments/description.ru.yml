@@ -19,14 +19,14 @@ theory: |
   Комментарий может занимать всю строчку. Если одной строчки мало, то создаются несколько комментариев:
 
   ```javascript
-  // For Winterfell!
-  // For Lanisters!
+  // This line needs to be refactored
+  // And this line is not, it is already cool
   ```
 
   Комментарий может находиться на строчке после какого-нибудь кода:
 
   ```javascript
-  console.log('I am the King'); // For Lannisters!
+  console.log('Talk is cheap. Show me the code.'); // What's going on here?
   ```
 
   ## Многострочные комментарии
@@ -35,16 +35,16 @@ theory: |
 
   ```javascript
   /*
-    The night is dark and
-    full of terrors.
+    Anything one man can imagine,
+    other men can make real.
   */
-  console.log('I am the King');
+  console.log('Talk is cheap. Show me the code.');
   ```
 
   Такие комментарии, обычно, используют для документирования кода, например, функций.
 
 instructions: |
-  Создайте однострочный комментарий с текстом: `You know nothing, Jon Snow!`.
+  Создайте однострочный комментарий с текстом: *Knowledge is power!*
 
 tips: []
 
