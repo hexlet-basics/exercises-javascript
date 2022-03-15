@@ -1,0 +1,5 @@
+---
+
+name: Arithmetic
+description:
+  Modern programs are created to service businesses, help people in daily life and entertain them. However, computation is still the basis of such programs. The simplest and basic topic in programming is arithmetic. In this module, we will translate arithmetic actions into the programming language, talk about the priority of operations and operations with fractional numbers. Remember basic Math rules and find out what happens when you divide by zero in JavaScript. And at the end, we will tell what a linter is and why it can be grumpy sometimes.
