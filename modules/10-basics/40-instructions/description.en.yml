@@ -1,6 +1,6 @@
 ---
 
-name: Instructions
+name: Statements
 theory: |
   Instruction is a command given to computer. JavaScript code is usually a set of instructions separated by `;`.
 
