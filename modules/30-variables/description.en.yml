@@ -3,3 +3,4 @@
 name: Variables in the JavaScript 
 description: |
   Information can be placed in special «storage» - variables. This allows you to reuse already existing data and not duplicate it in different parts of the code. In this module, you will understand how to change variables and name them to make your code easy to read for any developer. Realize that it is not easy to think of a name for a variable. Learn how to use variables to simplify complex calculations.
+  
