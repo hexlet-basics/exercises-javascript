@@ -17,7 +17,7 @@ theory: |
   console.log(2 * 4 * 5 * 10);
   ```
 
-   As you can see, operations can be combined with each other, allowing you to compute ever more complex compound expressions. To visualize how calculations are done inside the interpreter, let's look at an example: `2 * 4 * 5 * 10`.
+   As you can see, operations can be combined with each other, allowing you to compute even more complex compound expressions. To visualize how calculations are done inside the interpreter, let's look at an example: `2 * 4 * 5 * 10`.
 
 
   1. First we calculate `2 * 4` and get `8 * 5 * 10`.
