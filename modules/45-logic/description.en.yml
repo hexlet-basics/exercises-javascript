@@ -1,0 +1,5 @@
+---
+
+name: Logic
+description: |
+  Logical expressions allow you to answer questions that arise during program operation. Is the user authenticated? Is the subscription paid? Is it a leap year? In this module, you will study predicate functions - those who ask a question and answer it - whether it is true or false. Practice writing such functions and move on to more complex logical expressions.

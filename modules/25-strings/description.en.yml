@@ -1,0 +1,5 @@
+---
+
+name: Strings
+description: |
+  The text in programming is called «strings», and this topic is not as simple as it may seem. How do you display a phrase that has both single and double quotation marks? How can we use text, if the computer knows nothing about the letters? This module deals with various aspects of text writing - from quotation marks and escaping to encoding.

@@ -1,0 +1,5 @@
+---
+
+name: Function definition
+description: |
+  Defining your functions greatly simplifies the writing and program support. For example, the ability to define functions allows complex (composite) operations to be combined in one - the complexity can be hidden behind one simple function. Take the first step on the way to building truly useful programs, while learning to write functions. In this module, you will create your first function and learn to name functions (as well as variables and constants).

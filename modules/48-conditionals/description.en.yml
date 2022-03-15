@@ -1,0 +1,5 @@
+---
+
+name: Conditionals
+description: |
+  The predicate function's task is to get an answer to a question, but usually, it is not enough and you need to perform a certain action depending on the answer. ‘If’ and ‘Switch’ are JavaScript statements by which a programmer can choose the required program behavior depending on different conditions: skip some instructions and run others. Analyze them in practice in this module.
