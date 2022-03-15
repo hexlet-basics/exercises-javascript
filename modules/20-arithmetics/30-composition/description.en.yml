@@ -28,7 +28,7 @@ theory: |
 
 instructions: |
 
-  Implement a program that calculates and prints the value of the expression:
+  Write a program that calculates and prints the value of the expression:
 
   ```
   8 / 2 + 5 - -3 / 2
