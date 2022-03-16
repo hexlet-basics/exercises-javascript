@@ -52,7 +52,7 @@ theory: |
 
 instructions: |
 
-  Создайте переменную с именем `motto` и содержимым `What Is Dead May Never Die!`. Распечатайте содержимое переменной.
+  Создайте переменную с именем `motto` и содержимым `Everything is interesting if you go into it deeply enough`. Распечатайте содержимое переменной.
 
 tips:
   - |
