@@ -22,7 +22,7 @@ theory: |
   ```javascript
   // Стандарт кодирования airbnb, рекомендует
   // использовать, по возможности, одинарные
-  console.log('640K ought to be enough for anybody!');
+  console.log('Dracarys!');
   ```
 
   Представьте, что вы хотите напечатать строчку _Dragon's mother_. Апостроф перед буквой **s** — это такой же символ, как одинарная кавычка. Попробуем:
@@ -37,7 +37,7 @@ theory: |
   Здесь нам помогут двойные кавычки. Такой вариант программы отработает корректно:
 
   ```javascript
-  console.log("Good code is it's own best documentation");
+  console.log("Dragon's mother");
   ```
 
   Теперь интерпретатор знает, что строка началась с двойной кавычки — значит, и закончиться должна на двойной кавычке. А одинарная кавычка внутри стала частью строки.
@@ -47,7 +47,7 @@ theory: |
   А что, если мы хотим создать такую строку:
 
   ```
-  He said "Don’t comment bad code – rewrite it"
+  Dragon's mother said "No"
   ```
 
   В ней есть и одинарные и двойные кавычки. Как быть в этой ситуации? Нужно каким-то образом сказать интерпретатору считать каждую кавычку частью строки, а не началом или концом строки.
@@ -57,8 +57,8 @@ theory: |
   ```javascript
   // Экранируется только ", так как в этой ситуации
   // двойные кавычки имеют специальное значение
-  console.log("He said \"Don’t comment bad code – rewrite it\"");
-  // => He said "Don’t comment bad code – rewrite it"
+  console.log("Dragon's mother said \"No\"");
+  // => Dragon's mother said "No"
   ```
 
   Посмотрите внимательно: нам нужно было добавить `\` для двойных кавычек, но не для одинарной (апостроф), потому что сама строка создана с двойными кавычками. Если бы строка создавалась с одинарными кавычками, то символ экранирования нужен был бы перед апострофом, но не перед двойными кавычками.
@@ -66,8 +66,8 @@ theory: |
   ```javascript
   // \ не выводится, если после него идет обычный,
   // а не специальный символ
-  console.log("Deleted code i\s debugged code");
-  // => Deleted code i\s debugged code
+  console.log("Death is \so terribly final");
+  // => Death is so terribly final
   ```
 
   А что, если нужно вывести сам обратный слеш? Точно так же, как и любой другой специальный символ, его надо экранировать самим собой.
@@ -88,13 +88,13 @@ instructions: |
   Напишите программу, которая выведет на экран:
 
   ```
-  "Toto's favorite word is "Hexlet""
+  "Khal Drogo's favorite word is "athjahakar""
   ```
 
   Программа должна в точности вывести на экран именно эту фразу. Обратите внимание на кавычки в начале и в конце фразы:
 
   <pre class='hexlet-basics-output'>
-  "Toto's favorite word is "Hexlet""
+  "Khal Drogo's favorite word is "athjahakar""
   </pre>
 
 tips:

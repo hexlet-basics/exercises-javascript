@@ -1,4 +1,4 @@
 import { expectOutput } from 'hexlet-basics/tests';
 
-const expected = 8;
+const expected = 'the white walkers';
 expectOutput(expected);

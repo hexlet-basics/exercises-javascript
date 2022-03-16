@@ -1,5 +1,5 @@
-const mascot = 'Toto';
+const stark = 'Arya';
 
 // BEGIN
-console.log(`Do you want to eat, ${mascot}?`);
+console.log(`Do you want to eat, ${stark}?`);
 // END
