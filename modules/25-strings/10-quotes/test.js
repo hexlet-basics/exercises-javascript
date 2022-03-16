@@ -1,4 +1,4 @@
 import { expectOutput } from 'hexlet-basics/tests';
 
-const expected = "\"Khal Drogo's favorite word is \"athjahakar\"\"";
+const expected = "\"Toto's favorite word is \"Hexlet\"\"";
 expectOutput(expected);
