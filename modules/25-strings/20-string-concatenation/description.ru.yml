@@ -8,8 +8,8 @@ theory: |
   ```javascript
   // Оператор такой же, как и при сложении чисел
   // но здесь он имеет другой смысл (семантику)
-  console.log('Dragon' + 'stone');
-  // => 'Dragonstone'
+  console.log('Hearth' + 'stone');
+  // => 'Hearthstone'
   ```
 
   Склеивание строк всегда происходит в том же порядке, в котором записаны операнды. Левый операнд становится левой частью строки, а правый — правой.
@@ -17,18 +17,18 @@ theory: |
   Вот еще несколько примеров:
 
   ```javascript
-  console.log('Kings' + 'wood');     // => Kingswood
+  console.log('Holly' + 'wood');     // => Hollywood
 
   // Обратный порядок слов
-  console.log('road' + 'Kings');     // => roadKings
+  console.log('road' + 'President');     // => roadPresident
 
   // Конкатенировать можно абсолютно любые строки
-  console.log("King's" + 'Landing'); // => King'sLanding
+  console.log('Washington,' + 'D.C.'); // => Washington,D.C.
   ```
 
   Как видите, строки можно склеивать, даже если они записаны с разными кавычками.
 
-  В последнем примере название города получилось с ошибкой: *King's Landing* нужно писать через пробел. Но в наших начальных строках не было пробелов, а пробелы в самом коде слева и справа от символа `+` не имеют значения, потому что они не являются частью строк.
+  В последнем примере название города получилось с ошибкой: *Washington, D.C.* нужно писать через пробел. Но в наших начальных строках не было пробелов, а пробелы в самом коде слева и справа от символа `+` не имеют значения, потому что они не являются частью строк.
 
   Выхода из этой ситуации два:
 
@@ -36,17 +36,17 @@ theory: |
   // Оба способа равнозначны
 
   // Ставим пробел в левой части
-  console.log("King's " + 'Landing'); //  => King's Landing
+  console.log('Washington, ' + 'D.C.'); //  => Washington, D.C.
   // Ставим пробел в правой части
-  console.log("King's" + ' Landing'); //  => King's Landing
+  console.log('Washington,' + ' D.C.'); //  => Washington, D.C.
   ```
 
   Пробел — такой же символ, как и другие. Чем больше пробелов, тем шире отступы:
 
   ```javascript
-  console.log("King's " + ' Landing');   // => King's  Landing
+  console.log('Washington, ' + ' D.C.');   // => King's  Landing
 
-  console.log("King's  " + '  Landing'); // => King's    Landing
+  console.log('Washington,  ' + '  D.C.'); // => King's    Landing
   ```
 
 instructions: |
@@ -54,7 +54,7 @@ instructions: |
   Выведите на экран
 
   ```
-  Winter came for the House of Frey.
+  Coding has over 700 languages.
   ```
 
   используя конкатенацию слов.
@@ -66,4 +66,4 @@ tips:
 definitions:
   - name: Конкатенация
     description: |
-      операция соединения двух строк. Например, `console.log("King's " + ' Landing');`
+      операция соединения двух строк. Например, `console.log("Washington, " + ' D.C.');`
