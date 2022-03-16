@@ -89,7 +89,7 @@ instructions: |
   [Math.round()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round)
 
   ```javascript
-  Math.round(0.2320000789855705); // 2
+  Math.round(2.320000789855705); // 2
   ```
 
 # tips: []
