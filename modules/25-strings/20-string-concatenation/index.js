@@ -1,5 +1,5 @@
 /* eslint no-useless-concat: 0 */
 
 // BEGIN
-console.log('Winter ' + 'came ' + 'for ' + 'the ' + 'House ' + 'of ' + 'Frey.');
+console.log('Coding ' + 'has ' + 'over ' + '700 ' + 'languages.');
 // END

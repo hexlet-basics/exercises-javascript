@@ -1,6 +1,6 @@
 /* eslint prefer-const: 0 */
 
 // BEGIN
-let motto = 'What Is Dead May Never Die!';
+let motto = 'Everything is interesting if you go into it deeply enough';
 console.log(motto);
 // END
