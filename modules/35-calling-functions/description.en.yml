@@ -3,4 +3,3 @@
 name: Calling functions
 description: |
   To express any arbitrary operation in programming, there is a notion of «function». Functions are the bricks from which programmers build systems. In this module, you will learn to use already created functions. Let’s look at the function signature in the documentation and figure out how to use it. Gain experience working with standard libraries that hold thousands of functions. All functions cannot be learned, so every programmer should know where to find documentation.
-  
