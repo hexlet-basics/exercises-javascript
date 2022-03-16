@@ -1,3 +1,3 @@
-const planetsCount = 8;
+const army = 'the white walkers';
 
-console.log(planetsCount);
+console.log(army);

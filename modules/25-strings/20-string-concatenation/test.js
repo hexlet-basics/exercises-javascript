@@ -1,4 +1,4 @@
 import { expectOutput } from 'hexlet-basics/tests';
 
-const expected = 'Coding has over 700 languages.';
+const expected = 'Winter came for the House of Frey.';
 expectOutput(expected);

@@ -8,7 +8,7 @@ theory: |
   Вот пример кода с синтаксической ошибкой:
 
   ```javascript
-  console.log('Linus Benedict Torvalds'
+  console.log('Hodor'
   ```
 
   Если запустить код выше, то мы увидим следующее сообщение: `SyntaxError: missing ) after argument list`, а так же указание на строку и файл, где возникла эта ошибка. Подобные синтаксические ошибки в JavaScript относятся к разряду SyntaxError.
@@ -23,7 +23,7 @@ instructions: |
 
   Это задание не связано с уроком напрямую. Но будет полезным потренироваться с выводом на экран.
 
-  Выведите на экран *The best error message is the one that never shows up.*
+  Выведите на экран _What Is Dead May Never Die_
 
 tips:
   - |

@@ -1,4 +1,4 @@
 import { expectOutput } from 'hexlet-basics/tests';
 
-const expected = 'Everything is interesting if you go into it deeply enough';
+const expected = 'What Is Dead May Never Die!';
 expectOutput(expected);
