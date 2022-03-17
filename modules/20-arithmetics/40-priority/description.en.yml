@@ -1,6 +1,6 @@
 ---
 
-name: Operation precedence
+name: Operator precedence
 theory: |
   Look closely at the expression `2 + 2 * 2` and figure out the answer.
 
