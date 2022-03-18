@@ -2,4 +2,4 @@
 
 name: Calling functions
 description: |
-  To express any arbitrary operation in programming, there is a notion of «function». Functions are the bricks from which programmers build systems. In this module, you will learn to use already created functions. Let’s look at the function signature in the documentation and figure out how to use it. Gain experience working with standard libraries that hold thousands of functions. All functions cannot be learned, so every programmer should know where to find documentation.
+  Concept of function defines any arbitrary operation in programming. Functions are the bricks from which programmers build systems. In this module, you will learn how to use built-in functions. We will examine the function signatures in the documentation and figure out how to use it. We get familiar with standard libraries which provide thousands of functions. You can’t memorize all the functions, so every programmer should know how to find documentation.
