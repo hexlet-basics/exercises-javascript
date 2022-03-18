@@ -48,7 +48,7 @@ theory: |
 
   * Keyword `while`. It is not a function call, although it resembles it.
 
-  * Predicate. A condition given in parentheses after `while`. This condition must be evaluated and checked before executing the loop body at each iteration.
+  * Predicate. A condition given in parentheses after `while`. This condition must be evaluated and tested before executing the loop body at each iteration.
 
   * Loop body. Block of code in curly braces. This block is equivalent to the code block in functions. Anything that is defined inside this block (constants or variables) is visible only within this block.
 
@@ -81,7 +81,7 @@ theory: |
   // function terminates
   ```
 
-  The main purpose of a loop is to end it (exit from a loop). The process which generates the loop must eventually stop. It is up to the programmer to stop it. Usually this comes down to introducing a variable called the "loop counter". The counter should first be initialized, that is, you must assign it an initial value. In our example, it's the statement `let i = 1`, which is executed before the loop. Then the loop condition checks if the counter has reached its limiting value. Finally, the counter changes its value to `i = i + 1`.
+  The main purpose of a loop is to end it (exit from a loop). The process which generates the loop must eventually stop. It is up to the programmer to stop it. Usually this comes down to introducing a variable called the "loop counter". The counter should first be initialized, that is, you must assign it an initial value. In our example, it's the statement `let i = 1`, which is executed before the loop. Then the loop condition tests if the counter has reached its limiting value. Finally, the counter changes its value to `i = i + 1`.
 
   This is where beginners make the most mistakes. For example, accidentally forgetting to increment the counter or an incorrect predicate check can lead to an infinite loop. In this case the loop works endlessly and the program never stops. We then have to end it forcibly (it's possible that when real applications freeze, an infinite loop is running inside them).
 
