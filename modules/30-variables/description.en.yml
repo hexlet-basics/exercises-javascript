@@ -1,6 +1,5 @@
 ---
 
-name: Variables in the JavaScript 
+name: Variables in the JavaScript
 description: |
   Information can be stored in variables. They allow you to reuse already existing data and eliminate duplicates from your code. In this module, we will show you how to modify and name variables to make your code readable for any developer. You will find that naming a variable can be tricky! Learn how to use variables to simplify complex computations.
-
