@@ -20,14 +20,14 @@ const expectOutput = async (expected, run = (f) => f()) => {
   const oldLog = console.log;
   global.console.log = (/** @type {any} */ ...args) => {
     oldLog(...args);
-    logs.push(...args);
+    logs.push(args);
   };
   try {
     const { default: f } = await import(getPathToIndex());
     if (typeof f === 'function') {
       run(f);
     }
-    const content = logs.map(String).join('\n').trim();
+    const content = logs.map(oneCallData => oneCallData.map(String).join(' ')).join('\n').trim();
     if (typeof expected === 'function') {
       expected(content);
     } else {
