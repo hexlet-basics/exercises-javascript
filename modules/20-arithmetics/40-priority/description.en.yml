@@ -1,7 +1,44 @@
 ---
 
-name: Priority of operations
-theory: 
-instructions: 
+name: Operator precedence
+theory: |
+  Look closely at the expression `2 + 2 * 2` and figure out the answer.
+
+  Correct answer is `6`.
+
+  If your guess is `8`, you'll find this lesson useful. In high school math, we studied the concept of "operator precedence". This concept defines the order in which operations are to be performed. For example, multiplication and division have a higher precedence than addition and subtraction, and the precedence of exponentiation is above all other arithmetic operations: `2 ** 3 * 2` calculates to `16`.
+
+  But sometimes we have to perform calculations in a non-standard order. In tricky cases, the precedence can (and should) be set with parentheses, just like we done it in high school, e.g: `(2 + 2) * 2`.
+
+  Parentheses fit over any operation. They can be nested into each other numerous times. Here are a couple of examples:
+
+  ```javascript
+  console.log(3 ** (4 - 2)); // => 9
+  console.log(7 * 3 + (4 / 2) - (8 + (2 - 1))); // => 14
+  ```
+
+  Sometimes an expression is visually cumbersome. In such cases parentheses come in handy without affecting the precedence. For example, the task from the previous lesson becomes clearer with parentheses.
+
+  Was:
+
+  ```javascript
+  console.log(8 / 2 + 5 - -3 / 2); // => 10.5
+  ```
+
+  Become:
+
+  ```javascript
+  console.log(((8 / 2) + 5) - (-3 / 2)); // => 10.5
+  ```
+
+  Note: you write the code for humans, since they will read it, and machine will just execute it. For machine the code is either valid or invalid, it doesn't recognize "more" or "less" valid code.
+
+instructions: |
+
+  Given the expression `70 * 3 + 4 / 8 + 2`.
+
+  Put parentheses so that both additions (`3 + 4`) and (`8 + 2`) will be calculated first. Print the result.
+
 tips:
-definitions:
+  - |
+    [Operator precedence](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
