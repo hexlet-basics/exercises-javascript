@@ -1,0 +1,53 @@
+---
+
+name: Conditions inside loops
+theory: |
+
+  The loop body, as well as the function body, is where the statements execute. So we can use everything we already learned inside it, such as conditionals.
+
+  Imagine a function that counts the number of times a letter appears in a sentence. A sample of its work:
+
+  ```javascript
+  countChars('Fear cuts deeper than swords.', 'e'); // 4
+  // If there is no matches the result is 0
+  countChars('Sansa', 'y'); // 0
+  ```
+
+  Before examining its contents, answer the questions:
+
+  * Is this an aggregate operation?
+  * What will be a test condition for character occurence?
+
+  ```javascript
+  const countChars = (str, char) => {
+    let i = 0;
+    let count = 0;
+    while (i < str.length) {
+      if (str[i] === char) {
+        // Count only relevant characters
+        count = count + 1;
+      }
+      // Counter increases in any case
+      i = i + 1;
+    }
+
+    return count;
+  };
+  ```
+
+  It is an aggregate task. Despite that it doesn't count all characters, you still have to parse each character to calculate the sum.
+
+  The distinctive feature of this loop is the condition inside its body. The variable `count` only increases when the current character matches the expected one. 
+
+  Apart from this, it is a generic aggregate function that returns the number of the required characters.
+
+instructions: |
+
+  The function of the theory is case-sensitive. It means 'A' and 'a' from its point of view are different characters. Write a version of this function that is not case-sensitive:
+
+  ```javascript
+  countChars('HexlEt', 'e'); // 2
+  countChars('HexlEt', 'E'); // 2
+  ```
+
+tips: []
