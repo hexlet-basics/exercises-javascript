@@ -1,0 +1,53 @@
+---
+
+name: Conditions inside loops
+theory: |
+
+  The loop body, as well as the function body, is where the statements execute. So we can use everything we already learned inside it, such as conditionals.
+
+  Imagine a function that counts the number of times a letter appears in a sentence. A sample of its work:
+
+  ```javascript
+  countChars('Fear cuts deeper than swords.', 'e'); // 4
+  // Если вы ничего не нашли, то результат — 0 совпадений
+  countChars('Sansa', 'y'); // 0
+  ```
+
+  Перед тем как посмотреть её содержимое, попробуйте ответить на вопросы:
+
+  * Является ли эта операция агрегацией?
+  * Какой будет проверка на вхождение символа?
+
+  ```javascript
+  const countChars = (str, char) => {
+    let i = 0;
+    let count = 0;
+    while (i < str.length) {
+      if (str[i] === char) {
+        // Считаем только подходящие символы
+        count = count + 1;
+      }
+      // Счетчик увеличивается в любом случае
+      i = i + 1;
+    }
+
+    return count;
+  };
+  ```
+
+  Эта задача является агрегирующей. Несмотря на то, что она считает не все символы, для подсчета самой суммы все равно приходится анализировать каждый символ.
+
+  Ключевое отличие этого цикла от рассмотренных в наличии условия внутри тела. Переменная `count` увеличивается только в том случае, когда текущий рассматриваемый символ совпадает с ожидаемым.
+
+  В остальном — это типичная агрегатная функция, которая возвращает количество нужных символов вызываемому коду.
+
+instructions: |
+
+  Функция из теории учитывает регистр букв. То есть `A` и `a` с её точки зрения разные символы. Реализуйте вариант этой же функции, так чтобы регистр букв был не важен:
+
+  ```javascript
+  countChars('HexlEt', 'e'); // 2
+  countChars('HexlEt', 'E'); // 2
+  ```
+
+tips: []
