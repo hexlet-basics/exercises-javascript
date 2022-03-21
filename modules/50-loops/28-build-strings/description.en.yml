@@ -1,0 +1,44 @@
+---
+
+name: Building strings with loops
+theory: |
+
+  Loops also allow you to generate strings. It is a common task for web development. It is merely the basic aggregation using interpolation or concatenation.
+
+  One especially beloved task among interviewers — do a string reversal. There are lots of ways to solve it, but the most basic is the iteration of each character. Get a glimpse of how this function works:
+
+  ```javascript
+  reverse('Hexlet'); // telxeH
+  ```
+
+  The general idea of the reversal: you take characters one by one from the beginning of the string and connect them in reverse order. Sounds like a piece of cake. Now examine it:
+
+  ```javascript
+  const reverse = (str) => {
+    let i = 0;
+    // Strings neutral element is an empty string
+    let result = '';
+    while (i < str.length) {
+      // Connect in a reverse order
+      result = `${str[i]}${result}`;
+      // Same through concatenation
+      // result = str[i] + result;
+      i = i + 1;
+    }
+
+    return result;
+  };
+
+  const name = 'Bran';
+  reverse(name); // 'narB'
+  // Testing neutral element
+  reverse(''); // ''
+  ```
+
+  Perhaps the only tricky part here is getting a feel the string itself is built. Since each next character is attached to the result string to the left, the string ends up reversed.
+
+instructions: |
+
+  Write the same `reverse()` function, except it doesn't iterate over a string from the first element to the last, but vice versa, from the last to the first. The overall structure of the function remains the same. The initial index, the loop termination condition, the building of a new string, and the formation of a new index in the loop are about to change.
+
+tips: []
