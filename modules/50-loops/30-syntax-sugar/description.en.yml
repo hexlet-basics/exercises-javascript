@@ -1,0 +1,26 @@
+---
+
+name: Syntactic sugar
+theory: |
+
+  Expressions like `index = index + 1` occur quite often in JavaScript, so the creators of the language added an undercut: `index += 1`. This type of shortcut usually referred to as **syntactic sugar** because they simplify and "sweeten" the process of coding :)
+
+  There are shortcuts for all arithmetic operations and for string concatenation:
+
+  - `a = a + 1` → `a += 1`
+  - `a = a - 1` → `a -= 1`
+  - `a = a * 2` → `a *= 2`
+  - `a = a / 1` → `a /= 1`
+  - `a = a + 'foo'` → `a += 'foo'`
+
+instructions: |
+
+  Write a `filterString()` function that takes a string and a character as input and returns a new string without an occurrence of the given character.
+
+  ```javascript
+  const str = 'If I look back I am lost';
+  filterString(str, 'I'); // 'f  look back  am lost'
+  filterString(str, 'o'); // 'If I lk back I am lst'
+  ```
+
+tips: []
