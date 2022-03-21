@@ -9,14 +9,14 @@ theory: |
 
   ```javascript
   countChars('Fear cuts deeper than swords.', 'e'); // 4
-  // Если вы ничего не нашли, то результат — 0 совпадений
+  // If there is no matches the result is 0
   countChars('Sansa', 'y'); // 0
   ```
 
-  Перед тем как посмотреть её содержимое, попробуйте ответить на вопросы:
+  Before examining its contents, answer the questions:
 
-  * Является ли эта операция агрегацией?
-  * Какой будет проверка на вхождение символа?
+  * Is this an aggregate operation?
+  * What will be a test condition for character occurence?
 
   ```javascript
   const countChars = (str, char) => {
@@ -24,10 +24,10 @@ theory: |
     let count = 0;
     while (i < str.length) {
       if (str[i] === char) {
-        // Считаем только подходящие символы
+        // Count only relevant characters
         count = count + 1;
       }
-      // Счетчик увеличивается в любом случае
+      // Counter increases in any case
       i = i + 1;
     }
 
@@ -35,15 +35,15 @@ theory: |
   };
   ```
 
-  Эта задача является агрегирующей. Несмотря на то, что она считает не все символы, для подсчета самой суммы все равно приходится анализировать каждый символ.
+  It is an aggregate task. Despite that it doesn't count all characters, you still have to parse each character to calculate the sum.
 
-  Ключевое отличие этого цикла от рассмотренных в наличии условия внутри тела. Переменная `count` увеличивается только в том случае, когда текущий рассматриваемый символ совпадает с ожидаемым.
+  The distinctive feature of this loop is the condition inside its body. The variable `count` only increases when the current character matches the expected one. 
 
-  В остальном — это типичная агрегатная функция, которая возвращает количество нужных символов вызываемому коду.
+  Apart from this, it is a generic aggregate function that returns the number of the required characters.
 
 instructions: |
 
-  Функция из теории учитывает регистр букв. То есть `A` и `a` с её точки зрения разные символы. Реализуйте вариант этой же функции, так чтобы регистр букв был не важен:
+  The function of the theory is case-sensitive. It means 'A' and 'a' from its point of view are different characters. Write a version of this function that is not case-sensitive:
 
   ```javascript
   countChars('HexlEt', 'e'); // 2
