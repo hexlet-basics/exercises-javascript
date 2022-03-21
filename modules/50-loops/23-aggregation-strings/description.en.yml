@@ -1,0 +1,52 @@
+---
+
+name: Data aggregation (strings)
+theory: |
+
+  You can use aggregation with strings as well as with numbers. Mostly, for a dynamic generation of a string, where you don't know in advance what size it will be and what it will contain.
+
+  Imagine a function "multiplying" a string, that is, repeating a string a given number of times:
+
+  ```javascript
+  repeat('hexlet', 3); // 'hexlethexlethexlet'
+  ```
+
+  The core mechanism of this function is plain: the loop "increments" the string a given number of times:
+
+  ```javascript
+  const repeat = (text, times) => {
+    // Strings neutral element is an empty string
+    let result = '';
+    let i = 1;
+
+    while (i <= times) {
+      // Add a string on each iteration
+      result = `${result}${text}`;
+      i = i + 1;
+    }
+
+    return result;
+  };
+  ```
+
+  Break down the code execution into steps:
+
+  ```javascript
+  // Calling repeat('hexlet', 3);
+  let result = '';
+  result = `${result}hexlet`; // hexlet
+  result = `${result}hexlet`; // hexlethexlet
+  result = `${result}hexlet`; // hexlethexlethexlet
+  ```
+
+instructions: |
+
+  Write a function `joinNumbersFromRange()`, which joins all range numbers into a string:
+
+  ```javascript
+  joinNumbersFromRange(1, 1); // '1'
+  joinNumbersFromRange(2, 3); // '23'
+  joinNumbersFromRange(5, 10); // '5678910'
+  ```
+
+tips: []
