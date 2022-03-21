@@ -2,9 +2,9 @@
 
 name: Statements
 theory: |
-  Instruction is a command given to computer. JavaScript code is usually a set of instructions separated by `;`.
+  A statement is a command given to computer to run something. The JavaScript code is a set of statements that are usually separated by a symbol `;`.
 
-  Here is an example of code with two instructions.
+  Here is an example of code with two statements.
 
   ```javascript
   console.log('Mother of Dragons.');
@@ -18,18 +18,18 @@ theory: |
   Dracarys!
   </pre>
 
-  Actually, it's possible to put multiple instructions on the same line:
+  Theoretically, it's possible to put multiple statements on the same string:
 
   ```javascript
   console.log('Mother of Dragons.'); console.log('Drakarys!');
   ```
 
-  but it's considered bad practice as it's hard to read.
+  but it's considered bad practice as it's difficult to read.
 
-  Interpreter, the program which executes code in JavaScript needs such splitting. This interpreter in JavaScript world is any browser (as it's able to JavaScript code) or Node.js (in the same reason). The operation principle of any interpreter is (approximately) as follows. It reads the file with code, splits it into instructions and then executes them in turn.
+  Why is it good to know? A statement is an execution unit. Interpreter, the program which executes code in JavaScript needs such splitting. This interpreter in JavaScript world is any browser (as it's able to JavaScript code) or Node.js (in the same reason). The operation principle of any interpreter is (approximately) as follows. It reads the file with code, splits it into instructions and then executes them in turn.
 
 instructions: |
-  Output these three names on the screen, one after the other: "Robert", "Stannis", "Renly".
+  Print these three names, one after the other: "Robert", "Stannis", "Renly". As a result, the editor should print:
 
   <pre class='hexlet-basics-output'>
   Robert
@@ -37,7 +37,7 @@ instructions: |
   Renly
   </pre>
 
-  For each name call it's own `console.log()`
+  For each name call its `console.log()`
 
   tips:
   - |
@@ -46,9 +46,9 @@ instructions: |
     [Statements and declarations by category](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements)
 
 definitions:
-  - name: interpreter
+  - name: Interpreter
     description: |
-      A program executing code in JavaScript
+      is a program that executs the code in JavaScript.
   - name: Statement
     description: |
-      A command given to computer. JavaScript code is a set of instructions separated (most frequently) by `;`.
+      is a command given to a computer. The JavaScript code is a set of statements separated (most frequently) by `;`.
