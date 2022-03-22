@@ -1,56 +1,57 @@
 ---
 
-name: Arithmetic Operators
+name: Arithmetic operations
 theory: |
-  In math, for example, to add two numbers we write `3 + 4`. The same works in programming. Here is the program that adds two numbers.
+  At the basic level, computers use numbers only. Even in high-level language applications, there are many numbers and operations with them. To get started with programming all you need to know is basic arithmetic - let’s start with it.
+
+  When adding two numbers in math, we write, for example, `3 + 4`. The same goes for programming. Here is a program that adds two numbers:
 
   ```javascript
-  // Don't forget the semicolon, since each line is an instruction
+  // Don't forget the semicolon at the end,
+  // since each line of code is a statement
+
   3 + 4;
   ```
 
-  (Remember about comments? In the code above `//` is a comment from the teacher).
-
-  Arithmetics in programming is almost identical to what you've learned in school.
-
-  The line `3 + 4;` will make the interpreter add two numbers and calculate the value. This program will work, but it's not particularly useful. We aren't giving commands really, all we're doing is telling the interpreter "here, sum of 3 and 4". In the real world it's not enough to  tell the interpreter, for instance, to calculate the sum of all the items in a cart. We usually need something like "caulcate the sum AND show the answer to the user".
-
-  We need to ask the interpreter to add numbers **AND** give it a command to do something with the result. Let's display it on the screen:
+  Statement `3 + 4`, makes the computer add up the numbers and find the result. If you run this program, nothing will happen. Precisely, the computer will calculate the sum, but that’s it. The result of the addition is useless, and such a program has no value. We need to ask the computer to add `3 + 4`, and give a command to do something with the result. For example, to print it:
 
   ```javascript
-  // remember the semicolon!
+  // The sum is calculated first,
+  // then it is transmitted to print the function
+
   console.log(3 + 4);
   ```
 
-  This is the output we get on the screen after we run the program:
+  After launch the result will appear on the screen:
   ```
   7
   ```
-  Here are the other operators:
+
+  In addition, the following operations are available:
   * `*` — multiplication
   * `/` — division
   * `-` — subtraction
   * `%` — [modulo](https://en.wikipedia.org/wiki/Modulo_operation) (remainder after division)
   * `**` — power
 
-  Now let's display the result of division and then the result of exponentiation.
+  Now let’s print the result of division, and then the result of exponentiation:
 
   ```javascript
   console.log(8 / 2);  // => 4
   console.log(3 ** 2); // => 9
   ```
-  Sometimes we will show you the result of code execution at the end of a line as a comment, like so:  `=> RESULT`. For example, `// => 4`.
+  Sometimes we will show the result of the code execution in the comments, like this: `=> RESULT`. For example, `// => 4`.
 
-  The first instruction will output `4` to the screen (since `8 / 2` is `4`), and the second instruction will output 9 (since 3<sup>2</sup> is 9).
+  The first statement will print `4` (since `8 / 2` is `4`), and the second statement will print 9 (since 3<sup>2</sup> is 9).
 
 instructions: |
 
-  Print the quotient of `81` and `9` to screen.
+  Print the result of dividing 81 by 9.
 
 tips:
   - |
-    Always separate operators from numbers (operands). It's a good programming style. This is why our examples we wrote `print_r(3 + 4)`, and not `print_r(3+4)`.
+    Always indent arithmetic operators with spaces from the numbers (operands) - it is a good programming style. This is why we write `console.log(3 + 4)`, and not `console.log(3+4)` in our examples.
   - |
-    Dividing by zero will produce Infinity. We'll learn what it means later.
+    The result of division by zero is Infinity. We will figure out what it means in the following lessons.
   - |
     [Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators)

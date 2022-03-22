@@ -1,7 +1,36 @@
 ---
 
-name: Floating Point Numbers
-theory: 
-instructions: 
-tips:
-definitions:
+name: Floating-point numbers
+
+theory: |
+
+  JavaScript doesn't distinguish between rational numbers (0.5) and natural numbers (10), both are numbers in JS (but in other programming languages it doesn’t work the same). In this way, they can be used together in any operation:
+
+  ```javascript
+  3 * 0.5; // 1.5
+  ```
+
+  Nevertheless, rational numbers, by their very nature, are very different. For us as applied developers, it wouldn’t matter if not for one detail. Look at this example:
+
+  ```javascript
+  // Check this code in the browser console
+  0.2 * 0.2 // 0.04000000000000001
+  ```
+
+  The operation of multiplying two rational numbers suddenly printed an inaccurate result. The same result other programming languages give. This happens due to the limits of computing power. The amount of memory, unlike numbers, is finite (an infinite amount of numbers requires an infinite amount of memory for its storage). Such a problem with natural numbers is solved by a simple constraint on the upper boundary (there is some maximum number that can be entered), except for rational numbers it is impossible.
+
+  ```javascript
+  // Maximum possible integer
+  console.log(Number.MAX_SAFE_INTEGER);
+  9007199254740991
+  ```
+
+  Rational numbers are not lined up in a continuous chain, there are infinite sets of numbers between _0.1_ и _0.2_. So there’s a big problem of how to store rational numbers? It’s an interesting question. There are many articles on the Internet about memory organization in such cases. Moreover, there is a standard that describes how to do this correctly, and an overwhelming number of languages rely on it.
+
+  For us, as developers, it is important to understand that the operations with floating numbers are inaccurate (this accuracy can be adjusted), and therefore, when solving problems with such numbers, it is necessary to resort to special tricks that allow you to achieve the accuracy.
+
+instructions: |
+
+  Compute and print the product of: *0.39* and *0.22*.
+
+tips: []
