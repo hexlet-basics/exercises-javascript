@@ -1,0 +1,82 @@
+---
+
+name: Define with expressions
+theory: |
+
+  Variables are helpful not only for storing and reusing data but also for simplifying complex calculations. Consider an example: you need to convert euros into rubles through dollars. Banks often do this kind of conversion via an intermediate currency when shopping abroad.
+
+  First, convert 50 euros into dollars. Suppose that one euro is $1.25:
+
+  ```javascript
+  let dollarsCount = 50 * 1.25;
+  console.log(dollarsCount); // => 62.5
+  ```
+
+  Last lesson we assign a specific value to a variable. Here `let dollarsCount = 50 * 1.25;` there is an **expression** to the right of equal sign. An interpreter doesn't bother what is in front of it: `62.5` or `50 * 1.25`, both are expressions to compute. And they are computed to the same value, `62.5`.
+
+  Any string is an expression. The concatenation of strings is also an expression. Interpreter processes an encountered expression and produces, as a result, the **value of expression**. Here are some sample expressions with comments on the right containing a result value.
+
+  ```javascript
+  62.5             // 62.5
+  50 * 1.25        // 62.5
+  120 / 10 * 2     // 24
+
+  'hello'          // "hello"
+  'Good' + 'will'  // "Goodwill"
+  ```
+
+  The code construction rules (language grammar) ensure that any calculation (not just math but for instance string concatenation) can take place where an expression is expected and, the program would keep running. For this reason, it's impossible to describe and show all use cases of all operations.
+
+  Programs consist of numerous combinations of expressions and understanding its concept is a major step on your way.
+
+  Based on the above, consider whether such a code will work?
+
+  ```javascript
+  let who = "dragon's" + 'mother';
+  console.log(who);
+  ```
+
+  Run it on [repl.it](https://repl.it/languages/javascript) and play with it.
+
+  Now back to our currency application. We will write the dollar in rubles as a separate variable. Calculate the value of 50 euros in dollars by multiplying them by `1.25`. Suppose that 1 dollar is 60 rubles:
+
+  ```javascript
+  let rublesPerDollar = 60;
+  let dollarsCount = 50 * 1.25; // 62.5
+  let rublesCount = dollarsCount * rublesPerDollar; // 3750
+
+  console.log(rublesCount);
+  ```
+
+  Now merge our output with some text via concatenation:
+
+  ```javascript
+  let rublesPerDollar = 60;
+  let dollarsCount = 50 * 1.25; // 62.5
+  let rublesCount = dollarsCount * rublesPerDollar; // 3750
+
+  console.log('The price is ' + rublesCount + ' rubles');
+  ```
+
+  <pre class='hexlet-basics-output'>
+  The price is 3750 rubles
+  </pre>
+
+  Any variable can partake in any expression. During the computation, its value substitutes for the variable's name.
+
+  The interpreter calculates the value of `dollarsCount` before using it in other expressions. When it comes to using the variable, Javascript "knows" the value it has already computed.
+
+instructions: |
+
+  Write a program that takes the initial amount of euros stored in the variable `eurosCount`, converts euros to dollars, and prints it. Then it converts the result to rubles and prints it on a new line.
+
+  Sample output for 100 euros:
+
+  ```
+  125
+  7500
+  ```
+
+  Suppose that:
+  - 1 euro = 1.25 dollars
+  - 1 dollar = 60 rubles
