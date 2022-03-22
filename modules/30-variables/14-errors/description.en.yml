@@ -1,0 +1,35 @@
+---
+
+name: Some errors regarding variables
+theory: |
+
+  The order of statements in code with variables is tremendously important. You must declare a variable before using it. Below is an example of a common beginners mistake:
+
+  ```javascript
+  // Uncaught ReferenceError: greeting is not defined
+  console.log(greeting);
+  let greeting = 'Father!';
+  ```
+
+  Running the above program terminates with the error _ReferenceError: greeting is not defined_. _ReferenceError_ means that the code uses a name (called identifier) that is not defined. And the error itself explicitly tells you: _greeting is not defined_. Besides incorrect definition order, there are common typos in JavaScript, both when using a variable and when declaring it.
+
+  It's the usage of a properly configured editor which reduces the number of such errors. Such an editor highlights names used without declaration and warns about possible problems.
+
+  Another common mistake is trying to declare a variable that is already declared.
+
+  ```javascript
+  let greeting = 'Father!';
+  let greeting = 'Father!';
+  ```
+
+  That's not an option. We'll have to create a new variable.
+
+instructions: |
+
+  Find an undeclared variable in the code and declare it by assigning the value 'Dragon';
+
+tips: []
+
+definitions:
+  - name: Variable
+    description: is a means to save the data and name it for later use in the code.
