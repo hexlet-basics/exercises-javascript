@@ -5,7 +5,7 @@ theory: |
 
   Our website verifies your solutions automatically. You may wonder how it works.
 
-  In the simplest case, the system runs your code and analyzes the screen output. Then it compares the actual output against the expected output.
+  In the most basic case, the system just runs your code and examines an output. Then it compares the actual output against the expected one.
 
   The following lessons deal with more complex matters. You will be writing functions: a kind of mini-programs that receive some data from outside and perform operations on it. Verifying solutions gets a little more complicated in that case. The system runs your code sending some data to it. The system knows what result a correctly written function would receive with that particular data and "expects" it.
 
@@ -35,7 +35,7 @@ theory: |
   However, if you are sure about a mistake or have found some inaccuracy, you can always point it out. At the end of each theory, there is a link to the contents of the lesson on Github (this project is completely open-source!). You can write an issue, look through the tests (you can see how your code is called there), and even send a pull request. If it’s over your head, then join the #hexlet-feedback channel in Slack where we can always help you.
 
 instructions: |
-  Display the following number: `9780262531962`.
+  Print the following number: `9780262531962`.
   Experiment with the output. Try another number or string there. Look at the system’s output.
 
 definitions:

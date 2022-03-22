@@ -2,7 +2,7 @@
 
 name: Comments
 theory: |
-  Almost every programming language allows you to add comments to your code. Interpreter doesn't evaluate comments, their only purpose is to give programmers opportunity to leave notes for themselves and others. There are two ways to write comments in JavaScript:
+  Almost every programming language allows you to add comments to your code. An interpreter doesn't evaluate comments, their only purpose is to allow programmers to leave notes for themselves and others. There are two ways to write comments in JavaScript:
 
   **Single line comments** start with `//`.  Any text or symbols that follow, won't be evaluated or executed.
 
@@ -28,7 +28,7 @@ theory: |
   console.log('I am the King');
   ```
 
-  Such comments are usually used to clarify the function of parts of the code.
+  Such comments usually clarify the purpose of pieces of code.
 
 instructions: |
   Create a single line comment with the following text: `You know nothing, Jon Snow!`.
