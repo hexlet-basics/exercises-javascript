@@ -16,7 +16,7 @@ instructions: |
   ```javascript
   console.log('Hello, World!');
   ```
-  Note that if you type `hello, woRld!` instead of `Hello, World!`, it will be counted as an absolutely different text, because in JavaScript capital and lowercase letters are different symbols. Letter size is called _case_ and in programming the frase _case is important_ is frequently used. This rule affects almost everything in code so get used to pay close attention to case.
+  Note that if you type `hello, woRld!` instead of `Hello, World!`, it will count as a different text, because in JavaScript upper and lowercase letters are different symbols. Letter size is called _case_ and there is a common saying among programmers that _case is important_. This rule affects almost everything in code so get used to pay close attention to case.
 
 tips:
   - |
