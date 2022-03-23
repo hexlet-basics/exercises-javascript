@@ -1,0 +1,41 @@
+---
+
+name: |
+  Primitive data types immutability
+
+theory: |
+
+  What happens if you change a character in a string?
+
+  ```javascript
+  let firstName = 'Alexander';
+  // the code will run correctly
+  firstName[0] = 'B';
+  console.log(firstName); // => 'Alexander'
+  ```
+
+  Ironically, the value of the `firstName` variable will remain the same, while the code is executed without errors.This is due to the immutability of primitive types in JavaScript. The language does not provide any physical possibility to change the string.  The immutability of primitive types is important for many reasons, and performance is a key one. But what if we really need to edit the string? We have variables for this purpose:
+
+  ```javascript
+  let firstName = 'Alexander';
+  // the code will run correctly
+  firstName = 'Blexander'
+  console.log(firstName); // => 'Blexander'
+  ```
+
+  There is a big difference between changing the value of a variable and the value itself. You can't change primitive types in JavaScript (but you can change composite types, learn more about it in Hexlet), and changing the value of a variable is not a problem.
+
+instructions: |
+  Given three constants with different people's names. Combine and print the word out of the characters in this order:
+
+  1. The third character from the first line.
+  2. The second character from the second line.
+  3. The fourth character from the third line.
+  4. The fifth character from the second line.
+  5. The third character from the second line.
+
+  Try using interpolation: put variables inside the parentheses, and individual characters inside square brackets.
+
+tips: []
+
+definitions: []
