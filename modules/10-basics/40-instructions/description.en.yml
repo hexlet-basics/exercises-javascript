@@ -39,7 +39,7 @@ instructions: |
 
   Call `console.log()` for each name.
 
-  tips:
+ tips:
   - |
     [more about interpreters](https://en.wikipedia.org/wiki/Interpreter_(computing))
   - |
