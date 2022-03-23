@@ -1,0 +1,37 @@
+---
+
+name: undefined
+theory: |
+
+  It is possible to declare variable without giving it a specific value. What will be printed in this case?
+
+  ```javascript
+  let name;
+  console.log(name); // ?
+  ```
+
+  `Undefined`. It is a special value of a certain type meaning no value can be printed. Undefined is used by JavaScript in many different cases, for example when calling a non-existent string character:
+
+  ```javascript
+  const name = 'Arya';
+  console.log(name[8]);
+  ```
+
+  The meaning (semantics) of `undefined` is no value. However, nothing stops you from writing the following code:
+
+  ```javascript
+  let key = undefined;
+  ```
+
+  Although the interpreter allows this, it violates the semantics of `undefined`, because this code performs an assignment and therefore substitutes a value.
+
+  JavaScript is one of the few languages that explicitly includes `undefined`. Other languages use `null` instead of `undefined`, and JavaScript uses `null` too.
+
+  _Here is a simple self-test. Why can't we declare a constant without specifying a value?_
+
+instructions: |
+  Print the `undefined` value without specifying it explicitly (by assignment or by putting it directly into `console.log()`). If you can't figure out how to do it, look up the mentor's solution.
+
+tips: []
+
+definitions: []

@@ -1,0 +1,37 @@
+---
+
+name: Loose typing
+theory: |
+
+  We know two different data types: numbers and strings. For example, we can add numbers, because the addition is an operation for the type "numbers".
+
+  But what if you add not numbers, but a number and a string?
+
+  ```javascript
+  console.log(1 + '7'); // => '17'
+  ```
+
+  Even though `'7'` is a string, not a number, the JavaScript interpreter returned `17` as if we were adding two strings. When JavaScript notices a type mismatch, it tries to convert the information itself. In this case it converted the `1` to the string `'1'`, and then calmly concatenated `'1'` and `'7'`.
+
+  Not all languages can do this. JavaScript is a loosely typed language. It recognizes different data types (numbers, strings, etc.), but it is not strict when using them, since it tries to convert information when it seems reasonable. JavaScript sometimes even runs to extremes. Most expressions that don't work in other languages work perfectly well in JavaScript. Try to perform any arithmetic operation (except addition) with strings or any other data types (except when both operands are numbers or strings consisting only of numbers). You will see that they always work and return `NaN`, which is pretty logical.
+
+  ```
+  const result = 'one' * 'two';
+  console.log(result); // => NaN
+  ```
+
+  In **strongly typed** languages, adding a number to a string won't work.
+
+  JavaScript was created for the internet, and on the internet all information is stored in strings. Even when you type a phone number or a birth year on a website, that information comes to the server as strings, not as numbers. So the authors of the language decided that automatic type conversion is correct and convenient.
+
+  Such implicit automatic type conversion is convenient indeed. But in practice, this property of the language causes a lot of errors, which are difficult to find. The code may work or fail whether you are lucky enough to have automatic conversion done correctly or not. The programmer may not notice this immediately.
+
+  You will encounter such cases more than once in further tasks. You will often ask "Why doesn't my code work the way I expect?
+
+  Loose typing is a red thread running through the whole Javascript development process.
+
+instructions: |
+
+  Print the result of `7 - (-8 - -2)`. Convert 7 to a string type. Experiment with other numbers, too.
+
+tips: []
