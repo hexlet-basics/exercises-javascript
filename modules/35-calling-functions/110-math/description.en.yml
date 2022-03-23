@@ -1,0 +1,34 @@
+---
+
+name: Math functions in JavaScript
+theory: |
+
+  Explaining functions in JavaScript is a bit complicated by the language structure. It first appeared in browsers and had very limited capabilities compared to general-purpose languages. It has changed over time as JavaScript has become a powerful language that has taken over client-side development and is heavily used on the server. However, the legacy remains, as you need to maintain backward compatibility. So some parts of language are inconsistent, which can't be explained by the system: you can only dismiss them and say, "That's how it's historically been."
+
+  Such "things" involves math functions. In the previous task, we defined the function `pow()` ourselves (we added it to our practice), but now let's look at its built-in version in the language itself.
+
+  ```javascript
+  Math.pow(2, 3); // 8
+  ```
+
+  What is `Math`? Technically, it's an object accessible from any part of the program, but we are too far from talking about objects for now. So far, just remember that we call functions for mathematical operations via `Math`. This prefix doesn't affect the concept of a function which we discussed earlier and will discuss later.
+
+  A complete list of Math functions is available in [documentation](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math). We shall discuss how to read it later on.
+
+instructions: |
+
+  Print the absolute value of the number in the `soldiersCount` variable using the [Math.abs()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs) function. The function returns the absolute value of the given number. The absolute value of a number is the number without regard to its sign.
+
+  ```javascript
+  Math.abs(-3); // 3
+  Math.abs(3); // 3
+  Math.abs(0); // 0
+  ```
+
+tips: []
+
+# definitions:
+#   - name: Функция
+#     description: "операция, способная принимать данные и возвращать результат; функция вызывается так: `foo()`."
+#   - name: Аргумент
+#     description: "информация, которую функция получает при вызове. Например, `foo(42)` — передача аргумента `42` функции `foo()`"
