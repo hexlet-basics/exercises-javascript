@@ -1,0 +1,48 @@
+---
+
+name: Getting characters from a string
+theory: |
+
+  Sometimes you have to get a single character from a string. For example, if the website knows the user's name and surname, and at some point, you need to output it in the format *J. Smith*, you need to take the initial letter from the name.
+
+  ```javascript
+  const firstName = 'Tirion';
+
+  console.log(firstName[0]); // => 'T'
+  ```
+
+  Square brackets with a number is a special syntax for extracting a character from a string. The number is called **index**, which represents the position of the character in the string. Indexes start with 0 in almost all programming languages – so to get the first character, you must set the index to `0`. The index of the last element is equal to the length of the string minus one:
+
+  ```javascript
+  // String length is 6, so the last index is 5
+  const firstName = 'Tirion';
+
+  console.log(firstName[5]); // => 'n'
+
+  // Self-check. What this code prints out?
+  const magic = '\nyou'
+  console.log(magic[1]); // => ?
+  ```
+
+  You can use variables as well as numbers as an index. Here is an example with the same result (printing *T*), where the index in square brackets is a constant, not a number:
+
+  ```javascript
+  const firstName = 'Tirion';
+  const index = 0;
+
+  console.log(firstName[index]); // => 'T'
+  ```
+
+  Technically, you can set the index beyond the word length. In our example, these are numbers from 6 and greater. JavaScript does not consider this behavior an error. Addressing a non-existent index will return `undefined`.
+
+  ```javascript
+  const firstName = 'Tirion';
+
+  console.log(firstName[10]); // => undefined
+  ```
+
+instructions: |
+
+  Print the last character of the string constant `name`.
+
+tips: []
