@@ -13,7 +13,7 @@ theory: |
   3 + 4;
   ```
 
-  Statement `3 + 4`, makes the computer add up the numbers and find the result. If you run this program, nothing will happen. Precisely, the computer will calculate the sum, but that’s it. The result of the addition is useless, and such a program has no value. We need to ask the computer to add `3 + 4`, and give a command to do something with the result. For example, to print it:
+  Statement `3 + 4` makes the computer add up the numbers and find the result. If you run this program, nothing will happen. Precisely, the computer will calculate the sum, but that’s it. The result of the addition is useless, and such a program has no value. We need to ask the computer to add `3 + 4`, and give a command to do something with the result. For example, to print it:
 
   ```javascript
   // The sum is calculated first,
@@ -46,7 +46,7 @@ theory: |
 
 instructions: |
 
-  Print the result of dividing 81 by 9.
+  Print the result of dividing `81` by `9`.
 
 tips:
   - |

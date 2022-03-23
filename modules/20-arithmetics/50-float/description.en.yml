@@ -17,7 +17,7 @@ theory: |
   0.2 * 0.2 // 0.04000000000000001
   ```
 
-  The operation of multiplying two rational numbers suddenly printed an inaccurate result. The same result other programming languages give. This happens due to the limits of computing power. The amount of memory, unlike numbers, is finite (an infinite amount of numbers requires an infinite amount of memory for its storage). Such a problem with natural numbers is solved by a simple constraint on the upper boundary (there is some maximum number that can be entered), except for rational numbers it is impossible.
+  The operation of multiplying two rational numbers suddenly printed an inaccurate result. Other programming languages deliver the same result. This happens due to the limits of computing power. The amount of memory, unlike numbers, is finite (an infinite amount of numbers requires an infinite amount of memory for its storage). This issue in the case of natural numbers is solved by a simple upper bound constraint (you set the maximum number allowed), which is impossible for rationals.
 
   ```javascript
   // Maximum possible integer

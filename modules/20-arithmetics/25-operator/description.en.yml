@@ -2,7 +2,7 @@
 
 name: Operators
 theory: |
-  Before we move on, let's grasp the basic terminology. Operation signs such as `+` are called **operators**. They perform operations on certain values (**operands).** Operators are usually represented by one or more symbols, less often by a word. Most of the operators are identical to those from arithmetics.
+  Before we move on, let's grasp the basic terminology. Operation signs such as `+` are called **operators**. They perform operations on certain values (**operands**). Operators are usually represented by one or more symbols, less often by a word. Most of the operators are identical to those from arithmetics.
 
   ```javascript
   console.log(8 + 2);
@@ -16,9 +16,9 @@ theory: |
    ```javascript
     console.log(-3); // => -3
     ```
-  In the example above a unary operation applies to `3`. An interpreter reads it as follows: the minus operator tells him to take the number `3` and find the opposite, which is `-3`.
+  In the example above the unary operation applies to `3`. An interpreter reads it as follows: the minus operator tells him to take the number `3` and find the opposite, which is `-3`.
 
-  You might be a bit confused since `-3` is both a number and an operator with an operand but that's how programming languages work.
+  You might be a bit confused since `-3` is both a number and an operator with an operand, but that's how programming languages work.
 
 instructions: |
   Write a program that calculates and prints the difference between `6` and `-81`.
