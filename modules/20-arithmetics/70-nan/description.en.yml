@@ -15,11 +15,11 @@ theory: |
   NaN + 1; // NaN
   ```
 
-  `NaN` is a peculiar value. Although it means "not a number", in terms of types it is a number. Paradox. `NaN` is never a desired value, once it appears only as a result of errors. If you have got him, you need to track the moment at which the operation, which is not valid for numbers, was performed, and correct this piece of code.
+  `NaN` is a peculiar value. Although it means "not a number", in terms of types it is a number. Paradox. `NaN` is never a desired value, once it appears only as a result of errors. If you have encountered it, trace the moment where the operation, which is not valid for numbers, was performed, and correct this piece of code.
 
 instructions: |
 
-  Execute the operation that returnts NaN and print it using console.log().
+  Execute the operation that returnts NaN and print it using `console.log()`.
 
 tips:
   - |
