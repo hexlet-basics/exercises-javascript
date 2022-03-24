@@ -13,7 +13,7 @@ theory: |
 
   What is `Math`? Technically, it's an object accessible from any part of the program, but we are too far from talking about objects for now. So far, just remember that we call functions for mathematical operations via `Math`. This prefix doesn't affect the concept of a function which we discussed earlier and will discuss later.
 
-  A complete list of Math functions is available in [documentation](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math). We shall discuss how to read it later on.
+  A complete list of Math functions is available in [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math). We shall discuss how to read it later on.
 
 instructions: |
 
