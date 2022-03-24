@@ -25,7 +25,7 @@ theory: |
   'Good' + 'will'  // "Goodwill"
   ```
 
-  The code construction rules (language grammar) ensure that any calculation (not just math but for instance string concatenation) can take place where an expression is expected and, the program would keep running. For this reason, it's impossible to describe and show all use cases of all operations.
+  The code construction rules (language grammar) ensure that any calculation (not just math, but for instance string concatenation) can take place where an expression is expected and, the program would keep running. For this reason, it's impossible to describe and show all use cases of all operations.
 
   Programs consist of numerous combinations of expressions and understanding its concept is a major step on your way.
 
