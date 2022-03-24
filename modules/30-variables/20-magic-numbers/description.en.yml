@@ -12,7 +12,7 @@ theory: |
   console.log(rublesCount);
   ```
 
-  From the developer's point of view, such code "smells". It means that the code is hard to comprehend. Even now, when you look at the numbers `60` and `1.25`, you are likely to ask: "What are those numbers?" And imagine reading it in a month! And how will a new programmer who hasn't seen the code before understand it? In our example, you reconstruct the context through proper naming, but in real life, the code is much more complicated and it is often impossible to guess the meaning of numbers.
+  From the developer's point of view, such code "smells". It means that the code is hard to comprehend. Even now, when you look at the numbers `60` and `1.25`, you are likely to ask: "What are those numbers?" And imagine reading it in a month! And how will a new programmer who hasn't seen the code before understand it? In our example, you reconstruct the context through proper naming, but in real life, the code is much more complicated, and it is often impossible to guess the meaning of numbers.
 
   This "smell" is known as Magic Numbers. The numbers with an inexplicable origin, which you may restore only by digging deep into the code.
 
@@ -47,7 +47,7 @@ instructions: |
 
   This strange dynasty simply breeds identical castles...
 
-  Get rid of the magic numbers by creating new variables and print it.
+  Get rid of the magic numbers by creating new variables and print them.
 
   You get this:
 

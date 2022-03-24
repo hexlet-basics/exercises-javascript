@@ -11,7 +11,7 @@ theory: |
   console.log(x);
   ```
 
-  Although it works, the variable name is now `x`. A computer doesn't care about naming since it's a mindless machine, whereas developers care. We are mostly read someone else's code then write or read our own. The quality and clarity of variable names it's half the battle of code analysis.
+  Although it works, the variable name is now `x`. A computer doesn't care about naming since it's a mindless machine, whereas developers care. We mostly read someone else's code then write or read our own. The quality and clarity of variable names it's half the battle of code analysis.
 
   You'd better take a moment and come up with a name reflecting the essence and meaning of the variable than give it a random name and rename it later. Try to name variables to make them as comprehensive as possible without context, without examining the surrounding code.
 
@@ -21,7 +21,7 @@ theory: |
 
 instructions: |
 
-  Create a variable storing the number of my brothers and assign it the value *2*. Print it. After passing the tests compare your name with the teacher's variable name in the solution.
+  Create a variable storing the number of my brothers and assign it the value *2*. Print it. After passing the tests, compare your name with the teacher's variable name in the solution.
 
 tips:
   - |
