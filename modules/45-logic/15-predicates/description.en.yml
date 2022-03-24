@@ -47,7 +47,7 @@ instructions: |
   isMister('Miss');   // false
   ```
 
-#tips:
+# tips:
 # - |
 #    [Именование в программировании](https://ru.hexlet.io/blog/posts/naming-in-programming)
 
