@@ -1,0 +1,12 @@
+---
+
+name: Negation
+theory: |
+
+  Along with conjunction (AND) and disjunction (OR) we often use the "negation" operator. It changes the logical value to the opposite one. It is denoted by the unary operator `!` in programming.
+
+  If there is a function that checks for even number, then the negation allows you to check for odd number:
+
+instructions:
+
+tips:
