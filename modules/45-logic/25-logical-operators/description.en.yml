@@ -1,0 +1,132 @@
+---
+
+name: Logical operators
+theory: |
+
+  You can combine logical expressions to create increasingly tricky checks. One good example is password verification. As you know, some websites want a password of 8 to 20 characters length on signup. Frankly, it's a weird restriction, but whatever. In math, we would write `8 < x < 20` (where `x` is the length of a particular password), but that trick won't work in JavaScript.  We would have to make two separate logical expressions and connect them with the special "AND" operator:
+
+  ```
+  A password longer than 8 characters **AND** a password shorter than 20 characters.
+  ```
+
+  Here's a function taking the password and saying whether it meets the conditions or not:
+
+  ```javascript
+  const isStrongPassword = (password) => {
+    const length = password.length;
+    return length > 8 && length < 20;
+  };
+
+  isStrongPassword('qwerty'); // false
+  isStrongPassword('qwerty1234'); // true
+  isStrongPassword('zxcvbnmasdfghjkqwertyui'); // false
+  ```
+
+  `&&` means "AND" (called conjunction in mathematical logic). The whole expression is true only when each operand, each of compound expressions, is true. In other words, `&&` means "either one and the other".
+
+  This operator precedence is lower than that of relational operators, so the expression works correctly without parentheses.
+
+  Another widespread operator along with `&&` is the `||` — the "OR" (disjunction). It means "one or the other, or both". Operators can be combined in any number and any sequence, but when `&&` and `||` appear together, you better label precedence with parentheses. Below is an example of an advanced function validating a password:
+
+  ```javascript
+  const hasSpecialChars = (str) => /* checks for special characters in the string */;
+
+  const isStrongPassword = (password) => {
+    const length = password.length;
+    // The parentheses set the precedence making clear how parts related
+    return (length > 8 && length < 20) || hasSpecialChars(password);
+  };
+  ```
+
+  Another example. We want to buy an apartment that meets the conditions: an area of 100 square meters or more on any street **OR** an area of 80 square meters or more, but on `Main Street`.
+
+  We write a function checking the apartment. It takes two arguments: the area (a number) and the street name (a string):
+
+  ```javascript
+  const isGoodApartment = (area, street) => {
+    // Via a variable to make sure the function is not too long
+    const result = area >= 100 || (area >= 80 && street === 'Main Street');
+    return result;
+  };
+
+  isGoodApartment(91, 'Queens Street'); // false
+  isGoodApartment(78, 'Queens Street'); // false
+  isGoodApartment(70, 'Main Street');   // false
+
+  isGoodApartment(120, 'Queens Street'); // true
+  isGoodApartment(120, 'Main Street');   // true
+  isGoodApartment(80, 'Main Street');    // true
+  ```
+
+  The area of mathematics dealing with logical operators is called Boolean algebra. The "truth tables" are shown below and can be used to figure out the result of an operator:
+
+  ## AND `&&`
+
+  | A     | B     | A && B   |
+  |-------| ------|----------|
+  | TRUE  | TRUE  | **TRUE** |
+  | TRUE  | FALSE | FALSE    |
+  | FALSE | TRUE  | FALSE    |
+  | FALSE | FALSE | FALSE    |
+
+  Few examples:
+
+  ```javascript
+  // true && true;
+  3 > 2 && 'wow'.startsWith('w'); // true
+
+  // true && false;
+  'start' === 'start' && 8 < 3; // false
+  ```
+
+  ## OR `||`
+
+  | A     | B     | A &vert;&vert; B |
+  |-------|-------|----------|
+  | TRUE  | TRUE  | **TRUE** |
+  | TRUE  | FALSE | **TRUE** |
+  | FALSE | TRUE  | **TRUE** |
+  | FALSE | FALSE | FALSE    |
+
+  Few examples:
+
+  ```javascript
+  // true || true;
+  3 > 2 && 'wow'.startsWith('w'); // true
+
+  // false || false;
+  'start' === 'Start' && 3 < 3; // false
+  ```
+
+instructions: |
+
+  Write the `isLeapYear()` function to determine whether a year is a leap year or not. Leap year is a multiple of 400 (i.e. divisible without a remainder), or it is both a multiple of 4 and not a multiple of 100. As you can see, the definition already contains all the required logic, all we need to do is to put it into code:
+
+  ```javascript
+  isLeapYear(2018); // false
+  isLeapYear(2017); // false
+  isLeapYear(2016); // true
+  ```
+
+  You can test multiplicity as follows:
+
+  ```javascript
+  // % - returns the remainder after dividing the left operand by the right one
+  // Check if number is a multiple of 10
+  number % 10 === 0
+
+  // Check if number is not a multiple of 10
+  number % 10 !== 0
+  ```
+
+tips:
+  - |
+    [Boolean algebra](https://en.wikipedia.org/wiki/Boolean_algebra_(structure))
+  - |
+    [Conjunction](https://en.wikipedia.org/wiki/Logical_conjunction)
+  - |
+    [Disjunction](https://en.wikipedia.org/wiki/Logical_disjunction)
+
+definitions:
+  - name: "Logical operators"
+    description: "are AND (&&) and OR (||) operators allowing to create compound logical conditions."

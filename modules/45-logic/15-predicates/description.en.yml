@@ -1,0 +1,56 @@
+---
+
+name: Predicates
+theory: |
+
+  Recall the `isInfant()` function from the last lesson:
+
+  ```javascript
+  const isInfant = (age) => age < 1;
+  console.log(isInfant(3));
+  ```
+
+  <pre class='hexlet-basics-output'>false</pre>
+
+  This kind of function is called a predicate. Predicate functions answer a question and always (without exceptions!) return either `true` or `false`.
+
+  Predicates usually have catchy names in every language for comfortable analysis. In JavaScript, predicates generally begin with the prefix `is`, `has`, or `can`, though not limited to those words. Examples:
+
+    * `isInfant()` - "is he an infant?"
+    * `hasChildren()` - "does he have children?"
+    * `isEmpty()` - "is it empty?"
+    * `hasErrors()` - "are there any errors?"
+
+  **Only** a function returning a boolean can be considered a predicate.
+
+  ---
+
+  Let's write one more predicate function. It takes a string and checks if it's the word `'Castle'`:
+
+  ```javascript
+  const isCastle = (type) => type === 'Castle';
+
+  console.log(isCastle('Sea'));
+  ```
+
+  <pre class='hexlet-basics-output'>false</pre>
+
+
+instructions: |
+
+  Write the function `isMister()` that takes a string and checks if it's the word `'Mister'`.
+
+  Examples:
+
+  ```javascript
+  isMister('Mister'); // true
+  isMister('Miss');   // false
+  ```
+
+# tips:
+# - |
+#    [Именование в программировании](https://ru.hexlet.io/blog/posts/naming-in-programming)
+
+definitions:
+  - name: "Predicate"
+    description: "is an expression answering a yes or no question with a boolean."
