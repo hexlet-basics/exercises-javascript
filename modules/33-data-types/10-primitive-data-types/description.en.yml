@@ -16,7 +16,7 @@ theory: |
 
   Javascript may act in one of two possible ways when it sees a violation. In some situations, it'll terminate the program with an error. In others, the program will continue to work. In the second case, the invalid operation will return something like `NaN`, as in the example above.
 
-  How does JavaScript detect the data type? It's quite simple. Any value entered will be initialised and, depending on how it's initialised, it'll understand what type of data it is. Numbers, for instance, are just numbers without any extra characters, apart from the point (.) for decimals. Strings, on the other hand, are always written between special characters (there are three ways to write strings in JavaScript). For example, `'234'` is a string, even though there are numbers written between quotes.
+  How does JavaScript detect the data type? It's quite simple. Any value entered will be initialized and, depending on how it's initialized, it'll understand what type of data it is. Numbers, for instance, are just numbers without any extra characters, apart from the point (.) for rational numbers. Strings, on the other hand, are always written between special characters (there are three ways to write strings in JavaScript). For example, `'234'` is a string, even though there are numbers written between quotes.
 
   You can find out data type using `typeof` operator:
 
