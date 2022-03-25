@@ -3,36 +3,36 @@
 name: Data Types
 theory: |
 
-  What happens if we try to multiply a number by a string? JavaScript will return `NaN` (not a number), the same value. This happens whenever incompatible values are used together. In this case, a number and a string:
+  What happens if we try to multiply a number by a string? JavaScript will return `NaN` (not a number) value which we've seen before. This happens whenever incompatible values are used together. In this case, a number and a string:
 
   ```javascript
   3 * 'Dracarys'; // NaN
   ```
 
-  Within high-level programming languages, data is categorized by type. A string refers to the String type, while numbers refer to Number and BigInt (very large numbers). Why do we need types? To protect your program from hard-to-find errors. Types define two things:
+  In high-level programming languages, data is categorized by type. A string refers to the String type, while numbers refer to Number and BigInt (very large numbers). What are these data types for? It's to help protect your program from hard-to-find errors. Types determine two things:
 
-  * Possible values.  For example, numbers in JavaScript are divided into two types: Number and BigInt. The first ones are all numbers below a certain threshold (you can check it out), the second ones are all numbers above it. This division is made due to the technical features of the hardware.
-  * A set of operations that can be executed upon this type.  For example, the operation of multiplication works for the type "integers". But it makes no sense for the type "strings": multiplying the word "mother" by the word "notepad" makes no sense.
+  * Possible values.  For example, numbers in JavaScript are divided into two types: Number and BigInt. All numbers below a certain threshold (you can check it) belong to the Numbers data type, and all numbers above that threshold belong to the Biglnt type. They're divided this way due to the hardware's technical features.
+  * A set of operations that can be executed upon this type. For example, you can multiply integers, but not strings. Multiplying the word "mother" by the word "notepad" makes no sense.
 
-  JavaScript acts in two ways when it executes operations with violations. In some situations, it flags that the operation is invalid and terminates with an error. In others, the program continues to work. In the second case, the invalid operation returns something like `NaN`, as in the example above.
+  Javascript may act in one of two possible ways when it sees a violation. In some situations, it'll terminate the program with an error. In others, the program will continue to work. In the second case, the invalid operation will return something like `NaN`, as in the example above.
 
-  How does JavaScript detect the data type? Pretty simple. Any value is initialized and, depending on how it's initialized, it becomes clear what's type of data is it. For example, numbers are just numbers without any extra characters, apart from the point for rational numbers. Strings, on the other hand, are always written between special characters (there are three ways to write strings in JavaScript). For example, `'234'` is a string, even though there are numbers written between quotes.
+  How does JavaScript detect the data type? It's quite simple. Any value entered will be initialised and, depending on how it's initialised, it'll understand what type of data it is. Numbers, for instance, are just numbers without any extra characters, apart from the point (.) for decimals. Strings, on the other hand, are always written between special characters (there are three ways to write strings in JavaScript). For example, `'234'` is a string, even though there are numbers written between quotes.
 
-  You can find out the type of the data using `typeof` operator:
+  You can find out data type using `typeof` operator:
 
   ```javascript
   typeof 3; // 'number'
   typeof 'Game'; // 'string'
   ```
 
-  The Number, BigInt, and String data types are *primitive* types, because they consist of a single value of that type. But this is not always the case. JavaScript has a built-in composite type Object ( as well as arrays, dates and others based on it). It can be used to combine data of different types into a single value, e.g. we can create a user by adding his name and age.
+  The Number, BigInt, and String data types are *primitive* types, because they consist of a single value of that type. But this is not always the case. JavaScript has a built-in composite type Object ( as well as arrays, dates and others based on it). It can be used to combine data of different types into a single value, e.g. we can create a user by adding their name and age.
 
   ```javascript
   // Learnt this syntax in Hexlet
   const user = { name: 'Toto', age: 33 };
   ```
 
-  Note: there are two lines, but only one string in the code above.
+  Note that there are two lines but only one string in the code above.
 
 instructions: |
   Print the number `-0.304`.
@@ -43,9 +43,9 @@ tips:
 
 definitions:
   - name: "Data type"
-    description: "s a type of information in code. For example, integers, rational numbers, and strings are different data types. Data type determines what can be done with the elements of a particular data."
+    description: "is a set of data in code. For example, integers, decimals, and strings are different data types. The data type determines what can be done with the elements of a particular data."
   - name: "Primitive data types"
     description: "are simple types built into the programming language."
   - name: "A string"
     description: |
-      is a data type that describes a set of characters (text); for example, `'text'` or `"text"`..
+      is a data type that describes a set of characters (text). For example, `'text'` or `"text"`.
