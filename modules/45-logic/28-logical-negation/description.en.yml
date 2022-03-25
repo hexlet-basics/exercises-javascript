@@ -7,7 +7,7 @@ theory: |
 
   If there is a function that checks for even numbers, then the negation allows you to check for odd numbers:
 
-```javascript
+  ```javascript
   const isEven = (number) => number % 2 === 0;
 
   isEven(10);  // true
