@@ -43,7 +43,7 @@ tips:
 
 definitions:
   - name: "Data type"
-    description: "is a set of data in code. For example, integers, decimals, and strings are different data types. The data type determines what can be done with the elements of a particular data."
+    description: "is a set of data in code. For example, integers, rational numbers, and strings are different data types. The data type determines what can be done with the elements of a particular data."
   - name: "Primitive data types"
     description: "are simple types built into the programming language."
   - name: "A string"
