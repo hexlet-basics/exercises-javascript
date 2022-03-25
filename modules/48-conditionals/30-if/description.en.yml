@@ -21,13 +21,13 @@ theory: |
   getTypeOfSentence('Hodor?'); // question
   ```
 
-  `if` is a construct controlling the order in which the statements are executed. It gets a predicate expression in parentheses and then defines a code black in curly braces. This code block executes only if the predicate is true.
+  `if` is a construct controlling the order in which the statements are executed. It gets a predicate expression in parentheses and then defines a code black in curly brackets. This code block executes only if the predicate is true.
 
   If the predicate is false, we skip the code block in curly brackets, and the function keeps executing. Here the next line of code, `return 'general';`, causes the function to return a string and terminate.
 
   As you can see, `return` can be anywhere in a function. Including the interior of a conditional code block.
 
-  If the curly braces after `if` contains only one line of code, you can leave out the braces:
+  If the curly brackets after `if` contains only one line of code, you can leave out the braces:
 
   ```javascript
   const getTypeOfSentence = (sentence) => {
