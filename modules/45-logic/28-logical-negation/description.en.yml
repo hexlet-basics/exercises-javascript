@@ -3,10 +3,59 @@
 name: Negation
 theory: |
 
-  Along with conjunction (AND) and disjunction (OR) we often use the "negation" operator. It changes the logical value to the opposite one. It is denoted by the unary operator `!` in programming.
+  Along with the conjunction (AND) and disjunction (OR) we often use the "negation" operator. It changes the logical value to the opposite one. It is denoted by the unary operator `!` in programming.
 
-  If there is a function that checks for even number, then the negation allows you to check for odd number:
+  If there is a function that checks for even numbers, then the negation allows you to check for odd numbers:
 
-instructions:
+```javascript
+  const isEven = (number) => number % 2 === 0;
+
+  isEven(10);  // true
+  !isEven(10); // false
+  ```
+
+  So we just put `!` to the left of the function call and get the opposite result.
+
+  Negation is a powerful tool that allows you to concisely express the desired rules in your code without having to write new functions.
+
+  How about writing `!!isEven(10)` like this? Suddenly, the code would work. Double negation in logic is equivalent to no negation at all.
+
+  ```javascript
+  isEven(10);   // true
+  !isEven(10);  // false
+  !!isEven(10); // true
+  ```
+
+instructions: |
+
+  1. Write the `isPalindrome()` function to check if a word is a palindrome. A palindrome is a word that reads the same backward as forward.
+
+    ```javascript
+    isPalindrome('refer'); // true
+    isPalindrome('level'); // true
+    isPalindrome('hexlet'); // false
+
+    // You can pass words to the function in any case
+    // So first you have to bring the word to the lowercase: word.toLowerCase()
+    isPalindrome('Madam'); // true
+    ```
+
+    To find a palindrome, you need to reverse the string and compare it to the initial one. To do this, use the `reverse()` function.
+
+    ```javascript
+    reverse('hexlet'); // 'telhex'
+    ```
+
+  2. Write the `isNotPalindrome()` function to check whether a word is NOT a palindrome:
+
+    ```javascript
+    isNotPalindrome('level'); // false
+    isNotPalindrome('wow'); // false
+    isNotPalindrome('hexlet'); // true
+    ```
+
+  All you need is to negate `isPalindrome()` function call within `isNotPalindrome()` function body.
 
 tips:
+  - |
+    [De Morgan's laws](https://en.wikipedia.org/wiki/De_Morgan%27s_laws)
