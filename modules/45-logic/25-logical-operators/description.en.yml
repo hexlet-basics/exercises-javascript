@@ -92,10 +92,10 @@ theory: |
 
   ```javascript
   // true || true;
-  3 > 2 && 'wow'.startsWith('w'); // true
+  3 > 2 || 'wow'.startsWith('w'); // true
 
   // false || false;
-  'start' === 'Start' && 3 < 3; // false
+  'start' === 'Start' || 3 < 3; // false
   ```
 
 instructions: |
