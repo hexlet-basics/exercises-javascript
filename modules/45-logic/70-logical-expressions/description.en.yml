@@ -3,21 +3,21 @@
 name: Результат логических выражений
 theory: |
 
-  Посмотрите на код ниже и попробуйте угадать, что будет напечатано на экран?
+  Look at the code below and try to guess what it will print?
 
   ```javascript
   console.log(0 || 1);
   ```
 
-  Правильный ответ:
+  Correct answer::
 
   <pre class='hexlet-basics-output'>
     1
   </pre>
 
-  Оператор **ИЛИ** работает так, что его выполнение (слева направо) прерывается и возвращается результат первого аргумента, который можно преобразовать в `true`.
+  The **OR** operator works so that its execution (left to right) interrupts and returns the result of the first argument converting into `true` value.
 
-  Пример:
+  Example:
 
   ```javascript
   console.log(0 && 1);
@@ -27,14 +27,14 @@ theory: |
     0
   </pre>
 
-  Оператор **И** работает так, что его выполнение (слева направо) прерывается и возвращается результат первого аргумента, который можно преобразовать в `false`.
+  The **AND** operator works so that its execution (left to right) interrupts and returns the result of the first argument evaluating into `false` value.
 
-  В JavaScript есть два простых правила, по которым происходят преобразования:
+  There are two basic rules in JavaScript by which conversions take place:
 
-  * `0`, `''`, `undefined`, `NaN`, `null` приводятся к `false`. Эти значения называют *falsy*.
-  * Всё остальное приводится к `true`
+  * `0`, `''`, `undefined`, `NaN`, `null` are converted into `false`. Those values are considered *falsy*.
+  * Everything else is converted into `true`
 
-  Этим активно пользуются в разработке, например, для определения значения по умолчанию:
+  Developers extensively use this, for example, to define a default value:
 
   ```javascript
   const value = name || '';
@@ -43,57 +43,57 @@ theory: |
   'hexlet' || ''; // 'hexlet'
   undefined || ''; // ''
   ```
-  Если `name` примет одно из falsy-значений, константе `value` будет присвоена пустая строка. В этом случае в последующем коде мы сможем работать с `value` как со строкой.
+  If `name` is given one of the falsy values, an empty string will be assigned to the `value` constant. In that case, in the subsequent code, we will be able to treat `value` as a string.
 
-  Но здесь есть потенциальный баг. Если `name` содержит falsy-значение, а присваивание константе value значений типа `0`, `undefined`, `NaN` или `null` допустимо, то код выше начнет работать неверно:
+  But there is a potential bug. If `name` contains a falsy value and it's okay to assign values like `0`, `undefined`, `NaN` or `null` to the `value` constant, then the code above gets it wrong:
 
   ```javascript
-  // Упс
+  // Oops
   false || ''; // ''
   0 || ''; // ''
   undefined || ''; // ''
   ```
 
-  В одном из уроков мы рассмотрели операторы сравнения `===` и `!==` и упомянули, что в JavaScript так же есть операторы `==` и `!=`, но их не стоит использовать. Отличия как раз заключаются в преобразовании типов:
+  We covered the relational operators `===` and `!==` in one of our lessons and mentioned that JavaScript also has the operators `==` and `!=`, though you shouldn't use them. The very difference lies in the type conversion:
 
   ```javascript
   console.log('' === false); // => false
   console.log('' == false);  // => true
   ```
 
-  Пустая строка и `false` — это разные значения, поэтому оператор `===` говорит «ложь! они не равны!».
+  The empty string and `false` are different values, so the `===` operator says "false! they are not equal!".
 
-  Но оператор `==` преобразует типы, и с его точки зрения пустая строка и `false` равны.
+  But the `==` operator converts types, making the empty string and `false` equal from its point of view.
 
-  Это преобразование неявное, поэтому по возможности избегайте операторов `==` и `!=`.
+  This conversion is implicit, so avoid the `==` and `!=` operators whenever possible.
 
   ---
 
-  Вспомните операцию отрицания:
+  Recall the negation:
 
   ```javascript
   const answer = true;
   console.log(!answer); // => false
   ```
 
-  При двойном отрицании `!!` итоговое значение равно начальному:
+  When you use double negation `!!` the result value is equal to the initial value:
 
   ```javascript
   const answer = true;
   console.log(!!answer); // => true
   ```
 
-  Но здесь дополнительно происходят преобразования типа. Поэтому результатом двойного отрицания всегда будет значение типа _boolean_. Этим приемом иногда пользуются, чтобы поменять тип данных.
+  However, this is where type conversions also take place. So the result of the double negation will always be a value of type _boolean_. This trick sometimes helps to change the data type.
 
-  ## Ошибка выбора
+  ## Selection error
 
-  Представьте себе задачу, в которой нам нужно проверить, что значение равно либо одному, либо другому. Например переменная `value` должна содержать одно из двух значений: `first` или `second`. Начинающие разработчики иногда записывают это выражение так:
+  Imagine a task to check if a value is equal to either this or that. For instance, the variable `value` must contain one of two values: `first` or `second`. Novice developers sometimes write this expression this way:
 
   ```javascript
   value === ('first' || 'second')
   ```
 
-  В голове мы это себе примерно так и представляем, но языки работают по другому, поэтому такой код приведет к неверному результату. Как его правильно прочитать? Мы должны вспомнить приоритет выполнения операций. Первым делом вычисляется все что указано в скобках, то есть `'first' || 'second'`. Если выполнить этот код в репле, то вывод будет таким:
+  That's how we picture it in our minds, yet languages work differently, so this kind of code will lead to the wrong result. How to read it correctly? We have to remember operators' precedence. The first thing to evaluate is wrapped in parentheses, i.e. `'first' || 'second'`. If we execute this code, the output will be:
 
   ```bash
   node
@@ -103,33 +103,33 @@ theory: |
   >
   ```
 
-  Теперь мы можем заменить исходное выражение, на частично вычисленное:
+  Now we can substitute the original expression with the partly evaluated one:
 
   ```javascript
   value === 'first'
   ```
 
-  Совсем не то, что мы ожидали. А теперь вернемся к началу, и напишем проверку правильно:
+  Not what you might expect at all. Now back to the start, and write the test correctly:
 
   ```javascript
-  // Скобки ставить не обязательно,
-  // потому что приоритет === выше чем приоритет ||
+  // Parentheses are not necessary,
+  // because === precedence is higher than that of ||
   value === 'first' || value === 'second'
   ```
 
 instructions: |
 
-  Реализуйте функцию `getLetter()`, которая извлекает из переданной строки указанный символ (по порядковому номеру, а не индексу) и возвращает его наружу. Если такого символа нет, то функция возвращает пустую строку.
+  Write a function `getLetter()` to extract a certain character (by ordinal number, not an index) from the given string and return it. If there is no such character, the function returns an empty string.
 
-  Примеры вызова:
+  Examples:
 
   ```javascript
   const name = 'Hexlet';
 
-  // Обычное обращение возвращает undefined
+  // Such a call returns undefined
   name[10]; // undefined
 
-  // 11 символ соответствует 10 индексу
+  // The 11th char stands for the 10th index
   getLetter(name, 11); // ''
 
   getLetter(name, 1); // 'H'
