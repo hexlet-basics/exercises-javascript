@@ -1,0 +1,41 @@
+---
+
+name: Properties
+theory: |
+
+  The data we utilize in our programs can have important properties, for example, strings have a length. As you will see later, this property is very important to implement algorithms dealing with string conversions (e.g., string flips). So how to find out the length of a string?  In many languages the string length is calculated with a special function, and it goes like:
+
+  ```javascript
+  import { length } from 'hexlet-basics/string';
+
+  const name = 'Robb';
+  console.log(length(name)); // => 4
+  ```
+
+  In JavaScript the properties are built right into the language. They are written with a dot right after the variable (or constant):
+
+  ```javascript
+  const name = 'Robb';
+  const len = name.length;
+  console.log(len); // => 4
+  ```
+
+  Properties relate to the data they are taken from. For primitive types, e. i. [strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), all properties are described in the documentation. However, numbers have no properties at all.
+
+  JavaScript allows to call properties which do not exist (e.g. for typos). In this case their value is `undefined`:
+
+  ```javascript
+  const name = 'Robb';
+  console.log(name.whatIsThat); // => undefined
+  ```
+
+  _Self-сheck. What will `console.log(name[name.length])` print for the `name` above? Why is the result like that?_
+
+
+instructions: |
+
+  Print the length of the string `text`.
+
+tips:
+  - |
+    Read the [String.length] documentation. (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length). Note that the length of a string is equal to the number of characters in it. The length of an empty string `''` is 0.

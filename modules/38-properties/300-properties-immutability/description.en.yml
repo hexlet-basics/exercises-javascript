@@ -1,0 +1,36 @@
+---
+
+name: Immutability
+theory: |
+
+  What will the last call print?
+
+  ```javascript
+  const name = 'Tirion';
+  console.log(name.toUpperCase()); // => TIRION
+  console.log(name); // => ?
+  ```
+
+  The answer to this question depends on how you understood the lesson about primitive data types immutability. Calling the `.toUpperCase()` method returns a new value with all letters converted to uppercase, but it does not (and cannot) change the original string. So inside the constant (or variable, it doesn't matter here) will be the original `'Tirion'` value. This logic is true for methods of all primitive types. Moreover, the attempt to change the value of a property of this data will lead to nothing:
+
+  ```javascript
+  const name = 'Tirion';
+  console.log(name.length); // => 6
+  name.length = 100;
+  console.log(name.length); // => 6
+  ```
+
+  You can _replace_ the value with a new one instead of changing it. This requires variables:
+
+  ```javascript
+  let name = 'Tirion';
+  name = name.toUpperCase();
+  console.log(name); // => TIRION
+  ```
+
+instructions: |
+
+  User input data often contains extra spaces at the end or beginning of a string. They are usually cut out with `.trim()`, for example, `'   hello\n '` becomes `'hello'`.
+  Update the `firstName` variable by writing the same value in it, but using the `.trim()` method. Print the result.
+
+tips: []
