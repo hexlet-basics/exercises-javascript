@@ -1,6 +1,6 @@
 ---
 
-name: Результат логических выражений
+name: Logical expressions output
 theory: |
 
   Look at the code below and try to guess what it will print?
