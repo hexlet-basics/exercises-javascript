@@ -3,7 +3,7 @@
 name: Syntactic sugar
 theory: |
 
-  Expressions like `index = index + 1` occur quite often in JavaScript, so the creators of the language added an undercut: `index += 1`. This type of shortcut is usually referred to as syntactic sugar because it simplifies and "sweetens" the process of coding :)
+  Expressions like `index = index + 1` occur quite often in JavaScript, so the creators of the language added a shortcut: `index += 1`. Such a shortcut is usually referred to as syntactic sugar because it simplifies and "sweetens" the process of coding :)
 
   There are shortcuts for all arithmetic operations and for string concatenation:
 
@@ -15,7 +15,7 @@ theory: |
 
 instructions: |
 
-  Write a `filterString()` function that takes a string and a character as input and returns a new string without an occurrence of the given character.
+  Write the `filterString()` function taking a string and a character as input and returning a new string without a given character entry.
 
   ```javascript
   const str = 'If I look back I am lost';

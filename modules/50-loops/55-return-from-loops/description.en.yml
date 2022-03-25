@@ -1,0 +1,59 @@
+---
+
+name: Returning from loops
+theory: |
+
+  Dealing with loops usually comes down to two cases:
+
+  1. Aggregation. Accumulation of data during iterations and handling it after the loop. String reversal is just one of these cases.
+  2. Executing a loop until you get the required result and break from it. For example, the task of finding prime numbers. Recall that a prime number is a number divided without a remainder by itself and one.
+
+  Consider a simple algorithm to check the prime numbers. We will divide a given number `x` by all numbers in the range from 2 to `x - 1` and check the remainder. If in this range we don't find a divisor that divides the number `x` without a remainder, then we are looking at a prime number.
+
+  If you ponder about it, you will find it sufficient to check numbers not up to `x - 1`, but up to half a given number. For example, 11 is not divisible by 2, 3, 4, 5. But it's also guaranteed that it can't divide by numbers greater than its half. So, you can do a little optimization and check the division only up to `x / 2`.
+
+  ```javascript
+  const isPrime = (number) => {
+    if (number < 2) {
+      return false;
+    }
+
+    let divider = 2;
+
+    while (divider <= number / 2) {
+      if (number % divider === 0) {
+        return false;
+      }
+
+      divider += 1;
+    }
+
+    return true;
+  }
+
+  isPrime(1); // false
+  isPrime(2); // true
+  isPrime(3); // true
+  isPrime(4); // false
+  ```
+
+  The algorithm is checking if during the successive division by numbers up to `x / 2` there is at least one result without a remainder, then a given argument is not a prime number, and therefore further computations are pointless. At this point, it returns `false`.
+
+  And only if the entire loop is completed, we can say the number is prime, since no number that divides it without a remainder was found.
+
+instructions: |
+
+  Write the `hasChar()` function checking whether a string contains a given character (case-sensitive). The function takes two parameters:
+
+  * String
+  * Character to look for
+
+  ```javascript
+  hasChar('Hexlet', 'H'); // true
+  hasChar('Hexlet', 'h'); // false
+  hasChar('Awesomeness', 'm'); // true
+  hasChar('Awesomeness', 'd'); // false
+  ```
+
+tips:
+  - "[List of prime numbers](https://en.wikipedia.org/wiki/List_of_prime_numbers)"

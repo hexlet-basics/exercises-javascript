@@ -1,0 +1,47 @@
+---
+
+name: For loop
+theory: |
+
+  `while` loop works perfectly for situations where the number of iterations is unknown in advance, e.g., finding a prime number. When we know the number of iterations it's better to use the `for` loop.
+
+  Let's have a look at a string reversal implementation using the `for` loop:
+
+  ```javascript
+  const reverseString = (str) => {
+    let result = '';
+    for (let i = 0; i < str.length; i += 1) {
+      result = `${str[i]}${result}`;
+    }
+
+    return result;
+  };
+  ```
+
+  We could read it as follows: *a loop with index `i` repeats until `i < str.length` and after each step increases `i` by 1*.
+
+  In the `for` loop definition, we have three expressions in parentheses, separated by semicolons:
+
+  1. The initial counter value. This code runs exactly once before the first iteration.
+  2. Predicate, a loop iteration condition. It's executed on each iteration. Exactly as in `while`.
+  3. Description of the counter modification. This code is executed at the end of each iteration.
+
+  For the rest, it works exactly the same as the `while` loop.
+
+instructions: |
+
+  Samwell discovered that his messages were intercepted at Castle Gemini and being read there. This made his attacks no longer sudden. After some thought, he developed a program to encrypt the messages according to the following algorithm. It would take the text and rearrange it every two consecutive characters.
+
+  ```javascript
+  encrypt('move'); // 'omev'
+  encrypt('attack'); // 'taatkc'
+  // If the number of characters is odd
+  // the last character remains unchanged
+  encrypt('go!'); // 'og!'
+  ```
+
+  Write the `encrypt()` function taking the original message and returning an encrypted one.
+
+  Think about it. Can this function decrypt an encrypted message?
+
+tips: []
