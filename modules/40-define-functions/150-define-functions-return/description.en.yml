@@ -1,0 +1,95 @@
+---
+
+name: Value return
+theory: |
+
+  Functions in JavaScript become really useful when they begin to return data instead of printing it. At that point, we can use them for further calculations. Check out this example:
+
+  ```javascript
+  const message = greetHexlet();
+  console.log(message);
+  ```
+  We assign the result of a function to the variable `message`. In order to make this code work, the function must use the `return` instruction inside of itself:
+
+  ```javascript
+  const greetHexlet = () => {
+    const message = 'Hello, Hexlet!';
+    return message;
+  };
+  ```
+
+  `return` is a special instruction that takes the expression written on the right and sends it outside to the code that called the function. The function execution stops here; any code after `return` is not executed:
+
+  ```javascript
+  const greetHexlet = () => {
+    const message = 'Hello, Hexlet!';
+    return message;
+    console.log('I will never execute');
+  };
+  ```
+
+  You don't have to use a variable to return. Since `return` works with expressions, almost anything can appear to the right of it. Here we should be guided by the principles of code readability:
+
+  ```javascript
+  const greetHexlet = () => {
+    return 'Hello, Hexlet!';
+  };
+  ```
+
+  An example with calculation:
+
+  ```javascript
+  const doubleFive = () => {
+    return 5 + 5;
+  };
+  ```
+
+  But even if there is no `return` instruction inside the function, the function still has a return. By default, any function returns `undefined`. For example, the `console.log()` function prints text, but returns nothing. In that case, the return is `undefined`.
+
+  ```javascript
+  const result = console.log('You can put any text here');
+  console.log(result); // => undefined
+
+  // Or easier than ever, without creating an intermediate variable
+  console.log(console.log('Wow')); // => undefined
+  ```
+
+  Why do we need this logic? A function call is an expression, and an expression should always return a result, otherwise there would always be errors in the code when there is no data to return.
+
+  Self-check. What will this code print?
+
+  ```javascript
+  // Definition
+  const run = () => {
+    return 5;
+    return 10;
+  }
+
+  // Usage
+  run(); // => ?
+  ```
+
+instructions: |
+
+  Implement a function that returns a random integer from 0 to 10.
+
+  ```javascript
+  getRandomNumber(); // 1
+  getRandomNumber(); // 9
+  ```
+
+  To perform this instructions, you will need:
+
+  [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+
+  ```javascript
+  Math.random(); // 0.2320000789855705
+  ```
+
+  [Math.round()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round)
+
+  ```javascript
+  Math.round(2.320000789855705); // 2
+  ```
+
+# tips: []

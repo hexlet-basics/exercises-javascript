@@ -1,0 +1,81 @@
+---
+
+name: Параметры функций
+theory: |
+
+  To add parameters to your own functions, simply put them in parentheses when defining the function. Below is an example of the function definition, which returns the last character in the string:
+
+  ```javascript
+  // str - parameter
+  const getLastChar = (str) => {
+    // calculate the index of the last character
+    // fetch and return it
+    return str[str.length - 1];
+  };
+
+  getLastChar('Hexlet'); // "t"
+  getLastChar('Goo'); // "o"
+  ```
+
+  The `getLastChar()` function has only one parameter - the `str` variable. When the function is called, a specific value is substituted there. For each call it has its own value. But this code won't work:
+
+  ```javascript
+  const getLastChar = ('some string') => {
+  ```
+
+  A specific value cannot be specified as a parameter, the point of a parameter is that the value becomes known at the time of a specific call, so there must be variable names in the definition.
+
+  Two, three or more parameters can be specified. Below is an example of a function that finds the average between two numbers:
+
+  ```javascript
+  const average = (x, y) => {
+    return (x + y) / 2;
+  };
+
+  average(1, 5); // 3
+  average(1, 2); // 1.5
+  ```
+
+  The order in which the parameters are defined and the order in which they are passed to the function must match, so pay close attention to what is written in the documentation. In rare cases like above, the order is not important, but for most functions, it is crucial:
+
+  ```javascript
+  // Rounding. The first parameter is a number, the second is the rounding precision.
+  round(10.32, 1); // 10.3
+  // This call makes no sense at all, even though it works.
+  round(1, 10.32); // 1
+  ```
+
+  If you pass more parameters than defined, JavaScript will ignore the extra. If it is the other way around, the value of unsent parameters will become `undefined`.
+
+  ```javascript
+  average(10, 10, 10); // 10
+  // (10 + undefined) / 2
+  average(10); // NaN
+  ```
+
+  There is no practical sense in this code, but you can write it by mistake. So it's a good idea to be aware of this behavior, so you can see the error and fix it.
+
+  Parameters in JavaScript are often called arguments. In programming, you'll come across these words often as synonyms. But there is still a slight difference between them. Technically, parameters are set when you define a function in parentheses, and arguments are what's passed to the function when it's called.
+
+instructions: |
+
+  Implement a `truncate()`function that cuts off the text you pass and adds an ellipsis at the end. This kind of logic is often used on sites to display long text in shortened form.
+
+  ```javascript
+  // The first parameter is the string, the second is the number of characters to keep
+  truncate('hexlet', 2); // "he..."
+
+  const result = truncate('Leather bags invented the three laws of robotics, but we'll outsmart them', 48);
+  // "Leather bags invented the three laws of robotics..."
+  ```
+
+  To get a substring (or character) from a string, use the [slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice) method:
+
+    ```javascript
+    'welcome'.slice(2, 5); // "lco"
+    ```
+
+# tips:
+#   - |
+#     Чтобы указать в аргументах метода printSeq() целое число, используйте тип данных `int`.
+

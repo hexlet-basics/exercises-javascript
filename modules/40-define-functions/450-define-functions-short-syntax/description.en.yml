@@ -1,0 +1,63 @@
+---
+
+name: Simplified function syntax
+theory: |
+
+  Compared to some (primarily functional) languages, the function definition in JavaScript looks rather cumbersome:
+
+  ```javascript
+  const square = (x) => {
+    return x ** 2;
+  };
+  ```
+
+  It uses a lot of extra characters and the word `return`. Since version es6, an alternative, shorter syntax has appeared in the language which, in some situations, makes it much easier to understand and shorten the code.
+
+  ```javascript
+  // It takes a little time to get used to this form, but after a while it'll become a must for you.
+  const double = (x) => x ** 2;
+  ```
+
+  There are two differences from the full definition: the curly braces and the `return` instruction are missing. The shortened function version makes the return automatically. This implies that there is exactly one expression inside such a function that is calculated and its result is immediately returned.
+
+  Note that the differences are purely syntactic; there are no differences in terms of usage. An example with two arguments:
+
+  The full version
+
+  ```javascript
+  const sum = (a, b) => {
+    return a + b;
+  };
+  ```
+
+  The shortened version
+
+  ```javascript
+  const sum = (a, b) => a + b;
+  ```
+
+  Notice the absence of curly braces. Developers who are not used to this syntax sometimes write code like this `const sum = (a, b) => { a + b };` and then have a hard time understanding why it doesn't work. The answer is very simple: if there are curly braces, then this is not a shortened form, which means if you want the function to return a value, you will have to use `return`.
+
+instructions: |
+
+  Implement `capitalize()` function, which takes a nonempty string and convertes the first letter of the first word to uppercase:
+
+    ```javascript
+    const name = 'arya';
+    console.log(capitalize(name)); // => "Arya"
+    ```
+
+  To get a substring (or character) from a string, use the [slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice) method:
+
+    ```javascript
+    'welcome'.slice(2, 5); // "lco"
+    ```
+
+  To convert the string to uppercase, use the [toUpperCase()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase) method:
+
+  ```javascript
+  'welcome'.toUpperCase(); // "WELCOME"
+  ```
+
+tips: []
+
