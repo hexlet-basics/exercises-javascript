@@ -1,0 +1,81 @@
+---
+
+name: Creating (defining) functions
+theory: |
+
+  Defining your own functions makes it much easier to write and maintain programs. Functions allow you to combine complex (composite) operations in one. For example, sending an email to a website is a complex process that involves interaction with external systems (the Internet). Due to the fact that functions can be defined, all the complexity can be hidden behind one simple function:
+
+  ```javascript
+  // A hypothetical example
+  // The location where the function is taken from
+  import { send } from 'mailer';
+
+  const email = 'support@hexlet.io';
+  const title = 'Help';
+  const body = 'I've written a success story, how can I get a discount?';
+
+  // One little call and a lot of logic inside.
+  send(email, title, body);
+  ```
+
+  A call like this does quite a bit of logic inside.  It connects to the mail server, generates a valid request based on the message header and body, and then sends it all out making sure to close the connection.
+
+  Let's create our first function. Its job is to print out a greeting:
+
+  <pre class='hexlet-basics-output'>Hello, Hexlet!</pre>
+
+  ```javascript
+  // Function definition
+  // The definition doesn't call or execute a function
+  // We just say that this function exists now
+  const showGreeting = () => {
+    // Inside the function body is indented with 2 spaces for easy reading
+    const text = 'Hello, Hexlet!';
+    console.log(text);
+  }
+
+  // Calling a function
+  showGreeting(); // => "Hello, Hexlet!"
+  ```
+
+  Unlike normal data, functions perform actions, and as a result their names almost always have to be verbs: "build something", "draw something", "open something".
+
+  Anything described inside the curly brackets `{}` is called a function body. Any code can be described inside the body. Consider it a small independent program, a set of arbitrary instructions. The body is executed exactly when the function is started. And each function call launches the body independently of other calls. By the way, the body can be empty:
+
+  ```javascript
+  // Minimal function definition
+  const noop = () => {
+   The code could be here, but it is not.
+  // Note the indents.
+  // For readability, any code inside the body is shifted to the right by 4 spaces
+  }
+
+  noop();
+  ```
+
+  The function definition looks like creating a constant. Indeed, in reality, a function definition consists of two parts: the definition and the assignment to the constant:
+
+  1. The definition: `() => { }`
+  2. The assignment: `const nameOfFunction = ...`
+
+  It is technically possible to create a function that is just defined, but it cannot be used because there is no name:
+
+  ```javascript
+  () => {
+    // A code that works, but is useless
+  };
+  ```
+
+  The notion of "creating a function" has many synonyms: "implement", "define". All of them are encountered in everyday practice at work.
+
+instructions: |
+
+  Implement the `printMotto()` function, which prints the phrase *Winter is coming*.
+
+  ```javascript
+  printMotto(); // => "Winter is coming"
+  ```
+
+  In tasks you need to implement function, you do not need to call this function. Automated tests will call this function to check if it works. The example call above is shown just to give you an idea of how your function will be used.
+
+tips: []
