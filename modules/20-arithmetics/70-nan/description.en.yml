@@ -3,23 +3,23 @@
 name: NaN
 
 theory: |
-  Some operations with infinity, for example, dividing infinity by infinity, return a weird result. In Math, this operation has no numerical equivalent. In JavaScript, NaN will return.
+  Some operations with infinity, for example, dividing infinity by infinity, return a weird result. In math, this operation has no numerical equivalent. In JavaScript, you'll get NaN.
 
   ```javascript
   Infinity / Infinity; // NaN
   ```
 
-  `NaN` is a special value "not a number" that usually indicates that a meaningless operation has been executed. Any operation with `NaN` returns `NaN`.
+  `NaN` is a special value "not a number" that usually indicates execution of a meaningless operation. Any operation with `NaN` returns `NaN`.
 
   ```javascript
   NaN + 1; // NaN
   ```
 
-  `NaN` is a peculiar value. Although it means "not a number", in terms of types it is a number. Paradox. `NaN` is never a desired value, once it appears only as a result of errors. If you have encountered it, trace the moment where the operation, which is not valid for numbers, was performed, and correct this piece of code.
+  `NaN` is a peculiar value. Although it means "not a number", it belongs to a number data type. Paradox. `NaN` is never a desired value, once it appears only as a result of errors. If you have encountered it, trace the moment where the operation, which is not valid for numbers, was performed, and correct this piece of code.
 
 instructions: |
 
-  Execute the operation that returnts NaN and print it using `console.log()`.
+  Execute the operation that returns `NaN` and print it using `console.log()`.
 
 tips:
   - |

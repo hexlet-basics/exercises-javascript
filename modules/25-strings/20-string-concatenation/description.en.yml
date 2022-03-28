@@ -3,7 +3,7 @@
 name: Concatenation
 theory: |
 
-  In web development, programs use strings constantly. Everything we see on websites, in any case, is represented as a text. This text is most often dynamic, meaning that it is received from different parts that are connected together. The operation of joining one string to another in programming is called **concatenation**.
+  In web development, programs use strings constantly. Everything we see on websites, in any case, is represented as text. This text is most often dynamic, it's made up of different connected pieces. The operation of joining one string to another in programming is called **concatenation**.
 
   ```javascript
   // The operator is the same as for adding
@@ -13,7 +13,7 @@ theory: |
   // => 'Dragonstone'
   ```
 
-  String concatenation always implements in the same order in which the operands are written. The left operand becomes the left part of the string, and the right one becomes the right part.
+  Strings always concatenate in the same order in which the operands are written. The left operand becomes the left part of the string, and the right one becomes the right part.
 
   Here are a few more examples:
 
@@ -27,11 +27,11 @@ theory: |
   console.log("King's" + 'Landing'); // => King'sLanding
   ```
 
-  As you can see, strings can be concatenated even if they are written in different quotes.
+  As you can see, strings can concatenate even if they are written in different quotes.
 
-  In the last example, the name of the city is miswritten: *King's Landing* should be written with a space. But there were no spaces at the beginning of our strings, while the spaces left and right of the `+` do not matter because they are not part of the strings.
+  In the last example, the name of the city is miswritten: *King's Landing* should be written with a space. But there were no spaces at the beginning of our strings, while the spaces left and right of the `+` does not matter because they are not part of the strings.
 
-  There are two ways out of this case:
+  There are two ways out:
 
   ```javascript
   // Both ways are equivalent.
@@ -42,7 +42,7 @@ theory: |
   console.log("King's" + ' Landing'); //  => King's Landing
   ```
 
-  A space is also a symbol. The more spaces you put, the wider the indentation is:
+  Space is also a symbol. The more spaces you put, the wider the indentation is:
 
   ```javascript
   console.log("King's " + ' Landing');   // => King's  Landing
@@ -67,4 +67,4 @@ tips:
 definitions:
   - name: Concatenation
     description: |
-      is the operation of joining two lines. For example, `console.log("King's " + ' Landing');`.
+      is the operation of joining two strings. For example, `console.log("King's " + ' Landing');`.

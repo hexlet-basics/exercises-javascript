@@ -2,17 +2,17 @@
 
 name: Commutative operations
 theory: |
-  Do you remember the basic arithmetic rule «changing the order of the numbers we are adding doesn't change the sum»? It is called the **commutative law**.
+  Do you remember the basic arithmetic rule "changing the order of the numbers we are adding doesn't change the sum"? It is called the **commutative law**.
 
   A binary operation is commutative since swapping operands gets you the same result. Obviously, addition is a commutative operation: _3 + 2 = 2 + 3_.
 
-  But is subtraction the commutative operation? Of course not: _2 - 3 ≠ 3 - 2_. In programming, this law works just like in arithmetic.
+  But is subtraction a commutative operation? Of course not: _2 - 3 ≠ 3 - 2_. In programming, this law works just like in arithmetic.
 
-  Moreover, most of the operations we face in real life are not commutative. Here is the conclusion: always pay attention to the order of data you are working with.
+  Moreover, most of the operations we face in real life are not commutative. Here is the conclusion: always pay attention to the order of things you work with.
 
 instructions: |
 
-  Write a program that adds and prints the values of «3 to the power of 5» and «-8 divided by -4».
+  Write a program that adds and prints the values of "3 to the power of 5" and "-8 divided by -4".
 
 tips: []
 

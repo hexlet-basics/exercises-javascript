@@ -13,27 +13,27 @@ theory: |
 
   Which of these five variants are strings?
 
-  The first two are clear, they are obviously strings, we have already worked with similar constructions and mentioned that strings are sets of characters.
+  The first two are clearly the strings, we have already worked with similar constructions and mentioned that strings are sets of characters.
 
-  Any single character between parentheses is a string. The empty string `''` is also a string. So everything inside the quotation marks can be considered a string, even if it is a space, one symbol or no symbol at all.
+  Any single character between parentheses is a string. The empty string `''` is also a string. So everything inside the quotation marks can be considered a string, even if it is a space, one character, or no character at all.
 
-  In previous lessons we have written strings in single quotes, you can also use double quotes:
+  In previous lessons, we enclosed strings in single quotes, you can also use double quotes:
 
   ```javascript
-  // Coding standard, airbnb, recommends
+  // Coding airbnb standard recommends
   // to use single quotes, when possible
 
   console.log('Dracarys!');
   ```
 
-  Imagine you want to print a string _Dragon's mother_. The apostrophe before the letter **s** and a single quote are the same symbols. Let’s print it:
+  Imagine you want to print a string _Dragon's mother_. The apostrophe before the letter **s** and a single quote are the same symbols. Let's print it:
 
   ```javascript
   console.log('Dragon's mother');
   // Uncaught SyntaxError: missing ) after argument list
   ```
 
-  Such a program won't work. For JavaScript the string began with a single quote, and ended after the letter **n**. Then there were some characters `s mother` without quotes, which are not a string. And then there was one quote, which opened the sting and never closed: `');`. This code is syntactically incorrect (you can notice it by the way the code is highlighted).
+  Such a program won't work. For JavaScript, the string begins with a single quote and ends after the letter **n**. Then comes some characters `s mother` without quotes, which are not a string. And then there is one quote opening a sting which is never closed: `');`. This code is syntactically incorrect (you can notice it by the way the code is highlighted).
 
   A good idea here is to use double quotes. This version of the program will work correctly:
 
@@ -41,9 +41,9 @@ theory: |
   console.log("Dragon's mother");
   ```
 
-  Now the interpreter knows that the string began with a double quote - so it should end with a double quote too. And the single quote inside became the part of the string.
+  Now the interpreter knows that the string begins with a double quote - so it should end with a double quote too. And the single quote inside became the part of the string.
 
-  You may use it vice versa. If you want to use double quote inside a string, you should put the string in single quotes. And the number of quotes inside the string does not matter.
+  You may use it vice versa. If you want to use double quotes inside a string, you should enclose the string in single quotes. And the number of quotes in a string doesn't matter.
 
   What if we want to create a line like this:
 
@@ -51,36 +51,36 @@ theory: |
   Dragon's mother said "No"
   ```
 
-  There are single and double quotes here. What can we do in this case? You somehow need to tell the interpreter to consider each quote as part of the string, not the beginning or the end of the string.
+  There are single and double quotes here. What can we do in this case? You somehow need to tell the interpreter to consider each quote as a part of the string, and not as its beginning or an end.
 
-  To do this, you have to use **an escape character**. In our case, the character that is the end and beginning of a string is either a single or a doublequote, depending on the part of the code. Use a backslash `\` before the character you want to escape.
+  To do this, you have to use **an escape character**. In our case, the character that ends and opens a string is either a single or a double quote, depending on the part of the code. Use a backslash `\` before the character you want to escape.
 
   ```javascript
-  // Escape " only, because in this code 
+  // Only " is escaped, because in this code 
   // double quotes have a special meaning
 
   console.log("Dragon's mother said \"No\"");
   // => Dragon's mother said "No"
   ```
 
-  Look closely: we had to use `\` before double quotes to escape them, not a single quote (apostrophe), because the string is written in double quotes. If a string was written in single quotes, the escape character would be used before the apostrophe, not before double quotes.
+  Look closely: we had to use `\` for double quotes to escape them, and not for a single quote (apostrophe) because the string is written in double quotes. If a string was written in single quotes, the escape character would be used before the apostrophe, not before double quotes.
 
   ```javascript
-  // \ is not printed, if it is followed by the usual,
-  // not special symbol
+  // \ is not printed, if it is followed by the usual character,
+  // not a special one
 
   console.log("Death is \so terribly final");
   // => Death is so terribly final
   ```
 
-  But what if you want to print the backslash? Just like any other special symbol, it should be escaped by itself.
+  But what if you want to print the backslash? Just like any other special symbol, it escapes by backslash too.
 
   ```javascript
   console.log("\\");
   // => \
   ```
 
-  The self-test, what will be printed? 
+  Self-test: what will be printed? 
 
   ```javascript
   console.log("\\ \\ \\\\ \\\ \'\"");
