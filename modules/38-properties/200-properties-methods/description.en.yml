@@ -10,7 +10,7 @@ theory: |
   console.log(upperName); // => 'ROBB'
   ```
 
-  Inline methods always operate on the data they are associated with. The `.toUpperCase()` method returns the same string, but converts all characters to uppercase. Data usually has many more methods than properties, for example, strings have [several dozens](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)of them. In the documentation they are described a bit weirdly at first sight: _String.prototype.toLowerCase()_. This description reveals some internal implementation details which are not important right now, besides we haven't studied all the necessary basis to talk about prototypes.
+  Inline methods always operate on the data they are associated with. The `.toUpperCase()` method returns the same string, but converts all characters to uppercase. Data usually has many more methods than properties, for example, strings have [several dozens](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) of them. In the documentation they are described a bit weirdly at first sight: _String.prototype.toLowerCase()_. This description reveals some internal implementation details which are not important right now, besides we haven't studied all the necessary basis to talk about prototypes.
 
   [Numbers] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) have methods as well:
 
