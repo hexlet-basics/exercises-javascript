@@ -4,11 +4,7 @@ name: Linter
 theory: |
   Since we've learned to write simple programs, let's talk about the very process of writing.
 
-<<<<<<< HEAD
   The program code should be organized in a certain way so that it is sufficiently clear and easy to maintain. Special sets of rules - standards - describe different aspects of code writing. The most common standard in JavaScript is [AirBnb](https://github.com/airbnb/javascript).
-=======
-  Program code should be organized in a certain way so that it's clear and easy to support. Special sets of rules - standards - describe different aspects of code writing. The most common standard in JavaScript is [AirBnb](https://github.com/airbnb/javascript).
->>>>>>> 64309b7 (fixes)
 
   In any programming language there are utilities, the so-called **linters**. They ensure the code meets the standards. For example, [ESLint](https://eslint.org/) analyzes JavaScript code.
 
