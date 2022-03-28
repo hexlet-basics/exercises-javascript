@@ -25,7 +25,7 @@ instructions: |
 
 tips: 
   - |
-    [JavaScript Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+    [JavaScript operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
 
 definitions:
   - name: "Arithmetic operations"

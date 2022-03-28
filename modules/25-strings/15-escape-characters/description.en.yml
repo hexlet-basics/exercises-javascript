@@ -22,7 +22,7 @@ theory: |
   - Are you hungry?- Aaaarrrgh!
   ```
 
-  Not the exact phrase we wanted.  The strings are written one after the other, not one under the other. We somehow need to tell the interpreter «to click the enter» - to put a line break after the question mark. This can be done using the line feed symbol: '\n'.
+  Not the exact phrase we wanted.  The strings are written one after the other, not one under the other. We somehow need to tell the interpreter "to click the enter" - to put a line break after the question mark. This can be done using the newline symbol: '\n'.
 
   ```javascript
   console.log('- Are you hungry?\n- Aaaarrrgh!');
@@ -35,10 +35,10 @@ theory: |
   - Aaaarrrgh!
   ```
 
-  `\n` is a special symbol *LF* (Line Feed). You may have thought it is a misprint, since there are two symbols `\` and `n`, but it’s not. For a computer, this is one invisible symbol of line feed. The proof:
+  `\n` is a special symbol *LF* (Line Feed). You may have thought it is a misprint, since there are two symbols `\` and `n`, but it's not. For a computer, this is one invisible symbol of line feed. The proof:
 
   ```javascript
-  // We haven’t studied it yet, but you should know the truth
+  // We haven't studied it yet, but you should know the truth
   // Below is the code that returns the length of the string
 
   'a'.length;    // 1
@@ -46,9 +46,9 @@ theory: |
   '\n\n'.length; // 2 !!!
   ```
 
-  Why is it done this way? `\n` is just a way to write the symbol of the line break, that’s why the line feed is one character, but invisible. That’s why this problem has arisen. It was necessary to somehow present it on the keyboard. And since the number of characters on the keyboard is limited and given to the most important, all special characters are implemented in the form of such symbols.
+  Why is it done this way? `\n` is just a way to write the symbol of the line break, that's why the line feed is one character, but invisible. That's why this problem has arisen. It was necessary to somehow represent using a keyboard. And since the number of keyboard characters is limited and reserved for the most important, all special characters are implemented by such escape sequences.
 
-  The Line Feed symbol is not something specific to programming. Anyone who has ever typed on a computer has used the line feed by clicking Enter. Many editors have an option to enable the display of invisible characters - you can use it to understand where they are (although it is only a schematic display, these characters have no graphical representation, they are invisible):
+  The Line Feed symbol is not something specific to programming. Anyone who has ever typed on a computer has used the line feed by clicking Enter. Many editors can display those invisible characters, you can use this feature to understand where they are (although it is only a schematic display, these characters have no graphical representation, they are invisible):
 
   <pre class='hexlet-basics-output'>
   - Hi!¶
@@ -58,7 +58,7 @@ theory: |
 
   The device that outputs the corresponding text considers this character. For example, when the printer runs into the LF, it pulls the paper up one line, and the text editor pulls all subsequent text down one line as well.
 
-  `\n` is an example of an ** escape sequence**.  Although there are dozens of such characters, there are a few that are commonly used in programming. Besides line feed, they are tabs (the break you get when pressing the Tab) and carriage return (in Windows only). We programmers often need to use the line break `\n` to format text properly.
+  `\n` is an example of an ** escape sequence**.  Although there are dozens of such characters, only a few are common in programming. Besides line feed, they are tabs (the break you get when pressing the Tab) and carriage return (in Windows only). Programmers often need to use the line break `\n` to format the text properly.
 
   ```javascript
   console.log('Gregor Clegane\nDunsen\nPolliver\nChiswyck');
@@ -77,7 +77,7 @@ theory: |
 
   1. It does not matter what comes before or after `\n`: a character or an empty string. Line feed will be detected and executed either way.
 
-  2. Remember that a string can contain a single character or zero characters at all. Also, a string can only contain `\n`. Analyze the following example:
+  2. Remember that a string can contain a single character or none at all. Also, a string can only contain `\n`. Analyze the following example:
 
       ```javascript
       console.log('\n');
@@ -91,7 +91,7 @@ theory: |
       Dunsen
       </pre>
 
-      Why is there two empty lines before the *Dunsen* line instead of one? The point is that `console.log()` automatically adds a line feed character to the end when it outputs a value. So, we explicitly typed one line feed, passing this escape character as an argument in the function, and the second line feed is added automatically by the function itself.
+      Why are there two empty lines before the *Dunsen* line instead of one? The point is that `console.log()` automatically adds a line feed to the end when it outputs a value. So, we explicitly typed one line feed, passing this escape character as an argument in the function, and the second line feed is added automatically by the function itself.
 
       One more example:
 
@@ -128,7 +128,8 @@ theory: |
   Joffrey loves using \n
   </pre>
 
-  A small but important note about Windows. Windows uses `\r\n` by default to enter a line break. This combination works well only in Windows, but creates problems when copied to other systems (for example, when the development team includes both Windows and Linux users). The point is that the sequence `\r\n` has a different interpretation depending on the encoding chosen (discussed later). For this reason, there is a common practice among developers to always use `\n` without `\r`, since the LF is always interpreted the same way and works fine in any system. Remember to set your editor to use `\n`.
+  A small but important note about Windows. Windows uses `\r\n` by default to enter a line break. This combination works well only in Windows but creates problems when copied to other systems (for example, when the development team includes both Windows and Linux users). The point is that the sequence `\r\n` has a different interpretation depending on the encoding chosen (we discuss it later). For this reason, it's common among developers to always use `\n` without `\r`, since LF is always interpreted the same way and works fine in any system. Remember to configure your editor to use `\n`.
+
 instructions: |
 
   Write a program that prints:

@@ -4,7 +4,7 @@ name: Floating-point numbers
 
 theory: |
 
-  JavaScript doesn't distinguish between rational numbers (0.5) and natural numbers (10), both are numbers in JS (but in other programming languages it doesn’t work the same). In this way, they can be used together in any operation:
+  JavaScript doesn't distinguish between rational numbers (0.5) and natural numbers (10), both are numbers in JS (but in other programming languages it's not the same). So they can be used together in any operation:
 
   ```javascript
   3 * 0.5; // 1.5
@@ -17,7 +17,7 @@ theory: |
   0.2 * 0.2 // 0.04000000000000001
   ```
 
-  The operation of multiplying two rational numbers suddenly printed an inaccurate result. Other programming languages return the same result. This happens due to the limits of computing power. The amount of memory, unlike the amount of numbers, is finite (an infinite amount of numbers requires an infinite amount of memory for its storage). This issue in the case of natural numbers is solved by a simple upper bound constraint (you set the maximum number allowed), which is impossible for rationals.
+  Multiplication of two rational numbers suddenly leads to an inaccurate result. Other programming languages deliver the same result. It happens due to the limits of computing power. The amount of memory, unlike the amount of numbers, is finite (an infinite amount of numbers requires an infinite amount of memory to store). This issue in the case of natural numbers is solved by a simple upper bound constraint (you set the maximum number allowed), which is impossible for rationals.
 
   ```javascript
   // Maximum possible integer
@@ -25,12 +25,12 @@ theory: |
   9007199254740991
   ```
 
-  Rational numbers are not lined up in a continuous chain, there are infinite sets of numbers between _0.1_ и _0.2_. So there’s a big problem of how to store rational numbers? It’s an interesting question. There are many articles on the Internet about memory organization in such cases. Moreover, there is a standard that describes how to do this correctly, and an overwhelming number of languages rely on this recommendations.
+  Rational numbers are not lined up in a continuous chain, there are infinite sets of numbers between _0.1_ и _0.2_. So there's a big problem: how to store rational numbers? It's an interesting question. There are many articles on the Internet about memory organization in such cases. Moreover, there is a standard describing how to do this correctly, and an overwhelming number of languages rely on this set of recommendations.
 
-  For us, as developers, it is important to understand that the operations with floating numbers are inaccurate (this accuracy can be adjusted), and therefore, when solving problems with such numbers, it is necessary to resort to special tricks that allow you to achieve the accuracy.
+  For us, as developers, it is important to understand that operations with floating numbers are inaccurate (the accuracy can be adjusted), and therefore, when solving problems with such numbers, it is necessary to resort to special tricks that allow you to achieve the accuracy.
 
 instructions: |
 
-  Compute and print the product of: *0.39* and *0.22*.
+  Compute and print the product of *0.39* and *0.22*.
 
-tips: []
+# tips: [Что нужно знать про арифметику с плавающей запятой](https://habr.com/post/112953/)
