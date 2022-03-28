@@ -1,6 +1,6 @@
 ---
 
-name: The `switch` statement
+name: `switch` statement
 theory: |
 
   Many languages contain **switch** in addition to the conditional *if* construct. This is a customized version of *if*, designed for special cases. For example, you can use it where there is an *if else* chain with equality checks:

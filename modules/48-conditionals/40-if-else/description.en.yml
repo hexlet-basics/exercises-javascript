@@ -1,6 +1,6 @@
 ---
 
-name: else
+name: `else`
 theory: |
 
   Let's write a function `getTypeOfSentence()` to analyze the text and return its type: *General sentence* for normal sentences and *Question sentence* for question sentences.
