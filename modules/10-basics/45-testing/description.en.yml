@@ -9,9 +9,9 @@ theory: |
 
   The following lessons deal with more complex matters. You will be writing functions: a kind of mini-programs that receive some data from outside and perform operations on it. Verifying solutions gets a little more complicated in that case. The system runs your code sending some data to it. The system knows what result a correctly written function would receive with that particular data and "expects" it.
 
-  Let's assume your task is to program a function that adds two numbers. The verification system will give it several combinations of numbers and compare your function's answers with correctly calculated ones. If all actual values match the expected ones, your solution would be considered valid.
+  Let's assume your task is to program a function that adds two numbers. The verification system will give it several combinations of numbers and compare your function's answers with the correctly calculated ones. If all actual values match the expected ones, your solution would be considered valid.
 
-  This approach is named testing. It is used extensively in the real-life day-to-day development process. A developer usually writes tests _first_, and only after that proceeds to write the program itself. During that process he/she runs tests multiple times to check how close he/she got to the desired solution.
+  This approach is named testing. It is used extensively in the real-life day-to-day development process. A developer usually writes tests _first_, and only after that proceeds to write the program itself. During that process, he/she runs tests multiple times to check how close he/she got to the desired solution.
 
   That is why our website says “Tests passed” once you solved the task correctly.
 
@@ -41,7 +41,7 @@ instructions: |
 definitions:
   - name: Tests
     description: |
-      code designed to check if a program works correctly; it does so by comparing a set of known valid results against the actual output of the program.
+      are special code that validates programs by checking the correct result against the real one.
 tips:
   - |
     [TDD](https://en.wikipedia.org/wiki/Test-driven_development)

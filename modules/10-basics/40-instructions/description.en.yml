@@ -42,14 +42,14 @@ instructions: |
 
 tips:
   - |
-    [more about interpreters](https://en.wikipedia.org/wiki/Interpreter_(computing))
+    [More about interpreters](https://en.wikipedia.org/wiki/Interpreter_(computing))
   - |
     [Statements and declarations by category](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements)
 
 definitions:
   - name: Interpreter
     description: |
-      is a program that executs the code in JavaScript.
+      is a program that executes the code in JavaScript.
   - name: Statement
     description: |
       is a command given to a computer. The JavaScript code is a set of statements separated (most frequently) by `;`.

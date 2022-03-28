@@ -22,7 +22,7 @@ theory: |
   console.log(3 + 4);
   ```
 
-  After launch the result will appear on the screen:
+  After launching, the result will appear on the screen:
   ```
   7
   ```

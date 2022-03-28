@@ -10,7 +10,7 @@ theory: |
   console.log(1 / 0); // ?
   ```
 
-  Try to execute this code in your browser console. You will see `Infinity` displayed on your screen. For those who have studied high math (hi, Math geeks!), this is not a surprise. Division by zero creates infinity. Infinity in JavaScript is a real number, and it is possible to perform various operations with it. In day-to-day problems, this makes little sense, since most operations with infinity end in infinity, for example, when we add a number to infinity we get infinity anyway.
+  Try to execute this code in your browser console. You will see `Infinity` displayed on your screen. For those who have studied high math (hi, math geeks!), this is not a surprise. Division by zero creates infinity. Infinity in JavaScript is a real number, and it is possible to perform various operations with it. In day-to-day problems, this makes little sense, since most operations with infinity end in infinity, for example, when we add a number to infinity we get infinity anyway.
 
   ```javascript
   Infinity + 4; // Infinity

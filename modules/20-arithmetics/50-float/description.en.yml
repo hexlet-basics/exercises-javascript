@@ -10,14 +10,14 @@ theory: |
   3 * 0.5; // 1.5
   ```
 
-  Nevertheless, rational numbers, by their very nature, are very different. For us as applied developers, it wouldn’t matter if not for one detail. Look at this example:
+  Nevertheless, rational numbers, owing to their features, are very different. We, as applied developers, would not care much if it were not for one detail. Look at this example: 
 
   ```javascript
-  // Check this code in the browser console
+  // Check this code in the [browser console](https://firefox-source-docs.mozilla.org/devtools-user/browser_console/index.html)
   0.2 * 0.2 // 0.04000000000000001
   ```
 
-  The operation of multiplying two rational numbers suddenly printed an inaccurate result. Other programming languages deliver the same result. This happens due to the limits of computing power. The amount of memory, unlike numbers, is finite (an infinite amount of numbers requires an infinite amount of memory for its storage). This issue in the case of natural numbers is solved by a simple upper bound constraint (you set the maximum number allowed), which is impossible for rationals.
+  The operation of multiplying two rational numbers suddenly printed an inaccurate result. Other programming languages return the same result. This happens due to the limits of computing power. The amount of memory, unlike the amount of numbers, is finite (an infinite amount of numbers requires an infinite amount of memory for its storage). This issue in the case of natural numbers is solved by a simple upper bound constraint (you set the maximum number allowed), which is impossible for rationals.
 
   ```javascript
   // Maximum possible integer
@@ -25,7 +25,7 @@ theory: |
   9007199254740991
   ```
 
-  Rational numbers are not lined up in a continuous chain, there are infinite sets of numbers between _0.1_ и _0.2_. So there’s a big problem of how to store rational numbers? It’s an interesting question. There are many articles on the Internet about memory organization in such cases. Moreover, there is a standard that describes how to do this correctly, and an overwhelming number of languages rely on it.
+  Rational numbers are not lined up in a continuous chain, there are infinite sets of numbers between _0.1_ и _0.2_. So there’s a big problem of how to store rational numbers? It’s an interesting question. There are many articles on the Internet about memory organization in such cases. Moreover, there is a standard that describes how to do this correctly, and an overwhelming number of languages rely on this recommendations.
 
   For us, as developers, it is important to understand that the operations with floating numbers are inaccurate (this accuracy can be adjusted), and therefore, when solving problems with such numbers, it is necessary to resort to special tricks that allow you to achieve the accuracy.
 
