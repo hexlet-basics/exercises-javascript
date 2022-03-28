@@ -3,39 +3,39 @@
 name: Function signature
 theory: |
 
-  Функция `Math.pow()`, возводящая число в какую-нибудь степень, принимает два параметра: **какое число возводить** и **в какую степень возводить**. Если вызывать `pow()` без параметров, то вернется `NaN`. Функция честно пытается выполнить возведение в степень, но если значение не передано, то интерпретатор автоматически передает ей `undefined`. JavaScript заставляет программистов быть более аккуратным, чем остальные языки. В большинстве языков, если передать в функцию меньше параметров, чем она ожидает, то возникнет ошибка, — но только не в JavaScript. `NaN` вернется и при передаче любых не числовых значений:
+  The `Math.pow()` function, which raises a number to any power, takes two parameters: **a number to raise** and **a power to raise**. If you call `pow()` without parameters, it returns `NaN`. The function honestly tries to perform exponentiation, but with no value passed, the interpreter automatically passes `undefined` to it. JavaScript forces programmers to be more careful than other languages. In most languages, if you pass fewer parameters to a function than it expects, an error will occur, but not in JavaScript. `NaN` will also return when passing any non-numeric values:
 
   ```javascript
   const result = Math.pow(2, 'boom');
   console.log(result); // => NaN
   ```
 
-  Другая функция может иметь другое число параметров и другие типы параметров. Например, может существовать функция, которая принимает три параметра: число, строку и ещё одно число.
+  Another function can have a different amount and type of parameters. For example, there may be a function that takes three parameters: a number, a string, and another number.
 
-  Откуда мы знаем, сколько каких параметров нужно функции `Math.pow()` и какого типа будет «возврат»? Мы заглянули в **сигнатуру** этой функции. Сигнатура определяет входные параметры и их типы, а также выходной параметр и его тип. Про функцию `Math.pow()` можно почитать в [документации](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/pow). В разделе «Синтаксис» есть такой текст:
+  How do we know how many parameters the `Math.pow()` function needs and what type the `return` will be? We took a look at the **signature** of that function. The signature defines the input parameters and their types, as well as the output parameter and its type. You can read about the `Math.pow()` function in [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow). In the "Syntax" section you see this:
 
   ```
   Math.pow(base, exponent)
 
-  Параметры
+  Parameters
     base
-      Основание степени.
+      The base number.
     exponent
-      Показатель степени, в которую возводится основание base.
+      The exponent used to raise the base.
   ```
 
-  Это сигнатура функции и короткое пояснение на русском языке. Документация позволяет понять, сколько аргументов у функции и какого они типа, возвращает ли что-то функция и если да, то какого типа возвращаемое значение.
+  It is a function signature and a short explanation. The documentation shows you how many arguments the function has and its type, whether the function returns something, and if so, what its return value type is.
 
 instructions: |
 
-  Теперь ваша очередь посмотреть на сигнатуру функции в документации и разобраться, как её использовать. Можете читать документацию на русском языке, но программист должен уметь читать документацию на английском. Используйте словари или переводчики при необходимости. Лучше сразу привыкать и подтягивать навыки чтения на английском, иначе будут сложности в будущем.
+  Now it's your turn to find the function signature in the documentation and figure out how to use it.
 
-  В `Math` есть функция `ceil()`. Изучите её [документацию](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil).
+  There is a function in `Math` called `ceil()`. Study its [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil).
 
-  Напишите программу, которая использует функцию `Math.ceil()` с константой `number` и выводит результат на экран.
+  Write a program using the `Math.ceil()` function with a constant `number` and print the result.
 
 tips: []
 
 definitions:
-  - name: Сигнатура функции
-    description: формальное описание типов параметров и типа возвращаемого значения функции.
+  - name: Function signature
+    description: is a formal description of the parameter types and the type of the return value of the function.
