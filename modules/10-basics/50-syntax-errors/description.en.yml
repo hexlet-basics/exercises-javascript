@@ -2,7 +2,7 @@
 
 name: Syntax errors
 theory: |
-  If a JavaScript program is syntactically incorrect, the interpreter will show a relevant message and a note with a file and line where an error might have occurred. **Syntax errors** occur when the code has grammar mistakes. Grammar is essential to human language, but lack of it won't affect your ability to read or understand any text. But in programming, everything should be strict. Even a tiny violation and your program won't run. A wrong parenthesis order, a `;` that you forgot to add — these are just some examples of such violations.
+  If a JavaScript program is syntactically incorrect, the interpreter will show a relevant message and a note with a file and line where an error might have occurred. **Syntax errors** occur when the code has grammar mistakes. Grammar is essential to human language, but a lack of it won't affect your ability to read or understand any text. But in programming, everything should be strict. Even a tiny violation and your program won't run. A wrong parenthesis order, a `;` that you forgot to add — these are just some examples of such violations.
 
   Here is an example of code with a syntax error:
 
@@ -14,13 +14,13 @@ theory: |
 
   On the one hand, syntax errors are the most obvious because they deal with the rules of code grammar and have nothing to do with the code logic. You can easily fix it once you find it.
 
-  On the other hand, interpreter will not always tell you the correct position of an error. Sometimes you need to add a forgotten bracket to another place as opposed to what the error message says.
+  On the other hand, an interpreter will not always tell you the correct position of an error. Sometimes you need to add a forgotten bracket to another place as opposed to what the error message says.
 
 instructions: |
 
-  This task isn't related to the lesson directly but it would be useful to practice printing anyway.
+  This task isn't related to the lesson directly, but it would be useful to practice printing anyway.
 
-  Print following text `What Is Dead May Never Die`.
+  Print the following text `What Is Dead May Never Die`.
 
 tips:
   - |
@@ -28,6 +28,6 @@ tips:
 
 definitions:
   - name: "Syntax errors"
-    description: "are violation of grammar rules in a programming language."
+    description: "are violations of grammar rules in a programming language."
   - name: "SyntaxError (Parse error)"
-    description: "is a type of errors in JavaScript, which occurs when there are syntax errors in the code."
+    description: "is a type of error in JavaScript, which occurs when there are syntax errors in the code."

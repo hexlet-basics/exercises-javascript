@@ -4,7 +4,7 @@ name: Linter
 theory: |
   Since we’ve learned how to write simple programs, let's talk about the process of writing them.
 
-  Program code should be organized in a certain way so that it is clear and easy to be supported. Special sets of rules - standards - describe different aspects of code writing. The most common standard in JavaScript is [AirBnb](https://github.com/airbnb/javascript).
+  The program code should be organized in a certain way so that it is sufficiently clear and easy to maintain. Special sets of rules - standards - describe different aspects of code writing. The most common standard in JavaScript is [AirBnb](https://github.com/airbnb/javascript).
 
   In any programming language there are utilities, the so-called **linters**. They check the code up to the standards. For example, [ESLint](https://eslint.org/) analyzes JavaScript code to flag errors.
 
@@ -43,7 +43,7 @@ theory: |
 
 instructions: |
 
-  Print the result of «the difference between five squared and the product of three and seven». Place the parentheses so that `no-mixed-operators` rule is not violated.
+  Print the result of «the difference between five squared and the product of three and seven». Place the parentheses to follow the `no-mixed-operators` rule.
 
 
 tips: []

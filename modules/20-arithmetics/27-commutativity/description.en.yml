@@ -4,7 +4,7 @@ name: Commutative operations
 theory: |
   Do you remember the basic arithmetic rule «changing the order of the numbers we are adding doesn't change the sum»? It is called the **commutative law**.
 
-  A binary operation is commutative since swapping operands get you the same result. Obviously, addition is a commutative operation: _3 + 2 = 2 + 3_.
+  A binary operation is commutative since swapping operands gets you the same result. Obviously, addition is a commutative operation: _3 + 2 = 2 + 3_.
 
   But is subtraction the commutative operation? Of course not: _2 - 3 ≠ 3 - 2_. In programming, this law works just like in arithmetic.
 
