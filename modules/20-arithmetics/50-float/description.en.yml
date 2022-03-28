@@ -33,8 +33,7 @@ instructions: |
 
   Compute and print the product of: *0.39* and *0.22*.
 
-<!---
-tips:
-  - |
-    [Что нужно знать про арифметику с плавающей запятой](https://habr.com/post/112953/)
--->
+
+tips: []
+    
+    <!--- [Что нужно знать про арифметику с плавающей запятой](https://habr.com/post/112953/) --->
