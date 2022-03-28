@@ -58,8 +58,6 @@ instructions: |
 
 # tips: [Что такое кодировки?](https://guides.hexlet.io/encoding/)
 
-<!--- [Что такое кодировки?](https://guides.hexlet.io/encoding/) --->
-
 definitions:
   - name: Encoding
     description: "is a set of characters encoded using numbers to represent text digitally."
