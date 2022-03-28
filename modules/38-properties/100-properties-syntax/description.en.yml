@@ -38,4 +38,4 @@ instructions: |
 
 tips:
   - |
-    Read the [String.length] documentation. (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length). Note that the length of a string is equal to the number of characters in it. The length of an empty string `''` is 0.
+    Read the [String.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length) documentation. Note that the length of a string is equal to the number of characters in it. The length of an empty string `''` is 0.
