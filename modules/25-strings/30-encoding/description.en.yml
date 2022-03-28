@@ -58,6 +58,8 @@ instructions: |
 
 tips: []
 
+<!--- [Что такое кодировки?](https://guides.hexlet.io/encoding/) --->
+
 
 definitions:
   - name: Encoding
