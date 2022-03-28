@@ -53,7 +53,7 @@ instructions: |
     'welcome'.slice(2, 5); // "lco"
     ```
 
-  To convert the string to uppercase, use the [toUpperCase()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase) method:
+  To convert the string to uppercase, use the [toUpperCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase) method:
 
   ```javascript
   'welcome'.toUpperCase(); // "WELCOME"
