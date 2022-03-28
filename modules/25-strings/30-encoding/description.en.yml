@@ -56,7 +56,7 @@ instructions: |
 
   (Of course, you could cheat and just do something like `console.log('~')`, but that would be no fun at all :)
 
-tips: []
+# tips: [Что такое кодировки?](https://guides.hexlet.io/encoding/)
 
 <!--- [Что такое кодировки?](https://guides.hexlet.io/encoding/) --->
 
