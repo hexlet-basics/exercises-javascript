@@ -1,6 +1,6 @@
 ---
 
-name: `else if` statement
+name: else if statement
 theory: |
 
   The `getTypeOfSentence()` function from the previous lesson only distinguishes between question and normal sentences. Let's try to extend it to exclamation sentences:
