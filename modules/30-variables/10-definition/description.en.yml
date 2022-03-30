@@ -35,7 +35,7 @@ theory: |
 
   A declared but uninitialized variable contains an `undefined` value. It is a special value used when nothing is defined.
 
-  You can create any number of variables. Large programs contain tens or hundreds of thousands of variable names:
+  You can create any number of variables. Large programs contain dozens or hundreds of thousands of variable names:
 
   ```javascript
   let greeting1 = 'Father!';
@@ -59,4 +59,4 @@ tips:
 
 definitions:
   - name: Variable
-    description: a way to save data under a name for later use in code.
+    description: is a way to save data under a name for later use in code.

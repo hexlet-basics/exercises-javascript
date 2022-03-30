@@ -5,12 +5,12 @@ theory: |
 
   `greeting` is an example of a simple name, although not all of them are that simple. Rather often they are a compound of several words. For example, "user password". Different languages have different naming styles for variables.
 
-  There are three main variable naming conventions which are sometimes combined. These conventions apply to a variable name consisting of several words:
+  Three main variable naming conventions are sometimes combined. These conventions apply to a variable name consisting of several words:
 
-  * kebab-case – a hyphen separates the parts of the name. For example: `my-super-var`.
-  * snake_case - an underscore is a separator. For example: `my_super_var`.
-  * CamelCase - a name with each word capitalized. For example: `MySuperVar`.
-  * lowerCamelCase - each word capitalized except the first. For example: `mySuperVar`.
+  * kebab-case – a hyphen separates the parts of the name. For example, `my-super-var`.
+  * snake_case - an underscore is a separator. For example, `my_super_var`.
+  * CamelCase - a name with each word capitalized. For example, `MySuperVar`.
+  * lowerCamelCase - each word capitalized except the first. For example, `mySuperVar`.
 
   Javascript uses CamelCase and its variation lowerCamelCase, with the first letter of the first word in lowercase. It is the lowerCamelCase that we use for variables. It means we concatenate the words, and all but the first name capitalized: `userName`. With three words it looks like this: `mySuperVariable`.
 

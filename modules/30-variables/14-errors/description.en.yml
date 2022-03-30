@@ -11,7 +11,7 @@ theory: |
   let greeting = 'Father!';
   ```
 
-  Running the above program terminates with the error _ReferenceError: greeting is not defined_. _ReferenceError_ means that the code uses a name (called identifier) that is not defined. And the error itself explicitly tells you: _greeting is not defined_. Besides incorrect definition order, there are common typos in JavaScript, both when using a variable and when declaring it.
+  Running the above program terminates with the error _ReferenceError: greeting is not defined_. _ReferenceError_ means that the code uses a name (called an identifier) that is not defined. And the error itself explicitly tells you: _greeting is not defined_. Besides incorrect definition order, there are common typos in JavaScript, both when using a variable and when declaring it.
 
   It's the usage of a properly configured editor which reduces the number of such errors. Such an editor highlights names used without declaration and warns about possible problems.
 
