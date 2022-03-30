@@ -10,13 +10,14 @@ theory: |
   peopleCount.toString(); // '5'
   ```
 
-  Will the following code work - and if so, what will it print?
+  Will the following code work, and if so, what will it print?
+
   ```javascript
   const name = 'Tirion';
   console.log(name.length.toString());
   ```
 
-  This is the first time we've seen the syntax of several consecutive points, but all of the operations we encounter here are familiar. Everything happening in this code is a merge of already known language features. This happens quite often in programming. Even if you don't know the syntax, you can try combining different approaches, and there is a good chance they will work.
+   It's a first time we've seen several consecutive points notation, but all of the above operations here are familiar. Everything happening in this code is a merge of already known language features. This happens quite often in programming. Even if you don't know the syntax, you can try combining different approaches, and there is a good chance it'll work.
 
   The easiest way to understand how this code works is to break the chain into separate operations:
 
@@ -26,7 +27,7 @@ theory: |
   console.log(len.toString());
   ```
 
-  These examples are absolutely equivalent. We can perform operations sequentially, creating constants in between, or we can build a continuous chain of properties and methods.  Computations in chains always go from left to right.
+  These examples are equivalent. We can perform operations sequentially, creating constants in between, or build a continuous chain of properties and methods. Computations in chains always go from left to right.
 
   One more example:
 
@@ -35,7 +36,7 @@ theory: |
   console.log(name.toUpperCase().toLowerCase());
   ```
 
-  This kind of code requires a bit of mental effort. It's important to understand that `.toLowerCase()` applies to the result of the function call on the left. And `toUpperCase()` returns a string. Rookies often make mistakes in chains with methods, forgetting to put the call:
+  This kind of code requires a bit of mental effort. It's important to understand that `.toLowerCase()` applies to the result of the function call on the left. And `toUpperCase()` returns a string. Rookies often make mistakes in chains with methods forgetting to call a method:
 
   ```javascript
   const name = 'Tirion';
@@ -43,18 +44,18 @@ theory: |
   console.log(name.toUpperCase.toLowerCase());
   ```
 
-  Following this idea, it is possible to build infinitely long (though, in this case, useless) chains:
+  Following this idea, it's possible to build infinitely long (though, in this case, useless) chains:
 
   ```javascript
   // What is the result of such a call?
   console.log(name.toUpperCase().toLowerCase().length.toString().length);
   ```
 
-  _This kind of trick won't work with functions, because they are normally packed into each other f(f(f())), which makes the analysis more complicated. Yet this does not mean that you can not do it nicely - you can and even should. In other languages this is implemented through a composition of functions or a pipeline operator, which, incidentally, is getting used in JavaScript: https://github.com/tc39/proposal-pipeline-operator_
+  _This kind of trick won't work with functions because they are usually nested, f(f(f())), which complicates the analysis. Yet this doesn't mean that you can't do it nicely - you can and even should. Other languages implements it through a composition of functions or a pipeline operator, which, incidentally, is getting used in JavaScript: https://github.com/tc39/proposal-pipeline-operator_
 
 instructions: |
 
-  Using the `slice()` method, get a part of a sentence written in constant `text` starting from `5th` to `15th` symbols. Process the resulting substring using the `.trim()` method and print the length of the final substring. Run these methods in a chain without intermediate variables.
+  Using the `slice()` method, get a part of a sentence assigned to constant `text` starting from `5th` to `15th` symbols. Process the resulting substring using the `.trim()` method and print the length of the final substring. Run these methods in a chain without intermediate variables.
 
   * [slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
   * [trim()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)

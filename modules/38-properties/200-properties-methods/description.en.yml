@@ -3,41 +3,42 @@
 name: Methods
 theory: |
 
-  In addition to properties, data has methods - functions within properties. Basically, this means that a method works and is called as a function, but does so as a property, via a point.
+  In addition to properties, data has methods - functions within properties. Basically, it means that method works like a function, being a property, and requires a call via point notation.
+
   ```javascript
   const name = 'Robb';
   const upperName = name.toUpperCase();
   console.log(upperName); // => 'ROBB'
   ```
 
-  Inline methods always operate on the data they are associated with. The `.toUpperCase()` method returns the same string, but converts all characters to uppercase. Data usually has many more methods than properties, for example, strings have [several dozens](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) of them. In the documentation they are described a bit weirdly at first sight: _String.prototype.toLowerCase()_. This description reveals some internal implementation details which are not important right now, besides we haven't studied all the necessary basis to talk about prototypes.
+  Inline methods always apply to the data they are linked with. The `.toUpperCase()` method returns the same string but converts all characters to uppercase. Data usually has many more methods than properties, for example, strings have [several dozens](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) of them. In the documentation they are described a bit weirdly at first sight: _String.prototype.toLowerCase()_. This description reveals some internal implementation details which are not important right now, besides we haven't studied all the necessary basis to talk about prototypes.
 
-  [Numbers] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) have methods as well:
+  [Numbers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) have methods as well:
 
   ```javascript
   const temperature = 22.93;
-  // Rounded to one decimal place.
+  // Rounded to one decimal place
   const roundedTemperature = temperature.toFixed(1);
-  //The method returns a string containing the rounded number.
+  // The method returns a string containing the rounded number
   console.log(roundedTemperature); // => '22.9'
 
   // Can be called directly like this
-  //The brackets are necessary, otherwise it won't work
+  // The brackets are necessary, otherwise, it won't work
   (22.93).toFixed(1); // '22.9'
   ```
 
   _FYI. Technically, it's a bit more complicated. It's not the numbers themselves that have methods, but data (objects) of the Number type. Numbers written in variables or constants are automatically converted to this type when called, this is the process of boxing._
 
-  You may ask why we need methods and why not just to use functions? The situation with numbers is even more complicated. Some operations are implemented as methods of numbers, like `.toFixed()`, and most of them are implemented as methods accessible via `Math`.
+  You may ask why we need methods and why not just use functions? The situation with numbers is even more complicated. Some operations are implemented as methods of numbers, like `.toFixed()`, and most of them are implemented as methods accessible via `Math`.
 
   There are two reasons why it's done that way:
 
   1. Traditionally. JavaScript was developed too quickly, and so not everything well thought out.
-  2. Not all functions relate to a specific value. For example, `Math.min()`. This function finds the minimum among all numbers passed to it. It is illogical to make this function the method of a particular number, like `(1).min()`. It has no connection to a particular number.
+  2. Not all functions are linked to a specific value. For example, `Math.min()`. This function finds the minimum among all numbers passed to it. It is illogical to make this function the method of a particular number, like `(1).min()`. It has no connection to a particular number.
 
-  On the other hand, functions that work with a particular number should be implemented as methods as a matter of consistency. Such functions include calculating the modulus of a number. That is, instead of calling `Math.abs(-10)`, ogically we should have `(-10).abs()`.
+  On the other hand, functions that work with a particular number should be implemented as methods for the sake of consistency. Such functions include calculating the modulus of a number. That is, instead of `Math.abs(-10)`, it would be more reasonable to have `(-10).abs()`.
 
-  As for methods in general, it's not so straightforward. There are languages that have no methods and everything is fine there, and there are languages where methods are the main way of working with functions, but even in these languages, regular functions are always used along with methods. JavaScript is a language that uses both approaches and actively uses both normal functions and methods. The pros and cons of these approaches are described in detail in the Object-oriented programming (OOP) courses. 
+  As for methods in general, it's not so straightforward. Some languages have no methods and do well, other languages use methods as the main tool for building functions, and even here regular functions are always used along with methods. JavaScript is a language that uses both approaches and actively uses both normal functions and methods. The pros and cons of these approaches are described in detail in the Object-Oriented Programming (OOP) courses. 
 
 instructions: |
   Convert the string text to lowercase and print it.
