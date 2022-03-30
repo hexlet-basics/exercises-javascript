@@ -3,7 +3,7 @@
 name: Naming a variable
 theory: |
 
-  Imagine the code from the previous lesson goes like this:
+  Imagine the code from the previous lesson looks like this:
 
   ```javascript
   let x = 'Father!';
@@ -11,17 +11,17 @@ theory: |
   console.log(x);
   ```
 
-  Although it works, the variable name is now `x`. A computer doesn't care about naming since it's a mindless machine, whereas developers care. We are mostly read someone else's code, then write or read our own. The quality and clarity of variable names it's half the battle of code analysis.
+  Although it works, the variable name is now `x`. A computer doesn't care about naming since it's a mindless machine, but developers do care. We usually read and write code, and when we read it, it's more often other people's code we read. Quality and clarity of variable names is half the battle when it comes to code analysis.
 
-  You'd better take a moment and come up with a name reflecting the essence and meaning of the variable than give it a random name and rename it later. Try to name variables to make them as comprehensive as possible without context, without examining the surrounding code.
+  It's best take a moment now and come up with a name reflecting the essence and meaning of the variable than give it a random name and rename it later. Try to name variables to make them as comprehensive as possible without context, or without examining the surrounding code.
 
-  A joke among developers is that "the hardest part of programming is cache invalidation and naming things". Coming up with names is tough indeed. How would you name a variable that stores _the number of unpaid orders from customers in debt from the previous quarter?_
+  A common joke among developers is that "the hardest part of programming is cache invalidation and naming things". Coming up with names is tough indeed. How would you name a variable that stores _the number of unpaid orders from customers in debt from the previous quarter?_
 
-  Self-сheck. Think of a name for the variable that would store _"the number of siblings of the king"_. Write it down in a notebook or send it to yourself. Don't put anything in there except the name of the variable. And we'll come back to this topic in a few lessons ;-)
+  Self-сheck. Think of a name for the variable that would store _"the number of siblings the king has"_. Write it down in a notebook or send it to yourself. Don't put anything in there except the name of the variable. And we'll come back to this topic in a few lessons ;-)
 
 instructions: |
 
-  Create a variable storing the number of my brothers and assign it the value *2*. Print it. After passing the tests compare your name with the mentor's variable name in the solution.
+  Create a variable storing the number of my brothers and assign it a value of *2*. Print it. After completing the tests, compare your name with the teacher's variable name in the solution.
 
 tips:
   - |
