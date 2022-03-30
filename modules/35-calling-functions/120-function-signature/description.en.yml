@@ -12,7 +12,7 @@ theory: |
 
   Another function can have a different amount and type of parameters. For example, there may be a function that takes three parameters: a number, a string, and another number.
 
-  How do we know how many parameters the `Math.pow()` function needs and what type the `return` will be? We took a look at the **signature** of that function. The signature defines the input parameters and their types, as well as the output parameter and its type. You can read about the `Math.pow()` function in [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow). In the "Syntax" section you see this:
+  How do we know how many parameters the `Math.pow()` function needs and what type the `return` will be? We took a look at the **signature** of that function. The signature defines the input parameters and their types, as well as the output parameter and its type. You can read about the `Math.pow()` function in [the documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow). In the "Syntax" section you see this:
 
   ```
   Math.pow(base, exponent)

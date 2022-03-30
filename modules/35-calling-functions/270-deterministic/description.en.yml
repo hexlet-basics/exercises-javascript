@@ -27,7 +27,7 @@ theory: |
 
 instructions: |
 
-  Function `Math.random()` returns a random number from 0 to 1 with many decimal places. But in real tasks, you sometimes want to get random integers, for example, in the range from 0 to 10. Write the program returning exactly those numbers. To solve it you'll need [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) and [Math.round()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round)
+  Function `Math.random()` returns a random number from 0 to 1 with many decimal places. But in real tasks, you sometimes want to get random integers, for example, in the range from 0 to 10. Write the program returning exactly those numbers. To solve it you'll need [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) and [Math.round()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round).
 
 
   Try to make one line solution
