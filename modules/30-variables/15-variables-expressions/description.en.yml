@@ -14,7 +14,7 @@ theory: |
 
   Last lesson we assign a specific value to a variable. Here `let dollarsCount = 50 * 1.25;` there is an **expression** to the right of equal sign. An interpreter doesn't bother what is in front of it: `62.5` or `50 * 1.25`, both are expressions to compute. And they are computed to the same value, `62.5`.
 
-  Any string is an expression. The concatenation of strings is also an expression. Interpreter processes an encountered expression and produces, as a result, the **value of expression**. Here are some sample expressions with comments on the right containing a result value.
+  Any string is an expression. The concatenation of strings is also an expression. The interpreter processes an encountered expression and produces, as a result, the **value of expression**. Here are some sample expressions with comments on the right containing a result value.
 
   ```javascript
   62.5             // 62.5

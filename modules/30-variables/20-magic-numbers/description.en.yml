@@ -16,7 +16,7 @@ theory: |
 
   This "smell" is known as Magic Numbers. The numbers with an inexplicable origin, which you may restore only by digging deep into the code.
 
-  A solution is simple: create variables with correct names, and everything will fall into place.
+  The solution is simple: create variables with the correct names, and everything will fall into place.
 
   ```javascript
   let dollarsPerEuro = 1.25;
