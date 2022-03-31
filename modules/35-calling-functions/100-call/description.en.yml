@@ -39,7 +39,7 @@ theory: |
   ```javascript
   import { pow } from 'hexlet-basics/math';
 
- // Calling pow(2, 3) returns the value of 2 to the 3rd power
+  // Calling pow(2, 3) returns the value of 2 to the 3rd power
   const result = pow(2, 3); // 2 * 2 * 2
   console.log(result); // => 8
   ```
