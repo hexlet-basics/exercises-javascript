@@ -14,7 +14,8 @@ theory: |
   It uses a lot of extra characters and the word `return`. Since version ES6, an alternative, shorter syntax has appeared in the language, making it sometimes much easier to understand and shorten the code.
 
   ```javascript
-  // It takes a little time to get used to it, but after a while it'll become a must for you
+  // It takes a little time to get used to it,
+  // but after a while it'll become a must for you
   const double = (x) => x ** 2;
   ```
 
@@ -42,16 +43,16 @@ instructions: |
 
   Write the `capitalize()` function taking a non-empty string and converting the first letter of the first word to uppercase:
 
-    ```javascript
-    const name = 'arya';
-    console.log(capitalize(name)); // => "Arya"
-    ```
+  ```javascript
+  const name = 'arya';
+  console.log(capitalize(name)); // => "Arya"
+  ```
 
   To get a substring (or character) from a string, use the [slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice) method:
 
-    ```javascript
-    'welcome'.slice(2, 5); // "lco"
-    ```
+  ```javascript
+  'welcome'.slice(2, 5); // "lco"
+  ```
 
   To convert the string to uppercase, use the [toUpperCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase) method:
 
