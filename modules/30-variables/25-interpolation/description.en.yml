@@ -31,13 +31,13 @@ theory: |
 
   You can create as many such blocks as you want in a single string.
 
-  Interpolation only works with strings wrapped in [backticks](https://en.wikipedia.org/wiki/Grave_accent#Use_in_programming). This is the ` sign.
+  Interpolation only works with strings wrapped in [backticks](https://en.wikipedia.org/wiki/Grave_accent#Use_in_programming). This is the `\`` sign.
 
-  Nearly all languages favor interpolation over concatenation for combining strings. It glues a string together, and you clearly see spaces and other characters inside it. First, interpolation helps you to avoid confusing strings with numbers (thanks to the + sign), second, it is much easier (once you gain experience) to read a string as a whole.
+  Nearly all languages favor interpolation over concatenation for combining strings. It glues a string together, and you see spaces and other characters inside it. First, interpolation helps you to avoid confusing strings with numbers (thanks to the + sign), second, it is much easier (once you gain experience) to read a string as a whole.
 
 instructions: |
 
-  Print the string `Do you want to eat, <name>?', using the constant `stark` instead of `<name>`. The output should look like this:
+  Print the string `Do you want to eat, <name>?`, using the constant `stark` instead of `<name>`. The output should look like this:
 
   <pre class='hexlet-basics-output'>
   Do you want to eat, Arya?

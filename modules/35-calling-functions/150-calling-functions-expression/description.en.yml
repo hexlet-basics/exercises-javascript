@@ -8,7 +8,7 @@ theory: |
   ```javascript
   1 + 5 * 3;
   'He' + 'Let';
-  // Variabls can be a part of an expression
+  // Variables can be a part of an expression
   rate * 5;
   ```
 
@@ -27,7 +27,7 @@ theory: |
   10 + const sum = 1 + 5;
   ```
 
-  Why is this important to know? You can combine expressions to get more and more complex behavior in the most unexpected places and in the most surprising ways, as you shall see. You will get a better understanding of how you can combine pieces of code to get the desired results.
+  Why is this important to know? You can combine expressions to get more and more complex behavior in the most unexpected places and the most surprising ways, as you shall see. You will get a better understanding of how you can combine pieces of code to get the desired results.
 
   Let's talk about functions. Is a function call an expression or not? We know that functions return results, which means that, yes, they are expressions. It leads to a lot of interesting possibilities. For example, we can use a function call directly in math operations. This is how we can get the last character index in a word:
 

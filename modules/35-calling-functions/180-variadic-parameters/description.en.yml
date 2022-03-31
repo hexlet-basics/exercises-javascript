@@ -9,13 +9,13 @@ theory: |
   Math.max(1, 10, 3); // 10
   ```
 
-  The function `Math.max()` finds the maximum value among the passed parameters. How many parameters do you think it expects? In documentation on this function we find a strange notation:
+  The function `Math.max()` finds the maximum value among the passed parameters. How many parameters do you think it expects? In the documentation on this function we find a strange notation:
 
     ```
     Math.max([value1[, value2[, ...]]])
     ```
 
-    Such a notation means this function accepts any number of parameters (even none). The optional parameters are specified by square brackets _[]_, and so are the optional parameters with default values. The possibility to pass any number of parameters is encoded by _[, ...]_.
+    Such a notation means this function accepts any number of parameters (even none). The optional parameters are specified by square brackets _[ ]_, and so are the optional parameters with default values. The possibility to pass any number of parameters is encoded by _[, ...]_.
 
     ```javascript
     Math.max(1, -3, 2, 3, 2); // 3

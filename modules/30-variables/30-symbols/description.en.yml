@@ -11,7 +11,7 @@ theory: |
   console.log(firstName[0]); // => 'T'
   ```
 
-  Square brackets with a number is a special syntax for extracting a character from a string. The number is called **index**, which represents the position of the character in the string. Indexes start with 0 in almost all programming languages – so to get the first character, you must set the index to `0`. The index of the last element is equal to the length of the string minus one:
+  Square brackets with a number is a special syntax for extracting a character from a string. The number is called **the index**, which represents the position of the character in the string. Indexes start with 0 in almost all programming languages – so to get the first character, you must set the index to `0`. The index of the last element is equal to the length of the string minus one:
 
   ```javascript
   // String length is 6, so the last index is 5
