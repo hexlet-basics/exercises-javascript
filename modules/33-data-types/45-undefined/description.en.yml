@@ -10,14 +10,14 @@ theory: |
   console.log(name); // ?
   ```
 
-  `Undefined`. It is a special value of a certain type meaning no value can be printed. Undefined is used by JavaScript in many different cases, for example when calling a non-existent string character:
+  `undefined` is a special value of its own type that denotes an absence of value. Undefined is used by JavaScript in many different cases, for example when calling a non-existent string character:
 
   ```javascript
   const name = 'Arya';
   console.log(name[8]);
   ```
 
-  The meaning (semantics) of `undefined` is no value. However, nothing stops you from writing the following code:
+  The meaning (semantics) of `undefined` is an absence of value. However, nothing stops you from writing the following code:
 
   ```javascript
   let key = undefined;
