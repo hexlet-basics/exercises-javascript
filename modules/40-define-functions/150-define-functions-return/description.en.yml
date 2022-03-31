@@ -3,13 +3,13 @@
 name: Value return
 theory: |
 
-  Functions in JavaScript become really useful when they begin to return data instead of printing it. At that point, we can use them for further calculations. Check out this example:
+  Functions in JavaScript become really useful when they begin to return data instead of printing it. It allows to use them for further computations. Check out this example:
 
   ```javascript
   const message = greetHexlet();
   console.log(message);
   ```
-  We assign the result of a function to the variable `message`. In order to make this code work, the function must use the `return` instruction inside of itself:
+  We assign a function output to the variable `message`. In order to make this code work, the function must use the `return` instruction inside of itself:
 
   ```javascript
   const greetHexlet = () => {
@@ -18,7 +18,7 @@ theory: |
   };
   ```
 
-  `return` is a special instruction that takes the expression written on the right and sends it outside to the code that called the function. The function execution stops here; any code after `return` is not executed:
+  `return` is a special statement that takes an expression right to it and sends it to an outside code where the function is called. The function execution stops here; any code after `return` doesn't carry out:
 
   ```javascript
   const greetHexlet = () => {
@@ -28,7 +28,7 @@ theory: |
   };
   ```
 
-  You don't have to use a variable to return. Since `return` works with expressions, almost anything can appear to the right of it. Here we should be guided by the principles of code readability:
+  You don't have to use a variable to return. Since `return` works with expressions, almost anything can follow it. Here we should keep to the principles of code readability:
 
   ```javascript
   const greetHexlet = () => {
@@ -36,7 +36,7 @@ theory: |
   };
   ```
 
-  An example with calculation:
+  A calculation example:
 
   ```javascript
   const doubleFive = () => {
@@ -44,7 +44,7 @@ theory: |
   };
   ```
 
-  But even if there is no `return` instruction inside the function, the function still has a return. By default, any function returns `undefined`. For example, the `console.log()` function prints text, but returns nothing. In that case, the return is `undefined`.
+  But even if there is no `return` statement inside the function, it still has a return. By default, any function returns `undefined`. For example, the `console.log()` function prints text, but returns nothing. In that case, the return is `undefined`.
 
   ```javascript
   const result = console.log('You can put any text here');
@@ -54,9 +54,9 @@ theory: |
   console.log(console.log('Wow')); // => undefined
   ```
 
-  Why do we need this logic? A function call is an expression, and an expression should always return a result, otherwise there would always be errors in the code when there is no data to return.
+  Why do we need such behavior? A function call is an expression, and an expression should always return a result, otherwise, there would always be errors in the code when there is no data to return.
 
-  Self-check. What will this code print?
+  Self-check. What will it print?
 
   ```javascript
   // Definition
@@ -71,14 +71,14 @@ theory: |
 
 instructions: |
 
-  Implement a function that returns a random integer from 0 to 10.
+  Write a function returning a random integer from 0 to 10.
 
   ```javascript
   getRandomNumber(); // 1
   getRandomNumber(); // 9
   ```
 
-  To perform this instructions, you will need:
+  To accomplish this task, you'll need:
 
   [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
 
