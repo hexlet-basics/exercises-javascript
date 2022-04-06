@@ -4,6 +4,5 @@ const printMotto = () => {
 };
 // END
 
-// Экспорт нужен для того, чтобы тесты могли вызвать функцию для проверки её работы
-// Синтаксис экспортов изучается на Хекслете
+// exports are studied on Hexlet
 export default printMotto;
