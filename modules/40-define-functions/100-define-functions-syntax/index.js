@@ -4,4 +4,5 @@ const printMotto = () => {
 };
 // END
 
+// exports are studied on Hexlet
 export default printMotto;
