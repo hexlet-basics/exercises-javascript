@@ -39,7 +39,7 @@ tips: []
 definitions:
   - name: "Comment"
     description: |
-      is a text that does not affect program execution. Programmers use comments to add notes for themselves and for their colleagues.
+      is a piece of text that does not affect the execution of the program. Programmers use comments to add notes for themselves or for their colleagues.
 
       `// single line comment`
 

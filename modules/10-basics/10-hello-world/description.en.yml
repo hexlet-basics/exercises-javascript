@@ -8,7 +8,7 @@ theory: |
     Hello, World!
   </pre>
 
-  To print something, you need to give computer a special command. n JavaScript, we use `console.log()`.
+  To print something, you need to give computer a special command. In JavaScript, we use `console.log()`.
 
 instructions: |
   Copy the exact code from the instructions into the editor and run it by clicking “Run”.
