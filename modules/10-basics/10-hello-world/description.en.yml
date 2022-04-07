@@ -2,21 +2,21 @@
 
 name: Hello, World!
 theory: |
-  To follow the tradition we'll start with writing a 'Hello, World!' program. The program will print following text:
+  As is tradition, we'll start by writing a 'Hello, World!' program. The program will print the following text:
 
   <pre class='hexlet-basics-output'>
     Hello, World!
   </pre>
 
-  To print something, you need to give computer a special command. In the JavaScript language we use `console.log()`.
+  To print something, you need to give computer a special command. n JavaScript, we use `console.log()`.
 
 instructions: |
-  Copy the exact code from the instructions into the editor and run it by pressing the “Run” button.
+  Copy the exact code from the instructions into the editor and run it by clicking “Run”.
 
   ```javascript
   console.log('Hello, World!');
   ```
-  Note that if you type `hello, woRld!` instead of `Hello, World!`, it will count as a different text, because in JavaScript upper and lowercase letters are different symbols. Letter size is called _case_ and there is a common saying among programmers that _case is important_. This rule affects almost everything in code so get used to pay close attention to case.
+  Note that if you type `hello, woRld!` instead of `Hello, World!`, it will count as different text, because upper and lowercase letters are different symbols in JavaScript. Letter size is called _case_, and any programmer will tell you that _case is important_. This rule affects almost everything in coding, so make sure you get used to paying close attention to the case at all times.
 
 tips:
   - |
