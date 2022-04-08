@@ -5,7 +5,7 @@ theory: |
 
   At machine level, the computer operates only with the numbers `0` and `1`. This is called [binary code](https://en.wikipedia.org/wiki/Binary_code), the ones and zeros are called bits, which is derived from the term "binary digit".
 
- The numbers that we usually use in the decimal system are encoded using binary numbers:
+  The numbers that we usually use in the decimal system are encoded using binary numbers:
 
   - 0 ← 0
   - 1 ← 1
