@@ -12,9 +12,9 @@ theory: |
   console.log(dollarsCount); // => 62.5
   ```
 
-  Last lesson we assign a specific value to a variable. Here `let dollarsCount = 50 * 1.25;` there is an **expression** to the right of equal sign. An interpreter doesn't bother what is in front of it: `62.5` or `50 * 1.25`, both are expressions to compute. And they are computed to the same value, `62.5`.
+  Last lesson, we assigned a specific value to a variable. Here, when we declare our variable, `let dollarsCount = 50 * 1.25;` we have an **expression** to the right of the equals sign. The interpreter computes the result - `62.5`, and records it in a variable. An interpreter doesn't care about what is in front of it: `62.5` or `50 * 1.25`, both are expressions to compute. And they result in the same value, `62.5`.
 
-  Any string is an expression. The concatenation of strings is also an expression. The interpreter processes an encountered expression and produces, as a result, the **value of expression**. Here are some sample expressions with comments on the right containing a result value.
+  Any string is an expression. The concatenation of strings is also an expression. The interpreter processes an encountered expression and produces, as a result, the **value of the expression**. Here are some sample expressions with comments on the right containing the resulting value.
 
   ```javascript
   62.5             // 62.5
@@ -25,20 +25,20 @@ theory: |
   'Good' + 'will'  // "Goodwill"
   ```
 
-  The code construction rules (language grammar) ensure that any calculation (not just math, but for instance string concatenation) can take place where an expression is expected and, the program would keep running. For this reason, it's impossible to describe and show all use cases of all operations.
+  The code structure rules (language grammar) ensure that any calculation (not just math, but also things like string concatenation) can take place when an expression is expected, and the program will continue. For this reason, it's impossible to describe and show all use cases of all operations.
 
-  Programs consist of numerous combinations of expressions and understanding its concept is a major step on your way.
+  Programs consist of numerous combinations of expressions and understanding this concept is a major step on your journey.
 
-  Based on the above, consider whether such a code will work?
+  Based on the above, consider whether this code will work?
 
   ```javascript
   let who = "dragon's" + 'mother';
   console.log(who);
   ```
 
-  Run it on [repl.it](https://repl.it/languages/javascript) and play with it.
+  Run it on [repl.it](https://repl.it/languages/javascript) and experiment a little with it.
 
-  Now back to our currency application. We will write the dollar in rubles as a separate variable. Calculate the value of 50 euros in dollars by multiplying them by `1.25`. Suppose that 1 dollar is 60 rubles:
+  Now, back to our currency program. We'll record the dollar value in rubles as a separate variable. Calculate the value of 50 euros in dollars by multiplying them by `1.25`. Suppose that 1 dollar is 60 rubles:
 
   ```javascript
   let rublesPerDollar = 60;
@@ -48,7 +48,7 @@ theory: |
   console.log(rublesCount);
   ```
 
-  Now merge our output with some text via concatenation:
+  Now, let's merge our output with some text via concatenation:
 
   ```javascript
   let rublesPerDollar = 60;
@@ -62,13 +62,13 @@ theory: |
   The price is 3750 rubles
   </pre>
 
-  Any variable can partake in any expression. During the computation, its value substitutes for the variable's name.
+  Any variable can be part of any expression. During the computation, the variable's name is replaced with its value.
 
   The interpreter calculates the value of `dollarsCount` before using it in other expressions. When it comes to using the variable, Javascript "knows" the value it has already computed.
 
 instructions: |
 
-  Write a program that takes the initial amount of euros stored in the variable `eurosCount`, converts euros to dollars, and prints it. Then it converts the result to rubles and prints it on a new line.
+  Write a program that takes the initial amount of euros stored in the variable `eurosCount`, converts euros to dollars, and prints it. Then, it should convert the result to rubles and print it on a new line.
 
   Sample output for 100 euros:
 

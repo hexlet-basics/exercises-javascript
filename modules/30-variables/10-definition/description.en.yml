@@ -3,14 +3,14 @@
 name: What is a variable
 theory: |
 
-  Consider the task: we need to print the phrase _Father!_ two or even five times. You can solve it with a brute-force:
+  Consider this task: we need to print the phrase _Father!_ two times or even five times. You can solve it via brute force:
 
   ```javascript
   console.log('Father!');
   console.log('Father!');
   ```
 
-  It will do for the most basic case, but if you use the phrase _Father!_ more often and in different parts of your code, you have to repeat it everywhere. Then you will face some troubles when it turns out that you need to change the phrase, and this is a common scenario in development. We have to find all the occurrences of the phrase _Father!_ and make all the required changes. There is another way to do it. Instead of copying our expression, just create a variable containing the phrase.
+  This will do for the most basic case, but if you use the phrase _Father!_ more often and in different parts of your code, you have to repeat it everywhere. Then you will face even more issues when it turns out that you need to change the phrase. This is a common scenario in development. We have to find all the occurrences of the phrase _Father!_ and make all the required changes. There is one other way to do it. Instead of copying our expression, just create a variable containing this phrase.
 
   ```javascript
   let greeting = 'Father!';
@@ -20,7 +20,7 @@ theory: |
 
   A variable points to data that it stores. It allows you to use the data multiple times without duplicating it. The variable is created and filled with data (initialized) using the statement `let greeting = 'Father!'`.
 
-  The variable name can consist of any valid character set including English letters, numbers as well as *_* and *$* signs. Note that you can't place a digit at the beginning of a name. Variable names are case-sensitive, which means that `hello` and `heLLo` are two different names and thus two distinct variables. The case is of major importance in JavaScript, so never forget it.
+  The variable name can consist of characters from any valid character set including English letters and numbers as well as *_* and *$* signs. Note that you can't place a digit at the beginning of a name. Variable names are case-sensitive, which means that `hello` and `heLLo` are two different names and thus two distinct variables. Case is really important in JavaScript, so never forget it.
 
   You don't have to initialize the variable with data when declaring it. Sometimes you may want to create a variable and fill it later:
 
@@ -30,10 +30,10 @@ theory: |
   // Usage
   console.log(greeting); // undefined
 
-  // On changing a variable in the next lesson
+  // We'll learn about changing a variable in the next lesson
   ```
 
-  A declared but uninitialized variable contains an `undefined` value. It is a special value used when nothing is defined.
+  A declared but uninitialized variable contains an `undefined` value. This is a special value used when nothing is defined.
 
   You can create any number of variables. Large programs contain dozens or hundreds of thousands of variable names:
 
@@ -47,11 +47,11 @@ theory: |
   console.log(greeting2);
   ```
 
-  For the sake of the code analysis, it is common to create variables near the place they are used.
+  For the sake of the code analysis, it's common to create variables near the place they are used.
 
 instructions: |
 
-  Create a variable with the name `motto` and the content `What Is Dead May Never Die!`. Print its contents.
+  Create a variable with the name `motto` containing `What Is Dead May Never Die!`. Print its contents.
 
 tips:
   - |
