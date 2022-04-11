@@ -3,7 +3,7 @@
 name: Variables and concatenation
 theory: |
 
-  To consolidate the previous topic, let's try to use variables with concatenation. The syntax remains the same: we know how to concatenate (merge) two strings:
+  To consolidate the previous topic, let's try using variables with concatenation. The syntax remains the same, we know how to concatenate (combine) two strings:
 
   ```javascript
   let what = 'Kings' + 'road';
@@ -31,7 +31,7 @@ theory: |
 
 instructions: |
 
-  Websites are constantly sending emails to their users. A usual task is to automatically send a personalized email with the user's name in the header. If you store a person's name as a string somewhere in a website database, the task of generating the header reduces to concatenation. For instance, you have to concatenate the string `Hello` with the string containing the name.
+  Websites are constantly sending emails to their users. A common task is to automatically send a personalized email with the user's name in the header. IIf you store a person's name as a string somewhere in a website database, the task of generating the header boils down to concatenation. For instance, you have to concatenate the string `Hello` with a string containing their name.
 
   Write a program that will create a header and a body of the email using ready-made variables and print the resulting strings.
 
@@ -47,10 +47,10 @@ instructions: |
   We couldn't verify your mother's maiden name.
   </pre>
 
-  Accomplish the task using `console.log()` only twice.
+  Complete the task using `console.log()` no more than twice.
 
 tips:
   - |
-    Consider how you should concatenate the variables (with which string? in what order?) to get the two-line output of the email body.
+    Consider how you should concatenate the variables (Which string? What order?) to get the two-line output of the email body.
   - |
-    Remember that you can create a string with only the control sequence `\n`.
+    Remember that you can create a string containing only the escape sequence `\n`.
