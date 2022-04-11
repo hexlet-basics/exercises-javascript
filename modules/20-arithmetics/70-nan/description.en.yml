@@ -9,13 +9,13 @@ theory: |
   Infinity / Infinity; // NaN
   ```
 
-  `NaN` is a special value "not a number" that usually indicates execution of a meaningless operation. Any operation with `NaN` returns `NaN`.
+  `NaN` is a special value, "not a number", that usually indicates execution of a meaningless operation. Any operation with `NaN` returns `NaN`.
 
   ```javascript
   NaN + 1; // NaN
   ```
 
-  `NaN` is a peculiar value. Although it means "not a number", it belongs to a number data type. Paradox. `NaN` is never a desired value, once it appears only as a result of errors. If you have encountered it, trace the moment where the operation, which is not valid for numbers, was performed, and correct this piece of code.
+  `NaN` is a peculiar value. Although it means "not a number", it belongs to the number data type. What a paradox. `NaN` is never a value you want to see, it appears only as a result of errors. If you come across it, find the point where the operation that wasn't valid for numbers was performed, and correct the piece of code.
 
 instructions: |
 
