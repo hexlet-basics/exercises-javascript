@@ -8,7 +8,7 @@ theory: |
   console.log(3 * 5 - 2); // => 13
   ```
 
-  Note that the interpreter performs arithmetic operations in the right order: first division and multiplication, then addition and subtraction. Sometimes we want to change the calculations order. We will dig into this topic in the next lesson.
+  Note that the interpreter performs arithmetic operations in the right order: first division and multiplication, then addition and subtraction. Sometimes we want to change the order of calculations. We'll dig into this topic in the next lesson.
 
 
   Or another example:
@@ -21,14 +21,14 @@ theory: |
 
 
   1. First we calculate `2 * 4` and get `8 * 5 * 10`.
-  1. Then calculate `8 * 5` resulting in `40 * 10`.
-  3. Finally, do the last multiplication and the result is `400`.
+  1. Then we calculate `8 * 5`, which gives us `40 * 10`.
+  3. Finally, do the last multiplication. The result will be `400`.
 
   We can combine operations, making it possible to compute increasingly complex compound expressions.
 
 instructions: |
 
-  Write a program that calculates and prints the value of the expression:
+  Write a program that calculates and prints the value of this expression:
 
   ```
   8 / 2 + 5 - -3 / 2
