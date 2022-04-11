@@ -14,7 +14,7 @@ theory: |
   console.log(firstName); // => 'Alexander'
   ```
 
-   Oddly, the value of the `firstName` variable remains the same, while the code executes without errors. It's possible due to the immutability of primitive types in JavaScript: it doesn't provide any means to change a string itself. The immutability of primitives is important for many reasons, and performance is a key one. But how do we edit a string? We have variables for this purpose:
+   Oddly, the value of the `firstName` variable remains the same, and the code is executed without errors. This is possible due to the immutability of primitive types in JavaScript. There are no ways to change a string itself. The immutability of primitives is important for many reasons, and performance is a key one. But how do we edit a string? We have variables for this purpose:
 
   ```javascript
   let firstName = 'Alexander';
@@ -23,10 +23,10 @@ theory: |
   console.log(firstName); // => 'Blexander'
   ```
 
-  There is a big difference between changing the value of a variable and the value itself. You can't change primitive types in JavaScript (but you can change composite types, learn more about it on Hexlet), but changing the value of a variable is not a problem.
+  There is a big difference between changing the value of a variable and the value itself. You can't change primitive types in JavaScript (but you can change composite types, learn more about this on Hexlet), but changing the value of a variable is not a problem.
 
 instructions: |
-  Given three constants with different people's names. Make up and print the word out of the characters in this order:
+  Here are three constants with different people's names. Make up and print a word out of the characters in this order:
 
   1. The third character from the first line.
   2. The second character from the second line.
@@ -34,7 +34,7 @@ instructions: |
   4. The fifth character from the second line.
   5. The third character from the second line.
 
-  Try using interpolation: you can put individual characters called via square brackets inside curly brackets just as variables.
+  Try using interpolation: you can put individual characters (called via square brackets) inside curly brackets, as well as variables.
 
 tips: []
 
