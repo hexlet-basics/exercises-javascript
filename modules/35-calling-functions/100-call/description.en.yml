@@ -9,7 +9,7 @@ theory: |
 
   Functions are fundamental building blocks in programming, and it is impossible to accomplish anything without them. We need to get acquainted with them as soon as possible because future courses will deal almost exclusively with functions. First, we'll learn how to use the functions we have already defined, and we'll also learn to define our own functions.
 
- We will start with basic functions that handle strings. Below is an example of the `length()` function being called. This counts the number of characters in a string:
+  We will start with basic functions that handle strings. Below is an example of the `length()` function being called. This counts the number of characters in a string:
 
   ```javascript
   // length is a function
