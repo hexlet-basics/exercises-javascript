@@ -3,7 +3,7 @@
 name: Creating (defining) functions
 theory: |
 
-  Defining your own functions makes it much easier to write and maintain programs. Functions allow you to combine complex (composite) operations in one. For example, sending an email on a website is a complex process that involves interaction with external systems (the Internet). Due to the ability to define functions, all the complexity can be hidden behind a simple function:
+  Defining your own functions makes it much easier to write and maintain programs. Functions allow you to combine several complex operations into one. For example, sending an email on a website is a complex process that involves interaction with external systems (the Internet). Since you can define functions, you can hide all the complexity behind one simple function:
 
   ```javascript
   // A hypothetical example
@@ -25,9 +25,9 @@ theory: |
   <pre class='hexlet-basics-output'>Hello, Hexlet!</pre>
 
   ```javascript
-  // Function definition
+  // Defining the functions
   // The definition doesn't call or execute a function
-  // We just declare this function exists now
+  // We're just declaring this function exists now
   const showGreeting = () => {
     // Use 2-space indents inside the function body for readability 
     const text = 'Hello, Hexlet!';
@@ -38,25 +38,25 @@ theory: |
   showGreeting(); // => "Hello, Hexlet!"
   ```
 
-  Unlike usual data, functions perform actions, so their names almost always have to be verbs: "build something", "draw something", "open something".
+  Unlike normal data, functions perform actions, so their names almost always have to be verbs: "build something", "draw something", "open something", etc.
 
-  Anything described inside the curly brackets `{}` is called a function body. There can be any code. Consider it a small independent program, a set of arbitrary statements. The body is executed exactly on function call. And each function call executes the body independently of other calls. By the way, the body can be empty:
+  Anything described inside the curly brackets `{}` is called a function body. It can contain any code. Consider it a small independent program, a set of arbitrary statements. The body is executed precisely when the function is called. And each function call executes the body independently of other calls. By the way, the body can be empty:
 
   ```javascript
-  // Minimal function definition
+  // A minimal function definition
   const noop = () => {
-  // There could be a code
+  // There could be some code, but there isn't any
   }
 
   noop();
   ```
 
-  The function definition looks like creating a constant. Indeed, a function definition consists of two parts: the definition and the assignment to the constant:
+  Defining a function looks suspiciously like creating a constant. Indeed, a function definition consists of two parts: the definition itself and its assignment to a constant:
 
   1. Definition: `() => { }`
   2. Assignment: `const nameOfFunction = ...`
 
-  It is technically possible to create a function that is defined without a name and unavailable to call:
+  It is technically possible to create a function that is defined without a name and therefore unable to be called:
 
   ```javascript
   () => {
@@ -64,7 +64,7 @@ theory: |
   };
   ```
 
-  The notion of "creating a function" has many synonyms: "implement", "define". All of them are encountered in everyday practice.
+  The notion of "creating a function" has many synonyms, such as "implement" or "define". All of them are encountered in everyday practice.
 
 instructions: |
 
