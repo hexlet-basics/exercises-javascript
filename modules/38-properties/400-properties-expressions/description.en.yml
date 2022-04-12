@@ -3,7 +3,7 @@
 name: Properties and methods as expressions
 theory: |
 
-  Properties and methods are expressions along with variables, constants, or function calls, which means they can be combined in many different ways.
+  Properties and methods are expressions just like variables, constants, or function calls, which means they can be combined in many different ways.
 
   In operations:
 
@@ -25,7 +25,7 @@ theory: |
 
 instructions: |
 
-  Print the first and the last letters of the sentence from the `text` constant in the following format:
+  Print the first and the last letters of the sentence from the constant `text` in the following format:
 
   <pre class='hexlet-basics-output'>
   First: N
