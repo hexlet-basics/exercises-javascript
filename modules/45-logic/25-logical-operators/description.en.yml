@@ -3,13 +3,13 @@
 name: Logical operators
 theory: |
 
-  You can combine logical expressions to create increasingly tricky checks. One good example is password verification. As you know, some websites want a password of 8 to 20 characters length on signup. Frankly, it's a weird restriction, but whatever. In math, we would write `8 < x < 20` (where `x` is the length of a particular password), but that trick won't work in JavaScript.  We would have to make two separate logical expressions and connect them with the special "AND" operator:
+  You can combine logical expressions to create increasingly cleverer and more useful checks. One good example is password verification. As you know, some websites want a password of 8 to 20 characters on signup. Frankly, it's a weird restriction, but whatever, it is what it is. In math, we would write `8 < x < 20` (where `x` is the length of a particular password), but that trick won't work in JavaScript.  We would have to make two separate logical expressions and connect them with the special "AND" operator:
 
   ```
   A password longer than 8 characters **AND** a password shorter than 20 characters.
   ```
 
-  Here's a function taking the password and saying whether it meets the conditions or not:
+  Here's a function that takes the password and says whether it meets the conditions or not:
 
   ```javascript
   const isStrongPassword = (password) => {
@@ -22,25 +22,25 @@ theory: |
   isStrongPassword('zxcvbnmasdfghjkqwertyui'); // false
   ```
 
-  `&&` means "AND" (called conjunction in mathematical logic). The whole expression is true only when each operand, each of compound expressions, is true. In other words, `&&` means "either one and the other".
+  `&&` means "AND" (called a conjunction in mathematical logic). The whole expression is true only when every operand, which are all part of the compound expressions, is true. In other words, `&&` means "both".
 
-  This operator precedence is lower than that of relational operators, so the expression works correctly without parentheses.
+  This operator's priority is lower than that of comparison operators, so the expression works correctly without parentheses.
 
-  Another widespread operator along with `&&` is the `||` — the "OR" (disjunction). It means "one or the other, or both". Operators can be combined in any number and any sequence, but when `&&` and `||` appear together, you better label precedence with parentheses. Below is an example of an advanced function validating a password:
+  Another widespread operator along with `&&` is `||` — "OR" (disjunction). It means "one or the other, or both". Operators can be combined in any number and any sequence, but when `&&` and `||` appear together, you should label priority with parentheses. Below is an example of an advanced function validating a password:
 
   ```javascript
   const hasSpecialChars = (str) => /* checks for special characters in the string */;
 
   const isStrongPassword = (password) => {
     const length = password.length;
-    // The parentheses set the precedence making clear how parts related
+    // The parentheses set the priority, making it clear how each part is related
     return (length > 8 && length < 20) || hasSpecialChars(password);
   };
   ```
 
-  Another example. We want to buy an apartment that meets the conditions: an area of 100 square meters or more on any street **OR** an area of 80 square meters or more, but on `Main Street`.
+  Another example. We want to buy an apartment that meets these conditions: an area of 100 square meters or more on any street **OR** an area of 80 square meters or more, but on `Main Street`.
 
-  We write a function checking the apartment. It takes two arguments: the area (a number) and the street name (a string):
+  We'll write a function checking the apartment. It takes two arguments: the area (a number) and the street name (a string):
 
   ```javascript
   const isGoodApartment = (area, street) => {
@@ -100,7 +100,7 @@ theory: |
 
 instructions: |
 
-  Write the `isLeapYear()` function to determine whether a year is a leap year or not. Leap year is a multiple of 400 (i.e. divisible without a remainder), or it is both a multiple of 4 and not a multiple of 100. As you can see, the definition already contains all the required logic, all we need to do is to put it into code:
+  Write a function, `isLeapYear()`, to determine whether a year is a leap year or not. A leap year is a multiple of 400 (i.e. divisible without a remainder), or it is both a multiple of 4 and not a multiple of 100. As you can see, the definition already contains all the required logic, all we need to do is to put it into code:
 
   ```javascript
   isLeapYear(2018); // false
@@ -129,4 +129,4 @@ tips:
 
 definitions:
   - name: "Logical operators"
-    description: "are AND (&&) and OR (||) operators allowing to create compound logical conditions."
+    description: "are the AND (&&) and OR (||) operators, which allow you to create compound logical conditions."
