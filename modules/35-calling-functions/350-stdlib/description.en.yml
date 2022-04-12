@@ -3,29 +3,29 @@
 name: Standard library
 theory: |
 
-  JavaScript like any other language comes with a set of useful functions. All together they make up the so-called **standard library**. It usually contains thousands of functions you can't remember, and you don't have to. It is assumed that any programmer knows where to look for their documentation and has a rough idea of what he wants to achieve. And the rest is a matter of technique. Without the Internet, most programmers would not be able to program anything.
+  Like any other language, JavaScript comes with a set of useful functions. All together they make up the so-called **standard library**. It usually contains thousands of functions you can't remember, and you don't have to. It is assumed that any programmer knows where to look for their documentation and has a rough idea of what they want to achieve. And the rest is a matter of technique. Without the Internet, most programmers wouldn't be able to program anything.
 
-  For newcomers it often looks like this: "Go I know not where, fetch I know not what". In other words, it is unclear how to learn about these functions when you don't know anything at all. Oddly enough, there is no way to know everything you need to know once and for all. As you grow as a developer, you learn all the exciting features that solve your problems more elegantly, thus expanding your toolbox.
+  To newcomers, it often looks like this: "Go I know not whither and fetch I know not what". In other words, most people have no idea how to learn about these functions when they don't know anything at all. Oddly enough, there is no way to know everything you need to know once and for all. As you grow as a developer, you learn all the exciting features that solve your problems more elegantly, thus expanding your toolbox.
 
   Here are some tips to learn about new features:
 
   * Always keep track of what you are working with (the data type) at the moment. You will most likely find the function you need in the appropriate chapter of the documentation. For example, you need to study string functions to work with strings.
   * From time to time, open the standard functions section of the topic you are studying and just run through them, learning the signatures and ways to use them.
-  * Read someone else's code more often, especially the code of the libraries you're using. It's all available on GitHub.
+  * Read other people's code more often, especially code from the libraries you're using. It's all available on GitHub.
 
-  JavaScript standard library structure has its peculiarities. Since the code can run in different environments, like a server or a browser, the capabilities of the standard library are highly dependent on the use case. For example, you can't perform some server tasks in the browser. For documentation on the server side, see https://nodejs.org. The server portions of the standard library are organized into modules; each module has its page with full function descriptions. In particular, the module [fs](https://nodejs.org/api/fs.html) is required to work with the file system, its functions allow to write and read files.
+  The JavaScript standard library's structure has its peculiarities. Since the code can run in different environments, such as a server or a browser, the capabilities of the standard library are highly dependent on the use case. For example, you can't perform some server tasks in a browser. For server-side documentation, see https://nodejs.org. The server portions of the standard library are organized into modules, each module has its own page with full descriptions of all its functions. In particular, the module [fs](https://nodejs.org/api/fs.html) is required to work with the file system, its functions allow you to write and read files.
 
-  As for the browser, there is not much stuff. For the most part, it's some basic functions built into the language. For example, the same math [functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math). The rest of the features you can add via third-party libraries.
+  As for the browsers, there's not much stuff. For the most part, it's some basic functions built into the language. For example, the math [functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) we've seen before.. The rest of the features you can add via third-party libraries.
 
 instructions: |
 
-  The `typeof` operator defines the type of the operand. The type name returns as a string. For example, a call of `typeof 'go go go'` will return a string `'string'`.
+  The `typeof` operator defines the type of the operand. The type name returns as a string. For example, calling `typeof 'go go go'` will return the string `'string'`.
 
   ```javascript
   console.log(typeof 3); // => 'number'
   ```
 
-  Print the value type of the constant `motto`.
+  Print the type of the value of the constant `motto`.
 
 tips:
   - |
