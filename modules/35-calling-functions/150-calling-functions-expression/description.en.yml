@@ -3,7 +3,7 @@
 name: Function call as an expression
 theory: |
 
-  In programming, an expression is something that returns a usable output value. We already know a lot about expressions and their building principles. Math operations (addition, subtraction), string operations (concatenation) are all expressions:
+  In programming, an expression is something that returns a usable output value. We already know a lot about expressions and their principles of composition. Math operations (addition, subtraction, etc.) and string operations (concatenation) are all expressions:
 
   ```javascript
   1 + 5 * 3;
@@ -12,7 +12,7 @@ theory: |
   rate * 5;
   ```
 
-  The peculiarity of expressions is that they return a result that can be assigned to a variable or printed. For instance:
+  One feature of expressions is that they return a result that can be assigned to a variable or printed. For instance:
 
   ```javascript
   // Here the expression is 1 + 5
@@ -20,16 +20,16 @@ theory: |
   console.log(1 + 5);
   ```
 
-  But not any code is an expression. The definition of a variable is a statement; it can't be part of an expression and it will lead to an error:
+  But not any code can be an expression. The definition of a variable is a statement, it can't be part of an expression and it will lead to an error:
 
   ```javascript
-  // Senseless code that won't work
+  // Pointless code that won't work
   10 + const sum = 1 + 5;
   ```
 
-  Why is this important to know? You can combine expressions to get more and more complex behavior in the most unexpected places and the most surprising ways, as you shall see. You will get a better understanding of how you can combine pieces of code to get the desired results.
+  Why is this important to know? You can combine expressions to get more and more complex behavior in the most unexpected places and the most surprising ways, as you will see. You will get a better understanding of how you can combine pieces of code to get the desired results.
 
-  Let's talk about functions. Is a function call an expression or not? We know that functions return results, which means that, yes, they are expressions. It leads to a lot of interesting possibilities. For example, we can use a function call directly in math operations. This is how we can get the last character index in a word:
+  Let's talk about functions. Is a function call an expression or not? We know that functions return results, which means that, yes, they are expressions. It leads to a lot of interesting possibilities. For example, we can call functions directly in math operations. This is how we can get the last character index in a word:
 
   ```javascript
   import { length } from 'hexlet-basics/string';
@@ -41,7 +41,7 @@ theory: |
   console.log(lastIndex); // 9
   ```
 
-  This code has no new syntax. We just linked what we already know. We could go even further:
+  This code has no new syntax. We've just combined what we already know. We could go even further:
 
   ```javascript
   console.log(length(name) - 1); // 9
@@ -60,14 +60,14 @@ theory: |
 
 instructions: |
 
-  Print the first and last letters of the sentence stored in the `text` variable using this format:
+  Print the first and last letters of the sentence stored in the variable `text` using this format:
 
   <pre class='hexlet-basics-output'>
   First: N
   Last: t
   </pre>
 
-  Try to create only one variable you want to assign the text to before you print it. In this lesson, we practice building a compound expression.
+  Try to create only one variable you want to assign the text to before you print it. In this lesson, we're practicing building a compound expression.
 
 tips: []
 
