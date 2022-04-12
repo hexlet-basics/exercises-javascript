@@ -3,13 +3,13 @@
 name: Calling functions
 theory: |
 
-  The addition, concatenation, finding the remainder, and the other operations discussed are all basic programming language features. Math is not limited to arithmetic, there are many other domains with their operations, e.g., geometry. The same goes for strings: you can flip them, change a letter case, delete extra characters – and that's just the tip of the iceberg. And finally, at a higher level, there is the applied logic of a particular program. Programs withdraw money, calculate taxes, and generate reports. The number of such jobs is endless and individual for each program. And they all have to be somehow expressed in code.
+  Addition, concatenation, finding the remainder, and the other operations discussed are all basic programming language features. Math is not limited to arithmetic, there are many other domains with their own operations, e.g., geometry. TThe same goes for strings: you can flip them, change a letter's case, delete extra characters – and that's just the tip of the iceberg. And finally, at a higher level, there is the applied logic of a particular program. Programs withdraw money, calculate taxes, and generate reports. The number of these jobs is endless and different for each program. And they all have to be somehow expressed in code.
 
-  With a notion of a *function* we express any arbitrary operation in programming. Functions can be both built-in and manually written by a programmer. We are already familiar with one built-in function, it is `log()` in the `console.log()` call.
+  The notion of a *function* expresses any arbitrary operation in programming. Functions can be both built-in and manually written by a programmer. We are already familiar with one built-in function, `log()`, when we call `console.log()`.
 
-  Functions are fundamental building blocks in programming, and it is impossible to accomplish something without them. We get acquainted with them beforehand because the following courses deal almost exclusively with functions. We will learn how to use the functions we have already defined and to define our functions.
+  Functions are fundamental building blocks in programming, and it is impossible to accomplish anything without them. We need to get acquainted with them as soon as possible because future courses will deal almost exclusively with functions. First, we'll learn how to use the functions we have already defined, and we'll also learn to define our own functions.
 
-  We will start with basic functions handling strings. Below is an example of a `length()` function call, which counts the number of characters in a string:
+ We will start with basic functions that handle strings. Below is an example of the `length()` function being called. This counts the number of characters in a string:
 
   ```javascript
   // length is a function
@@ -20,37 +20,37 @@ theory: |
   console.log(result); // => 6
   ```
 
-  A lyrical digression. The first line in this code is an import of a function from another module. You will learn about imports and modules on Hexlet, and here they will be "as is" because we need them to use functions defined in other files. Don't bother if you don't understand the meaning of this step, you can learn more about it in our course [Intro to Programming](https://en.hexlet.io/courses/intro_to_programming).
+  A lyrical digression. The first line in this code is an imported function from another module. You will learn about importing and modules on Hexlet, and here they will be "as is" because we need to import to use functions defined in other files. Don't bother if you don't understand the meaning of this step, you can learn more about it in our course [Intro to Programming](https://en.hexlet.io/courses/intro_to_programming).
 
   Parameters (or arguments) represent the data the function receives when you call it. This data is what the function uses to compute something and return a result.
 
   We have defined a `result` constant and told the interpreter to assign it a result returned by the `length()` function call. In this sense, functions are like operations – they always return the result of their job. 
   
   ```javascript
-  // The length call returns the result (the string length)
+  // Calling length() returns the result (the string length)
   // which is written in a constant named result
   const result = length('Hello!');
   ```
   
-  Writing `length('Hello!')` means that we call the function named *length* which takes the parameter `'Hello!'`. The function `length()` counts the length of the string passed to it.
+  Writing `length('Hello!')` means that we call the function named *length* and it will take the parameter `'Hello!'`. The function `length()` counts the length of the string passed to it.
 
-  The function call is always indicated by parentheses `()` following the function name. There can be any number of parameters in parentheses, even zero. The number depends on the function used. Consider as an example the function `pow()`, which raises a given number to a given power. It takes two parameters as input and raises the number passed in the first parameter to the power passed in the second parameter.
+  The function being called is always indicated by parentheses `()` following the function name. There can be any number of parameters in parentheses, even nothing can be a parameter. The number of parameters depends on the function used. Consider the function `pow()` as an example. This raises a given number to a given power. It takes two parameters as input and raises the number passed in the first parameter to the power passed in the second parameter.
 
   ```javascript
   import { pow } from 'hexlet-basics/math';
 
-  // Calling pow(2, 3) returns the value of 2 to the 3rd power
+  // Calling pow(2, 3) returns the value of 2 to the power of 3
   const result = pow(2, 3); // 2 * 2 * 2
   console.log(result); // => 8
   ```
 
-  Broadly speaking, operators and functions are the same things. The only key difference is how they are written. If you think of addition as a function, it would look like this:
+  Broadly speaking, operators and functions are the same things. The only key difference is how they are written. If you think of addition as a function, it might look like this:
 
   ```javascript
   // Regular addition
   3 + 5; // 8
   // Addition represented as a function
-  // It looks a bit strange, but it conveys the meaning of the functions
+  // It looks a bit strange, but it conveys the meaning of functions
   +(3, 5);
   ```
 
@@ -58,7 +58,7 @@ theory: |
 
   Functions are called. They also return a result that may be used in further calculations or, for example, can be printed.  
   
-  Self-check. How would you know what the `console.log()` call returns? Test it.
+  Self-check. How can you find out what calling `console.log()` will return? Test it.
 
 instructions: |
 
