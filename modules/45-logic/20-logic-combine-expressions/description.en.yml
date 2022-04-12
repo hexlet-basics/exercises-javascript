@@ -5,15 +5,15 @@ theory: |
 
   Logical operations are expressions. So, you can combine them with other expressions.
 
-  For example, we want to check the if the number is even, that is, a multiple of two. In programming we do this:
+  Let's say, for example, we want to check if a number is even, i.e., a multiple of two. In programming we do this:
 
-    * check for the remainder of dividing by 2:
+    * check for a remainder when dividing by 2:
     * if the remainder is 0, then the number is even
     * if the remainder is not 0, then the number is odd
 
-  The remainder of the division is an elementary but crucial concept of arithmetic, algebra, and even number theory and cryptography. The idea is simple: divide a number into several equal groups, and if anything remains, it is the remainder of the division.
+  The remainder of a division is an elementary but crucial concept of arithmetic, algebra, and even number theory and cryptography. The idea is simple: divide a number into several equal groups, and if anything remains, it's the remainder of the division.
 
-  Split the candies equally among the individuals:
+  Split some candies equally among individuals:
 
   - 7 candy, 2 persons: 2 x 3 + **remainder 1**.
     So 7 is not a multiple of 2.
@@ -22,7 +22,7 @@ theory: |
   - 19 candies, 5 persons: 5 x 3 + **remainder 4**.
     So 19 is not a multiple of 5.
 
-  The `%` operator calculates the remainder of division (not to be confused with division):
+  The `%` operator calculates the remainder of a division (not to be confused with division itself):
 
   ```javascript
   7 % 2;  // 1
@@ -35,7 +35,7 @@ theory: |
   9 % 2  // 9 odd, i.e. remainder is 1
   ```
 
-  Write a function to check whether the number is even:
+  Write a function to check whether a number is even:
 
   ```javascript
   const isEven = (number) => number % 2 === 0;
@@ -44,17 +44,17 @@ theory: |
   isEven(3);  // false
   ```
 
-  We combined in one expression the logical operator `===` (equality check) and the arithmetic operator `%`.
+  In one expression, we've combined the logical operator `===` (equality check) and the arithmetic operator `%`.
 
-  The precedence of arithmetic operators is higher than logical ones. So, we first calculate the arithmetic expression `number % 2`, then its output joins the logical comparison.
+  Arithmetic operators have higher priority than logical ones. So, we first calculate the arithmetic expression `number % 2`, and then its output is used in the logical comparison.
 
-  It means literally the following: *"calculate the remainder of dividing `number` by 2 and check if the remainder equals zero; then return the result of the equality check "*.
+  Literally, it means the following: *"calculate the remainder of dividing `number` by 2 and check if the remainder equals zero; then return the result of the equality check "*.
 
-  Another example: write a function to check the first letter of the string is uppercase.
+  Another example: write a function to check the first letter of a string is uppercase.
 
   Algorithm:
 
-  1. Get and assign to a variable initial string character
+  1. Get the initial character of the string and assign it to the variable
   2. Compare whether the character is equal to its uppercase version
   3. Return the result
 
@@ -70,7 +70,7 @@ theory: |
 
 instructions: |
 
-  Write a function to check the format of a given phone number. If the phone starts with *+*, then it is an international format.
+  Write a function to check the format of a given phone number. If the number starts with *+*, then it's in the international format.
 
   ```javascript
   isInternationalPhone('89602223423'); // false
