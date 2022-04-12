@@ -3,7 +3,7 @@
 name: Logical expressions output
 theory: |
 
-  Look at the code below and try to guess what it will print?
+  Look at the code below and try to guess what it will print.
 
   ```javascript
   console.log(0 || 1);
@@ -15,7 +15,7 @@ theory: |
     1
   </pre>
 
-  The **OR** operator works so that its execution (left to right) interrupts and returns the result of the first argument converting into `true` value.
+  The **OR** operator works in such a way that its execution (left to right) interrupts the first argument and returns the result, converting it into a value of `true`.
 
   Example:
 
@@ -27,14 +27,14 @@ theory: |
     0
   </pre>
 
-  The **AND** operator works so that its execution (left to right) interrupts and returns the result of the first argument evaluating into `false` value.
+  The **AND** operator works in such a way that its execution (left to right) interrupts the first argument and returns the result, converting it into a value of `false`.
 
   There are two basic rules in JavaScript by which conversions take place:
 
-  * `0`, `''`, `undefined`, `NaN`, `null` are converted into `false`. Those values are considered *falsy*.
+  * `0`, `''`, `undefined`, `NaN`, and `null` are converted into `false`. Those values are considered *falsy*.
   * Everything else is converted into `true`
 
-  Developers extensively use this, for example, to define a default value:
+  Developers use this extensively, for example, to define a default value:
 
   ```javascript
   const value = name || '';
@@ -43,9 +43,9 @@ theory: |
   'hexlet' || ''; // 'hexlet'
   undefined || ''; // ''
   ```
-  If `name` is given one of the falsy values, an empty string will be assigned to the `value` constant. In that case, in the subsequent code, we will be able to treat `value` as a string.
+  If `name` is given one of the falsy values, an empty string will be assigned to the `value` constant. In that case, in subsequent code, we will be able to treat `value` as a string.
 
-  But there is a potential bug. If `name` contains a falsy value and it's okay to assign values like `0`, `undefined`, `NaN` or `null` to the `value` constant, then the code above gets it wrong:
+  But there is a potential bug. If `name` contains a falsy value and it's okay to assign values like `0`, `undefined`, `NaN` or `null` to the `value` constant, then the code above will get it wrong:
 
   ```javascript
   // Oops
@@ -54,22 +54,22 @@ theory: |
   undefined || ''; // ''
   ```
 
-  We covered the relational operators `===` and `!==` in one of our lessons and mentioned that JavaScript also has the operators `==` and `!=`, though you shouldn't use them. The very difference lies in the type conversion:
+  We covered the comparison operators `===` and `!==` in one of our lessons and we mentioned that JavaScript also has the operators `==` and `!=`, though you shouldn't use them. The very difference lies in the type conversion:
 
   ```javascript
   console.log('' === false); // => false
   console.log('' == false);  // => true
   ```
 
-  The empty string and `false` are different values, so the `===` operator says "false! they are not equal!".
+  An empty string and `false` are different values, so the `===` operator says "False! They are not equal!".
 
-  But the `==` operator converts types, making the empty string and `false` equal from its point of view.
+  But the `==` operator converts types, making an empty string and `false` equivalent from its point of view.
 
   This conversion is implicit, so avoid the `==` and `!=` operators whenever possible.
 
   ---
 
-  Recall the negation:
+  Remember the negation operator:
 
   ```javascript
   const answer = true;
@@ -83,17 +83,17 @@ theory: |
   console.log(!!answer); // => true
   ```
 
-  However, this is where type conversions also take place. So the result of the double negation will always be a value of type _boolean_. This trick sometimes helps to change the data type.
+  However, this is where type conversions also take place. So the result of the double negation will always be a _boolean_ value. This trick sometimes helps change the data type.
 
   ## Selection error
 
-  Imagine a task to check if a value is equal to either this or that. For instance, the variable `value` must contain one of two values: `first` or `second`. Novice developers sometimes write this expression this way:
+  Imagine a task to check if a value is equal to either one thing or another. For instance, the variable `value` must contain one of two values: `first` or `second`. Novice developers sometimes write this expression this way:
 
   ```javascript
   value === ('first' || 'second')
   ```
 
-  That's how we picture it in our minds, yet languages work differently, so this kind of code will lead to the wrong result. How to read it correctly? We have to remember operators' precedence. The first thing to evaluate is wrapped in parentheses, i.e. `'first' || 'second'`. If we execute this code, the output will be:
+  That's how we picture it in our minds, yet languages work differently, so this kind of code will lead to the wrong result. How do you read it correctly? We have to remember operator priority. The first thing to evaluate is wrapped in parentheses, i.e. `'first' || 'second'`. If we execute this code, the output will be:
 
   ```bash
   node
@@ -109,7 +109,7 @@ theory: |
   value === 'first'
   ```
 
-  Not what you might expect at all. Now back to the start, and write the test correctly:
+  Not what we expected at all. Now, back to the start. Let's write the test correctly:
 
   ```javascript
   // Parentheses are not necessary,
@@ -119,7 +119,7 @@ theory: |
 
 instructions: |
 
-  Write a function `getLetter()` to extract a certain character (by ordinal number, not an index) from the given string and return it. If there is no such character, the function returns an empty string.
+  Write a function, `getLetter()`,  to extract a certain character (by ordinal number, not an index) from a given string and return it. If there is no such character, the function returns an empty string.
 
   Examples:
 

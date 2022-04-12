@@ -3,7 +3,7 @@
 name: Predicates
 theory: |
 
-  Recall the `isInfant()` function from the last lesson:
+  Remember the `isInfant()` function from the last lesson:
 
   ```javascript
   const isInfant = (age) => age < 1;
@@ -12,9 +12,9 @@ theory: |
 
   <pre class='hexlet-basics-output'>false</pre>
 
-  This kind of function is called a predicate. Predicate functions answer a question and always (without exceptions!) return either `true` or `false`.
+  This kind of function is called a predicate. Predicate functions answer a question and always (without exception!) return either `true` or `false`.
 
-  Predicates usually have catchy names in every language for comfortable analysis. In JavaScript, predicates generally begin with the prefix `is`, `has`, or `can`, though not limited to those words. Examples:
+  Predicates usually have handy names in every language for simplicity of analysis. In JavaScript, predicates generally begin with `is`, `has`, or `can`, though it's not limited to just those words. Examples:
 
     * `isInfant()` - "is he an infant?"
     * `hasChildren()` - "does he have children?"
@@ -53,4 +53,4 @@ instructions: |
 
 definitions:
   - name: "Predicate"
-    description: "is an expression answering a yes or no question with a boolean."
+    description: "is an expression that answers a yes or no question with a boolean."
