@@ -3,26 +3,26 @@
 name: Naming styles
 theory: |
 
-  `greeting` is an example of a simple name, although not all of them are that simple. Rather often they are a compound of several words. For example, "user password". Different languages have different naming styles for variables.
+  `greeting` is an example of a simple name, although not all of them are that simple. Often, they are a combination of several words. For example, "user password". Different languages have different naming styles for variables.
 
-  Three main variable naming conventions are sometimes combined. These conventions apply to a variable name consisting of several words:
+  Three main variable naming conventions are sometimes combined. These conventions apply to variable names consisting of several words:
 
   * kebab-case – a hyphen separates the parts of the name. For example, `my-super-var`.
-  * snake_case - an underscore is a separator. For example, `my_super_var`.
-  * CamelCase - a name with each word capitalized. For example, `MySuperVar`.
-  * lowerCamelCase - each word capitalized except the first. For example, `mySuperVar`.
+  * snake_case - an underscore is used as a separator. For example, `my_super_var`.
+  * CamelCase - each word in the name is capitalized. For example, `MySuperVar`.
+  * lowerCamelCase - each word is capitalized except the first. For example, `mySuperVar`.
 
-  Javascript uses CamelCase and its variation lowerCamelCase, with the first letter of the first word in lowercase. It is the lowerCamelCase that we use for variables. It means we concatenate the words, and all but the first name capitalized: `userName`. With three words it looks like this: `mySuperVariable`.
+  Javascript uses CamelCase and its variation lowerCamelCase, with the first letter of the first word in lowercase. We use lowerCamelCase for variables. It means we concatenate the words, and all the words apart from the first are capitalized: `userName`. With three words it looks like this: `mySuperVariable`.
 
 
 instructions: |
 
   Create two variables named "first number" and "second number" using lowerCamelCase. Assign `11` to the first variable and `-100` to the second. Print their product.
 
-  The code will work with any name, and we always check only the printed result, so the task is up to you.
+  The code will work with any name, and we only check the printed result, so the task is up to you.
 
 tips: []
 
 definitions:
-  - name: Coding standard
-    description: is a list of syntax and style conventions for code writing.
+  - name: Coding standards
+    description: are a list of syntax and style conventions for code writing.
