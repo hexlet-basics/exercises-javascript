@@ -3,13 +3,13 @@
 name: Параметры функций
 theory: |
 
-  To add parameters to your function, simply specify them within parentheses in function definition. Below is an example of a function returning the last string character:
+  To add parameters to your function, simply specify them within parentheses when defining your function. Below is an example of a function returning the last character of a string:
 
   ```javascript
   // str - parameter
   const getLastChar = (str) => {
     // calculate the index of the last character
-    // extract and return it
+    // extract it, and return it
     return str[str.length - 1];
   };
 
@@ -17,13 +17,13 @@ theory: |
   getLastChar('Goo'); // "o"
   ```
 
-   `getLastChar()` function has only one parameter - the `str` variable. When calling a function, it's replaced by a particular value specific to each call. But this code won't work:
+   The `getLastChar()` function has only one parameter - the `str` variable. When calling a function, it's replaced by a particular value specific to each call. But this code won't work:
 
   ```javascript
   const getLastChar = ('some string') => {
   ```
 
-  A specific value can't be a parameter, the meaning of a parameter is that the value reveals only from a particular call, so there must be variable names in the definition.
+  A specific value can't be a parameter, the point of a parameter is that the value itself will only be revealed when a specific call is made, so there must be names of variables in the definition.
 
   A function can have two, three or more parameters. Below is an example of a function that finds the average between two numbers:
 
@@ -45,7 +45,7 @@ theory: |
   round(1, 10.32); // 1
   ```
 
-  If you pass more parameters than defined, JavaScript will ignore the extra. Otherwise, the value of missed parameters will become `undefined`.
+  If you pass more parameters than defined, JavaScript will ignore the extra ones. Otherwise, values of missed parameters will be `undefined`.
 
   ```javascript
   average(10, 10, 10); // 10
@@ -53,23 +53,23 @@ theory: |
   average(10); // NaN
   ```
 
-  There is no practical sense in this code, but you can write it by mistake. So it's worth knowing about this kind of behavior to be able to recognize the error and fix it.
+  There is no real point to this code, but it's possible to write it by mistake. So it's worth knowing about this kind of behavior to be able to recognize the error and fix it.
 
-  Parameters in JavaScript are often called arguments. In programming, you'll come across these words often as synonyms. But there is still a slight difference between them. Technically, parameters are set when you define a function in parentheses, and arguments are what's passed to the function when it's called.
+  Parameters in JavaScript are often called arguments. In programming, you'll come across these words often as synonyms. But there is still a slight difference between them. Technically, parameters are set in the parentheses when you define a function, and arguments are what's passed to the function when it's called.
 
 instructions: |
 
   Write a `truncate()` function that cuts off the text you pass and adds an ellipsis at the end. This kind of logic is often used on websites to display long text in shortened form.
 
   ```javascript
-  // The first parameter is a string, the second is a number of characters to keep
+  // The first parameter is a string, the second is the number of characters to keep
   truncate('hexlet', 2); // "he..."
 
   const result = truncate("Leather bags invented the three laws of robotics, but we'll outsmart them", 48);
   // "Leather bags invented the three laws of robotics..."
   ```
 
-  To get a substring (or a character) from a string, use the [slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice) method:
+  If you want to get a substring (or a character) from a string, use the [slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice) method:
 
     ```javascript
     'welcome'.slice(2, 5); // "lco"
