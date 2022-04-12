@@ -3,7 +3,7 @@
 name: Optional function parameters
 theory: |
 
-  In programming, many functions and methods have parameters that are rarely changed. In such cases, these parameters are given default values that can be changed as needed. It reduces the amount of duplicates in a code. An example:
+  In programming, many functions and methods have parameters that rarely change. In such cases, these parameters are given default values that can be changed as needed. This reduces the number of duplicates in your code. An example:
 
   ```javascript
   // Exponentiation function.
@@ -17,7 +17,7 @@ theory: |
   pow(3, 3); // 27
   ```
 
-  The default value looks like a normal assignment within definition. It only works if the parameter is not passed. You should get used to it. The default value can be even when there is only one parameter:
+  The default value looks like a normal assignment within the definition. It only works if the parameter is not passed. This is something you should get used to. There can even be a default value when there is only one parameter:
 
   ```javascript
   const print = (text = 'nothing') => console.log(text);
@@ -32,7 +32,7 @@ theory: |
   const f = (a = 5, b = 10, c = 100) => { ... }
   ```
 
-  The default values have one limitation. They should take place at the very end of the parameter list. From the syntax point of view, it's impossible to create a function that will have a mandatory parameter next to the optional one:
+  The default values have one limitation. They should be at the very end of the parameter list. From the point of view of syntax, it's impossible to create a function that will have a mandatory parameter after an optional one:
 
   ```javascript
   // Such code will terminate with an error
@@ -49,10 +49,10 @@ theory: |
 
 instructions: |
 
-  Write the `getHiddenCard()` function, which takes the credit card number (consisting of 16 digits) as a string and returns its hidden version, which can be used on the website to display. If the original card had the number *2034399002125581*, the hidden version will look like *\*\*\*\*5581*. In other words, the function replaces the first 12 digits with asterisks. The number of asterisks is specified by a second optional parameter. Its default value is 4
+  Write a function, `getHiddenCard()`, which takes a credit card number (consisting of 16 digits) as a string and returns its hidden version, which can be used on the website to display. If the original card had the number *2034399002125581*, the hidden version will look like *\*\*\*\*5581*. In other words, the function replaces the first 12 digits with asterisks. The number of asterisks is specified by a second optional parameter. Its default value is 4
 
   ```javascript
-  // The credit card passed as a string
+  // The credit card number is passed as a string
   getHiddenCard("1234567812345678", 2); // "**5678"
   getHiddenCard("1234567812345678", 3); // "***5678"
   getHiddenCard('1234567812345678');    // "****5678"
