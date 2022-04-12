@@ -3,9 +3,9 @@
 name: Negation
 theory: |
 
-  Along with the conjunction (AND) and disjunction (OR) we often use the "negation" operator. It changes the logical value to the opposite one. It is denoted by the unary operator `!` in programming.
+  Along with the conjunction (AND) and disjunction (OR) we often use the "negation" operator, too. It changes the logical value to the opposite one. It is denoted by the unary operator `!` in programming.
 
-  If there is a function that checks for even numbers, then the negation allows you to check for odd numbers:
+  If there is a function that checks for even numbers, then negation will allow you to check for odd numbers:
 
   ```javascript
   const isEven = (number) => number % 2 === 0;
@@ -14,11 +14,11 @@ theory: |
   !isEven(10); // false
   ```
 
-  So we just put `!` to the left of the function call and get the opposite result.
+  I.e., we can just put a `!` to the left of the function call and get the opposite result.
 
   Negation is a powerful tool that allows you to concisely express the desired rules in your code without having to write new functions.
 
-  How about writing `!!isEven(10)` like this? Suddenly, the code would work. Double negation in logic is equivalent to no negation at all.
+  What if you wrote `!!isEven(10)` like this? Suddenly, the code would work. Double negation in logic is equivalent to no negation at all.
 
   ```javascript
   isEven(10);   // true
@@ -28,7 +28,7 @@ theory: |
 
 instructions: |
 
-  1. Write the `isPalindrome()` function to check if a word is a palindrome. A palindrome is a word that reads the same backward as forward.
+  1. Write a function, `isPalindrome()`, to check if a word is a palindrome. A palindrome is a word that reads the same backwards as it does forwards.
 
     ```javascript
     isPalindrome('refer'); // true
@@ -36,7 +36,7 @@ instructions: |
     isPalindrome('hexlet'); // false
 
     // You can pass words to the function in any case
-    // So first you have to bring the word to the lowercase: word.toLowerCase()
+    // So first you have to make the word lower case: word.toLowerCase()
     isPalindrome('Madam'); // true
     ```
 
@@ -46,7 +46,7 @@ instructions: |
     reverse('hexlet'); // 'telhex'
     ```
 
-  2. Write the `isNotPalindrome()` function to check whether a word is NOT a palindrome:
+  2. Write a function, `isNotPalindrome()`, to check if a word is NOT a palindrome:
 
     ```javascript
     isNotPalindrome('level'); // false
@@ -54,7 +54,7 @@ instructions: |
     isNotPalindrome('hexlet'); // true
     ```
 
-  All you need is to negate `isPalindrome()` function call within `isNotPalindrome()` function body.
+  All you need is to negate the `isPalindrome()` function call within the `isNotPalindrome()` function's body.
 
 tips:
   - |
