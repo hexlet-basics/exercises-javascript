@@ -23,4 +23,4 @@ instructions: |
 
 definitions:
   - name: Variable
-    description: is a means to save the data and name it for later use in the code.
+    description: is a way to save data under a name for later use in code.
