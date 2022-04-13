@@ -6,11 +6,11 @@ theory: |
   Dealing with loops usually comes down to two cases:
 
   1. Aggregation. Accumulation of data during iterations and handling it after the loop. String reversal is just one of these cases.
-  2. Executing a loop until you get the required result and break from it. For example, the task of finding prime numbers. Recall that a prime number is a number divided without a remainder by itself and one.
+  2. Executing a loop until you get the required result and breaking from it. For example, if the job of the loop is to find prime numbers. Remember that a prime number is a number that can only be divided without a remainder by itself and by one.
 
-  Consider a simple algorithm to check the prime numbers. We will divide a given number `x` by all numbers in the range from 2 to `x - 1` and check the remainder. If in this range we don't find a divisor that divides the number `x` without a remainder, then we are looking at a prime number.
+  Consider a simple algorithm to check prime numbers. We will divide a given number `x` by all numbers between 2 and `x - 1` and check the remainder. If we don't find a divisor that divides the number `x` without a remainder in this range, then we are looking at a prime number.
 
-  If you ponder about it, you will find it sufficient to check numbers not up to `x - 1`, but up to half a given number. For example, 11 is not divisible by 2, 3, 4, 5. But it's also guaranteed that it can't divide by numbers greater than its half. So, you can do a little optimization and check the division only up to `x / 2`.
+  If you think about it, it's actually enough to check numbers not up to `x - 1`, but up to half the given number. For example, 11 is not divisible by 2, 3, 4, or 5. But it's also guaranteed that it can't be divided by numbers greater than its half. So, you can do a little optimization and check division only up to `x / 2`.
 
   ```javascript
   const isPrime = (number) => {
@@ -37,13 +37,13 @@ theory: |
   isPrime(4); // false
   ```
 
-  The algorithm is checking if during the successive division by numbers up to `x / 2` there is at least one result without a remainder, then a given argument is not a prime number, and therefore further computations are pointless. At this point, it returns `false`.
+  The algorithm is built like so: if during the successive division by numbers up to `x / 2`, there is at least one result without a remainder, then the given argument is not a prime number, and therefore further computations are pointless. At this point, it returns `false`.
 
-  And only if the entire loop is completed, we can say the number is prime, since no number that divides it without a remainder was found.
+  And only if the entire loop is completed can we say that the number is prime since no number by which it can be divided without a remainder can be found.
 
 instructions: |
 
-  Write the `hasChar()` function checking whether a string contains a given character (case-sensitive). The function takes two parameters:
+  Write a function, `hasChar()`, checking whether a string contains a given character (case-sensitive). The function takes two parameters:
 
   * String
   * Character to look for

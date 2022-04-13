@@ -3,7 +3,7 @@
 name: Data aggregation (strings)
 theory: |
 
-  You can use aggregation with strings as well as with numbers. Mostly, for a dynamic generation of a string, where you don't know in advance what size it will be and what it will contain.
+  You can use aggregation with strings as well as with numbers. In most cases, this applies to dynamic string generation, where you don't know in advance what size the string will be and what it will contain.
 
   Imagine a function "multiplying" a string, that is, repeating a string a given number of times:
 
@@ -11,11 +11,11 @@ theory: |
   repeat('hexlet', 3); // 'hexlethexlethexlet'
   ```
 
-  The core mechanism of this function is plain: the loop "increments" the string a given number of times:
+  The core mechanism of this function is simple, the loop "increments" the string a given number of times:
 
   ```javascript
   const repeat = (text, times) => {
-    // Strings neutral element is an empty string
+    // A neutral element in terms of strings is an empty string
     let result = '';
     let i = 1;
 
@@ -29,7 +29,7 @@ theory: |
   };
   ```
 
-  Break down the code execution into steps:
+  Break down the code's execution into steps:
 
   ```javascript
   // Calling repeat('hexlet', 3);
@@ -41,7 +41,7 @@ theory: |
 
 instructions: |
 
-  Write a function `joinNumbersFromRange()`, which joins all range numbers into a string:
+  Write a function, `joinNumbersFromRange()`, which joins all numbers in a range into a string:
 
   ```javascript
   joinNumbersFromRange(1, 1); // '1'
