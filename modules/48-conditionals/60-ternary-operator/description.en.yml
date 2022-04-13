@@ -3,7 +3,7 @@
 name: Ternary operator
 theory: |
 
-  Look at the definition of the function returning the modulus of a given number:
+  Look at the definition of this function, which returns the modulus of a given number:
 
   ```javascript
   const abs = (number) => {
@@ -18,7 +18,7 @@ theory: |
   abs(-10); // 10
   ```
 
-  Can we write it more concisely? Something like `return <return depending on the condition>`? That would require an expression to the right of return, but `if` is a statement, not an expression.
+  Can we write it more concisely? Something like `return <something depending on the condition>`? That would require an expression following return, but `if` is a statement, not an expression.
 
   We have a construct in JavaScript that works the same way as the *if-else* construct, except it's an expression. It's called the **ternary operator**.
 
@@ -30,7 +30,7 @@ theory: |
   };
   ```
 
-  General pattern: `<predicate> ? <expression on true> : <expression on false>`.
+  The general pattern looks like this: `<predicate> ? <expression on true> : <expression on false>`.
 
   Here is a shortened version of the `abs()` function:
 
@@ -42,7 +42,7 @@ theory: |
 
   Let's rewrite the initial version of `getTypeOfSentence()` in the same way:
 
-  It was:
+  Before:
 
   ```javascript
   const getTypeOfSentence = (sentence) => {
@@ -56,7 +56,7 @@ theory: |
   };
   ```
 
-  It became:
+  After:
 
   ```javascript
   const getTypeOfSentence = (sentence) => {
@@ -71,11 +71,11 @@ theory: |
 
   ---
 
-  If you remember the strength of expressions, you probably figured out by now that you can put a ternary operator into a ternary operator. ** Don't do it :)** Such code is hard both to read and debug, it's a very bad practice.
+  If you remember the main strength of expressions, then you probably figured out by now that you can put a ternary operator into a ternary operator. ** Don't do it :)** Such code is hard both to read and to debug, it's very bad practice.
 
 instructions: |
 
-  Write the `convertText()` function which takes a string as input, and if the first letter is not capitalized, returns an inverted version of that string. If the first letter is capitalized, it returns the string unchanged. If the input is an empty string, the function must return an empty string.
+  Write a function `convertText()`, which takes a string as input, and if the first letter is not capitalized, returns a reversed version of that string. If the first letter is capitalized, it returns the string unchanged. If the input is an empty string, the function must return an empty string.
 
   Examples:
 
@@ -94,17 +94,17 @@ instructions: |
   console.log(result); // => '!olleH'
   ```
 
-  There are various approaches to solve this problem. You may want to use the [toUpperCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase) method and the feature of getting a character from a string (for example, `str[0]`).
+  There are various approaches to solve this problem. You may want to use the [toUpperCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase) method and the feature that allows you to get a character from a string (for example, `str[0]`).
 
-  Try to write two versions of the function: with usual if-else, and with ternary operator.
+  Try to write two versions of the function: with the usual if-else, and with a ternary operator.
 
   ## Tips
 
-  * Consider the first condition you need to write: a capitalization check or an empty line check. Which is primary?
+  * Consider the first condition you need to write. Is it a capitalization check or an empty line check? Which is primary?
 
 tips: []
 
 definitions:
   - name: Ternary operator
     description: |
-      is a way to convert a simple conditional statement into an expression, e.g. `number >= 0 ? number : -number`.
+      is a way to convert a simple conditional statement into an expression, e.g., `number >= 0 ? number : -number`.

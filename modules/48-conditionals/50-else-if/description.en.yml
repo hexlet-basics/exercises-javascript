@@ -3,7 +3,7 @@
 name: else if statement
 theory: |
 
-  The `getTypeOfSentence()` function from the previous lesson only distinguishes between question and normal sentences. Let's try to extend it to exclamation sentences:
+  The `getTypeOfSentence()` function from the previous lesson only distinguishes between questions and normal sentences. Let's try to extend it to exclamation sentences:
 
   ```javascript
   const getTypeOfSentence = (sentence) => {
@@ -28,12 +28,12 @@ theory: |
   getTypeOfSentence('No!');  // 'Sentence is exclamation'
   ```
 
-  We add one more test. Technically the function works, but there are semantics issues.
+  We added one more test. Technically the function works, but there are semantics issues.
 
   - It tests for the question mark in any case, regardless of whether an exclamation point was found or not.
   - The `else` branch is defined for the first condition, not for the second.
 
-  It would be wiser to use another feature of the conditional construct:
+  It would be better to use another condition feature:
 
   ```javascript
   const getTypeOfSentence = (sentence) => {
@@ -56,19 +56,19 @@ theory: |
   getTypeOfSentence('No!');  // 'Sentence is exclamation'
   ```
 
-  Now all the conditions are framed in a single construction. The `else if` is "if the previous condition is not satisfied, while the current condition one is". This is the scheme:
+  Now all the conditions are framed in a single construction. `else if` means "if the previous condition is not satisfied, but this condition is". This is the scenario we get:
 
-  - if the last character is `?`, the `'question'`
-  - else, if the last character is `!`, then `'exclamation'`
-  - else `'normal'`.
+  - if the last character is `?`, then it's a `'question'`
+  - else, if the last character is `!`, then it's an `'exclamation'`
+  - else it's `'normal'`.
 
-  Only one of the code blocks belonging to the entire `if` construct will execute.
+  Only one of the code blocks belonging to the entire `if` construct will be executed.
 
 instructions: |
 
-  The digital map of Westeros that Sam implemented shows Stark allies in green, enemies in red, and neutral families in gray.
+  The digital map of Westeros that Sam has made shows Stark allies in green, enemies in red, and neutral families in gray.
 
-  Write the function `whoIsThisHouseToStarks()` for Sam taking the family name as input and returning one of three values: `'friend'`, `'enemy'`, `'neutral'`.
+  Write a function, `whoIsThisHouseToStarks()`, which takes a family name as input and returns one of three values: `'friend'`, `'enemy'`, `'neutral'`.
 
   Rules:
 

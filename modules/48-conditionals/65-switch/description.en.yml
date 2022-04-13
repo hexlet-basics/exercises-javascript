@@ -3,7 +3,7 @@
 name: switch statement
 theory: |
 
-  Many languages contain **switch** in addition to the conditional *if* construct. This is a customized version of *if*, designed for special cases. For example, you can use it where there is an *if else* chain with equality checks:
+  Many languages contain a **switch** statement in addition to the conditional *if* construct. This is a specialized version of *if*, designed for certain cases. For example, you can use it where there is an *if else* chain with equality checks:
 
   ```javascript
   if (status === 'processing') {
@@ -17,7 +17,7 @@ theory: |
   }
   ```
 
-  This compound check has one distinctive feature: each branch here is a check of the `status` variable value. 'Switch' allows to write such code in a shorter and more expressive way:
+  This compound check has one distinctive feature: each branch here is a check of the value of the `status` variable. 'Switch' allows you to write this code in a shorter and more expressive way:
 
   ```javascript
   switch (status) {
@@ -38,10 +38,10 @@ theory: |
   Switch is a rather advanced construct considering the number of elements it consists of:
 
   * An external definition containing the keyword `switch`. A variable whose values `switch` will use to select a behavior. And curly brackets for behavior branches.
-  * The `case` and `default` constructs, where the behavior for different variable values is described. Each `case` corresponds to `if` in the example above. `default` is a special condition corresponding to the `else` branch in conditionals. Neither `else` nor `default` is necessary (but the linter always [asks for it](https://eslint.org/docs/rules/default-case)).
-  * `break` is needed to prevent "fall-through". If `break` is omitted, the program continues execution at the next `case` statement after the required `case` is executed until the next `break` or the end of *switch*.
+  * The `case` and `default` constructs, where the behavior for different values of the variable is described. Each `case` corresponds to `if` in the example above. `default` is a special condition corresponding to the `else` branch in conditionals. Neither `else` nor `default` is necessary (but the linter will always [ask for it](https://eslint.org/docs/rules/default-case)).
+  * `break` is needed to prevent it from "falling through". If `break` is omitted, then the program will continue to the next `case` statement after the required `case`, and carry on until the next `break` or the end of the *switch*.
 
-  The curly brackets in `switch* don't specify a code block unlike elsewhere. Only the syntax shown above is acceptable. Meaning, you can use `case` or `default` there. But inside each `case` (and `default`) things are different. You can execute any arbitrary code here:
+  The curly brackets in `switch* don't specify a code block unlike elsewhere. Only the syntax shown above is acceptable. In other words, you can use `case` or `default` there. But inside each `case` (and `default`), the situations are different. You can execute any arbitrary code here:
 
   ```javascript
   switch (count) {
@@ -56,9 +56,9 @@ theory: |
   }
   ```
 
-  Sometimes the `case` output is the end of a function containing *switch*. If this happens, you need to return it outside somehow. There are two ways to solve this problem.
+  Sometimes the output of the `case` is the end of a function containing *switch*. If this happens, you need to return it outside somehow. There are two ways to solve this problem.
 
-  First. Create a variable before *switch*, fill it in *case* and then, at the end, return the value of that variable to the outside.
+  The first way. Create a variable before *switch*, fill it in *case*, and then return the value of that variable outside at the end.
 
   ```javascript
   (count) => {
@@ -101,7 +101,7 @@ theory: |
 
 instructions: |
 
-  Write the `getNumberExplanation()` function that describes a given input number. If there is no explanation available, it returns `null`:
+  Write a function, `getNumberExplanation()`, that describes an input number passed to it. If there is no explanation available, it returns `null`:
 
   ```javascript
   getNumberExplanation(8);   // null
