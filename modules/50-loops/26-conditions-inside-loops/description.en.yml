@@ -3,20 +3,20 @@
 name: Conditions inside loops
 theory: |
 
-  The loop body, as well as the function body, is where the statements execute. So we can use everything we already learned inside it, such as conditionals.
+  Both the loop body and function body are places where statements are executed. So we can use everything we already learned inside it, such as conditionals.
 
-  Imagine a function that counts the number of times a letter appears in a sentence. A sample of its work:
+  Imagine a function that counts the number of times a letter appears in a sentence. Here's how it might work:
 
   ```javascript
   countChars('Fear cuts deeper than swords.', 'e'); // 4
-  // If there is no matches the result is 0
+  // If there are no matches, the result is 0
   countChars('Sansa', 'y'); // 0
   ```
 
-  Before examining its contents, answer the questions:
+  Before examining its contents, answer these questions:
 
   * Is this an aggregate operation?
-  * What will be a test condition for character occurence?
+  * What will be the test condition for whether or not the character occurs?
 
   ```javascript
   const countChars = (str, char) => {
@@ -27,7 +27,7 @@ theory: |
         // Count only relevant characters
         count = count + 1;
       }
-      // Counter increases in any case
+      // Counter increases no matter what happens
       i = i + 1;
     }
 
@@ -35,15 +35,15 @@ theory: |
   };
   ```
 
-  It is an aggregate task. Despite that it doesn't count all characters, you still have to parse each character to calculate the sum.
+  This is an aggregate task. Although it doesn't count every character, you still have to parse through each character to calculate the sum.
 
-  The distinctive feature of this loop is the condition inside its body. The variable `count` only increases when the current character matches the expected one. 
+  A key feature of this loop is the condition inside its body. The variable `count` only increases when the current character matches the expected one. 
 
-  Apart from this, it is a generic aggregate function that returns the number of the required characters.
+  Apart from that, it is a generic aggregate function that returns the number of required characters.
 
 instructions: |
 
-  The function of the theory is case-sensitive. It means 'A' and 'a' from its point of view are different characters. Write a version of this function that is not case-sensitive:
+  The function from the theory is case-sensitive. It means 'A' and 'a' from its point of view are different characters. Write a version of this function that is not case-sensitive:
 
   ```javascript
   countChars('HexlEt', 'e'); // 2
