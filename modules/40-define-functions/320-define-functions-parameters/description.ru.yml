@@ -72,7 +72,7 @@ instructions: |
   console.log(result); // => 'it w...'
   ```
 
-  В этой задаче вам нужно взять подстроку из строки, переданной первым параметром. Для этого вам понадобится метод [slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice). Подумайте исходя из задания, с какого индекса и по какой вам надо извлечь подстроку?
+  В этой задаче вам нужно взять подстроку из строки, переданной первым параметром в функцию. Для этого вам понадобится метод [slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice). Подумайте исходя из задания, с какого индекса и по какой вам надо извлечь подстроку?
 
 
     ```javascript
