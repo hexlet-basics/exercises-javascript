@@ -23,10 +23,10 @@ instructions: |
 
   Create a variable storing the number of my brothers and assign it a value of *2*. Print it. After completing the tests, compare your name with the teacher's variable name in the solution.
 
-tips:
-  - |
-    [Naming in programing](https://ru.hexlet.io/blog/posts/naming-in-programming)
-  - |
-    [Variable naming mistakes](https://ru.hexlet.io/blog/posts/naming-errors-1)
+#tips:
+# - |
+# [Naming in programing](https://ru.hexlet.io/blog/posts/naming-in-programming)
+# - |
+#   [Variable naming mistakes](https://ru.hexlet.io/blog/posts/naming-errors-1)
 
 definitions: []
