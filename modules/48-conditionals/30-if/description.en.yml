@@ -5,7 +5,7 @@ theory: |
 
   Conditional statements control the program's behavior depending on the conditions we want to test. They allow us to write complex programs that behave differently depending on the situation.
 
-  Consider a function recognizing the type of a passed sentence. To begin with, it will distinguish between normal and question sentences.
+  Consider a function to which we can pass a sentence and determine what type of sentence it is. To begin with, it will distinguish between normal sentences and question sentences.
 
   ```javascript
   const getTypeOfSentence = (sentence) => {
@@ -21,13 +21,13 @@ theory: |
   getTypeOfSentence('Hodor?'); // question
   ```
 
-  `if` is a construct controlling the order in which the statements are executed. It gets a predicate expression in parentheses and then defines a code black in curly brackets. This code block executes only if the predicate is true.
+  `if` is a construct that controls the procedure by which statements are executed. You need to pass predicate expression to it in parentheses and then define a block of code in curly brackets. This code block executes only if the predicate is true.
 
-  If the predicate is false, we skip the code block in curly brackets, and the function keeps executing. Here the next line of code, `return 'general';`, causes the function to return a string and terminate.
+  If the predicate is false, we skip the code block in curly brackets, and the function keeps executing. Here, the next line of code, `return 'general';`, causes the function to return a string and terminate.
 
   As you can see, `return` can be anywhere in a function. Including the interior of a conditional code block.
 
-  If the curly brackets after `if` contains only one line of code, you can leave out the braces:
+  If the curly brackets after `if` contains only one line of code, you can leave out the brackets:
 
   ```javascript
   const getTypeOfSentence = (sentence) => {
@@ -42,11 +42,11 @@ theory: |
   console.log(getTypeOfSentence('Hodor?')); // => question
   ```
 
-  We advise against it and **always use curly brackets**. So you can clearly see where the conditional's body starts and ends. The code becomes smoother and more readable.
+  We advise against it and to **always use curly brackets**. That way you can clearly see where the conditional's body starts and ends. The code becomes clearer and more readable.
 
 instructions: |
 
-  Write the `guessNumber()` function to take a number and check if it's equal to a given number (let it be 42). If it's equal, the function should return the string `You win!'`; otherwise, it should return the string `'Try again!'`.
+  Write a function, `guessNumber()`, to take a number and check if it's equal to a given number (say, for example, 42). If it's equal, the function should return the string `You win!'`; otherwise, it should return the string `'Try again!'`.
 
   ```javascript
   guessNumber(42) # 'You win!'
