@@ -38,7 +38,7 @@ theory: |
 
   On the other hand, functions that work with a particular number should be implemented as methods for the sake of consistency. Such functions include calculating the modulus of a number. I.e., instead of `Math.abs(-10)`, it's more reasonable to have `(-10).abs()`.
 
-  As for methods in general, things are not so straightforward. Some languages have no methods and have no issues. Other languages use methods as the main tool for building functions, and even here regular functions are always used along with methods. JavaScript is a language that uses both approaches and actively uses both normal functions and methods. The pros and cons of these approaches are described in detail in the Object-Oriented Programming (OOP) courses. 
+  As for methods in general, things are not so straightforward. Some languages have no methods and have no issues. Other languages use methods as the main tool for building functions, and even here regular functions are always used along with methods. JavaScript is a language that uses both approaches and actively uses both normal functions and methods. 
 
 instructions: |
   Convert the string text to lowercase and print it.
