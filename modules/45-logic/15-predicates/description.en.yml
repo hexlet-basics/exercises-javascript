@@ -47,9 +47,9 @@ instructions: |
   isMister('Miss');   // false
   ```
 
-# tips:
-# - |
-#    [Именование в программировании](https://ru.hexlet.io/blog/posts/naming-in-programming)
+tips:
+ - |
+    [Naming In Programming](https://en.hexlet.io/blog/posts/code-complete-naming-in-programming)
 
 definitions:
   - name: "Predicate"
