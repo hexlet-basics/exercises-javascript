@@ -76,4 +76,6 @@ instructions: |
 
   In tasks where you have to implement a function, you don't need to call it. Automated tests will call this function to check if it works. The example call above is shown just to give you an idea of how your function will be used.
 
-tips: []
+tips:
+  - |
+    [Naming In Programming](https://en.hexlet.io/blog/posts/code-complete-naming-in-programming)
