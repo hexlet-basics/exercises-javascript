@@ -26,7 +26,7 @@ theory: |
     const email = "  SuppORT@hexlet.IO";
     // обрезаем пробельные символы
     const trimmedEmail = email.trim();
-    preparedEmail = trimmedEmail.toLowerCase();
+    const preparedEmail = trimmedEmail.toLowerCase();
     console.log(preparedEmail);
     // здесь будет запись в базу данных
   }
