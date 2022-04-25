@@ -3,7 +3,7 @@
 name: Calling functions
 theory: |
 
-  Addition, concatenation, finding the remainder, and the other operations discussed are all basic programming language features. Math is not limited to arithmetic, there are many other domains with their own operations, e.g., geometry. TThe same goes for strings: you can flip them, change a letter's case, delete extra characters – and that's just the tip of the iceberg. And finally, at a higher level, there is the applied logic of a particular program. Programs withdraw money, calculate taxes, and generate reports. The number of these jobs is endless and different for each program. And they all have to be somehow expressed in code.
+  Addition, concatenation, finding the remainder, and the other operations discussed are all basic programming language features. Math is not limited to arithmetic, there are many other domains with their own operations, e.g., geometry. The same goes for strings: you can flip them, change a letter's case, delete extra characters – and that's just the tip of the iceberg. And finally, at a higher level, there is the applied logic of a particular program. Programs withdraw money, calculate taxes, and generate reports. The number of these jobs is endless and different for each program. And they all have to be somehow expressed in code.
 
   The notion of a *function* expresses any arbitrary operation in programming. Functions can be both built-in and manually written by a programmer. We are already familiar with one built-in function, `log()`, when we call `console.log()`.
 
