@@ -21,13 +21,13 @@ theory: |
 
   ```javascript
   switch (status) {
-    case 'processing': // status == processing
+    case 'processing': // status === processing
       // First
       break;
-    case 'paid': // status == paid
+    case 'paid': // status === paid
       // Second
       break;
-    case 'new': // status == new
+    case 'new': // status === new
       // Third
       break;
     default: // else
