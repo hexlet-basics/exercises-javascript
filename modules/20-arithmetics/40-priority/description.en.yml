@@ -31,7 +31,7 @@ theory: |
   console.log(((8 / 2) + 5) - (-3 / 2)); // => 10.5
   ```
 
-  Note: code is written for humans, since they'll be the ones to read it, the machine just executes it. FFor the machine, code is either valid or invalid, it doesn't recognize "more" or "less" valid code.
+  Note: code is written for humans, since they'll be the ones to read it, the machine just executes it. For the machine, code is either valid or invalid, it doesn't recognize "more" or "less" valid code.
 
 instructions: |
 
