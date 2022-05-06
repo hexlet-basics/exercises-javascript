@@ -15,7 +15,7 @@ theory: |
 
   Not all languages can do this. JavaScript is a weakly typed language. It recognizes different data types (numbers, strings, etc.), but doesn't use them too strictly, trying to convert data when it seems reasonable. JavaScript sometimes even rushes into extremes. Most expressions that don't work in other languages work perfectly well in JavaScript. Try to perform any arithmetic operation (except addition) with strings or another data type (except when both operands are numbers or strings consisting only of numbers). You will see that they always work and return `NaN`, which makes sense.
 
-  ```
+  ```javascript
   const result = 'one' * 'two';
   console.log(result); // => NaN
   ```
