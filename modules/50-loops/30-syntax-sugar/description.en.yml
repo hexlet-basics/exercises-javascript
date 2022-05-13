@@ -20,7 +20,7 @@ instructions: |
   ```javascript
   const str = 'If I look back I am lost';
   filterString(str, 'I'); // 'f  look back  am lost'
-  filterString(str, 'o'); // 'If I lk back I am lst'
+  filterString('zz Zorro', 'z'); // ' Zorro'
   ```
 
 tips: []
