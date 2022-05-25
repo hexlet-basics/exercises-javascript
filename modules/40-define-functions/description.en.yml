@@ -2,4 +2,4 @@
 
 name: Function definition
 description: |
-  Logical expressions allow you to answer questions that arise during program execution. Is the user authenticated? Is the subscription paid? Is it a leap year? In this module, you will learn predicate functions which pose the true/false question and answer it. We are going to practice writing these functions and move on to more complex logical expressions.
+  Defining your own functions makes writing and maintaining programs much easier. The ability to define functions, for example, allows complex (composite) operations to be merged into a single operation, with the complexity hidden behind a simple function. Learn to write functions and take the first step toward creating truly useful programs. This module will teach you how to name functions (as well as variables and constants) and create your own.
