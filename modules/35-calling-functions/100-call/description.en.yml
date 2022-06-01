@@ -20,7 +20,7 @@ theory: |
   console.log(result); // => 6
   ```
 
-  A lyrical digression. The first line in this code is an imported function from another module. You will learn about importing and modules on Hexlet, and here they will be "as is" because we need to import to use functions defined in other files. Don't bother if you don't understand the meaning of this step, you can learn more about it in our course [Intro to Programming](https://en.hexlet.io/courses/intro_to_programming).
+  A lyrical digression. The first line in this code is an imported function from another module. You will learn about importing and modules on Hexlet, and here they will be "as is" because we need to import to use functions defined in other files. Don't bother if you don't understand the meaning of this step, you can learn more about it in our course [Programming fundamentals](https://en.hexlet.io/courses/intro_to_programming).
 
   Parameters (or arguments) represent the data the function receives when you call it. This data is what the function uses to compute something and return a result.
 
