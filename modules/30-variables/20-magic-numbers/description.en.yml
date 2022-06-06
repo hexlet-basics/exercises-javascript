@@ -30,9 +30,9 @@ theory: |
 
   Note the following details:
 
-  * lowerCamelCase naming.
-  * The two new variables are separated from the following computations by an empty line. These variables are meaningful even without a computation involved, which is why this separation is suitable here: it improves readability.
-  * The code is well named and structured, but it is longer than the previous version. It happens every so often and that's okay. The code must be readable.
+  * lowerCamelCase naming
+  * The two new variables are separated from the following computations by an empty line. These variables are meaningful even without a computation involved, which is why this separation is suitable here: it improves readability
+  * The code is well named and structured, but it is longer than the previous version. It happens every so often and that's okay. The code must be readable
 
 instructions: |
 
