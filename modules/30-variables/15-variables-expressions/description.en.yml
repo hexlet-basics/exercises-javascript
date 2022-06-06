@@ -1,6 +1,6 @@
 ---
 
-name: Define with expressions
+name: Defining with expressions
 theory: |
 
   Variables are helpful not only for storing and reusing data but also for simplifying complex calculations. Consider an example: you need to convert euros into rubles through dollars. Banks often do this kind of conversion via an intermediate currency when shopping abroad.
