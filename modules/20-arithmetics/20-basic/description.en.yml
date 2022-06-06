@@ -27,14 +27,14 @@ theory: |
   7
   ```
 
-  In addition, the following operations are available:
-  * `*` — multiplication
-  * `/` — division
-  * `-` — subtraction
-  * `%` — [modulo](https://en.wikipedia.org/wiki/Modulo_operation) (remainder after division)
-  * `**` — power
+  Besides addition, the following operations are available:
+  `*` — multiplication
+  `/` — division
+  `-` — subtraction
+  `%` — [modulo](https://en.wikipedia.org/wiki/Modulo_operation) (remainder after division)
+  `**` — power
 
-  Now let’s print the result of division, and then the result of exponentiation:
+  Now let's print the result of division, and then the result of exponentiation:
 
   ```javascript
   console.log(8 / 2);  // => 4

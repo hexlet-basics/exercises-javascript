@@ -34,11 +34,11 @@ theory: |
   There are two ways to fix this:
 
   ```javascript
-  // Both ways are functionally the same.
+  // Both ways are functionally the same
 
   // Put space in the end of the left part
   console.log("King's " + 'Landing'); //  => King's Landing
-  // Put space in the beginning of the right part 
+  // Put space in the beginning of the right part
   console.log("King's" + ' Landing'); //  => King's Landing
   ```
 

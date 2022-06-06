@@ -17,13 +17,13 @@ theory: |
 
   Any single character between parentheses is a string. The empty string `''` is also a string. So everything inside the quotation marks can be considered a string, even if it is a space, one character, or no characters at all.
 
-  In previous lessons, we enclosed strings in single quotes, you can also use double quotes:
+  In previous lessons, we enclosed strings in single quotes, but you can also use double quotes:
 
   ```javascript
   // Coding airbnb standard recommends
   // using single quotes where possible
 
-  console.log('Dracarys!');
+  console.log("Dracarys!");
   ```
 
   Imagine you want to print a string: _Dragon's mother_. The apostrophe before the letter **s** and a single quote are the same symbols. Let's print it:
@@ -56,7 +56,7 @@ theory: |
   To do this, you have to use **an escape character**. In our case, the character that starts and ends a string is either a single or a double quote, depending on the part of the code. Use a backslash `\` before the character you want to escape.
 
   ```javascript
-  // Only " is escaped, because in this code 
+  // Only " is escaped, because in this code
   // double quotes have a special meaning
 
   console.log("Dragon's mother said \"No\"");
@@ -80,7 +80,7 @@ theory: |
   // => \
   ```
 
-  Self-test: what will be printed? 
+  Self-test: what will be printed?
 
   ```javascript
   console.log("\\ \\ \\\\ \\\ \'\"");

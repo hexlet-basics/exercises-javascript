@@ -22,7 +22,7 @@ theory: |
   let greeting = 'Father!';
   ```
 
-  You can't do that. You'll have to create a new variable.
+  You can't do that. You have to create a new variable.
 
 instructions: |
 

@@ -1,6 +1,6 @@
 ---
 
-name: Loose typing
+name: Weak typing
 theory: |
 
   We know two different data types: numbers and strings. For example, we can add numbers, because addition is an operation for the "numbers" type.

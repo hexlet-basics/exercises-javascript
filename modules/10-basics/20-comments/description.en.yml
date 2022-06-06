@@ -18,12 +18,12 @@ theory: |
   console.log('I am the King'); // For Lannisters!
   ```
 
-  **Multiline comments** start with `/*` and end with `*/`. Each line between them should start with the `*`.
+  **Multiline comments** start with `/*` and end with `*/`.
 
   ```javascript
   /*
-   * The night is dark and
-   * full of terrors.
+    The night is dark and
+    full of terrors.
    */
   console.log('I am the King');
   ```
@@ -45,7 +45,7 @@ definitions:
 
       ```
       /*
-      * multiline comment
-      * multiline comment
+        multiline comment
+        multiline comment
       */
       ```
