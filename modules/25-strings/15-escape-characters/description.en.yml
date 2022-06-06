@@ -35,7 +35,7 @@ theory: |
   - Aaaarrrgh!
   ```
 
-  `\n` is a special symbol. It's often referred to as *LF* (Line Feed) in documentation. You may have initially thought it was a misprint, since there are two symbols - `\` and `n`, but this isn't the case. To the computer, this is no more than an invisible symbol to tell it to go to the next line. Proof:
+  `\n` is a special symbol. It's often referred to as *LF* (Line Feed, sometimes as line break or newline) in documentation. You may have initially thought it was a misprint, since there are two symbols - `\` and `n`, but this isn't the case. To the computer, this is no more than an invisible symbol to tell it to go to the next line. Proof:
 
   ```javascript
   // We haven't studied it yet, but you should know the truth
@@ -45,7 +45,7 @@ theory: |
   '\n'.length;   // 1 !!!
   '\n\n'.length; // 2 !!!
   ```
-  
+
   Why is it done in this way? `\n` is just a way to write a line break symbol. That's why line feed is just one character, just invisible. And it's also why this problem has arisen. There had to be a way of representing it using a keyboard. And since the number of keyboard characters is limited and they're all dedicated to very important things, special characters are entered using these escape sequences.
 
   The Line Feed symbol is not something specific to programming. Anyone who has ever typed on a computer has used the line feed by clicking Enter. Many editors can display these invisible characters, you can use this feature to see where they are (though it's only for display, these characters are invisible, they've no graphical representation):
@@ -75,7 +75,7 @@ theory: |
 
   Note:
 
-  1. It does not matter what comes before or after `\n`, whether it's a character or an empty string. The line feed will be detected and executed either way.
+  1. It does not matter what comes before or after `\n`, whether it's a character or an empty string. The line feed will be detected and executed either way
 
   2. Remember that a string can contain a single character or none at all. Additionally, a string can only contain `\n`. Analyze the following example:
 
@@ -110,13 +110,13 @@ theory: |
       Polliver
       Gregor Clegane<br>
       Chiswyck<br>
-      
+
       Dunsen
       </pre>
 
       Now you understand enough to figure out why the result was formed in this way.
 
-  3. If we need to print `\n` as a text (two separate characters), we can use the escape character, adding another `\` at the beginning. I.e., the sequence of `\n` will be printed as characters `\` and `n` following each other.
+  3. If we need to print `\n` as a text (two separate characters), we can use the escape character, adding another `\` at the beginning. I.e., the sequence of `\n` will be printed as characters `\` and `n` following each other
 
   ```javascript
   console.log('Joffrey loves using \\n');
