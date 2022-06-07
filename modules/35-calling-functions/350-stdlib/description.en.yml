@@ -9,9 +9,9 @@ theory: |
 
   Here are some tips to learn about new features:
 
-  * Always keep track of what you are working with (the data type) at the moment. You will most likely find the function you need in the appropriate chapter of the documentation. For example, you need to study string functions to work with strings.
-  * From time to time, open the standard functions section of the topic you are studying and just run through them, learning the signatures and ways to use them.
-  * Read other people's code more often, especially code from the libraries you're using. It's all available on GitHub.
+  * Always keep track of what you are working with (the data type) at the moment. You will most likely find the function you need in the appropriate chapter of the documentation. For example, you need to study string functions to work with strings
+  * From time to time, open the standard functions section of the topic you are studying and just run through them, learning the signatures and ways to use them
+  * Read other people's code more often, especially code from the libraries you're using. It's all available on GitHub
 
   The JavaScript standard library's structure has its peculiarities. Since the code can run in different environments, such as a server or a browser, the capabilities of the standard library are highly dependent on the use case. For example, you can't perform some server tasks in a browser. For server-side documentation, see https://nodejs.org. The server portions of the standard library are organized into modules, each module has its own page with full descriptions of all its functions. In particular, the module [fs](https://nodejs.org/api/fs.html) is required to work with the file system, its functions allow you to write and read files.
 
@@ -31,7 +31,7 @@ tips:
   - |
     [String functions docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
   - |
-    [How to search for technical information](https://guides.hexlet.io/how_to_search/)
+    [How to search for technical information](https://guides.hexlet.io/how-to-search/)
 
 definitions:
   - name: Standard library

@@ -3,7 +3,7 @@
 name: Properties
 theory: |
 
-  The data we utilize in our programs can have vital properties, for example, strings have length. As you will see later, this property is required to implement string conversion algorithms (e.g., string reversal). So how do you find out the length of a string? In many languages, string length is calculated with a special function, and it looks a bit like this:
+  The data we use in our programs can have important properties, such as strings having length. As you will see later, this property is required to implement string conversion algorithms (e.g., string reversal). So how do you find out the length of a string? In many languages, string length is calculated with a special function, and it looks a bit like this:
 
   ```javascript
   import { length } from 'hexlet-basics/string';
