@@ -29,7 +29,7 @@ theory: |
   // The definition doesn't call or execute a function
   // We're just declaring this function exists now
   const showGreeting = () => {
-    // Use 2-space indents inside the function body for readability 
+    // Use 2-space indents inside the function body for readability
     const text = 'Hello, Hexlet!';
     console.log(text);
   }
