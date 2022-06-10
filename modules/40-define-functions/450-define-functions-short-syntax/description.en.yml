@@ -41,7 +41,7 @@ theory: |
 
 instructions: |
 
-  Write a function, `capitalize()`, which takes a non-empty string and converts the first letter of the first word to uppercase:
+  Write the `capitalize()` function that takes a non-empty string and converts the first letter of the first word to uppercase:
 
   ```javascript
   const name = 'arya';

@@ -2,7 +2,7 @@
 
 name: While loop
 theory: |
-  
+
   Our code is getting more and more complex and extensive. It's still quite far from real applications, which contain tens or hundreds of thousands (sometimes millions) of lines of code. However, our code is already complex enough to make inexperienced programmers feel a bit tense. Starting from this lesson, we're moving on to one of the most difficult basic topics in programming: loops.
 
   All applications serve very pragmatic purposes. They help to manage employees, finances, and entertain, after all. Despite the differences, all these programs contain and execute similar algorithms. What's that? An algorithm is a sequence of actions (statements) which lead us to an expected result. This description fits any program in general, but with algorithms, we usually mean something more specific.
@@ -46,11 +46,11 @@ theory: |
 
   Here we use a `while` loop. It has three elements:
 
-  * The key word here is `while`. It is not a function call, although it resembles it.
+  * The keyword here is `while`. It is not a function call, although it resembles it
 
-  * Predicate. A condition given in parentheses after `while`. This condition must be evaluated and tested before executing the loop body at each iteration.
+  * Predicate. A condition given in parentheses after `while`. This condition must be evaluated and tested before executing the loop body at each iteration
 
-  * Loop body. Block of code in curly braces. This block is equivalent to the block of code in functions. Anything that is defined inside this block (constants or variables) is visible only within this block.
+  * Loop body. Block of code in curly braces. This block is equivalent to the block of code in functions. Anything that is defined inside this block (constants or variables) is visible only within this block
 
   You can read it as follows: "as long as the condition (predicate) `i <= lastNumber` is true, execute the code from the body of the loop". Let's analyze how this code works for a function call `printNumbers(3)`:
 
@@ -81,7 +81,7 @@ theory: |
   // function terminates
   ```
 
-  The main purpose of a loop is to end it (exit from a loop). The process which generates the loop must eventually stop. It's up to the programmer to stop it. Usually this comes down to introducing a variable called the "loop counter". The counter should first be initialized, that is, you must assign it an initial value. In our example, it's the statement `let i = 1`, which is executed before the loop. Then the loop condition checks to see if the counter has reached its limiting value. Finally, the counter changes its value to `i = i + 1`.
+  The main purpose of a loop is to end (exit from a loop). The process which generates the loop must eventually stop. It's up to the programmer to stop it. Usually this comes down to introducing a variable called the "loop counter". The counter should first be initialized, that is, you must assign it an initial value. In our example, it's the statement `let i = 1`, which is executed before the loop. Then the loop condition checks to see if the counter has reached its limiting value. Finally, the counter changes its value to `i = i + 1`.
 
   This is where beginners make the most mistakes. For example, accidentally forgetting to increment the counter or having an incorrect predicate check can lead to an infinite loop. In this case the loop works endlessly and the program never stops. We then have to end it forcibly (it may sometimes be the case that when real applications freeze, there is an infinite loop running inside them).
 
@@ -123,6 +123,6 @@ tips:
     [*while* loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
 
 definitions:
-  - name: | 
+  - name: |
       *while* loop
-    description: a statement that repeatedly executes code as long as a given test condition is true
+    description: is a statement that repeatedly executes code as long as a given test condition is true

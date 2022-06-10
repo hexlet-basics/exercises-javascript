@@ -71,11 +71,11 @@ theory: |
 
   ---
 
-  If you remember the main strength of expressions, then you probably figured out by now that you can put a ternary operator into a ternary operator. ** Don't do it :)** Such code is hard both to read and to debug, it's very bad practice.
+  If you remember the main strength of expressions, then you probably figured out by now that you can put a ternary operator into a ternary operator. **Don't do it :)** Such code is hard both to read and to debug, it's very bad practice.
 
 instructions: |
 
-  Write a function `convertText()`, which takes a string as input, and if the first letter is not capitalized, returns a reversed version of that string. If the first letter is capitalized, it returns the string unchanged. If the input is an empty string, the function must return an empty string.
+  Write the `convertText()` function that takes a string as input, and if the first letter is not capitalized, returns a reversed version of that string. If the first letter is capitalized, it returns the string unchanged. If the input is an empty string, the function must return an empty string.
 
   Examples:
 
@@ -94,7 +94,7 @@ instructions: |
   console.log(result); // => '!olleH'
   ```
 
-  There are various approaches to solve this problem. You may want to use the [toUpperCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase) method and the feature that allows you to get a character from a string (for example, `str[0]`).
+  There are various approaches to solve this problem. You may want to use the [toUpperCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase) method and feature that allows you to get a character from a string (for example, `str[0]`).
 
   Try to write two versions of the function: with the usual if-else, and with a ternary operator.
 
@@ -107,4 +107,4 @@ tips: []
 definitions:
   - name: Ternary operator
     description: |
-      is a way to convert a simple conditional statement into an expression, e.g., `number >= 0 ? number : -number`.
+      is a way to convert a simple conditional statement into an expression, e.g., `number >= 0 ? number : -number`

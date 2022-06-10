@@ -17,7 +17,7 @@ theory: |
   getLastChar('Goo'); // "o"
   ```
 
-   The `getLastChar()` function has only one parameter - the `str` variable. When calling a function, it's replaced by a particular value specific to each call. But this code won't work:
+  The `getLastChar()` function has only one parameter - the `str` variable. When calling a function, it's replaced by a particular value specific to each call. But this code won't work:
 
   ```javascript
   const getLastChar = ('some string') => {

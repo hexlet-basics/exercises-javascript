@@ -30,8 +30,8 @@ theory: |
 
   We added one more test. Technically the function works, but there are semantics issues.
 
-  - It tests for the question mark in any case, regardless of whether an exclamation point was found or not.
-  - The `else` branch is defined for the first condition, not for the second.
+  - It tests for the question mark in any case, regardless of whether an exclamation point was found or not
+  - The `else` branch is defined for the first condition, not for the second
 
   It would be better to use another condition feature:
 
@@ -60,7 +60,7 @@ theory: |
 
   - if the last character is `?`, then it's a `'question'`
   - else, if the last character is `!`, then it's an `'exclamation'`
-  - else it's `'normal'`.
+  - else it's `'normal'`
 
   Only one of the code blocks belonging to the entire `if` construct will be executed.
 
@@ -68,7 +68,7 @@ instructions: |
 
   The digital map of Westeros that Sam has made shows Stark allies in green, enemies in red, and neutral families in gray.
 
-  Write a function, `whoIsThisHouseToStarks()`, which takes a family name as input and returns one of three values: `'friend'`, `'enemy'`, `'neutral'`.
+  Write the `whoIsThisHouseToStarks()` function that takes a family name as input and returns one of three values: `'friend'`, `'enemy'`, `'neutral'`.
 
   Rules:
 
@@ -89,4 +89,4 @@ tips: []
 
 definitions:
   - name: "else if"
-    description: "is a way to set multiple alternate conditions."
+    description: "is a way to set multiple alternate conditions"

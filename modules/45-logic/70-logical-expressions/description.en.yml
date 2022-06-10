@@ -31,18 +31,19 @@ theory: |
 
   There are two basic rules in JavaScript by which conversions take place:
 
-  * `0`, `''`, `undefined`, `NaN`, and `null` are converted into `false`. Those values are considered *falsy*.
+  * `0`, `''`, `undefined`, `NaN`, and `null` are converted into `false`. Those values are considered *falsy*
   * Everything else is converted into `true`
 
   Developers use this extensively, for example, to define a default value:
 
   ```javascript
   const value = name || '';
-  // Примеры
+  // Examples
   234 || ''; // 234
   'hexlet' || ''; // 'hexlet'
   undefined || ''; // ''
   ```
+
   If `name` is given one of the falsy values, an empty string will be assigned to the `value` constant. In that case, in subsequent code, we will be able to treat `value` as a string.
 
   But there is a potential bug. If `name` contains a falsy value and it's okay to assign values like `0`, `undefined`, `NaN` or `null` to the `value` constant, then the code above will get it wrong:
