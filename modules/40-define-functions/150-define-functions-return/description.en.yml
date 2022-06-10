@@ -71,7 +71,7 @@ theory: |
 
 instructions: |
 
-  Write a function returning a random integer between 0 and 10.
+  Write a function that returns a random integer between 0 and 10.
 
   ```javascript
   getRandomNumber(); // 1

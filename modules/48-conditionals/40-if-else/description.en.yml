@@ -16,16 +16,16 @@ theory: |
   const getTypeOfSentence = (sentence) => {
     // Declare a variable to store the sentence type
     let sentenceType;
-    // Predicate to check the text ending
+    // Predicate checking the text ending
     // If it ends with '?', it will return true,
     // otherwise, it'll return false
     if (sentence.endsWith('?')) {
       // If the condition above holds true,
       // we have a question sentence.
-      // Assign an appropriate value to sentenceType.
+      // Assign an appropriate value to sentenceType
       sentenceType = 'Question';
     } else {
-      // Otherwise, the sentenceType is 'General';
+      // Otherwise, the sentenceType is 'General'
       sentenceType = 'General';
     }
 
@@ -57,7 +57,7 @@ theory: |
 
 instructions: |
 
-  Write a function, `normalizeUrl()`, function that carries out so-called data normalization. It takes a site address and returns it with *https://* at the beginning.
+  Write the `normalizeUrl()` function that carries out so-called data normalization. It takes a site address and returns it with *https://* at the beginning.
 
   The function accepts URLs both as *URL* or *https://URL*, but will always return it as *https://URL*
 

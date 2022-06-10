@@ -5,8 +5,8 @@ theory: |
 
   Dealing with loops usually comes down to two cases:
 
-  1. Aggregation. Accumulation of data during iterations and handling it after the loop. String reversal is just one of these cases.
-  2. Executing a loop until you get the required result and breaking from it. For example, if the job of the loop is to find prime numbers. Remember that a prime number is a number that can only be divided without a remainder by itself and by one.
+  1. Aggregation. Accumulation of data during iterations and handling it after the loop. String reversal is just one of these cases
+  2. Executing a loop until you get the required result and breaking from it. For example, if the job of the loop is to find prime numbers. Remember that a prime number is a number that can only be divided without a remainder by itself and by one
 
   Consider a simple algorithm to check prime numbers. We will divide a given number `x` by all numbers between 2 and `x - 1` and check the remainder. If we don't find a divisor that divides the number `x` without a remainder in this range, then we are looking at a prime number.
 
@@ -43,7 +43,7 @@ theory: |
 
 instructions: |
 
-  Write a function, `hasChar()`, checking whether a string contains a given character (case-sensitive). The function takes two parameters:
+  Write the `hasChar()` function that checks whether a string contains a given character (case sensitive). The function takes two arguments:
 
   * String
   * Character to look for

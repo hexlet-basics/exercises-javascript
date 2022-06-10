@@ -41,7 +41,7 @@ theory: |
 
 instructions: |
 
-  Write a function, `joinNumbersFromRange()`, which joins all numbers in a range into a string:
+  Write the `joinNumbersFromRange()` function that joins all numbers in a range into a string:
 
   ```javascript
   joinNumbersFromRange(1, 1); // '1'

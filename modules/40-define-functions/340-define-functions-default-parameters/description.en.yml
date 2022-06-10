@@ -49,7 +49,7 @@ theory: |
 
 instructions: |
 
-  Write a function, `getHiddenCard()`, which takes a credit card number (consisting of 16 digits) as a string and returns its hidden version, which can be used on the website to display. If the original card had the number *2034399002125581*, the hidden version will look like *\*\*\*\*5581*. In other words, the function replaces the first 12 digits with asterisks. The number of asterisks is specified by a second optional parameter. Its default value is 4
+  Write the `getHiddenCard()` function that takes a credit card number (consisting of 16 digits) as a string and returns its hidden version, which can be used on the website to display. If the original card had the number *2034399002125581*, the hidden version will look like *\*\*\*\*5581*. In other words, the function replaces the first 12 digits with asterisks. The number of asterisks is specified by a second optional parameter. Its default value is 4
 
   ```javascript
   // The credit card number is passed as a string

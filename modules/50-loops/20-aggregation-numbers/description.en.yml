@@ -2,7 +2,7 @@
 
 name: Data aggregation (numbers)
 theory: |
-  
+
   One particular class of tasks that cannot be done without loops is data aggregation. These problems include searching for the maximum and minimum values, as well as finding sums and averages. Their main feature is that their result depends on the whole data set. Calculating the sum requires you to add **all** the numbers together, and calculating the maximum requires you to compare **all** the numbers.
 
   Anyone who deals with numbers, e.g., accountants or marketers, will be familiar with these tasks. It's usually done using spreadsheet software like Microsoft Excel or Google Tables.
@@ -74,11 +74,11 @@ theory: |
 
   In mathematics, there is a concept of an **identity element/neutral element**, an element for each type of operation. Its meaning is easy to grasp. An operation with this element doesn't change the operand. For addition, any number plus zero results in the number itself. The same goes for subtraction. Even concatenation has a neutral element, which is an empty string: `'' + 'one'` will be 'one'.
 
-  Self-testing question. What is the neutral element of a multiplication operation?
+  Self-check. What is the neutral element of a multiplication operation?
 
 instructions: |
 
-  Write a function, `multiplyNumbersFromRange()`, that multiplies numbers in a given range, including its bounds. An example:
+  Write the `multiplyNumbersFromRange()` function that multiplies numbers in a given range, including its bounds. An example:
 
   ```javascript
   multiplyNumbersFromRange(1, 5); // 1 * 2 * 3 * 4 * 5 = 120
