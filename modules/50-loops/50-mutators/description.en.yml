@@ -47,10 +47,10 @@ theory: |
 
   What's going on?
 
-  1. `++x` has been printed. It's a prefix increment, so initially, the value increased by 1, and then the result was returned and printed.
-  2. Since the value changed, `console.log(x)` printed 6.
-  3. Now print `x++`. It's a postfix increment, so it returns the value before it increments by 1.
-  4. Since the value changed, `console.log(x)` printed 7.
+  1. `++x` has been printed. It's a prefix increment, so initially, the value increased by 1, and then the result was returned and printed
+  2. Since the value changed, `console.log(x)` printed 6
+  3. Now print `x++`. It's a postfix increment, so it returns the value before it increments by 1
+  4. Since the value changed, `console.log(x)` printed 7
 
   ---
 
@@ -60,8 +60,8 @@ theory: |
 
   Usage guidelines:
 
-  * Never mix operations/functions without side effects with operations/functions with side effects within a single expression.
-  * Use increment and decrement only if there is no difference between the prefix and postfix version. It should be separate from other expressions and on a separate line of code.
+  * Never mix operations/functions without side effects with operations/functions with side effects within a single expression
+  * Use increment and decrement only if there is no difference between the prefix and postfix version. It should be separate from other expressions and on a separate line of code
 
 
 instructions: |
