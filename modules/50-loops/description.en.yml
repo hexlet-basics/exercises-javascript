@@ -2,4 +2,4 @@
 
 name: Loops
 description: |
-  Any code can be repeated dozens, thousands, millions times. In combination with the other tools you already know – variables and conditions – this opens up many possibilities to build programs and complex systems. Here is a simple example. You need to find a specific phrase in a 500-page book. You remember the phrase, but do not remember the page number. The easiest (and the longest) way is to browse each page until you find the right one. Such repetitive actions require loops.
+  Any code can be repeated thousands, millions, or even billions of times. This offers up a lot of possibilities for building programs and sophisticated systems when combined with the other tools you already know – variables and conditions. Here's an obvious example. In a 500-page book, you must locate a specific phrase. The phrase is fresh in your mind, but you can't recall the page number. The quickest (and most time-consuming) method is to go through each page until you find the right one. Loops are required for such repetitive activities.
