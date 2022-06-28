@@ -2,7 +2,7 @@
 
 name: Arithmetic operations
 theory: |
-  At the most basic level, computers only use numbers. Even in high-level language applications, there are many numbers and operations with them. To get started with programming all you need to know is basic arithmetic - let’s start with that.
+  At the most basic level, computers only use numbers. Even in high-level language applications, there are many numbers and operations with them. To get started with programming all you need to know is basic arithmetic – let’s start with that.
 
   When adding two numbers in math, we write, for example, `3 + 4`. The same goes for programming. Here is a program that adds two numbers:
 
