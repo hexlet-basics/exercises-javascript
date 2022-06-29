@@ -1,9 +1,10 @@
 /* eslint-disable arrow-body-style */
 
 // BEGIN
-const getRandomNumber = () => {
-  return Math.round(Math.random() * 10);
+const sayHurrayThreeTimes = () => {
+    const word = 'hurray!';
+    return `${word} ${word} ${word}`;
 };
 // END
 
-export default getRandomNumber;
+export default sayHurrayThreeTimes;

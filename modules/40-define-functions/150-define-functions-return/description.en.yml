@@ -71,25 +71,9 @@ theory: |
 
 instructions: |
 
-  Write a function `getRandomNumber()` that returns a random integer between 0 and 10.
+  Write a function `sayHurrayThreeTimes()`, that returns a string 'hurray! hurray! hurray!'.
 
   ```javascript
-  getRandomNumber(); // 1
-  getRandomNumber(); // 9
+  const hurray = sayHurrayThreeTimes();
+  console.log(hurray); // => hurray! hurray! hurray!
   ```
-
-  To complete this task, you'll need:
-
-  [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
-
-  ```javascript
-  Math.random(); // 0.2320000789855705
-  ```
-
-  [Math.round()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round)
-
-  ```javascript
-  Math.round(2.320000789855705); // 2
-  ```
-
-# tips: []

@@ -23,7 +23,7 @@ theory: |
   ```javascript
   const saveEmail = () => {
     // В реальности email приходит из формы
-    const email = "  SuppORT@hexlet.IO";
+    const email = '  SuppORT@hexlet.IO';
     // обрезаем пробельные символы
     const trimmedEmail = email.trim();
     const preparedEmail = trimmedEmail.toLowerCase();
@@ -44,7 +44,7 @@ theory: |
   ```javascript
   const greeting = () => {
     return 'Hello, Hexlet!';
-  }
+  };
   ```
 
   `return` – особая инструкция, которая берёт выражение, записанное справа, и отдаёт его наружу, тому коду, который вызвал функцию. Как только JavaScript натыкается на `return`, выполнение функции на этом завершается.
@@ -52,30 +52,30 @@ theory: |
   ```javascript
   // Теперь мы можем использовать результат работы функции
   const message = greeting();
-  console.log(message); // => 'Hello, Hexlet!'
+  console.log(message); // => Hello, Hexlet!
   // И даже выполнить какие-то действия над результатом
-  console.log(message.toUpperCase()); // => 'HELLO, HEXLET!'
+  console.log(message.toUpperCase()); // => HELLO, HEXLET!
   ```
 
   Любой код после `return` не выполняется:
 
   ```javascript
-  const greeting = () => {
+  const greetingWithCodeAfterReturn = () => {
     return 'Hello, Hexlet!';
     console.log('Я никогда не выполнюсь');
-  }
+  };
   ```
 
   Даже если функция возвращает данные, это не ограничивает её в том, что она печатает. Кроме возврата данных мы можем и печатать:
 
   ```javascript
-  const greeting = () => {
+  const greetingWithReturnAndPrinting = () => {
     console.log('Я появлюсь в консоли');
     return 'Hello, Hexlet!';
-  }
+  };
 
   // И напечатает текст на экран и вернет значение
-  const message = greeting();
+  const message = greetingWithReturnAndPrinting ();
   ```
 
   Возвращать можно не только конкретное значение. Так как `return` работает с выражениями, то справа от него может появиться почти все что угодно. Здесь нужно руководствоваться принципами читаемости кода:
@@ -84,7 +84,7 @@ theory: |
   const greeting = () => {
     const message = 'Hello, Hexlet!';
     return message;
-  }
+  };
   ```
 
   Здесь мы не возвращаем переменную, возвращается всегда значение, которое находится в этой переменной. Ниже пример с вычислениями:
@@ -94,43 +94,27 @@ theory: |
     // или return 5 + 5
     const result = 5 + 5;
     return result;
-  }
+  };
   ```
 
-  Вопрос на самопроверку. Что вернёт этот код?
+  Вопрос на самопроверку. Что вернет вызов, определенной ниже, функции `run()`?
 
   ```javascript
   // Определение
   const run = () => {
     return 5;
     return 10;
-  }
+  };
 
-  // Использование
-  run() // ?
+  // Что будет выведено на экран?
+  console.log(run());
   ```
 
 instructions: |
 
-  Реализуйте функцию `getRandomNumber()`, которая возвращает случайное целое число от 0 до 10
+  Реализуйте функцию `sayHurrayThreeTimes()`, которая возвращает строку 'hurray! hurray! hurray!'.
 
   ```javascript
-  getRandomNumber(); // 1
-  getRandomNumber(); // 9
+  const hurray = sayHurrayThreeTimes();
+  console.log(hurray); // => hurray! hurray! hurray!
   ```
-
-  Для выполнения этого задания, вам понадобятся:
-
-  [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
-
-  ```javascript
-  Math.random(); // 0.2320000789855705
-  ```
-
-  [Math.round()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round)
-
-  ```javascript
-  Math.round(2.320000789855705); // 2
-  ```
-
-# tips: []
