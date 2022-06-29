@@ -2,8 +2,8 @@
 
 // BEGIN
 const sayHurrayThreeTimes = () => {
-    const word = 'hurray!';
-    return `${word} ${word} ${word}`;
+  const word = 'hurray!';
+  return `${word} ${word} ${word}`;
 };
 // END
 
