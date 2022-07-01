@@ -7,4 +7,5 @@ test('test', () => {
   expect(f('Awesomeness', 'm')).toBe(true);
   expect(f('Awesomeness', 'd')).toBe(false);
   expect(f('Awesomeness', 'o')).toBe(true);
+  expect(f('Apple', 'e')).toBe(true);
 });
