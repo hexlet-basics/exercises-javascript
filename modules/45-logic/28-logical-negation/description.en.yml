@@ -54,7 +54,7 @@ instructions: |
       isNotPalindrome('hexlet'); // true
       ```
 
-    All you need is to negate the `isPalindrome()` function call within the `isNotPalindrome()` function's body.
+      All you need is to negate the `isPalindrome()` function call within the `isNotPalindrome()` function's body.
 
 tips:
   - |

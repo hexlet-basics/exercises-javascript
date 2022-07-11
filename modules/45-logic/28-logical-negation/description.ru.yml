@@ -54,7 +54,7 @@ instructions: |
       isNotPalindrome('хекслет'); // true
       ```
 
-    Для этого, вызовите функцию `isPalindrome()` внутри `isNotPalindrome()` и примените отрицание.
+      Для этого, вызовите функцию `isPalindrome()` внутри `isNotPalindrome()` и примените отрицание.
 
 tips:
   - |
