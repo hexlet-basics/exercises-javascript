@@ -72,10 +72,10 @@ instructions: |
 
   Sample output for 100 euros:
 
-  ```
+  <pre class='hexlet-basics-output'>
   125
   7500
-  ```
+  </pre>
 
   Suppose that:
   - 1 euro = 1.25 dollars
