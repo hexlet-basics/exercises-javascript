@@ -5,7 +5,7 @@ theory: |
 
   As well as arithmetic operators, we also know comparison operators from school. For example, `5 > 4`. It sounds like a question, "Is 5 greater than 4?" The answer is "yes". In other cases, the answer may be "no", say, for `3 < 1`.
 
-  Comparison operators aren't restricted to numbers. YYou can put them in almost anything, e.g., strings. Every time we visit a website, it compares the username and password we've entered with those in the database. If they exist, we are let in (authorized).
+  Comparison operators aren't restricted to numbers. You can put them in almost anything, e.g., strings. Every time we visit a website, it compares the username and password we've entered with those in the database. If they exist, we are let in (authorized).
 
   Programming languages have borrowed all the comparison operators from math virtually unchanged. The only major change concerns the equality and inequality operators. In math, the usual equal sign is `=`, which is rare in programming. In many languages, the symbol `=` is used to assign values to variables, so you need to use `==` or `===` for comparison.
 
