@@ -28,6 +28,8 @@ theory: |
   console.log(rubles);
   ```
 
+  https://replit.com/@hexlet/js-basics-variables
+
   The only change here is syntactical: the keyword `let` has been replaced by `const`. Now if we try to change any constant, we get an error message. Otherwise, it behaves the same way as a variable.
 
   ```javascript

@@ -68,6 +68,8 @@ theory: |
   isFirstLetterInUpperCase('Robb');    // true
   ```
 
+  https://replit.com/@hexlet/js-basics-logica-operations
+
 instructions: |
 
   Write a function to check the format of a given phone number. If the number starts with *+*, then it's in the international format.
