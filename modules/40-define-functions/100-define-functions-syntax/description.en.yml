@@ -38,6 +38,8 @@ theory: |
   showGreeting(); // => "Hello, Hexlet!"
   ```
 
+  https://replit.com/@hexlet/js-basics-functions-define
+
   Unlike normal data, functions perform actions, so their names almost always have to be verbs: "build something", "draw something", "open something", etc.
 
   Anything described inside the curly brackets `{}` is called a function body. It can contain any code. Consider it a small independent program, a set of arbitrary statements. The body is executed precisely when the function is called. And each function call executes the body independently of other calls. By the way, the body can be empty:

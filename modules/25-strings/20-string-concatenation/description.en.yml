@@ -50,6 +50,8 @@ theory: |
   console.log("King's  " + '  Landing'); // => King's    Landing
   ```
 
+  https://replit.com/@hexlet/js-basics-strings
+
 instructions: |
 
   Print the following code

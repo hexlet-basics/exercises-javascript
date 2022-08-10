@@ -110,6 +110,8 @@ theory: |
   console.log(run());
   ```
 
+  https://replit.com/@hexlet/js-basics-functions-return
+
 instructions: |
 
   Реализуйте функцию `sayHurrayThreeTimes()`, которая возвращает строку 'hurray! hurray! hurray!'.

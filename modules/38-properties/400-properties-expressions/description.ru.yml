@@ -23,6 +23,8 @@ theory: |
   console.log(Math.min(name1.length, name2.length)); // => 4
   ```
 
+  https://replit.com/@hexlet/js-basics-properties-method
+
 instructions: |
 
   Выведите на экран первую и последнюю буквы предложения, записанного в константу `text`, в следующем формате:
