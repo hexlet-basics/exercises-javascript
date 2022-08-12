@@ -17,6 +17,14 @@ theory: |
  
   A common joke among developers is that "the hardest part of programming is cache invalidation and naming things". Coming up with names is tough indeed. How would you name a variable that stores _the number of unpaid orders from customers in debt from the previous quarter?_
 
+  ```javascript
+  const firstName = 'John';
+  console.log(firstName); // => John
+
+  const playerNumber = 24;
+  console.log(playerNumber); // => 24
+  ```
+
   Self-сheck. Think of a name for the variable that would store _"the number of siblings the king has"_. Write it down in a notebook or send it to yourself. Don't put anything in there except the name of the variable. And we'll come back to this topic in a few lessons ;-)
 
 instructions: |
