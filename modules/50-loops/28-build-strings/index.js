@@ -1,14 +1,12 @@
 /* eslint operator-assignment: 0 */
 
 // BEGIN
-const even = (str) => {
-  let i = 0;
+const reverse = (str) => {
+  let i = str.length - 1;
   let result = '';
-  while (i < str.length) {
-    if (i % 2 !== 0) {
-      result = `${result}${str[i]}`;
-    }
-    i = i + 1;
+  while (i >= 0) {
+    result = `${result}${str[i]}`;
+    i = i - 1;
   }
 
   return result;
@@ -16,4 +14,4 @@ const even = (str) => {
 
 // END
 
-export default even;
+export default reverse;

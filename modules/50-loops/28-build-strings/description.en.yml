@@ -41,6 +41,6 @@ theory: |
 
 instructions: |
 
-  Write the function `even()` that returns a new string consisting of even characters from the original string
+  Write the same `reverse()` function, except it doesn't iterate over a string from the first element to the last, but vice versa, from the last to the first. The overall structure of the function remains the same. The initial index, the loop termination condition, the building of a new string, and the formation of a new index in the loop will change, however.
 
 tips: []
