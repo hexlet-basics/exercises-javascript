@@ -41,6 +41,6 @@ theory: |
 
 instructions: |
 
-  Write the function that returns a new string consisting of even characters from the original string
+  Write the function `even()` that returns a new string consisting of even characters from the original string
 
 tips: []
