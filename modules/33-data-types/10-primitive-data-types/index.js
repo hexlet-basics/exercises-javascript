@@ -1,1 +1,1 @@
-console.log(-0.304);
+console.log(typeof -0.304);
