@@ -1,3 +1,4 @@
+// Функция reverse() написана нами специально для наших упражнений
 import { reverse } from '../../../src/hexlet/string.js';
 
 // BEGIN
