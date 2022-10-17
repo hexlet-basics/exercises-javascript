@@ -7,7 +7,7 @@ theory: |
 
   ```javascript
   1 + 5 * 3;
-  'He' + 'Let';
+  'Hex' + 'Let';
   // Variables can be a part of an expression
   rate * 5;
   ```
