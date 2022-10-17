@@ -10,7 +10,7 @@ theory: |
   ```javascript
   const name = 'Shaya';
   name.length + 5; // 10
-  `hi, ${name.toUpperCase()}!`; // hi, SHAYA!
+  console.log(`hi, ${name.toUpperCase()}!`); // hi, SHAYA!
   ```
 
   In function parameters:
