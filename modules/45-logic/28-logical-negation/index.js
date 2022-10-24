@@ -1,6 +1,5 @@
 // Функция reverse() написана нами специально для наших упражнений
-// Принцип ее работы можно изучить на hexlet.io
-const reverse = (s) => s.split('').reverse().join('');
+import { reverse } from '../../../src/hexlet/string.js';
 
 // BEGIN
 const isPalindrome = (word) => {
