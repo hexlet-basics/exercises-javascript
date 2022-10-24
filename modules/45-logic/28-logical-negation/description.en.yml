@@ -16,6 +16,19 @@ theory: |
 
   I.e., we can just put a `!` to the left of the function call and get the opposite result.
 
+  Negation works for any expression. Any value will be cast to the opposite boolean value.
+
+  ```javascript
+  const message = 'Hello, world!';
+  // Works with constants and variables
+  !message; // false
+
+  // And directly with the values
+  !5; // false
+  !'hello'; // false
+  !0; // true
+  ```
+
   Negation is a powerful tool that allows you to concisely express the desired rules in your code without having to write new functions.
 
   What if you wrote `!!isEven(10)` like this? Suddenly, the code would work. Double negation in logic is equivalent to no negation at all.
@@ -25,6 +38,14 @@ theory: |
   !isEven(10);  // false
   !!isEven(10); // true
   ```
+
+  Negatives can be inside other expressions.
+
+  ```javascript
+  true && !false; // true
+  !false || false; // true
+  !!isEven(10) && !'hello'; // false
+  !!isEven(10) && !!'hello'; // true
 
 instructions: |
 
