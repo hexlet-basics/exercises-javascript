@@ -18,6 +18,8 @@ theory: |
   };
   ```
 
+  https://replit.com/@hexlet/js-basics-for
+
   Можно читать так: *цикл с индексом `i` повторяется пока `i < str.length` и после каждого шага увеличивает `i` на 1*.
 
   В определении цикла `for` в круглых скобках есть три выражения, разделённые точкой с запятой:
@@ -55,4 +57,9 @@ instructions: |
 
   Подумайте. Может ли эта функция расшифровать зашифрованное сообщение?
 
-tips: []
+tips: |
+  - [for](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+
+definitions:
+  - name: Агрегация
+    description: "Накопление результата во время итераций и работа с ним после цикла."

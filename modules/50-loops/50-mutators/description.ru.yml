@@ -45,6 +45,8 @@ theory: |
   console.log(x);   // => 7
   ```
 
+  https://replit.com/@hexlet/js-basic-mutators
+
   Что происходит?
 
   1. Вывели на экран `++x`. Это префиксный инкремент, поэтому сначала значение переменной увеличилось на 1, потом результат вернулся и вывелся на экран.
@@ -79,3 +81,7 @@ instructions: |
 tips:
   - |
     [Оператор остатка от деления (%)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder)
+
+definitions:
+  - name: Побочный эффект
+    description: "действие, которое изменяет внешнее окружение (среду выполнения). Например, вывод на экран или отправка письма."
