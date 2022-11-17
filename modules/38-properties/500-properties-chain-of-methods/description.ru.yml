@@ -61,3 +61,8 @@ instructions: |
   * [trim()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
 
 tips: []
+
+definitions:
+  - name: Метод
+    description: |
+      это функция или процедура, принадлежащая какому-то классу или объекту.

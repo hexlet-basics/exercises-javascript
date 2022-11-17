@@ -20,6 +20,8 @@ theory: |
   console.log(name.length); // => 6
   ```
 
+  https://replit.com/@hexlet/js-properties-immutability
+
   Вместо изменения значения можно _заменить_ значение. Для этого понадобятся переменные:
 
   ```javascript
@@ -33,4 +35,6 @@ instructions: |
   Данные, вводимые пользователями, часто содержат лишние пробельные символы в конце или начале строки. Обычно их вырезают с помощью метода `.trim()`, например, было: `'   hello\n '`, стало: `'hello'`.
   Обновите переменную `firstName` записав в неё то же самое значение, но обработанное методом `.trim()`. Распечатайте то, что получилось, на экран.
 
-tips: []
+tips: 
+  - |
+    [Метод строки trim()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
