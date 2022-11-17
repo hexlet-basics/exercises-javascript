@@ -37,6 +37,8 @@ theory: |
   const sum = (a, b) => a + b;
   ```
 
+  https://replit.com/@hexlet/js-basics-define-functions-short-syntax
+
   Обратите внимание на отсутствие фигурных скобок. Разработчики, которые не привыкли использовать такой синтаксис, иногда пишут подобный код `const sum = (a, b) => { a + b };`, а потом долго не могут понять, почему он не работает. Ответ очень простой: если стоят фигурные скобки, то это не сокращенная форма, а значит, чтобы функция вернула значение, придётся поставить `return`.
 
 instructions: |
@@ -60,5 +62,6 @@ instructions: |
   'welcome'.toUpperCase(); // "WELCOME"
   ```
 
-tips: []
+tips: |
+  - [Javascript ES6](https://www.w3schools.com/js/js_es6.asp)
 

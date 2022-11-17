@@ -17,6 +17,8 @@ theory: |
   pow(3, 3); // 27
   ```
 
+  https://replit.com/@hexlet/js-basics-define-functions-default-parameters
+
   Значение по умолчанию выглядит как обычное присваивание в определении. Оно срабатывает только в том случае, если аргумент не передан. К этому нужно привыкнуть. Значение по умолчанию может быть даже в том случае, когда параметр один:
 
   ```javascript
@@ -73,3 +75,10 @@ instructions: |
   '+'.repeat(5); // "+++++"
   'o'.repeat(3); // "ooo"
   ```
+
+tips: |
+  - [Параметры по умолчанию](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+
+definitions:
+  - name: Параметр по умолчанию
+    description: необязательный параметр функции
