@@ -36,7 +36,9 @@ instructions: |
   Dragon
   </pre>
 
-tips: []
+tips: 
+  - |
+    [ReferenceError](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError)
 
 definitions:
   - name: Переменная

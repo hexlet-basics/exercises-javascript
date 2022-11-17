@@ -49,4 +49,9 @@ instructions: |
 
   Создайте константу `army`, присвойте ей значение `the white walkers` и распечатайте её значение на экран.
 
-tips: []
+tips: 
+  - |
+    [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+  
+  - |
+    [TypeError](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError)
