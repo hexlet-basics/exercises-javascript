@@ -38,4 +38,7 @@ instructions: |
 
 tips: []
 
-definitions: []
+definitions:
+  - name: Неизменяемость
+    description: |
+      состояние, при котором объект, переменная не могут быть изменены после создания
