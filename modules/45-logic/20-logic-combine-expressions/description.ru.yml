@@ -78,3 +78,12 @@ instructions: |
   isInternationalPhone('89602223423'); // false
   isInternationalPhone('+79602223423'); // true
   ```
+
+tips: 
+  - |
+    [Выражение](https://ru.wikipedia.org/wiki/Выражение_(информатика))
+
+definitions:
+  - name: Выражение
+    description: |
+      последовательность действий над данными, приводящая к каком-то результату, который можно использовать.

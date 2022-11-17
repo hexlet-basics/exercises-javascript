@@ -9,8 +9,9 @@ theory: |
   const isInfant = (age) => age < 1;
   console.log(isInfant(3));
   ```
-
   <pre class='hexlet-basics-output'>false</pre>
+
+  https://replit.com/@hexlet/js-basics-logic-bool-type
 
   Подобные функции называют предикатами. Функции-предикаты (или функции-вопросы) отвечают на какой-то вопрос и всегда (без исключений!) возвращают либо `true`, либо `false`.
 

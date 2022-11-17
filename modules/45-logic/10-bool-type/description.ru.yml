@@ -50,6 +50,8 @@ theory: |
 
   <pre class='hexlet-basics-output'>false</pre>
 
+  https://replit.com/@hexlet/js-basics-logic-bool-type
+
   А теперь проверим ребенка, которому полгода:
 
   ```javascript
@@ -68,6 +70,9 @@ instructions: |
   isPensioner(75); // true
   isPensioner(18); // false
   ```
+
+tips: |
+  - [Boolean в JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 
 definitions:
   - name: "Логический тип (boolean)"
