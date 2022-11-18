@@ -17,6 +17,8 @@ theory: |
   console.log(name[8]);
   ```
 
+  https://replit.com/@hexlet/js-basics-data-types-undefined
+
   Смысл (семантика) значения `undefined` именно в том, что значения нет. Однако, ничто не мешает написать такой код:
 
   ```javascript
@@ -32,6 +34,11 @@ theory: |
 instructions: |
   Выведите на экран значение `undefined`, не указывая его явно (через присваивание или передав напрямую в `console.log()`). Если не догадаетесь, как это сделать, подсмотрите решение учителя.
 
-tips: []
+tips: 
+  - |
+    [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
 
-definitions: []
+definitions:
+  - name: undefined
+    description: |
+      аналог отсутствия значения; указывает, что переменной не присвоено значение или она вообще не объявлена.

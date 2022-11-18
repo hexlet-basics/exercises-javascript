@@ -120,3 +120,7 @@ instructions: |
   const hurray = sayHurrayThreeTimes();
   console.log(hurray); // => hurray! hurray! hurray!
   ```
+
+tips:
+  - |
+    [Подробнее о return](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return)

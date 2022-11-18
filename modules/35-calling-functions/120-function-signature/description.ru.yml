@@ -10,6 +10,8 @@ theory: |
   console.log(result); // => NaN
   ```
 
+  https://replit.com/@hexlet/js-basics-calling-functions-function-signature
+
   Другая функция может иметь другое число параметров и другие типы параметров. Например, может существовать функция, которая принимает три параметра: число, строку и ещё одно число.
 
   Откуда мы знаем, сколько каких параметров нужно функции `Math.pow()` и какого типа будет «возврат»? Мы заглянули в **сигнатуру** этой функции. Сигнатура определяет входные параметры и их типы, а также выходной параметр и его тип. Про функцию `Math.pow()` можно почитать в [документации](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/pow). В разделе «Синтаксис» есть такой текст:
@@ -34,7 +36,9 @@ instructions: |
 
   Напишите программу, которая использует функцию `Math.ceil()` с константой `number` и выводит результат на экран.
 
-tips: []
+tips:
+  - |
+    [Сигнатура функции](https://developer.mozilla.org/en-US/docs/Glossary/Signature/Function)
 
 definitions:
   - name: Сигнатура функции

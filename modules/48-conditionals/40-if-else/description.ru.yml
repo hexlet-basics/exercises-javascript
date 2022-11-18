@@ -34,6 +34,8 @@ theory: |
   };
   ```
 
+  https://replit.com/@hexlet/js-basics-if-else
+
   Мы добавили ключевое слово `else` и новый блок с фигурными скобками. Этот блок выполнится, только если условие в `if` — ложь.
 
   Существует два способа оформления конструкции *if-else*. С помощью отрицания можно изменить порядок блоков:
@@ -70,7 +72,9 @@ instructions: |
   normalizeUrl("https://ai.fi"); // "https://ai.fi"
   ```
 
-tips: []
+tips:
+  - |
+    [if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 
 definitions:
   - name: "else"

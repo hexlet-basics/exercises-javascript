@@ -35,6 +35,8 @@ theory: |
   };
   ```
 
+  https://replit.com/@hexlet/js-basics-condition-inside-loops
+
   Эта задача является агрегирующей. Несмотря на то, что она считает не все символы, для подсчета самой суммы все равно приходится анализировать каждый символ.
 
   Ключевое отличие этого цикла от рассмотренных в наличии условия внутри тела. Переменная `count` увеличивается только в том случае, когда текущий рассматриваемый символ совпадает с ожидаемым.
@@ -50,4 +52,6 @@ instructions: |
   countChars('HexlEt', 'E'); // 2
   ```
 
-tips: []
+tips:
+  - |
+    [if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)

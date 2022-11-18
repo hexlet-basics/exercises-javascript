@@ -31,6 +31,8 @@ theory: |
   console.log(((8 / 2) + 5) - (-3 / 2)); // => 10.5
   ```
 
+  https://replit.com/@hexlet/js-basics-arithmetics#index.js
+
   Запомните: код пишется для людей, потому что код будут читать люди, а машины будут только исполнять его. Для машин код — или корректный, или не корректный, для них нет «более» понятного или «менее» понятного кода.
 
 instructions: |
@@ -42,3 +44,8 @@ instructions: |
 tips:
   - |
     [Приоритет операторов](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+
+definitions:
+  - name: Выражение
+    description: |
+      последовательность действий над данными, приводящая к каком-то результату, который можно использовать.

@@ -44,6 +44,8 @@ theory: |
   undefined || ''; // ''
   ```
 
+  https://replit.com/@hexlet/js-basics-logical-expressions
+
   Если `name` примет одно из falsy-значений, константе `value` будет присвоена пустая строка. В этом случае в последующем коде мы сможем работать с `value` как со строкой.
 
   Но здесь есть потенциальный баг. Если `name` содержит falsy-значение, а присваивание константе value значений типа `0`, `undefined`, `NaN` или `null` допустимо, то код выше начнет работать неверно:
@@ -152,8 +154,8 @@ instructions: |
   getLetter(name, 6); // 't'
   ```
 
-# tips:
-#   - |
-#     [Boolean](https://ru.wikipedia.org/wiki/Логический_тип)
-#   - |
-#     [Извлечение символов из строки](https://ru.code-basics.com/languages/javascript/lessons/symbols)
+tips:
+  - |
+    [Boolean](https://ru.wikipedia.org/wiki/Логический_тип)
+  - |
+    [Извлечение символов из строки](https://ru.code-basics.com/languages/javascript/lessons/symbols)

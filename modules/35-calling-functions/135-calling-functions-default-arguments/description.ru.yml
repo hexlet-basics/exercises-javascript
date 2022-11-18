@@ -30,7 +30,9 @@ instructions: |
 
   Округлите число, записанное в константу `number`, до двух знаков после запятой и выведите результат на экран.
 
-tips: []
+tips:
+  - |
+    [Параметры по умолчанию](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Default_parameters)
 
 definitions:
   - name: Параметр по умолчанию

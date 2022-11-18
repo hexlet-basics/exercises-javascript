@@ -26,8 +26,10 @@ instructions: |
   Посчитайте программно (а не в голове) минимальное число среди 3, 10, 22, -3, 0 — и выведите его на экран. Воспользуйтесь функцией `Math.min()`, которая работает аналогично `Math.max()`.
 
 
-tips: []
+tips:
+  - |
+    [Пример функции с переменным числом параметров](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
 
-# definitions:
-#   - name: Аргумент по умолчанию
-#     description: необязательный аргумент функции.
+definitions:
+  - name: Аргумент по умолчанию
+    description: необязательный аргумент функции.

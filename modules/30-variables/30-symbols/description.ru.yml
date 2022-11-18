@@ -41,8 +41,16 @@ theory: |
   console.log(firstName[10]); // => undefined
   ```
 
+  https://replit.com/@hexlet/js-basics-symbols
+
 instructions: |
 
   Выведите на экран последний символ строки, находящейся в константе `name`
 
-tips: []
+tips: 
+  - |
+    [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
+
+definitions:
+  - name: Индекс
+    description: "позицией символа внутри строки."
