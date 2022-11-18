@@ -88,8 +88,9 @@ instructions: |
   multiplyNumbersFromRange(6, 6); // 6
   ```
 
-tips: |
-  - [Итерация](https://ru.wikipedia.org/wiki//Итерация_(программирование))
+tips:
+  - |
+    [Итерация](https://ru.wikipedia.org/wiki//Итерация_(программирование))
 
 definitions:
   - name: Агрегация

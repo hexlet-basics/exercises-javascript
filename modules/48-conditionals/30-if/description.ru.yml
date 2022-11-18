@@ -55,8 +55,9 @@ instructions: |
   guessNumber(61) // 'Try again!'
   ```
 
-tips: |
-  - [if](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+tips:
+  - |
+    [if](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 
 definitions:
   - name: Условные конструкции

@@ -71,8 +71,9 @@ instructions: |
   isPensioner(18); // false
   ```
 
-tips: |
-  - [Boolean в JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+tips:
+  - |
+    [Boolean в JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 
 definitions:
   - name: "Логический тип (boolean)"

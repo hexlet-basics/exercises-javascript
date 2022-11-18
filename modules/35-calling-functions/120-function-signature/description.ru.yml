@@ -36,8 +36,9 @@ instructions: |
 
   Напишите программу, которая использует функцию `Math.ceil()` с константой `number` и выводит результат на экран.
 
-tips: |
-  - [Сигнатура функции](https://developer.mozilla.org/en-US/docs/Glossary/Signature/Function)
+tips:
+  - |
+    [Сигнатура функции](https://developer.mozilla.org/en-US/docs/Glossary/Signature/Function)
 
 definitions:
   - name: Сигнатура функции

@@ -104,8 +104,9 @@ instructions: |
 
   * Подумайте какую проверку нужно написать первым делом: проверку заглавности буквы или является ли пустой строка. Что первичнее?
 
-tips: |
-  - [Подробнее о тернарном операторе](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+tips:
+  - |
+    [Подробнее о тернарном операторе](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 
 definitions:
   - name: Тернарный оператор

@@ -27,8 +27,9 @@ instructions: |
   Math.abs(0); // 0
   ```
 
-tips: |
-  - [Документация Math](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math)
+tips:
+  - |
+    [Документация Math](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math)
 
 definitions:
   - name: Функция

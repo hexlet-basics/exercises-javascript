@@ -30,7 +30,7 @@ tips:
   - |
     [Infinity](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Infinity)
 
-definition:
+definitions:
   - name: Бесконечность
-    definition: |
+    description: |
       Бесконечность в математике и физике не является числом и означает "без конца" или "без границ".Бесконечность обычно рассматривается как число, поскольку оно используется для обозначения чисел вещей, но это не реальное число.

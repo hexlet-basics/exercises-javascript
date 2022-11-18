@@ -51,8 +51,9 @@ instructions: |
   joinNumbersFromRange(5, 10); // '5678910'
   ```
 
-tips: |
-  - [Итерация](https://ru.wikipedia.org/wiki//Итерация_(программирование))
+tips:
+  - |
+    [Итерация](https://ru.wikipedia.org/wiki//Итерация_(программирование))
 
 definitions:
   - name: Агрегация

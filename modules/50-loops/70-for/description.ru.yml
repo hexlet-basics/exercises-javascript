@@ -57,8 +57,9 @@ instructions: |
 
   Подумайте. Может ли эта функция расшифровать зашифрованное сообщение?
 
-tips: |
-  - [for](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+tips:
+  - |
+    [for](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
 
 definitions:
   - name: Агрегация

@@ -52,5 +52,6 @@ instructions: |
   countChars('HexlEt', 'E'); // 2
   ```
 
-tips: |
-  - [if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+tips:
+  - |
+    [if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)

@@ -76,8 +76,9 @@ instructions: |
   'o'.repeat(3); // "ooo"
   ```
 
-tips: |
-  - [Параметры по умолчанию](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+tips:
+  - |
+    [Параметры по умолчанию](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Default_parameters)
 
 definitions:
   - name: Параметр по умолчанию

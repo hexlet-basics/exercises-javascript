@@ -72,8 +72,9 @@ instructions: |
   normalizeUrl("https://ai.fi"); // "https://ai.fi"
   ```
 
-tips: |
-  - [if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+tips:
+  - |
+    [if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 
 definitions:
   - name: "else"

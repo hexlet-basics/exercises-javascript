@@ -87,8 +87,9 @@ instructions: |
   whoIsThisHouseToStarks('Ivanov');   // 'neutral'
   ```
 
-tips: |
-  - [else if](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else#using_else_if)
+tips:
+  - |
+    [else if](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else#using_else_if)
 
 definitions:
   - name: "else if"
