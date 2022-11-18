@@ -31,7 +31,7 @@ theory: |
   console.log(name.whatIsThat); // => undefined
   ```
 
-  _Вопрос для самопроверки. Что распечатает код `console.log(name[name.length])` для `name`, определенного выше? Почему ответ такой?_
+  *Вопрос для самопроверки. Что распечатает код `console.log(name[name.length])` для `name`, определенного выше? Почему ответ такой?*
 
 
 instructions: |
