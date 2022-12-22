@@ -18,11 +18,19 @@ theory: |
   const firstName = 'Tirion';
 
   console.log(firstName[5]); // => 'n'
+  ```
 
-  // Вопрос на самопроверку. Что выведет этот код?
-  const magic = '\nyou'
+  Вопрос на самопроверку. Что выведет этот код?
+
+  ```
+  const magic = '\nyou';
   console.log(magic[1]); // => ?
   ```
+
+  <details>
+  <summary>Ответ</summary>
+  Данный код выведет символ `y`
+  </details>
 
   Индексом может быть не только конкретное число, но и значение переменной. Вот пример, который приведёт к тому же результату — выводу на экран символа *T*, но индекс внутри квадратных скобок записан не числом, а константой:
 
@@ -47,7 +55,7 @@ instructions: |
 
   Выведите на экран последний символ строки, находящейся в константе `name`
 
-tips: 
+tips:
   - |
     [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
 
