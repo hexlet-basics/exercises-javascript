@@ -33,7 +33,7 @@ theory: |
   // Uncaught SyntaxError: missing ) after argument list
   ```
 
-  This program won't work. For JavaScript, the string begins with a single quote and ends after the letter **n**. Then comes some characters: `s mother` without quotes, which are not a string. And then there is one quote opening a sting which is never closed: `');`. This code is syntactically incorrect (you can see it by the way the code is highlighted).
+  This program won't work. For JavaScript, the string begins with a single quote and ends after the letter **n**. Then comes some characters: `s mother` without quotes, which are not a string. And then there is one quote opening a string which is never closed: `');`. This code is syntactically incorrect (you can see it by the way the code is highlighted).
 
   It's a good idea here is to use double quotes. This version of the program will work correctly:
 
