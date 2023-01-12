@@ -63,7 +63,7 @@ theory: |
   <details>
   <summary>Ответ</summary>
 
-  Вызов функции `console.log()` возвращает `undefined`
+  Вызов функции `console.log()` возвращает `undefined`.
 
   </details>
 
