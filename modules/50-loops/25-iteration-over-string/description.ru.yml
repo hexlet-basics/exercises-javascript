@@ -19,10 +19,10 @@ theory: |
 
   const name = 'Arya';
   printNameBySymbol(name);
-  // => 'A'
-  // => 'r'
-  // => 'y'
-  // => 'a'
+  // => A
+  // => r
+  // => y
+  // => a
   ```
 
   https://replit.com/@hexlet/js-basic-iteration-over-string
@@ -37,12 +37,12 @@ instructions: |
   const word = 'Hexlet';
 
   printReversedWordBySymbol(word);
-  // => 't'
-  // => 'e'
-  // => 'l'
-  // => 'x'
-  // => 'e'
-  // => 'H'
+  // => t
+  // => e
+  // => l
+  // => x
+  // => e
+  // => H
   ```
 
 tips:
