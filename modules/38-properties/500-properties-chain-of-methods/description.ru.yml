@@ -7,7 +7,7 @@ theory: |
 
   ```javascript
   const peopleCount = 5;
-  peopleCount.toString(); // '5'
+  peopleCount.toString(); // 5
   ```
 
   Попробуйте ответить на вопрос, заработает ли следующий код — и если да, то что он напечатает на экран?

@@ -8,7 +8,7 @@ theory: |
   ```javascript
   const name = 'Robb';
   const upperName = name.toUpperCase();
-  console.log(upperName); // => 'ROBB'
+  console.log(upperName); // => ROBB
   ```
 
   https://replit.com/@hexlet/js-basics-properties-methods
@@ -22,11 +22,11 @@ theory: |
   // Округление до одного знака после запятой
   const roundedTemperature = temperature.toFixed(1);
   // Метод возвращает строку, которая содержит преобразованное число
-  console.log(roundedTemperature); // => '22.9'
+  console.log(roundedTemperature); // => 22.9
 
   // Напрямую можно вызывать так
   // Скобки нужны обязательно, иначе не заработает
-  (22.93).toFixed(1); // '22.9'
+  (22.93).toFixed(1); // 22.9
   ```
 
   *Хозяйке на заметку. Технически всё несколько сложнее. Методы есть не у самих чисел, а у данных (объектов) типа Number. Числа, записанные в переменные или константы, автоматически преобразуются к данному типу во время обращения к ним, в это время происходит так называемый boxing.*

@@ -109,9 +109,9 @@ instructions: |
   getNumberExplanation(8);   // null
 
   // Объяснения есть только для указанных ниже чисел
-  getNumberExplanation(666); // 'devil number'
-  getNumberExplanation(42);  // 'answer for everything'
-  getNumberExplanation(7);   // 'prime number'
+  getNumberExplanation(666); // devil number
+  getNumberExplanation(42);  // answer for everything
+  getNumberExplanation(7);   // prime number
   ```
 
 tips:

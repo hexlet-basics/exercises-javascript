@@ -35,7 +35,7 @@ theory: |
   }
 
   // Вызов функции
-  showGreeting(); // => "Hello, Hexlet!"
+  showGreeting(); // => Hello, Hexlet!
   ```
 
   https://replit.com/@hexlet/js-basics-functions-define
@@ -73,7 +73,7 @@ instructions: |
   Реализуйте функцию с именем `printMotto()`, которая выведет на экран фразу *Winter is coming*.
 
   ```javascript
-  printMotto(); // => "Winter is coming"
+  printMotto(); // => Winter is coming
   ```
 
   В задачах, в которых нужно реализовать функцию, эту функцию вызывать не нужно. Вызывать функцию будут автоматизированные тесты, которые проверяют её работоспособность. Пример с вызовом выше показан только для того, чтобы вы понимали, как ваша функция будет использоваться.

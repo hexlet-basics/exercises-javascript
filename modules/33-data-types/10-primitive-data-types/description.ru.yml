@@ -21,8 +21,8 @@ theory: |
   JavaScript позволяет узнать тип данных с помощью оператора `typeof`:
 
   ```javascript
-  typeof 3; // 'number'
-  typeof 'Game'; // 'string'
+  typeof 3; // number
+  typeof 'Game'; // string
   ```
 
   https://replit.com/@hexlet/js-basics-data-types-primitive-data-types

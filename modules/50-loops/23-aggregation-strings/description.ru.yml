@@ -8,7 +8,7 @@ theory: |
   Представьте себе функцию, которая умеет «умножать» строку, то есть она повторяет её указанное количество раз:
 
   ```javascript
-  repeat('hexlet', 3); // 'hexlethexlethexlet'
+  repeat('hexlet', 3); // hexlethexlethexlet
   ```
 
   Принцип работы этой функции довольно простой: в цикле происходит «наращивание» строки указанное количество раз:
@@ -46,9 +46,9 @@ instructions: |
   Реализуйте функцию `joinNumbersFromRange()`, которая объединяет все числа из диапазона в строку:
 
   ```javascript
-  joinNumbersFromRange(1, 1); // '1'
-  joinNumbersFromRange(2, 3); // '23'
-  joinNumbersFromRange(5, 10); // '5678910'
+  joinNumbersFromRange(1, 1); // 1
+  joinNumbersFromRange(2, 3); // 23
+  joinNumbersFromRange(5, 10); // 5678910
   ```
 
 tips:
