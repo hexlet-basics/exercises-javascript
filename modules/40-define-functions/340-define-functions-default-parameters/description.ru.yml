@@ -25,7 +25,7 @@ theory: |
   const print = (text = 'nothing') => console.log(text);
 
   print(); // "nothing"
-  print("Hexlet"); // "Hexlet"
+  print("Hexlet"); // Hexlet
   ```
 
   Параметров со значениями по умолчанию может быть сколько угодно:
@@ -63,17 +63,17 @@ instructions: |
 
   ```javascript
   // Кредитка передается внутрь как строка
-  getHiddenCard('1234567812345678', 2); // "**5678"
-  getHiddenCard('1234567812345678', 3); // "***5678"
-  getHiddenCard('1234567812345678');    // "****5678"
-  getHiddenCard('2034399002121100', 1); // "*1100"
+  getHiddenCard('1234567812345678', 2); // **5678
+  getHiddenCard('1234567812345678', 3); // ***5678
+  getHiddenCard('1234567812345678');    // ****5678
+  getHiddenCard('2034399002121100', 1); // *1100
   ```
 
   Для выполнения задания вам понадобится метод строки `repeat()`, который повторяет строку указанное количество раз
 
   ```javascript
-  '+'.repeat(5); // "+++++"
-  'o'.repeat(3); // "ooo"
+  '+'.repeat(5); // +++++
+  'o'.repeat(3); // ooo
   ```
 
 tips:
