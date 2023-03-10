@@ -32,7 +32,7 @@ theory: |
 
   Sometimes when creating a solution, it may seem that you have done everything correctly, but the system has got into a huff and won't accept your solution. Such cases are borderline impossible. Failed tests simply won't get as far as the site, they are automatically run after each change. In the vast majority of cases (all our projects have been run millions of times in total over many years) the error is in the solution code. It can be very imperceptible, maybe you used the wrong punctuation, or you used upper case instead of lower case, or you missed a comma. Other cases are more complicated. Maybe your solution works for one set of inputs, but not for another. So always read the instructions and test your output carefully. There will almost certainly be some sign of an error.
 
-  However, if you are sure about a mistake or have found an inaccuracy, you can always point it out. At the end of each theory section, there is a link to the contents of the lesson on Github (this project is completely open-source!). You can write about an issue, look through the tests (you can see how your code is called there), and even send a pull request. If it's all gone over your head, then join the 'Обратная связь' channel in Telegram where we'll always be ready to help you.
+  However, if you are sure about a mistake or have found an inaccuracy, you can always point it out. At the end of each theory section, there is a link to the contents of the lesson on Github (this project is completely open-source!). You can write about an issue, look through the tests (you can see how your code is called there), and even send a pull request. If it's all gone over your head, then join the #hexlet-feedback channel in [Slack community](https://slack.hexlet.io/), where we'll always be ready to help you.
 
 instructions: |
   Print the following number: `9780262531962`.
@@ -46,4 +46,4 @@ tips:
   - |
     [TDD](https://en.wikipedia.org/wiki/Test-driven_development)
   - |
-    [Hexlet Community in Telegram](https://t.me/hexletcommunity/12)
+    [Hexlet Community in Slack](https://help.hexlet.io/en/articles/111445-hexlet-community-in-slack)
