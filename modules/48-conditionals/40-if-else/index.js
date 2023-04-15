@@ -12,4 +12,4 @@ const normalizeUrl = (site) => {
 };
 // END
 
-export default normalizeUrl;
+export default normalizerUrl;
