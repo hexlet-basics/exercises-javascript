@@ -48,25 +48,25 @@ theory: |
   Вернемся к нашей валютной программе. Запишем стоимость доллара в юанях как отдельную переменную. Вычислим цену 50 евро в долларах, умножив их на `1.25`. Допустим, что 1 доллар — 6.91 юаней:
 
   ```javascript
-  let rublesPerDollar = 6.91;
+  let yuansPerDollar = 6.91;
   let dollarsCount = 50 * 1.25; // 62.5
-  let rublesCount = dollarsCount * rublesPerDollar; // 431.875
+  let yuansCount = dollarsCount * yuansPerDollar; // 431.875
 
-  console.log(rublesCount);
+  console.log(yuansCount);
   ```
 
   А теперь давайте добавим к выводу текст с помощью конкатенации:
 
   ```javascript
-  let rublesPerDollar = 6.91;
+  let yuansPerDollar = 6.91;
   let dollarsCount = 50 * 1.25; // 62.5
-  let rublesCount = dollarsCount * rublesPerDollar; // 431.875
+  let yuansCount = dollarsCount * yuansPerDollar; // 431.875
 
-  console.log('The price is ' + rublesCount + ' rubles');
+  console.log('The price is ' + yuansCount + ' yuans');
   ```
 
   <pre class='hexlet-basics-output'>
-  The price is 431.875 rubles
+  The price is 431.875 yuans
   </pre>
 
   Любая переменная может быть частью любого выражения. В момент вычисления, вместо имени переменной подставляется её значение.
