@@ -3,7 +3,7 @@
 name: Defining with expressions
 theory: |
 
-  Variables are helpful not only for storing and reusing data but also for simplifying complex calculations. Consider an example: you need to convert euros into rubles through dollars. Banks often do this kind of conversion via an intermediate currency when shopping abroad.
+  Variables are helpful not only for storing and reusing data but also for simplifying complex calculations. Consider an example: you need to convert euros into yuans through dollars. Banks often do this kind of conversion via an intermediate currency when shopping abroad.
 
   First, convert 50 euros into dollars. Suppose that one euro is $1.25:
 
@@ -38,28 +38,28 @@ theory: |
 
   Run it on [repl.it](https://repl.it/languages/javascript) and experiment a little with it.
 
-  Now, back to our currency program. We'll record the dollar value in rubles as a separate variable. Calculate the value of 50 euros in dollars by multiplying them by `1.25`. Suppose that 1 dollar is 60 rubles:
+  Now, back to our currency program. We'll record the dollar value in yuans as a separate variable. Calculate the value of 50 euros in dollars by multiplying them by `1.25`. Suppose that 1 dollar is 6.91 yuans:
 
   ```javascript
-  let rublesPerDollar = 60;
+  let yuansPerDollar = 6.91;
   let dollarsCount = 50 * 1.25; // 62.5
-  let rublesCount = dollarsCount * rublesPerDollar; // 3750
+  let yuansCount = dollarsCount * yuansPerDollar; // 431.875
 
-  console.log(rublesCount);
+  console.log(yuansCount);
   ```
 
   Now, let's merge our output with some text via concatenation:
 
   ```javascript
-  let rublesPerDollar = 60;
+  let yuansPerDollar = 6.91;
   let dollarsCount = 50 * 1.25; // 62.5
-  let rublesCount = dollarsCount * rublesPerDollar; // 3750
+  let yuansCount = dollarsCount * yuansPerDollar; // 431.875
 
-  console.log('The price is ' + rublesCount + ' rubles');
+  console.log('The price is ' + yuansCount + ' yuans');
   ```
 
   <pre class='hexlet-basics-output'>
-  The price is 3750 rubles
+  The price is 431.875 yuans
   </pre>
 
   Any variable can be part of any expression. During the computation, the variable's name is replaced with its value.
@@ -68,7 +68,7 @@ theory: |
 
 instructions: |
 
-  Write a program that takes the initial amount of euros stored in the variable `eurosCount`, converts euros to dollars, and prints it. Then, it should convert the result to rubles and print it on a new line.
+  Write a program that takes the initial amount of euros stored in the variable `eurosCount`, converts euros to dollars, and prints it. Then, it should convert the result to yuans and print it on a new line.
 
   Sample output for 100 euros:
 
@@ -79,4 +79,4 @@ instructions: |
 
   Suppose that:
   - 1 euro = 1.25 dollars
-  - 1 dollar = 60 rubles
+  - 1 dollar = 6.91 yuans
