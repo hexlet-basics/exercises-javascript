@@ -4,10 +4,10 @@ let eurosCount = 100;
 
 // BEGIN
 let dollarsPerEuro = 1.25;
-let rublesPerDollar = 60;
+let yuansPerDollar = 6.91;
 
 let dollarsCount = eurosCount * dollarsPerEuro;
 console.log(dollarsCount);
-let rublesCount = dollarsCount * rublesPerDollar;
-console.log(rublesCount);
+let yuansCount = dollarsCount * yuansPerDollar;
+console.log(yuansCount);
 // END
