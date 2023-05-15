@@ -1,5 +1,5 @@
-// Функция reverse() написана нами специально для наших упражнений
-// В ней используются механики, которые еще не изучались
+// We wrote the reverse() function solely for our exercises
+// It uses some techniques that we haven't covered in our lessons yet
 const reverse = (s) => s.split('').reverse().join('');
 
 // BEGIN
