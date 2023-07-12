@@ -1,0 +1,58 @@
+---
+
+name: Variables and concatenation
+theory: |
+
+  To consolidate the previous topic, let's try using variables with concatenation. The syntax remains the same, we know how to concatenate (combine) two strings:
+
+  ```javascript
+  let what = 'Kings' + 'road';
+  console.log(what); // => 'Kingsroad'
+  ```
+
+  … which means we can concatenate the string with a variable containing the string:
+
+  ```javascript
+  let first = 'Kings';
+  let what = first + 'road';
+
+  console.log(what); // => 'Kingsroad'
+  ```
+
+  … and even concatenate two variables containing strings:
+
+  ```javascript
+  let first = 'Kings';
+  let last = 'road';
+
+  let what = first + last;
+  console.log(what); // => 'Kingsroad'
+  ```
+
+  https://replit.com/@hexlet/variables-expression
+
+instructions: |
+
+  Websites are constantly sending emails to their users. A common task is to automatically send a personalized email with the user's name in the header. If you store a person's name as a string somewhere in a website database, the task of generating the header boils down to concatenation. For instance, you have to concatenate the string `Hello` with a string containing their name.
+
+  Write a program that will create a header and a body of the email using ready-made variables and print the resulting strings.
+
+  For the header use the variables `firstName` and `greeting`, a comma, and an exclamation mark. Print it in the correct order.
+
+  For the email body, use the variables `info` and `intro`, with the second sentence on a new line.
+
+  The result should look like this:
+
+  <pre class='hexlet-basics-output'>
+  Hello, Joffrey!
+  Here is important information about your account security.
+  We couldn't verify your mother's maiden name.
+  </pre>
+
+  Complete the task using `console.log()` no more than twice.
+
+tips:
+  - |
+    Consider how you should concatenate the variables (Which string? What order?) to get the two-line output of the email body.
+  - |
+    Remember that you can create a string containing only the escape sequence `\n`.

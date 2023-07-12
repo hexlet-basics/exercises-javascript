@@ -1,0 +1,5 @@
+---
+
+name: Properties and Methods
+description: |
+  The data we use in our programs can have important properties. In JavaScript, properties are built-in directly into the language. Besides properties, there are methods — functions within properties. Properties and methods are expressions, just like variables, constants, or function calls, which means that you can combine them in many ways. We elaborate these topics deeply in separate courses dedicated to object-oriented features of JavaScript. Here we will cover the basics.
