@@ -1,5 +1,0 @@
----
-
-name: Strings
-description: |
-  In programming, text is called string, and this topic is not that simple. How do you print a phrase that has both single and double quotation marks? How to deal with text at all, since the computer is unaware of any letters! This module deals with various aspects of text writing — from quotation marks and escaping to encoding.

@@ -1,6 +1,0 @@
----
-
-name: JavaScript data types
-description: |
-  JavaScript is a weakly typed language with immutable primitive data types. What will happen if you try to multiply a number by a string? How does JavaScript recognize the type of a given data? And what does JavaScript do when it sees a type mismatch? Find the answers to these questions in the current module.
-
