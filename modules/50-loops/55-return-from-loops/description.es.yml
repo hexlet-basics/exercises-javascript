@@ -1,0 +1,65 @@
+---
+
+name: Salida de Bucles
+theory: |
+
+  Trabajar con bucles generalmente se reduce a dos escenarios:
+
+  1. Agregación. Acumulación de resultados durante las iteraciones y trabajar con ellos después del bucle. La inversión de una cadena es un ejemplo de este enfoque.
+  2. Ejecución de un bucle hasta alcanzar un resultado deseado y luego salir del bucle. Por ejemplo, la tarea de buscar números primos. Recordemos que un número primo es aquel que solo es divisible entre sí mismo y uno.
+
+  Consideremos un algoritmo simple para verificar la primalidad de un número. Dividiremos el número deseado `x` entre todos los números en el rango desde dos hasta `x - 1` y verificaremos el residuo de la división. Si no encontramos ningún divisor en este rango que divida al número `x` sin residuo, entonces estamos ante un número primo.
+
+  Si lo pensamos un poco, notaremos que solo necesitamos verificar números hasta `x / 2`, en lugar de llegar a `x - 1`. Por ejemplo, el 11 no es divisible por 2, 3, 4, 5. Además, no habrá divisores mayores que la mitad del número. Por lo tanto, podemos optimizar y verificar solo hasta `x / 2`.
+
+  ```javascript
+  const esPrimo = (numero) => {
+    if (numero < 2) {
+      return false;
+    }
+
+    let divisor = 2;
+
+    while (divisor <= numero / 2) {
+      if (numero % divisor === 0) {
+        return false;
+      }
+
+      divisor += 1;
+    }
+
+    return true;
+  }
+
+  esPrimo(1); // false
+  esPrimo(2); // true
+  esPrimo(3); // true
+  esPrimo(4); // false
+  ```
+
+  https://replit.com/@hexlet/js-basics-conditions-inside-loops
+
+  El algoritmo está diseñado de tal manera que, si encontramos al menos un divisor en el rango de la división secuencial entre números de 2 a `x / 2`, entonces el número pasado como argumento no es primo, y no tiene sentido continuar las comprobaciones. En este punto, deberíamos devolver `false`.
+
+  Solo si el bucle se ejecuta por completo, podemos concluir que el número es primo, ya que no se encontró ningún número que sea divisor sin residuo.
+
+instructions: |
+
+  Implementa la función `tieneCaracter()`, que verifica si una cadena contiene una letra específica (considerando la diferencia entre mayúsculas y minúsculas). La función toma dos parámetros:
+
+  * Una cadena
+  * La letra a buscar
+
+  ```javascript
+  tieneCaracter('Hexlet', 'H'); // true
+  tieneCaracter('Hexlet', 'h'); // false
+  tieneCaracter('Increíble', 'm'); // true
+  tieneCaracter('Increíble', 'd'); // false
+  ```
+
+tips:
+  - "[Lista de números primos](https://es.wikipedia.org/wiki/Anexo:N%C3%BAmeros_primos)"
+
+definitions:
+  - name: Agregación
+    description: "Acumulación de resultados durante las iteraciones y trabajar con ellos después del bucle."

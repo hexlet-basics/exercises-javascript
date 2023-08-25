@@ -1,0 +1,39 @@
+---
+
+name: Operadores
+theory: |
+
+  Antes de continuar, vamos a repasar la terminología básica. Un símbolo de operación, como `+`, se llama **operador**. Los operadores realizan operaciones en valores específicos, que se llaman **operandos**. Los operadores en sí suelen estar representados por uno o varios caracteres, aunque a veces también pueden ser palabras. La gran mayoría de los operadores corresponden a operaciones matemáticas.
+
+  ```javascript
+  console.log(8 + 2);
+  ```
+
+  En este ejemplo, `+` es el **operador**, y los números `8` y `2` son los **operandos**.
+
+  En el caso de la suma, tenemos dos operandos: uno a la izquierda y otro a la derecha del símbolo `+`. Las operaciones que requieren dos operandos se llaman **binarias**. Si falta al menos uno de los operandos, por ejemplo, `3 + ;`, el programa mostrará un error de sintaxis.
+
+  Las operaciones (no los operadores) pueden ser no solo binarias, sino también unarias (con un solo operando) e incluso ternarias (con tres operandos). Además, los operadores pueden tener la misma apariencia pero representar operaciones diferentes.
+
+    ```javascript
+    console.log(-3); // => -3
+    ```
+
+  En el ejemplo anterior, se aplica una operación unaria al número `3`. El operador de menos antes del tres le indica al intérprete que tome el número `3` y encuentre su opuesto, es decir, `-3`.
+
+  Esto puede ser un poco confuso, ya que `-3` es tanto un número en sí mismo como un operador con un operando, pero es una estructura común en los lenguajes de programación.
+
+instructions: |
+  Escribe un programa que calcule la diferencia entre los números `6` y `-81` y muestre la respuesta en pantalla.
+
+tips:
+  - |
+    [Operadores en JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+
+definitions:
+  - name: Operación aritmética
+    description: suma, resta, multiplicación y división.
+  - name: Operación unaria
+    description: operación con un solo operando. Por ejemplo, `-3` es una operación unaria para obtener el número opuesto al número tres.
+  - name: Operación binaria
+    description: operación con dos operandos. Por ejemplo, `3 + 9`.

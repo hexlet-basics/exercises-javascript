@@ -1,0 +1,5 @@
+---
+
+name: Cadenas
+description:
+  En programación, el texto se llama "cadenas" y este tema no es tan simple como puede parecer. ¿Cómo imprimir una frase que contiene tanto comillas simples como comillas dobles? ¿Cómo lidiar con el texto en general, ya que la computadora no sabe nada sobre letras? Este módulo se dedica a diferentes aspectos de la escritura de texto, desde comillas y escapado hasta codificación.

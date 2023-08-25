@@ -1,0 +1,114 @@
+---
+
+name: Operador ternario
+theory: |
+
+  Echa un vistazo a la definición de una función que devuelve el valor absoluto de un número:
+
+  ```javascript
+  const abs = (number) => {
+    if (number >= 0) {
+      return number;
+    }
+
+    return -number;
+  };
+
+  abs(10); // 10
+  abs(-10); // 10
+  ```
+
+  ¿Se puede escribir de forma más concisa? Algo como `return <respuesta dependiendo de la condición>`? Para eso, a la derecha de `return` debe haber una expresión, pero `if` es una instrucción, no una expresión.
+
+  En JavaScript existe una construcción que es similar a la estructura *if-else*, pero a la vez es una expresión. Se llama **operador ternario**.
+
+  El operador ternario es único en su tipo, ya que requiere tres operandos:
+
+  ```javascript
+  const abs = (number) => {
+    return number >= 0 ? number : -number;
+  };
+  ```
+
+  El patrón general se ve así: `<predicado> ? <expresión si es verdadero> : <expresión si es falso>`.
+
+  La versión abreviada de la función `abs()` se ve así:
+
+  ```javascript
+  const abs = (number) => (number >= 0 ? number : -number);
+  ```
+
+  Ten en cuenta los paréntesis alrededor del operador ternario. No son obligatorios, pero el linter [recomienda encarecidamente](https://eslint.org/docs/rules/no-confusing-arrow) usarlos para evitar ambigüedades.
+
+  Ahora reescribamos la función inicial `getTypeOfSentence()` de manera similar:
+
+  Antes:
+
+  ```javascript
+  const getTypeOfSentence = (sentence) => {
+    const lastChar = sentence.slice(-1);
+
+    if (lastChar === '?') {
+        return 'question';
+    }
+
+    return 'normal';
+  };
+  ```
+
+  Después:
+
+  ```javascript
+  const getTypeOfSentence = (sentence) => {
+    const lastChar = sentence.slice(-1);
+
+    return (lastChar === '?') ? 'question' : 'normal';
+  };
+
+  getTypeOfSentence('Hodor');  // normal
+  getTypeOfSentence('Hodor?'); // question
+  ```
+
+  https://replit.com/@hexlet/js-basics-ternary-operator
+
+  ---
+
+  Si recuerdas el poder de las expresiones, probablemente ya te hayas dado cuenta de que se puede anidar un operador ternario dentro de otro. **No hagas esto :)**. Este tipo de código es difícil de leer y depurar, y es una mala práctica.
+
+instructions: |
+
+  Implementa la función `convertText()`, que recibe una cadena de texto y, si la primera letra no está en mayúscula, devuelve la versión invertida de la cadena original. Si la primera letra está en mayúscula, la función devuelve la cadena sin cambios. Si se pasa una cadena vacía como argumento, la función debe devolver una cadena vacía.
+
+  Ejemplos de uso:
+
+  ```javascript
+  convertText('Hello'); // Hello
+  convertText('hello'); // olleh
+
+  // No olvides tener en cuenta la cadena vacía
+  convertText(''); // ''
+  ```
+
+  Puedes invertir una cadena utilizando la función `reverse()`. Debes pasar la cadena que deseas invertir como argumento:
+
+  ```javascript
+  const result = reverse('Hello!');
+  console.log(result); // => !olleH
+  ```
+
+  Hay diferentes enfoques para resolver este problema. Es posible que necesites el método [toUpperCase()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase) y la capacidad de obtener un carácter de una cadena (por ejemplo, `str[0]`).
+
+  Intenta escribir dos versiones de la función: una con un if-else normal y otra con un operador ternario.
+
+  ## Consejos
+
+  * Piensa en qué verificación debes hacer primero: si la primera letra es mayúscula o si la cadena está vacía. ¿Qué es más importante?
+
+tips:
+  - |
+    [Más información sobre el operador ternario](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+
+definitions:
+  - name: Operador ternario
+    description: |
+      Una forma de convertir una simple instrucción condicional en una expresión, por ejemplo, `number >= 0 ? number : -number`.

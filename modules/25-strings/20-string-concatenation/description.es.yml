@@ -1,0 +1,71 @@
+---
+
+name: Concatenación
+theory: |
+
+  En el desarrollo web, los programas operan constantemente con cadenas de texto. Todo lo que vemos en los sitios web está representado de alguna manera como texto. Este texto suele ser dinámico, es decir, se obtiene a partir de diferentes partes que se unen. La operación de unir cadenas en programación se llama **concatenación**.
+
+  ```javascript
+  // El operador es el mismo que para sumar números
+  // pero aquí tiene un significado diferente (semántica)
+  console.log('Dragon' + 'stone');
+  // => Dragonstone
+  ```
+
+  La concatenación de cadenas siempre ocurre en el mismo orden en el que se escriben los operandos. El operando izquierdo se convierte en la parte izquierda de la cadena, y el operando derecho en la parte derecha.
+
+  Aquí hay algunos ejemplos más:
+
+  ```javascript
+  console.log('Kings' + 'wood');     // => Kingswood
+
+  // Orden inverso de las palabras
+  console.log('road' + 'Kings');     // => roadKings
+
+  // Se pueden concatenar cadenas de cualquier tipo
+  console.log("King's" + 'Landing'); // => King'sLanding
+  ```
+
+  Como puedes ver, puedes concatenar cadenas incluso si están escritas con diferentes tipos de comillas.
+
+  En el último ejemplo, el nombre de la ciudad se escribió incorrectamente: *King's Landing* debe escribirse con un espacio. Pero en nuestras cadenas iniciales no había espacios, y los espacios en el código a la izquierda y a la derecha del símbolo `+` no importan, porque no forman parte de las cadenas.
+
+  Hay dos formas de solucionar esta situación:
+
+  ```javascript
+  // Ambas formas son equivalentes
+
+  // Agregar un espacio en la parte izquierda
+  console.log("King's " + 'Landing'); //  => King's Landing
+  // Agregar un espacio en la parte derecha
+  console.log("King's" + ' Landing'); //  => King's Landing
+  ```
+
+  Un espacio es simplemente un símbolo más, al igual que los demás. Cuantos más espacios haya, más anchos serán los espacios:
+
+  ```javascript
+  console.log("King's " + ' Landing');   // => King's  Landing
+
+  console.log("King's  " + '  Landing'); // => King's    Landing
+  ```
+
+  https://replit.com/@hexlet/js-basics-strings
+
+instructions: |
+
+  Muestra en la pantalla
+
+  ```
+  Winter came for the House of Frey.
+  ```
+
+  utilizando la concatenación de palabras.
+
+tips:
+  - |
+    Si hay una línea `// BEGIN` y `// END` en el editor, el código debe escribirse entre estas líneas.
+
+definitions:
+  - name: Concatenación
+    description: |
+      la operación de unir dos cadenas. Por ejemplo, `console.log("King's " + ' Landing');`

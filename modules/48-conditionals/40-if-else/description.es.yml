@@ -1,0 +1,81 @@
+---
+
+name: else
+theory: |
+
+  Vamos a escribir la función `getTypeOfSentence()`, que analiza un texto y devuelve una descripción de su tono: para las oraciones normales - *Oración general*, para las preguntas - *Oración interrogativa*.
+
+  ```javascript
+    getTypeOfSentence('Hodor');  // Oración general
+    getTypeOfSentence('Hodor?'); // Oración interrogativa
+  ```
+
+  Implementación de la función:
+
+  ```javascript
+  const getTypeOfSentence = (sentence) => {
+    // Declaramos una variable donde guardaremos el tipo de oración
+    let sentenceType;
+    // Predicado que verifica el final del texto
+    // Si termina con el símbolo '?', devuelve true,
+    // de lo contrario, devuelve false
+    if (sentence.endsWith('?')) {
+      // Si la condición anterior se cumple,
+      // entonces es una oración interrogativa.
+      // Asignamos a sentenceType el valor correspondiente.
+      sentenceType = 'Pregunta';
+    } else {
+      // En todos los demás casos, la oración es general
+      sentenceType = 'General';
+    }
+
+    // Usando interpolación, formamos la cadena
+    return `${sentenceType} sentence`;
+  };
+  ```
+
+  https://replit.com/@hexlet/js-basics-if-else
+
+  Hemos agregado la palabra clave `else` y un nuevo bloque con llaves. Este bloque se ejecutará solo si la condición en `if` es falsa.
+
+  Hay dos formas de estructurar la construcción *if-else*. Usando la negación, se puede cambiar el orden de los bloques:
+
+  ```javascript
+  const getTypeOfSentence = (sentence) => {
+    let sentenceType;
+    // Se agregó la negación
+    // El contenido de else se movió a if y viceversa
+    if (!sentence.endsWith('?')) {
+      sentenceType = 'General';
+    } else {
+      sentenceType = 'Pregunta';
+    }
+
+    return `${sentenceType} sentence`;
+  };
+  ```
+
+  ¿Cuál es el método preferido? El cerebro humano tiende a pensar de manera directa y no a través de negaciones. Trate de elegir una condición que no contenga negaciones y ajuste el contenido de los bloques en consecuencia.
+
+instructions: |
+
+  Implementa la función `normalizeUrl()`, que realiza lo que se conoce como normalización de datos. Recibe una dirección de un sitio web y devuelve la misma con *https://* al principio.
+
+  La función acepta direcciones en forma de *DIRECCIÓN* o *https://DIRECCIÓN*, pero siempre devuelve la dirección en forma de *https://DIRECCIÓN*.
+
+  Puedes usar el método [startsWith()](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/startsWith) para verificar si una cadena comienza con el prefijo *https://*. Luego, en base a eso, agregar o no agregar *https://*.
+
+  Ejemplos de llamadas:
+
+  ```javascript
+  normalizeUrl("google.com"); // "https://google.com"
+  normalizeUrl("https://ai.fi"); // "https://ai.fi"
+  ```
+
+tips:
+  - |
+    [if...else](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/if...else)
+
+definitions:
+  - name: "else"
+    description: "forma de especificar un bloque de código que se ejecutará si la condición del `if` no se cumple"

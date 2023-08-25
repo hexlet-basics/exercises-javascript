@@ -1,0 +1,5 @@
+---
+
+name: Definición de funciones
+description: |
+  La definición de funciones propias simplifica en gran medida la escritura y el mantenimiento de programas. Por ejemplo, la capacidad de definir funciones permite combinar operaciones complejas en una sola función, ocultando toda la complejidad detrás de una función simple. Al aprender a escribir funciones, darás el primer paso hacia la creación de programas realmente útiles. Y nosotros te ayudaremos en este proceso. En este módulo, crearás tu primera función y aprenderás a darle nombres claros (y también a variables y constantes).

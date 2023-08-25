@@ -1,0 +1,85 @@
+---
+
+name: Parámetros opcionales de las funciones
+theory: |
+
+  En programación, muchas funciones y métodos tienen parámetros que rara vez cambian. En estos casos, se les asignan valores predeterminados que se pueden cambiar según sea necesario. Esto reduce un poco la cantidad de código repetitivo. Por ejemplo:
+
+  ```javascript
+  // Función de potencia
+  // El segundo parámetro tiene un valor predeterminado de 2
+  const pow = (x, base = 2) => {
+    return x ** base;
+  };
+  // 3 elevado a la segunda potencia (el 2 es el valor predeterminado)
+  pow(3); // 9
+  // tres elevado a la tercera potencia
+  pow(3, 3); // 27
+  ```
+
+  https://replit.com/@hexlet/js-basics-define-functions-default-parameters
+
+  El valor predeterminado se ve como una asignación normal en la definición. Solo se activa si el argumento no se pasa. Hay que acostumbrarse a esto. El valor predeterminado incluso puede estar presente cuando solo hay un parámetro:
+
+  ```javascript
+  const print = (text = 'nada') => console.log(text);
+
+  print(); // "nada"
+  print("Hexlet"); // Hexlet
+  ```
+
+  Puede haber cualquier cantidad de parámetros con valores predeterminados:
+
+  ```javascript
+  const f = (a = 5, b = 10, c = 100) => { ... }
+  ```
+
+  Los valores predeterminados tienen una peculiaridad: deben ir al final de la lista de parámetros. Los valores pasados a la función siempre se asignan a los parámetros de izquierda a derecha, en el orden en que se pasan. Esto significa que si los valores predeterminados están a la izquierda en la lista de parámetros, antes de los parámetros normales, cuando se llama a la función con argumentos, los valores de los argumentos se colocarán en lugar de los valores predeterminados. Por ejemplo:
+
+  ```javascript
+  // Llamamos a esta función con los siguientes argumentos: f(1, 2, 3)
+  const f = (a = 5, b = 10, c = 100, x) => { ... }
+  // los parámetros tendrán los siguientes valores: a = 1, b = 2, c = 3, x = undefined
+  // no pasamos nada a x, por lo que JS le asigna el valor undefined
+
+  // Por eso los parámetros con valores predeterminados deben ir a la derecha de los normales,
+  // de lo contrario, se sobrescribirán o un parámetro normal puede quedar sin valor
+
+  // Llamamos a la función, f(1, 2)
+  const f = (a = 5, x, b = 10, c = 100) => { ... }
+
+  // a = 1, x = 2, los demás parámetros obtienen los valores predeterminados
+
+  // Aquí todo está bien, no hay sorpresas
+  const f = (x, a = 5, b = 10, c = 100) => { ... }
+
+  // Y aquí también
+  const f = (x, y, a = 5, b = 10, c = 100) => { ... }
+  ```
+
+instructions: |
+
+  Implementa la función `getHiddenCard()`, que recibe como entrada el número de una tarjeta de crédito (compuesto por 16 dígitos) como una cadena y devuelve su versión oculta, que se puede utilizar en el sitio web para mostrarla. Si la tarjeta original tenía el número *2034399002125581*, entonces la versión oculta se verá así *\*\*\*\*5581*. En otras palabras, la función reemplaza los primeros 12 caracteres por asteriscos. El número de asteriscos se controla mediante el segundo parámetro opcional. El valor predeterminado es 4.
+
+  ```javascript
+  // La tarjeta de crédito se pasa como una cadena
+  getHiddenCard('1234567812345678', 2); // **5678
+  getHiddenCard('1234567812345678', 3); // ***5678
+  getHiddenCard('1234567812345678');    // ****5678
+  getHiddenCard('2034399002121100', 1); // *1100
+  ```
+
+  Para completar la tarea, necesitarás el método `repeat()` de la cadena, que repite la cadena un número determinado de veces.
+
+  ```javascript
+  '+'.repeat(5); // +++++
+  'o'.repeat(3); // ooo
+  ```
+
+tips:
+  - |
+    [Parámetros por defecto](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+
+definitions:
+  - name: Parámetro por defecto
+    description: parámetro opcional de una función

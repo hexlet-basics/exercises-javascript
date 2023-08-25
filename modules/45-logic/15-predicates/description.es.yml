@@ -1,0 +1,57 @@
+---
+
+name: Predicados
+theory: |
+
+  Recordemos la función `isInfant()` del tema anterior:
+
+  ```javascript
+  const isInfant = (age) => age < 1;
+  console.log(isInfant(3));
+  ```
+  <pre class='hexlet-basics-output'>false</pre>
+
+  https://replit.com/@hexlet/js-basics-logic-bool-type
+
+  Estas funciones se llaman predicados. Los predicados (o funciones de pregunta) responden a una pregunta y siempre (¡sin excepciones!) devuelven `true` o `false`.
+
+  En todos los lenguajes, los predicados se nombran de manera especial para facilitar el análisis. En JavaScript, los predicados generalmente comienzan con los prefijos `is`, `has` o `can`, pero no se limitan a estas palabras. Ejemplos:
+
+    * `isInfant()` - "¿es un bebé?"
+    * `hasChildren()` - "¿tiene hijos?"
+    * `isEmpty()` - "¿está vacío?"
+    * `hasErrors()` - "¿tiene errores?"
+
+  Una función solo puede considerarse un predicado **siempre y cuando** devuelva un booleano.
+
+  ---
+
+  Ahora escribamos otra función predicado. Toma una cadena y verifica si es la palabra `'Castle'`:
+
+  ```javascript
+  const isCastle = (type) => type === 'Castle';
+
+  console.log(isCastle('Sea'));
+  ```
+
+  <pre class='hexlet-basics-output'>false</pre>
+
+
+instructions: |
+
+  Escriba una función `isMister()` que tome una cadena y verifique si es la palabra `'Mister'`.
+
+  Ejemplos de llamadas:
+
+  ```javascript
+  isMister('Mister'); // true
+  isMister('Miss');   // false
+  ```
+
+tips:
+  - |
+    [Naming en programación](https://ru.hexlet.io/blog/posts/naming-in-programming)
+
+definitions:
+  - name: "Predicado"
+    description: "una expresión que responde a una pregunta con 'sí' o 'no' utilizando el tipo booleano."

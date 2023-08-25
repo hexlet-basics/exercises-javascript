@@ -1,0 +1,50 @@
+---
+
+name: Recorrido de caracteres
+theory: |
+
+  Los bucles no solo son útiles para trabajar con números, sino también para trabajar con cadenas de texto. Esto se debe principalmente a la capacidad de acceder a un carácter específico mediante su índice. A continuación se muestra un ejemplo de código que imprime cada letra de una palabra en una línea separada:
+
+  ```javascript
+  const imprimirNombrePorSimbolo = (nombre) => {
+    let i = 0;
+    // Esta condición se evaluará hasta el final de la cadena,
+    // incluyendo el último carácter. Su índice es `length - 1`.
+    while (i < nombre.length) {
+      // Accedemos al carácter mediante su índice
+      console.log(nombre[i]);
+      i = i + 1;
+    }
+  };
+
+  const nombre = 'Arya';
+  imprimirNombrePorSimbolo(nombre);
+  // => A
+  // => r
+  // => y
+  // => a
+  ```
+
+  https://replit.com/@hexlet/js-basic-iteration-over-string
+
+  Lo más importante en este código es establecer la condición correcta en el `while`. Esto se puede hacer de dos formas: `i < nombre.length` o `i <= nombre.length - 1`. Ambas formas conducen al mismo resultado.
+
+instructions: |
+
+  Implementa la función `imprimirPalabraInvertidaPorSimbolo()`, que imprime la palabra pasada como argumento carácter por carácter, como se muestra en el ejemplo de la teoría, pero en orden inverso.
+
+  ```javascript
+  const palabra = 'Hexlet';
+
+  imprimirPalabraInvertidaPorSimbolo(palabra);
+  // => t
+  // => e
+  // => l
+  // => x
+  // => e
+  // => H
+  ```
+
+tips:
+  - |
+    [Iteración](https://es.wikipedia.org/wiki/Iteraci%C3%B3n_(inform%C3%A1tica))

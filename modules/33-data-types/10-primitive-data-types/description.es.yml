@@ -1,0 +1,55 @@
+---
+
+name: Tipos de datos
+theory: |
+
+  ¿Qué sucede si intentamos multiplicar un número por una cadena de texto? JavaScript devuelve `NaN` (no es un número) - ese es el valor. Ocurre cuando se utilizan valores incompatibles juntos. En este caso, un número y una cadena de texto:
+
+  ```javascript
+  3 * 'Dracarys'; // NaN
+  ```
+
+  En los lenguajes de programación de alto nivel, los datos se dividen en tipos. Cualquier cadena de texto pertenece al tipo String, y los números pertenecen al tipo Number y BigInt (números muy grandes). ¿Para qué sirven los tipos? Para proteger el programa de errores difíciles de detectar. Los tipos determinan dos cosas:
+
+  * Los valores posibles (permitidos). Por ejemplo, en JavaScript, los números se dividen en dos tipos: Number y BigInt. Los primeros son todos los números por debajo de un cierto umbral (que se puede ver), los segundos son los números más grandes. Esta división está relacionada con las características técnicas del hardware.
+  * El conjunto de operaciones que se pueden realizar con este tipo. Por ejemplo, la operación de multiplicación tiene sentido para el tipo "números enteros". Pero no tiene sentido para el tipo "cadenas de texto": multiplicar la palabra "mamá" por la palabra "cuaderno" es absurdo.
+
+  JavaScript se comporta de dos maneras cuando se encuentra con violaciones. En algunas situaciones, se queja de la invalidez de la operación y se detiene con un error. En otros casos, el programa sigue funcionando. En este caso, la operación no válida devuelve algo similar a `NaN`, como en el ejemplo anterior.
+
+  ¿Cómo sabe JavaScript qué tipo de datos tiene delante? Es bastante simple. Cualquier valor se inicializa en algún lugar y, dependiendo de cómo se inicialice, se entiende qué es. Por ejemplo, los números son simplemente números sin caracteres adicionales, excepto el punto para los números racionales. Pero las cadenas de texto siempre están delimitadas por caracteres especiales (en JavaScript hay tres variantes diferentes). Por ejemplo, el valor `'234'` es una cadena de texto, a pesar de que contiene números.
+
+  JavaScript permite conocer el tipo de datos con el operador `typeof`:
+
+  ```javascript
+  typeof 3; // number
+  typeof 'Juego'; // string
+  ```
+
+  https://replit.com/@hexlet/js-basics-data-types-primitive-data-types
+
+  Los tipos de datos Number, BigInt y String son tipos *primitivos*. Pero hay otros. En JavaScript, hay un tipo compuesto llamado Object (y en base a él, arrays, fechas y otros). Con él, se pueden combinar datos de diferentes tipos en un solo valor, por ejemplo, podemos crear un usuario agregando un nombre y una edad.
+
+  ```javascript
+  // Esta sintaxis se aprende en Hexlet
+  const usuario = { nombre: 'Toto', edad: 33 };
+  ```
+
+  En inglés, las cadenas de texto en programación se llaman "strings", y las líneas de los archivos de texto se llaman "lines". Por ejemplo, en el código anterior hay dos líneas (lines), pero solo una cadena de texto (strings). En ruso, a veces puede haber confusión, por lo tanto, en todas las lecciones usaremos **cadena de texto** para referirnos al tipo de datos "cadena de texto", y **línea** para referirnos a las líneas (lines) en los archivos.
+
+instructions: |
+  Muestra en pantalla el número `-0.304`.
+
+tips:
+  - |
+    [Literal](https://es.wikipedia.org/wiki/Literal_(inform%C3%A1tica))
+  - |
+    [Artículo sobre números decimales](https://es.wikipedia.org/wiki/N%C3%BAmero_decimal)
+
+definitions:
+  - name: "Tipo de datos"
+    description: "conjunto de datos en el código (tipo de información). El tipo determina qué se puede hacer con los elementos de un conjunto específico. Por ejemplo, números enteros, números racionales, cadenas de texto son diferentes tipos de datos."
+  - name: "Tipos de datos primitivos"
+    description: "tipos simples, incorporados en el propio lenguaje de programación."
+  - name: "Cadena de texto (string)"
+    description: |
+      tipo de datos que describe un conjunto de caracteres (es decir, texto); por ejemplo, `'texto'` o `"texto"`.

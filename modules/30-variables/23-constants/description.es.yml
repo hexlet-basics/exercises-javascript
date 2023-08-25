@@ -1,0 +1,57 @@
+---
+
+name: Constantes
+theory: |
+
+  En todo el módulo, la gran mayoría de los ejemplos de código utilizaban variables como nombres (alias) de valores específicos, en lugar de como variables que cambian su valor con el tiempo.
+
+  ```javascript
+  let dollarsInEuro = 1.25;
+  let rublesInDollar = 60;
+
+  let dollarsCount = 50 * dollarsInEuro; // 62.5
+  let rublesCount = dollarsCount * rublesInDollar; // 3750
+
+  console.log(rublesCount);
+  ```
+
+  En programación, se acostumbra llamar a estos nombres constantes, y muchos lenguajes admiten las constantes como una construcción. JavaScript, en particular, pertenece a esos lenguajes, y sus estándares de codificación [lo dicen claramente](https://eslint.org/docs/rules/prefer-const) - si el valor no cambia, entonces estamos tratando con una constante. Reescribamos el ejemplo anterior utilizando constantes:
+
+  ```javascript
+  const dollarsInEuro = 1.25;
+  const rublesInDollar = 60;
+
+  const euros = 1000;
+  const dollars = euros * dollarsInEuro;    // 1250
+  const rubles = dollars * rublesInDollar; // 75000
+
+  console.log(rubles);
+  ```
+
+  https://replit.com/@hexlet/js-basics-variables
+
+  El único cambio es que la palabra clave `let` se ha reemplazado por `const`, pero esto es solo sintaxis. Ahora, si intentamos cambiar cualquier constante, obtendremos un mensaje de error. De lo contrario, se utilizan de la misma manera que las variables.
+
+  ```javascript
+  const pi = 3.14;
+  pi = 5; // TypeError: Asignación a una variable constante.
+  ```
+
+  ¿Por qué tanta complicación? ¿Por qué no dejar solo las variables? Incluso si dejáramos solo las variables, eso no cambiaría el hecho de que a menudo se usarían como constantes. Además, el código en JavaScript se puede escribir de manera idiomática sin usar variables en absoluto. Eche un vistazo a un ejemplo de [código real de Hexlet](https://github.com/Hexlet/hexlet-exercise-kit/blob/main/import-documentation/index.js). En esta etapa, es posible que no lo entienda, pero intente contar la cantidad de constantes y variables dentro de él, verá que solo hay una variable y un montón de constantes.
+
+  Las constantes son mucho más fáciles de analizar. Cuando vemos una constante en el código, inmediatamente entendemos que su valor siempre permanece igual. Al usar constantes, no hay concepto de tiempo. Con las variables, no es así, no podemos estar seguros de su valor, tenemos que analizar todo el código para comprender cómo podrían haber cambiado.
+
+  Las variables son absolutamente necesarias solo en un caso (en todos los demás casos, se pueden evitar) - al trabajar con bucles, a los que aún no hemos llegado.
+
+  En el futuro, preferiremos las constantes y solo usaremos variables cuando sea necesario.
+
+instructions: |
+
+  Crea una constante llamada `army`, asígnale el valor `the white walkers` e imprime su valor en la pantalla.
+
+tips: 
+  - |
+    [const](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/const)
+  
+  - |
+    [TypeError](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/TypeError)

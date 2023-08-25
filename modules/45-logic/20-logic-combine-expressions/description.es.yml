@@ -1,0 +1,89 @@
+---
+
+name: Combinación de operaciones lógicas
+theory: |
+
+  Las operaciones lógicas son expresiones. Esto significa que se pueden combinar con otras expresiones.
+
+  Por ejemplo, si queremos verificar si un número es par, es decir, si es divisible por dos, se utiliza el siguiente enfoque en programación:
+
+  * Se verifica el residuo de la división por 2:
+    * Si el residuo es 0, entonces el número es par.
+    * Si el residuo no es 0, entonces el número es impar.
+
+  El residuo de la división es un concepto simple pero muy importante en aritmética, álgebra e incluso en teoría de números y criptografía. La idea es dividir un número en grupos iguales y si queda algo al final, ese es el residuo de la división.
+
+  Dividir caramelos entre personas:
+
+  - 7 caramelos, 2 personas: 2 x 3 + **residuo 1**.
+    Esto significa que 7 no es divisible por 2.
+  - 21 caramelos, 3 personas: 3 x 7 + **residuo 0**.
+    Esto significa que 21 es divisible por 3.
+  - 19 caramelos, 5 personas: 5 x 3 + **residuo 4**.
+    Esto significa que 19 no es divisible por 5.
+
+  El operador `%` calcula el residuo de la división (no confundir con la división):
+
+  ```javascript
+  7 % 2;  // 1
+  21 % 3; // 0
+  19 % 5; // 4
+
+  // Verificación de paridad
+
+  10 % 2 // 10 es par, ya que el residuo es 0
+  9 % 2  // 9 es impar, ya que el residuo es 1
+  ```
+
+  Escribamos una función para verificar la paridad:
+
+  ```javascript
+  const isEven = (number) => number % 2 === 0;
+
+  isEven(10); // true
+  isEven(3);  // false
+  ```
+
+  En una sola expresión hemos combinado el operador lógico `===` (verificación de igualdad) y el operador aritmético `%`.
+
+  Las operaciones aritméticas tienen mayor prioridad que las operaciones lógicas. Esto significa que primero se calcula la expresión aritmética `number % 2` y luego el resultado se utiliza en la comparación lógica.
+
+  En palabras, esto se puede interpretar como: *«calcular el residuo de la división del número `number` por 2 y comparar si el residuo es igual a cero; luego devolver el resultado de la comparación de igualdad»*.
+
+  Otro ejemplo: escribamos una función que tome una cadena de texto y verifique si la primera letra es mayúscula.
+
+  Algoritmo:
+
+  1. Obtener y guardar en una variable el primer carácter de la cadena de texto de parámetro.
+  2. Comparar si el carácter es igual a su versión en mayúscula.
+  3. Devolver el resultado.
+
+  ```javascript
+  const isFirstLetterInUpperCase = (string) => {
+    const firstLetter = string[0];
+    return firstLetter.toUpperCase() === firstLetter;
+  };
+
+  isFirstLetterInUpperCase('marmont'); // false
+  isFirstLetterInUpperCase('Robb');    // true
+  ```
+
+  https://replit.com/@hexlet/js-basics-logica-operations
+
+instructions: |
+
+  Implementa una función que verifique el formato de un número de teléfono especificado. Si el teléfono comienza con un *+*, significa que está en formato internacional.
+
+  ```javascript
+  isInternationalPhone('89602223423'); // false
+  isInternationalPhone('+79602223423'); // true
+  ```
+
+tips: 
+  - |
+    [Expresión](https://es.wikipedia.org/wiki/Expresión_(informática))
+
+definitions:
+  - name: Expresión
+    description: |
+      una secuencia de acciones sobre datos que lleva a algún resultado que se puede utilizar.

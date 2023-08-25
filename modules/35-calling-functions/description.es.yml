@@ -1,0 +1,5 @@
+---
+
+name: Llamada a funciones
+description:
+  Para expresar cualquier operación arbitraria en programación, existe el concepto de "función". Las funciones son los bloques de construcción con los que los programadores construyen sistemas. En este módulo aprenderemos a utilizar las funciones ya creadas. Observaremos la firma de la función en la documentación y entenderemos cómo utilizarla. Nos familiarizaremos con las bibliotecas estándar que contienen miles de funciones. No es posible aprender todas las funciones, pero cada programador debe saber dónde buscar la documentación sobre ellas.

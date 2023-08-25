@@ -1,0 +1,33 @@
+---
+
+name: Azúcar sintáctico
+theory: |
+
+  Las construcciones como `index = index + 1` se utilizan bastante en JavaScript, por lo que los creadores del lenguaje agregaron una forma abreviada: `index += 1`. Estas abreviaciones se conocen como **azúcar sintáctico**, ya que hacen que el proceso de escribir código sea un poco más fácil y agradable, "endulzándolo" :)
+
+  Existen formas abreviadas para todas las operaciones aritméticas y para la concatenación de cadenas:
+
+  - `a = a + 1` → `a += 1`
+  - `a = a - 1` → `a -= 1`
+  - `a = a * 2` → `a *= 2`
+  - `a = a / 1` → `a /= 1`
+  - `a = a + 'foo'` → `a += 'foo'`
+
+instructions: |
+
+  Implementa la función `filterString()`, que recibe una cadena y un carácter, y devuelve una nueva cadena en la que se elimina el carácter pasado en todas sus posiciones. La capitalización de los caracteres es importante.
+
+  ```javascript
+  const str = 'If I look back I am lost';
+  filterString(str, 'I'); // 'f  look back  am lost'
+  filterString('zz Zorro', 'z'); // ' Zorro'
+  ```
+
+tips:
+  - |
+    [Azúcar sintáctico](https://es.wikipedia.org/wiki/Azúcar_sintáctico)
+
+definitions:
+  - name: Azúcar sintáctico
+    description: |
+      son características sintácticas que no afectan el comportamiento del programa, pero hacen que el uso del lenguaje sea más conveniente para los humanos.
