@@ -6,11 +6,11 @@ theory: |
   La palabra "variable" en sí misma indica que se puede cambiar. Y de hecho, con el tiempo, los valores de las variables pueden cambiar dentro de un programa.
 
   ```javascript
-  let greeting = '¡Padre!';
+  let greeting = 'Father!';
   console.log(greeting);
   console.log(greeting);
 
-  greeting = '¡Madre!';
+  greeting = 'Mother!';
   console.log(greeting);
   console.log(greeting);
   ```
