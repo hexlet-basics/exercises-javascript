@@ -3,7 +3,7 @@
 name: Cómo verificamos tus soluciones
 theory: |
 
-  El sitio verifica automáticamente tus soluciones. ¿Cómo funciona?
+  El sitio web verifica automáticamente tus soluciones. ¿Cómo funciona?
 
   En el caso más simple, el sistema simplemente ejecuta tu código y verifica lo que se muestra en la pantalla. Luego lo compara con lo que "esperábamos" según la tarea.
 
@@ -20,26 +20,26 @@ theory: |
   <pre class='hexlet-basics-output'>
     ● test
 
-    expect(received).toBe(expected) // Igualdad de Object.is
+    expect(received).toBe(expected) // Object.is equality
 
-    Valor esperado:
-      "¡Hola, Mundo!"
-    Recibido:
-      "ola, Mundo!"
+    Expected value to be:
+      "Hello, World!"
+    Received:
+      "ello, World!"
   </pre>
 
   Expected es el valor esperado y Received es el valor que devolvió tu código.
 
-  Además de nuestras pruebas, es muy útil experimentar con el código en la consola del [navegador](https://developer.mozilla.org/es/docs/Tools/Consola_de_navegador). En cualquier situación en la que no entiendas algo o quieras probar diferentes formas de uso, no dudes en abrir la consola e ingresar el código allí. Sería ideal si ejecutas todo el código presente en las lecciones por tu cuenta. Además de la consola, es útil utilizar el servicio [repl.it](https://repl.it/languages/javascript).
+  Además de nuestras pruebas, es muy útil experimentar con el código en la consola del [navegador](https://developer.mozilla.org/es/docs/Tools/Consola_de_navegador). En cualquier situación en la que no entiendas algo o quieras probar diferentes formas de uso, no dudes en abrir la consola e ingresar el código allí. Sería ideal si ejecutas todo el código presente en las lecciones por tu cuenta. Además de la consola, es útil usar el servicio [repl.it](https://repl.it/languages/javascript).
 
   ---
 
   A veces, durante la resolución de un problema, puede parecer que has hecho todo correctamente, pero el sistema "se pone caprichoso" y no acepta la solución. Este comportamiento es prácticamente inexistente. Las pruebas que no funcionan simplemente no pueden llegar al sitio, se ejecutan automáticamente después de cada cambio. En la gran mayoría de estos casos (y todos nuestros proyectos en conjunto han realizado millones de verificaciones durante muchos años), el error se encuentra en el código de la solución. Puede ser muy sutil, como haber ingresado accidentalmente una letra rusa en lugar de una letra en inglés, haber utilizado minúsculas en lugar de mayúsculas o haber olvidado poner una coma. Otros casos son más complicados. Es posible que tu solución funcione para un conjunto de datos de entrada, pero no funcione para otro. Por lo tanto, siempre lee atentamente la descripción del problema y los resultados de las pruebas. Casi seguro que habrá alguna indicación sobre el error.
 
-  Sin embargo, si estás seguro de que hay un error o has encontrado alguna imprecisión, siempre puedes señalarlo. Al final de cada teoría hay un enlace al contenido de la lección en GitHub (¡este proyecto es completamente abierto!). Al ir allí, puedes escribir un issue, ver el contenido de las pruebas (donde se muestra cómo se llama tu código) e incluso enviar un pull request. Si esto aún te resulta confuso, únete a nuestra comunidad en [Telegram](https://t.me/hexletcommunity), allí en el canal *Feedback* siempre estaremos dispuestos a ayudarte.
+  Sin embargo, si estás seguro de que hay un error o has encontrado alguna imprecisión, siempre puedes señalarlo. Al final de cada teoría hay un enlace al contenido de la lección en GitHub (¡este proyecto está completamente  abierto!). Al ir allí, puedes escribir un issue, ver el contenido de las pruebas (donde se muestra cómo se llama tu código) e incluso enviar un pull request. Si esto aún te resulta confuso, únete a nuestra comunidad en [Telegram](https://t.me/hexletcommunity), allí en el canal *Feedback* siempre estaremos dispuestos a ayudarte.
 
 instructions: |
-  Solo es un ejercicio de práctica. Muestra en pantalla el número 9780262531962.
+  Solamente es un ejercicio de práctica. Muestra en pantalla el número 9780262531962.
 
   <pre class='hexlet-basics-output'>
   9780262531962
