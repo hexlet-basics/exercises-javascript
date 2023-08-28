@@ -12,31 +12,31 @@ theory: |
   Aquí hay una función que toma una contraseña y verifica si cumple con las condiciones o no:
 
   ```javascript
-  const esContraseñaSegura = (contraseña) => {
-    const longitud = contraseña.length;
-    return longitud > 8 && longitud < 20;
+  const isStrongPassword = (password) => {
+    const length = password.length;
+    return length > 8 && length < 20;
   };
 
-  esContraseñaSegura('qwerty'); // false
-  esContraseñaSegura('qwerty1234'); // true
-  esContraseñaSegura('zxcvbnmasdfghjkqwertyui'); // false
+  isStrongPassword('qwerty'); // false
+  isStrongPassword('qwerty1234'); // true
+  isStrongPassword('zxcvbnmasdfghjkqwertyui'); // false
   ```
 
-  `&&` significa "Y" (en lógica matemática se llama conjunción). La expresión completa solo se considera verdadera cuando cada operando es verdadero, es decir, cada una de las expresiones compuestas. En otras palabras, `&&` significa "y esto, y aquello".
+  `&&` significa "Y" (en lógica matemática se llama conjunción). La expresión completa sólo se considera verdadera cuando cada operando es verdadero, es decir, cada una de las expresiones compuestas. En otras palabras, `&&` significa "y esto, y aquello".
 
   La prioridad de este operador es menor que la de los operadores de comparación, por lo que la expresión funciona correctamente sin paréntesis.
 
-  Además de `&&`, se utiliza frecuentemente el operador `||` - "O" (disyunción). Significa "o esto, o aquello, o ambos". Los operadores se pueden combinar en cualquier cantidad y en cualquier secuencia, pero cuando se encuentran `&&` y `||` al mismo tiempo, es mejor establecer la prioridad con paréntesis. A continuación se muestra un ejemplo de una función extendida para determinar la validez de una contraseña:
+  Además de `&&`, se utiliza frecuentemente el operador `||` - "O" (disyunción). Significa "o esto, o aquello, o ambos". Los operadores se pueden combinar en cualquier cantidad y en cualquier secuencia, pero cuando se encuentran `&&` y `||` al mismo tiempo, es mejor establecer la prioridad con paréntesis. A continuación, se muestra un ejemplo de una función extendida para determinar la validez de una contraseña:
 
   ```javascript
-  const tieneCaracteresEspeciales = (str) => /* verifica si la cadena contiene caracteres especiales */;
+  const hasSpecialChars = (str) => /* verifica si la cadena contiene caracteres especiales */;
 
-  const tieneMayúsculas = (str) => /* verifica si la cadena contiene letras mayúsculas */
+  const hasCapitalChars = (str) => /* verifica si la cadena contiene letras mayúsculas */
 
-  const esContraseñaSegura = (contraseña) => {
-    const longitud = contraseña.length;
-    // Los paréntesis establecen la prioridad. Es claro a qué se refiere cada parte.
-    return longitud > 8 && (tieneCaracteresEspeciales(contraseña) || tieneMayúsculas(contraseña));
+  const isStrongPassword = (password) => {
+    const length = password.length;
+    // Los paréntesis establecen la prioridad. Está claro a qué se refiere cada parte.
+    return length > 8 && (hasSpecialChars(password) || hasCapitalChars(password));
   };
   ```
 
@@ -45,19 +45,19 @@ theory: |
   Escribamos una función que verifique el apartamento. Toma dos argumentos: el área (un número) y el nombre de la calle (una cadena):
 
   ```javascript
-  const esBuenApartamento = (area, calle) => {
+  const isGoodApartment = (area, street) => {
     // Usamos una variable para que la función no sea demasiado larga
-    const resultado = area >= 100 || (area >= 80 && calle === 'Main Street');
-    return resultado;
+    const result = area >= 100 || (area >= 80 && street === 'Main Street');
+    return result;
   };
 
-  esBuenApartamento(91, 'Queens Street'); // false
-  esBuenApartamento(78, 'Queens Street'); // false
-  esBuenApartamento(70, 'Main Street');   // false
+  isGoodApartment(91, 'Queens Street'); // false
+  isGoodApartment(78, 'Queens Street'); // false
+  isGoodApartment(70, 'Main Street');   // false
 
-  esBuenApartamento(120, 'Queens Street'); // true
-  esBuenApartamento(120, 'Main Street');   // true
-  esBuenApartamento(80, 'Main Street');    // true
+  isGoodApartment(120, 'Queens Street'); // true
+  isGoodApartment(120, 'Main Street');   // true
+  isGoodApartment(80, 'Main Street');    // true
   ```
 
   https://replit.com/@hexlet/js-basics-logical-operators
@@ -104,12 +104,12 @@ theory: |
 
 instructions: |
 
-  Implementa la función `esAñoBisiesto()`, que determina si un año es bisiesto o no. Un año es bisiesto si es divisible (es decir, no tiene residuo) por 400 o si es divisible por 4 y no es divisible por 100. Como puedes ver, toda la lógica necesaria ya está incluida en la definición, solo falta convertirla en código:
+  Implementa la función `isLeapYear()`, que determina si un año es bisiesto o no. Un año es bisiesto si es divisible (es decir, no tiene residuo) por 400 o si es divisible por 4 y no es divisible por 100. Como puedes ver, toda la lógica necesaria ya está incluida en la definición, sólo falta convertirla en código:
 
   ```javascript
-  esAñoBisiesto(2018); // false
-  esAñoBisiesto(2017); // false
-  esAñoBisiesto(2016); // true
+  isLeapYear(2018); // false
+  isLeapYear(2017); // false
+  isLeapYear(2016); // true
   ```
 
   Puedes verificar la divisibilidad de la siguiente manera:
