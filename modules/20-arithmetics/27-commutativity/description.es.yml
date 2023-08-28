@@ -2,7 +2,7 @@
 
 name: Operación conmutativa
 theory: |
-  Todos recordamos de la escuela: "el resultado no cambia al cambiar el orden de los sumandos". Este es uno de los principios básicos e intuitivos de la aritmética, se llama **ley conmutativa**.
+  Todos recordamos de la escuela: "el resultado no cambia al modificar el orden de los sumandos". Este es uno de los principios básicos e intuitivos de la aritmética, se llama **ley conmutativa**.
 
   Una operación binaria se considera conmutativa si al intercambiar los operandos se obtiene el mismo resultado. Es obvio que la suma es una operación conmutativa: *3 + 2 = 2 + 3*.
 
@@ -21,4 +21,4 @@ tips:
 definitions:
   - name: Conmutatividad
     description: |
-      propiedad de una operación en la que el cambio de orden de los operandos no afecta el resultado. Por ejemplo, la suma es una operación conmutativa: el resultado no cambia al cambiar el orden de los sumandos.
+      propiedad de una operación en la que el cambio de orden de los operandos no afecta el resultado. Por ejemplo, la suma es una operación conmutativa: el resultado no cambia al modificar el orden de los sumandos.
