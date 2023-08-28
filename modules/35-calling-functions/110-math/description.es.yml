@@ -3,7 +3,7 @@
 name: Funciones matemáticas de JavaScript
 theory: |
 
-  La explicación de las funciones en JavaScript se complica un poco debido a la estructura del lenguaje. Inicialmente, JavaScript surgió en los navegadores y tenía capacidades muy limitadas en comparación con los lenguajes de propósito general. Con el tiempo, todo cambió: JavaScript se convirtió en un lenguaje poderoso que dominó el desarrollo del lado del cliente y se utiliza activamente en el servidor. Sin embargo, el legado aún persiste, ya que es necesario mantener la compatibilidad hacia atrás. Por lo tanto, hay algunas inconsistencias en algunos lugares que no se pueden explicar por el sistema: solo se pueden ignorar y decir "así es como se desarrolló históricamente".
+  La explicación de las funciones en JavaScript se complica un poco debido a la estructura del lenguaje. Inicialmente, JavaScript surgió en los navegadores y tenía capacidades muy limitadas en comparación con los lenguajes de propósito general. Con el tiempo, todo cambió: JavaScript se convirtió en un lenguaje poderoso que dominó el desarrollo del lado del cliente y se utiliza activamente en el servidor. Sin embargo, el legado aún persiste, ya que es necesario mantener la compatibilidad hacia atrás. Por lo tanto, hay algunas inconsistencias en algunos lugares que no se pueden explicar por el sistema: solamente se pueden ignorar y decir "así es como se desarrolló históricamente".
 
   Estos "lugares" incluyen las funciones matemáticas. En la tarea anterior, utilizamos una función personalizada `pow()` (la agregamos a la práctica como creadores del curso), y ahora vamos a ver su versión incorporada en el propio lenguaje.
 
