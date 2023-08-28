@@ -2,4 +2,4 @@
 
 name: Ciclos
 description: |
-  Cualquier código puede repetirse decenas, miles, millones de veces. En combinación con otras herramientas conocidas como variables y condiciones, esto abre muchas posibilidades para construir programas y sistemas complejos. Veamos un ejemplo sencillo. Necesitas encontrar una frase específica en un libro de texto de 500 páginas. Recuerdas la frase, pero no recuerdas el número de página. La forma más sencilla (y lenta) es revisar las páginas secuencialmente hasta encontrar la frase deseada. Para realizar acciones repetitivas como esta, se utilizan los ciclos.
+  Cualquier código puede repetirse decenas, miles y hasta millones de veces. En combinación con otras herramientas conocidas como variables y condiciones, esto abre muchas posibilidades para construir programas y sistemas complejos. Veamos un ejemplo sencillo. Necesitas encontrar una frase específica en un libro de texto de 500 páginas. Recuerdas la frase, pero no el número de página. La forma más sencilla (y lenta) es revisar las páginas secuencialmente hasta encontrar la frase deseada. Para realizar acciones repetitivas como esta, se utilizan los ciclos.
