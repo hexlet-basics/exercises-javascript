@@ -44,6 +44,8 @@ theory: |
   undefined || ''; // ''
   ```
 
+  https://replit.com/@hexlet/js-basics-logical-expressions
+
   Si `name` toma uno de los valores falsy, la constante `value` se le asignará una cadena vacía. En este caso, en el código posterior, podemos trabajar con `value` como si fuera una cadena.
 
   Pero aquí hay un posible error. Si `name` contiene un valor falsy y la asignación de valores a la constante `value` como `0`, `undefined`, `NaN` o `null` es aceptable, entonces el código anterior dejará de funcionar correctamente:
@@ -98,7 +100,7 @@ theory: |
   console.log(!!answer); // => true
   ```
 
-  Pero aquí puede haber una conversión de tipo adicional. Por lo tanto, el resultado de una doble negación siempre será un valor de tipo *boolean*. A veces se utiliza este truco para cambiar el tipo de datos.
+  Pero aquí puede haber una conversión de tipo adicional. Por lo tanto, el resultado de una doble negación siempre será un valor de tipo *booleano*. A veces se utiliza este truco para cambiar el tipo de datos.
 
   ## Error de selección
 
@@ -154,6 +156,6 @@ instructions: |
 
 tips:
   - |
-    [Boolean](https://es.wikipedia.org/wiki/Booleano)
+    [Booleano](https://es.wikipedia.org/wiki/Booleano)
   - |
     [Extracción de caracteres de una cadena](https://es.code-basics.com/languages/javascript/lessons/symbols)
