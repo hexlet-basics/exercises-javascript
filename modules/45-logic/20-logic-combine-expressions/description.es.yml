@@ -11,7 +11,7 @@ theory: |
     * Si el residuo es 0, entonces el número es par.
     * Si el residuo no es 0, entonces el número es impar.
 
-  El residuo de la división es un concepto simple pero muy importante en aritmética, álgebra e incluso en teoría de números y criptografía. La idea es dividir un número en grupos iguales y si queda algo al final, ese es el residuo de la división.
+  El residuo de la división es un concepto simple, pero muy importante en aritmética, álgebra e incluso en teoría de números y criptografía. La idea es dividir un número en grupos iguales y si queda algo al final, ese es el residuo de la división.
 
   Dividir caramelos entre personas:
 
