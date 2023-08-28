@@ -18,24 +18,24 @@ theory: |
   send(email, title, body);
   ```
 
-  Internamente, esta llamada realiza bastante lógica. Se conecta al servidor de correo, forma una solicitud correcta basada en el encabezado y el cuerpo del mensaje, y luego lo envía, sin olvidar cerrar la conexión.
+  Internamente, la realización de una llamada de este tipo tiene bastante lógica. Se conecta al servidor de correo, forma una solicitud correcta basada en el encabezado y el cuerpo del mensaje, y luego lo envía, sin olvidar cerrar la conexión.
 
   Creemos nuestra primera función. Su tarea es mostrar un saludo en la pantalla:
 
-  <pre class='hexlet-basics-output'>¡Hola, Hexlet!</pre>
+  <pre class='hexlet-basics-output'>Hello, Hexlet!</pre>
 
   ```javascript
   // Definición de la función
   // La definición no llama ni ejecuta la función
-  // Solo estamos diciendo que ahora existe esta función
+  // Sólo estamos diciendo que ahora existe esta función
   const showGreeting = () => {
     // Dentro del cuerpo, se indentan 2 espacios para facilitar la lectura
-    const text = '¡Hola, Hexlet!';
+    const text = 'Hello, Hexlet!';
     console.log(text);
   }
 
   // Llamada a la función
-  showGreeting(); // => ¡Hola, Hexlet!
+  showGreeting(); // => Hello, Hexlet!
   ```
 
   https://replit.com/@hexlet/js-basics-functions-define
@@ -56,17 +56,17 @@ theory: |
   La definición de una función se parece sospechosamente a la creación de una constante. De hecho, en realidad, la definición de una función consta de dos partes: la definición en sí `() => { }` y la asignación a una constante:
 
   1. Definición: `() => { }`
-  2. Asignación: `const nombreDeLaFuncion = ...`
+  2. Asignación: `const nameOfFunction = ...`
 
-  Técnicamente es posible crear una función que esté simplemente definida, pero que no se pueda utilizar porque no tiene nombre:
+  Técnicamente, es posible crear una función que esté simplemente definida, pero que no se pueda utilizar porque no tiene nombre:
 
   ```javascript
   () => {
-    // Código funcional pero inútil
+    // Código funcional, pero inútil
   };
   ```
 
-  El concepto de "crear una función" tiene muchos sinónimos: "implementar", "definir" e incluso "implementar" (de la palabra implement). Todos ellos se encuentran en la práctica diaria en el trabajo.
+  El concepto de "crear una función" tiene muchos sinónimos: "implementar", "definir" e incluso "implementar" (de la palabra implement). Todos ellos se encuentran en la práctica diaria en este trabajo.
 
 instructions: |
 
@@ -76,7 +76,7 @@ instructions: |
   printMotto(); // => Winter is coming
   ```
 
-  En los ejercicios en los que se requiere implementar una función, no es necesario llamar a esa función. Las pruebas automatizadas se encargarán de llamarla y comprobar su funcionalidad. El ejemplo de llamada anterior se muestra solo para que entiendas cómo se utilizará tu función.
+  En los ejercicios en los que se requiere implementar una función, no es necesario llamar a esa función. Las pruebas automatizadas se encargarán de llamarla y comprobar su funcionalidad. El ejemplo de llamada anterior se muestra sólo para que entiendas cómo se utilizará tu función.
 
 tips:
   - |
