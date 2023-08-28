@@ -2,4 +2,4 @@
 
 name: Lógica
 description: |
-  Las expresiones lógicas permiten responder preguntas que surgen durante la ejecución del programa. ¿El usuario está autenticado? ¿Se ha pagado por la suscripción? ¿Es un año bisiesto? En este módulo, aprenderemos sobre las funciones predicado, que plantean una pregunta y responden si es verdadera o falsa. Practicaremos la escritura de estas funciones y avanzaremos hacia expresiones lógicas más complejas.
+  Las expresiones lógicas permiten responder preguntas que surgen durante la ejecución del programa. ¿El usuario está autenticado? ¿Se ha pagado por la suscripción? ¿Es un año bisiesto? En este módulo, aprenderemos sobre las funciones booleanas, que plantean una pregunta y responden si es verdadera o falsa. Practicaremos la escritura de estas funciones y avanzaremos hacia expresiones lógicas más complejas.
