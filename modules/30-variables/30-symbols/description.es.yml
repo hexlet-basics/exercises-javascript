@@ -34,7 +34,7 @@ theory: |
 
   </details>
 
-  El índice puede ser no solo un número específico, sino también el valor de una variable. Aquí hay un ejemplo que dará el mismo resultado, que es mostrar el carácter *T* en la pantalla, pero el índice dentro de los corchetes se escribe no como un número, sino como una constante:
+  El índice puede ser no solamente un número específico, sino también el valor de una variable. Aquí hay un ejemplo que dará el mismo resultado, que es mostrar el carácter *T* en la pantalla, pero el índice dentro de los corchetes se escribe no como un número, sino como una constante:
 
   ```javascript
   const firstName = 'Tirion';
