@@ -29,7 +29,7 @@ theory: |
 
   Estos ejemplos son completamente equivalentes. Podemos realizar operaciones secuencialmente con la creación intermedia de constantes, o podemos construir una cadena continua de propiedades y métodos. En las cadenas de llamadas, los cálculos siempre se realizan de izquierda a derecha.
 
-  Otro ejemplo para reforzar:
+  Otro ejemplo para reforzar los conocimientos:
 
   ```javascript
   const name = 'Tirion';
@@ -51,7 +51,7 @@ theory: |
   console.log(name.toUpperCase().toLowerCase().length.toString().length);
   ```
 
-  *Con las funciones, este truco no funcionará, ya que en su uso normal se anidan unas dentro de otras f(f(f())), lo que dificulta mucho el análisis. Pero esto no significa que no se pueda hacer de manera elegante, y de hecho, se puede y se debe hacer. En otros lenguajes, esto se logra a través de la composición de funciones o el operador de canalización, que, por cierto, se está comenzando a usar gradualmente en JavaScript mismo: https://github.com/tc39/proposal-pipeline-operator.*
+  *Con las funciones, este truco no funcionará, ya que en su uso normal se anidan unas dentro de otras f(f(f())), lo que dificulta mucho el análisis. Pero esto no significa que no se pueda hacer de manera elegante, y de hecho, se puede y se debe hacer. En otros lenguajes, esto se logra a través de la composición de funciones o el operador de canalización, que, por cierto, se está comenzando a usar gradualmente en el mismo JavaScript: https://github.com/tc39/proposal-pipeline-operator.*
 
 instructions: |
 
