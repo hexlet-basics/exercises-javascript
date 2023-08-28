@@ -33,7 +33,7 @@ theory: |
 
   Al utilizar la notación posfija, ocurre lo contrario: se puede considerar que primero se devuelve y luego se modifica la variable.
 
-  Esta regla se aplica de la misma manera tanto al incremento como al decremento. Para simplificar, consideremos solo el incremento:
+  Esta regla se aplica de la misma manera tanto al incremento como al decremento. Para simplificar, consideremos solamente el incremento:
 
   ```javascript
   let x = 5;
@@ -56,7 +56,7 @@ theory: |
 
   ---
 
-  Esto se vuelve especialmente confuso cuando se inserta el incremento dentro de otras operaciones: `x = i++ - 7 + --h`. Es casi imposible entender este código, y su escritura debería considerarse un delito grave.
+  Esto se vuelve especialmente confuso cuando se inserta el incremento dentro de otras operaciones: `x = i++ - 7 + --h`. Es casi imposible entender este código, y su escritura debería considerarse una violación grave.
 
   Por ejemplo, en JavaScript, el linter (un programa que verifica el código) comienza a mostrar advertencias tan pronto como encuentra el uso de incremento o decremento.
 
