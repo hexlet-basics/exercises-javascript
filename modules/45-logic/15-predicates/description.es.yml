@@ -22,7 +22,7 @@ theory: |
     * `isEmpty()` - "¿está vacío?"
     * `hasErrors()` - "¿tiene errores?"
 
-  Una función solo puede considerarse un predicado **siempre y cuando** devuelva un booleano.
+  Una función solamente puede considerarse un predicado **siempre y cuando** devuelva un booleano.
 
   ---
 
