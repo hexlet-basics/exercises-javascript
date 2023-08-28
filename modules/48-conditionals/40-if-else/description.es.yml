@@ -3,11 +3,11 @@
 name: else
 theory: |
 
-  Vamos a escribir la función `getTypeOfSentence()`, que analiza un texto y devuelve una descripción de su tono: para las oraciones normales - *Oración general*, para las preguntas - *Oración interrogativa*.
+  Vamos a escribir la función `getTypeOfSentence()`, la cual analiza un texto y devuelve una descripción de su tono: para las oraciones normales - *General sentence*, para las preguntas - *Question sentence*.
 
   ```javascript
-    getTypeOfSentence('Hodor');  // Oración general
-    getTypeOfSentence('Hodor?'); // Oración interrogativa
+    getTypeOfSentence('Hodor');  // General sentence
+    getTypeOfSentence('Hodor?'); // Question sentence
   ```
 
   Implementación de la función:
@@ -23,7 +23,7 @@ theory: |
       // Si la condición anterior se cumple,
       // entonces es una oración interrogativa.
       // Asignamos a sentenceType el valor correspondiente.
-      sentenceType = 'Pregunta';
+      sentenceType = 'Question';
     } else {
       // En todos los demás casos, la oración es general
       sentenceType = 'General';
@@ -48,7 +48,7 @@ theory: |
     if (!sentence.endsWith('?')) {
       sentenceType = 'General';
     } else {
-      sentenceType = 'Pregunta';
+      sentenceType = 'Question';
     }
 
     return `${sentenceType} sentence`;
