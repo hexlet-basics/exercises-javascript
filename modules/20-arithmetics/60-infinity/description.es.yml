@@ -12,7 +12,7 @@ theory: |
 
   https://replit.com/@hexlet/js-basics-arithmetics-inifinity
 
-  Intenta ejecutar este código en tu navegador. ¡Se mostrará en pantalla `Infinity` (infinito)! Para aquellos que han estudiado matemáticas avanzadas (¡hola, cálculo!), esto no es sorprendente. La división por cero realmente crea el infinito. En JavaScript, el infinito es un número real con el que se pueden realizar diversas operaciones. En tareas cotidianas, esto tiene poco sentido, ya que la mayoría de las operaciones con infinito resultan en infinito, por ejemplo, al sumar cualquier número a infinito, aún obtendremos infinito.
+  Intenta ejecutar este código en tu navegador. ¡Se mostrará en pantalla `Infinity` (infinito)! Para aquellos que han estudiado matemáticas avanzadas (¡hola, cálculo!), esto no es sorprendente. La división por cero realmente da infinito. En JavaScript, el infinito es un número real con el que se pueden realizar diversas operaciones. En tareas cotidianas, esto tiene poco sentido, ya que la mayoría de las operaciones con infinito resultan en infinito, por ejemplo, al sumar cualquier número a infinito, aún obtendremos infinito.
 
   ```javascript
   Infinity + 4; // Infinity

@@ -30,7 +30,7 @@ theory: |
   };
   ```
 
-  El patrón general se ve así: `<predicado> ? <expresión si es verdadero> : <expresión si es falso>`.
+  El patrón general se ve así: `<predicate> ? <expression on true> : <expression on false>`.
 
   La versión abreviada de la función `abs()` se ve así:
 

@@ -3,7 +3,7 @@
 name: Agregación de datos (Cadenas)
 theory: |
 
-  La agregación se aplica no solo a números, sino también a cadenas de texto. Estos son problemas en los que la cadena se genera dinámicamente, es decir, no se sabe de antemano su tamaño ni su contenido.
+  La agregación se aplica no sólo a números, sino también a cadenas de texto. Estos son problemas en los que la cadena se genera dinámicamente, es decir, no se sabe de antemano su tamaño ni su contenido.
 
   Imagina una función que puede "multiplicar" una cadena, es decir, repetirla un número determinado de veces:
 

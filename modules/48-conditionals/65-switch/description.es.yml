@@ -41,7 +41,7 @@ theory: |
   * Las construcciones `case` y `default`, dentro de las cuales se describe el comportamiento para diferentes valores de la variable considerada. Cada `case` corresponde a un `if` en el ejemplo anterior. `default` es una situación especial que corresponde a la rama `else` en las estructuras condicionales. No es obligatorio especificar `default` (pero el linter siempre lo [recomienda](https://eslint.org/docs/rules/default-case)).
   * `break` se utiliza para evitar la "caída". Si no se especifica, después de ejecutar el `case` correspondiente, la ejecución pasará al siguiente `case`, y así sucesivamente hasta el siguiente `break` más cercano o hasta el final del switch.
 
-  Las llaves en el switch no definen un bloque de código como en otros lugares. Dentro de él solo se permite la sintaxis que se muestra arriba. Es decir, se pueden usar `case` o `default`. Pero dentro de cada `case` (y `default`) la situación es diferente. Aquí se puede ejecutar cualquier código arbitrario:
+  Las llaves en el switch no definen un bloque de código como en otros lugares. Dentro de él, sólo se permite la sintaxis que se muestra arriba. Es decir, se pueden usar `case` o `default`. Pero dentro de cada `case` (y `default`) la situación es diferente. Aquí se puede ejecutar cualquier código arbitrario:
 
   ```javascript
   switch (count) {
@@ -68,10 +68,10 @@ theory: |
     // Asignar un valor
     switch (count) {
       case 1:
-        result = 'uno';
+        result = 'one';
         break;
       case 2:
-        result = 'dos';
+        result = 'two';
         break;
       default:
         result = null;
@@ -88,9 +88,9 @@ theory: |
   (count) => {
     switch (count) {
       case 1:
-        return 'uno';
+        return 'one';
       case 2:
-        return 'dos';
+        return 'two';
       default:
         return null;
     }
@@ -105,17 +105,17 @@ instructions: |
 
   Implementa la función `getNumberExplanation()`, que recibe un número como entrada y devuelve una explicación para ese número. Si no hay una explicación para el número, se devuelve `just a number`. Solo hay explicaciones para los siguientes números:
 
-    * 666 - número del diablo
-    * 42 - respuesta para todo
-    * 7 - número primo
+    * 666 - devil number
+    * 42 - answer for everything
+    * 7 - prime number
 
   Ejemplos de llamadas a la función:
 
   ```javascript
   getNumberExplanation(8);   // just a number
-  getNumberExplanation(666); // número del diablo
-  getNumberExplanation(42);  // respuesta para todo
-  getNumberExplanation(7);   // número primo
+  getNumberExplanation(666); // devil number
+  getNumberExplanation(42);  // answer for everything
+  getNumberExplanation(7);   // prime number
   ```
 
 tips:

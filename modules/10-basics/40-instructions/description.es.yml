@@ -7,7 +7,7 @@ theory: |
   Aquí tienes un ejemplo de código con dos instrucciones.
 
   ```javascript
-  console.log('Madre de Dragones.');
+  console.log('Mother of Dragons.');
   console.log('Dracarys!');
   ```
 
@@ -16,22 +16,22 @@ theory: |
   Al ejecutar este código, se mostrarán en pantalla las dos frases de forma secuencial:
 
   <pre class='hexlet-basics-output'>
-  Madre de Dragones.
+  Mother of Dragons.
   Dracarys!
   </pre>
 
   Teóricamente, las instrucciones se pueden escribir una tras otra sin saltar de línea:
 
   ```javascript
-  console.log('Madre de Dragones.'); console.log('Drakarys!');
+  console.log('Mother of Dragons.'); console.log('Drakarys!');
   ```
 
   El resultado en pantalla será el mismo, pero este tipo de código es incómodo de leer, por lo que las instrucciones se colocan una debajo de la otra.
 
-  ¿Por qué es importante saber esto? Una instrucción es una unidad de ejecución. El intérprete, el programa que ejecuta el código en JavaScript, ejecuta las instrucciones estrictamente en orden. Como desarrolladores, debemos entender este orden y ser capaces de dividir mentalmente el programa en partes independientes que sean fáciles de analizar.
+  ¿Por qué es importante saber esto? Una instrucción es una unidad de ejecución. El intérprete, el programa que ejecuta el código en JavaScript, ejecuta estrictamente las instrucciones en orden. Como desarrolladores, debemos entender este orden y ser capaces de dividir mentalmente el programa en partes independientes que sean fáciles de analizar.
 
 instructions: |
-  Muestra en pantalla, uno tras otro, tres nombres: *Robert*, *Stannis*, *Renly*. El resultado en pantalla debe ser:
+  Muestra en pantalla, uno tras otro, estos tres nombres: *Robert*, *Stannis*, *Renly*. El resultado en pantalla debe ser:
 
   <pre class='hexlet-basics-output'>
   Robert

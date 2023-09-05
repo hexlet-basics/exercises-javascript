@@ -3,7 +3,7 @@
 name: Estructura else if
 theory: |
 
-  La función `getTypeOfSentence()` del ejercicio anterior solo distingue entre oraciones interrogativas y oraciones normales. Intentemos agregar soporte para oraciones exclamativas:
+  La función `getTypeOfSentence()` del ejercicio anterior sólo distingue entre oraciones interrogativas y oraciones normales. Intentemos agregar soporte para oraciones exclamativas:
 
   ```javascript
   const getTypeOfSentence = (sentence) => {
@@ -20,12 +20,12 @@ theory: |
       sentenceType = 'question';
     }
 
-    return `La oración es ${sentenceType}`;
+    return `Sentence is ${sentenceType}`;
   };
 
-  getTypeOfSentence('¿Quién?'); // La oración es pregunta
-  getTypeOfSentence('No');     // La oración es normal
-  getTypeOfSentence('¡No!');   // La oración es exclamación
+  getTypeOfSentence('Who?'); // Sentence is question
+  getTypeOfSentence('No');   // Sentence is normal
+  getTypeOfSentence('No!');  // Sentence is exclamation
   ```
 
   https://replit.com/@hexlet/js-basics-conditionals
@@ -33,7 +33,7 @@ theory: |
   Hemos agregado otra verificación ("exclamation" se traduce como «exclamación»). Técnicamente, la función funciona, pero hay problemas desde el punto de vista semántico.
 
   - La verificación de la presencia del signo de interrogación ocurre de todos modos, incluso si ya se ha detectado el signo de exclamación.
-  - La rama `else` está descrita solo para la primera condición, pero no para la segunda.
+  - La rama `else` está descrita sólo para la primera condición, pero no para la segunda.
 
   Sería más correcto utilizar otra posibilidad de la estructura condicional:
 
@@ -50,12 +50,12 @@ theory: |
       sentenceType = 'normal';
     }
 
-    return `La oración es ${sentenceType}`;
+    return `Sentence is ${sentenceType}`;
   };
 
-  getTypeOfSentence('¿Quién?'); // La oración es pregunta
-  getTypeOfSentence('No');     // La oración es normal
-  getTypeOfSentence('¡No!');   // La oración es exclamación
+  getTypeOfSentence('Who?'); // Sentence is question
+  getTypeOfSentence('No');   // Sentence is normal
+  getTypeOfSentence('No!');  // Sentence is exclamation
   ```
 
   Ahora todas las condiciones están organizadas en una única estructura. `else if` significa "si la condición anterior no se cumple, pero la actual sí". La estructura es la siguiente:
@@ -64,18 +64,18 @@ theory: |
   - de lo contrario, si el último carácter es `!`, entonces `'exclamation'`
   - de lo contrario, `'normal'`
 
-  Solo se ejecutará uno de los bloques de código relacionados con toda la estructura `if`.
+  Sólo se ejecutará uno de los bloques de código relacionados con toda la estructura `if`.
 
 instructions: |
 
   En el mapa electrónico de Westeros que Sam implementó, los aliados de los Stark se representan con un círculo verde, los enemigos con un círculo rojo y las familias neutrales con un círculo gris.
 
-  Escribe una función para Sam llamada `whoIsThisHouseToStarks()` que reciba el apellido de una familia y devuelva uno de los tres valores: `'amigo'`, `'enemigo'`, `'neutral'`.
+  Escribe una función para Sam llamada `whoIsThisHouseToStarks()` que reciba el apellido de una familia y devuelva uno de los tres valores: `'friend'`, `'enemy'`, `'neutral'`.
 
   Reglas de determinación:
 
-  * Amigos (`'amigo'`): 'Karstark', 'Tally'
-  * Enemigos (`'enemigo'`): 'Lannister', 'Frey'
+  * Amigos (`'friend'`): 'Karstark', 'Tally'
+  * Enemigos (`'enemy'`): 'Lannister', 'Frey'
   * Todas las demás familias se consideran neutrales
 
   Ejemplos de llamadas:

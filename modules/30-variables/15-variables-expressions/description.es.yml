@@ -3,7 +3,7 @@
 name: Expresiones en definiciones
 theory: |
 
-  Las variables son útiles no solo para almacenar y reutilizar información, sino también para simplificar cálculos complejos. Veamos un ejemplo: necesitamos convertir euros a yuanes a través de dólares. Los bancos a menudo realizan conversiones similares a través de una moneda intermedia al realizar compras en el extranjero.
+  Las variables son útiles no solamente para almacenar y reutilizar información, sino también para simplificar cálculos complejos. Veamos un ejemplo: necesitamos convertir euros a yuanes a través de dólares. Los bancos a menudo realizan conversiones similares a través de una moneda intermedia al realizar compras en el extranjero.
 
   Primero, convirtamos 50 euros a dólares. Supongamos que un euro equivale a 1.25 dólares:
 
@@ -62,7 +62,7 @@ theory: |
   let dollarsCount = 50 * 1.25; // 62.5
   let yuansCount = dollarsCount * yuansPerDollar; // 431.875
 
-  console.log('El precio es ' + yuansCount + ' yuanes');
+  console.log('The price is ' + yuansCount + ' yuans');
   ```
 
   <pre class='hexlet-basics-output'>
@@ -75,7 +75,7 @@ theory: |
 
 instructions: |
 
-  Escribe un programa que tome una cantidad inicial de euros, almacenada en la variable `eurosCount`, convierta los euros a dólares y los imprima en la pantalla. Luego, convierte el valor obtenido a yuanes y lo imprime en una nueva línea.
+  Escribe un programa que tome una cantidad inicial de euros, almacenada en la variable `eurosCount`, convierta los euros a dólares y los imprima en la pantalla. Luego, convierte el valor obtenido a yuanes e imprímelos en una nueva línea.
 
   Ejemplo de salida para 100 euros:
 

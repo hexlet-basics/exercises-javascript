@@ -23,7 +23,7 @@ theory: |
   console.log(firstName); // => Blexander
   ```
 
-  Existe una gran diferencia entre cambiar el valor de una variable y cambiar el valor en sí. No se puede cambiar los tipos primitivos en JavaScript (pero sí se pueden cambiar los tipos compuestos, más información sobre ellos en Hexlet), pero reemplazar el valor de una variable no presenta problemas.
+  Existe una gran diferencia entre cambiar el valor de una variable y cambiar el valor en sí. No se puede cambiar los tipos primitivos en JavaScript (pero sí se pueden cambiar los tipos compuestos; más información sobre ellos en Hexlet), aunque reemplazar el valor de una variable no presenta problemas.
 
 instructions: |
   Se te han dado tres constantes con los apellidos de diferentes personas. Crea y muestra en pantalla una sola palabra con los caracteres en el siguiente orden:
@@ -34,7 +34,7 @@ instructions: |
   4. El quinto carácter de la segunda cadena de texto.
   5. El tercer carácter de la segunda cadena de texto.
 
-  Intenta utilizar interpolación: dentro de las llaves puedes colocar no solo variables enteras, sino también caracteres individuales utilizando corchetes.
+  Intenta utilizar interpolación: dentro de las llaves puedes colocar no solamente variables enteras, sino también caracteres individuales utilizando corchetes.
 
 tips: []
 

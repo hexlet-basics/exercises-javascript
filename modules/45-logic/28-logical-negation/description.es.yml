@@ -8,10 +8,10 @@ theory: |
   Si hay una función que verifica si un número es par, se puede realizar una verificación de si es impar utilizando la negación:
 
   ```javascript
-  const esPar = (numero) => numero % 2 === 0;
+  const isEven = (number) => number % 2 === 0;
 
-  esPar(10);  // true
-  !esPar(10); // false
+  isEven(10);  // true
+  !isEven(10); // false
   ```
 
   https://replit.com/@hexlet/js-basics-logical-negation
@@ -20,45 +20,45 @@ theory: |
 
   La negación es una herramienta poderosa que permite expresar reglas previstas de manera concisa en el código sin necesidad de escribir nuevas funciones.
 
-  ¿Y qué pasa si escribimos `!!esPar(10)`? Sorprendentemente, el código funcionará. En lógica, la doble negación es similar a la ausencia de negación en absoluto.
+  ¿Y qué pasa si escribimos `!!isEven(10)`? Sorprendentemente, el código funcionará. En lógica, la doble negación es similar a la ausencia de negación en absoluto.
 
   ```javascript
-  esPar(10);   // true
-  !esPar(10);  // false
-  !!esPar(10); // true
+  isEven(10);   // true
+  !isEven(10);  // false
+  !!isEven(10); // true
   ```
 
 instructions: |
 
-  En esta lección, deberás implementar dos funciones: `esPalindromo()` y `noEsPalindromo()`
+  En esta lección, deberás implementar dos funciones: `isPalindrome()` e `isNotPalindrome()`
 
-  1. La función `esPalindromo()` determina si una palabra es un palíndromo o no. Un palíndromo es una palabra que se lee igual en ambos sentidos.
+  1. La función `isPalindrome()` determina si una palabra es un palíndromo o no. Un palíndromo es una palabra que se lee igual en ambos sentidos.
 
       ```javascript
-      esPalindromo('шалаш'); // true
-      esPalindromo('ага'); // true
-      esPalindromo('хекслет'); // false
+      isPalindrome('ala'); // true
+      isPalindrome('radar'); // true
+      isPalindrome('hexlet'); // false
 
       // Las palabras pueden ser pasadas a la función en cualquier caso
       // Por lo tanto, primero debes convertir la palabra a minúsculas word.toLowerCase()
-      esPalindromo('Ага'); // true
+      isPalindrome('ala'); // true
       ```
 
       Para determinar si una palabra es un palíndromo, debes invertir la cadena y compararla con la original. Para ello, utiliza la función `reverse()`
 
       ```javascript
-      reverse('мама'); // амам
+      reverse('mama'); // mama
       ```
 
-  2. La función `noEsPalindromo()` verifica que una palabra NO sea un palíndromo:
+  2. La función `isNotPalindrome()` verifica que una palabra NO sea un palíndromo:
 
       ```javascript
-      noEsPalindromo('шалаш'); // false
-      noEsPalindromo('ага'); // false
-      noEsPalindromo('хекслет'); // true
+      isNotPalindrome('radar'); // false
+      isNotPalindrome('ala'); // false
+      isNotPalindrome('hexlet'); // true
       ```
 
-      Para ello, llama a la función `esPalindromo()` dentro de `noEsPalindromo()` y aplica la negación.
+      Para ello, llama a la función `isPalindrome()` dentro de `isNotPalindrome()` y aplica la negación.
 
 tips:
   - |

@@ -14,7 +14,7 @@ theory: |
 
   La concatenación de cadenas siempre ocurre en el mismo orden en el que se escriben los operandos. El operando izquierdo se convierte en la parte izquierda de la cadena, y el operando derecho en la parte derecha.
 
-  Aquí hay algunos ejemplos más:
+  Aquí hay algunos ejemplos adicionales:
 
   ```javascript
   console.log('Kings' + 'wood');     // => Kingswood
@@ -28,7 +28,7 @@ theory: |
 
   Como puedes ver, puedes concatenar cadenas incluso si están escritas con diferentes tipos de comillas.
 
-  En el último ejemplo, el nombre de la ciudad se escribió incorrectamente: *King's Landing* debe escribirse con un espacio. Pero en nuestras cadenas iniciales no había espacios, y los espacios en el código a la izquierda y a la derecha del símbolo `+` no importan, porque no forman parte de las cadenas.
+  En el último ejemplo, el nombre de la ciudad se escribió incorrectamente: *King's Landing* debe escribirse con un espacio. Pero en nuestras cadenas iniciales no había espacios, y los espacios en el código a la izquierda y a la derecha del símbolo `+` no importan, ya que no forman parte de las cadenas.
 
   Hay dos formas de solucionar esta situación:
 

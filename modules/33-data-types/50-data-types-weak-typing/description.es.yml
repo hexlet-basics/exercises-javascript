@@ -16,8 +16,8 @@ theory: |
   No todos los lenguajes hacen esto. JavaScript es un lenguaje con **tipado débil**. Conoce la existencia de diferentes tipos (números, cadenas de texto, etc.), pero no es muy estricto en su uso, intentando convertir la información cuando parece razonable. A veces, JavaScript incluso llega a extremos. La mayoría de las expresiones que no funcionan en otros lenguajes funcionan perfectamente en JavaScript. Prueba a realizar cualquier operación aritmética (excepto la suma) con cadenas de texto u otros tipos de datos (excepto cuando ambos operandos son números o cadenas de texto que contienen solo números) y verás que siempre funcionarán y devolverán `NaN`, lo cual es bastante lógico.
 
   ```javascript
-  const resultado = 'uno' * 'dos';
-  console.log(resultado); // => NaN
+  const result = 'one' * 'two';
+  console.log(result); // => NaN
   ```
 
   https://replit.com/@hexlet/js-basics-immutability-of-primitive-types

@@ -8,7 +8,7 @@ theory: |
   ```javascript
   // Uncaught ReferenceError: greeting is not defined
   console.log(greeting);
-  let greeting = '¡Padre!';
+  let greeting = 'Father!';
   ```
 
   La ejecución del programa del ejemplo anterior termina con el error *ReferenceError: greeting is not defined*. *ReferenceError* es un error de referencia, lo cual significa que se está utilizando un nombre (también conocido como identificador) en el código que no está definido. Además, el propio error lo indica claramente: *greeting is not defined*, que se traduce como *greeting no está definido*. Además del orden incorrecto de la definición, en JavaScript también se cometen errores tipográficos tanto al utilizar una variable como al declararla.
@@ -18,22 +18,22 @@ theory: |
   Otro error común es intentar declarar una variable que ya ha sido declarada:
 
   ```javascript
-  let greeting = '¡Padre!';
-  let greeting = '¡Padre!';
+  let greeting = 'Father!';
+  let greeting = 'Father!';
   ```
 
   Esto no se puede hacer. Tendrás que crear una nueva variable.
 
 instructions: |
 
-  Encuentra la variable no declarada en el programa y declárala asignándole el valor 'Dragón';
+  Encuentra la variable no declarada en el programa y declárala asignándole el valor 'Dragon';
 
   Después de ejecutar el programa, el resultado en la pantalla debería verse así:
 
   <pre class='hexlet-basics-output'>
   Targaryen
-  y
-  Dragón
+  and
+  Dragon
   </pre>
 
 tips: 

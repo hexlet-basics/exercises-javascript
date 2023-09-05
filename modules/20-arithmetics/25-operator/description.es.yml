@@ -13,7 +13,7 @@ theory: |
 
   En el caso de la suma, tenemos dos operandos: uno a la izquierda y otro a la derecha del símbolo `+`. Las operaciones que requieren dos operandos se llaman **binarias**. Si falta al menos uno de los operandos, por ejemplo, `3 + ;`, el programa mostrará un error de sintaxis.
 
-  Las operaciones (no los operadores) pueden ser no solo binarias, sino también unarias (con un solo operando) e incluso ternarias (con tres operandos). Además, los operadores pueden tener la misma apariencia pero representar operaciones diferentes.
+  Las operaciones (no los operadores) pueden ser no sólo binarias, sino también unarias (con un solo operando) e incluso ternarias (con tres operandos). Además, los operadores pueden tener la misma apariencia pero representar operaciones diferentes.
 
     ```javascript
     console.log(-3); // => -3

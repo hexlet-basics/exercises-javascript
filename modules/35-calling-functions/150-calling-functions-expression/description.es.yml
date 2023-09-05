@@ -3,7 +3,7 @@
 name: Llamada a una función - expresión
 theory: |
 
-  En programación, una expresión es algo que devuelve un resultado que se puede utilizar. Ya sabemos bastante sobre expresiones y los principios de su construcción. Operaciones matemáticas (suma, resta), operaciones de cadenas (concatenación) - todas estas son expresiones:
+  En programación, una expresión es algo que devuelve un resultado que se puede utilizar. Ya sabemos bastante sobre expresiones y los principios de su construcción. Las operaciones matemáticas (suma, resta), así como las operaciones de cadenas (concatenación), - todas estas son expresiones:
 
   ```javascript
   1 + 5 * 3;
@@ -20,7 +20,7 @@ theory: |
   console.log(1 + 5);
   ```
 
-  Pero no todo en programación es una expresión. La declaración de una variable es una instrucción, no puede ser parte de una expresión. Es decir, este código dará un error:
+  Pero no todo en programación es una expresión. La declaración de una variable es una instrucción; no puede ser parte de una expresión. Es decir, este código dará un error:
 
   ```javascript
   // Código sin sentido que no funcionará
@@ -41,7 +41,7 @@ theory: |
   console.log(lastIndex); // 9
   ```
 
-  En este código no hay una nueva sintaxis. Solo hemos combinado partes conocidas basándonos en su naturaleza. Podemos ir aún más lejos:
+  En este código no hay una nueva sintaxis. Solamente hemos combinado partes conocidas basándonos en su naturaleza. Podemos ir aún más lejos:
 
   ```javascript
   console.log(length(name) - 1); // 9
@@ -63,11 +63,11 @@ instructions: |
   Muestra en pantalla la primera y la última letra de la oración que está almacenada en la constante `text`, en el siguiente formato:
 
   <pre class='hexlet-basics-output'>
-  Primera: N
-  Última: t
+  First: N
+  Last: t
   </pre>
 
-  Intenta crear solo una constante en la que se almacene el texto necesario antes de imprimirlo en pantalla. En esta lección, estamos practicando la habilidad de construir una expresión compuesta.
+  Intenta crear solamente una constante en la que se almacene el texto necesario antes de imprimirlo en pantalla. En esta lección, estamos practicando la habilidad de construir una expresión compuesta.
 
 # tips: []
 

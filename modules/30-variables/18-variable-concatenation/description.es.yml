@@ -6,27 +6,27 @@ theory: |
   Para reforzar el tema anterior, intentaremos utilizar variables con concatenación. Sintácticamente no cambia nada: sabemos cómo concatenar (unir) dos cadenas:
 
   ```javascript
-  let que = 'Camino' + 'Real';
-  console.log(que); // => CaminoReal
+  let what = 'Kings' + 'road';
+  console.log(what); // => Kingsroad
   ```
 
   ... lo que significa que también podemos concatenar una cadena y una variable en la que se almacena una cadena:
 
   ```javascript
-  let primero = 'Camino';
-  let que = primero + 'Real';
+  let primero = 'King's';
+  let que = first + 'road';
 
-  console.log(que); // => CaminoReal
+  console.log(que); // => Kingsroad
   ```
 
   ... e incluso concatenar dos variables en las que se almacenan cadenas:
 
   ```javascript
-  let primero = 'Camino';
-  let ultimo = 'Real';
+  let primero = 'Kings';
+  let ultimo = 'road';
 
   let que = primero + ultimo;
-  console.log(que); // => CaminoReal
+  console.log(que); // => Kingsroad
   ```
 
   https://replit.com/@hexlet/variables-expression
@@ -37,19 +37,19 @@ instructions: |
 
   Escribe un programa que genere el título y el cuerpo del correo electrónico utilizando variables ya definidas, y muestra las cadenas resultantes en la pantalla.
 
-  Para el título, utiliza las variables `nombre` y `saludo`, seguidas de una coma y un signo de exclamación. Muestra esto en la pantalla en el orden correcto.
+  Para el título, utiliza las variables `firstname` y `greeting`, seguidas de una coma y un signo de exclamación. Muestra esto en la pantalla en el orden correcto.
 
-  Para el cuerpo del correo, utiliza las variables `informacion` e `introduccion`, asegurándote de que la segunda oración esté en una nueva línea.
+  Para el cuerpo del correo, utiliza las variables `info` e `intro`, asegurándote de que la segunda oración esté en una nueva línea.
 
   El resultado en la pantalla se verá así:
 
   <pre class='hexlet-basics-output'>
-  ¡Hola, Joffrey!
-  Aquí tienes información importante sobre la seguridad de tu cuenta.
-  No pudimos verificar el apellido de soltera de tu madre.
+  Hello, Joffrey!
+  Here is important information about your account security.
+  We couldn't verify your mother's maiden name.
   </pre>
 
-  Realiza la tarea usando solo dos `console.log()`.
+  Realiza la tarea usando solamente dos `console.log()`.
 
 tips:
   - |
@@ -60,4 +60,4 @@ tips:
 definitions:
   - name: Concatenación
     description: |
-      La operación de unir dos cadenas. Por ejemplo, `console.log("Desembarco del Rey " + ' Landing');`
+      La operación de unir dos cadenas. Por ejemplo, `console.log("King's " + ' Landing');`

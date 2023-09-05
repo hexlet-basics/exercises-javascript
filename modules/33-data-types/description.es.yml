@@ -2,4 +2,4 @@
 
 name: Tipos de datos en JavaScript
 description: |
-  JavaScript es un lenguaje con tipado débil y tipos de datos primitivos inmutables. ¿Qué sucede si intentamos multiplicar un número por una cadena de texto? ¿Cómo JavaScript entiende qué tipo de dato tiene delante? ¿Y qué hace JavaScript cuando encuentra una incompatibilidad de tipos? En este módulo encontrarás las respuestas a estas preguntas.
+  JavaScript es un lenguaje con tipado débil y tipos de datos primitivos inmutables. ¿Qué sucede si intentamos multiplicar un número por una cadena de texto? ¿Cómo JavaScript entiende qué tipo de datos tiene delante? ¿Y qué hace JavaScript cuando encuentra una incompatibilidad de tipos? En este módulo encontrarás las respuestas a estas preguntas.

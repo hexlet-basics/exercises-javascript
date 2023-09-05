@@ -6,16 +6,16 @@ theory: |
   Imaginemos que el programa del último ejercicio se ve así:
 
   ```javascript
-  let x = '¡Padre!';
+  let x = 'Father!';
   console.log(x);
   console.log(x);
   ```
 
-  Todavía funciona, pero el nombre de la variable ha cambiado a `x`. A la computadora no le importa cómo llamamos a las variables, es una máquina sin emociones, pero a los programadores sí. Leemos el código mucho más a menudo de lo que lo escribimos. Y no solo nuestro propio código, sino también el código escrito por otras personas. La mitad del éxito en el análisis de código depende de la calidad y claridad de los nombres de las variables.
+  Todavía funciona, pero el nombre de la variable ha cambiado a `x`. A la computadora no le importa cómo llamamos a las variables, es una máquina sin emociones, pero a los programadores sí nos importa. Leemos el código mucho más a menudo de lo que lo escribimos. Y no solamente nuestro propio código, sino también el código escrito por otras personas. La mitad del éxito en el análisis de código depende de la calidad y claridad de los nombres de las variables.
 
   Es mejor tomarse el tiempo para pensar en un nombre que describa la esencia y el significado de la variable, en lugar de nombrarla al azar y tener que cambiarla en el futuro. Intente darles nombres que sean comprensibles sin contexto, sin tener que estudiar el código circundante.
 
-  Existe una regla generalmente aceptada: no utilice transliteraciones para los nombres, solo use el idioma inglés. Si tiene dificultades con el inglés, utilice un traductor. Con el tiempo, al trabajar con código ajeno, formará conceptos adecuados para la nomenclatura.
+  Existe una regla generalmente aceptada: no utilice transliteraciones para los nombres; solamente use el idioma inglés. Si tiene dificultades con el inglés, utilice un traductor. Con el tiempo, al trabajar con código ajeno, formará conceptos adecuados para la nomenclatura.
 
   Entre los desarrolladores hay un chiste: "lo más difícil de la programación son los nombres de las variables y la invalidación de la caché". De hecho, es difícil inventar nombres. ¿Cómo llamaría a una variable que almacena "la cantidad de pedidos impagos de clientes que tienen deudas en el trimestre anterior"?
 

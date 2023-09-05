@@ -4,7 +4,7 @@ name: Números de punto flotante
 
 theory: |
 
-  JavaScript no hace distinción entre números racionales (0.5) y números naturales (10), para él ambos son números (en otros lenguajes esto no es así). Gracias a esto, se pueden utilizar juntos en cualquier operación:
+  JavaScript no hace distinción entre números racionales (0.5) y números naturales (10); para él ambos son números (en otros lenguajes esto no es así). Gracias a esto, se pueden utilizar juntos en cualquier operación:
 
   ```javascript
   3 * 0.5; // 1.5

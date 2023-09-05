@@ -6,26 +6,26 @@ theory: |
   Recordemos una de las lecciones anteriores:
 
   ```javascript
-  let cantidadDolares = 50 * 1.25; // 62.5
-  let cantidadRublos = cantidadDolares * 60; // 3750
+  let dollarsCount = 50 * 1.25; // 62.5
+  let rublesCount = dollarsCount * 60; // 3750
 
-  console.log(cantidadRublos);
+  console.log(rublesCount);
   ```
 
-  Desde el punto de vista del desarrollo profesional, este código "huele mal". Así es como se describe el código que es difícil de entender. Y la razón es la siguiente: en este momento, al ver los números `60` y `1.25`, es probable que te preguntes: "¿qué significan estos números?". ¡Imagínate cómo será dentro de un mes! Y cómo lo entenderá un nuevo programador que no haya visto el código antes. En nuestro ejemplo, el contexto se recupera gracias a una buena nomenclatura, pero en la vida real, el código es mucho más complicado y a menudo es imposible adivinar el significado de los números.
+  Desde el punto de vista del desarrollo profesional, este código "huele mal". Así es como se describe el código que es difícil de entender. Y la razón es la siguiente: en este momento, al ver los números `60` y `1.25`, es probable que te preguntes: "¿qué significan estos números?". ¡Imagínate cómo será dentro de un mes! Y cómo lo entenderá un nuevo programador que no haya visto el código antes. En nuestro ejemplo, el contexto se recupera gracias a una buena nomenclatura, pero en la vida real, el código es mucho más complicado, y a menudo, es imposible adivinar el significado de los números.
 
   Estos números que no se pueden entender sin un profundo conocimiento de lo que está sucediendo dentro de una parte específica del código se llaman Números mágicos.
 
-  La solución es simple: solo necesitas crear variables con nombres adecuados y todo encajará en su lugar.
+  La solución es simple: solamente necesitas crear variables con nombres adecuados y todo encajará en su lugar.
 
   ```javascript
-  let dolaresPorEuro = 1.25;
-  let rublosPorDolar = 60;
+  let dollarsPerEuro = 1.25;
+  let rublesPerDollar = 60;
 
-  let cantidadDolares = 50 * dolaresPorEuro; // 62.5
-  let cantidadRublos = cantidadDolares * rublosPorDolar; // 3750
+  let dollarsCount = 50 * dollarsPerEuro; // 62.5
+  let rublesCount = dollarsCount * rublesPerDollar; // 3750
 
-  console.log(cantidadRublos);
+  console.log(rublesCount);
   ```
 
   Presta atención a los siguientes detalles:
@@ -39,8 +39,8 @@ instructions: |
   Te has encontrado con el siguiente código que muestra la cantidad total de habitaciones en posesión del actual rey:
 
   ```javascript
-  let rey = 'Rey Balon el 6to';
-  console.log(rey + ' tiene ' + (6 * 17) + ' habitaciones.');
+  let king = 'King Balon the 6th';
+  console.log(king + ' has ' + (6 * 17) + ' rooms.');
   ```
 
   Como puedes ver, estos son números mágicos: no está claro qué significa el 6 y qué significa el 17. Puedes adivinarlo si conoces la historia de la familia real: cada nuevo rey hereda todos los castillos de sus antepasados y construye un nuevo castillo, una copia exacta del castillo de sus padres.
@@ -52,12 +52,12 @@ instructions: |
   Debería verse así:
 
   <pre class='hexlet-basics-output'>
-  Rey Balon el 6to tiene 102 habitaciones.
+  King Balon the 6th has 102 rooms.
   </pre>
 
   Los nombres de las variables deben transmitir el significado de los números, pero al mismo tiempo deben ser lo suficientemente cortos y concisos para una lectura cómoda.
 
-  Recuerda: el código funcionará con cualquier nombre, y nuestro sistema siempre verifica solo el resultado en la pantalla, por lo que completar esta tarea es tu responsabilidad.
+  Recuerda: el código funcionará con cualquier nombre, y nuestro sistema siempre verifica solamente el resultado en la pantalla, por lo que completar esta tarea es tu responsabilidad.
 
 tips: 
   - |

@@ -8,7 +8,7 @@ theory: |
   Imagina una función que cuenta cuántas veces aparece una letra en una oración. Aquí tienes un ejemplo de cómo funciona:
 
   ```javascript
-  countChars('El miedo corta más profundo que las espadas.', 'e'); // 4
+  countChars('Fear cuts deeper than swords.', 'e'); // 4
   // Si no se encuentra ninguna coincidencia, el resultado es 0
   countChars('Sansa', 'y'); // 0
   ```
@@ -24,7 +24,7 @@ theory: |
     let count = 0;
     while (i < str.length) {
       if (str[i] === char) {
-        // Solo contamos los caracteres que coinciden
+        // Solamente contamos los caracteres que coinciden
         count = count + 1;
       }
       // El contador se incrementa en cualquier caso

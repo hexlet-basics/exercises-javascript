@@ -3,7 +3,7 @@
 name: Constantes
 theory: |
 
-  En todo el módulo, la gran mayoría de los ejemplos de código utilizaban variables como nombres (alias) de valores específicos, en lugar de como variables que cambian su valor con el tiempo.
+  En todo el módulo, la gran mayoría de los ejemplos de código utilizaban variables como nombres (alias) de valores específicos, en lugar de usarlos como variables que cambian su valor con el tiempo.
 
   ```javascript
   let dollarsInEuro = 1.25;
@@ -34,16 +34,16 @@ theory: |
 
   ```javascript
   const pi = 3.14;
-  pi = 5; // TypeError: Asignación a una variable constante.
+  pi = 5; // TypeError: Assignment to constant variable.
   ```
 
-  ¿Por qué tanta complicación? ¿Por qué no dejar solo las variables? Incluso si dejáramos solo las variables, eso no cambiaría el hecho de que a menudo se usarían como constantes. Además, el código en JavaScript se puede escribir de manera idiomática sin usar variables en absoluto. Eche un vistazo a un ejemplo de [código real de Hexlet](https://github.com/Hexlet/hexlet-exercise-kit/blob/main/import-documentation/index.js). En esta etapa, es posible que no lo entienda, pero intente contar la cantidad de constantes y variables dentro de él, verá que solo hay una variable y un montón de constantes.
+  ¿Por qué tanta complicación? ¿Por qué no dejar solamente las variables? Incluso si dejáramos solamente las variables, eso no cambiaría el hecho de que, a menudo, se usarían como constantes. Además, el código en JavaScript se puede escribir de manera idiomática sin usar variables en absoluto. Eche un vistazo a un ejemplo de [código real de Hexlet](https://github.com/Hexlet/hexlet-exercise-kit/blob/main/import-documentation/index.js). En esta etapa, es posible que no lo entienda, pero intente contar la cantidad de constantes y variables dentro de él, verá que solo hay una variable y un montón de constantes.
 
   Las constantes son mucho más fáciles de analizar. Cuando vemos una constante en el código, inmediatamente entendemos que su valor siempre permanece igual. Al usar constantes, no hay concepto de tiempo. Con las variables, no es así, no podemos estar seguros de su valor, tenemos que analizar todo el código para comprender cómo podrían haber cambiado.
 
-  Las variables son absolutamente necesarias solo en un caso (en todos los demás casos, se pueden evitar) - al trabajar con bucles, a los que aún no hemos llegado.
+  Las variables son absolutamente necesarias solamente en un caso (en todos los demás casos, se pueden evitar) - al trabajar con bucles, a los que aún no hemos llegado.
 
-  En el futuro, preferiremos las constantes y solo usaremos variables cuando sea necesario.
+  En el futuro, preferiremos las constantes y solamente usaremos variables cuando sea necesario.
 
 instructions: |
 

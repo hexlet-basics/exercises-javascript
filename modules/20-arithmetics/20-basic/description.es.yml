@@ -2,7 +2,7 @@
 
 name: Operaciones aritméticas
 theory: |
-  A nivel básico, las computadoras operan solo con números. Incluso en aplicaciones de alto nivel, hay muchos números y operaciones dentro de ellas. Afortunadamente, para comenzar, es suficiente conocer la aritmética básica, así que empecemos por ahí.
+  A nivel básico, las computadoras operan solamente con números. Incluso en aplicaciones de alto nivel, hay muchos números y operaciones dentro de ellas. Afortunadamente, para comenzar, es suficiente conocer la aritmética básica, así que empecemos por ahí.
 
   En matemáticas, para sumar dos números, escribimos, por ejemplo, `3 + 4`. En programación, es lo mismo. Aquí hay un programa que suma dos números:
 
@@ -53,7 +53,7 @@ instructions: |
 
 tips:
   - |
-    Siempre deja espacios entre los operadores aritméticos y los números (operandos) - es una buena práctica de programación. Por lo tanto, en nuestros ejemplos, es `console.log(3 + 4)`, no `console.log(3+4)`.
+    Siempre deja espacios entre los operadores aritméticos y los números (operandos) - esta es una buena práctica de programación. Por lo tanto, en nuestros ejemplos, es `console.log(3 + 4)`, no `console.log(3+4)`.
   - |
     La división por cero es igual a `Infinity` (infinito). Explicaremos qué significa esto en futuras lecciones.
   - |

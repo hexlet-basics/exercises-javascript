@@ -17,7 +17,7 @@ theory: |
   const result = round(10.25); // 10
   ```
 
-  Si necesitamos una precisión diferente, podemos pasar un parámetro:
+  Si necesitamos una precisión distinta, podemos pasar un parámetro:
 
   ```javascript
   // redondeo a un decimal
