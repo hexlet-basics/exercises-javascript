@@ -1,0 +1,46 @@
+---
+
+name: Propiedades y métodos como expresiones
+theory: |
+
+  Las propiedades y métodos son expresiones al igual que las variables, constantes o llamadas a funciones, por lo tanto, se pueden combinar de diversas formas.
+
+  Uso en operaciones:
+
+  ```javascript
+  const name = 'Shaya';
+  name.length + 5; // 10
+  `Hello, ${name.toUpperCase()}!`; // Hello, SHAYA!
+  ```
+
+  Uso en parámetros de funciones:
+
+  ```javascript
+  const name1 = 'Robb';
+  const name2 = 'Shaya';
+  console.log(name2.length); // => 5
+  console.log(name2.toLowerCase()); // => shaya
+  console.log(Math.min(name1.length, name2.length)); // => 4
+  ```
+
+  https://replit.com/@hexlet/js-basics-properties-method
+
+instructions: |
+
+  Muestra en la pantalla la primera y última letra de la oración almacenada en la constante `text`, en el siguiente formato:
+
+  <pre class='hexlet-basics-output'>
+  First: N
+  Last: t
+  </pre>
+
+  Tu tarea es extraer estos caracteres de la cadena y colocarlos dentro de `console.log()`, sin utilizar variables intermedias.
+
+tips:
+  - |
+    [un poco sobre el método .trim()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
+
+definitions:
+  - name: Método
+    description: |
+      es una función o procedimiento que pertenece a una clase u objeto.

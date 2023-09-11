@@ -1,0 +1,38 @@
+---
+
+name: Biblioteca estándar
+theory: |
+
+  JavaScript, al igual que cualquier otro lenguaje, viene con un conjunto de funciones útiles. Todas juntas forman lo que se conoce como la **biblioteca estándar**. Por lo general, incluye miles de funciones que no se pueden aprender todas, y no es necesario hacerlo. Se supone que cualquier programador sabe dónde buscar la documentación y tiene una idea aproximada de lo que quiere lograr. A partir de ahí, es sólo cuestión de técnica. Si se les quita internet a los programadores, la mayoría no podrá programar nada.
+
+  Para los principiantes, esta información a menudo parece: "Ve allí, no sé dónde, trae eso, no sé qué". Es decir, no está claro cómo aprender sobre estas funciones cuando no sabes nada en absoluto. Curiosamente, no hay forma de conocer todo lo que necesitas conocer de una vez por todas. Cada desarrollador, a medida que crece profesionalmente, se familiariza con funciones cada vez más interesantes que resuelven sus problemas de manera más elegante, y así enriquece su arsenal.
+
+  Aquí hay algunos consejos sobre cómo aprender sobre nuevas funciones:
+
+  * Siempre sigue claramente con qué estás trabajando (qué tipo de datos). Casi siempre encontrarás la función necesaria en la sección correspondiente de la documentación, por ejemplo, para trabajar con cadenas, debes estudiar las funciones de cadena.
+  * Abre periódicamente la sección de funciones estándar relacionadas con el tema que estás estudiando y simplemente revísalas, estudiando las firmas y formas de uso.
+  * Lee el código de otras personas con más frecuencia, especialmente el código de las bibliotecas que estás utilizando. Todo está disponible en GitHub.
+
+  JavaScript tiene sus peculiaridades en cuanto a la estructura de la biblioteca estándar. Dado que su código puede ejecutarse en diferentes entornos, como el del servidor o el navegador, las capacidades de la biblioteca estándar dependen en gran medida de la forma en que se utiliza. Por ejemplo, desde el navegador no se pueden realizar algunas tareas que se deben poder realizar en el servidor. La documentación para la parte del servidor debe consultarse en el sitio web https://nodejs.org. Las partes del servidor de la biblioteca estándar están organizadas en módulos, cada módulo tiene su propia página con la descripción de todas las funciones que contiene. Por ejemplo, el módulo [fs](https://nodejs.org/api/fs.html) se utiliza para trabajar con el sistema de archivos, a través de sus funciones se realizan la escritura y lectura de archivos.
+
+  Si hablamos del navegador, en general hay muy pocas cosas. En su mayoría son algunas funciones básicas incorporadas en el propio lenguaje, como las mismas [funciones](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math) para trabajar con matemáticas. El resto de las capacidades se agregan mediante el uso de bibliotecas de terceros.
+
+instructions: |
+
+  El operador `typeof` permite determinar el tipo del operando pasado. El nombre del tipo se devuelve como una cadena. Por ejemplo, llamar a `typeof 'go go go'` devolverá la cadena `'string'` (number - número).
+
+  ```javascript
+  console.log(typeof 3); // => 'number'
+  ```
+
+  Muestra en la pantalla el tipo del valor de la constante `motto`.
+
+tips:
+  - |
+    [Descripción de las funciones de cadena](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String)
+  - |
+    [Cómo buscar información técnica](https://guides.hexlet.io/es/how-to-search/)
+
+definitions:
+  - name: Biblioteca estándar
+    description: conjunto de funciones útiles que se incluyen con el lenguaje de programación.

@@ -1,0 +1,5 @@
+---
+
+name: Aritmética
+description:
+  Los programas modernos se crean para servir a los negocios, ayudar en las actividades cotidianas de vida diaria y entretener al público. Pero en la base de su funcionamiento siguen estando los cálculos. El tema más simple y básico en la programación es la aritmética. En este módulo traduciremos las operaciones aritméticas a lenguaje de programación, hablaremos sobre la prioridad de las operaciones y las operaciones con números decimales. Recordaremos las reglas escolares de las lecciones de matemáticas y descubriremos qué sucede cuando se divide por cero en JavaScript. Y al final, explicaremos qué es un linter y por qué puede "quejarse".

@@ -1,0 +1,44 @@
+---
+
+name: Composición de operaciones
+theory: |
+  ¿Qué pasa si necesitamos calcular la siguiente expresión: `3 * 5 - 2`? Así es como lo escribiremos:
+
+  ```javascript
+  console.log(3 * 5 - 2); // => 13
+  ```
+
+  Observa que el intérprete realiza las operaciones aritméticas en el orden correcto: primero la multiplicación y la división, luego la suma y la resta. A veces, es necesario cambiar este orden, lo cual veremos en la siguiente lección.
+
+  Otra ejemplo:
+
+  ```javascript
+  console.log(2 * 4 * 5 * 10);
+  ```
+
+  https://replit.com/@hexlet/js-basics-arithmetics-composition
+
+  Como puedes ver, las operaciones se pueden combinar entre sí, lo que nos permite calcular expresiones compuestas más complejas. Para entender cómo se realizan los cálculos dentro del intérprete, analicemos el ejemplo: `2 * 4 * 5 * 10`.
+
+  1. Primero se calcula `2 * 4` y se obtiene la expresión `8 * 5 * 10`.
+  2. Luego se calcula `8 * 5`. Al final, tenemos `40 * 10`.
+  3. Finalmente, se realiza la última multiplicación y se obtiene el resultado `400`.
+
+  De esta manera, el intérprete combina expresiones compuestas complejas, realizando las operaciones aritméticas en el orden correcto de forma predeterminada: primero la multiplicación y la división, luego la suma y la resta.
+
+instructions: |
+
+  Implementa un programa que calcule y muestre en pantalla el valor de la siguiente expresión:
+
+  ```
+  8 / 2 + 5 - -3 / 2
+  ```
+
+  No realices ningún cálculo por tu cuenta; tu programa debe realizar todos los cálculos por sí mismo.
+
+tips: []
+
+definitions:
+  - name: Composición
+    description: |
+      Método de combinar varias operaciones simples en una sola operación compleja.

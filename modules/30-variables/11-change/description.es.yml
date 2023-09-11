@@ -1,0 +1,28 @@
+---
+
+name: Cambio de variable
+theory: |
+
+  La palabra "variable" en sí misma indica que se puede cambiar. Y de hecho, con el tiempo, los valores de las variables pueden cambiar dentro de un programa.
+
+  ```javascript
+  let greeting = 'Father!';
+  console.log(greeting);
+  console.log(greeting);
+
+  greeting = 'Mother!';
+  console.log(greeting);
+  console.log(greeting);
+  ```
+
+  https://replit.com/@hexlet/js-basics-variables-change
+
+  El nombre sigue siendo el mismo, pero los datos internos son diferentes. Presta atención a la diferencia clave entre la declaración de una variable y su cambio. La palabra clave `let` solo se utiliza al crear una variable, pero no se utiliza al cambiarla.
+
+instructions: |
+
+  En el ejercicio se define una variable que contiene una cadena de texto. Reasigna el valor de esta variable y asígnale la misma cadena de texto, pero en orden inverso, es decir, coloca los caracteres de la cadena original en orden inverso.
+
+definitions:
+  - name: Variable
+    description: una forma de almacenar información y darle un nombre para su uso posterior en el código.

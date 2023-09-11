@@ -1,0 +1,68 @@
+---
+
+name: Cadena de llamadas
+theory: |
+
+  Los números tienen un método que los convierte en una cadena:
+
+  ```javascript
+  const peopleCount = 5;
+  peopleCount.toString(); // 5
+  ```
+
+  Intenta responder la siguiente pregunta, ¿funcionará el siguiente código y, de ser así, qué imprimirá en la pantalla?
+
+  ```javascript
+  const name = 'Tirion';
+  console.log(name.length.toString());
+  ```
+
+  La sintaxis de varios puntos seguidos la vemos por primera vez, pero todas las operaciones que aparecen aquí nos son familiares. Todo lo que sucede en este código es la combinación de capacidades ya conocidas del lenguaje. Esto ocurre bastante a menudo en la programación. Incluso sin conocer la sintaxis, se pueden probar diferentes enfoques y hay una buena probabilidad de que funcionen.
+
+  La forma más sencilla de entender cómo funciona este código es dividir la cadena en operaciones individuales:
+
+  ```javascript
+  const name = 'Tirion';
+  const len = name.length;
+  console.log(len.toString());
+  ```
+
+  Estos ejemplos son completamente equivalentes. Podemos realizar operaciones secuencialmente con la creación intermedia de constantes, o podemos construir una cadena continua de propiedades y métodos. En las cadenas de llamadas, los cálculos siempre se realizan de izquierda a derecha.
+
+  Otro ejemplo para reforzar los conocimientos:
+
+  ```javascript
+  const name = 'Tirion';
+  console.log(name.toUpperCase().toLowerCase());
+  ```
+
+  Este tipo de código requiere un poco de esfuerzo mental. Es importante entender que `.toLowerCase()` se aplica al resultado de llamar al método que está a la izquierda. Y el método `toUpperCase()` devuelve una cadena. Los principiantes a menudo cometen errores en las cadenas de llamadas, olvidando poner la llamada:
+
+  ```javascript
+  const name = 'Tirion';
+  // ¡Este código no funcionará correctamente!
+  console.log(name.toUpperCase.toLowerCase);
+  ```
+
+  Siguiendo esta idea, es posible construir cadenas infinitamente largas (aunque en este caso, inútiles):
+
+  ```javascript
+  // ¿Cuál es el resultado de esta llamada?
+  console.log(name.toUpperCase().toLowerCase().length.toString().length);
+  ```
+
+  *Con las funciones, este truco no funcionará, ya que en su uso normal se anidan unas dentro de otras f(f(f())), lo que dificulta mucho el análisis. Pero esto no significa que no se pueda hacer de manera elegante, y de hecho, se puede y se debe hacer. En otros lenguajes, esto se logra a través de la composición de funciones o el operador de canalización, que, por cierto, se está comenzando a usar gradualmente en el mismo JavaScript: https://github.com/tc39/proposal-pipeline-operator.*
+
+instructions: |
+
+  Utiliza el método `slice()` para obtener una parte de la oración almacenada en la constante `text`, desde el carácter `5` hasta el carácter `15`, inclusive. Luego, procesa la subcadena obtenida con el método `.trim()` y muestra en pantalla la longitud de la subcadena resultante. Realiza estos métodos en cadena sin crear variables intermedias.
+
+  * [slice()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
+  * [trim()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
+
+tips: []
+
+definitions:
+  - name: Método
+    description: |
+      es una función o procedimiento que pertenece a una clase u objeto.

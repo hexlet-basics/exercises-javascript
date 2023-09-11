@@ -1,0 +1,5 @@
+---
+
+name: Variables en JavaScript
+description: |
+  La información se puede almacenar en "contenedores" especiales llamados variables. Esto permite reutilizar datos existentes y evitar duplicarlos en diferentes partes del código. En este módulo, aprenderemos cómo modificar variables y también cómo nombrarlas para que el código sea comprensible para cualquier desarrollador. ¡Te darás cuenta de que encontrar un nombre adecuado para una variable no es tan fácil! Además te enseñaremos cómo utilizar variables para simplificar cálculos complejos.

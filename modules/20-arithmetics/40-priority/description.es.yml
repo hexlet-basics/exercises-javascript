@@ -1,0 +1,51 @@
+---
+
+name: Prioridad de las operaciones
+theory: |
+  Observa detenidamente la expresión `2 + 2 * 2` y calcula mentalmente el resultado.
+
+  Respuesta correcta: `6`.
+
+  Si obtuviste `8`, entonces esta lección es para ti. En matemáticas escolares, aprendimos el concepto de "prioridad de la operación". La prioridad determina en qué secuencia deben realizarse las operaciones. Por ejemplo, la multiplicación y la división tienen mayor prioridad que la suma y la resta, y la potenciación tiene la prioridad más alta de todas las operaciones aritméticas: `2 ** 3 * 2` se calculará como `16`.
+
+  Sin embargo, a menudo los cálculos deben realizarse en un orden diferente al de la prioridad estándar. En situaciones complicadas, se puede (y se debe) especificar la prioridad mediante paréntesis, al igual que en la escuela, por ejemplo: `(2 + 2) * 2`.
+
+  Los paréntesis se pueden colocar alrededor de cualquier operación. Pueden anidarse tantas veces como sea necesario. Aquí tienes algunos ejemplos:
+
+  ```javascript
+  console.log(3 ** (4 - 2)); // => 9
+  console.log(7 * 3 + (4 / 2) - (8 + (2 - 1))); // => 14
+  ```
+
+  A veces, la expresión puede ser difícil de comprender visualmente. En ese caso, se pueden colocar paréntesis para hacerla más clara, sin afectar la prioridad. Por ejemplo, la tarea del ejercicio anterior se puede hacer un poco más comprensible si se colocan paréntesis.
+
+  Antes:
+
+  ```javascript
+  console.log(8 / 2 + 5 - -3 / 2); // => 10.5
+  ```
+
+  Después:
+
+  ```javascript
+  console.log(((8 / 2) + 5) - (-3 / 2)); // => 10.5
+  ```
+
+  https://replit.com/@hexlet/js-basics-arithmetics#index.js
+
+  Recuerda: el código se escribe para las personas, porque son personas las que leerán el código y las máquinas solamente lo ejecutarán. Para las máquinas, el código es correcto o incorrecto, no hay código "más" o "menos" comprensible para ellas.
+
+instructions: |
+
+  Dada la expresión `70 * 3 + 4 / 8 + 2`.
+
+  Coloca paréntesis de manera que ambas sumas (`3 + 4`) y (`8 + 2`) se calculen primero. Muestra el resultado en la pantalla.
+
+tips:
+  - |
+    [Prioridad de los operadores](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+
+definitions:
+  - name: Expresión
+    description: |
+      una secuencia de acciones sobre datos que conduce a algún resultado que se puede utilizar.

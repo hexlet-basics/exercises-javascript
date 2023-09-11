@@ -1,0 +1,40 @@
+---
+
+name: Inmutabilidad
+theory: |
+
+  ¿Qué se imprimirá en la pantalla en la última llamada?
+
+  ```javascript
+  const name = 'Tirion';
+  console.log(name.toUpperCase()); // => TIRION
+  console.log(name); // => ?
+  ```
+
+  La respuesta a esta pregunta depende de cómo hayas entendido la lección sobre la inmutabilidad de los tipos de datos primitivos. La llamada al método `.toUpperCase()` devuelve un nuevo valor en el que todas las letras están convertidas a mayúsculas, pero no cambia (y no puede hacerlo) la cadena original. Por lo tanto, dentro de la constante (o variable, no importa) se mantendrá el valor antiguo: `'Tirion'`. Esta lógica es válida para los métodos de todos los tipos de datos primitivos. Además, intentar cambiar el valor de una propiedad de estos datos no llevará a nada:
+
+  ```javascript
+  const name = 'Tirion';
+  console.log(name.length); // => 6
+  name.length = 100;
+  console.log(name.length); // => 6
+  ```
+
+  https://replit.com/@hexlet/js-properties-immutability
+
+  En lugar de cambiar el valor, se puede *reemplazar* el valor. Para ello, se necesitarán variables:
+
+  ```javascript
+  let name = 'Tirion';
+  name = name.toUpperCase();
+  console.log(name); // => TIRION
+  ```
+
+instructions: |
+
+  Los datos ingresados por los usuarios a menudo contienen espacios en blanco adicionales al principio o al final de la cadena. Por lo general, se eliminan utilizando el método `.trim()`, por ejemplo, si era: `'   hello\n '`, ahora es: `'hello'`.
+  Actualiza la variable `firstName` asignándole el mismo valor, pero procesado con el método `.trim()`. Imprime en pantalla el resultado obtenido.
+
+tips: 
+  - |
+    [Método trim() de la cadena](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)

@@ -1,0 +1,63 @@
+---
+
+name: Variables y Concatenación
+theory: |
+
+  Para reforzar el tema anterior, intentaremos utilizar variables con concatenación. Sintácticamente no cambia nada: sabemos cómo concatenar (unir) dos cadenas:
+
+  ```javascript
+  let what = 'Kings' + 'road';
+  console.log(what); // => Kingsroad
+  ```
+
+  ... lo que significa que también podemos concatenar una cadena y una variable en la que se almacena una cadena:
+
+  ```javascript
+  let primero = 'King's';
+  let que = first + 'road';
+
+  console.log(que); // => Kingsroad
+  ```
+
+  ... e incluso concatenar dos variables en las que se almacenan cadenas:
+
+  ```javascript
+  let primero = 'Kings';
+  let ultimo = 'road';
+
+  let que = primero + ultimo;
+  console.log(que); // => Kingsroad
+  ```
+
+  https://replit.com/@hexlet/variables-expression
+
+instructions: |
+
+  Los sitios web envían constantemente correos electrónicos a sus usuarios. Una tarea típica es enviar automáticamente un correo electrónico personalizado, donde el título contendrá el nombre del usuario. Si en algún lugar de la base de datos del sitio se almacena el nombre de la persona como una cadena, la tarea de generar el título se reduce a la concatenación: por ejemplo, es necesario unir la cadena `Hola` con la cadena que contiene el nombre.
+
+  Escribe un programa que genere el título y el cuerpo del correo electrónico utilizando variables ya definidas, y muestra las cadenas resultantes en la pantalla.
+
+  Para el título, utiliza las variables `firstname` y `greeting`, seguidas de una coma y un signo de exclamación. Muestra esto en la pantalla en el orden correcto.
+
+  Para el cuerpo del correo, utiliza las variables `info` e `intro`, asegurándote de que la segunda oración esté en una nueva línea.
+
+  El resultado en la pantalla se verá así:
+
+  <pre class='hexlet-basics-output'>
+  Hello, Joffrey!
+  Here is important information about your account security.
+  We couldn't verify your mother's maiden name.
+  </pre>
+
+  Realiza la tarea usando solamente dos `console.log()`.
+
+tips:
+  - |
+    Piensa en qué cadena y en qué orden debes concatenar las variables para obtener esa salida de dos líneas para el cuerpo del correo.
+  - |
+    Recuerda que puedes crear una cadena que contenga solo una secuencia de control `\n`.
+
+definitions:
+  - name: Concatenación
+    description: |
+      La operación de unir dos cadenas. Por ejemplo, `console.log("King's " + ' Landing');`

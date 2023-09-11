@@ -1,0 +1,54 @@
+---
+
+name: Elección del nombre de la variable
+theory: |
+
+  Imaginemos que el programa del último ejercicio se ve así:
+
+  ```javascript
+  let x = 'Father!';
+  console.log(x);
+  console.log(x);
+  ```
+
+  Todavía funciona, pero el nombre de la variable ha cambiado a `x`. A la computadora no le importa cómo llamamos a las variables, es una máquina sin emociones, pero a los programadores sí nos importa. Leemos el código mucho más a menudo de lo que lo escribimos. Y no solamente nuestro propio código, sino también el código escrito por otras personas. La mitad del éxito en el análisis de código depende de la calidad y claridad de los nombres de las variables.
+
+  Es mejor tomarse el tiempo para pensar en un nombre que describa la esencia y el significado de la variable, en lugar de nombrarla al azar y tener que cambiarla en el futuro. Intente darles nombres que sean comprensibles sin contexto, sin tener que estudiar el código circundante.
+
+  Existe una regla generalmente aceptada: no utilice transliteraciones para los nombres; solamente use el idioma inglés. Si tiene dificultades con el inglés, utilice un traductor. Con el tiempo, al trabajar con código ajeno, formará conceptos adecuados para la nomenclatura.
+
+  Entre los desarrolladores hay un chiste: "lo más difícil de la programación son los nombres de las variables y la invalidación de la caché". De hecho, es difícil inventar nombres. ¿Cómo llamaría a una variable que almacena "la cantidad de pedidos impagos de clientes que tienen deudas en el trimestre anterior"?
+
+  <details>
+  <summary>Respuesta</summary>
+
+  No hay una respuesta correcta y unívoca a esta pregunta. Por ejemplo, se puede utilizar el nombre `unpaidOrdersFromDebtorsInPreviousQuarterCount`.
+
+  Este nombre describe bien el contenido de la variable y permite identificar fácilmente su significado en el código. Sin embargo, es demasiado largo y complicado, por lo que es mejor utilizar un nombre más corto, como `unpaidOrdersFromDebtorsCount` o `debtorsUnpaidOrdersCount`. En general, la elección del nombre de la variable depende del contexto de uso.
+  </details>
+
+  En JavaScript, en los nombres de las constantes y variables, cada palabra se escribe con mayúscula inicial, excepto la primera. Por ejemplo:
+
+  ```javascript
+  const firstName = 'John';
+  console.log(firstName); // => John
+
+  const playerNumber = 24;
+  console.log(playerNumber); // => 24
+  ```
+
+  Autoevaluación. Piense en un nombre para una variable que almacene "la cantidad de hermanos y hermanas del rey". Escríbalo en un bloc de notas o envíelo por correo electrónico. No incluya nada más que el nombre de la variable. Volveremos a este tema en unas lecciones ;-)
+
+instructions: |
+
+  Crea una variable que describa literalmente "la cantidad de mis hermanos" y asígnale el valor *2*. Imprime el contenido de la variable. Después de una verificación exitosa, compara tu nombre con el nombre utilizado en la solución del profesor.
+
+tips:
+  - |
+    [Nomenclatura en programación](https://ru.hexlet.io/blog/posts/naming-in-programming)
+  - |
+    [Errores en la nomenclatura de variables](https://ru.hexlet.io/blog/posts/naming-errors-1)
+
+definitions:
+  - name: Variable
+    description: una forma de almacenar información y darle un nombre para su uso posterior en el código.

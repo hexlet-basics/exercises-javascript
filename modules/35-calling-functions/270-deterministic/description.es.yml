@@ -1,0 +1,44 @@
+---
+
+name: Determinismo
+theory: |
+
+  Independientemente del lenguaje de programación utilizado, las funciones dentro de él tienen algunas propiedades fundamentales. Conocer estas propiedades facilita predecir el comportamiento de las funciones, las formas de probarlas y el lugar donde se utilizan. Una de estas propiedades es el determinismo. Una función se considera determinista cuando devuelve el mismo resultado para los mismos parámetros de entrada. Por ejemplo, la función que cuenta la cantidad de caracteres es determinista:
+
+  ```javascript
+  import { length } from 'hexlet-basics/string';
+
+  length('hexlet'); // 6
+  length('hexlet'); // 6
+
+  length('wow'); // 3
+  length('wow'); // 3
+  ```
+
+  No importa cuántas veces llamemos a esta función pasando el valor `'hexlet'`, siempre devolverá `6`. Por otro lado, una función que devuelve un número aleatorio no es determinista, ya que para una misma entrada (incluso si está vacía, es decir, no se aceptan parámetros) siempre obtendremos un resultado diferente. No importa cuán diferente sea, incluso si una de cada millón de llamadas devuelve algo diferente, esta función se considera automáticamente no determinista.
+
+  ```javascript
+  // Función que devuelve un número aleatorio
+  Math.random(); // 0.09856613113197676
+  Math.random(); // 0.8839904367241888
+  ```
+
+  ¿Por qué es importante saber esto? El determinismo afecta seriamente muchos aspectos. Las funciones deterministas son convenientes para trabajar, son fáciles de optimizar y de probar. Si es posible hacer que una función sea determinista, es mejor hacerlo así.
+
+instructions: |
+
+  La función `Math.random()` devuelve un número aleatorio entre 0 y 1 con varios dígitos decimales. Pero para atender problemas reales, a veces necesitamos obtener números enteros aleatorios, por ejemplo, en el rango de 0 a 10. Implementa el código que imprime precisamente esos números en la pantalla. Para este problema, necesitarás las funciones [Math.random()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math/random) y [Math.round()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math/round).
+
+  Intenta resolver este ejercicio en una sola línea.
+
+  ## Algoritmo
+
+  Dado que `Math.random()` devuelve números en el rango de 0 a 1, para obtener números en el rango de 0 a 10, debemos multiplicar por 10. Luego, el número resultante se redondea y así obtenemos lo que necesitamos.
+
+tips:
+  - |
+    [Funciones deterministas](https://es.wikipedia.org/wiki/Funci%C3%B3n_determinista)
+
+definitions:
+  - name: Efecto secundario
+    description: "una acción que modifica el entorno externo (el entorno de ejecución). Por ejemplo, la impresión en pantalla o el envío de un correo electrónico."

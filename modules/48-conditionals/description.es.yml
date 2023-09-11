@@ -1,0 +1,5 @@
+---
+
+name: Estructuras condicionales
+description: |
+  La tarea de una función predicado es obtener una respuesta a una pregunta, pero esto no es suficiente por lo general y es necesario realizar una acción específica dependiendo de la respuesta. If y Switch son estructuras en JavaScript que permiten al programador elegir el comportamiento necesario del programa según diferentes condiciones: omitir algunas instrucciones y/o ejecutar otras. En este módulo, las estudiaremos y practicaremos su uso.

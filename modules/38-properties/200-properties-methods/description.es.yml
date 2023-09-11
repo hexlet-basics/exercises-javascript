@@ -1,0 +1,50 @@
+---
+
+name: Métodos
+theory: |
+
+  Además de las propiedades, los datos también tienen métodos, los cuales son funciones que se encuentran dentro de las propiedades. Desde un punto de vista práctico, esto significa que un método funciona y se llama como una función, pero se accede a él como una propiedad, a través de un punto.
+
+  ```javascript
+  const name = 'Robb';
+  const upperName = name.toUpperCase();
+  console.log(upperName); // => ROBB
+  ```
+
+  https://replit.com/@hexlet/js-basics-properties-methods
+
+  Los métodos incorporados siempre operan en los datos con los que están asociados. El método `.toUpperCase()` devuelve la misma cadena, pero convierte todos los caracteres a mayúsculas. Por lo general, hay muchos más métodos que propiedades para los datos, por ejemplo, para las cadenas hay [varias docenas](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String). A primera vista, en la documentación se describen de manera un poco extraña: *String.prototype.toLowerCase()*. Esta descripción revela algunos detalles internos  de implementación que no son importantes en este momento, y tampoco hemos estudiado toda la base necesaria para hablar sobre los prototipos.
+
+  Los números también tienen métodos, como se muestra en [este enlace](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Number):
+
+  ```javascript
+  const temperature = 22.93;
+  // Redondear a un decimal
+  const roundedTemperature = temperature.toFixed(1);
+  // El método devuelve una cadena que contiene el número convertido
+  console.log(roundedTemperature); // => 22.9
+
+  // También se puede llamar directamente así
+  // Los paréntesis son obligatorios, de lo contrario no funcionará
+  (22.93).toFixed(1); // 22.9
+  ```
+
+  *Nota para la anfitriona. Técnicamente, todo es un poco más complicado. Los métodos no están en los números en sí, sino en los datos (objetos) del tipo Number. Los números que se asignan a variables o constantes se convierten automáticamente a este tipo cuando se accede a ellos, en este momento se produce lo que se llama boxing.*
+
+  Surge una pregunta lógica: ¿por qué se necesitan métodos en lugar de simplemente funciones? Con los números, la situación es aún más complicada. Algunas operaciones se implementan como métodos de los propios números, por ejemplo, `.toFixed()`, y una gran parte se implementa como métodos disponibles a través de `Math`.
+
+  Hay dos razones por las que se hace así:
+
+  1. Históricamente, JavaScript se desarrolló muy rápido y, por lo tanto, no todo estaba bien pensado originalmente.
+  2. No todas las funciones están relacionadas con un valor específico. Tomemos como ejemplo `Math.min()`. Esta función encuentra el número mínimo entre todos los que se le pasan. No tendría sentido hacer que esta función sea un método de un número específico, por ejemplo, así: `(1).min()`. No tiene ninguna relación con un número específico.
+
+  Por otro lado, las funciones que trabajan con un número específico deben implementarse como métodos para mantener la uniformidad. Un ejemplo de estas funciones es obtener el módulo de un número. En lugar de llamarlo así `Math.abs(-10)`, sería lógico tener esto: `(-10).abs()`.
+
+  En cuanto a los métodos en general, no todo es tan claro. Hay lenguajes en los que no hay métodos y todo funciona bien; hay lenguajes en los que los métodos son la forma principal de trabajar con funciones, pero incluso en estos lenguajes siempre se utilizan funciones normales junto con los métodos. JavaScript es un lenguaje en el que ambos enfoques han prosperado; se utilizan tanto funciones normales como métodos de manera activa. Los pros y los contras de estos enfoques se explican en detalle en los cursos [dedicados a la POO](https://ru.hexlet.io/programs/js-oop).
+
+instructions: |
+  Convierte la cadena `text` a minúsculas e imprímela en la pantalla.
+
+tips:
+  - |
+    [Método toLowerCase() de la cadena](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
