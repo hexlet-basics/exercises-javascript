@@ -59,7 +59,7 @@ tips:
   - |
     [Operaciones aritméticas](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators#arithmetic_operators)
   - |
-    [Resto de la división](https://es.wikipedia.org/wiki/Resto_(matem%C3%A1tica))
+    [Resto de la división](https://es.wikipedia.org/wiki/División_euclídea)
 
 definitions:
   - name: Instrucción
