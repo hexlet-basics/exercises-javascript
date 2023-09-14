@@ -50,13 +50,13 @@ instructions: |
   console.log(capitalize(name)); // => Arya
   ```
 
-  Para obtener una subcadena (o un carácter) de una cadena, utiliza el método [slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice):
+  Para obtener una subcadena (o un carácter) de una cadena, utiliza el método [slice()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/slice):
 
   ```javascript
   'bienvenida'.slice(2, 5); // lco
   ```
 
-  Para convertir una cadena a mayúsculas, utiliza el método [toUpperCase()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
+  Para convertir una cadena a mayúsculas, utiliza el método [toUpperCase()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
 
   ```javascript
   'bienvenida'.toUpperCase(); // WELCOME
