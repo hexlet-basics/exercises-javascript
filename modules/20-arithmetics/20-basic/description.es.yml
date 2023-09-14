@@ -31,7 +31,7 @@ theory: |
   * `*` — multiplicación
   * `/` — división
   * `-` — resta
-  * `%` — [resto de la división](https://es.wikipedia.org/wiki/Resto_(matem%C3%A1tica))
+  * `%` — [resto de la división](https://es.wikipedia.org/wiki/División_euclídea)
   * `**` — potenciación
 
   Ahora, vamos a mostrar en la pantalla el resultado de la división y luego el resultado de la potenciación:
