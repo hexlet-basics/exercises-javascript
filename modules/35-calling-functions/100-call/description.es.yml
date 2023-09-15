@@ -20,7 +20,7 @@ theory: |
   console.log(result); // => 6
   ```
 
-  Un paréntesis. La primera línea de este código es la importación de una función desde otro módulo. Las importaciones y los módulos se estudian en Hexlet, aquí estarán presentes en la tarea "tal cual", ya que no se pueden utilizar las funciones definidas en otros archivos sin ellos. No te preocupes si no entiendes el significado de esta acción, puedes obtener más información al respecto en el curso [Introducción a la programación](https://ru.hexlet.io/courses/introduction_to_programming).
+  Un paréntesis. La primera línea de este código es la importación de una función desde otro módulo. Las importaciones y los módulos se estudian en Hexlet, aquí estarán presentes en la tarea "tal cual", ya que no se pueden utilizar las funciones definidas en otros archivos sin ellos. No te preocupes si no entiendes el significado de esta acción, puedes obtener más información al respecto en el curso [Introducción a la programación](https://hexlet.la/courses/introduction-to-programming).
 
   Los parámetros (o argumentos) son la información que una función recibe al ser llamada. Es con base en esta información que la función, por lo general, realiza algún cálculo y devuelve un resultado.
 
