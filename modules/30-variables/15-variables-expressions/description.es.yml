@@ -66,7 +66,7 @@ theory: |
   ```
 
   <pre class='hexlet-basics-output'>
-  El precio es 431.875 yuanes
+  The price is 431.875 yuans
   </pre>
 
   Cualquier variable puede ser parte de cualquier expresión. En el momento de la evaluación, el valor de la variable se sustituye en lugar de su nombre.
