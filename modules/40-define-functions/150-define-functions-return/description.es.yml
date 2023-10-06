@@ -121,11 +121,11 @@ theory: |
 
 instructions: |
 
-  Implementa la función `sayHurrayThreeTimes()`, que devuelve la cadena '¡hurray! ¡hurray! ¡hurray!'.
+  Implementa la función `sayHurrayThreeTimes()`, que devuelve la cadena 'hurray! hurray! hurray!'.
 
   ```javascript
   const hurra = sayHurrayThreeTimes();
-  console.log(hurray); // => ¡hurray! ¡hurray! ¡hurray!
+  console.log(hurray); // => hurray! hurray! hurray!
   ```
 
 tips:

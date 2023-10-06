@@ -16,7 +16,7 @@ theory: |
   import { length } from 'hexlet-basics/string';
 
   // Llamada a la función length con el parámetro 'Hello!'
-  const resultado = length('Hello!');
+  const result = length('Hello!');
   console.log(result); // => 6
   ```
 

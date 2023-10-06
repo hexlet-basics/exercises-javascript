@@ -13,7 +13,7 @@ theory: |
   Si imprimimos en la pantalla una cadena de texto con este contenido:
 
   ```javascript
-  console.log('- ¿Tienes hambre?- ¡Aaaarrrgh!');
+  console.log('- Are you hungry?- ¡Aaaarrrgh!');
   ```
 
   obtendremos esto:
