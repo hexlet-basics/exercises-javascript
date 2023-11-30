@@ -13,8 +13,8 @@ theory: |
   ... lo que significa que también podemos concatenar una cadena y una variable en la que se almacena una cadena:
 
   ```javascript
-  let first = 'King's';
-  let what = first + 'road';
+  let primero = 'Kings';
+  let que = primero + 'road';
 
   console.log(que); // => Kingsroad
   ```
