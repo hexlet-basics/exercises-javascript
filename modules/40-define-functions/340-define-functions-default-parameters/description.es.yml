@@ -24,7 +24,7 @@ theory: |
   ```javascript
   const print = (text = 'nada') => console.log(text);
 
-  print(); // "nothing"
+  print(); // "Nada"
   print("Hexlet"); // Hexlet
   ```
 
