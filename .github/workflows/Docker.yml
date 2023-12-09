@@ -17,3 +17,5 @@ jobs:
         with:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      # TODO: move to exercises-action when it works
+      # - run:jw
