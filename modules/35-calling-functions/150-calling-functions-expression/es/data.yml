@@ -1,0 +1,6 @@
+name: Llamada a una función - expresión
+definitions:
+  - name: Expresión
+    description: >
+      una secuencia de acciones sobre datos que conduce a un resultado que se
+      puede utilizar.

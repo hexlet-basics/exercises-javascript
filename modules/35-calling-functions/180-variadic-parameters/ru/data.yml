@@ -1,0 +1,8 @@
+name: Функции с переменным числом параметров
+tips:
+  - >
+    [Пример функции с переменным числом
+    параметров](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
+definitions:
+  - name: Аргумент по умолчанию
+    description: необязательный аргумент функции.

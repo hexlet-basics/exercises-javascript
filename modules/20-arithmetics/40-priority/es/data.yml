@@ -1,0 +1,10 @@
+name: Prioridad de las operaciones
+tips:
+  - >
+    [Prioridad de los
+    operadores](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+definitions:
+  - name: Expresión
+    description: >
+      una secuencia de acciones sobre datos que conduce a algún resultado que se
+      puede utilizar.

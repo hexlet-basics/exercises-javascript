@@ -1,0 +1,40 @@
+
+Trabajar con bucles generalmente se reduce a dos escenarios:
+
+1. Agregación. Acumulación de resultados durante las iteraciones y trabajar con ellos después del bucle. La inversión de una cadena es un ejemplo de este enfoque.
+2. Ejecución de un bucle hasta alcanzar un resultado deseado y luego salir del bucle. Por ejemplo, la tarea de buscar números primos. Recordemos que un número primo es aquel que solo es divisible entre sí mismo y uno.
+
+Consideremos un algoritmo simple para verificar la primalidad de un número. Dividiremos el número deseado `x` entre todos los números en el rango desde dos hasta `x - 1` y verificaremos el residuo de la división. Si no encontramos ningún divisor en este rango que divida al número `x` sin residuo, entonces estamos ante un número primo.
+
+Si lo pensamos un poco, notaremos que solamente necesitamos verificar números hasta `x / 2`, en lugar de llegar a `x - 1`. Por ejemplo, el 11 no es divisible por 2, 3, 4, 5. Además, no habrá divisores mayores que la mitad del número. Por lo tanto, podemos optimizar y verificar solo hasta `x / 2`.
+
+```javascript
+const isPrime = (number) => {
+  if (number < 2) {
+    return false;
+  }
+
+  let divider = 2;
+
+  while (divider <= number / 2) {
+    if (number % divider === 0) {
+      return false;
+    }
+
+    divider += 1;
+  }
+
+  return true;
+}
+
+isPrime(1); // false
+isPrime(2); // true
+isPrime(3); // true
+isPrime(4); // false
+```
+
+https://replit.com/@hexlet/js-basics-conditions-inside-loops
+
+El algoritmo está diseñado de tal manera que, si encontramos al menos un divisor en el rango de la división secuencial entre números de 2 a `x / 2`, entonces el número pasado como argumento no es primo, y no tiene sentido continuar las comprobaciones. En este punto, deberíamos devolver `false`.
+
+Solamente si el bucle se ejecuta por completo, podemos concluir que el número es primo, ya que no se encontró ningún número que sea divisor sin residuo.

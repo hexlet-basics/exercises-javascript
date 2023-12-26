@@ -1,0 +1,11 @@
+name: Синтаксические ошибки
+tips:
+  - |
+    [Ошибки в JavaScript](https://habr.com/ru/post/249525/)
+definitions:
+  - name: Синтаксическая ошибка
+    description: нарушение грамматических правил языка программирования.
+  - name: SyntaxError (ошибка парсинга)
+    description: >-
+      тип ошибок в JavaScript, возникающих при наличии синтаксических ошибок в
+      коде.

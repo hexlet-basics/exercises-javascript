@@ -1,0 +1,10 @@
+name: Azúcar sintáctico
+tips:
+  - |
+    [Azúcar sintáctico](https://es.wikipedia.org/wiki/Azúcar_sintáctico)
+definitions:
+  - name: Azúcar sintáctico
+    description: >
+      son características sintácticas que no afectan el comportamiento del
+      programa, pero hacen que el uso del lenguaje sea más conveniente para los
+      humanos.

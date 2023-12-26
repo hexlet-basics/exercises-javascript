@@ -1,0 +1,10 @@
+name: Firma de la función
+tips:
+  - >
+    [Firma de la
+    función](https://developer.mozilla.org/es/docs/Glosario/Firma/Función)
+definitions:
+  - name: Firma de la función
+    description: >-
+      descripción formal de los tipos de los parámetros y del tipo de valor
+      devuelto por una función.

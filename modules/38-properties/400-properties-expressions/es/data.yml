@@ -1,0 +1,9 @@
+name: Propiedades y métodos como expresiones
+tips:
+  - >
+    [un poco sobre el método
+    .trim()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
+definitions:
+  - name: Método
+    description: |
+      es una función o procedimiento que pertenece a una clase u objeto.

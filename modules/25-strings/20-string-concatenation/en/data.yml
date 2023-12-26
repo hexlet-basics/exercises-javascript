@@ -1,0 +1,9 @@
+name: Concatenation
+tips:
+  - |
+    Type your code between the `// BEGIN` and `// END` lines in the editor.
+definitions:
+  - name: Concatenation
+    description: >
+      is the operation of joining two strings. For example, `console.log("King's
+      " + ' Landing');`.

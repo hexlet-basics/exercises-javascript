@@ -1,0 +1,4 @@
+name: Линтер
+tips:
+  - |
+    [eslint](https://eslint.org/)

@@ -1,0 +1,9 @@
+name: else
+tips:
+  - >
+    [if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+definitions:
+  - name: else
+    description: >-
+      способ задать блок кода, который будет выполнен, если условие с `if` не
+      удовлетворено

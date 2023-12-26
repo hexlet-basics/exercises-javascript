@@ -1,0 +1,8 @@
+name: Параметры по умолчанию
+tips:
+  - >
+    [Параметры по
+    умолчанию](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+definitions:
+  - name: Параметр по умолчанию
+    description: необязательный параметр функции

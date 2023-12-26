@@ -1,0 +1,13 @@
+name: Выбор имени переменной
+tips:
+  - >
+    [Именование в
+    программировании](https://ru.hexlet.io/blog/posts/naming-in-programming)
+  - >
+    [Ошибки в именовании
+    переменных](https://ru.hexlet.io/blog/posts/naming-errors-1)
+definitions:
+  - name: Переменная
+    description: >-
+      способ сохранить информацию и дать ей имя для последующего использования в
+      коде.

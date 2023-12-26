@@ -1,0 +1,7 @@
+name: Propiedades
+tips:
+  - >
+    Consulta la documentación de
+    [String.length](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/length).
+    Ten en cuenta que la longitud de una cadena es igual al número de caracteres
+    que contiene. La longitud de una cadena vacía `''` es 0.

@@ -1,0 +1,8 @@
+name: Parámetros opcionales de las funciones
+tips:
+  - >
+    [Parámetros por
+    defecto](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+definitions:
+  - name: Parámetro por defecto
+    description: parámetro opcional de una función

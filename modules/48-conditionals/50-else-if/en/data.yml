@@ -1,0 +1,5 @@
+name: else if statement
+tips: []
+definitions:
+  - name: else if
+    description: is a way to set multiple alternate conditions

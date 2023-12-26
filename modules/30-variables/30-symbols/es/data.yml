@@ -1,0 +1,7 @@
+name: Extracción de caracteres de una cadena
+tips:
+  - >
+    [undefined](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/undefined)
+definitions:
+  - name: Índice
+    description: la posición del carácter dentro de la cadena.

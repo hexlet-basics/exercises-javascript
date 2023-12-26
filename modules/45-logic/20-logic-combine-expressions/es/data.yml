@@ -1,0 +1,9 @@
+name: Combinación de operaciones lógicas
+tips:
+  - |
+    [Expresión](https://es.wikipedia.org/wiki/Expresión_(informática))
+definitions:
+  - name: Expresión
+    description: >
+      una secuencia de acciones sobre datos que lleva a algún resultado que se
+      puede utilizar.

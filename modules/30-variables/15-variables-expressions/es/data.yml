@@ -1,0 +1,9 @@
+name: Expresiones en definiciones
+tips:
+  - |
+    [Expresión](https://es.wikipedia.org/wiki/Expresión_(informática))
+definitions:
+  - name: Variable
+    description: >-
+      una forma de almacenar información y darle un nombre para su uso posterior
+      en el código.

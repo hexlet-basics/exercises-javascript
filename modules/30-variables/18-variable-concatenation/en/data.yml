@@ -1,0 +1,8 @@
+name: Variables and concatenation
+tips:
+  - >
+    Consider how you should concatenate the variables (Which string? What
+    order?) to get the two-line output of the email body.
+  - >
+    Remember that you can create a string containing only the escape sequence
+    `\n`.

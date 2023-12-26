@@ -1,0 +1,5 @@
+name: Properties and methods as expressions
+tips:
+  - >
+    [About
+    String.prototype.trim()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)

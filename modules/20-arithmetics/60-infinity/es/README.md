@@ -1,0 +1,18 @@
+
+En programación, es ampliamente conocido el error de "división por cero". En lenguajes de bajo nivel, esto provoca el colapso del programa y la necesidad de reiniciarlo. Donde otros fallan, JavaScript sigue funcionando.
+
+```javascript
+console.log(1 / 0); // ?
+```
+
+https://replit.com/@hexlet/js-basics-arithmetics-inifinity
+
+Intenta ejecutar este código en tu navegador. ¡Se mostrará en pantalla `Infinity` (infinito)! Para aquellos que han estudiado matemáticas avanzadas (¡hola, cálculo!), esto no es sorprendente. La división por cero realmente da infinito. En JavaScript, el infinito es un número real con el que se pueden realizar diversas operaciones. En tareas cotidianas, esto tiene poco sentido, ya que la mayoría de las operaciones con infinito resultan en infinito, por ejemplo, al sumar cualquier número a infinito, aún obtendremos infinito.
+
+```javascript
+Infinity + 4; // Infinity
+Infinity - 4; // Infinity
+Infinity * Infinity; // Infinity
+```
+
+Sin embargo, hay algunos ejemplos en los que el infinito es útil. Este tema se analiza en detalle en Hexlet.

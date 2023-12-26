@@ -1,0 +1,15 @@
+name: Инструкции (Statements)
+tips:
+  - |
+    [Немного об интерпретаторах](https://ru.wikipedia.org/wiki/Интерпретатор)
+  - >
+    [Инструкции и объявления по
+    категориям](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements)
+definitions:
+  - name: Интерпретатор
+    description: |
+      программа, выполняющая код на JavaScript.
+  - name: Инструкция (statement)
+    description: >
+      команда для компьютера, написанная на языке программирования. Код на
+      JavaScript — это набор инструкций, разделенных (чаще всего) символом `;`.

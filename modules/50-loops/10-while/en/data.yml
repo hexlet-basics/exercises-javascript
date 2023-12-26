@@ -1,0 +1,11 @@
+name: While loop
+tips:
+  - >
+    [*while*
+    loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
+definitions:
+  - name: |
+      *while* loop
+    description: >-
+      is a statement that repeatedly executes code as long as a given test
+      condition is true

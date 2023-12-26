@@ -1,0 +1,54 @@
+
+Vamos a escribir la función `getTypeOfSentence()`, la cual analiza un texto y devuelve una descripción de su tono: para las oraciones normales - *General sentence*, para las preguntas - *Question sentence*.
+
+```javascript
+  getTypeOfSentence('Hodor');  // General sentence
+  getTypeOfSentence('Hodor?'); // Question sentence
+```
+
+Implementación de la función:
+
+```javascript
+const getTypeOfSentence = (sentence) => {
+  // Declaramos una variable donde guardaremos el tipo de oración
+  let sentenceType;
+  // Predicado que verifica el final del texto
+  // Si termina con el símbolo '?', devuelve true,
+  // de lo contrario, devuelve false
+  if (sentence.endsWith('?')) {
+    // Si la condición anterior se cumple,
+    // entonces es una oración interrogativa.
+    // Asignamos a sentenceType el valor correspondiente.
+    sentenceType = 'Question';
+  } else {
+    // En todos los demás casos, la oración es general
+    sentenceType = 'General';
+  }
+
+  // Usando interpolación, formamos la cadena
+  return `${sentenceType} sentence`;
+};
+```
+
+https://replit.com/@hexlet/js-basics-if-else
+
+Hemos agregado la palabra clave `else` y un nuevo bloque con llaves. Este bloque se ejecutará solo si la condición en `if` es falsa.
+
+Hay dos formas de estructurar la construcción *if-else*. Usando la negación, se puede cambiar el orden de los bloques:
+
+```javascript
+const getTypeOfSentence = (sentence) => {
+  let sentenceType;
+  // Se agregó la negación
+  // El contenido de else se movió a if y viceversa
+  if (!sentence.endsWith('?')) {
+    sentenceType = 'General';
+  } else {
+    sentenceType = 'Question';
+  }
+
+  return `${sentenceType} sentence`;
+};
+```
+
+¿Cuál es el método preferido? El cerebro humano tiende a pensar de manera directa y no a través de negaciones. Trate de elegir una condición que no contenga negaciones y ajuste el contenido de los bloques en consecuencia.

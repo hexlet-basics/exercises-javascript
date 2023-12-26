@@ -1,0 +1,10 @@
+name: Сигнатура функции
+tips:
+  - >
+    [Сигнатура
+    функции](https://developer.mozilla.org/en-US/docs/Glossary/Signature/Function)
+definitions:
+  - name: Сигнатура функции
+    description: >-
+      формальное описание типов параметров и типа возвращаемого значения
+      функции.

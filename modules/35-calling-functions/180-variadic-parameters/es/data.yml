@@ -1,0 +1,8 @@
+name: Funciones con número variable de parámetros
+tips:
+  - >
+    [Ejemplo de función con número variable de
+    parámetros](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Math/max)
+definitions:
+  - name: Argumento predeterminado
+    description: Argumento opcional de una función.

@@ -1,0 +1,34 @@
+
+En la lección sobre concatenación, se nos presentó el desafío de crear un encabezado de correo electrónico a partir de dos constantes y signos de puntuación. Probablemente hayas resuelto el problema de la siguiente manera:
+
+```javascript
+const firstName = 'Joffrey';
+const greeting = 'Hello';
+
+console.log(greeting + ', ' + firstName + '!');
+// => Hello, Joffrey!
+```
+
+Este es un caso bastante sencillo, pero incluso aquí se requiere un esfuerzo para ver qué cadena se obtendrá al final. Es necesario prestar atención a las comillas y los espacios, y sin mirar detenidamente, no se puede entender dónde comienza y termina cada parte.
+
+Existe otra forma más conveniente y elegante de resolver el mismo problema: la **interpolación**. Así es como se ve:
+
+```javascript
+const firstName = 'Joffrey';
+const greeting = 'Hello';
+
+// Ten en cuenta que se utilizan comillas invertidas como delimitadores de cadena
+// La interpolación no funciona con comillas simples o dobles
+console.log(`${greeting}, ${firstName}!`);
+// => Hello, Joffrey!
+```
+
+https://replit.com/@hexlet/js-basics-interpolation
+
+Simplemente creamos una cadena e "insertamos" las constantes en los lugares adecuados utilizando el signo de dólar y las llaves `${ }`. Es como si tuviéramos una plantilla en la que se insertan los valores necesarios. Ya no tenemos que preocuparnos por las cadenas separadas para los signos de puntuación y los espacios: todos estos caracteres están simplemente escritos en esta cadena de plantilla.
+
+Se pueden hacer tantos bloques similares como se desee en una sola cadena.
+
+La interpolación solo funciona con cadenas en [comillas invertidas](https://es.wikipedia.org/wiki/Acento_grave). Este es el carácter `.
+
+En casi todos los lenguajes, la interpolación es preferible a la concatenación para unir cadenas. La cadena resultante es más legible y se pueden distinguir claramente los espacios y otros caracteres en su interior. En primer lugar, la interpolación evita confusiones entre cadenas y números (debido al signo +), y en segundo lugar, es mucho más fácil (después de cierta práctica) comprender la cadena en su totalidad.

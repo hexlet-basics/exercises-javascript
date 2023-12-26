@@ -1,0 +1,8 @@
+name: Логический тип
+tips:
+  - >
+    [Boolean в
+    JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+definitions:
+  - name: Логический тип (boolean)
+    description: 'тип данных с двумя возможными значениями: true (истина) и false (ложь).'

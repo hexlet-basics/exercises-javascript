@@ -1,0 +1,9 @@
+name: Errores al trabajar con variables
+tips:
+  - >
+    [ReferenceError](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError)
+definitions:
+  - name: Variable
+    description: >-
+      una forma de almacenar información y darle un nombre para su uso posterior
+      en el código.

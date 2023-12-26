@@ -1,0 +1,50 @@
+
+Numbers have a method that converts them to a string:
+
+```javascript
+const peopleCount = 5;
+peopleCount.toString(); // '5'
+```
+
+Will the following code work, and if so, what will it print?
+
+```javascript
+const name = 'Tirion';
+console.log(name.length.toString());
+```
+
+It's the first time we've seen several consecutive periods, but all of the above operations here are familiar. Everything happening in this code is a mix of language features we already know. This happens quite often in programming. Even if you don't know the syntax, you can try combining different approaches, and there's a good chance it'll work.
+
+The easiest way to understand how this code works is to break the chain into separate operations:
+
+```javascript
+const name = 'Tirion';
+const len = name.length;
+console.log(len.toString());
+```
+
+These examples all do the same thing. We can perform operations sequentially, creating constants in between, or build a continuous chain of properties and methods. Computations in chains always go from left to right.
+
+One more example:
+
+```javascript
+const name = 'Tirion';
+console.log(name.toUpperCase().toLowerCase());
+```
+
+You'll need a bit of mental effort for this code. It's important to understand that `.toLowerCase()` is applied to the result of the `.toUpperCase()` function. And `toUpperCase()` returns a string. Rookies often make mistakes with chains of methods; they forget to call them:
+
+```javascript
+const name = 'Tirion';
+// This code will work incorrectly.
+console.log(name.toUpperCase.toLowerCase());
+```
+
+Following this idea, it's possible to build infinitely long (though, in this case, useless) chains:
+
+```javascript
+// What is the result of this call?
+console.log(name.toUpperCase().toLowerCase().length.toString().length);
+```
+
+_This trick won't work with functions because they are usually nested, f(f(f())), which complicates analysis. Yet this doesn't mean that you can't do it nicely - you can and should. Other languages implement it by composing functions or using a pipeline operator, which, incidentally, is starting to be used more and more in JavaScript: https://github.com/tc39/proposal-pipeline-operator.

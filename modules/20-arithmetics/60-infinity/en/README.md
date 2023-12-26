@@ -1,0 +1,16 @@
+
+The "divide by zero" error in programming is well known. In low-level languages, it causes the program to fail and restart. Where others fail, JavaScript continues to work.
+
+```javascript
+console.log(1 / 0); // ?
+```
+
+Try to execute this code in your browser console. You will see `Infinity` displayed on your screen. For those who have studied further mathematics (hi, math geeks!), this is not a surprise. Division by zero creates infinity. Infinity in JavaScript is a real number, and you can perform various operations with it. In day-to-day problems, this makes little sense, since most operations with infinity end in infinity, for example, when we add a number to infinity we get infinity anyway.
+
+```javascript
+Infinity + 4; // Infinity
+Infinity - 4; // Infinity
+Infinity * Infinity; // Infinity
+```
+
+However, there are several examples where infinity is needed. This question is discussed in more detail on Hexlet.

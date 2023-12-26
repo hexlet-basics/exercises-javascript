@@ -1,0 +1,25 @@
+
+JavaScript no hace distinción entre números racionales (0.5) y números naturales (10); para él ambos son números (en otros lenguajes esto no es así). Gracias a esto, se pueden utilizar juntos en cualquier operación:
+
+```javascript
+3 * 0.5; // 1.5
+```
+
+Pero por más que nos lo oculten, los números racionales, debido a sus características, están estructurados de manera diferente. A nosotros, como programadores aplicados, esto no sería especialmente importante si no fuera por un detalle. Mira este ejemplo:
+
+```javascript
+// Prueba este código en la consola del navegador
+0.2 * 0.2 // 0.04000000000000001
+```
+
+La operación de multiplicación de dos números racionales resultó en un cálculo inexacto del resultado. Otros lenguajes de programación también darán el mismo resultado. Este comportamiento se debe a las limitaciones de la capacidad de cálculo. El tamaño de la memoria, a diferencia de los números, es finito (una cantidad infinita de números requiere una cantidad infinita de memoria para su almacenamiento). Y si con los números naturales este problema se resuelve con un límite superior simple (hay un número máximo que se puede ingresar), con los números racionales no se puede hacer ese truco.
+
+```javascript
+// El número entero máximo posible
+console.log(Number.MAX_SAFE_INTEGER);
+9007199254740991
+```
+
+Los números racionales no están dispuestos en una cadena continua, entre _0.1_ y _0.2_ hay un conjunto infinito de números. Por lo tanto, surge un problema serio, ¿cómo almacenar números racionales? Esta es una pregunta interesante en sí misma. En Internet hay muchos artículos dedicados a la organización de la memoria en estos casos. Además, existe un estándar que describe cómo hacerlo correctamente, y la gran mayoría de los lenguajes se basan en él.
+
+Para nosotros, como desarrolladores, es importante entender que las operaciones con números de punto flotante no son precisas (se puede ajustar esta precisión), por lo que al resolver problemas relacionados con este tipo de números, es necesario recurrir a trucos especiales que permitan lograr la precisión necesaria.

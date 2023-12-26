@@ -1,0 +1,9 @@
+name: Predicados
+tips:
+  - |
+    [Naming en programación](https://codica.la/blog/naming-in-programming)
+definitions:
+  - name: Predicado
+    description: >-
+      una expresión que responde a una pregunta con 'sí' o 'no' utilizando el
+      tipo booleano.

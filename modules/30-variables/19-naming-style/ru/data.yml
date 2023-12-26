@@ -1,0 +1,7 @@
+name: Стили именования
+tips:
+  - |
+    [CamelCase](https://ru.wikipedia.org/wiki/CamelCase)
+definitions:
+  - name: Стандарт кодирования
+    description: Набор синтаксических и стилистических правил написания кода.

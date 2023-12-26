@@ -1,0 +1,30 @@
+Look closely at the expression `2 + 2 * 2` and try to work out the answer.
+
+The correct answer is `6`.
+
+If you guessed `8`, then you'll find this lesson useful. You'll have studied the order of operations in high school math. This concept defines the order in which operations are to be performed. For example, multiplication and division have a higher precedence than addition and subtraction, and exponentiation comes before all other arithmetic operations, e.g., `2 ** 3 * 2` gives us `16`.
+
+But sometimes we have to perform calculations in a non-standard order. In tricky cases, precedence can (and must) be set with parentheses, just like we did in high school, e.g., `(2 + 2) * 2`.
+
+Parentheses fit with any operation. They can be nested into each other as many times as you need. Here are a couple of examples:
+
+```javascript
+console.log(3 ** (4 - 2)); // => 9
+console.log(7 * 3 + (4 / 2) - (8 + (2 - 1))); // => 14
+```
+
+Sometimes an expression may be visually cumbersome. In such cases, parentheses can come in handy without affecting the order of operations. For example, the task from the previous lesson becomes clearer with parentheses.
+
+Before:
+
+```javascript
+console.log(8 / 2 + 5 - -3 / 2); // => 10.5
+```
+
+After:
+
+```javascript
+console.log(((8 / 2) + 5) - (-3 / 2)); // => 10.5
+```
+
+Note: code is written for humans, since they'll be the ones to read it, the machine just executes it. For the machine, code is either valid or invalid, it doesn't recognize "more" or "less" valid code.

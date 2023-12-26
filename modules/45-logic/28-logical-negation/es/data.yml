@@ -1,0 +1,8 @@
+name: Negación
+tips:
+  - |
+    [Leyes de De Morgan](https://es.wikipedia.org/wiki/Leyes_de_De_Morgan)
+definitions:
+  - name: Negación
+    description: |
+      operación lógica que cambia el valor lógico al opuesto.

@@ -1,0 +1,9 @@
+name: undefined
+tips:
+  - >
+    [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
+definitions:
+  - name: undefined
+    description: >
+      аналог отсутствия значения; указывает, что переменной не присвоено
+      значение или она вообще не объявлена.

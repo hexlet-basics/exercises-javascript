@@ -1,0 +1,10 @@
+name: Tipado débil
+tips:
+  - |
+    [Tipado](https://en.wikipedia.org/wiki/Strong_and_weak_typing)
+definitions:
+  - name: Tipado débil
+    description: >
+      es un tipo de tipado en el que el lenguaje de programación realiza muchas
+      conversiones de tipos implícitas automáticamente, incluso si puede haber
+      pérdida de precisión o ambigüedad en la conversión.

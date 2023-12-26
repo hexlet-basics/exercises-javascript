@@ -1,0 +1,9 @@
+name: undefined
+tips:
+  - >
+    [undefined](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/undefined)
+definitions:
+  - name: undefined
+    description: >
+      un equivalente a la ausencia de valor; indica que una variable no tiene
+      asignado un valor o que no ha sido declarada en absoluto.

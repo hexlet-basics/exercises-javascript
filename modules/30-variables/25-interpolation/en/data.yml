@@ -1,0 +1,10 @@
+name: Interpolation
+tips:
+  - >
+    [Template
+    strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+definitions:
+  - name: Interpolation
+    description: >-
+      is a way to combine strings by embedding expressions in the template
+      string using curly brackets. For instance, `` `Hi, ${name}!` ``.

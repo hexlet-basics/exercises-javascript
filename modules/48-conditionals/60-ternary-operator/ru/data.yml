@@ -1,0 +1,10 @@
+name: Тернарный оператор
+tips:
+  - >
+    [Подробнее о тернарном
+    операторе](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+definitions:
+  - name: Тернарный оператор
+    description: >
+      Способ превратить простую условную инструкцию в выражение, например,
+      `number >= 0 ? number : -number`.

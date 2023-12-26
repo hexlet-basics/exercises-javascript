@@ -1,0 +1,15 @@
+name: Bucle For
+tips:
+  - >
+    [for](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/for)
+
+    [plantillas de
+    cadena](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Template_literals)
+
+    [Operador lógico OR
+    (||)](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Logical_OR)
+definitions:
+  - name: Agregación
+    description: >-
+      Acumulación de resultados durante las iteraciones y trabajo con ellos
+      después del bucle.

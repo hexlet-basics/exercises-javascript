@@ -1,0 +1,54 @@
+
+To add parameters to your function, simply specify them within parentheses when defining your function. Below is an example of a function returning the last character of a string:
+
+```javascript
+// str - parameter
+const getLastChar = (str) => {
+  // calculate the index of the last character
+  // extract it, and return it
+  return str[str.length - 1];
+};
+
+getLastChar('Hexlet'); // "t"
+getLastChar('Goo'); // "o"
+```
+
+The `getLastChar()` function has only one parameter - the `str` variable. When calling a function, it's replaced by a particular value specific to each call. But this code won't work:
+
+```javascript
+const getLastChar = ('some string') => {
+```
+
+A specific value can't be a parameter, the point of a parameter is that the value itself will only be revealed when a specific call is made, so there must be names of variables in the definition.
+
+A function can have two, three or more parameters. Below is an example of a function that finds the average between two numbers:
+
+```javascript
+const average = (x, y) => {
+  return (x + y) / 2;
+};
+
+average(1, 5); // 3
+average(1, 2); // 1.5
+```
+
+The order of parameters in a definition should match the order they are passed, so pay close attention to the documentation. In rare cases like above, the order is not important, but for most functions it's crucial:
+
+```javascript
+// Rounding. The first parameter is a number, the second is the rounding precision
+round(10.32, 1); // 10.3
+// This call makes no sense at all, though it works
+round(1, 10.32); // 1
+```
+
+If you pass more parameters than defined, JavaScript will ignore the extra ones. Otherwise, values of missed parameters will be `undefined`.
+
+```javascript
+average(10, 10, 10); // 10
+// (10 + undefined) / 2
+average(10); // NaN
+```
+
+There is no real point to this code, but it's possible to write it by mistake. So it's worth knowing about this kind of behavior to be able to recognize the error and fix it.
+
+Parameters in JavaScript are often called arguments. In programming, you'll come across these words often as synonyms. But there is still a slight difference between them. Technically, parameters are set in the parentheses when you define a function, and arguments are what's passed to the function when it's called.

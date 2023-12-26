@@ -1,0 +1,10 @@
+name: Tipo lógico
+tips:
+  - >
+    [Boolean en
+    JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+definitions:
+  - name: Tipo lógico (booleano)
+    description: >-
+      un tipo de dato con dos posibles valores: true (verdadero) y false
+      (falso).

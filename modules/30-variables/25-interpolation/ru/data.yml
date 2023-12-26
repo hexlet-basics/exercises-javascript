@@ -1,0 +1,10 @@
+name: Интерполяция
+tips:
+  - >
+    [Шаблонные
+    строки](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/template_strings)
+definitions:
+  - name: Интерполяция
+    description: >-
+      способ соединения строк через вставку значений переменных в строку-шаблон
+      с помощью фигурных скобок. Например, `` `Hi, ${name}!` ``.

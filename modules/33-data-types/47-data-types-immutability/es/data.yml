@@ -1,0 +1,8 @@
+name: |
+  Inmutabilidad de los tipos primitivos
+tips: []
+definitions:
+  - name: Inmutabilidad
+    description: >
+      estado en el que un objeto o variable no puede ser cambiado después de su
+      creación

@@ -1,0 +1,10 @@
+name: Инкремент и декремент
+tips:
+  - >
+    [Оператор остатка от деления
+    (%)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder)
+definitions:
+  - name: Побочный эффект
+    description: >-
+      действие, которое изменяет внешнее окружение (среду выполнения). Например,
+      вывод на экран или отправка письма.

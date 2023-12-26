@@ -1,0 +1,20 @@
+name: Operaciones aritméticas
+tips:
+  - >
+    Siempre deja espacios entre los operadores aritméticos y los números
+    (operandos) - esta es una buena práctica de programación. Por lo tanto, en
+    nuestros ejemplos, es `console.log(3 + 4)`, no `console.log(3+4)`.
+  - >
+    La división por cero es igual a `Infinity` (infinito). Explicaremos qué
+    significa esto en futuras lecciones.
+  - >
+    [Operaciones
+    aritméticas](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators#arithmetic_operators)
+  - |
+    [Resto de la división](https://es.wikipedia.org/wiki/División_euclídea)
+definitions:
+  - name: Instrucción
+    description: >
+      la unidad más pequeña e independiente de un lenguaje de programación; una
+      orden o conjunto de órdenes. Un programa generalmente consiste en una
+      secuencia de instrucciones.
