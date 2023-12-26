@@ -1,0 +1,82 @@
+
+Una clase de problemas que no puede prescindir de los bucles se llama agregación de datos. Estos problemas incluyen la búsqueda del máximo, mínimo, suma, promedio, etcétera. Su característica principal es que el resultado depende de todo el conjunto de datos. Para calcular la suma, es necesario sumar **todos** los números, para calcular el máximo, es necesario comparar **todos** los números.
+
+Todos aquellos que trabajan con números, como contadores o especialistas en marketing, están familiarizados con este tipo de problemas. Por lo general, se resuelven en tablas similares a Microsoft Excel o Google Sheets.
+
+Veamos el ejemplo más simple: buscar la suma de un conjunto de números. Implementaremos una función que sume los números en un rango especificado, incluyendo los límites. En este caso, el rango es una serie de números desde un punto de inicio hasta un punto final. Por ejemplo, el rango [1, 10] incluye todos los números enteros del 1 al 10.
+
+```javascript
+sumNumbersFromRange(5, 7); // 5 + 6 + 7 = 18
+sumNumbersFromRange(1, 2); // 1 + 2 = 3
+
+// [1, 1] es un rango con el mismo punto de inicio y final, también es un rango
+// incluye exactamente un número, que es el límite del rango
+sumNumbersFromRange(1, 1); // 1
+sumNumbersFromRange(100, 100); // 100
+```
+
+Para implementar este código, necesitaremos un bucle, ya que la suma de números es un proceso iterativo (se repite para cada número) y el número de iteraciones depende del tamaño del rango. Antes de ver el código, intenta responder las siguientes preguntas:
+
+* ¿Con qué valor inicializar el contador?
+* ¿Cómo cambiará el contador?
+* ¿Cuándo debe detenerse el bucle?
+
+Primero, intenta pensar en estas preguntas y luego ve el código a continuación:
+
+```javascript
+const sumNumbersFromRange = (start, finish) => {
+  // Técnicamente, se puede cambiar el valor de inicio
+  // Pero los argumentos de entrada deben mantenerse en su valor original
+  // Esto hará que el código sea más fácil de analizar
+  let i = start;
+  let sum = 0; // Inicialización de la suma
+
+  while (i <= finish) { // Avanzar hasta el final del rango
+    sum = sum + i; // Calcular la suma para cada número
+    i = i + 1; // Pasar al siguiente número en el rango
+  }
+
+  // Devolver el resultado obtenido
+  return sum;
+};
+```
+
+https://replit.com/@hexlet/js-basics-aggregation-numbers
+
+La estructura general del bucle aquí es estándar. Hay un contador que se inicializa con el valor inicial del rango, luego viene el bucle con la condición de detenerse cuando se alcanza el final del rango, y finalmente, se cambia el contador al final del cuerpo del bucle. El número de iteraciones en este bucle es igual a `finish - start + 1`. Es decir, para un rango de 5 a 7, esto es 7 - 5 + 1, es decir, 3 iteraciones.
+
+Las principales diferencias con el procesamiento normal están relacionadas con la lógica de cálculo del resultado. En los problemas de agregación, siempre hay una variable que almacena el resultado del bucle. En el código anterior, esta variable es `sum`. En cada iteración del bucle, se actualiza sumando el siguiente número en el rango: `sum = sum + i`. Todo el proceso se ve así:
+
+```javascript
+// Para llamar a sumNumbersFromRange(2, 5);
+let sum = 0;
+sum = sum + 2; // 2
+sum = sum + 3; // 5
+sum = sum + 4; // 9
+sum = sum + 5; // 14
+// 14 es la suma de los números en el rango [2, 5]
+```
+
+La variable `sum` tiene un valor inicial de 0. ¿Por qué necesitamos especificar un valor? Cualquier operación repetitiva comienza con algún valor. No se puede simplemente declarar una variable y comenzar a trabajar con ella dentro del bucle. Esto daría un resultado incorrecto:
+
+```javascript
+// el valor inicial no está especificado
+// JavaScript lo establece automáticamente en undefined
+let sum;
+
+// primera iteración del bucle
+sum = sum + 2; // ?
+```
+
+Como resultado de esta llamada, `sum` se convierte en `NaN`, es decir, no es un número. Esto se debe a que se intenta sumar `2` y `undefined`. Por lo tanto, se necesita algún valor. ¿Por qué se eligió 0 en el código anterior? Es muy fácil comprobar que todas las demás opciones darán un resultado incorrecto. Si el valor inicial es 1, el resultado será 1 más de lo necesario.
+
+En matemáticas, existe el concepto de **elemento neutro de la operación** (cada operación tiene su propio elemento). Este concepto tiene un significado muy simple. La operación con este elemento no cambia el valor sobre el cual se realiza la operación. En la suma, cualquier número más cero da el mismo número. En la resta, es lo mismo. Incluso la concatenación tiene un elemento neutro, que es una cadena vacía: `'' + 'uno'` será 'uno'.
+
+Pregunta de autoevaluación. ¿Cuál es el elemento neutro de la multiplicación? Para responder a esta pregunta, encuentre un número que no cambie ningún otro número cuando se multiplica por él.
+
+<details>
+<summary>Respuesta</summary>
+
+El elemento neutro de la multiplicación es 1.
+
+</details>

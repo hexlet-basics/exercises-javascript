@@ -1,0 +1,5 @@
+name: Кавычки
+tips:
+  - >
+    [Шаблонные
+    строки](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/template_strings)

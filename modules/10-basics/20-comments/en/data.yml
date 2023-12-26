@@ -1,0 +1,21 @@
+name: Comments
+tips: []
+definitions:
+  - name: Comment
+    description: >
+      is a piece of text that does not affect the execution of the program.
+      Programmers use comments to add notes for themselves or for their
+      colleagues.
+
+
+      `// single line comment`
+
+
+      ```
+
+      /*
+        multiline comment
+        multiline comment
+      */
+
+      ```

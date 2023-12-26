@@ -1,0 +1,23 @@
+
+The `Math.pow()` function, which raises a number to any power, takes two parameters, **a number to raise** and **a power**. If you call `pow()` without parameters, it returns `NaN`. The function genuinely tries to perform exponentiation, but with no value passed to it, the interpreter will automatically pass `undefined` to it. JavaScript forces programmers to be more careful than other languages. In most languages, if you pass fewer parameters to a function than it expects, an error will occur, but this is not the case in JavaScript. `NaN` will also return when passing any non-numeric values:
+
+```javascript
+const result = Math.pow(2, 'boom');
+console.log(result); // => NaN
+```
+
+Other functions can have different amounts and types of parameters. For example, there may be a function that takes three parameters: a number, a string, and another number.
+
+How do we know how many parameters the `Math.pow()` function needs and what type the `return` will be? We took a look at the **signature** of that function. The signature defines the input parameters and their types, as well as the output parameter and its type. You can read about the `Math.pow()` function in [the documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow). In the "Syntax" section, you'll see this:
+
+```
+Math.pow(base, exponent)
+
+Parameters
+  base
+    The base number.
+  exponent
+    The exponent used to raise the base.
+```
+
+This is a function signature and a short explanation. The documentation shows you how many arguments the function has and its type, whether the function will return something, and if so, what its return value type will be.

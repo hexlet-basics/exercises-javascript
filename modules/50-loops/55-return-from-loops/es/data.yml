@@ -1,0 +1,10 @@
+name: Salida de Bucles
+tips:
+  - >-
+    [Lista de números
+    primos](https://es.wikipedia.org/wiki/Anexo:N%C3%BAmeros_primos)
+definitions:
+  - name: Agregación
+    description: >-
+      Acumulación de resultados durante las iteraciones y trabajar con ellos
+      después del bucle.

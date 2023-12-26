@@ -1,0 +1,13 @@
+name: Цикл For
+tips:
+  - >
+    [for](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+
+    [шаблонные
+    строки](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Template_literals)
+
+    [Логическое ИЛИ
+    (||)](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_OR)
+definitions:
+  - name: Агрегация
+    description: Накопление результата во время итераций и работа с ним после цикла.

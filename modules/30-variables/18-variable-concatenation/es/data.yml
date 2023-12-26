@@ -1,0 +1,13 @@
+name: Variables y Concatenación
+tips:
+  - >
+    Piensa en qué cadena y en qué orden debes concatenar las variables para
+    obtener esa salida de dos líneas para el cuerpo del correo.
+  - >
+    Recuerda que puedes crear una cadena que contenga solo una secuencia de
+    control `\n`.
+definitions:
+  - name: Concatenación
+    description: >
+      La operación de unir dos cadenas. Por ejemplo, `console.log("King's " + '
+      Landing');`

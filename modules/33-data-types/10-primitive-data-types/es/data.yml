@@ -1,0 +1,20 @@
+name: Tipos de datos
+tips:
+  - |
+    [Literal](https://en.wikipedia.org/wiki/Literal_(computer_programming))
+  - >
+    [Artículo sobre números
+    decimales](https://es.wikipedia.org/wiki/N%C3%BAmero_decimal)
+definitions:
+  - name: Tipo de datos
+    description: >-
+      conjunto de datos en el código (tipo de información). El tipo determina
+      qué se puede hacer con los elementos de un conjunto específico. Por
+      ejemplo, números enteros, números racionales, cadenas de texto son
+      diferentes tipos de datos.
+  - name: Tipos de datos primitivos
+    description: tipos simples, incorporados en el propio lenguaje de programación.
+  - name: Cadena de texto (string)
+    description: >
+      tipo de datos que describe un conjunto de caracteres (es decir, texto);
+      por ejemplo, `'texto'` o `"texto"`.

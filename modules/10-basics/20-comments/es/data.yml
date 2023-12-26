@@ -1,0 +1,23 @@
+name: Comentarios
+tips:
+  - >
+    [Más información sobre
+    comentarios](https://www.w3schools.com/js/js_comments.asp)
+definitions:
+  - name: Comentario
+    description: >
+      texto en el código de un programa que no afecta la funcionalidad y es
+      agregado por los programadores para ellos mismos y sus colegas.
+
+
+      `// comentario de una línea`
+
+
+      ```
+
+      /*
+        comentario de varias líneas
+        comentario de varias líneas
+      */
+
+      ```

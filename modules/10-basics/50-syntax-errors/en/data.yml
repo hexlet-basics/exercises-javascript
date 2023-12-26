@@ -1,0 +1,11 @@
+name: Syntax errors
+tips:
+  - |
+    [JavaScript errors](https://davidwalsh.name/fix-javascript-errors)
+definitions:
+  - name: Syntax errors
+    description: are grammar mistakes in a programming language.
+  - name: SyntaxError (Parse error)
+    description: >-
+      is a type of error in JavaScript which occurs when there are syntax errors
+      in the code.

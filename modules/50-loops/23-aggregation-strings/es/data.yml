@@ -1,0 +1,9 @@
+name: Agregación de datos (Cadenas)
+tips:
+  - |
+    [Iteración](https://es.wikipedia.org/wiki/Iteraci%C3%B3n)
+definitions:
+  - name: Agregación
+    description: >-
+      Acumulación de resultados durante las iteraciones y manipulación de ellos
+      después del ciclo.

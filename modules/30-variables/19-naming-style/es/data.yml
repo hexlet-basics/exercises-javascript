@@ -1,0 +1,7 @@
+name: Estilos de nomenclatura
+tips:
+  - |
+    [CamelCase](https://es.wikipedia.org/wiki/CamelCase)
+definitions:
+  - name: Estándar de codificación
+    description: Un conjunto de reglas sintácticas y estilísticas para escribir código.

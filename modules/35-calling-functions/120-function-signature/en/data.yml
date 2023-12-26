@@ -1,0 +1,7 @@
+name: Function signature
+tips: []
+definitions:
+  - name: Function signature
+    description: >-
+      is a formal description of the parameter and return value types of the
+      function.

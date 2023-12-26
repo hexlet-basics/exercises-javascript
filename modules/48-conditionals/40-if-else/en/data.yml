@@ -1,0 +1,7 @@
+name: else
+tips: []
+definitions:
+  - name: else
+    description: >-
+      is a way to define a block of code that executes if the `if` condition is
+      not satisfied

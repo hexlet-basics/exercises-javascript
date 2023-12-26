@@ -1,0 +1,57 @@
+
+Además de las operaciones aritméticas que conocemos desde la escuela, también existen las operaciones de comparación. Por ejemplo, `5 > 4`. Esto se lee como una pregunta: "¿Es 5 mayor que 4?". En este caso, la respuesta es "sí". En otros casos, la respuesta puede ser "no", por ejemplo, para `3 < 1`.
+
+Las operaciones de comparación no están limitadas a números. Podemos comparar prácticamente cualquier cosa, como cadenas de texto. Cada vez que ingresamos a un sitio web, se realiza una comparación entre el nombre de usuario y la contraseña ingresados y los que están en la base de datos. Sólo si coinciden, se nos permite ingresar (autenticarnos).
+
+Los lenguajes de programación han adaptado todas las operaciones matemáticas de comparación prácticamente sin cambios. La única diferencia importante son los operadores de igualdad y desigualdad. En matemáticas, se utiliza el signo de igual `=`, pero en programación esto no se ve muy a menudo. En muchos lenguajes, el símbolo `=` se utiliza para asignar valores a variables, por lo que para las comparaciones se utilizan `==` o `===`.
+
+Aquí tienes una lista de las operaciones de comparación en JavaScript:
+
+* `<` menor que
+* `<=` menor o igual que
+* `>` mayor que
+* `>=` mayor o igual que
+* `===` igual que
+* `!==` no igual que
+
+_Un pequeño comentario: también existen los operadores `==` y `!=` para igualdad y desigualdad, pero no los utilizaremos, debido al riesgo potencial. Hablaremos de esto en futuras lecciones._
+
+Una operación lógica como `5 > 4` o `password === text` es una expresión y su resultado es un valor especial: `true` (verdadero) o `false` (falso). Este es un nuevo tipo de dato para nosotros: booleano. Solo puede tener uno de estos dos valores.
+
+```javascript
+const result = 5 > 4;
+console.log(result); // => true
+console.log('one' !== 'one'); // => false
+```
+
+Junto con las cadenas de texto (string), los números enteros y racionales (number), el tipo lógico (boolean) es uno de los tipos de datos primitivos en JavaScript.
+
+---
+
+Intentemos escribir una función simple que tome la edad de un niño y determine si es un bebé. Consideramos bebés a los niños menores de un año:
+
+```javascript
+const isInfant = (age) => age < 1;
+```
+
+Aprovechamos el hecho de que cualquier operación es una expresión, por lo que en una sola línea de la función escribimos "devolver el resultado de la comparación `edad < 1`".
+
+Dependiendo del argumento que se pase, la comparación será verdadera (`true`) o falsa (`false`), y `return` devolverá ese resultado.
+
+```javascript
+const isInfant = (age) => age < 1;
+
+console.log(isInfant(3));
+```
+
+<pre class='hexlet-basics-output'>false</pre>
+
+https://replit.com/@hexlet/js-basics-logic-bool-type
+
+Ahora probemos con un niño de seis meses:
+
+```javascript
+console.log(isInfant(0.5));
+```
+
+<pre class='hexlet-basics-output'>true</pre>

@@ -1,0 +1,14 @@
+name: Математические функции JavaScript
+tips:
+  - >
+    [Документация
+    Math](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math)
+definitions:
+  - name: Функция
+    description: >-
+      операция, способная принимать данные и возвращать результат; функция
+      вызывается так: `foo()`.
+  - name: Аргумент
+    description: >-
+      информация, которую функция получает при вызове. Например, `foo(42)` —
+      передача аргумента `42` функции `foo()`

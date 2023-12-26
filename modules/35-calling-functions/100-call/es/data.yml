@@ -1,0 +1,14 @@
+name: Funciones y su llamado
+tips:
+  - >
+    [Llamada a una
+    función](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Funciones#llamando_funciones)
+definitions:
+  - name: Función
+    description: >-
+      operación que puede recibir datos y devolver un resultado; una función se
+      llama así: `foo()`.
+  - name: Argumento
+    description: >-
+      información que una función recibe al ser llamada. Por ejemplo, `foo(42)`
+      es pasar el argumento `42` a la función `foo()`.

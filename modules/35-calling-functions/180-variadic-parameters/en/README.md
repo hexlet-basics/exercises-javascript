@@ -1,0 +1,18 @@
+
+Some functions have the interesting feature of accepting an indefinite number of parameters. And we're not talking about default values. Check out this example:
+
+```javascript
+Math.max(1, 10, 3); // 10
+```
+
+The function `Math.max()` finds the maximum value among the passed parameters. How many parameters do you think it expects? This function's documentation shows something interesting:
+
+  ```
+  Math.max([value1[, value2[, ...]]])
+  ```
+
+  The way it is written means this function accepts any number of parameters (even none). The optional parameters are specified by square brackets _[ ]_, and so are the optional parameters with default values. The ability to pass any number of parameters is encoded with _[, ...]_.
+
+  ```javascript
+  Math.max(1, -3, 2, 3, 2); // 3
+  ```

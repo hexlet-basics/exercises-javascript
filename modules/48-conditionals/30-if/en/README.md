@@ -1,0 +1,41 @@
+
+Conditional statements control the program's behavior depending on the conditions we want to test. They allow us to write complex programs that behave differently depending on the situation.
+
+Consider a function to which we can pass a sentence and determine what type of sentence it is. To begin with, it will distinguish between normal sentences and question sentences.
+
+```javascript
+const getTypeOfSentence = (sentence) => {
+  const lastChar = sentence[sentence.length - 1];
+  if (lastChar === '?') {
+    return 'question';
+  }
+
+  return 'general';
+};
+
+getTypeOfSentence('Hodor');  // general
+getTypeOfSentence('Hodor?'); // question
+```
+
+`if` is a construct that controls the procedure by which statements are executed. You need to pass predicate expression to it in parentheses and then define a block of code in curly brackets. This code block executes only if the predicate is true.
+
+If the predicate is false, we skip the code block in curly brackets, and the function keeps executing. Here, the next line of code, `return 'general';`, causes the function to return a string and terminate.
+
+As you can see, `return` can be anywhere in a function. Including the interior of a conditional code block.
+
+If the curly brackets after `if` contains only one line of code, you can leave out the brackets:
+
+```javascript
+const getTypeOfSentence = (sentence) => {
+  const lastChar = sentence[sentence.length - 1];
+  if (lastChar === '?')
+    return 'question';
+
+  return 'general';
+};
+
+console.log(getTypeOfSentence('Hodor'));  // => general
+console.log(getTypeOfSentence('Hodor?')); // => question
+```
+
+We advise against it and to **always use curly brackets**. That way you can clearly see where the conditional's body starts and ends. The code becomes clearer and more readable.

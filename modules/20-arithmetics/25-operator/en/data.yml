@@ -1,0 +1,14 @@
+name: Operators
+tips:
+  - >
+    [JavaScript
+    operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+definitions:
+  - name: Arithmetic operations
+    description: are addition, subtraction, multiplication and division.
+  - name: Unary operation
+    description: >-
+      is an operation with only one operand. For example, `-3` is an unary
+      operation to get the number which is opposite to 3.
+  - name: Binary operation
+    description: is an operation involving two operands. For example, `3 + 9`.

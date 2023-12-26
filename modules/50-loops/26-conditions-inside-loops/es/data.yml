@@ -1,0 +1,4 @@
+name: Condiciones dentro de un bucle
+tips:
+  - >
+    [if...else](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/if...else)

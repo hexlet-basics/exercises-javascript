@@ -1,0 +1,9 @@
+name: Codificación
+tips:
+  - |
+    [¿Qué son las codificaciones?](https://codica.la/guides/encoding)
+definitions:
+  - name: Codificación
+    description: >-
+      conjunto de caracteres codificados con números para representar texto en
+      formato electrónico.

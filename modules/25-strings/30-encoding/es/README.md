@@ -1,0 +1,37 @@
+
+En el nivel más profundo, una computadora opera exclusivamente con los dígitos `0` y `1`. Esto se conoce como [código binario](https://es.wikipedia.org/wiki/C%C3%B3digo_binario), y los unos y ceros se llaman bits, que es una abreviatura de "binary digit" (dígito binario).
+
+Los números que estamos acostumbrados a utilizar en el sistema decimal se codifican utilizando números binarios:
+
+- 0 ← 0
+- 1 ← 1
+- 2 ← 10
+- 3 ← 11
+- 4 ← 100
+- 5 ← 101
+
+Pero, ¿qué pasa con el texto? En realidad, la computadora no sabe nada acerca de letras, signos de puntuación y otros caracteres de texto. Todos estos caracteres también se codifican con números.
+
+Podemos tomar el alfabeto inglés y asignar un número a cada letra, comenzando desde uno en orden:
+
+- a ← 1
+- b ← 2
+- c ← 3
+- d ← 4
+- ...
+- z ← 26
+
+Luego, podemos enseñarle a la computadora a entender esta tabla y convertir texto en números y viceversa:
+
+- `hello` → `8` `5` `12` `12` `15`
+- `7` `15` `15` `4` → `good`
+
+Estas tablas que relacionan letras y números se llaman codificaciones. Además de las letras del alfabeto, las tablas de codificación incluyen signos de puntuación y otros caracteres útiles. Seguramente has encontrado codificaciones como [ASCII](https://es.wikipedia.org/wiki/ASCII) o [UTF-8](https://es.wikipedia.org/wiki/UTF-8).
+
+Las diferentes codificaciones contienen diferentes conjuntos de caracteres. Inicialmente, tablas pequeñas como ASCII eran suficientes para la mayoría de las tareas. Sin embargo, esta solamente contiene letras latinas, algunos caracteres simples como `%` y `?`, y caracteres de control especiales como el salto de línea.
+
+Con la proliferación de las computadoras, diferentes países necesitaron sus propias tablas más amplias. Esto incluye letras cirílicas, caracteres chinos, árabe, matemáticos y tipográficos adicionales, e incluso emojis.
+
+Hoy en día, en la mayoría de los casos se utiliza una de las variantes de [Unicode](https://es.wikipedia.org/wiki/Unicode) - *utf-8*. Esta incluye caracteres de casi todos los idiomas escritos del mundo. Gracias a esto, un correo electrónico escrito en chino en China se puede abrir y ver sin problemas en una computadora en Finlandia (si lo entiende o no, es otra cuestión).
+
+Los programadores se encuentran regularmente con la codificación de texto y las codificaciones en su vida. El soporte de Unicode en diferentes lenguajes de programación se implementa a diferentes niveles. Además, las codificaciones deben especificarse explícitamente al trabajar con bases de datos y archivos.

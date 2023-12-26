@@ -1,0 +1,10 @@
+name: Determinismo
+tips:
+  - >
+    [Funciones
+    deterministas](https://es.wikipedia.org/wiki/Funci%C3%B3n_determinista)
+definitions:
+  - name: Efecto secundario
+    description: >-
+      una acción que modifica el entorno externo (el entorno de ejecución). Por
+      ejemplo, la impresión en pantalla o el envío de un correo electrónico.

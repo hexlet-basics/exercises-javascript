@@ -1,0 +1,17 @@
+name: Instrucciones
+tips:
+  - >
+    [Un poco sobre los
+    intérpretes](https://es.wikipedia.org/wiki/Int%C3%A9rprete)
+  - >
+    [Instrucciones y declaraciones por
+    categorías](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements)
+definitions:
+  - name: Intérprete
+    description: |
+      Un programa que ejecuta código en JavaScript.
+  - name: Instrucción
+    description: >
+      Una orden para la computadora escrita en un lenguaje de programación. El
+      código en JavaScript es un conjunto de instrucciones separadas
+      (generalmente) por el símbolo `;`.

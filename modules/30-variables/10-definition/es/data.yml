@@ -1,0 +1,9 @@
+name: ¿Qué es una variable?
+tips:
+  - >
+    [let](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/let)
+definitions:
+  - name: Variable
+    description: >-
+      una forma de almacenar información y darle un nombre para su uso posterior
+      en el código.

@@ -1,0 +1,4 @@
+name: Encoding
+definitions:
+  - name: Encoding
+    description: is a set of characters encoded using numbers to represent text digitally.

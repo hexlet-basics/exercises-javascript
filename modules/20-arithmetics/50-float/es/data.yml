@@ -1,0 +1,9 @@
+name: Números de punto flotante
+tips:
+  - >
+    [Lo que necesitas saber sobre aritmética de punto
+    flotante](https://habr.com/post/112953/)
+definitions:
+  - name: Número racional
+    description: |
+      número que se puede representar como una fracción común.

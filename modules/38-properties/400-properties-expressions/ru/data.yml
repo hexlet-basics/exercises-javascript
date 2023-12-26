@@ -1,0 +1,9 @@
+name: Свойства и методы как выражения
+tips:
+  - >
+    [немного о методе
+    .trim()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
+definitions:
+  - name: Метод
+    description: |
+      это функция или процедура, принадлежащая какому-то классу или объекту.

@@ -1,0 +1,14 @@
+name: Операторы
+tips:
+  - >
+    [Операторы в
+    JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+definitions:
+  - name: Арифметическая операция
+    description: сложение, вычитание, умножение и деление.
+  - name: Унарная операция
+    description: >-
+      операция с одним операндом. Например, `-3` — унарная операция для
+      получения числа, противоположного числу три.
+  - name: Бинарная операция
+    description: операция с двумя операндами. Например, `3 + 9`.

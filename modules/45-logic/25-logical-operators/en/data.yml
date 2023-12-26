@@ -1,0 +1,13 @@
+name: Logical operators
+tips:
+  - |
+    [Boolean algebra](https://en.wikipedia.org/wiki/Boolean_algebra_(structure))
+  - |
+    [Conjunction](https://en.wikipedia.org/wiki/Logical_conjunction)
+  - |
+    [Disjunction](https://en.wikipedia.org/wiki/Logical_disjunction)
+definitions:
+  - name: Logical operators
+    description: >-
+      are the AND (&&) and OR (||) operators, which allow you to create compound
+      logical conditions.

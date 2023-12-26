@@ -1,0 +1,4 @@
+name: Boolean type
+definitions:
+  - name: Logical type (boolean)
+    description: 'a data type with two possible values: true and false.'

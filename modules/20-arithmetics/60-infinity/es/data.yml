@@ -1,0 +1,10 @@
+name: Infinito
+tips:
+  - >
+    [Infinity](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Infinity)
+definitions:
+  - name: Infinito
+    description: >
+      El infinito en matemáticas y física no es un número y significa "sin fin"
+      o "sin límites". El infinito generalmente se considera un número, ya que
+      se utiliza para representar números infinitos, pero no es un número real.

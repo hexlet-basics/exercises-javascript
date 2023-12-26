@@ -1,0 +1,9 @@
+name: Agregación de datos (Números)
+tips:
+  - |
+    [Iteración](https://es.wikipedia.org/wiki/Iteración)
+definitions:
+  - name: Agregación
+    description: >-
+      Acumulación del resultado durante las iteraciones y trabajo con él después
+      del bucle.

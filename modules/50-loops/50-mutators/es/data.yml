@@ -1,0 +1,10 @@
+name: Incremento y decremento
+tips:
+  - >
+    [Operador de resto
+    (%)](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Remainder)
+definitions:
+  - name: Efecto secundario
+    description: >-
+      una acción que modifica el entorno externo (el entorno de ejecución). Por
+      ejemplo, la impresión en pantalla o el envío de un correo electrónico.

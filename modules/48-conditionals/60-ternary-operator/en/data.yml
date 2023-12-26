@@ -1,0 +1,7 @@
+name: Ternary operator
+tips: []
+definitions:
+  - name: Ternary operator
+    description: >
+      is a way to convert a simple conditional statement into an expression,
+      e.g., `number >= 0 ? number : -number`

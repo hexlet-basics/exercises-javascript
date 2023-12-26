@@ -1,0 +1,12 @@
+name: Elección del nombre de la variable
+tips:
+  - |
+    [Nomenclatura en programación](https://codica.la/blog/naming-in-programming)
+  - >
+    [Errores en la nomenclatura de
+    variables](https://codica.la/blog/naming-errors-1)
+definitions:
+  - name: Variable
+    description: >-
+      una forma de almacenar información y darle un nombre para su uso posterior
+      en el código.

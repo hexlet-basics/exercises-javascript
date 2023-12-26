@@ -1,0 +1,11 @@
+name: Standard library
+tips:
+  - >
+    [String functions
+    docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+  - >
+    [How to search for technical
+    information](https://guides.hexlet.io/how-to-search/)
+definitions:
+  - name: Standard library
+    description: is a set of useful features bundled in the programming language.

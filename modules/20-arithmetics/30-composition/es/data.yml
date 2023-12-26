@@ -1,0 +1,7 @@
+name: Composición de operaciones
+tips: []
+definitions:
+  - name: Composición
+    description: >
+      Método de combinar varias operaciones simples en una sola operación
+      compleja.

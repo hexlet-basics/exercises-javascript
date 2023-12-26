@@ -1,0 +1,8 @@
+name: Цикл While
+tips:
+  - >
+    [Цикл
+    while](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/while)
+definitions:
+  - name: Цикл While
+    description: инструкция для повторения кода, пока удовлетворяется какое-то условие.

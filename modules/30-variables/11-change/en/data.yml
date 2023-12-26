@@ -1,0 +1,4 @@
+name: Variable change
+definitions:
+  - name: Variable
+    description: is a way to save data under a name for later use in code.

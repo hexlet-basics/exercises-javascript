@@ -1,0 +1,13 @@
+name: Biblioteca estándar
+tips:
+  - >
+    [Descripción de las funciones de
+    cadena](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String)
+  - >
+    [Cómo buscar información
+    técnica](https://guides.hexlet.io/es/how-to-search/)
+definitions:
+  - name: Biblioteca estándar
+    description: >-
+      conjunto de funciones útiles que se incluyen con el lenguaje de
+      programación.

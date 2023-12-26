@@ -1,0 +1,8 @@
+name: Predicates
+tips:
+  - >
+    [Naming In
+    Programming](https://en.hexlet.io/blog/posts/code-complete-naming-in-programming)
+definitions:
+  - name: Predicate
+    description: is an expression that answers a yes or no question with a boolean.

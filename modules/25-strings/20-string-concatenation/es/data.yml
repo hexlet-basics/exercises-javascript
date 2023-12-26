@@ -1,0 +1,10 @@
+name: Concatenación
+tips:
+  - >
+    Si hay una línea `// BEGIN` y `// END` en el editor, el código debe
+    escribirse entre estas líneas.
+definitions:
+  - name: Concatenación
+    description: >
+      la operación de unir dos cadenas. Por ejemplo, `console.log("King's " + '
+      Landing');`

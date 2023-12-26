@@ -1,0 +1,12 @@
+name: How do we verify your solutions?
+definitions:
+  - name: Tests
+    description: >
+      are special bits of code that validate programs by checking the correct
+      result against the actual one.
+tips:
+  - |
+    [TDD](https://en.wikipedia.org/wiki/Test-driven_development)
+  - >
+    [Hexlet Community in
+    Slack](https://help.hexlet.io/en/articles/111445-hexlet-community-in-slack)

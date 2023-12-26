@@ -1,0 +1,10 @@
+name: Ciclo While
+tips:
+  - >
+    [Bucle
+    while](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/while)
+definitions:
+  - name: Ciclo While
+    description: >-
+      una instrucción que permite repetir un bloque de código mientras se cumple
+      una condición.

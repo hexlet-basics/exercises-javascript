@@ -1,0 +1,6 @@
+name: Константы
+tips:
+  - >
+    [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+  - >
+    [TypeError](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError)

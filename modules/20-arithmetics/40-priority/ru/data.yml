@@ -1,0 +1,10 @@
+name: Приоритет операций
+tips:
+  - >
+    [Приоритет
+    операторов](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+definitions:
+  - name: Выражение
+    description: >
+      последовательность действий над данными, приводящая к каком-то результату,
+      который можно использовать.

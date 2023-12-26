@@ -1,0 +1,11 @@
+name: Cómo verificamos tus soluciones
+definitions:
+  - name: Pruebas
+    description: >
+      código especial que verifica la corrección de los programas, comparando el
+      resultado correcto con el resultado real.
+tips:
+  - |
+    [TDD](https://es.wikipedia.org/wiki/Desarrollo_guiado_por_pruebas)
+  - |
+    [Comunidad de Hexlet en Telegram](https://t.me/hexletcommunity)

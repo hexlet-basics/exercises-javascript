@@ -1,0 +1,13 @@
+name: Escape sequences
+definitions:
+  - name: Escape sequence
+    description: >
+      is a special combination of characters in the text. For example, `\n` is a
+      line feed.
+tips:
+  - >
+    Be sure to experiment with the output of different strings on
+    [https://replit.com/languages/nodejs](https://replit.com/languages/nodejs)
+  - >
+    [The History of
+    Newline](https://en.wikipedia.org/wiki/Newline#:~:text=External%20links-,History,-%5Bedit%5D)

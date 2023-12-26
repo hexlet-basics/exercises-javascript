@@ -1,0 +1,8 @@
+name: Предикаты
+tips:
+  - >
+    [Именование в
+    программировании](https://ru.hexlet.io/blog/posts/naming-in-programming)
+definitions:
+  - name: Предикат
+    description: выражение, отвечающее на вопрос «да» или «нет» с помощью типа boolean.

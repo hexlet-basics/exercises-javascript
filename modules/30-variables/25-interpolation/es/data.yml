@@ -1,0 +1,11 @@
+name: Interpolación
+tips:
+  - >
+    [Template
+    strings](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/template_strings)
+definitions:
+  - name: Interpolación
+    description: >-
+      método de unir cadenas mediante la inserción de valores de variables en
+      una cadena de plantilla utilizando llaves. Por ejemplo, `` `Hi, ${name}!`
+      ``.

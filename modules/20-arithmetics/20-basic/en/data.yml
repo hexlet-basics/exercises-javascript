@@ -1,0 +1,12 @@
+name: Arithmetic operations
+tips:
+  - >
+    Always indent arithmetic operators with spaces between the numbers
+    (operands) - it is good form when programming. This is why we write
+    `console.log(3 + 4)`, and not `console.log(3+4)` in our examples.
+  - >
+    The result of dividing by zero is Infinity. We will figure out what this
+    means in later lessons.
+  - >
+    [Arithmetic
+    operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators)

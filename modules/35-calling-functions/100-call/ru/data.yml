@@ -1,0 +1,14 @@
+name: Функции и их вызов
+tips:
+  - >
+    [Вызов
+    функции](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#calling_functions)
+definitions:
+  - name: Функция
+    description: >-
+      операция, способная принимать данные и возвращать результат; функция
+      вызывается так: `foo()`.
+  - name: Аргумент
+    description: >-
+      информация, которую функция получает при вызове. Например, `foo(42)` —
+      передача аргумента `42` функции `foo()`
