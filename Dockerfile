@@ -1,11 +1,11 @@
 FROM hexletbasics/base-image
 
+ENV NODE_PATH /exercises-javascript/src
+ENV PATH=/exercises-javascript/bin:$PATH
+
 WORKDIR /exercises-javascript
 
-COPY . .
-
-ENV NODE_PATH /exercises-javascript/src
-
+COPY package.json package-lock.json ./
 RUN npm ci
 
-ENV PATH=/exercises-javascript/bin:$PATH
+COPY . .
