@@ -49,9 +49,9 @@ instructions: |
 
   Crea una constante llamada `army`, asígnale el valor `the white walkers` e imprime su valor en la pantalla.
 
-tips: 
+tips:
   - |
     [const](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/const)
-  
+
   - |
     [TypeError](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/TypeError)
