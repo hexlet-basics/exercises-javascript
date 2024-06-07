@@ -79,7 +79,7 @@ instructions: |
   isInternationalPhone('+79602223423'); // true
   ```
 
-tips: 
+tips:
   - |
     [Expresión](https://es.wikipedia.org/wiki/Expresión_(informática))
 

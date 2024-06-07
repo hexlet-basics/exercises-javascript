@@ -26,7 +26,7 @@ instructions: |
 
   Imprime en pantalla la suma de infinitos dividida por 10.
 
-tips: 
+tips:
   - |
     [Infinity](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Infinity)
 
