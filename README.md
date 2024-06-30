@@ -32,3 +32,5 @@ This repository is created and maintained by the team and the community of Hexle
 ##
 
 See most active contributors on [hexlet-friends](https://friends.hexlet.io/).
+
+Translation into English
