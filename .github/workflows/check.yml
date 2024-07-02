@@ -18,5 +18,5 @@ jobs:
         uses:  addnab/docker-run-action@v3
         with:
           image: hexlet/languagetool-cli:latest
-          options: -v ./modules:/content
+          options: -v ${{ github.workspace }}/modules:/content
           run: node ./bin/check.js
