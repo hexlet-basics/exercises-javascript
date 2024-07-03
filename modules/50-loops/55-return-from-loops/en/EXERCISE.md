@@ -1,5 +1,5 @@
 
-Write the `hasChar()` function that checks whether a string contains a given character (case sensitive). The function takes two arguments:
+Write the `hasChar()` function that checks whether a string contains a given character (case-sensitive). The function takes two arguments:
 
 * String
 * Character to look for

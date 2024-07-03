@@ -1,5 +1,5 @@
 
-Write a function, `getLetter()`,  to extract a certain character (by ordinal number, not an index) from a given string and return it. If there is no such character, the function returns an empty string.
+Write a function, `getLetter()`, to extract a certain character (by ordinal number, not an index) from a given string and return it. If there is no such character, the function returns an empty string.
 
 Examples:
 

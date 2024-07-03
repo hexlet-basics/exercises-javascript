@@ -21,7 +21,7 @@ To implement this function, we need a loop because adding numbers is an iterativ
 * How will it change?
 * When should the loop stop?
 
-Try and think through these questions first and then have a look at the code below:
+Try and think through these questions first and then take a look at the code below:
 
 ```javascript
 const sumNumbersFromRange = (start, finish) => {

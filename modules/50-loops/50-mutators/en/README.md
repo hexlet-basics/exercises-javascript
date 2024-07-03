@@ -23,7 +23,7 @@ let i = 0;
 
 It seems to be no difference between the postfix and prefix usages. And that's where it gets complicated.
 
-Unlike other operators, which have no side-effects and simply return a new value, increment and decrement not only return a value but also **change** it.
+Unlike other operators, which have no side effects and simply return a new value, increment and decrement not only return a value but also **change** it.
 
 If you use a prefix, the variable is changed first, and then it's returned.
 

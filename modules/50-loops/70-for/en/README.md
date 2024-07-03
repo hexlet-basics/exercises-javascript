@@ -1,7 +1,7 @@
 
 A `while` loop works perfectly for situations where the number of iterations isn't known in advance, e.g., finding a prime number. When we know the number of iterations, it's better to use a `for` loop.
 
-Let's have a look at a function that reverses strings using a `for` loop:
+Let's take a look at a function that reverses strings using a `for` loop:
 
 ```javascript
 const reverseString = (str) => {

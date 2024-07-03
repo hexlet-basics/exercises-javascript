@@ -1,7 +1,7 @@
 
 Loops also allow you to generate strings. It's a common task for web development. It's merely basic aggregation using interpolation or concatenation.
 
-One especially popular task among interviewers is to do a string reversal. There are lots of ways to solve it, but the most basic is by iterating each character. Have a look at how this function works:
+One especially popular task among interviewers is to do a string reversal. There are lots of ways to solve it, but the most basic is by iterating each character. Take a look at how this function works:
 
 ```javascript
 reverse('Hexlet'); // telxeH
