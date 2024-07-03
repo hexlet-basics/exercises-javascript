@@ -19,4 +19,4 @@ jobs:
         with:
           image: hexlet/languagetool-cli:latest
           options: -v ${{ github.workspace }}/modules:/content
-          run: node ./bin/check.js
+          run: node ./bin/run.js check /content/**/*.md
