@@ -1,0 +1,22 @@
+name: Languagetool
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Check
+        uses:  addnab/docker-run-action@v3
+        with:
+          image: hexlet/languagetool-cli:latest
+          options: -v ${{ github.workspace }}/modules:/content
+          run: node ./bin/run.js check /content/**/*.md
