@@ -5,7 +5,7 @@ Functions in JavaScript become really useful when they start to return data rath
 const message = greetHexlet();
 console.log(message);
 ```
-We assign a function output to the variable `message`. In order to make this code work, the function must use the `return` instruction inside of itself:
+We assign a function output to the variable `message`. In order to make this code work, the function must use the `return` instruction inside itself:
 
 ```javascript
 const greetHexlet = () => {

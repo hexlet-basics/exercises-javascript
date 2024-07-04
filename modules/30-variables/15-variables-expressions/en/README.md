@@ -1,5 +1,5 @@
 
-Variables are helpful not only for storing and reusing data but also for simplifying complex calculations. Consider an example: you need to convert euros into yuans through dollars. Banks often do this kind of conversion via an intermediate currency when shopping abroad.
+Variables are helpful not only for storing and reusing data but also for simplifying complex calculations. Consider an example: you need to convert euros into yuan through dollars. Banks often do this kind of conversion via an intermediate currency when shopping abroad.
 
 First, convert 50 euros into dollars. Suppose that one euro is $1.25:
 
@@ -34,28 +34,28 @@ console.log(who);
 
 Run it on [repl.it](https://repl.it/languages/javascript) and experiment a little with it.
 
-Now, back to our currency program. We'll record the dollar value in yuans as a separate variable. Calculate the value of 50 euros in dollars by multiplying them by `1.25`. Suppose that 1 dollar is 6.91 yuans:
+Now, back to our currency program. We'll record the dollar value in yuan as a separate variable. Calculate the value of 50 euros in dollars by multiplying them by `1.25`. Suppose that 1 dollar is 6.91 yuan:
 
 ```javascript
-let yuansPerDollar = 6.91;
+let yuanPerDollar = 6.91;
 let dollarsCount = 50 * 1.25; // 62.5
-let yuansCount = dollarsCount * yuansPerDollar; // 431.875
+let yuanCount = dollarsCount * yuanPerDollar; // 431.875
 
-console.log(yuansCount);
+console.log(yuanCount);
 ```
 
 Now, let's merge our output with some text via concatenation:
 
 ```javascript
-let yuansPerDollar = 6.91;
+let yuanPerDollar = 6.91;
 let dollarsCount = 50 * 1.25; // 62.5
-let yuansCount = dollarsCount * yuansPerDollar; // 431.875
+let yuanCount = dollarsCount * yuanPerDollar; // 431.875
 
-console.log('The price is ' + yuansCount + ' yuans');
+console.log('The price is ' + yuanCount + ' yuan');
 ```
 
 <pre class='hexlet-basics-output'>
-The price is 431.875 yuans
+The price is 431.875 yuan
 </pre>
 
 Any variable can be part of any expression. During the computation, the variable's name is replaced with its value.

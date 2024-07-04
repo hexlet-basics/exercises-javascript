@@ -29,7 +29,7 @@ Why do we need methods? Why not just use functions? The situation with numbers i
 
 There are two reasons why it's done that way:
 
-1. It's just always been like that. JavaScript was developed a little too quickly, so not everything was well thought out
+1. It's just always been like that. JavaScript was developed a little too quickly, so not everything was well-thought-out
 2. Not all functions are linked to a specific value. For example, `Math.min()`. This function finds the minimum of all numbers passed to it. It doesn't make sense to make this function a method of a particular number, like `(1).min()`. It has no connection to any particular number
 
 On the other hand, functions that work with a particular number should be implemented as methods for the sake of consistency. Such functions include calculating the modulus of a number. I.e., instead of `Math.abs(-10)`, it's more reasonable to have `(-10).abs()`.

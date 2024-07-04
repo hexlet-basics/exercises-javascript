@@ -32,6 +32,6 @@ Different encodings have different numbers of characters. At first, small tables
 
 With the development of computers, different countries needed their own comprehensive tables. Including Cyrillic letters, hieroglyphs, Arabic script, additional mathematical and typographic characters, and even emojis as time went on.
 
-One [Unicode standarts](https://en.wikipedia.org/wiki/Unicode) standard in particular, *utf-8*, is the one used in most cases today. It includes characters from almost all of the written languages found in the world. Therefore, a letter written by someone from China in Chinese can easily be opened and read natively on a computer in Finland (whether the reader would understand it or not is another question).
+One [Unicode standards](https://en.wikipedia.org/wiki/Unicode) standard in particular, *utf-8*, is the one used in most cases today. It includes characters from almost all the written languages found in the world. Therefore, a letter written by someone from China in Chinese can easily be opened and read natively on a computer in Finland (whether the reader would understand it or not is another question).
 
 Programmers have to deal with encodings regularly. Unicode support in different programming languages is carried out on a different level. Moreover, encodings must be declared when working with databases and files.

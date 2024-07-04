@@ -16,7 +16,7 @@ const sum = 1 + 5;
 console.log(1 + 5);
 ```
 
-But not any code can be an expression. The definition of a variable is a statement, it can't be part of an expression and it will lead to an error:
+But not any code can be an expression. The definition of a variable is a statement, it can't be part of an expression, and it will lead to an error:
 
 ```javascript
 // Pointless code that won't work

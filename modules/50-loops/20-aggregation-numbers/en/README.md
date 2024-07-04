@@ -68,6 +68,6 @@ sum = sum + 2; // ?
 
 It will result in `NaN`, i.e. not a number, in `sum`. It occurs due to an attempt to add `2` and `undefined`. So you need to have an initial value. Why is 0 chosen in the code above? Well, it is easy to check that all the other options would lead to the wrong result. If the initial value is 1, the sum will be 1 more than it should be.
 
-In mathematics, there is a concept of an **identity element/neutral element**, an element for each type of operation. Its meaning is easy to grasp. An operation with this element doesn't change the operand. For addition, any number plus zero results in the number itself. The same goes for subtraction. Even concatenation has a neutral element, which is an empty string: `'' + 'one'` will be 'one'.
+In mathematics, there is a concept of an **identity element/neutral element**, an element for each type of operation. Its meaning is easy to grasp. An operation with this element doesn't change the operand. In addition, any number plus zero results in the number itself. The same goes for subtraction. Even concatenation has a neutral element, which is an empty string: `'' + 'one'` will be 'one'.
 
 Self-check. What is the neutral element of a multiplication operation?

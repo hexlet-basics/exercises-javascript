@@ -1,5 +1,5 @@
 
-1. Write a function, `isPalindrome()`, to check if a word is a palindrome. A palindrome is a word that reads the same backwards as it does forwards.
+1. Write a function, `isPalindrome()`, to check if a word is a palindrome. A palindrome is a word that reads the same backwards as it does forward.
 
     ```javascript
     isPalindrome('refer'); // true

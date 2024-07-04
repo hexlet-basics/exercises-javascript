@@ -104,4 +104,4 @@ while (true) {
 }
 ```
 
-To sum up. When do we need loops and when can we do without them? It is physically impossible to do without loops when a problem-solving algorithm requires actions to be repeated, as in the example with the book, and the number of these actions is unpredictable.
+To sum up. When do we need loops, and when can we do without them? It is physically impossible to do without loops when a problem-solving algorithm requires actions to be repeated, as in the example with the book, and the number of these actions is unpredictable.

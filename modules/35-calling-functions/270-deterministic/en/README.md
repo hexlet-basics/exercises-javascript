@@ -1,5 +1,5 @@
 
-Regardless of the programming language, functions possess certain fundamental properties. Knowing these properties makes it easier to predict the behavior of functions, as well as their testing and their usage. These properties include determinacy. A function is deterministic when it returns the same result for the same input parameters. For example, a function counting the number of characters is deterministic:
+Regardless of the programming language, functions possess certain fundamental properties. Knowing these properties makes it easier to predict the behavior of functions, as well as their testing and their usage. These properties include determinism. A function is deterministic when it returns the same result for the same input parameters. For example, a function counting the number of characters is deterministic:
 
 ```javascript
 import { length } from 'hexlet-basics/string';
@@ -19,4 +19,4 @@ Math.random(); // 0.09856613113197676
 Math.random(); // 0.8839904367241888
 ```
 
-So what use is knowing that to us? Determinacy seriously affects many different aspects. Deterministic functions are easy to work with, easy to optimize, and easy to test. If you can make a function deterministic, it's best to make it one.
+So what use is knowing that to us? Determinism seriously affects many different aspects. Deterministic functions are easy to work with, easy to optimize, and easy to test. If you can make a function deterministic, it's best to make it one.
