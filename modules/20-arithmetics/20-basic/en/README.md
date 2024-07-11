@@ -23,7 +23,7 @@ After launching, the result will appear on the screen:
 7
 ```
 
-Besides addition, the following operations are available:
+The following operations are available besides addition:
 `*` — multiplication
 `/` — division
 `-` — subtraction

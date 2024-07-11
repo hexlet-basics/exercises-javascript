@@ -1676,3 +1676,2046 @@ Hurray
 Предлагаемые варианты:
 мотан, мутон, мотор, масон, батон, моток, бутон, затон, манон, мутант, натан, ротан, шатун, батан, батун, бутан, датун, фотон, футон, хатун, катан, кутан, латан, мётан, мадонн, майан, макан, мамон, манан, маран, марон, мартан, мата, матах, матам, маток, матом, матов, мату, матую, матуй, матуя, мазан, метан, мохон, моран, мота, мотаю, мотах, мотай, мотал, мотам, мотана, мотано, мотаны, мотая, мотав, мотою, мотой, мотом, мотов, моту, мошон, мултан, мутен, мутна, мутона, мутоне, мутону, мутоны, патан, путан, ротон, сатан, сутан, шатан, Датун, Хатун, Катан, Котон, Натан, Патон, Сатан, ма тан, мат ан, мата н
 ------------------------
+40-define-functions/150-define-functions-return/en/EXERCISE.md:1:43:6
+...tion ``, that returns a string 'hurray! hurray! hurray!'.  ```javascript ``` 
+This sentence does not start with an uppercase letter.
+Предлагаемые варианты:
+Hurray
+------------------------
+40-define-functions/150-define-functions-return/en/EXERCISE.md:1:43:6
+... that returns a string 'hurray! hurray! hurray!'.  ```javascript ``` 
+This sentence does not start with an uppercase letter.
+Предлагаемые варианты:
+Hurray
+------------------------
+40-define-functions/100-define-functions-syntax/en/README.md:10:43:9
+.... Its job is to print out a greeting:  <pre class='hexlet-basics-output'>Hello, Hexlet!</...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+40-define-functions/100-define-functions-syntax/en/README.md:10:43:20
+...s to print out a greeting:  <pre class='hexlet-basics-output'>Hello, Hexlet!</pre>  ```javascript ``...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+48-conditionals/50-else-if/en/EXERCISE.md:7:43:8
+...alues: ``, ``, ``.  Rules:  * Friends: 'Karstark', 'Tally' * Enemies: 'Lannister', 'Frey...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Karst ark
+------------------------
+45-logic/70-logical-expressions/en/README.md:8:43:9
+...  ```javascript ```  Correct answer::  <pre class='hexlet-basics-output'>   1 </pre>  The...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+45-logic/70-logical-expressions/en/README.md:8:43:20
+...ript ```  Correct answer::  <pre class='hexlet-basics-output'>   1 </pre>  The **OR** operator works...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+45-logic/70-logical-expressions/en/README.md:19:43:9
+...e of ``.  Example:  ```javascript ```  <pre class='hexlet-basics-output'>   0 </pre>  The...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+45-logic/70-logical-expressions/en/README.md:19:43:20
+...xample:  ```javascript ```  <pre class='hexlet-basics-output'>   0 </pre>  The **AND** operator work...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+45-logic/70-logical-expressions/en/README.md:27:43:5
+...d into ``. Those values are considered [falsy](https://developer.mozilla.org/en-US/do...
+Possible spelling mistake found.
+Предлагаемые варианты:
+false, palsy
+------------------------
+45-logic/70-logical-expressions/en/README.md:35:43:5
+...vascript ```  If `` is given one of the falsy values, an empty string will be assigne...
+Possible spelling mistake found.
+Предлагаемые варианты:
+false, palsy
+------------------------
+45-logic/70-logical-expressions/en/README.md:37:43:5
+...re is a potential bug. If `` contains a falsy value, and it's okay to assign values l...
+Possible spelling mistake found.
+Предлагаемые варианты:
+false, palsy
+------------------------
+45-logic/20-logic-combine-expressions/en/README.md:14:43:2
+...dy, 2 persons: 2 x 3 + **remainder 1**.   So 7 is not a multiple of 2. * 21 candie...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/20-logic-combine-expressions/en/README.md:16:43:2
+...es, 3 persons: 3 x 7 + **remainder 0**.   So 21 is a multiple of 3. * 19 candies, ...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/20-logic-combine-expressions/en/README.md:18:43:2
+...es, 5 persons: 5 x 3 + **remainder 4**.   So 19 is not a multiple of 5.  The `` op...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/20-logic-combine-expressions/en/README.md:34:43:1
+...n.  Literally, it means the following: *"calculate the remainder of dividing `` b...
+Unpaired symbol: ‘"’ seems to be missing
+------------------------
+45-logic/20-logic-combine-expressions/en/README.md:34:43:1
+...return the result of the equality check "*.  Another example: write a function to...
+Unpaired symbol: ‘"’ seems to be missing
+------------------------
+45-logic/25-logical-operators/en/README.md:33:43:2
+...   | |-------| ------|----------| | TRUE  | TRUE  | **TRUE** | | TRUE  | FALSE | F...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:33:43:2
+...-----| ------|----------| | TRUE  | TRUE  | **TRUE** | | TRUE  | FALSE | FALSE    ...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:34:43:2
+...---| | TRUE  | TRUE  | **TRUE** | | TRUE  | FALSE | FALSE    | | FALSE | TRUE  | F...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:35:43:2
+...RUE  | FALSE | FALSE    | | FALSE | TRUE  | FALSE    | | FALSE | FALSE | FALSE    ...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:47:43:2
+... B | |-------|-------|----------| | TRUE  | TRUE  | **TRUE** | | TRUE  | FALSE | *...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:47:43:2
+...-----|-------|----------| | TRUE  | TRUE  | **TRUE** | | TRUE  | FALSE | **TRUE** ...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:48:43:2
+...---| | TRUE  | TRUE  | **TRUE** | | TRUE  | FALSE | **TRUE** | | FALSE | TRUE  | *...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:49:43:2
+...RUE  | FALSE | **TRUE** | | FALSE | TRUE  | **TRUE** | | FALSE | FALSE | FALSE    ...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/15-predicates/en/README.md:6:43:9
+...m the last lesson:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre>  Thi...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+45-logic/15-predicates/en/README.md:6:43:20
+...lesson:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre>  This kind of function is ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+45-logic/15-predicates/en/README.md:26:43:9
+... it's the word ``:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre> 
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+45-logic/15-predicates/en/README.md:26:43:20
+...ord ``:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre> 
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+45-logic/10-bool-type/en/README.md:39:43:9
+...eturn that result.  ```javascript ```  <pre class='hexlet-basics-output'>false</pre>  Now...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+45-logic/10-bool-type/en/README.md:39:43:20
+...result.  ```javascript ```  <pre class='hexlet-basics-output'>false</pre>  Now, perform the check on...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+45-logic/10-bool-type/en/README.md:46:43:9
+...is six months old:  ```javascript ```  <pre class='hexlet-basics-output'>true</pre> 
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+45-logic/10-bool-type/en/README.md:46:43:20
+...hs old:  ```javascript ```  <pre class='hexlet-basics-output'>true</pre> 
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+50-loops/70-for/en/EXERCISE.md:1:0:7
+Samwell discovered that his messages were being...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Sam well
+------------------------
+50-loops/20-aggregation-numbers/en/README.md:21:43:3
+...Thus, for the range from 5 to 7, it is 7 - 5 + 1, or three iterations.  The main di...
+If you want to indicate numerical ranges or time ranges, consider using an en dash.
+Предлагаемые варианты:
+–
+------------------------
+50-loops/10-while/en/README.md:17:43:9
+...on't be a problem:  ```javascript ```  <pre class='hexlet-basics-output'> 1 2 3 finished!...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+50-loops/10-while/en/README.md:17:43:20
+...roblem:  ```javascript ```  <pre class='hexlet-basics-output'> 1 2 3 finished! </pre>  https://repli...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+50-loops/10-while/en/EXERCISE.md:6:43:9
+...o the lower limit.  ```javascript ```  <pre class='hexlet-basics-output'>4<br>3<br>2<br>1...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+50-loops/10-while/en/EXERCISE.md:6:43:20
+... limit.  ```javascript ```  <pre class='hexlet-basics-output'>4<br>3<br>2<br>1<br>finished!</pre> 
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+38-properties/400-properties-expressions/en/EXERCISE.md:3:43:9
+... constant `` in the following format:  <pre class='hexlet-basics-output'> First: N Last: ...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+38-properties/400-properties-expressions/en/EXERCISE.md:3:43:20
+...` in the following format:  <pre class='hexlet-basics-output'> First: N Last: t </pre>  Your task is...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+38-properties/100-properties-syntax/en/README.md:18:43:10
+...their value is ``:  ```javascript ```  *Self-сheck. What will `` print for the variable ``...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Spell-check
+------------------------
+35-calling-functions/350-stdlib/en/README.md:11:43:2
+...s functions. In particular, the module [fs](https://nodejs.org/api/fs.html) is req...
+Possible spelling mistake found.
+Предлагаемые варианты:
+FS, is, as, us, FM, ft, vs, FRS, CFS, FBS, FCS, FD, FP, FSA, FSU, TFS, WS, fr, ms, FSH, FSI, FSK, FSM, HFS, NFS, phi, sf, ts, LFS, fps, ifs, phys, PS, AFS, As, BFS, BS, CS, Cs, DFS, DS, EFS, ES, Es, F, FA, FAS, FB, FC, FCs, FDS, FES, FF, FFS, FG, FH, FHS, FI, FJ, FL, FLS, FMS, FMs, FN, FNS, FO, FOS, FPS, FPs, FR, FSB, FSC, FSD, FSE, FSF, FSG, FSN, FSP, FSR, FSS, FST, FSW, FW, FX, FY, Fe, Fm, Fr, GFS, HS, IFS, IS, JS, KS, Ks, LS, MFS, MS, Ms, NS, OFS, OS, Os, PFS, RFS, RS, S, SFS, SS, TS, UFS, US, VFS, XS, ZFS, Zs, cs, f, fa, ff, fl, gs, ks, ls, phis, rs, s, FT
+------------------------
+35-calling-functions/150-calling-functions-expression/en/EXERCISE.md:3:43:9
+...in the variable `` using this format:  <pre class='hexlet-basics-output'> First: N Last: ...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+35-calling-functions/150-calling-functions-expression/en/EXERCISE.md:3:43:20
+...able `` using this format:  <pre class='hexlet-basics-output'> First: N Last: t </pre>  Try to creat...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+33-data-types/10-primitive-data-types/en/README.md:6:43:6
+...type, while numbers refer to Number and BigInt (very large numbers). What are these da...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Big Int, SIGINT
+------------------------
+33-data-types/10-primitive-data-types/en/README.md:8:43:6
+... are divided into two types: Number and BigInt. All numbers below a certain threshold ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Big Int, SIGINT
+------------------------
+33-data-types/10-primitive-data-types/en/README.md:8:43:6
+... and all numbers above it belong to the Biglnt type. They're divided this way due to t...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Billet, Bight, Bigot, Piglet, Wiglet, FIGlet, SIGINT
+------------------------
+33-data-types/10-primitive-data-types/en/README.md:20:43:6
+...erator:  ```javascript ```  The Number, BigInt, and String data types are *primitive* ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Big Int, SIGINT
+------------------------
+30-variables/25-interpolation/en/EXERCISE.md:3:43:9
+...``. The output should look like this:  <pre class='hexlet-basics-output'> Do you want to ...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+30-variables/25-interpolation/en/EXERCISE.md:3:43:20
+...put should look like this:  <pre class='hexlet-basics-output'> Do you want to eat, Arya? </pre> 
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+30-variables/20-magic-numbers/en/README.md:17:43:14
+...ipt ```  Note the following details:  * lowerCamelCase naming * The two new variables are sepa...
+Possible spelling mistake found.
+------------------------
+30-variables/20-magic-numbers/en/EXERCISE.md:14:43:9
+...les and print them.  You'll get this:  <pre class='hexlet-basics-output'> King Balon the ...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+30-variables/20-magic-numbers/en/EXERCISE.md:14:43:20
+...nt them.  You'll get this:  <pre class='hexlet-basics-output'> King Balon the 6th has 102 rooms. </p...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+30-variables/20-magic-numbers/en/EXERCISE.md:15:43:5
+...<pre class='hexlet-basics-output'> King Balon the 6th has 102 rooms. </pre>  The vari...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Salon, Bacon, Baron, Baton, Talon, Halon
+------------------------
+30-variables/19-naming-style/en/README.md:7:43:9
+... used as a separator. For example, `` * CamelCase - each word in the name is capitalized....
+Possible spelling mistake found.
+Предлагаемые варианты:
+Camel Case
+------------------------
+30-variables/19-naming-style/en/README.md:8:43:14
+... name is capitalized. For example, `` * lowerCamelCase - each word is capitalized except the f...
+Possible spelling mistake found.
+------------------------
+30-variables/19-naming-style/en/README.md:10:43:9
+...first. For example, ``  Javascript uses CamelCase and its variation lowerCamelCase, with ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Camel Case
+------------------------
+30-variables/19-naming-style/en/README.md:10:43:14
+...script uses CamelCase and its variation lowerCamelCase, with the first letter of the first wor...
+Possible spelling mistake found.
+------------------------
+30-variables/19-naming-style/en/README.md:10:43:14
+... of the first word in lowercase. We use lowerCamelCase for variables. It means we concatenate ...
+Possible spelling mistake found.
+------------------------
+30-variables/19-naming-style/en/EXERCISE.md:1:43:14
+...first number" and "second number" using lowerCamelCase. Assign `` to the first variable and ``...
+Possible spelling mistake found.
+------------------------
+30-variables/18-variable-concatenation/en/EXERCISE.md:11:43:9
+...e.  The result should look like this:  <pre class='hexlet-basics-output'> Hello, Joffrey!...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+30-variables/18-variable-concatenation/en/EXERCISE.md:11:43:20
+...ult should look like this:  <pre class='hexlet-basics-output'> Hello, Joffrey! Here is important inf...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+30-variables/15-variables-expressions/en/README.md:36:43:9
+...via concatenation:  ```javascript ```  <pre class='hexlet-basics-output'> The price is 43...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+30-variables/15-variables-expressions/en/README.md:36:43:20
+...nation:  ```javascript ```  <pre class='hexlet-basics-output'> The price is 431.875 yuan </pre>  Any...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+30-variables/15-variables-expressions/en/EXERCISE.md:5:43:9
+...w line.  Sample output for 100 euros:  <pre class='hexlet-basics-output'> 125 863.75 </pr...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+30-variables/15-variables-expressions/en/EXERCISE.md:5:43:20
+...mple output for 100 euros:  <pre class='hexlet-basics-output'> 125 863.75 </pre>  Suppose that:  * 1...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+30-variables/14-errors/en/README.md:6:43:14
+...bove program terminates with the error *ReferenceError: greeting is not defined*. *ReferenceEr...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Reference Error
+------------------------
+30-variables/14-errors/en/README.md:6:43:14
+...erenceError: greeting is not defined*. *ReferenceError* means that the code uses a name (calle...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Reference Error
+------------------------
+30-variables/14-errors/en/EXERCISE.md:5:43:9
+...';  The result should look like this:  <pre class='hexlet-basics-output'> Targaryen and D...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+30-variables/14-errors/en/EXERCISE.md:5:43:20
+...ult should look like this:  <pre class='hexlet-basics-output'> Targaryen and Dragon </pre> 
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+30-variables/13-variables-naming/en/README.md:15:43:10
+... previous quarter?*  ```javascript ```  Self-сheck. Think of a name for the variable that ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Spell-check
+------------------------
+25-strings/30-encoding/en/EXERCISE.md:8:43:3
+...We are interested in the decimal code (*dec* or *decimal*).  Using the example abov...
+Possible spelling mistake found.
+Предлагаемые варианты:
+DEC, Dec, deck, Del, den, Dee, IEC, NEC, sec, AEC, DAC, DCC, DMC, DRC, DSC, EEC, dew, DECA, DNC, DTC, Sec, deg, doc, rec, DDC, DBC, BEC, CDEC, CEC, DC, DE, DEA, DEB, DECT, DECs, DEG, DEI, DEL, DEM, DEP, DEQ, DES, DET, DEU, DFC, DHC, DIC, DLC, DOC, DPC, DVC, Dem, EC, FEC, HEC, LEC, MEC, OEC, PEC, REC, SEC, TEC, UEC, WEC, YEC, deb, def, dep, dev, DEX, he, we, be, get, her, me, new, day, did, due, set, yes, died, do, does, few, led, men, see, BBC, deal, idea, let, red, sea, ten, yet, BC, DVD, Dr, dead, deep, die, disc, dog, dry, etc, ex, hey, ice, key, leg, web, EU, Lee, PC, bed, debt, dies, diet, drew, duo, fed, fee, jet, met, neck, net, tea, wet, AFC, Ben, CBC, Dan, Dean, FCC, Mac, arc, decay, deer, demo, deny, desk, dock, duel, duet, neo, pen, per, pet, tech, Drew, IOC, LED, MCC, NFC, NYC, PRC, ROC, Rev, Ted, UTC, Web, Wei, ace, bee, bet, dad, dam, deaf, dean, decks, deed, dice, dig, dot, dub, duck, dug, dye, hoc, ref, sect, sic, ADC, APC, ATC, Alec, CCC, CDC, CPC, DA, DDR, DDT, DL, DM, DNS, DRM, DSM, DSO, DSP, DT, DX, Devi, Eden, Feb, GC, GMC, JC, Jew, MSC, Mel, NGC, NPC, OEM, PAC, PCC, PET, PFC, PVC, QC, Rex, Rey, TLC, TTC, UNC, Zen, beg, codec, dB, dear, decor, dim, din, dip, duct, dues, dyed, dyes, eds, gel, gem, sac, spec, wed, yen, AEG, APEC, Aden, BMC, CAC, CEA, CFC, CIC, CNC, CRC, CSC, CTC, DAT, DCI, DG, DLR, DMA, DMS, DMZ, DSL, DSS, DST, DTM, DTS, DUI, DUP, Decca, Dell, Deng, Doe, Dow, Dyer, ECG, EEA, ESC, Eco, FTC, GCC, GRC, Geo, HTC, IFC, IPC, ITC, Jen, KFC, LBC, LCC, Lea, Len, Lew, MBC, MDC, MHC, MeV, Meg, NAC, NEA, NRC, OPEC, OTC, Oder, PNC, PTC, Peck, RAC, RBC, REM, RPC, RSC, Rep, SBC, SCC, SLC, SRC, TAC, THC, TeX, UE, UPC, VOC, WAC, WC, WTC, decoy, deem, defy, dens, eel, fen, gen, hen, hex, med, mic, nee, ode, pea, peg, pep, rep, seq, tee, vet, wee, AEF, AGC, Beck, CEP, CVC, DBA, DCE, DCL, DCM, DDS, DKK, DLA, DLL, DMCA, DME, DMG, DMK, DNR, DOA, DPI, DQ, DRG, DRI, DSA, DSB, DSE, DTI, DVR, DWM, Desi, Diem, Dir, FAC, FDIC, FMC, FRC, GBC, GED, GPC, HCC, HFC, HMC, IAC, IDC, IEA, IED, IEP, IMC, JSC, JVC, Jed, KBC, KSC, LHC, LRC, LSC, MTC, MVC, MWC, NDC, NEP, OE, PMC, PUC, QED, RDC, RMC, RNC, SFC, SGC, SNC, TOC, TPC, TRC, TUC, UDC, beck, decal, deft, deli, dell, dent, doe, dud, eh, hem, keg, lac, odes, peck, pew, pic, rem, sew, ADAC, BNC, CJC, CWC, DCB, DCF, DDA, DDB, DDD, DDE, DLM, DLS, DMD, DMP, DMV, DND, DOB, DPD, DPT, DRA, DSD, DSR, DTA, DTP, DVT, DWI, DWT, Debs, ECD, EEOC, EIC, Eu, FDC, FNC, Fez, GEF, GFC, JCC, Keck, LDC, LFC, MNC, Mex, PEO, SDC, SVC, TBC, VEB, dace, decry, dept, deuce, doer, dz, exec, fem, gee, heck, reg, rel, secs, tel, zen, CXC, DCD, DLI, DPN, DPs, DRV, DVM, DVP, DVS, DWG, Dena, HIC, Nev, PGC, TEF, Wed, dBm, dab, docs, duh, dyer, hep, hew, idem, mew, soc, EEO, dewy, ides, msec, neg, ted, vac, vex, ceca, debs, decaf, ecu, educ, eek, recd, yep, ABC, AMC, CEO, DJ, DJs, DNA, ECW, ICC, Leo, NBC, Ned, USC, Vic, dbl, deice, dob, doz, dpt, née, Xes, dds, A9C, AAC, AAEC, AC, ACC, ADDEC, AE, AEA, AEB, AED, AEE, AEI, AEJ, AEK, AEL, AEM, AEN, AEO, AEP, AEQ, AER, AES, AET, AEU, AEV, AEW, AEX, AEZ, AHC, AIC, AJC, AJEC, AKC, ALC, AMDEC, ANC, ANEC, AOC, AQC, ARC, ASC, AUC, AVC, AWC, AXC, AYC, Ac, BAC, BCC, BDC, BDE, BEA, BEAC, BEB, BECS, BED, BEE, BEF, BEH, BEI, BEK, BEM, BEO, BEP, BEQ, BER, BES, BET, BEU, BEV, BEW, BEX, BFC, BGC, BHC, BIC, BJC, BKC, BLC, BOC, BPC, BRC, BSC, BSc, BTC, BTEC, BUC, BVC, BWC, BXC, BYC, BZC, Be, Bic, C, C&C, C2C, CC, CDAC, CDE, CE, CEB, CED, CEE, CEF, CEG, CEI, CEJ, CEL, CEM, CEN, CEQ, CER, CES, CESC, CET, CEU, CEV, CGC, CHC, CLC, CMC, COC, CQC, CREC, CSEC, CUC, CZC, Ce, D, D&D, D10, D11, D12, D13, D14, D15, D16, D17, D18, D19, D20, D21, D22, D23, D24, D25, D26, D27, D28, D29, D2D, D30, D31, D32, D33, D34, D35, D36, D37, D38, D39, D40, D41, D42, D45, D46, D48, D50, D51, D52, D55, D56, D57, D58, D59, D60, D61, D62, D63, D64, D65, D66, D67, D68, D70, D71, D72, D73, D74, D76, D78, D79, D8, D80, D82, D83, D86, D89, D90, D91, D96, D97, D99, DAA, DAB, DACA, DACH, DAE, DAEU, DAF, DAI, DAJ, DAK, DAL, DAP, DAR, DAU, DAV, DAX, DB7, DB9, DBB, DBCS, DBD, DBF, DBL, DBO, DBP, DBQ, DBR, DBU, DBZ, DCA, DCK, DCN, DCO, DCP, DCR, DCS, DCT, DCU, DD, DDEA, DDH, DDHC, DDI, DDL, DDLC, DDM, DDO, DDV, DECed, DEEE, DEET, DELE, DELF, DESE, DEUG, DEXA, DFA, DFB, DFCO, DFE, DFF, DFG, DFI, DFL, DFM, DFN, DFO, DFP, DFS, DFT, DFV, DFW, DGA, DGAC, DGD, DGE, DGF, DGH, DGI, DGP, DGS, DGT, DH, DHA, DHCP, DHEA, DHH, DHI, DHL, DHM, DHP, DHR, DHS, DHT, DI, DID, DIF, DIL, DIN, DIP, DIR, DISEC, DIV, DIY, DJF, DJG, DJI, DJO, DJT, DJU, DJed, DK, DKA, DKB, DKP, DKR, DKZ, DLEM, DLF, DLG, DLH, DLP, DLT, DMF, DMFC, DMI, DMM, DMO, DMPC, DMR, DMX, DMed, DMs, DN, DNB, DNF, DNI, DNK, DNL, DNP, DNT, DO, DOCX, DOD, DOE, DOF, DOH, DOHC, DOI, DOJ, DOL, DOM, DON, DOP, DOS, DOT, DP, DPA, DPB, DPE, DPH, DPIC, DPO, DPS, DPU, DPW, DR, DR1, DRAC, DRH, DRP, DRS, DRT, DS, DSF, DSG, DSI, DSK, DSN, DSQ, DSU, DSV, DTT, DTU, DTV, DTW, DUD, DUS, DVA, DVB, DVI, DWH, DWV, DXB, DXF, DXM, DXO, DZA, DZD, DZI, DZO, Day, Demi, Dems, Deon, Depp, Di, Dick, Dis, Dix, DnD, DoD, DoJ, DoS, Don, Dot, Du, Dy, E, EAC, EBC, EC1, EC4, ECA, ECB, ECC, ECE, ECL, ECM, ECN, ECO, ECP, ECR, ECS, ECT, EDC, EDEHC, EE, EED, EEE, EEG, EEGC, EEK, EEM, EEP, EER, EFC, EG, EGC, EI, EK, EM, EMC, EN, ENC, EO, EOC, EP, ER, ERC, ES, ET, EUC, EV, EW, EX, EY, EZ, Ed, El, Er, Es, Esc, FC, FD&C, FDES, FEB, FECI, FECQ, FED, FEF, FEI, FEM, FEN, FEP, FER, FERC, FES, FET, FGC, FHC, FIC, FOC, FSC, Fe, Fed, GAC, GAEC, GDC, GDE, GE, GEA, GEH, GEI, GEM, GEQ, GES, GET, GEV, GGC, GHC, GIEC, GNC, GPEC, GREC, GSC, GUC, Ge, Gen, Ger, HAC, HC, HDE, HDFC, HDLC, HEB, HEF, HEL, HEO, HER, HES, HEV, HLC, HOC, HPC, HRC, HSC, He, Heb, IBC, IC, IDE, IDES, IDEs, IDed, IE, IECA, IEF, IEG, IEM, IES, IGC, IIC, ILC, INC, IRC, IREC, ISC, IWC, IXC, Ice, Inc, JAC, JDBC, JDE, JE, JED, JEF, JEV, JFC, JIC, JOC, JRC, JTC, Jeb, Jem, KC, KCC, KE, KEA, KED, KEF, KEM, KEN, KER, KES, KET, KLC, KWC, KYC, Ken, Key, LC, LDE, LE, LEA, LEB, LEDC, LEF, LEJ, LEM, LEP, LER, LES, LEV, LGC, LIC, LLC, LMC, LOC, LPC, LTC, Le, Les, LoC, Luc, Léa, Léo, MC, MDE, ME, MEA, MEB, MED, MEDC, MEF, MEG, MEL, MEN, MEP, MER, MES, MET, MFC, MJC, MLC, MMC, MOC, MPC, MRC, MSc, MUC, Me, NC, NCC, NDRC, NE, NED, NEE, NEH, NEM, NEN, NER, NHC, NIC, NMC, NSC, NTC, Ne, Neb, Neo, OBC, OC, OCC, ODBC, ODC, ODEM, OEA, OEB, OECD, OED, OEP, OIC, OJC, OMC, OSC, PBC, PCEC, PDC, PE, PEA, PEB, PED, PEE, PEF, PEGC, PEI, PEK, PEL, PEM, PEN, PEOC, PEP, PER, PES, PESC, PEV, PHC, PIC, PJC, PLC, PNEC, POC, PPC, PQC, PSC, Peg, Pei, Pen, Pfc, PoC, PwC, QE2, QEV, QFC, QPC, QRC, RC, RCC, RE, REA, RED, REG, REI, REL, REP, RER, RES, RET, REV, REX, RFC, RHC, RIC, RLC, RRC, RTC, RUC, Re, SAC, SADEC, SC, SDE, SDEI, SDLC, SDPC, SE, SEA, SEAC, SEB, SEBC, SEF, SEG, SEJ, SEK, SEL, SEM, SEO, SEP, SER, SES, SET, SEU, SEV, SEX, SEY, SEZ, SIC, SMC, SOC, SPC, STC, SYC, Sc, Se, Sen, Sep, Set, SoC, Soc, T&C, TC, TCC, TCEC, TDC, TDE, TEB, TECS, TED, TEE, TEEC, TEI, TEM, TEP, TEQ, TER, TES, TEU, TEV, TFC, TIC, TJC, TMC, TNC, TQC, TSC, TWC, TYC, TZC, Tc, Te, Tet, Tex, ToC, UAC, UBC, UC, UCC, UED, UEM, UER, UES, UET, UFC, UGC, UIC, ULC, UMC, UQC, UUC, UVC, UWC, VAC, VC, VCC, VDC, VE, VEI, VES, VHC, VLC, VMC, VNC, VPC, VSC, VTC, W3C, WAEC, WBC, WCC, WDC, WECA, WEG, WET, WFC, WGC, WIC, WPC, WRC, WSC, WWC, Wac, XEU, XIC, XTC, Xe, YAC, YBC, YC, YEM, ZAC, ZC, ZED, ZEE, ZEF, ZEP, ac, bc, bey, c, cc, d, dag, db, dd, dded, deps, derv, devs, dick, dict, dis, div, dm, dmed, dms, don, dos, dox, dpi, drey, dun, e, eV, ea, eco, ed, em, en, enc, er, fer, fey, fez, geo, hes, inc, kc, ken, lea, lech, lee, lei, mac, meg, meh, mes, né, orc, pc, pecs, pee, plc, re, rect, req, res, rev, secy, sen, sex, src, tic, ve, veg, ye, yea, yer, yew, zed, °C, écu, DAW, DTD, EQC, KDE, LXC, PECL, QVC, a/c
+------------------------
+25-strings/20-string-concatenation/en/EXERCISE.md:6:35:5
+Print the following code  ``` ```  using concatenation. 
+This sentence does not start with an uppercase letter.
+Предлагаемые варианты:
+Using
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:8:43:9
+... beginning and the end of the phrase:  <pre class='hexlet-basics-output'> "Khal Drogo's f...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:8:43:20
+...and the end of the phrase:  <pre class='hexlet-basics-output'> "Khal Drogo's favorite word is "athja...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:9:43:1
+...se:  <pre class='hexlet-basics-output'> "Khal Drogo's favorite word is "athjahaka...
+Unpaired symbol: ‘"’ seems to be missing
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:9:43:4
+...e:  <pre class='hexlet-basics-output'> "Khal Drogo's favorite word is "athjahakar"" ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Khan, Kcal, Hal, KAL
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:9:43:5
+...pre class='hexlet-basics-output'> "Khal Drogo's favorite word is "athjahakar"" </pre>...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Dog, Drop, Drug, Dogs, Drove, Drugs, Logo, Diego, Drag, Dragon, Drops, Frog, Frogs, Promo, Proto, Drone, Drown, Togo, Dojo, Drags, Forgo, Argo, DRG, Draco, Provo, Dingo, Dodo, Doge, Drogue, Droid, Pogo, Droll, Droop, Ergo, Grog, LOGO, Dregs, Drool, Dross, Drano, BOGO, Drôme, Frodo, RGO, Dago, Doggo
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:9:43:10
+...utput'> "Khal Drogo's favorite word is "athjahakar"" </pre> 
+Possible spelling mistake found.
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:9:43:1
+...al Drogo's favorite word is "athjahakar"" </pre> 
+Unpaired symbol: ‘"’ seems to be missing
+------------------------
+25-strings/15-escape-characters/en/README.md:35:43:9
+...ey have no graphical representation):  <pre class='hexlet-basics-output'> - Hi!¶ - Oh, he...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+25-strings/15-escape-characters/en/README.md:35:43:20
+...graphical representation):  <pre class='hexlet-basics-output'> - Hi!¶ - Oh, hey!¶ - What's up? </pre...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+25-strings/15-escape-characters/en/README.md:64:43:9
+... program will print it like this:      <pre class='hexlet-basics-output'>     <br>     Du...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+25-strings/15-escape-characters/en/README.md:64:43:20
+...ll print it like this:      <pre class='hexlet-basics-output'>     <br>     Dunsen     </pre>     Wh...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+25-strings/15-escape-characters/en/README.md:66:43:6
+...ss='hexlet-basics-output'>     <br>     Dunsen     </pre>     Why are there two empty ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Bunsen, Dun sen
+------------------------
+25-strings/15-escape-characters/en/README.md:69:43:6
+...y are there two empty lines before the *Dunsen* line instead of one? The point is that...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Bunsen, Dun sen
+------------------------
+25-strings/15-escape-characters/en/README.md:78:43:9
+...javascript    ```     The result:      <pre class='hexlet-basics-output'>     Polliver   ...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+25-strings/15-escape-characters/en/README.md:78:43:20
+...   ```     The result:      <pre class='hexlet-basics-output'>     Polliver     Gregor Clegane<br>  ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+25-strings/15-escape-characters/en/README.md:79:43:8
+... <pre class='hexlet-basics-output'>     Polliver     Gregor Clegane<br>     Chiswyck<br>...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Pol liver
+------------------------
+25-strings/15-escape-characters/en/README.md:80:43:7
+...basics-output'>     Polliver     Gregor Clegane<br>     Chiswyck<br>      Dunsen     </...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Clean, Cleaned, Cleaner, Elegant, Elegance, Legate, Cleanse, Cleave, Cleans, Celgene, Leganés, Cetane
+------------------------
+25-strings/15-escape-characters/en/README.md:81:43:8
+...    Polliver     Gregor Clegane<br>     Chiswyck<br>      Dunsen     </pre>     Now you ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Cheswick
+------------------------
+25-strings/15-escape-characters/en/README.md:83:43:6
+...regor Clegane<br>     Chiswyck<br>      Dunsen     </pre>     Now you understand enoug...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Bunsen, Dun sen
+------------------------
+25-strings/15-escape-characters/en/README.md:95:43:9
+...other  ```javascript ```  The result:  <pre class='hexlet-basics-output'> Joffrey loves u...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+25-strings/15-escape-characters/en/README.md:95:43:20
+...avascript ```  The result:  <pre class='hexlet-basics-output'> Joffrey loves using \n </pre>  A smal...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+20-arithmetics/27-commutativity/en/README.md:5:43:3
+...commutative operation? Of course not: *2 - 3 ≠ 3 - 2*. In programming, this law app...
+If you want to indicate numerical ranges or time ranges, consider using an en dash.
+Предлагаемые варианты:
+–
+------------------------
+20-arithmetics/27-commutativity/en/README.md:5:43:3
+...ive operation? Of course not: *2 - 3 ≠ 3 - 2*. In programming, this law applies jus...
+If you want to indicate numerical ranges or time ranges, consider using an en dash.
+Предлагаемые варианты:
+–
+------------------------
+10-basics/50-syntax-errors/en/README.md:8:43:11
+...vaScript, these errors are labelled as "SyntaxError". For technical reasons, this code runn...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Syntax Error
+------------------------
+10-basics/45-testing/en/README.md:15:43:9
+... will give you the following message:  <pre class='hexlet-basics-output'>   ● test    exp...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+10-basics/45-testing/en/README.md:15:43:20
+...you the following message:  <pre class='hexlet-basics-output'>   ● test    expect(received).toBe(exp...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+10-basics/45-testing/en/README.md:18:43:2
+...class='hexlet-basics-output'>   ● test    expect(received).toBe(expected) // Objec...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+10-basics/45-testing/en/README.md:18:43:1
+...exlet-basics-output'>   ● test    expect(received).toBe(expected) // Object.is eq...
+It appears that a white space is missing.
+Предлагаемые варианты:
+ (
+------------------------
+10-basics/45-testing/en/README.md:20:43:2
+...).toBe(expected) // Object.is equality    Expected value to be:     "Hello, World!...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+10-basics/45-testing/en/README.md:22:43:2
+...pected value to be:     "Hello, World!"   Received:     "ello, World!" </pre>  In ...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+10-basics/45-testing/en/README.md:23:43:4
+...e:     "Hello, World!"   Received:     "ello, World!" </pre>  In addition to our tes...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hello, cello, Ella, Elle, Elmo, ell, ells, jello, ELO
+------------------------
+10-basics/40-instructions/en/README.md:10:43:9
+...s on the screen, one after the other.  <pre class='hexlet-basics-output'> Mother of Drago...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+10-basics/40-instructions/en/README.md:10:43:20
+...reen, one after the other.  <pre class='hexlet-basics-output'> Mother of Dragons. Dracarys! </pre>  ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+10-basics/40-instructions/en/README.md:12:43:8
+...xlet-basics-output'> Mother of Dragons. Dracarys! </pre>  Theoretically, it's possible t...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Dramas, Decays, Racers, Radars, Discards, Drawers, Granary, Drapery, Dreary, Placards, Tracery, Tramcars, Drachmas, Fracas, Tracers, Drapers, Drays, Bracers, Daycares, Braceros, Dogcarts, Dracaena, Fracases, Dracaenas, Trocars
+------------------------
+10-basics/40-instructions/en/README.md:20:43:3
+...on the same string:  ```javascript ```  but it's considered bad practice as it's di...
+This sentence does not start with an uppercase letter.
+Предлагаемые варианты:
+But
+------------------------
+10-basics/40-instructions/en/EXERCISE.md:1:43:7
+... names, one after the other: "Robert", "Stannis", "Renly". As a result, the editor shou...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Stands, Tennis, Stanzas, Stains, Stances, Stasis, Tannins, Standish, Sunnis, Tannin, Giannis, Ioannis, Joannis, Stanine, Stanines, Statins
+------------------------
+10-basics/40-instructions/en/EXERCISE.md:1:43:5
+... after the other: "Robert", "Stannis", "Renly". As a result, the editor should print:...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Rely, Reply, Zenly
+------------------------
+10-basics/40-instructions/en/EXERCISE.md:3:43:9
+...As a result, the editor should print:  <pre class='hexlet-basics-output'> Robert Stannis ...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+10-basics/40-instructions/en/EXERCISE.md:3:43:20
+..., the editor should print:  <pre class='hexlet-basics-output'> Robert Stannis Renly </pre>  Call `` ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+10-basics/40-instructions/en/EXERCISE.md:5:43:7
+...re class='hexlet-basics-output'> Robert Stannis Renly </pre>  Call `` for each name. 
+Possible spelling mistake found.
+Предлагаемые варианты:
+Stands, Tennis, Stanzas, Stains, Stances, Stasis, Tannins, Standish, Sunnis, Tannin, Giannis, Ioannis, Joannis, Stanine, Stanines, Statins
+------------------------
+10-basics/40-instructions/en/EXERCISE.md:6:43:5
+...='hexlet-basics-output'> Robert Stannis Renly </pre>  Call `` for each name. 
+Possible spelling mistake found.
+Предлагаемые варианты:
+Rely, Reply, Zenly
+------------------------
+10-basics/10-hello-world/en/README.md:3:43:9
+...rogram will print the following text:  <pre class='hexlet-basics-output'>   Hello, World!...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+10-basics/10-hello-world/en/README.md:3:43:20
+... print the following text:  <pre class='hexlet-basics-output'>   Hello, World! </pre>  To print some...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+48-conditionals/50-else-if/en/EXERCISE.md:7:43:8
+...alues: ``, ``, ``.  Rules:  * Friends: 'Karstark', 'Tally' * Enemies: 'Lannister', 'Frey...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Karst ark
+------------------------
+50-loops/70-for/en/EXERCISE.md:1:0:7
+Samwell discovered that his messages were being...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Sam well
+------------------------
+50-loops/20-aggregation-numbers/en/README.md:21:43:3
+...Thus, for the range from 5 to 7, it is 7 - 5 + 1, or three iterations.  The main di...
+If you want to indicate numerical ranges or time ranges, consider using an en dash.
+Предлагаемые варианты:
+–
+------------------------
+50-loops/10-while/en/README.md:17:43:9
+...on't be a problem:  ```javascript ```  <pre class='hexlet-basics-output'> 1 2 3 finished!...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+50-loops/10-while/en/README.md:17:43:20
+...roblem:  ```javascript ```  <pre class='hexlet-basics-output'> 1 2 3 finished! </pre>  https://repli...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+50-loops/10-while/en/EXERCISE.md:6:43:9
+...o the lower limit.  ```javascript ```  <pre class='hexlet-basics-output'>4<br>3<br>2<br>1...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+50-loops/10-while/en/EXERCISE.md:6:43:20
+... limit.  ```javascript ```  <pre class='hexlet-basics-output'>4<br>3<br>2<br>1<br>finished!</pre> 
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+40-define-functions/150-define-functions-return/en/EXERCISE.md:1:43:6
+...tion ``, that returns a string 'hurray! hurray! hurray!'.  ```javascript ``` 
+This sentence does not start with an uppercase letter.
+Предлагаемые варианты:
+Hurray
+------------------------
+40-define-functions/150-define-functions-return/en/EXERCISE.md:1:43:6
+... that returns a string 'hurray! hurray! hurray!'.  ```javascript ``` 
+This sentence does not start with an uppercase letter.
+Предлагаемые варианты:
+Hurray
+------------------------
+40-define-functions/100-define-functions-syntax/en/README.md:10:43:9
+.... Its job is to print out a greeting:  <pre class='hexlet-basics-output'>Hello, Hexlet!</...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+40-define-functions/100-define-functions-syntax/en/README.md:10:43:20
+...s to print out a greeting:  <pre class='hexlet-basics-output'>Hello, Hexlet!</pre>  ```javascript ``...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+45-logic/70-logical-expressions/en/README.md:8:43:9
+...  ```javascript ```  Correct answer::  <pre class='hexlet-basics-output'>   1 </pre>  The...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+45-logic/70-logical-expressions/en/README.md:8:43:20
+...ript ```  Correct answer::  <pre class='hexlet-basics-output'>   1 </pre>  The **OR** operator works...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+45-logic/70-logical-expressions/en/README.md:19:43:9
+...e of ``.  Example:  ```javascript ```  <pre class='hexlet-basics-output'>   0 </pre>  The...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+45-logic/70-logical-expressions/en/README.md:19:43:20
+...xample:  ```javascript ```  <pre class='hexlet-basics-output'>   0 </pre>  The **AND** operator work...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+45-logic/70-logical-expressions/en/README.md:27:43:5
+...d into ``. Those values are considered [falsy](https://developer.mozilla.org/en-US/do...
+Possible spelling mistake found.
+Предлагаемые варианты:
+false, palsy
+------------------------
+45-logic/70-logical-expressions/en/README.md:35:43:5
+...vascript ```  If `` is given one of the falsy values, an empty string will be assigne...
+Possible spelling mistake found.
+Предлагаемые варианты:
+false, palsy
+------------------------
+45-logic/70-logical-expressions/en/README.md:37:43:5
+...re is a potential bug. If `` contains a falsy value, and it's okay to assign values l...
+Possible spelling mistake found.
+Предлагаемые варианты:
+false, palsy
+------------------------
+45-logic/25-logical-operators/en/README.md:33:43:2
+...   | |-------| ------|----------| | TRUE  | TRUE  | **TRUE** | | TRUE  | FALSE | F...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:33:43:2
+...-----| ------|----------| | TRUE  | TRUE  | **TRUE** | | TRUE  | FALSE | FALSE    ...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:34:43:2
+...---| | TRUE  | TRUE  | **TRUE** | | TRUE  | FALSE | FALSE    | | FALSE | TRUE  | F...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:35:43:2
+...RUE  | FALSE | FALSE    | | FALSE | TRUE  | FALSE    | | FALSE | FALSE | FALSE    ...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:47:43:2
+... B | |-------|-------|----------| | TRUE  | TRUE  | **TRUE** | | TRUE  | FALSE | *...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:47:43:2
+...-----|-------|----------| | TRUE  | TRUE  | **TRUE** | | TRUE  | FALSE | **TRUE** ...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:48:43:2
+...---| | TRUE  | TRUE  | **TRUE** | | TRUE  | FALSE | **TRUE** | | FALSE | TRUE  | *...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:49:43:2
+...RUE  | FALSE | **TRUE** | | FALSE | TRUE  | **TRUE** | | FALSE | FALSE | FALSE    ...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/20-logic-combine-expressions/en/README.md:14:43:2
+...dy, 2 persons: 2 x 3 + **remainder 1**.   So 7 is not a multiple of 2. * 21 candie...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/20-logic-combine-expressions/en/README.md:16:43:2
+...es, 3 persons: 3 x 7 + **remainder 0**.   So 21 is a multiple of 3. * 19 candies, ...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/20-logic-combine-expressions/en/README.md:18:43:2
+...es, 5 persons: 5 x 3 + **remainder 4**.   So 19 is not a multiple of 5.  The `` op...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/20-logic-combine-expressions/en/README.md:34:43:1
+...n.  Literally, it means the following: *"calculate the remainder of dividing `` b...
+Unpaired symbol: ‘"’ seems to be missing
+------------------------
+45-logic/20-logic-combine-expressions/en/README.md:34:43:1
+...return the result of the equality check "*.  Another example: write a function to...
+Unpaired symbol: ‘"’ seems to be missing
+------------------------
+45-logic/15-predicates/en/README.md:6:43:9
+...m the last lesson:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre>  Thi...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+45-logic/15-predicates/en/README.md:6:43:20
+...lesson:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre>  This kind of function is ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+45-logic/15-predicates/en/README.md:26:43:9
+... it's the word ``:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre> 
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+45-logic/15-predicates/en/README.md:26:43:20
+...ord ``:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre> 
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+45-logic/10-bool-type/en/README.md:39:43:9
+...eturn that result.  ```javascript ```  <pre class='hexlet-basics-output'>false</pre>  Now...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+45-logic/10-bool-type/en/README.md:39:43:20
+...result.  ```javascript ```  <pre class='hexlet-basics-output'>false</pre>  Now, perform the check on...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+45-logic/10-bool-type/en/README.md:46:43:9
+...is six months old:  ```javascript ```  <pre class='hexlet-basics-output'>true</pre> 
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+45-logic/10-bool-type/en/README.md:46:43:20
+...hs old:  ```javascript ```  <pre class='hexlet-basics-output'>true</pre> 
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+38-properties/400-properties-expressions/en/EXERCISE.md:3:43:9
+... constant `` in the following format:  <pre class='hexlet-basics-output'> First: N Last: ...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+38-properties/400-properties-expressions/en/EXERCISE.md:3:43:20
+...` in the following format:  <pre class='hexlet-basics-output'> First: N Last: t </pre>  Your task is...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+38-properties/100-properties-syntax/en/README.md:18:43:10
+...their value is ``:  ```javascript ```  *Self-сheck. What will `` print for the variable ``...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Spell-check
+------------------------
+35-calling-functions/350-stdlib/en/README.md:11:43:2
+...s functions. In particular, the module [fs](https://nodejs.org/api/fs.html) is req...
+Possible spelling mistake found.
+Предлагаемые варианты:
+FS, is, as, us, FM, ft, vs, FRS, CFS, FBS, FCS, FD, FP, FSA, FSU, TFS, WS, fr, ms, FSH, FSI, FSK, FSM, HFS, NFS, phi, sf, ts, LFS, fps, ifs, phys, PS, AFS, As, BFS, BS, CS, Cs, DFS, DS, EFS, ES, Es, F, FA, FAS, FB, FC, FCs, FDS, FES, FF, FFS, FG, FH, FHS, FI, FJ, FL, FLS, FMS, FMs, FN, FNS, FO, FOS, FPS, FPs, FR, FSB, FSC, FSD, FSE, FSF, FSG, FSN, FSP, FSR, FSS, FST, FSW, FW, FX, FY, Fe, Fm, Fr, GFS, HS, IFS, IS, JS, KS, Ks, LS, MFS, MS, Ms, NS, OFS, OS, Os, PFS, RFS, RS, S, SFS, SS, TS, UFS, US, VFS, XS, ZFS, Zs, cs, f, fa, ff, fl, gs, ks, ls, phis, rs, s, FT
+------------------------
+35-calling-functions/150-calling-functions-expression/en/EXERCISE.md:3:43:9
+...in the variable `` using this format:  <pre class='hexlet-basics-output'> First: N Last: ...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+35-calling-functions/150-calling-functions-expression/en/EXERCISE.md:3:43:20
+...able `` using this format:  <pre class='hexlet-basics-output'> First: N Last: t </pre>  Try to creat...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+33-data-types/10-primitive-data-types/en/README.md:6:43:6
+...type, while numbers refer to Number and BigInt (very large numbers). What are these da...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Big Int, SIGINT
+------------------------
+33-data-types/10-primitive-data-types/en/README.md:8:43:6
+... are divided into two types: Number and BigInt. All numbers below a certain threshold ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Big Int, SIGINT
+------------------------
+33-data-types/10-primitive-data-types/en/README.md:8:43:6
+... and all numbers above it belong to the Biglnt type. They're divided this way due to t...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Billet, Bight, Bigot, Piglet, Wiglet, FIGlet, SIGINT
+------------------------
+33-data-types/10-primitive-data-types/en/README.md:20:43:6
+...erator:  ```javascript ```  The Number, BigInt, and String data types are *primitive* ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Big Int, SIGINT
+------------------------
+30-variables/25-interpolation/en/EXERCISE.md:3:43:9
+...``. The output should look like this:  <pre class='hexlet-basics-output'> Do you want to ...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+30-variables/25-interpolation/en/EXERCISE.md:3:43:20
+...put should look like this:  <pre class='hexlet-basics-output'> Do you want to eat, Arya? </pre> 
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+30-variables/20-magic-numbers/en/README.md:17:43:14
+...ipt ```  Note the following details:  * lowerCamelCase naming * The two new variables are sepa...
+Possible spelling mistake found.
+------------------------
+30-variables/20-magic-numbers/en/EXERCISE.md:14:43:9
+...les and print them.  You'll get this:  <pre class='hexlet-basics-output'> King Balon the ...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+30-variables/20-magic-numbers/en/EXERCISE.md:14:43:20
+...nt them.  You'll get this:  <pre class='hexlet-basics-output'> King Balon the 6th has 102 rooms. </p...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+30-variables/20-magic-numbers/en/EXERCISE.md:15:43:5
+...<pre class='hexlet-basics-output'> King Balon the 6th has 102 rooms. </pre>  The vari...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Salon, Bacon, Baron, Baton, Talon, Halon
+------------------------
+30-variables/19-naming-style/en/README.md:7:43:9
+... used as a separator. For example, `` * CamelCase - each word in the name is capitalized....
+Possible spelling mistake found.
+Предлагаемые варианты:
+Camel Case
+------------------------
+30-variables/19-naming-style/en/README.md:8:43:14
+... name is capitalized. For example, `` * lowerCamelCase - each word is capitalized except the f...
+Possible spelling mistake found.
+------------------------
+30-variables/19-naming-style/en/README.md:10:43:9
+...first. For example, ``  Javascript uses CamelCase and its variation lowerCamelCase, with ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Camel Case
+------------------------
+30-variables/19-naming-style/en/README.md:10:43:14
+...script uses CamelCase and its variation lowerCamelCase, with the first letter of the first wor...
+Possible spelling mistake found.
+------------------------
+30-variables/19-naming-style/en/README.md:10:43:14
+... of the first word in lowercase. We use lowerCamelCase for variables. It means we concatenate ...
+Possible spelling mistake found.
+------------------------
+30-variables/19-naming-style/en/EXERCISE.md:1:43:14
+...first number" and "second number" using lowerCamelCase. Assign `` to the first variable and ``...
+Possible spelling mistake found.
+------------------------
+30-variables/18-variable-concatenation/en/EXERCISE.md:11:43:9
+...e.  The result should look like this:  <pre class='hexlet-basics-output'> Hello, Joffrey!...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+30-variables/18-variable-concatenation/en/EXERCISE.md:11:43:20
+...ult should look like this:  <pre class='hexlet-basics-output'> Hello, Joffrey! Here is important inf...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+30-variables/15-variables-expressions/en/README.md:36:43:9
+...via concatenation:  ```javascript ```  <pre class='hexlet-basics-output'> The price is 43...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+30-variables/15-variables-expressions/en/README.md:36:43:20
+...nation:  ```javascript ```  <pre class='hexlet-basics-output'> The price is 431.875 yuan </pre>  Any...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+30-variables/15-variables-expressions/en/EXERCISE.md:5:43:9
+...w line.  Sample output for 100 euros:  <pre class='hexlet-basics-output'> 125 863.75 </pr...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+30-variables/15-variables-expressions/en/EXERCISE.md:5:43:20
+...mple output for 100 euros:  <pre class='hexlet-basics-output'> 125 863.75 </pre>  Suppose that:  * 1...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+30-variables/14-errors/en/README.md:6:43:14
+...bove program terminates with the error *ReferenceError: greeting is not defined*. *ReferenceEr...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Reference Error
+------------------------
+30-variables/14-errors/en/README.md:6:43:14
+...erenceError: greeting is not defined*. *ReferenceError* means that the code uses a name (calle...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Reference Error
+------------------------
+30-variables/14-errors/en/EXERCISE.md:5:43:9
+...';  The result should look like this:  <pre class='hexlet-basics-output'> Targaryen and D...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+30-variables/14-errors/en/EXERCISE.md:5:43:20
+...ult should look like this:  <pre class='hexlet-basics-output'> Targaryen and Dragon </pre> 
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+30-variables/13-variables-naming/en/README.md:15:43:10
+... previous quarter?*  ```javascript ```  Self-сheck. Think of a name for the variable that ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Spell-check
+------------------------
+25-strings/30-encoding/en/EXERCISE.md:8:43:3
+...We are interested in the decimal code (*dec* or *decimal*).  Using the example abov...
+Possible spelling mistake found.
+Предлагаемые варианты:
+DEC, Dec, deck, Del, den, Dee, IEC, NEC, sec, AEC, DAC, DCC, DMC, DRC, DSC, EEC, dew, DECA, DNC, DTC, Sec, deg, doc, rec, DDC, DBC, BEC, CDEC, CEC, DC, DE, DEA, DEB, DECT, DECs, DEG, DEI, DEL, DEM, DEP, DEQ, DES, DET, DEU, DFC, DHC, DIC, DLC, DOC, DPC, DVC, Dem, EC, FEC, HEC, LEC, MEC, OEC, PEC, REC, SEC, TEC, UEC, WEC, YEC, deb, def, dep, dev, DEX, he, we, be, get, her, me, new, day, did, due, set, yes, died, do, does, few, led, men, see, BBC, deal, idea, let, red, sea, ten, yet, BC, DVD, Dr, dead, deep, die, disc, dog, dry, etc, ex, hey, ice, key, leg, web, EU, Lee, PC, bed, debt, dies, diet, drew, duo, fed, fee, jet, met, neck, net, tea, wet, AFC, Ben, CBC, Dan, Dean, FCC, Mac, arc, decay, deer, demo, deny, desk, dock, duel, duet, neo, pen, per, pet, tech, Drew, IOC, LED, MCC, NFC, NYC, PRC, ROC, Rev, Ted, UTC, Web, Wei, ace, bee, bet, dad, dam, deaf, dean, decks, deed, dice, dig, dot, dub, duck, dug, dye, hoc, ref, sect, sic, ADC, APC, ATC, Alec, CCC, CDC, CPC, DA, DDR, DDT, DL, DM, DNS, DRM, DSM, DSO, DSP, DT, DX, Devi, Eden, Feb, GC, GMC, JC, Jew, MSC, Mel, NGC, NPC, OEM, PAC, PCC, PET, PFC, PVC, QC, Rex, Rey, TLC, TTC, UNC, Zen, beg, codec, dB, dear, decor, dim, din, dip, duct, dues, dyed, dyes, eds, gel, gem, sac, spec, wed, yen, AEG, APEC, Aden, BMC, CAC, CEA, CFC, CIC, CNC, CRC, CSC, CTC, DAT, DCI, DG, DLR, DMA, DMS, DMZ, DSL, DSS, DST, DTM, DTS, DUI, DUP, Decca, Dell, Deng, Doe, Dow, Dyer, ECG, EEA, ESC, Eco, FTC, GCC, GRC, Geo, HTC, IFC, IPC, ITC, Jen, KFC, LBC, LCC, Lea, Len, Lew, MBC, MDC, MHC, MeV, Meg, NAC, NEA, NRC, OPEC, OTC, Oder, PNC, PTC, Peck, RAC, RBC, REM, RPC, RSC, Rep, SBC, SCC, SLC, SRC, TAC, THC, TeX, UE, UPC, VOC, WAC, WC, WTC, decoy, deem, defy, dens, eel, fen, gen, hen, hex, med, mic, nee, ode, pea, peg, pep, rep, seq, tee, vet, wee, AEF, AGC, Beck, CEP, CVC, DBA, DCE, DCL, DCM, DDS, DKK, DLA, DLL, DMCA, DME, DMG, DMK, DNR, DOA, DPI, DQ, DRG, DRI, DSA, DSB, DSE, DTI, DVR, DWM, Desi, Diem, Dir, FAC, FDIC, FMC, FRC, GBC, GED, GPC, HCC, HFC, HMC, IAC, IDC, IEA, IED, IEP, IMC, JSC, JVC, Jed, KBC, KSC, LHC, LRC, LSC, MTC, MVC, MWC, NDC, NEP, OE, PMC, PUC, QED, RDC, RMC, RNC, SFC, SGC, SNC, TOC, TPC, TRC, TUC, UDC, beck, decal, deft, deli, dell, dent, doe, dud, eh, hem, keg, lac, odes, peck, pew, pic, rem, sew, ADAC, BNC, CJC, CWC, DCB, DCF, DDA, DDB, DDD, DDE, DLM, DLS, DMD, DMP, DMV, DND, DOB, DPD, DPT, DRA, DSD, DSR, DTA, DTP, DVT, DWI, DWT, Debs, ECD, EEOC, EIC, Eu, FDC, FNC, Fez, GEF, GFC, JCC, Keck, LDC, LFC, MNC, Mex, PEO, SDC, SVC, TBC, VEB, dace, decry, dept, deuce, doer, dz, exec, fem, gee, heck, reg, rel, secs, tel, zen, CXC, DCD, DLI, DPN, DPs, DRV, DVM, DVP, DVS, DWG, Dena, HIC, Nev, PGC, TEF, Wed, dBm, dab, docs, duh, dyer, hep, hew, idem, mew, soc, EEO, dewy, ides, msec, neg, ted, vac, vex, ceca, debs, decaf, ecu, educ, eek, recd, yep, ABC, AMC, CEO, DJ, DJs, DNA, ECW, ICC, Leo, NBC, Ned, USC, Vic, dbl, deice, dob, doz, dpt, née, Xes, dds, A9C, AAC, AAEC, AC, ACC, ADDEC, AE, AEA, AEB, AED, AEE, AEI, AEJ, AEK, AEL, AEM, AEN, AEO, AEP, AEQ, AER, AES, AET, AEU, AEV, AEW, AEX, AEZ, AHC, AIC, AJC, AJEC, AKC, ALC, AMDEC, ANC, ANEC, AOC, AQC, ARC, ASC, AUC, AVC, AWC, AXC, AYC, Ac, BAC, BCC, BDC, BDE, BEA, BEAC, BEB, BECS, BED, BEE, BEF, BEH, BEI, BEK, BEM, BEO, BEP, BEQ, BER, BES, BET, BEU, BEV, BEW, BEX, BFC, BGC, BHC, BIC, BJC, BKC, BLC, BOC, BPC, BRC, BSC, BSc, BTC, BTEC, BUC, BVC, BWC, BXC, BYC, BZC, Be, Bic, C, C&C, C2C, CC, CDAC, CDE, CE, CEB, CED, CEE, CEF, CEG, CEI, CEJ, CEL, CEM, CEN, CEQ, CER, CES, CESC, CET, CEU, CEV, CGC, CHC, CLC, CMC, COC, CQC, CREC, CSEC, CUC, CZC, Ce, D, D&D, D10, D11, D12, D13, D14, D15, D16, D17, D18, D19, D20, D21, D22, D23, D24, D25, D26, D27, D28, D29, D2D, D30, D31, D32, D33, D34, D35, D36, D37, D38, D39, D40, D41, D42, D45, D46, D48, D50, D51, D52, D55, D56, D57, D58, D59, D60, D61, D62, D63, D64, D65, D66, D67, D68, D70, D71, D72, D73, D74, D76, D78, D79, D8, D80, D82, D83, D86, D89, D90, D91, D96, D97, D99, DAA, DAB, DACA, DACH, DAE, DAEU, DAF, DAI, DAJ, DAK, DAL, DAP, DAR, DAU, DAV, DAX, DB7, DB9, DBB, DBCS, DBD, DBF, DBL, DBO, DBP, DBQ, DBR, DBU, DBZ, DCA, DCK, DCN, DCO, DCP, DCR, DCS, DCT, DCU, DD, DDEA, DDH, DDHC, DDI, DDL, DDLC, DDM, DDO, DDV, DECed, DEEE, DEET, DELE, DELF, DESE, DEUG, DEXA, DFA, DFB, DFCO, DFE, DFF, DFG, DFI, DFL, DFM, DFN, DFO, DFP, DFS, DFT, DFV, DFW, DGA, DGAC, DGD, DGE, DGF, DGH, DGI, DGP, DGS, DGT, DH, DHA, DHCP, DHEA, DHH, DHI, DHL, DHM, DHP, DHR, DHS, DHT, DI, DID, DIF, DIL, DIN, DIP, DIR, DISEC, DIV, DIY, DJF, DJG, DJI, DJO, DJT, DJU, DJed, DK, DKA, DKB, DKP, DKR, DKZ, DLEM, DLF, DLG, DLH, DLP, DLT, DMF, DMFC, DMI, DMM, DMO, DMPC, DMR, DMX, DMed, DMs, DN, DNB, DNF, DNI, DNK, DNL, DNP, DNT, DO, DOCX, DOD, DOE, DOF, DOH, DOHC, DOI, DOJ, DOL, DOM, DON, DOP, DOS, DOT, DP, DPA, DPB, DPE, DPH, DPIC, DPO, DPS, DPU, DPW, DR, DR1, DRAC, DRH, DRP, DRS, DRT, DS, DSF, DSG, DSI, DSK, DSN, DSQ, DSU, DSV, DTT, DTU, DTV, DTW, DUD, DUS, DVA, DVB, DVI, DWH, DWV, DXB, DXF, DXM, DXO, DZA, DZD, DZI, DZO, Day, Demi, Dems, Deon, Depp, Di, Dick, Dis, Dix, DnD, DoD, DoJ, DoS, Don, Dot, Du, Dy, E, EAC, EBC, EC1, EC4, ECA, ECB, ECC, ECE, ECL, ECM, ECN, ECO, ECP, ECR, ECS, ECT, EDC, EDEHC, EE, EED, EEE, EEG, EEGC, EEK, EEM, EEP, EER, EFC, EG, EGC, EI, EK, EM, EMC, EN, ENC, EO, EOC, EP, ER, ERC, ES, ET, EUC, EV, EW, EX, EY, EZ, Ed, El, Er, Es, Esc, FC, FD&C, FDES, FEB, FECI, FECQ, FED, FEF, FEI, FEM, FEN, FEP, FER, FERC, FES, FET, FGC, FHC, FIC, FOC, FSC, Fe, Fed, GAC, GAEC, GDC, GDE, GE, GEA, GEH, GEI, GEM, GEQ, GES, GET, GEV, GGC, GHC, GIEC, GNC, GPEC, GREC, GSC, GUC, Ge, Gen, Ger, HAC, HC, HDE, HDFC, HDLC, HEB, HEF, HEL, HEO, HER, HES, HEV, HLC, HOC, HPC, HRC, HSC, He, Heb, IBC, IC, IDE, IDES, IDEs, IDed, IE, IECA, IEF, IEG, IEM, IES, IGC, IIC, ILC, INC, IRC, IREC, ISC, IWC, IXC, Ice, Inc, JAC, JDBC, JDE, JE, JED, JEF, JEV, JFC, JIC, JOC, JRC, JTC, Jeb, Jem, KC, KCC, KE, KEA, KED, KEF, KEM, KEN, KER, KES, KET, KLC, KWC, KYC, Ken, Key, LC, LDE, LE, LEA, LEB, LEDC, LEF, LEJ, LEM, LEP, LER, LES, LEV, LGC, LIC, LLC, LMC, LOC, LPC, LTC, Le, Les, LoC, Luc, Léa, Léo, MC, MDE, ME, MEA, MEB, MED, MEDC, MEF, MEG, MEL, MEN, MEP, MER, MES, MET, MFC, MJC, MLC, MMC, MOC, MPC, MRC, MSc, MUC, Me, NC, NCC, NDRC, NE, NED, NEE, NEH, NEM, NEN, NER, NHC, NIC, NMC, NSC, NTC, Ne, Neb, Neo, OBC, OC, OCC, ODBC, ODC, ODEM, OEA, OEB, OECD, OED, OEP, OIC, OJC, OMC, OSC, PBC, PCEC, PDC, PE, PEA, PEB, PED, PEE, PEF, PEGC, PEI, PEK, PEL, PEM, PEN, PEOC, PEP, PER, PES, PESC, PEV, PHC, PIC, PJC, PLC, PNEC, POC, PPC, PQC, PSC, Peg, Pei, Pen, Pfc, PoC, PwC, QE2, QEV, QFC, QPC, QRC, RC, RCC, RE, REA, RED, REG, REI, REL, REP, RER, RES, RET, REV, REX, RFC, RHC, RIC, RLC, RRC, RTC, RUC, Re, SAC, SADEC, SC, SDE, SDEI, SDLC, SDPC, SE, SEA, SEAC, SEB, SEBC, SEF, SEG, SEJ, SEK, SEL, SEM, SEO, SEP, SER, SES, SET, SEU, SEV, SEX, SEY, SEZ, SIC, SMC, SOC, SPC, STC, SYC, Sc, Se, Sen, Sep, Set, SoC, Soc, T&C, TC, TCC, TCEC, TDC, TDE, TEB, TECS, TED, TEE, TEEC, TEI, TEM, TEP, TEQ, TER, TES, TEU, TEV, TFC, TIC, TJC, TMC, TNC, TQC, TSC, TWC, TYC, TZC, Tc, Te, Tet, Tex, ToC, UAC, UBC, UC, UCC, UED, UEM, UER, UES, UET, UFC, UGC, UIC, ULC, UMC, UQC, UUC, UVC, UWC, VAC, VC, VCC, VDC, VE, VEI, VES, VHC, VLC, VMC, VNC, VPC, VSC, VTC, W3C, WAEC, WBC, WCC, WDC, WECA, WEG, WET, WFC, WGC, WIC, WPC, WRC, WSC, WWC, Wac, XEU, XIC, XTC, Xe, YAC, YBC, YC, YEM, ZAC, ZC, ZED, ZEE, ZEF, ZEP, ac, bc, bey, c, cc, d, dag, db, dd, dded, deps, derv, devs, dick, dict, dis, div, dm, dmed, dms, don, dos, dox, dpi, drey, dun, e, eV, ea, eco, ed, em, en, enc, er, fer, fey, fez, geo, hes, inc, kc, ken, lea, lech, lee, lei, mac, meg, meh, mes, né, orc, pc, pecs, pee, plc, re, rect, req, res, rev, secy, sen, sex, src, tic, ve, veg, ye, yea, yer, yew, zed, °C, écu, DAW, DTD, EQC, KDE, LXC, PECL, QVC, a/c
+------------------------
+25-strings/20-string-concatenation/en/EXERCISE.md:6:35:5
+Print the following code  ``` ```  using concatenation. 
+This sentence does not start with an uppercase letter.
+Предлагаемые варианты:
+Using
+------------------------
+25-strings/15-escape-characters/en/README.md:35:43:9
+...ey have no graphical representation):  <pre class='hexlet-basics-output'> - Hi!¶ - Oh, he...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+25-strings/15-escape-characters/en/README.md:35:43:20
+...graphical representation):  <pre class='hexlet-basics-output'> - Hi!¶ - Oh, hey!¶ - What's up? </pre...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+25-strings/15-escape-characters/en/README.md:64:43:9
+... program will print it like this:      <pre class='hexlet-basics-output'>     <br>     Du...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+25-strings/15-escape-characters/en/README.md:64:43:20
+...ll print it like this:      <pre class='hexlet-basics-output'>     <br>     Dunsen     </pre>     Wh...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+25-strings/15-escape-characters/en/README.md:66:43:6
+...ss='hexlet-basics-output'>     <br>     Dunsen     </pre>     Why are there two empty ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Bunsen, Dun sen
+------------------------
+25-strings/15-escape-characters/en/README.md:69:43:6
+...y are there two empty lines before the *Dunsen* line instead of one? The point is that...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Bunsen, Dun sen
+------------------------
+25-strings/15-escape-characters/en/README.md:78:43:9
+...javascript    ```     The result:      <pre class='hexlet-basics-output'>     Polliver   ...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+25-strings/15-escape-characters/en/README.md:78:43:20
+...   ```     The result:      <pre class='hexlet-basics-output'>     Polliver     Gregor Clegane<br>  ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+25-strings/15-escape-characters/en/README.md:79:43:8
+... <pre class='hexlet-basics-output'>     Polliver     Gregor Clegane<br>     Chiswyck<br>...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Pol liver
+------------------------
+25-strings/15-escape-characters/en/README.md:80:43:7
+...basics-output'>     Polliver     Gregor Clegane<br>     Chiswyck<br>      Dunsen     </...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Clean, Cleaned, Cleaner, Elegant, Elegance, Legate, Cleanse, Cleave, Cleans, Celgene, Leganés, Cetane
+------------------------
+25-strings/15-escape-characters/en/README.md:81:43:8
+...    Polliver     Gregor Clegane<br>     Chiswyck<br>      Dunsen     </pre>     Now you ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Cheswick
+------------------------
+25-strings/15-escape-characters/en/README.md:83:43:6
+...regor Clegane<br>     Chiswyck<br>      Dunsen     </pre>     Now you understand enoug...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Bunsen, Dun sen
+------------------------
+25-strings/15-escape-characters/en/README.md:95:43:9
+...other  ```javascript ```  The result:  <pre class='hexlet-basics-output'> Joffrey loves u...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+25-strings/15-escape-characters/en/README.md:95:43:20
+...avascript ```  The result:  <pre class='hexlet-basics-output'> Joffrey loves using \n </pre>  A smal...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:8:43:9
+... beginning and the end of the phrase:  <pre class='hexlet-basics-output'> "Khal Drogo's f...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:8:43:20
+...and the end of the phrase:  <pre class='hexlet-basics-output'> "Khal Drogo's favorite word is "athja...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:9:43:1
+...se:  <pre class='hexlet-basics-output'> "Khal Drogo's favorite word is "athjahaka...
+Unpaired symbol: ‘"’ seems to be missing
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:9:43:4
+...e:  <pre class='hexlet-basics-output'> "Khal Drogo's favorite word is "athjahakar"" ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Khan, Kcal, Hal, KAL
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:9:43:5
+...pre class='hexlet-basics-output'> "Khal Drogo's favorite word is "athjahakar"" </pre>...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Dog, Drop, Drug, Dogs, Drove, Drugs, Logo, Diego, Drag, Dragon, Drops, Frog, Frogs, Promo, Proto, Drone, Drown, Togo, Dojo, Drags, Forgo, Argo, DRG, Draco, Provo, Dingo, Dodo, Doge, Drogue, Droid, Pogo, Droll, Droop, Ergo, Grog, LOGO, Dregs, Drool, Dross, Drano, BOGO, Drôme, Frodo, RGO, Dago, Doggo
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:9:43:10
+...utput'> "Khal Drogo's favorite word is "athjahakar"" </pre> 
+Possible spelling mistake found.
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:9:43:1
+...al Drogo's favorite word is "athjahakar"" </pre> 
+Unpaired symbol: ‘"’ seems to be missing
+------------------------
+20-arithmetics/27-commutativity/en/README.md:5:43:3
+...commutative operation? Of course not: *2 - 3 ≠ 3 - 2*. In programming, this law app...
+If you want to indicate numerical ranges or time ranges, consider using an en dash.
+Предлагаемые варианты:
+–
+------------------------
+20-arithmetics/27-commutativity/en/README.md:5:43:3
+...ive operation? Of course not: *2 - 3 ≠ 3 - 2*. In programming, this law applies jus...
+If you want to indicate numerical ranges or time ranges, consider using an en dash.
+Предлагаемые варианты:
+–
+------------------------
+10-basics/50-syntax-errors/en/README.md:8:43:11
+...vaScript, these errors are labelled as "SyntaxError". For technical reasons, this code runn...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Syntax Error
+------------------------
+10-basics/45-testing/en/README.md:15:43:9
+... will give you the following message:  <pre class='hexlet-basics-output'>   ● test    exp...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+10-basics/45-testing/en/README.md:15:43:20
+...you the following message:  <pre class='hexlet-basics-output'>   ● test    expect(received).toBe(exp...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+10-basics/45-testing/en/README.md:18:43:2
+...class='hexlet-basics-output'>   ● test    expect(received).toBe(expected) // Objec...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+10-basics/45-testing/en/README.md:18:43:1
+...exlet-basics-output'>   ● test    expect(received).toBe(expected) // Object.is eq...
+It appears that a white space is missing.
+Предлагаемые варианты:
+ (
+------------------------
+10-basics/45-testing/en/README.md:20:43:2
+...).toBe(expected) // Object.is equality    Expected value to be:     "Hello, World!...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+10-basics/45-testing/en/README.md:22:43:2
+...pected value to be:     "Hello, World!"   Received:     "ello, World!" </pre>  In ...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+10-basics/45-testing/en/README.md:23:43:4
+...e:     "Hello, World!"   Received:     "ello, World!" </pre>  In addition to our tes...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hello, cello, Ella, Elle, Elmo, ell, ells, jello, ELO
+------------------------
+10-basics/40-instructions/en/README.md:10:43:9
+...s on the screen, one after the other.  <pre class='hexlet-basics-output'> Mother of Drago...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+10-basics/40-instructions/en/README.md:10:43:20
+...reen, one after the other.  <pre class='hexlet-basics-output'> Mother of Dragons. Dracarys! </pre>  ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+10-basics/40-instructions/en/README.md:12:43:8
+...xlet-basics-output'> Mother of Dragons. Dracarys! </pre>  Theoretically, it's possible t...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Dramas, Decays, Racers, Radars, Discards, Drawers, Granary, Drapery, Dreary, Placards, Tracery, Tramcars, Drachmas, Fracas, Tracers, Drapers, Drays, Bracers, Daycares, Braceros, Dogcarts, Dracaena, Fracases, Dracaenas, Trocars
+------------------------
+10-basics/40-instructions/en/README.md:20:43:3
+...on the same string:  ```javascript ```  but it's considered bad practice as it's di...
+This sentence does not start with an uppercase letter.
+Предлагаемые варианты:
+But
+------------------------
+10-basics/40-instructions/en/EXERCISE.md:1:43:7
+... names, one after the other: "Robert", "Stannis", "Renly". As a result, the editor shou...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Stands, Tennis, Stanzas, Stains, Stances, Stasis, Tannins, Standish, Sunnis, Tannin, Giannis, Ioannis, Joannis, Stanine, Stanines, Statins
+------------------------
+10-basics/40-instructions/en/EXERCISE.md:1:43:5
+... after the other: "Robert", "Stannis", "Renly". As a result, the editor should print:...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Rely, Reply, Zenly
+------------------------
+10-basics/40-instructions/en/EXERCISE.md:3:43:9
+...As a result, the editor should print:  <pre class='hexlet-basics-output'> Robert Stannis ...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+10-basics/40-instructions/en/EXERCISE.md:3:43:20
+..., the editor should print:  <pre class='hexlet-basics-output'> Robert Stannis Renly </pre>  Call `` ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+10-basics/40-instructions/en/EXERCISE.md:5:43:7
+...re class='hexlet-basics-output'> Robert Stannis Renly </pre>  Call `` for each name. 
+Possible spelling mistake found.
+Предлагаемые варианты:
+Stands, Tennis, Stanzas, Stains, Stances, Stasis, Tannins, Standish, Sunnis, Tannin, Giannis, Ioannis, Joannis, Stanine, Stanines, Statins
+------------------------
+10-basics/40-instructions/en/EXERCISE.md:6:43:5
+...='hexlet-basics-output'> Robert Stannis Renly </pre>  Call `` for each name. 
+Possible spelling mistake found.
+Предлагаемые варианты:
+Rely, Reply, Zenly
+------------------------
+10-basics/10-hello-world/en/README.md:3:43:9
+...rogram will print the following text:  <pre class='hexlet-basics-output'>   Hello, World!...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+10-basics/10-hello-world/en/README.md:3:43:20
+... print the following text:  <pre class='hexlet-basics-output'>   Hello, World! </pre>  To print some...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output48-conditionals/50-else-if/en/EXERCISE.md:7:43:8
+...alues: ``, ``, ``.  Rules:  * Friends: 'Karstark', 'Tally' * Enemies: 'Lannister', 'Frey...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Karst ark
+------------------------
+50-loops/70-for/en/EXERCISE.md:1:0:7
+Samwell discovered that his messages were being...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Sam well
+------------------------
+50-loops/20-aggregation-numbers/en/README.md:21:43:3
+...Thus, for the range from 5 to 7, it is 7 - 5 + 1, or three iterations.  The main di...
+If you want to indicate numerical ranges or time ranges, consider using an en dash.
+Предлагаемые варианты:
+–
+------------------------
+45-logic/70-logical-expressions/en/README.md:8:43:9
+...  ```javascript ```  Correct answer::  <pre class='hexlet-basics-output'>   1 </pre>  The...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+45-logic/70-logical-expressions/en/README.md:8:43:20
+...ript ```  Correct answer::  <pre class='hexlet-basics-output'>   1 </pre>  The **OR** operator works...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+45-logic/70-logical-expressions/en/README.md:19:43:9
+...e of ``.  Example:  ```javascript ```  <pre class='hexlet-basics-output'>   0 </pre>  The...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+45-logic/70-logical-expressions/en/README.md:19:43:20
+...xample:  ```javascript ```  <pre class='hexlet-basics-output'>   0 </pre>  The **AND** operator work...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+45-logic/70-logical-expressions/en/README.md:27:43:5
+...d into ``. Those values are considered [falsy](https://developer.mozilla.org/en-US/do...
+Possible spelling mistake found.
+Предлагаемые варианты:
+false, palsy
+------------------------
+45-logic/70-logical-expressions/en/README.md:35:43:5
+...vascript ```  If `` is given one of the falsy values, an empty string will be assigne...
+Possible spelling mistake found.
+Предлагаемые варианты:
+false, palsy
+------------------------
+45-logic/70-logical-expressions/en/README.md:37:43:5
+...re is a potential bug. If `` contains a falsy value, and it's okay to assign values l...
+Possible spelling mistake found.
+Предлагаемые варианты:
+false, palsy
+------------------------
+50-loops/10-while/en/README.md:17:43:9
+...on't be a problem:  ```javascript ```  <pre class='hexlet-basics-output'> 1 2 3 finished!...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+50-loops/10-while/en/README.md:17:43:20
+...roblem:  ```javascript ```  <pre class='hexlet-basics-output'> 1 2 3 finished! </pre>  https://repli...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+50-loops/10-while/en/EXERCISE.md:6:43:9
+...o the lower limit.  ```javascript ```  <pre class='hexlet-basics-output'>4<br>3<br>2<br>1...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+50-loops/10-while/en/EXERCISE.md:6:43:20
+... limit.  ```javascript ```  <pre class='hexlet-basics-output'>4<br>3<br>2<br>1<br>finished!</pre> 
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+45-logic/20-logic-combine-expressions/en/README.md:14:43:2
+...dy, 2 persons: 2 x 3 + **remainder 1**.   So 7 is not a multiple of 2. * 21 candie...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/20-logic-combine-expressions/en/README.md:16:43:2
+...es, 3 persons: 3 x 7 + **remainder 0**.   So 21 is a multiple of 3. * 19 candies, ...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/20-logic-combine-expressions/en/README.md:18:43:2
+...es, 5 persons: 5 x 3 + **remainder 4**.   So 19 is not a multiple of 5.  The `` op...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/20-logic-combine-expressions/en/README.md:34:43:1
+...n.  Literally, it means the following: *"calculate the remainder of dividing `` b...
+Unpaired symbol: ‘"’ seems to be missing
+------------------------
+45-logic/20-logic-combine-expressions/en/README.md:34:43:1
+...return the result of the equality check "*.  Another example: write a function to...
+Unpaired symbol: ‘"’ seems to be missing
+------------------------
+45-logic/15-predicates/en/README.md:6:43:9
+...m the last lesson:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre>  Thi...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+45-logic/15-predicates/en/README.md:6:43:20
+...lesson:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre>  This kind of function is ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+45-logic/15-predicates/en/README.md:26:43:9
+... it's the word ``:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre> 
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+45-logic/15-predicates/en/README.md:26:43:20
+...ord ``:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre> 
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+45-logic/25-logical-operators/en/README.md:33:43:2
+...   | |-------| ------|----------| | TRUE  | TRUE  | **TRUE** | | TRUE  | FALSE | F...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:33:43:2
+...-----| ------|----------| | TRUE  | TRUE  | **TRUE** | | TRUE  | FALSE | FALSE    ...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:34:43:2
+...---| | TRUE  | TRUE  | **TRUE** | | TRUE  | FALSE | FALSE    | | FALSE | TRUE  | F...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:35:43:2
+...RUE  | FALSE | FALSE    | | FALSE | TRUE  | FALSE    | | FALSE | FALSE | FALSE    ...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:47:43:2
+... B | |-------|-------|----------| | TRUE  | TRUE  | **TRUE** | | TRUE  | FALSE | *...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:47:43:2
+...-----|-------|----------| | TRUE  | TRUE  | **TRUE** | | TRUE  | FALSE | **TRUE** ...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:48:43:2
+...---| | TRUE  | TRUE  | **TRUE** | | TRUE  | FALSE | **TRUE** | | FALSE | TRUE  | *...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/25-logical-operators/en/README.md:49:43:2
+...RUE  | FALSE | **TRUE** | | FALSE | TRUE  | **TRUE** | | FALSE | FALSE | FALSE    ...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+45-logic/10-bool-type/en/README.md:39:43:9
+...eturn that result.  ```javascript ```  <pre class='hexlet-basics-output'>false</pre>  Now...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+45-logic/10-bool-type/en/README.md:39:43:20
+...result.  ```javascript ```  <pre class='hexlet-basics-output'>false</pre>  Now, perform the check on...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+45-logic/10-bool-type/en/README.md:46:43:9
+...is six months old:  ```javascript ```  <pre class='hexlet-basics-output'>true</pre> 
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+45-logic/10-bool-type/en/README.md:46:43:20
+...hs old:  ```javascript ```  <pre class='hexlet-basics-output'>true</pre> 
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+40-define-functions/150-define-functions-return/en/EXERCISE.md:1:43:6
+...tion ``, that returns a string 'hurray! hurray! hurray!'.  ```javascript ``` 
+This sentence does not start with an uppercase letter.
+Предлагаемые варианты:
+Hurray
+------------------------
+40-define-functions/150-define-functions-return/en/EXERCISE.md:1:43:6
+... that returns a string 'hurray! hurray! hurray!'.  ```javascript ``` 
+This sentence does not start with an uppercase letter.
+Предлагаемые варианты:
+Hurray
+------------------------
+38-properties/400-properties-expressions/en/EXERCISE.md:3:43:9
+... constant `` in the following format:  <pre class='hexlet-basics-output'> First: N Last: ...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+38-properties/400-properties-expressions/en/EXERCISE.md:3:43:20
+...` in the following format:  <pre class='hexlet-basics-output'> First: N Last: t </pre>  Your task is...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+40-define-functions/100-define-functions-syntax/en/README.md:10:43:9
+.... Its job is to print out a greeting:  <pre class='hexlet-basics-output'>Hello, Hexlet!</...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+40-define-functions/100-define-functions-syntax/en/README.md:10:43:20
+...s to print out a greeting:  <pre class='hexlet-basics-output'>Hello, Hexlet!</pre>  ```javascript ``...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+35-calling-functions/350-stdlib/en/README.md:11:43:2
+...s functions. In particular, the module [fs](https://nodejs.org/api/fs.html) is req...
+Possible spelling mistake found.
+Предлагаемые варианты:
+FS, is, as, us, FM, ft, vs, FRS, CFS, FBS, FCS, FD, FP, FSA, FSU, TFS, WS, fr, ms, FSH, FSI, FSK, FSM, HFS, NFS, phi, sf, ts, LFS, fps, ifs, phys, PS, AFS, As, BFS, BS, CS, Cs, DFS, DS, EFS, ES, Es, F, FA, FAS, FB, FC, FCs, FDS, FES, FF, FFS, FG, FH, FHS, FI, FJ, FL, FLS, FMS, FMs, FN, FNS, FO, FOS, FPS, FPs, FR, FSB, FSC, FSD, FSE, FSF, FSG, FSN, FSP, FSR, FSS, FST, FSW, FW, FX, FY, Fe, Fm, Fr, GFS, HS, IFS, IS, JS, KS, Ks, LS, MFS, MS, Ms, NS, OFS, OS, Os, PFS, RFS, RS, S, SFS, SS, TS, UFS, US, VFS, XS, ZFS, Zs, cs, f, fa, ff, fl, gs, ks, ls, phis, rs, s, FT
+------------------------
+38-properties/100-properties-syntax/en/README.md:18:43:10
+...their value is ``:  ```javascript ```  *Self-сheck. What will `` print for the variable ``...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Spell-check
+------------------------
+35-calling-functions/150-calling-functions-expression/en/EXERCISE.md:3:43:9
+...in the variable `` using this format:  <pre class='hexlet-basics-output'> First: N Last: ...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+35-calling-functions/150-calling-functions-expression/en/EXERCISE.md:3:43:20
+...able `` using this format:  <pre class='hexlet-basics-output'> First: N Last: t </pre>  Try to creat...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+33-data-types/10-primitive-data-types/en/README.md:6:43:6
+...type, while numbers refer to Number and BigInt (very large numbers). What are these da...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Big Int, SIGINT
+------------------------
+33-data-types/10-primitive-data-types/en/README.md:8:43:6
+... are divided into two types: Number and BigInt. All numbers below a certain threshold ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Big Int, SIGINT
+------------------------
+33-data-types/10-primitive-data-types/en/README.md:8:43:6
+... and all numbers above it belong to the Biglnt type. They're divided this way due to t...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Billet, Bight, Bigot, Piglet, Wiglet, FIGlet, SIGINT
+------------------------
+33-data-types/10-primitive-data-types/en/README.md:20:43:6
+...erator:  ```javascript ```  The Number, BigInt, and String data types are *primitive* ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Big Int, SIGINT
+------------------------
+30-variables/25-interpolation/en/EXERCISE.md:3:43:9
+...``. The output should look like this:  <pre class='hexlet-basics-output'> Do you want to ...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+30-variables/25-interpolation/en/EXERCISE.md:3:43:20
+...put should look like this:  <pre class='hexlet-basics-output'> Do you want to eat, Arya? </pre> 
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+30-variables/20-magic-numbers/en/README.md:17:43:14
+...ipt ```  Note the following details:  * lowerCamelCase naming * The two new variables are sepa...
+Possible spelling mistake found.
+------------------------
+30-variables/20-magic-numbers/en/EXERCISE.md:14:43:9
+...les and print them.  You'll get this:  <pre class='hexlet-basics-output'> King Balon the ...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+30-variables/20-magic-numbers/en/EXERCISE.md:14:43:20
+...nt them.  You'll get this:  <pre class='hexlet-basics-output'> King Balon the 6th has 102 rooms. </p...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+30-variables/20-magic-numbers/en/EXERCISE.md:15:43:5
+...<pre class='hexlet-basics-output'> King Balon the 6th has 102 rooms. </pre>  The vari...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Salon, Bacon, Baron, Baton, Talon, Halon
+------------------------
+30-variables/19-naming-style/en/README.md:7:43:9
+... used as a separator. For example, `` * CamelCase - each word in the name is capitalized....
+Possible spelling mistake found.
+Предлагаемые варианты:
+Camel Case
+------------------------
+30-variables/19-naming-style/en/README.md:8:43:14
+... name is capitalized. For example, `` * lowerCamelCase - each word is capitalized except the f...
+Possible spelling mistake found.
+------------------------
+30-variables/19-naming-style/en/README.md:10:43:9
+...first. For example, ``  Javascript uses CamelCase and its variation lowerCamelCase, with ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Camel Case
+------------------------
+30-variables/19-naming-style/en/README.md:10:43:14
+...script uses CamelCase and its variation lowerCamelCase, with the first letter of the first wor...
+Possible spelling mistake found.
+------------------------
+30-variables/19-naming-style/en/README.md:10:43:14
+... of the first word in lowercase. We use lowerCamelCase for variables. It means we concatenate ...
+Possible spelling mistake found.
+------------------------
+30-variables/19-naming-style/en/EXERCISE.md:1:43:14
+...first number" and "second number" using lowerCamelCase. Assign `` to the first variable and ``...
+Possible spelling mistake found.
+------------------------
+30-variables/15-variables-expressions/en/README.md:36:43:9
+...via concatenation:  ```javascript ```  <pre class='hexlet-basics-output'> The price is 43...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+30-variables/15-variables-expressions/en/README.md:36:43:20
+...nation:  ```javascript ```  <pre class='hexlet-basics-output'> The price is 431.875 yuan </pre>  Any...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+30-variables/15-variables-expressions/en/EXERCISE.md:5:43:9
+...w line.  Sample output for 100 euros:  <pre class='hexlet-basics-output'> 125 863.75 </pr...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+30-variables/15-variables-expressions/en/EXERCISE.md:5:43:20
+...mple output for 100 euros:  <pre class='hexlet-basics-output'> 125 863.75 </pre>  Suppose that:  * 1...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+30-variables/18-variable-concatenation/en/EXERCISE.md:11:43:9
+...e.  The result should look like this:  <pre class='hexlet-basics-output'> Hello, Joffrey!...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+30-variables/18-variable-concatenation/en/EXERCISE.md:11:43:20
+...ult should look like this:  <pre class='hexlet-basics-output'> Hello, Joffrey! Here is important inf...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+30-variables/14-errors/en/README.md:6:43:14
+...bove program terminates with the error *ReferenceError: greeting is not defined*. *ReferenceEr...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Reference Error
+------------------------
+30-variables/14-errors/en/README.md:6:43:14
+...erenceError: greeting is not defined*. *ReferenceError* means that the code uses a name (calle...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Reference Error
+------------------------
+30-variables/14-errors/en/EXERCISE.md:5:43:9
+...';  The result should look like this:  <pre class='hexlet-basics-output'> Targaryen and D...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+30-variables/14-errors/en/EXERCISE.md:5:43:20
+...ult should look like this:  <pre class='hexlet-basics-output'> Targaryen and Dragon </pre> 
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+30-variables/13-variables-naming/en/README.md:15:43:10
+... previous quarter?*  ```javascript ```  Self-сheck. Think of a name for the variable that ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Spell-check
+------------------------
+20-arithmetics/27-commutativity/en/README.md:5:43:3
+...commutative operation? Of course not: *2 - 3 ≠ 3 - 2*. In programming, this law app...
+If you want to indicate numerical ranges or time ranges, consider using an en dash.
+Предлагаемые варианты:
+–
+------------------------
+20-arithmetics/27-commutativity/en/README.md:5:43:3
+...ive operation? Of course not: *2 - 3 ≠ 3 - 2*. In programming, this law applies jus...
+If you want to indicate numerical ranges or time ranges, consider using an en dash.
+Предлагаемые варианты:
+–
+------------------------
+25-strings/30-encoding/en/EXERCISE.md:8:43:3
+...We are interested in the decimal code (*dec* or *decimal*).  Using the example abov...
+Possible spelling mistake found.
+Предлагаемые варианты:
+DEC, Dec, deck, Del, den, Dee, IEC, NEC, sec, AEC, DAC, DCC, DMC, DRC, DSC, EEC, dew, DECA, DNC, DTC, Sec, deg, doc, rec, DDC, DBC, BEC, CDEC, CEC, DC, DE, DEA, DEB, DECT, DECs, DEG, DEI, DEL, DEM, DEP, DEQ, DES, DET, DEU, DFC, DHC, DIC, DLC, DOC, DPC, DVC, Dem, EC, FEC, HEC, LEC, MEC, OEC, PEC, REC, SEC, TEC, UEC, WEC, YEC, deb, def, dep, dev, DEX, he, we, be, get, her, me, new, day, did, due, set, yes, died, do, does, few, led, men, see, BBC, deal, idea, let, red, sea, ten, yet, BC, DVD, Dr, dead, deep, die, disc, dog, dry, etc, ex, hey, ice, key, leg, web, EU, Lee, PC, bed, debt, dies, diet, drew, duo, fed, fee, jet, met, neck, net, tea, wet, AFC, Ben, CBC, Dan, Dean, FCC, Mac, arc, decay, deer, demo, deny, desk, dock, duel, duet, neo, pen, per, pet, tech, Drew, IOC, LED, MCC, NFC, NYC, PRC, ROC, Rev, Ted, UTC, Web, Wei, ace, bee, bet, dad, dam, deaf, dean, decks, deed, dice, dig, dot, dub, duck, dug, dye, hoc, ref, sect, sic, ADC, APC, ATC, Alec, CCC, CDC, CPC, DA, DDR, DDT, DL, DM, DNS, DRM, DSM, DSO, DSP, DT, DX, Devi, Eden, Feb, GC, GMC, JC, Jew, MSC, Mel, NGC, NPC, OEM, PAC, PCC, PET, PFC, PVC, QC, Rex, Rey, TLC, TTC, UNC, Zen, beg, codec, dB, dear, decor, dim, din, dip, duct, dues, dyed, dyes, eds, gel, gem, sac, spec, wed, yen, AEG, APEC, Aden, BMC, CAC, CEA, CFC, CIC, CNC, CRC, CSC, CTC, DAT, DCI, DG, DLR, DMA, DMS, DMZ, DSL, DSS, DST, DTM, DTS, DUI, DUP, Decca, Dell, Deng, Doe, Dow, Dyer, ECG, EEA, ESC, Eco, FTC, GCC, GRC, Geo, HTC, IFC, IPC, ITC, Jen, KFC, LBC, LCC, Lea, Len, Lew, MBC, MDC, MHC, MeV, Meg, NAC, NEA, NRC, OPEC, OTC, Oder, PNC, PTC, Peck, RAC, RBC, REM, RPC, RSC, Rep, SBC, SCC, SLC, SRC, TAC, THC, TeX, UE, UPC, VOC, WAC, WC, WTC, decoy, deem, defy, dens, eel, fen, gen, hen, hex, med, mic, nee, ode, pea, peg, pep, rep, seq, tee, vet, wee, AEF, AGC, Beck, CEP, CVC, DBA, DCE, DCL, DCM, DDS, DKK, DLA, DLL, DMCA, DME, DMG, DMK, DNR, DOA, DPI, DQ, DRG, DRI, DSA, DSB, DSE, DTI, DVR, DWM, Desi, Diem, Dir, FAC, FDIC, FMC, FRC, GBC, GED, GPC, HCC, HFC, HMC, IAC, IDC, IEA, IED, IEP, IMC, JSC, JVC, Jed, KBC, KSC, LHC, LRC, LSC, MTC, MVC, MWC, NDC, NEP, OE, PMC, PUC, QED, RDC, RMC, RNC, SFC, SGC, SNC, TOC, TPC, TRC, TUC, UDC, beck, decal, deft, deli, dell, dent, doe, dud, eh, hem, keg, lac, odes, peck, pew, pic, rem, sew, ADAC, BNC, CJC, CWC, DCB, DCF, DDA, DDB, DDD, DDE, DLM, DLS, DMD, DMP, DMV, DND, DOB, DPD, DPT, DRA, DSD, DSR, DTA, DTP, DVT, DWI, DWT, Debs, ECD, EEOC, EIC, Eu, FDC, FNC, Fez, GEF, GFC, JCC, Keck, LDC, LFC, MNC, Mex, PEO, SDC, SVC, TBC, VEB, dace, decry, dept, deuce, doer, dz, exec, fem, gee, heck, reg, rel, secs, tel, zen, CXC, DCD, DLI, DPN, DPs, DRV, DVM, DVP, DVS, DWG, Dena, HIC, Nev, PGC, TEF, Wed, dBm, dab, docs, duh, dyer, hep, hew, idem, mew, soc, EEO, dewy, ides, msec, neg, ted, vac, vex, ceca, debs, decaf, ecu, educ, eek, recd, yep, ABC, AMC, CEO, DJ, DJs, DNA, ECW, ICC, Leo, NBC, Ned, USC, Vic, dbl, deice, dob, doz, dpt, née, Xes, dds, A9C, AAC, AAEC, AC, ACC, ADDEC, AE, AEA, AEB, AED, AEE, AEI, AEJ, AEK, AEL, AEM, AEN, AEO, AEP, AEQ, AER, AES, AET, AEU, AEV, AEW, AEX, AEZ, AHC, AIC, AJC, AJEC, AKC, ALC, AMDEC, ANC, ANEC, AOC, AQC, ARC, ASC, AUC, AVC, AWC, AXC, AYC, Ac, BAC, BCC, BDC, BDE, BEA, BEAC, BEB, BECS, BED, BEE, BEF, BEH, BEI, BEK, BEM, BEO, BEP, BEQ, BER, BES, BET, BEU, BEV, BEW, BEX, BFC, BGC, BHC, BIC, BJC, BKC, BLC, BOC, BPC, BRC, BSC, BSc, BTC, BTEC, BUC, BVC, BWC, BXC, BYC, BZC, Be, Bic, C, C&C, C2C, CC, CDAC, CDE, CE, CEB, CED, CEE, CEF, CEG, CEI, CEJ, CEL, CEM, CEN, CEQ, CER, CES, CESC, CET, CEU, CEV, CGC, CHC, CLC, CMC, COC, CQC, CREC, CSEC, CUC, CZC, Ce, D, D&D, D10, D11, D12, D13, D14, D15, D16, D17, D18, D19, D20, D21, D22, D23, D24, D25, D26, D27, D28, D29, D2D, D30, D31, D32, D33, D34, D35, D36, D37, D38, D39, D40, D41, D42, D45, D46, D48, D50, D51, D52, D55, D56, D57, D58, D59, D60, D61, D62, D63, D64, D65, D66, D67, D68, D70, D71, D72, D73, D74, D76, D78, D79, D8, D80, D82, D83, D86, D89, D90, D91, D96, D97, D99, DAA, DAB, DACA, DACH, DAE, DAEU, DAF, DAI, DAJ, DAK, DAL, DAP, DAR, DAU, DAV, DAX, DB7, DB9, DBB, DBCS, DBD, DBF, DBL, DBO, DBP, DBQ, DBR, DBU, DBZ, DCA, DCK, DCN, DCO, DCP, DCR, DCS, DCT, DCU, DD, DDEA, DDH, DDHC, DDI, DDL, DDLC, DDM, DDO, DDV, DECed, DEEE, DEET, DELE, DELF, DESE, DEUG, DEXA, DFA, DFB, DFCO, DFE, DFF, DFG, DFI, DFL, DFM, DFN, DFO, DFP, DFS, DFT, DFV, DFW, DGA, DGAC, DGD, DGE, DGF, DGH, DGI, DGP, DGS, DGT, DH, DHA, DHCP, DHEA, DHH, DHI, DHL, DHM, DHP, DHR, DHS, DHT, DI, DID, DIF, DIL, DIN, DIP, DIR, DISEC, DIV, DIY, DJF, DJG, DJI, DJO, DJT, DJU, DJed, DK, DKA, DKB, DKP, DKR, DKZ, DLEM, DLF, DLG, DLH, DLP, DLT, DMF, DMFC, DMI, DMM, DMO, DMPC, DMR, DMX, DMed, DMs, DN, DNB, DNF, DNI, DNK, DNL, DNP, DNT, DO, DOCX, DOD, DOE, DOF, DOH, DOHC, DOI, DOJ, DOL, DOM, DON, DOP, DOS, DOT, DP, DPA, DPB, DPE, DPH, DPIC, DPO, DPS, DPU, DPW, DR, DR1, DRAC, DRH, DRP, DRS, DRT, DS, DSF, DSG, DSI, DSK, DSN, DSQ, DSU, DSV, DTT, DTU, DTV, DTW, DUD, DUS, DVA, DVB, DVI, DWH, DWV, DXB, DXF, DXM, DXO, DZA, DZD, DZI, DZO, Day, Demi, Dems, Deon, Depp, Di, Dick, Dis, Dix, DnD, DoD, DoJ, DoS, Don, Dot, Du, Dy, E, EAC, EBC, EC1, EC4, ECA, ECB, ECC, ECE, ECL, ECM, ECN, ECO, ECP, ECR, ECS, ECT, EDC, EDEHC, EE, EED, EEE, EEG, EEGC, EEK, EEM, EEP, EER, EFC, EG, EGC, EI, EK, EM, EMC, EN, ENC, EO, EOC, EP, ER, ERC, ES, ET, EUC, EV, EW, EX, EY, EZ, Ed, El, Er, Es, Esc, FC, FD&C, FDES, FEB, FECI, FECQ, FED, FEF, FEI, FEM, FEN, FEP, FER, FERC, FES, FET, FGC, FHC, FIC, FOC, FSC, Fe, Fed, GAC, GAEC, GDC, GDE, GE, GEA, GEH, GEI, GEM, GEQ, GES, GET, GEV, GGC, GHC, GIEC, GNC, GPEC, GREC, GSC, GUC, Ge, Gen, Ger, HAC, HC, HDE, HDFC, HDLC, HEB, HEF, HEL, HEO, HER, HES, HEV, HLC, HOC, HPC, HRC, HSC, He, Heb, IBC, IC, IDE, IDES, IDEs, IDed, IE, IECA, IEF, IEG, IEM, IES, IGC, IIC, ILC, INC, IRC, IREC, ISC, IWC, IXC, Ice, Inc, JAC, JDBC, JDE, JE, JED, JEF, JEV, JFC, JIC, JOC, JRC, JTC, Jeb, Jem, KC, KCC, KE, KEA, KED, KEF, KEM, KEN, KER, KES, KET, KLC, KWC, KYC, Ken, Key, LC, LDE, LE, LEA, LEB, LEDC, LEF, LEJ, LEM, LEP, LER, LES, LEV, LGC, LIC, LLC, LMC, LOC, LPC, LTC, Le, Les, LoC, Luc, Léa, Léo, MC, MDE, ME, MEA, MEB, MED, MEDC, MEF, MEG, MEL, MEN, MEP, MER, MES, MET, MFC, MJC, MLC, MMC, MOC, MPC, MRC, MSc, MUC, Me, NC, NCC, NDRC, NE, NED, NEE, NEH, NEM, NEN, NER, NHC, NIC, NMC, NSC, NTC, Ne, Neb, Neo, OBC, OC, OCC, ODBC, ODC, ODEM, OEA, OEB, OECD, OED, OEP, OIC, OJC, OMC, OSC, PBC, PCEC, PDC, PE, PEA, PEB, PED, PEE, PEF, PEGC, PEI, PEK, PEL, PEM, PEN, PEOC, PEP, PER, PES, PESC, PEV, PHC, PIC, PJC, PLC, PNEC, POC, PPC, PQC, PSC, Peg, Pei, Pen, Pfc, PoC, PwC, QE2, QEV, QFC, QPC, QRC, RC, RCC, RE, REA, RED, REG, REI, REL, REP, RER, RES, RET, REV, REX, RFC, RHC, RIC, RLC, RRC, RTC, RUC, Re, SAC, SADEC, SC, SDE, SDEI, SDLC, SDPC, SE, SEA, SEAC, SEB, SEBC, SEF, SEG, SEJ, SEK, SEL, SEM, SEO, SEP, SER, SES, SET, SEU, SEV, SEX, SEY, SEZ, SIC, SMC, SOC, SPC, STC, SYC, Sc, Se, Sen, Sep, Set, SoC, Soc, T&C, TC, TCC, TCEC, TDC, TDE, TEB, TECS, TED, TEE, TEEC, TEI, TEM, TEP, TEQ, TER, TES, TEU, TEV, TFC, TIC, TJC, TMC, TNC, TQC, TSC, TWC, TYC, TZC, Tc, Te, Tet, Tex, ToC, UAC, UBC, UC, UCC, UED, UEM, UER, UES, UET, UFC, UGC, UIC, ULC, UMC, UQC, UUC, UVC, UWC, VAC, VC, VCC, VDC, VE, VEI, VES, VHC, VLC, VMC, VNC, VPC, VSC, VTC, W3C, WAEC, WBC, WCC, WDC, WECA, WEG, WET, WFC, WGC, WIC, WPC, WRC, WSC, WWC, Wac, XEU, XIC, XTC, Xe, YAC, YBC, YC, YEM, ZAC, ZC, ZED, ZEE, ZEF, ZEP, ac, bc, bey, c, cc, d, dag, db, dd, dded, deps, derv, devs, dick, dict, dis, div, dm, dmed, dms, don, dos, dox, dpi, drey, dun, e, eV, ea, eco, ed, em, en, enc, er, fer, fey, fez, geo, hes, inc, kc, ken, lea, lech, lee, lei, mac, meg, meh, mes, né, orc, pc, pecs, pee, plc, re, rect, req, res, rev, secy, sen, sex, src, tic, ve, veg, ye, yea, yer, yew, zed, °C, écu, DAW, DTD, EQC, KDE, LXC, PECL, QVC, a/c
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:8:43:9
+... beginning and the end of the phrase:  <pre class='hexlet-basics-output'> "Khal Drogo's f...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:8:43:20
+...and the end of the phrase:  <pre class='hexlet-basics-output'> "Khal Drogo's favorite word is "athja...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:9:43:1
+...se:  <pre class='hexlet-basics-output'> "Khal Drogo's favorite word is "athjahaka...
+Unpaired symbol: ‘"’ seems to be missing
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:9:43:4
+...e:  <pre class='hexlet-basics-output'> "Khal Drogo's favorite word is "athjahakar"" ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Khan, Kcal, Hal, KAL
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:9:43:5
+...pre class='hexlet-basics-output'> "Khal Drogo's favorite word is "athjahakar"" </pre>...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Dog, Drop, Drug, Dogs, Drove, Drugs, Logo, Diego, Drag, Dragon, Drops, Frog, Frogs, Promo, Proto, Drone, Drown, Togo, Dojo, Drags, Forgo, Argo, DRG, Draco, Provo, Dingo, Dodo, Doge, Drogue, Droid, Pogo, Droll, Droop, Ergo, Grog, LOGO, Dregs, Drool, Dross, Drano, BOGO, Drôme, Frodo, RGO, Dago, Doggo
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:9:43:10
+...utput'> "Khal Drogo's favorite word is "athjahakar"" </pre> 
+Possible spelling mistake found.
+------------------------
+25-strings/10-quotes/en/EXERCISE.md:9:43:1
+...al Drogo's favorite word is "athjahakar"" </pre> 
+Unpaired symbol: ‘"’ seems to be missing
+------------------------
+25-strings/20-string-concatenation/en/EXERCISE.md:6:35:5
+Print the following code  ``` ```  using concatenation. 
+This sentence does not start with an uppercase letter.
+Предлагаемые варианты:
+Using
+------------------------
+10-basics/50-syntax-errors/en/README.md:8:43:11
+...vaScript, these errors are labelled as "SyntaxError". For technical reasons, this code runn...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Syntax Error
+------------------------
+25-strings/15-escape-characters/en/README.md:35:43:9
+...ey have no graphical representation):  <pre class='hexlet-basics-output'> - Hi!¶ - Oh, he...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+25-strings/15-escape-characters/en/README.md:35:43:20
+...graphical representation):  <pre class='hexlet-basics-output'> - Hi!¶ - Oh, hey!¶ - What's up? </pre...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+25-strings/15-escape-characters/en/README.md:64:43:9
+... program will print it like this:      <pre class='hexlet-basics-output'>     <br>     Du...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+25-strings/15-escape-characters/en/README.md:64:43:20
+...ll print it like this:      <pre class='hexlet-basics-output'>     <br>     Dunsen     </pre>     Wh...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+25-strings/15-escape-characters/en/README.md:66:43:6
+...ss='hexlet-basics-output'>     <br>     Dunsen     </pre>     Why are there two empty ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Bunsen, Dun sen
+------------------------
+25-strings/15-escape-characters/en/README.md:69:43:6
+...y are there two empty lines before the *Dunsen* line instead of one? The point is that...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Bunsen, Dun sen
+------------------------
+25-strings/15-escape-characters/en/README.md:78:43:9
+...javascript    ```     The result:      <pre class='hexlet-basics-output'>     Polliver   ...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+25-strings/15-escape-characters/en/README.md:78:43:20
+...   ```     The result:      <pre class='hexlet-basics-output'>     Polliver     Gregor Clegane<br>  ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+25-strings/15-escape-characters/en/README.md:79:43:8
+... <pre class='hexlet-basics-output'>     Polliver     Gregor Clegane<br>     Chiswyck<br>...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Pol liver
+------------------------
+25-strings/15-escape-characters/en/README.md:80:43:7
+...basics-output'>     Polliver     Gregor Clegane<br>     Chiswyck<br>      Dunsen     </...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Clean, Cleaned, Cleaner, Elegant, Elegance, Legate, Cleanse, Cleave, Cleans, Celgene, Leganés, Cetane
+------------------------
+25-strings/15-escape-characters/en/README.md:81:43:8
+...    Polliver     Gregor Clegane<br>     Chiswyck<br>      Dunsen     </pre>     Now you ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Cheswick
+------------------------
+25-strings/15-escape-characters/en/README.md:83:43:6
+...regor Clegane<br>     Chiswyck<br>      Dunsen     </pre>     Now you understand enoug...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Bunsen, Dun sen
+------------------------
+25-strings/15-escape-characters/en/README.md:95:43:9
+...other  ```javascript ```  The result:  <pre class='hexlet-basics-output'> Joffrey loves u...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+25-strings/15-escape-characters/en/README.md:95:43:20
+...avascript ```  The result:  <pre class='hexlet-basics-output'> Joffrey loves using \n </pre>  A smal...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+10-basics/40-instructions/en/README.md:10:43:9
+...s on the screen, one after the other.  <pre class='hexlet-basics-output'> Mother of Drago...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+10-basics/40-instructions/en/README.md:10:43:20
+...reen, one after the other.  <pre class='hexlet-basics-output'> Mother of Dragons. Dracarys! </pre>  ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+10-basics/40-instructions/en/README.md:12:43:8
+...xlet-basics-output'> Mother of Dragons. Dracarys! </pre>  Theoretically, it's possible t...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Dramas, Decays, Racers, Radars, Discards, Drawers, Granary, Drapery, Dreary, Placards, Tracery, Tramcars, Drachmas, Fracas, Tracers, Drapers, Drays, Bracers, Daycares, Braceros, Dogcarts, Dracaena, Fracases, Dracaenas, Trocars
+------------------------
+10-basics/40-instructions/en/README.md:20:43:3
+...on the same string:  ```javascript ```  but it's considered bad practice as it's di...
+This sentence does not start with an uppercase letter.
+Предлагаемые варианты:
+But
+------------------------
+10-basics/40-instructions/en/EXERCISE.md:1:43:7
+... names, one after the other: "Robert", "Stannis", "Renly". As a result, the editor shou...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Stands, Tennis, Stanzas, Stains, Stances, Stasis, Tannins, Standish, Sunnis, Tannin, Giannis, Ioannis, Joannis, Stanine, Stanines, Statins
+------------------------
+10-basics/40-instructions/en/EXERCISE.md:1:43:5
+... after the other: "Robert", "Stannis", "Renly". As a result, the editor should print:...
+Possible spelling mistake found.
+Предлагаемые варианты:
+Rely, Reply, Zenly
+------------------------
+10-basics/40-instructions/en/EXERCISE.md:3:43:9
+...As a result, the editor should print:  <pre class='hexlet-basics-output'> Robert Stannis ...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+10-basics/40-instructions/en/EXERCISE.md:3:43:20
+..., the editor should print:  <pre class='hexlet-basics-output'> Robert Stannis Renly </pre>  Call `` ...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+10-basics/40-instructions/en/EXERCISE.md:5:43:7
+...re class='hexlet-basics-output'> Robert Stannis Renly </pre>  Call `` for each name. 
+Possible spelling mistake found.
+Предлагаемые варианты:
+Stands, Tennis, Stanzas, Stains, Stances, Stasis, Tannins, Standish, Sunnis, Tannin, Giannis, Ioannis, Joannis, Stanine, Stanines, Statins
+------------------------
+10-basics/40-instructions/en/EXERCISE.md:6:43:5
+...='hexlet-basics-output'> Robert Stannis Renly </pre>  Call `` for each name. 
+Possible spelling mistake found.
+Предлагаемые варианты:
+Rely, Reply, Zenly
+------------------------
+10-basics/10-hello-world/en/README.md:3:43:9
+...rogram will print the following text:  <pre class='hexlet-basics-output'>   Hello, World!...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+10-basics/10-hello-world/en/README.md:3:43:20
+... print the following text:  <pre class='hexlet-basics-output'>   Hello, World! </pre>  To print some...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+10-basics/45-testing/en/README.md:15:43:9
+... will give you the following message:  <pre class='hexlet-basics-output'>   ● test    exp...
+This word is normally spelled with a hyphen.
+Предлагаемые варианты:
+pre-class
+------------------------
+10-basics/45-testing/en/README.md:15:43:20
+...you the following message:  <pre class='hexlet-basics-output'>   ● test    expect(received).toBe(exp...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hex let-basics-output
+------------------------
+10-basics/45-testing/en/README.md:18:43:2
+...class='hexlet-basics-output'>   ● test    expect(received).toBe(expected) // Objec...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+10-basics/45-testing/en/README.md:18:43:1
+...exlet-basics-output'>   ● test    expect(received).toBe(expected) // Object.is eq...
+It appears that a white space is missing.
+Предлагаемые варианты:
+ (
+------------------------
+10-basics/45-testing/en/README.md:20:43:2
+...).toBe(expected) // Object.is equality    Expected value to be:     "Hello, World!...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+10-basics/45-testing/en/README.md:22:43:2
+...pected value to be:     "Hello, World!"   Received:     "ello, World!" </pre>  In ...
+Possible typo: you repeated a whitespace
+Предлагаемые варианты:
+ 
+------------------------
+10-basics/45-testing/en/README.md:23:43:4
+...e:     "Hello, World!"   Received:     "ello, World!" </pre>  In addition to our tes...
+Possible spelling mistake found.
+Предлагаемые варианты:
+hello, cello, Ella, Elle, Elmo, ell, ells, jello, ELO

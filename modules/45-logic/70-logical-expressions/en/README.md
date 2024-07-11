@@ -42,7 +42,7 @@ undefined || ''; // ''
 
 If `name` is given one of the falsy values, an empty string will be assigned to the `value` constant. In that case, in subsequent code, we will be able to treat `value` as a string.
 
-But there is a potential bug. If `name` contains a falsy value and it's okay to assign values like `0`, `undefined`, `NaN` or `null` to the `value` constant, then the code above will get it wrong:
+But there is a potential bug. If `name` contains a falsy value, and it's okay to assign values like `0`, `undefined`, `NaN` or `null` to the `value` constant, then the code above will get it wrong:
 
 ```javascript
 // Oops
@@ -51,7 +51,7 @@ false || ''; // ''
 undefined || ''; // ''
 ```
 
-We covered the comparison operators `===` and `!==` in one of our lessons and we mentioned that JavaScript also has the operators `==` and `!=`, though you shouldn't use them. The very difference lies in the type conversion:
+We covered the comparison operators `===` and `!==` in one of our lessons, and we mentioned that JavaScript also has the operators `==` and `!=`, though you shouldn't use them. The very difference lies in the type conversion:
 
 ```javascript
 console.log('' === false); // => false

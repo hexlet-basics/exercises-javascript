@@ -42,9 +42,9 @@ The result:
 '\n\n'.length; // 2 !!!
 ```
 
-Why is it done in this way? `\n` is just a way to write a line break symbol. That's why line feed is just one character, just invisible. And it's also why this problem has arisen. There had to be a way of representing it using a keyboard. And since the number of keyboard characters is limited and they're all dedicated to very important things, special characters are entered using these escape sequences.
+Why is it done in this way? `\n` is just a way to write a line break symbol. That's why line feed is just one character, just invisible. And it's also why this problem has arisen. There had to be a way of representing it using a keyboard. And since the number of keyboard characters is limited, and they're all dedicated to very important things, special characters are entered using these escape sequences.
 
-The Line Feed symbol is not something specific to programming. Anyone who has ever typed on a computer has used the line feed by clicking Enter. Many editors can display these invisible characters, you can use this feature to see where they are (though it's only for display, these characters are invisible, they've no graphical representation):
+The Line Feed symbol is not something specific to programming. Anyone who has ever typed on a computer has used the line feed by clicking Enter. Many editors can display these invisible characters, you can use this feature to see where they are (though it's only for display, these characters are invisible, they have no graphical representation):
 
 <pre class='hexlet-basics-output'>
 - Hi!¶
@@ -124,4 +124,4 @@ The result:
 Joffrey loves using \n
 </pre>
 
-A small but important note about Windows. Windows uses `\r\n` by default to enter a line break. This combination works well in Windows but creates problems when copied to other systems (for example, when the development team includes both Windows and Linux users). The point is that the sequence `\r\n` has a different interpretation depending on the encoding chosen (we discuss it later). For this reason, it's common among developers to always use `\n` without `\r`, since it means that LF is always interpreted the same way and works fine on any system. Remember to configure your editor to use `\n`.
+A small but important note about Windows. Windows uses `\r\n` by default to enter a line break. This combination works well on Windows but creates problems when copied to other systems (for example, when the development team includes both Windows and Linux users). The point is that the sequence `\r\n` has a different interpretation depending on the encoding chosen (we discuss it later). For this reason, it's common among developers to always use `\n` without `\r`, since it means that LF is always interpreted the same way and works fine on any system. Remember to configure your editor to use `\n`.

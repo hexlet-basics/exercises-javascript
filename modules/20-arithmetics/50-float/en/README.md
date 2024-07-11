@@ -20,6 +20,6 @@ console.log(Number.MAX_SAFE_INTEGER);
 9007199254740991
 ```
 
-Rational numbers are not lined up in a continuous chain like integers, there's an infinite amount of numbers between _0.1_ and _0.2_. So now we have a big problem: how can we store rational numbers? Excellent question. There is a myriad of articles in the internet about memory organization in these cases. Moreover, there is even a standard describing how to do it correctly, and an overwhelming number of languages are based on this set of recommendations.
+Rational numbers are not lined up in a continuous chain like integers, there's an infinite amount of numbers between _0.1_ and _0.2_. So now we have a big problem: how can we store rational numbers? Excellent question. There is a myriad of articles on the internet about memory organization in these cases. Moreover, there is even a standard describing how to do it correctly, and an overwhelming number of languages are based on this set of recommendations.
 
 As developers, it's important to understand that operations with floating numbers are not precise (though precision can be adjusted using special tricks).

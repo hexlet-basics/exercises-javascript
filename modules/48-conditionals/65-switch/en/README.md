@@ -37,7 +37,7 @@ Switch is a rather advanced construct considering the number of elements it cons
 * The `case` and `default` constructs, where the behavior for different values of the variable is described. Each `case` corresponds to `if` in the example above. `default` is a special condition corresponding to the `else` branch in conditionals. Neither `else` nor `default` is necessary (but the linter will always [ask for it](https://eslint.org/docs/rules/default-case))
 * `break` is needed to prevent it from "falling through". If `break` is omitted, then the program will continue to the next `case` statement after the required `case`, and carry on until the next `break` or the end of the *switch*
 
-The curly brackets in `switch* don't specify a code block unlike elsewhere. Only the syntax shown above is acceptable. In other words, you can use `case` or `default` there. But inside each `case` (and `default`), the situations are different. You can execute any arbitrary code here:
+The curly brackets in `switch` don't specify a code block unlike elsewhere. Only the syntax shown above is acceptable. In other words, you can use `case` or `default` there. But inside each `case` (and `default`), the situations are different. You can execute any arbitrary code here:
 
 ```javascript
 switch (count) {
