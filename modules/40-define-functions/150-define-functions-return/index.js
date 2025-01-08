@@ -1,5 +1,3 @@
-/* eslint-disable arrow-body-style */
-
 // BEGIN
 const sayHurrayThreeTimes = () => {
   const word = 'hurray!';

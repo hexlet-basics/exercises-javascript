@@ -1,5 +1,3 @@
-/* eslint-disable no-plusplus */
-
 // BEGIN
 const makeItFunny = (str, n) => {
   let i = 0;
