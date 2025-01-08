@@ -1,5 +1,5 @@
 // @ts-check
-// TODO switch to the jest when it will works with modules
+// TODO use vitest
 
 import expect from 'expect';
 import chalk from 'chalk';

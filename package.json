@@ -27,6 +27,7 @@
     "expect": "^27.5.1",
     "jest": "^27.5.1",
     "lodash": "^4.17.21",
-    "stacktracey": "^2.1.8"
+    "stacktracey": "^2.1.8",
+    "vitest": "^2.1.8"
   }
 }

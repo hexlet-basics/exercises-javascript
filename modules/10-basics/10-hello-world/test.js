@@ -1,6 +1,11 @@
-// @ts-check
+import { expect, test, vi } from 'vitest'
 
-import { expectOutput } from 'hexlet-basics/tests';
+test('hello world', async () => {
+  const consoleLogSpy = vi.spyOn(console, 'log').mockImplementation(() => { });
+  // @ts-ignore
+  await import('./index.js')
 
-const expected = 'Hello, World!';
-expectOutput(expected);
+  const firstArg = consoleLogSpy.mock.calls[0]?.[0];
+
+  expect(firstArg).toBe('Hello, World!')
+})

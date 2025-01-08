@@ -29,3 +29,6 @@ compose-schema-validate:
 ci-check:
 	docker-compose --file docker-compose.yml build
 	docker-compose --file docker-compose.yml up --abort-on-container-exit
+
+docker-build-original:
+	docker buildx build -t hexletbasics/exercises-javascript .
