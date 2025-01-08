@@ -32,3 +32,6 @@ ci-check:
 
 docker-build-original:
 	docker buildx build -t hexletbasics/exercises-javascript .
+
+docker-push-original:
+	docker push hexletbasics/exercises-javascript
