@@ -8,8 +8,5 @@ test('hello world', async () => {
 
   const firstArg = consoleLogSpy.mock.calls[0]?.[0];
 
-  expect(firstArg).toBe('undefined')
+  expect(firstArg).toBe(undefined)
 })
-
-const expected = 'undefined';
-expectOutput(expected);

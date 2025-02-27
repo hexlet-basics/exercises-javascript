@@ -1,2 +1,2 @@
 test:
-	@ test-output.sh
+	@ test2.sh

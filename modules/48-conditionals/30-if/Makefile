@@ -1,3 +1,3 @@
 test:
-	@ test.sh
+	@ test2.sh
 
