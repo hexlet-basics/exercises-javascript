@@ -1,3 +1,5 @@
+// @ts-check
+
 import { expect, test, vi } from 'vitest'
 
 test('hello world', async () => {
