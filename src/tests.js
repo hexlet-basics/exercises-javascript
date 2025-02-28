@@ -1,7 +1,7 @@
 // @ts-check
 // TODO use vitest
 
-import { expect } from 'expect';
+import { expect } from 'vitest'
 import chalk from 'chalk';
 import StackTracey from 'stacktracey';
 import _ from 'lodash';
