@@ -1,2 +1,2 @@
 test:
-	@ test2.sh
+	@ test.sh

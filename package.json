@@ -2,33 +2,18 @@
   "name": "hexlet-basics",
   "type": "module",
   "devDependencies": {
-    "@eslint/js": "^9.17.0",
-    "eslint": "^9.17.0",
-    "globals": "^15.14.0",
-    "npm-check-updates": "^17.1.13",
-    "typescript-eslint": "^8.19.1"
-  },
-  "scripts": {
-    "test": "jest --colors"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "transform": {}
+    "@eslint/js": "^9.23.0",
+    "eslint": "^9.23.0",
+    "globals": "^16.0.0",
+    "npm-check-updates": "^17.1.16",
+    "typescript-eslint": "^8.29.0",
+    "vitest": "^3.1.1"
   },
   "exports": {
-    "./tests": "./src/tests.js",
     "./got": "./src/hexlet/got.js",
     "./math": "./src/hexlet/math.js",
     "./string": "./src/hexlet/string.js"
   },
   "dependencies": {
-    "@jest/globals": "^29.7.0",
-    "chai": "^5.1.2",
-    "chalk": "^5.4.1",
-    "expect": "^29.7.0",
-    "jest": "^29.7.0",
-    "lodash": "^4.17.21",
-    "stacktracey": "^2.1.8",
-    "vitest": "^2.1.8"
   }
 }
