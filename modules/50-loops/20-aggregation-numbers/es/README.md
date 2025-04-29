@@ -41,8 +41,6 @@ const sumNumbersFromRange = (start, finish) => {
 };
 ```
 
-https://replit.com/@hexlet/js-basics-aggregation-numbers
-
 La estructura general del bucle aquí es estándar. Hay un contador que se inicializa con el valor inicial del rango, luego viene el bucle con la condición de detenerse cuando se alcanza el final del rango, y finalmente, se cambia el contador al final del cuerpo del bucle. El número de iteraciones en este bucle es igual a `finish - start + 1`. Es decir, para un rango de 5 a 7, esto es 7 - 5 + 1, es decir, 3 iteraciones.
 
 Las principales diferencias con el procesamiento normal están relacionadas con la lógica de cálculo del resultado. En los problemas de agregación, siempre hay una variable que almacena el resultado del bucle. En el código anterior, esta variable es `sum`. En cada iteración del bucle, se actualiza sumando el siguiente número en el rango: `sum = sum + i`. Todo el proceso se ve así:

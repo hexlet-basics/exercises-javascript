@@ -39,8 +39,6 @@ printNumbers(3);
 finished!
 </pre>
 
-https://replit.com/@hexlet/js-basics-while
-
 En el código de la función, se utiliza un bucle `while`. Este bucle consta de tres elementos:
 
 * La palabra clave `while`. Aunque se parece a una llamada de función, no es lo mismo.

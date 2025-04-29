@@ -93,6 +93,4 @@ La segunda forma es más simple y corta. En lugar de crear una variable, el `cas
 };
 ```
 
-https://replit.com/@hexlet/js-basics-switch
-
 Aunque el switch se encuentra en el código, técnicamente siempre se puede prescindir de él. El beneficio clave de su uso es que expresa mejor la intención del programador cuando se necesitan comprobar valores específicos de una variable. Aunque el código físicamente se vuelve un poco más largo, es más fácil de leer en comparación con los bloques *else if*.

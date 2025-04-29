@@ -34,7 +34,6 @@ theory: |
   };
   ```
 
-  https://replit.com/@hexlet/js-basics-if-else
 
   Hemos agregado la palabra clave `else` y un nuevo bloque con llaves. Este bloque se ejecutará solo si la condición en `if` es falsa.
 

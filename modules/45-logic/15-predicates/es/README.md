@@ -7,8 +7,6 @@ console.log(isInfant(3));
 ```
 <pre class='hexlet-basics-output'>false</pre>
 
-https://replit.com/@hexlet/js-basics-logic-bool-type
-
 Estas funciones se llaman funciones booleanas. Los boolenos (o funciones de pregunta) responden a una pregunta y siempre (¡sin excepciones!) devuelven `true` o `false`.
 
 En todos los lenguajes, los predicados se nombran de manera especial para facilitar el análisis. En JavaScript, los predicados generalmente comienzan con los prefijos `is`, `has` o `can`, pero no se limitan a estas palabras. Ejemplos:

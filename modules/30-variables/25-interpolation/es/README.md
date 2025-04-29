@@ -23,8 +23,6 @@ console.log(`${greeting}, ${firstName}!`);
 // => Hello, Joffrey!
 ```
 
-https://replit.com/@hexlet/js-basics-interpolation
-
 Simplemente creamos una cadena e "insertamos" las constantes en los lugares adecuados utilizando el signo de dólar y las llaves `${ }`. Es como si tuviéramos una plantilla en la que se insertan los valores necesarios. Ya no tenemos que preocuparnos por las cadenas separadas para los signos de puntuación y los espacios: todos estos caracteres están simplemente escritos en esta cadena de plantilla.
 
 Se pueden hacer tantos bloques similares como se desee en una sola cadena.

@@ -13,8 +13,6 @@ const name = 'Arya';
 console.log(name[8]);
 ```
 
-https://replit.com/@hexlet/js-basics-data-types-undefined
-
 Смысл (семантика) значения `undefined` именно в том, что значения нет. Однако, ничто не мешает написать такой код:
 
 ```javascript

@@ -12,8 +12,6 @@ Otra ejemplo:
 console.log(2 * 4 * 5 * 10);
 ```
 
-https://replit.com/@hexlet/js-basics-arithmetics-composition
-
 Como puedes ver, las operaciones se pueden combinar entre sí, lo que nos permite calcular expresiones compuestas más complejas. Para entender cómo se realizan los cálculos dentro del intérprete, analicemos el ejemplo: `2 * 4 * 5 * 10`.
 
 1. Primero se calcula `2 * 4` y se obtiene la expresión `8 * 5 * 10`.

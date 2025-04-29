@@ -37,7 +37,6 @@ theory: |
   const sum = (a, b) => a + b;
   ```
 
-  https://replit.com/@hexlet/js-basics-define-functions-short-syntax
 
   Ten en cuenta la ausencia de las llaves. Los desarrolladores que no están acostumbrados a este tipo de sintaxis a veces escriben código como `const sum = (a, b) => { a + b };` y luego se preguntan por qué no funciona. La respuesta es simple: si hay llaves, entonces no se está usando la forma simplificada y tendrás que agregar la palabra `return` para que la función devuelva un valor.
 

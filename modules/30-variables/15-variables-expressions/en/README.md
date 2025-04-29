@@ -32,8 +32,6 @@ let who = "dragon's" + 'mother';
 console.log(who);
 ```
 
-Run it on [repl.it](https://repl.it/languages/javascript) and experiment a little with it.
-
 Now, back to our currency program. We'll record the dollar value in yuan as a separate variable. Calculate the value of 50 euros in dollars by multiplying them by `1.25`. Suppose that 1 dollar is 6.91 yuan:
 
 ```javascript

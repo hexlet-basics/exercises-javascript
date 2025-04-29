@@ -23,7 +23,6 @@ theory: |
   console.log(Math.min(name1.length, name2.length)); // => 4
   ```
 
-  https://replit.com/@hexlet/js-basics-properties-method
 
 instructions: |
 

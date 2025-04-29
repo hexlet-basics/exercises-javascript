@@ -13,8 +13,6 @@ pow(3); // 9
 pow(3, 3); // 27
 ```
 
-https://replit.com/@hexlet/js-basics-define-functions-default-parameters
-
 El valor predeterminado se ve como una asignación normal en la definición. Solamente se activa si el argumento no se pasa. Hay que acostumbrarse a esto. El valor predeterminado incluso puede estar presente cuando solo hay un parámetro:
 
 ```javascript

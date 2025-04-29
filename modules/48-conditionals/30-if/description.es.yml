@@ -21,7 +21,6 @@ theory: |
   getTypeOfSentence('Hodor?'); // question
   ```
 
-  https://replit.com/@hexlet/js-basics-if
 
   `if` es una estructura del lenguaje que controla el orden de ejecución de las instrucciones. Entre paréntesis se le pasa una expresión booleana, y luego se describe un bloque de código entre llaves. Este bloque de código se ejecutará solo si el predicado es verdadero.
 

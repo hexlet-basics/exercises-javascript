@@ -11,8 +11,6 @@ console.log(2 * 4 * 5 * 10);
 ```
 
  As you can see, we can combine operations, which allows us to compute even more complex compound expressions. To visualize how calculations are done inside the interpreter, let's look at an example: `2 * 4 * 5 * 10`.
-
-
 1. First we calculate `2 * 4` and get `8 * 5 * 10`
 2. Then we calculate `8 * 5`, which gives us `40 * 10`
 3. Finally, do the last multiplication. The result will be `400`

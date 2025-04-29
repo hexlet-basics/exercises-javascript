@@ -37,6 +37,4 @@ Los *comentarios de varias líneas* comienzan con `/*` y terminan con `*/`.
 console.log('I am the King');
 ```
 
-https://replit.com/@hexlet/helloworld
-
 Estos comentarios generalmente se utilizan para la documentación del código, por ejemplo, en el caso de las funciones.

@@ -44,7 +44,6 @@ theory: |
   undefined || ''; // ''
   ```
 
-  https://replit.com/@hexlet/js-basics-logical-expressions
 
   Si `name` toma uno de los valores falsy, la constante `value` se le asignará una cadena vacía. En este caso, en el código posterior, podemos trabajar con `value` como si fuera una cadena.
 

@@ -32,8 +32,6 @@ let who = "dragon's" + 'mother';
 console.log(who);
 ```
 
-Запустите его на [repl.it](https://repl.it/languages/javascript) и поэкспериментируйте.
-
 <details>
 <summary>Ответ</summary>
 

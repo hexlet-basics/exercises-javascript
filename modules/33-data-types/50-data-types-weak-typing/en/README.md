@@ -16,8 +16,6 @@ const result = 'one' * 'two';
 console.log(result); // => NaN
 ```
 
-https://replit.com/@hexlet/js-basics-immutability-of-primitive-types
-
 In **strongly typed** languages, adding a number to a string won't work.
 
 JavaScript was created for the Internet, where all information is stored in strings. Even when you type a phone number or a birth year on a website, that information goes to the server as a string, not as a number. So the designers of the language decided that automatic type conversion is suitable and convenient.

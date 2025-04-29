@@ -46,8 +46,6 @@ console.log(isInfant(3));
 
 <pre class='hexlet-basics-output'>false</pre>
 
-https://replit.com/@hexlet/js-basics-logic-bool-type
-
 Ahora probemos con un niño de seis meses:
 
 ```javascript

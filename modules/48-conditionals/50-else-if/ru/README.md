@@ -24,8 +24,6 @@ getTypeOfSentence('No');   // Sentence is normal
 getTypeOfSentence('No!');  // Sentence is exclamation
 ```
 
-https://replit.com/@hexlet/js-basics-conditionals
-
 Мы добавили ещё одну проверку ("exclamation" переводится «восклицание»). Технически функция работает, но с точки зрения семантики есть проблемы.
 
 - Проверка на наличие вопросительного знака происходит в любом случае, даже если уже был обнаружен восклицательный знак.

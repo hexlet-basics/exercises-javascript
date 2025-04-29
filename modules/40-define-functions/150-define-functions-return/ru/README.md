@@ -112,5 +112,3 @@ console.log(run());
 На экран будет выведено `5`.
 
 </details>
-
-https://replit.com/@hexlet/js-basics-functions-return

@@ -50,7 +50,6 @@ instructions: |
 
   Esto mostrará en pantalla el carácter con el número 63, que es el signo de interrogación `?`. De esta manera, puedes mostrar cualquier carácter.
 
-  https://replit.com/@hexlet/js-basics-strings-encoding
 
   Encuentra una tabla de códigos ASCII en Internet. Puedes usar búsquedas como "tabla de códigos ASCII" o "ascii codes table". Por lo general, en estas tablas los códigos se muestran en varios sistemas de numeración: decimal, binario, octal y hexadecimal. Nos interesa el código decimal (*dec* o *decimal*).
 

@@ -27,6 +27,4 @@ Después:
 console.log(((8 / 2) + 5) - (-3 / 2)); // => 10.5
 ```
 
-https://replit.com/@hexlet/js-basics-arithmetics#index.js
-
 Recuerda: el código se escribe para las personas, porque son personas las que leerán el código y las máquinas solamente lo ejecutarán. Para las máquinas, el código es correcto o incorrecto, no hay código "más" o "menos" comprensible para ellas.

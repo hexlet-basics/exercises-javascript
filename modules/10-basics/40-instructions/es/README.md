@@ -7,8 +7,6 @@ console.log('Mother of Dragons.');
 console.log('Dracarys!');
 ```
 
-https://replit.com/@hexlet/js-basics-instructions
-
 Al ejecutar este código, se mostrarán en pantalla las dos frases de forma secuencial:
 
 <pre class='hexlet-basics-output'>

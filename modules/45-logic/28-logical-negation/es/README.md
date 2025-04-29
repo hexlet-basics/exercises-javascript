@@ -10,8 +10,6 @@ isEven(10);  // true
 !isEven(10); // false
 ```
 
-https://replit.com/@hexlet/js-basics-logical-negation
-
 Es decir, simplemente agregamos `!` antes de llamar a la función y obtenemos la acción opuesta.
 
 La negación es una herramienta poderosa que permite expresar reglas previstas de manera concisa en el código sin necesidad de escribir nuevas funciones.

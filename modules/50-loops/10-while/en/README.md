@@ -40,8 +40,6 @@ printNumbers(3);
 finished!
 </pre>
 
-https://replit.com/@hexlet/js-basics-while
-
 Here we use a `while` loop. It has three elements:
 
 * The keyword here is `while`. It is not a function call, although it resembles it

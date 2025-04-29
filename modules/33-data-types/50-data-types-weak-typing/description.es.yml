@@ -20,7 +20,6 @@ theory: |
   console.log(result); // => NaN
   ```
 
-  https://replit.com/@hexlet/js-basics-immutability-of-primitive-types
 
   En los lenguajes con **tipado fuerte**, no se puede sumar un número y una cadena de texto.
 

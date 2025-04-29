@@ -16,8 +16,6 @@ const len = name.length;
 console.log(len); // => 4
 ```
 
-https://replit.com/@hexlet/js-basics-properties-properties-syntax
-
 Las propiedades están asociadas a los datos de los que se obtienen. Para los tipos de datos primitivos, todas las propiedades están documentadas, como por ejemplo, las [cadenas de texto](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String). Sin embargo, los números no tienen propiedades.
 
 JavaScript permite acceder a propiedades que no existen (por ejemplo, debido a errores de escritura). En este caso, el valor de esas propiedades es `undefined`:

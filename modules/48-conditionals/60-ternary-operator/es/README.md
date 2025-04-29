@@ -65,8 +65,6 @@ getTypeOfSentence('Hodor');  // normal
 getTypeOfSentence('Hodor?'); // question
 ```
 
-https://replit.com/@hexlet/js-basics-ternary-operator
-
 ---
 
 Si recuerdas el poder de las expresiones, probablemente ya te hayas dado cuenta de que se puede anidar un operador ternario dentro de otro. **No hagas esto :)**. Este tipo de código es difícil de leer y depurar, y es una mala práctica.

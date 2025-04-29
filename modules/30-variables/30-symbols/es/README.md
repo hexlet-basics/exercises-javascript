@@ -46,5 +46,3 @@ const firstName = 'Tirion';
 
 console.log(firstName[10]); // => undefined
 ```
-
-https://replit.com/@hexlet/js-basics-symbols

@@ -38,7 +38,6 @@ theory: |
   showGreeting(); // => Hello, Hexlet!
   ```
 
-  https://replit.com/@hexlet/js-basics-functions-define
 
   A diferencia de los datos normales, las funciones realizan acciones, por lo que sus nombres casi siempre deben ser verbos: "construir algo", "dibujar algo", "abrir algo".
 

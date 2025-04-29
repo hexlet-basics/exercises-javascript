@@ -16,8 +16,6 @@ const len = name.length;
 console.log(len); // => 4
 ```
 
-https://replit.com/@hexlet/js-basics-properties-properties-syntax
-
 Свойства связаны с данными, у которых они берутся. Для примитивных типов все свойства описаны в документации, как например, у [строк](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String). При этом у чисел вообще нет свойств.
 
 JavaScript позволяет обращаться к свойствам, которые не существуют (например, при опечатках). В таком случае их значением является `undefined`:

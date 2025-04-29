@@ -40,8 +40,6 @@ const value = name || '';
 undefined || ''; // ''
 ```
 
-https://replit.com/@hexlet/js-basics-logical-expressions
-
 Si `name` toma uno de los valores falsy, la constante `value` se le asignará una cadena vacía. En este caso, en el código posterior, podemos trabajar con `value` como si fuera una cadena.
 
 Pero aquí hay un posible error. Si `name` contiene un valor falsy y la asignación de valores a la constante `value` como `0`, `undefined`, `NaN` o `null` es aceptable, entonces el código anterior dejará de funcionar correctamente:

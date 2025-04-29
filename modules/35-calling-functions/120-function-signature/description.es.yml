@@ -10,7 +10,6 @@ theory: |
   console.log(result); // => NaN
   ```
 
-  https://replit.com/@hexlet/js-basics-calling-functions-function-signature
 
   Otra función puede tener un número diferente de parámetros y diferentes tipos de parámetros. Por ejemplo, puede existir una función que acepte tres parámetros: un número, una cadena y otro número.
 

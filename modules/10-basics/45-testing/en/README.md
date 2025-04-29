@@ -24,7 +24,7 @@ One of your tasks in the following lessons will be to write a function that perf
     "ello, World!"
 </pre>
 
-In addition to our tests, it's very useful to experiment with code in the [browser console](https://developer.mozilla.org/en-US/docs/Tools/Browser_Console). When something isn't clear to you, or you want to experiment with code, feel free to do all of this in the console. Ideally, it's best to execute all the code given in the lessons on your own. In addition to the console, you can also use [repl.it](https://repl.it/languages/javascript).
+In addition to our tests, it's very useful to experiment with code in the [browser console](https://developer.mozilla.org/en-US/docs/Tools/Browser_Console). When something isn't clear to you, or you want to experiment with code, feel free to do all of this in the console.
 
 Sometimes when creating a solution, it may seem that you have done everything correctly, but the system has got into a huff and won't accept your solution. Such cases are borderline impossible. Failed tests simply won't get as far as the site, they are automatically run after each change. In the vast majority of cases (all our projects have been run millions of times in total over many years) the error is in the solution code. It can be very imperceptible, maybe you used the wrong punctuation, or you used upper case instead of lower case, or you missed a comma. Other cases are more complicated. Maybe your solution works for one set of inputs, but not for another. So always read the instructions and test your output carefully. There will almost certainly be some sign of an error.
 

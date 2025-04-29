@@ -33,8 +33,6 @@ isPrime(3); // true
 isPrime(4); // false
 ```
 
-https://replit.com/@hexlet/js-basics-conditions-inside-loops
-
 El algoritmo está diseñado de tal manera que, si encontramos al menos un divisor en el rango de la división secuencial entre números de 2 a `x / 2`, entonces el número pasado como argumento no es primo, y no tiene sentido continuar las comprobaciones. En este punto, deberíamos devolver `false`.
 
 Solamente si el bucle se ejecuta por completo, podemos concluir que el número es primo, ya que no se encontró ningún número que sea divisor sin residuo.

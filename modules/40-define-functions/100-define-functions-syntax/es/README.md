@@ -34,8 +34,6 @@ const showGreeting = () => {
 showGreeting(); // => Hello, Hexlet!
 ```
 
-https://replit.com/@hexlet/js-basics-functions-define
-
 A diferencia de los datos normales, las funciones realizan acciones, por lo que sus nombres casi siempre deben ser verbos: "construir algo", "dibujar algo", "abrir algo".
 
 Todo lo que se describe dentro de las llaves `{}` se llama cuerpo de la función. Dentro del cuerpo se puede escribir cualquier código. Considéralo como un pequeño programa independiente, un conjunto de instrucciones arbitrarias. El cuerpo se ejecuta exactamente en el momento en que se ejecuta la función. Además, cada llamada a la función ejecuta el cuerpo de forma independiente de otras llamadas. Por cierto, el cuerpo puede estar vacío:

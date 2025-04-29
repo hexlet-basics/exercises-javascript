@@ -16,8 +16,6 @@ name.length = 100;
 console.log(name.length); // => 6
 ```
 
-https://replit.com/@hexlet/js-properties-immutability
-
 En lugar de cambiar el valor, se puede *reemplazar* el valor. Para ello, se necesitarán variables:
 
 ```javascript

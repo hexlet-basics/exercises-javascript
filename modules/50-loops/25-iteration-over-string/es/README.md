@@ -21,6 +21,4 @@ printNameBySymbol(name);
 // => a
 ```
 
-https://replit.com/@hexlet/js-basic-iteration-over-string
-
 Lo más importante en este código es establecer la condición correcta en el `while`. Esto se puede hacer de dos formas: `i < name.length` o `i <= name.length - 1`. Ambas formas conducen al mismo resultado.

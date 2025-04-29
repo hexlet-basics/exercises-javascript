@@ -13,8 +13,6 @@ const name = 'Arya';
 console.log(name[8]);
 ```
 
-https://replit.com/@hexlet/js-basics-data-types-undefined
-
 El significado (semántica) del valor `undefined` es precisamente que no hay valor. Sin embargo, nada impide escribir este código:
 
 ```javascript

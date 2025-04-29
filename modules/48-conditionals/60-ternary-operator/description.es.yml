@@ -69,7 +69,6 @@ theory: |
   getTypeOfSentence('Hodor?'); // question
   ```
 
-  https://replit.com/@hexlet/js-basics-ternary-operator
 
   ---
 

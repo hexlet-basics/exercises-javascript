@@ -145,7 +145,4 @@ definitions:
     description: |
       una combinación especial de caracteres en un texto. Por ejemplo, `\n` es un salto de línea.
 
-tips:
-  - |
-    Asegúrate de experimentar con la impresión de diferentes cadenas en el sitio [https://replit.com/languages/nodejs](https://replit.com/languages/nodejs)
-  - |
+tips: []
