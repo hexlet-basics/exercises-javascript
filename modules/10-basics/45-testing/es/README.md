@@ -26,7 +26,7 @@ Aquí tienes un ejemplo sencillo: en una de las futuras lecciones, tendrás que 
 
 Expected es el valor esperado y Received es el valor que devolvió tu código.
 
-Además de nuestras pruebas, es muy útil experimentar con el código en la consola del [navegador](https://developer.mozilla.org/es/docs/Tools/Consola_de_navegador). En cualquier situación en la que no entiendas algo o quieras probar diferentes formas de uso, no dudes en abrir la consola e ingresar el código allí. Sería ideal si ejecutas todo el código presente en las lecciones por tu cuenta. Además de la consola, es útil usar el servicio [repl.it](https://repl.it/languages/javascript).
+Además de nuestras pruebas, es muy útil experimentar con el código en la consola del [navegador](https://developer.mozilla.org/es/docs/Tools/Consola_de_navegador). En cualquier situación en la que no entiendas algo o quieras probar diferentes formas de uso, no dudes en abrir la consola e ingresar el código allí.
 
 ---
 

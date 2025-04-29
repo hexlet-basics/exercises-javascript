@@ -14,8 +14,6 @@ const reverseString = (str) => {
 };
 ```
 
-https://replit.com/@hexlet/js-basics-for
-
 Se puede leer de la siguiente manera: *el bucle con el índice `i` se repite mientras `i < str.length`. Después de cada paso incrementa `i` en 1*.
 
 En la definición del bucle `for`, entre paréntesis, hay tres expresiones separadas por punto y coma:

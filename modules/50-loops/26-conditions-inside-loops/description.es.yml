@@ -35,7 +35,6 @@ theory: |
   };
   ```
 
-  https://replit.com/@hexlet/js-basics-condition-inside-loops
 
   Este problema es una operación de agregación. Aunque no cuenta todos los caracteres, aún es necesario analizar cada uno para calcular la suma total.
 

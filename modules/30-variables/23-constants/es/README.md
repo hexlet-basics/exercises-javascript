@@ -24,8 +24,6 @@ const rubles = dollars * rublesInDollar; // 75000
 console.log(rubles);
 ```
 
-https://replit.com/@hexlet/js-basics-variables
-
 El único cambio es que la palabra clave `let` se ha reemplazado por `const`, pero esto es solo sintaxis. Ahora, si intentamos cambiar cualquier constante, obtendremos un mensaje de error. De lo contrario, se utilizan de la misma manera que las variables.
 
 ```javascript

@@ -44,6 +44,4 @@ console.log(greeting2);
 console.log(greeting2);
 ```
 
-https://replit.com/@hexlet/js-basics-variables-definition
-
 Para facilitar el análisis del programa, se recomienda crear variables lo más cerca posible del lugar donde se utilizan.

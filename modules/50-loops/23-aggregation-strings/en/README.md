@@ -25,8 +25,6 @@ const repeat = (text, times) => {
 };
 ```
 
-https://replit.com/@hexlet/js-basics-aggreagation
-
 Break down the code's execution into steps:
 
 ```javascript

@@ -7,8 +7,6 @@ console.log('Mother of Dragons.');
 console.log('Dracarys!');
 ```
 
-https://replit.com/@hexlet/js-basics-instructions
-
 При запуске этого кода, на экран последовательно выводятся два предложения:
 
 <pre class='hexlet-basics-output'>

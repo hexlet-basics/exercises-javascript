@@ -7,8 +7,6 @@ const upperName = name.toUpperCase();
 console.log(upperName); // => ROBB
 ```
 
-https://replit.com/@hexlet/js-basics-properties-methods
-
 Los métodos incorporados siempre operan en los datos con los que están asociados. El método `.toUpperCase()` devuelve la misma cadena, pero convierte todos los caracteres a mayúsculas. Por lo general, hay muchos más métodos que propiedades para los datos, por ejemplo, para las cadenas hay [varias docenas](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String). A primera vista, en la documentación se describen de manera un poco extraña: *String.prototype.toLowerCase()*. Esta descripción revela algunos detalles internos  de implementación que no son importantes en este momento, y tampoco hemos estudiado toda la base necesaria para hablar sobre los prototipos.
 
 Los números también tienen métodos, como se muestra en [este enlace](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Number):

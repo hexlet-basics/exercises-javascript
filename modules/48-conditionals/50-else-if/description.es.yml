@@ -28,7 +28,6 @@ theory: |
   getTypeOfSentence('No!');  // Sentence is exclamation
   ```
 
-  https://replit.com/@hexlet/js-basics-conditionals
 
   Hemos agregado otra verificación ("exclamation" se traduce como «exclamación»). Técnicamente, la función funciona, pero hay problemas desde el punto de vista semántico.
 

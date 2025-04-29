@@ -6,7 +6,7 @@ Here is an example of some code with a syntax error:
 console.log('Hodor'
 ```
 
-If we run this code we will see the following message: `SyntaxError: missing ) after the argument list`. In JavaScript, these errors are labelled as "SyntaxError". For technical reasons, this code running on [code-basics] (https://code-basics.com) won't show a message with a line and file. You can check this output on [repl.it] (https://repl.it).
+If we run this code we will see the following message: `SyntaxError: missing ) after the argument list`. In JavaScript, these errors are labelled as "SyntaxError".
 
 On the one hand, syntax errors are the most obvious because they deal with code grammar rules and have nothing to do with its logic. You can easily fix it once you find it.
 

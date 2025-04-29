@@ -65,8 +65,6 @@ getTypeOfSentence('Hodor');  // normal
 getTypeOfSentence('Hodor?'); // question
 ```
 
-https://replit.com/@hexlet/js-basics-ternary-operator
-
 ---
 
 Если вы помните, в чём сила выражений, то вероятно уже догадались, что тернарный оператор можно вкладывать в тернарный оператор. **Не делайте этого :)** Такой код тяжело и читать, и отлаживать, это очень плохая практика.

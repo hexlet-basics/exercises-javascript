@@ -63,5 +63,3 @@ const isFirstLetterInUpperCase = (string) => {
 isFirstLetterInUpperCase('marmont'); // false
 isFirstLetterInUpperCase('Robb');    // true
 ```
-
-https://replit.com/@hexlet/js-basics-logica-operations

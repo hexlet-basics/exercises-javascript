@@ -23,8 +23,6 @@ console.log(`${greeting}, ${firstName}!`);
 // => 'Hello, Joffrey!'
 ```
 
-https://replit.com/@hexlet/js-basics-interpolation
-
 We simply create a string and "insert" constants in proper places using the dollar sign and curly brackets `${ }`. It's like we have a blank form where we can enter the desired values. And we no longer have to worry about separate strings for punctuation marks and spaces – all of these characters already exist in our template string.
 
 You can create as many of these blocks as you want in a single string.

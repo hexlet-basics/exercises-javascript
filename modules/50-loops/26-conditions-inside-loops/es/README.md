@@ -31,8 +31,6 @@ const countChars = (str, char) => {
 };
 ```
 
-https://replit.com/@hexlet/js-basics-condition-inside-loops
-
 Este problema es una operación de agregación. Aunque no cuenta todos los caracteres, aún es necesario analizar cada uno para calcular la suma total.
 
 La diferencia clave de este bucle con los que hemos visto anteriormente es que tiene una condición dentro del cuerpo. La variable `count` solo se incrementa cuando el carácter actual coincide con el esperado.

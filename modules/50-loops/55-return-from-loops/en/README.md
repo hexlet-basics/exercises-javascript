@@ -33,8 +33,6 @@ isPrime(3); // true
 isPrime(4); // false
 ```
 
-https://replit.com/@hexlet/js-basics-conditions-inside-loops
-
 The algorithm is built like so: if during the successive division by numbers up to `x / 2`, there is at least one result without a remainder, then the given argument is not a prime number, and therefore further computations are pointless. At this point, it returns `false`.
 
 And only if the entire loop is completed can we say that the number is prime since no number by which it can be divided without a remainder can be found.

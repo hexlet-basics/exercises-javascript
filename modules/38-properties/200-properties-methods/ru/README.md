@@ -7,8 +7,6 @@ const upperName = name.toUpperCase();
 console.log(upperName); // => ROBB
 ```
 
-https://replit.com/@hexlet/js-basics-properties-methods
-
 Встроенные методы всегда оперируют теми данными, с которыми они связаны. Метод `.toUpperCase()` возвращает ту же строку, но преобразуя все символы в верхний регистр. Методов у данных обычно значительно больше, чем свойств, например, для строк их [несколько десятков](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String). В документации, на первый взгляд, они описаны немного странно: *String.prototype.toLowerCase()*. Это описание раскрывает некоторые внутренние детали реализации, которые сейчас не важны, да и мы не изучили всей необходимой базы для разговора о прототипах.
 
 Методы есть и у [чисел](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number):

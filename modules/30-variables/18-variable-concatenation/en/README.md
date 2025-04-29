@@ -24,5 +24,3 @@ let last = 'road';
 let what = first + last;
 console.log(what); // => 'Kingsroad'
 ```
-
-https://replit.com/@hexlet/variables-expression

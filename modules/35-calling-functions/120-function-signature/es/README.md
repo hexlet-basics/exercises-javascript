@@ -6,8 +6,6 @@ const result = Math.pow(2, 'boom');
 console.log(result); // => NaN
 ```
 
-https://replit.com/@hexlet/js-basics-calling-functions-function-signature
-
 Otra función puede tener un número diferente de parámetros y diferentes tipos de parámetros. Por ejemplo, puede existir una función que acepte tres parámetros: un número, una cadena y otro número.
 
 ¿De dónde sabemos cuántos y qué tipo de parámetros necesita la función `Math.pow()` y qué tipo de valor devuelve? Miramos la **firma** de esta función. La firma define los parámetros de entrada y sus tipos, así como el parámetro de salida y su tipo. Puedes leer sobre la función `Math.pow()` en la [documentación](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math/pow). En la sección "Sintaxis" se encuentra el siguiente texto:

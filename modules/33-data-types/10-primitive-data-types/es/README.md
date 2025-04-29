@@ -21,8 +21,6 @@ typeof 3; // number
 typeof 'Juego'; // string
 ```
 
-https://replit.com/@hexlet/js-basics-data-types-primitive-data-types
-
 Los tipos de datos Number, BigInt y String son tipos *primitivos*. Pero hay otros. En JavaScript, hay un tipo compuesto llamado Object (y con base en él, arrays, fechas y otros). Con él, se pueden combinar datos de diferentes tipos en un solo valor, por ejemplo, podemos crear un usuario agregando un nombre y una edad.
 
 ```javascript

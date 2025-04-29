@@ -41,8 +41,6 @@ console.log(x++); // => 6
 console.log(x);   // => 7
 ```
 
-https://replit.com/@hexlet/js-basic-mutators
-
 ¿Qué está sucediendo aquí?
 
 1. Imprimimos en la pantalla `++x`. Esto es un incremento prefijo, por lo que primero se incrementa el valor de la variable en 1, luego se devuelve el resultado y se imprime en la pantalla.

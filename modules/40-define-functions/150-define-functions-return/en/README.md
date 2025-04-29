@@ -64,5 +64,3 @@ const run = () => {
 // Usage
 run(); // => ?
 ```
-
-https://replit.com/@hexlet/js-basics-functions-return

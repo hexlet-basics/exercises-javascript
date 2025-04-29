@@ -44,6 +44,4 @@ console.log(greeting2);
 console.log(greeting2);
 ```
 
-https://replit.com/@hexlet/js-basics-variables-definition
-
 Для удобства анализа программы, переменные принято создавать как можно ближе к тому месту, где они используются.

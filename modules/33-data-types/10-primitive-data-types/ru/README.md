@@ -21,8 +21,6 @@ typeof 3; // number
 typeof 'Game'; // string
 ```
 
-https://replit.com/@hexlet/js-basics-data-types-primitive-data-types
-
 Типы данных Number, BigInt и String — это *примитивные* типы. Но есть и другие. В JavaScript встроен составной тип Object (а на его базе массивы, даты и другие). С его помощью можно объединять данные разных типов в одно значение, например, мы можем создать пользователя добавив к нему имя и возраст.
 
 ```javascript

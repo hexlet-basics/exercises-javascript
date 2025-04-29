@@ -45,5 +45,3 @@ console.log("King's " + ' Landing');   // => King's  Landing
 
 console.log("King's  " + '  Landing'); // => King's    Landing
 ```
-
-https://replit.com/@hexlet/js-basics-strings

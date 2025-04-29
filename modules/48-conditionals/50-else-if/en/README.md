@@ -24,8 +24,6 @@ getTypeOfSentence('No');   // 'Sentence is normal'
 getTypeOfSentence('No!');  // 'Sentence is exclamation'
 ```
 
-https://replit.com/@hexlet/js-basics-conditionals
-
 We added one more test. Technically the function works, but there are semantics issues.
 
 - It tests for the question mark in any case, regardless of whether an exclamation point was found or not

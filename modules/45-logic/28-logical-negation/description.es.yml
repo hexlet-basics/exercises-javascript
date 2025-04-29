@@ -14,7 +14,6 @@ theory: |
   !isEven(10); // false
   ```
 
-  https://replit.com/@hexlet/js-basics-logical-negation
 
   Es decir, simplemente agregamos `!` antes de llamar a la función y obtenemos la acción opuesta.
 

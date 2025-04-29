@@ -45,7 +45,6 @@ theory: |
   console.log(x);   // => 7
   ```
 
-  https://replit.com/@hexlet/js-basic-mutators
 
   ¿Qué está sucediendo aquí?
 

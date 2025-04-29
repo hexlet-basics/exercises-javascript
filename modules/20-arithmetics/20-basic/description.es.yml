@@ -41,7 +41,6 @@ theory: |
   console.log(3 ** 2); // => 9
   ```
 
-  https://replit.com/@hexlet/js-basics-arithmetics-basics
 
   A veces, para mayor comodidad, mostraremos el resultado de la ejecución de las líneas de código en los comentarios, de esta manera: `=> RESULTADO`. Por ejemplo, `// => 4`.
 

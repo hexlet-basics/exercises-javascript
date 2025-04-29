@@ -37,8 +37,6 @@ console.log(8 / 2);  // => 4
 console.log(3 ** 2); // => 9
 ```
 
-https://replit.com/@hexlet/js-basics-arithmetics-basics
-
 A veces, para mayor comodidad, mostraremos el resultado de la ejecución de las líneas de código en los comentarios, de esta manera: `=> RESULTADO`. Por ejemplo, `// => 4`.
 
 La primera instrucción mostrará `4` en la pantalla (porque 8 / 2 es igual a 4), y la segunda instrucción mostrará 9 en la pantalla (porque 3<sup>2</sup> es igual a 9).

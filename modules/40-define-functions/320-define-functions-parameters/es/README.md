@@ -74,8 +74,6 @@ average(1, 5); // 3
 average(1, 2); // 1.5
 ```
 
-https://replit.com/@hexlet/js-basics-define-functions-parameters
-
 Lo mismo se aplica a los métodos. Pueden requerir cualquier cantidad de parámetros que necesiten para funcionar:
 
 ```javascript

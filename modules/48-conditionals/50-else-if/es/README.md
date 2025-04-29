@@ -24,8 +24,6 @@ getTypeOfSentence('No');   // Sentence is normal
 getTypeOfSentence('No!');  // Sentence is exclamation
 ```
 
-https://replit.com/@hexlet/js-basics-conditionals
-
 Hemos agregado otra verificación ("exclamation" se traduce como «exclamación»). Técnicamente, la función funciona, pero hay problemas desde el punto de vista semántico.
 
 - La verificación de la presencia del signo de interrogación ocurre de todos modos, incluso si ya se ha detectado el signo de exclamación.

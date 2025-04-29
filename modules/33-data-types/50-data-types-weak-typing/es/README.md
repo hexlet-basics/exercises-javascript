@@ -16,8 +16,6 @@ const result = 'one' * 'two';
 console.log(result); // => NaN
 ```
 
-https://replit.com/@hexlet/js-basics-immutability-of-primitive-types
-
 En los lenguajes con **tipado fuerte**, no se puede sumar un número y una cadena de texto.
 
 JavaScript fue creado para Internet, y en Internet toda la información es una cadena de texto. Incluso cuando ingresas un número de teléfono o una fecha de nacimiento en un sitio web, esa información llega al servidor como una cadena de texto y no como un número. Por eso, los creadores del lenguaje decidieron que convertir automáticamente los tipos era correcto y conveniente.

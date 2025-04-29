@@ -37,6 +37,4 @@ console.log('I am the King'); // For Lannisters!
 console.log('I am the King');
 ```
 
-https://replit.com/@hexlet/helloworld
-
 Такие комментарии, обычно, используют для документирования кода, например, функций.

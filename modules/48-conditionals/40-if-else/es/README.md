@@ -30,8 +30,6 @@ const getTypeOfSentence = (sentence) => {
 };
 ```
 
-https://replit.com/@hexlet/js-basics-if-else
-
 Hemos agregado la palabra clave `else` y un nuevo bloque con llaves. Este bloque se ejecutará solo si la condición en `if` es falsa.
 
 Hay dos formas de estructurar la construcción *if-else*. Usando la negación, se puede cambiar el orden de los bloques:

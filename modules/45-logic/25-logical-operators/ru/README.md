@@ -56,8 +56,6 @@ isGoodApartment(120, 'Main Street');   // true
 isGoodApartment(80, 'Main Street');    // true
 ```
 
-https://replit.com/@hexlet/js-basics-logical-operators
-
 Область математики, в которой изучаются логические операторы, называется булевой алгеброй. Ниже показаны «таблицы истинности» — по ним можно определить, каким будет результат применения оператора:
 
 ## И `&&`

@@ -56,8 +56,6 @@ isGoodApartment(120, 'Main Street');   // true
 isGoodApartment(80, 'Main Street');    // true
 ```
 
-https://replit.com/@hexlet/js-basics-logical-operators
-
 El área de las matemáticas que estudia los operadores lógicos se llama álgebra booleana. A continuación se muestran las "tablas de verdad" que permiten determinar el resultado de la aplicación de un operador:
 
 ## Y `&&`
