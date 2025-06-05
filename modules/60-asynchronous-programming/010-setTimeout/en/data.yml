@@ -1,0 +1,12 @@
+---
+name: wait for
+tips:
+  - |
+    [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)
+  - |
+    [Callback](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Callbacks)
+definitions:
+  - name: Callback
+    description: A function passed as an argument to another function for subsequent invocation
+  - name: Timer
+    description: A mechanism for executing a function after a certain amount of time has passed.

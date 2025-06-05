@@ -1,0 +1,13 @@
+---
+name: Проверка заказа
+tips:
+  - >
+    [Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  - >
+    [methods then and catch](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+  - >
+    [Error Handling in Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Using_promises#ошибки)
+definitions:
+  - name: Асинхронная валидация
+    description: |
+      Проверка данных с помощью Promise, которая либо завершается успешно, либо отклоняется с ошибкой.

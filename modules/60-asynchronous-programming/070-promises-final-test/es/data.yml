@@ -1,0 +1,12 @@
+---
+name: Cesión final de promesas
+tips:
+  - >
+    [Promise](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  - >
+    [then](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+  - >
+    [catch](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch)
+definitions:
+  - name: Fusión de promesas
+    description: Interacción paso a paso del resultado de una promesa a otra, con gestión centralizada de errores.

@@ -1,0 +1,53 @@
+---
+name: Comprobando el pedido
+theory: |
+  Comprensión de la resolución y el rechazo
+
+  ```js
+  Resolve y reject son funciones que gestionan el resultado de una promesa.
+  Dentro de new Promise((resolve, reject) => { ... }), se llama a una de ellas para completar la operación asíncrona.
+
+  resolve(value) indica éxito:
+
+  new Promise((resolve) => {
+    resolve('Done');
+  }).then(console.log); // 'Done'
+
+  reject(error) señala un error:
+
+  new Promise((_, reject) => {
+    reject(new Error('Error'));
+  }).catch(err => console.log(err.message)); // 'Error'
+  '
+  ```
+  Una promesa solo se puede resolver una vez, ya sea mediante la resolución o el rechazo.
+instructions: |
+  Implemente la función processOrder(order), que toma un objeto con parámetros de pedido y devuelve una Promesa.
+
+  El procesamiento del pedido debe realizarse con las siguientes comprobaciones:
+
+  1. Si el pedido no se paga, se devuelve una Promesa rechazada con el error "Pedido no pagado".
+
+  2. La cantidad del producto debe ser un número entre 1 y 100, ambos inclusive.
+  De lo contrario, se rechaza la Promesa con el error "La cantidad debe estar entre 1 y 100".
+
+  3. Si las comprobaciones son correctas, la Promesa debe ejecutarse con el objeto de pedido pasado.
+
+  Ejemplo:
+
+  ```js
+  processOrder({ item: 'banana', amount: 10, paid: true })
+  .then((order) => console.log('Order processed:', order))
+  .catch((err) => console.error('Error:', err.message));
+  ```
+tips:
+  - >
+    [Promise](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  - >
+    [methods then and catch](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+  - >
+    [Error Handling in Promise](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Using_promises#ошибки)
+definitions:
+  - name: Validación asincrónica
+    description: |
+      Validar datos mediante una promesa que se ejecuta correctamente o falla con un error.

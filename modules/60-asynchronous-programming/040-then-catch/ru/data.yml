@@ -1,0 +1,12 @@
+---
+name: Цепочка Promise
+tips:
+  - >
+    [Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  - >
+    [then](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+  - >
+    [catch](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch)
+definitions:
+  - name: Цепочка промисов
+    description: Поэтапная передача результата от одного then к другому, с централизованной обработкой ошибок.

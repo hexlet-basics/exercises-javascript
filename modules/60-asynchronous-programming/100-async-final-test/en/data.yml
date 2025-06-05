@@ -1,0 +1,16 @@
+---
+name: Notify about inactive users
+tips:
+  - >
+    [async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
+  - >
+    [await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
+  - >
+    [try...catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
+definitions:
+  - name: async function
+    description: Keyword for declaring an asynchronous function that returns a promise.
+  - name: await
+    description: Allows you to pause the execution of an async function until the promise is resolved and get its result.
+  - name: try/catch
+    description: A consten-USct for handling errors in a try block and catching exceptions in a catch, especially useful in async/await.

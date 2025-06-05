@@ -1,0 +1,43 @@
+---
+name: Carga paralela
+theory: |
+  El método Promise.all permite ejecutar múltiples operaciones asíncronas en paralelo y obtener los resultados en cuanto se completen todas las tareas.
+
+  Toma un array de promesas y devuelve una nueva promesa que:
+
+  - Se resuelve en un array de resultados, en el mismo orden en que se pasaron las promesas;
+  - Se rechaza si al menos una de las promesas devuelve un error.
+
+  Ejemplo:
+
+  ```js
+  const task = [fetch(url1), fetch(url2)];
+  Promise.all(tasks).then((responses) => {
+    console.log(responses); // ambos resultados en el orden en que fueron llamados
+  });
+  ```
+instructions: |
+  Implementa la función `downloadAll(files)` que toma un array de nombres de archivo y devuelve una promesa que se resuelve después de que se hayan descargado todos los archivos.
+
+  Para descargar un solo archivo, usa la función `downloadFile(fileName)`, que devuelve una promesa.
+
+  La función `downloadAll` debe usar `Promise.all` para descargar todos los archivos en paralelo.
+
+  Ejemplo:
+
+  ```js
+  downloadAll(['1.txt', '2.txt']).then((result) => {
+    console.log(result); // ['1.txt loaded', '2.txt loaded']
+  });
+  ```
+tips:
+  - >
+    [Promise.all](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
+  - >
+    [Promise](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  - >
+    [map](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+definitions:
+  - name: Promise.all
+    description: |
+      Un método que permite ejecutar múltiples operaciones asíncronas en paralelo y esperar a que se completen. Los resultados se devuelven en el mismo orden en que se pasaron las promesas originales.

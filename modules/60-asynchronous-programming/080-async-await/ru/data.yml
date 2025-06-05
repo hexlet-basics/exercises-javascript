@@ -1,0 +1,12 @@
+---
+name: async/await
+tips:
+  - >
+    [async/await (MDN)](https://developer.mozilla.org/ru/docs/Learn/JavaScript/Asynchronous/Async_await)
+  - >
+    [Error handling with try/catch](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/try...catch)
+  - >
+    [Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+definitions:
+  - name: async/await
+    description: Синтаксис, позволяющий писать асинхронный код в виде, близком к синхронному, с использованием ключевых слов async и await.

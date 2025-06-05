@@ -1,0 +1,12 @@
+---
+name: Cadena de promesas
+tips:
+  - >
+    [Promise](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  - >
+    [then](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+  - >
+    [catch](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch)
+definitions:
+  - name: Cadena de promesas
+    description: Transferencia progresiva del resultado de un "entonces" a otro, con gestión centralizada de errores.

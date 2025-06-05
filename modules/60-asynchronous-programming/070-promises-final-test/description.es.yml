@@ -1,0 +1,39 @@
+---
+name: Cesión final de promesas
+theory: |
+  Las instrucciones asíncronas, los .then() anidados y la gestión de errores se suelen usar juntos.
+
+  Un ejemplo de un flujo típico en aplicaciones reales: obtener datos, comprobar, guardar.
+
+  Promise.then
+  Permite realizar una operación una vez completada la promesa. El valor de retorno se transmite a los siguientes pasos de la cadena.
+
+  Promise.catch
+  Detecta errores en cualquiera de los .then anteriores.
+
+  Combinando varios pasos
+  Las cadenas .then().then().then() permiten crear escenarios complejos: validación, comprobación de permisos, guardado, registro, etc.
+
+  La capacidad de combinar promesas y generar y detectar errores correctamente es un aspecto importante del desarrollo.
+instructions: |
+  Implementa una función getValidatedOrder(id) que:
+
+  1. Carga un pedido por id usando fetchOrder.
+  2. Valida el pedido usando validateOrder:
+    - Si el pedido no se ha pagado, se debe generar el error "Order is not paid".
+    - Si la cantidad no está en el rango 1-100, se debe generar el error "Quantity must be between 1 and 100".
+  3. Guarda el pedido usando saveOrder.
+  4. Devuelve el resultado de guardar.
+  5. Si no se encuentra el pedido, se genera el error "Order not found".
+
+  Usa una cadena de .then(), throw y .catch().
+tips:
+  - >
+    [Promise](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  - >
+    [then](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+  - >
+    [catch](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch)
+definitions:
+  - name: Fusión de promesas
+    description: Interacción paso a paso del resultado de una promesa a otra, con gestión centralizada de errores.

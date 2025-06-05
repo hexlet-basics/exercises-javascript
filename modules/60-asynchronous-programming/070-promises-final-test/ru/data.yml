@@ -1,0 +1,12 @@
+---
+name: Финальная задание промисов
+tips:
+  - >
+    [Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  - >
+    [then](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+  - >
+    [catch](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch)
+definitions:
+  - name: Объединение промисов
+    description: Поэтапная взаимодействие результата от одного then к другому, с централизованной обработкой ошибок.

@@ -1,0 +1,44 @@
+---
+name: Recepción de pedidos de usuarios con verificación de acceso
+theory: |
+  .then() anidado: cuando dentro de la función de retorno de un .then() se llama a otro .then(), se invoca otro .then(). Ejemplo:
+
+  ```js
+  doFirst()
+  .then(result1 => {
+    return doSecond(result1)
+    .then(result2 => {
+      return doThird(result2);
+    });
+  });
+  ```
+instructions: |
+  En este ejercicio, necesitas implementar la función getUserOrders(id) que:
+
+  - Obtiene el usuario asincrónicamente por su ID usando fetchUser(id)
+  - Comprueba si el usuario existe; de ​​lo contrario, genera el error "User not found"
+  - Comprueba el acceso del usuario asincrónicamente usando checkAccess(user)
+  - Si no hay acceso, genera el error "Access denied"
+  - Si hay acceso, obtiene asincrónicamente la lista de pedidos del usuario usando fetchOrders(user)
+  - Devuelve una promesa con un array de pedidos
+
+  Usa .then() anidado
+
+  Ejemplo:
+
+  ```js
+  getUserOrders(1).then((orders) => {
+    console.log(orders); // ['sword', 'cloak']
+  }).catch(console.error);
+  ```
+tips:
+  - >
+    [promises](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  - >
+    [then](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+  - >
+    [catch](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch)
+definitions:
+  - name: Then() anidado
+    description: |
+      Llamar a `.then()` dentro de otro `.then()` para procesar operaciones asíncronas secuencialmente, donde el resultado del primer paso afecta al siguiente.

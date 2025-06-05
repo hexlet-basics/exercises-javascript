@@ -1,0 +1,12 @@
+---
+name: Final assignment of promises
+tips:
+  - >
+    [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  - >
+    [then](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+  - >
+    [catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch)
+definitions:
+  - name: Promise merging
+    description: Step-by-step interaction of the result from one then to another, with centralized error handling.

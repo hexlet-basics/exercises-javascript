@@ -1,0 +1,13 @@
+---
+name: Comprobando el pedido
+tips:
+  - >
+    [Promise](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  - >
+    [methods then and catch](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+  - >
+    [Error Handling in Promise](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Using_promises#ошибки)
+definitions:
+  - name: Validación asincrónica
+    description: |
+      Validar datos mediante una promesa que se ejecuta correctamente o falla con un error.

@@ -1,0 +1,10 @@
+---
+name: Espera la promesa
+tips:
+  - >
+    [setTimeout](https://developer.mozilla.org/es/docs/Web/API/setTimeout)
+  - >
+    [Promise](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+definitions:
+  - name: Promesa
+    description: Un objeto que representa el resultado de una operación asincrónica, ya sea exitosa o errada.

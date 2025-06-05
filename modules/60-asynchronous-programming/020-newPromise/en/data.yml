@@ -1,0 +1,10 @@
+---
+name: Wait Promise
+tips:
+  - >
+    [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)
+  - >
+    [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+definitions:
+  - name: Promise
+    description: An object representing the result of an asynchronous operation, either success or error.

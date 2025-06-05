@@ -1,0 +1,12 @@
+---
+name: Hot Cities Report
+tips:
+  - >
+    [async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
+  - >
+    [await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
+  - >
+    [try...catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
+definitions:
+  - name: try/catch
+    description: Allows you to catch errors in async functions, making the code reliable and linear.
