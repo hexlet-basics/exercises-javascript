@@ -33,14 +33,14 @@ import { length } from 'hexlet-basics/string';
 const name = 'JavaScript';
 // Индексы начинаются с нуля
 // Вызов метода и вычитание вместе!
-const lastIndex = length(name) - 1;
+const lastIndex = name.length - 1;
 console.log(lastIndex); // 9
 ```
 
 В этом коде нет нового синтаксиса. Мы всего лишь соединили уже известные части, опираясь на их природу. Можно пойти еще дальше:
 
 ```javascript
-console.log(length(name) - 1); // 9
+console.log(name.length - 1); // 9
 ```
 
 Все это справедливо для любых функций, например строковых:
@@ -50,6 +50,6 @@ import { length } from 'hexlet-basics/string';
 
 const name = 'JavaScript';
 // Используется интерполяция
-console.log(`Последний символ: ${name[length(name) - 1]}`);
+console.log(`Последний символ: ${name[name.length - 1]}`);
 // 'Последний символ: t'
 ```
