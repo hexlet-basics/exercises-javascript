@@ -1,0 +1,12 @@
+---
+name: ждать
+tips:
+  - |
+    [setTimeout](https://developer.mozilla.org/ru/docs/Web/API/setTimeout)
+  - |
+    [коллбек](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Callbacks)
+definitions:
+  - name: Коллбек
+    description: Функция, переданная в качестве аргумента другой функции для последующего вызова
+  - name: Таймер
+    description: Механизм выполнения функции по истечении определенного времени.

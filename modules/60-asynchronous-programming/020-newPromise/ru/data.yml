@@ -1,0 +1,10 @@
+---
+name: Ждать промис
+tips:
+  - >
+    [setTimeout](https://developer.mozilla.org/ru/docs/Web/API/setTimeout)
+  - >
+    [Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+definitions:
+  - name: Промис
+    description: Объект, представляющий результат асинхронной операции — либо успех, либо ошибка.

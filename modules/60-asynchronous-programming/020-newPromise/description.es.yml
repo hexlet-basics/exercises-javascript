@@ -1,0 +1,50 @@
+---
+name: Espera la promesa
+theory: |
+  JavaScript es de un solo subproceso. Para evitar que la ejecución del programa se congele mientras se espera (por ejemplo, una respuesta de un servidor o un temporizador), se utiliza la ejecución asíncrona. Una forma de hacerlo es mediante promesas.
+
+  Una promesa es un objeto que representa el resultado de una operación asíncrona y que puede recibirse ahora, más tarde o nunca. Una promesa tiene tres estados:
+
+  - pendiente: en espera;
+  - cumplido: completado correctamente;
+  - rechazado: se produjo un error.
+
+  El estado se controla mediante:
+  - resolver: se ejecuta al completarse correctamente;
+  - rechazar: se ejecuta al fallar.
+
+  ```js
+  const promise = new Promise((resolve, reject) => {
+    if (success) { // condicionalmente, todo se completó correctamente
+      resolve('Result of the entire execution');
+    } else {
+      reject(new Error('Error during execution'));
+    }
+  });
+  ```
+instructions: |
+  Implementar una función waitPromise(ms, reject) que devuelva una promesa.
+
+  La promesa debe:
+
+  - resolverse con la cadena "¡Listo!" después de ms milisegundos si no se pasa la instrucción reject o esta es falsa.
+
+  - rechazar con el error "¡Error!" después de ms milisegundos si la instrucción reject es verdadera.
+
+  Usar setTimeout para retrasar la ejecución.
+
+  Ejemplo:
+
+  ```js
+  waitPromise(1000).then(console.log); // después de 1 segundo, imprime "Done!"
+
+  waitPromise(1000, true).catch(console.log); // después de 1 segundo, imprime "Failed!"
+  ```
+tips:
+  - >
+    [setTimeout](https://developer.mozilla.org/es/docs/Web/API/setTimeout)
+  - >
+    [Promise](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+definitions:
+  - name: Promesa
+    description: Un objeto que representa el resultado de una operación asincrónica, ya sea exitosa o errada.

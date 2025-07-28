@@ -1,0 +1,13 @@
+---
+name: Параллельная загрузка
+tips:
+  - >
+    [Promise.all](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
+  - >
+    [Promise](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  - >
+    [map](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+definitions:
+  - name: Promise.all
+    description: |
+      Метод, который позволяет запустить несколько асинхронных операций параллельно и дождаться, пока все они завершатся. Результаты приходят в том же порядке, в каком были переданы исходные промисы.

@@ -1,0 +1,13 @@
+---
+name: Получение заказов пользователя с проверкой доступа
+tips:
+  - >
+    [promises](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  - >
+    [then](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+  - >
+    [catch](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch)
+definitions:
+  - name: Вложенные then()
+    description: |
+      Вызов .then() внутри другого .then() для последовательной обработки асинхронных операций, где результат первого шага влияет на следующий.

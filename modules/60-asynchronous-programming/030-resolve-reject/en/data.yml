@@ -1,0 +1,13 @@
+---
+name: Order Validation
+tips:
+  - >
+    [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  - >
+    [methods then and catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+  - >
+    [Error Handling in Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises#ошибки)
+definitions:
+  - name: Asynchronous Validation
+    description: |
+      Validation of data using a Promise that either succeeds or rejects with an error.

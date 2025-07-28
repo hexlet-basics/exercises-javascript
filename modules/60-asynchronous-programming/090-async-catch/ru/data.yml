@@ -1,0 +1,12 @@
+---
+name: Отчёт о жарких городах
+tips:
+  - >
+    [async function](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/async_function)
+  - >
+    [await](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/await)
+  - >
+    [try...catch](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/try...catch)
+definitions:
+  - name: try/catch
+    description: Позволяет перехватывать ошибки в async-функциях, делая код надёжным и линейным.

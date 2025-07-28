@@ -1,0 +1,13 @@
+---
+name: Recepción de pedidos de usuarios con verificación de acceso
+tips:
+  - >
+    [promises](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  - >
+    [then](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+  - >
+    [catch](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch)
+definitions:
+  - name: Then() anidado
+    description: |
+      Llamar a `.then()` dentro de otro `.then()` para procesar operaciones asíncronas secuencialmente, donde el resultado del primer paso afecta al siguiente.

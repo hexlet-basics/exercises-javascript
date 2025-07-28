@@ -1,0 +1,8 @@
+---
+
+name: Programación asíncrona
+description: |
+  En la programación, a menudo se dan situaciones en las que es necesario retrasar o delegar la ejecución de una instrucción a otra parte del código.
+  En lugar de esperar a que se complete una tarea, el programa puede continuar realizando otras operaciones mientras supervisa el estado de la tarea asíncrona por separado.
+
+  El asincronismo permite una gestión eficiente del tiempo de ejecución, especialmente al gestionar la latencia, las solicitudes de red y las operaciones de E/S.

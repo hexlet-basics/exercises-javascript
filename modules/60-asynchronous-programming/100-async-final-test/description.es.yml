@@ -1,0 +1,48 @@
+---
+name: Notificar sobre usuarios inactivos
+theory: |
+  ```js
+  // Cuando se necesitan ejecutar varios pasos asincrónicos en orden,
+  // es conveniente usar la palabra clave await dentro de una función asíncrona.
+
+  async function doSteps() {
+    try {
+      const result1 = await firstStep();
+      const result2 = await secondStep(result1);
+      const result3 = await thirdStep(result2);
+      return result3;
+    } catch (__error) {
+    // Si alguna de las operaciones genera un error, se llamará al bloque catch.
+      return `An error happened: ${__error}`;
+    }
+  }
+  ```
+instructions: |
+  En esta tarea, las funciones se importan mediante la API.
+
+  Implementar la función notifyAboutInactive(userId) debe realizar una cadena de pasos asíncronos:
+
+  1. Obtener el usuario mediante getUser(userId)
+  2. Obtener el correo electrónico de este usuario mediante getEmail(user)
+  3. Preparar el mensaje: prepareMessage(email)
+  4. Enviar la notificación: sendNotification(message)
+
+  Si todos los pasos se realizaron correctamente, la función debe devolver la cadena "OK".
+
+  Si se produce un error en cualquier etapa, devolver la cadena "FAIL".
+
+  Para la implementación, utilice async/await y la gestión de errores mediante try/catch.
+tips:
+  - >
+    [async function](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/async_function)
+  - >
+    [await](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/await)
+  - >
+    [try...catch](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/try...catch)
+definitions:
+  - name: async function
+    description: Palabra clave para declarar una función asíncrona que devuelve una promesa.
+  - name: await
+    description: Permite pausar la ejecución de una función asíncrona hasta que se resuelva la promesa y se obtenga su resultado.
+  - name: try/catch
+    description: Una constante para gestionar errores en un bloque try y capturar excepciones en un catch, especialmente útil en async/await.

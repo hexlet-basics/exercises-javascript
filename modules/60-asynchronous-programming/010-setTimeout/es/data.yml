@@ -1,0 +1,12 @@
+---
+name: esperar
+tips:
+  - |
+    [setTimeout](https://developer.mozilla.org/es/docs/Web/API/setTimeout)
+  - |
+    [Callback](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Callbacks)
+definitions:
+  - name: Función de callback
+    description: Función pasada como argumento a otra función para ser llamada más adelante.
+  - name: Temporizador
+    description: Mecanismo para ejecutar una función después de cierto tiempo.

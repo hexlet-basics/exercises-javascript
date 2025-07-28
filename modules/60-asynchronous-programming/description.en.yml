@@ -1,0 +1,8 @@
+---
+
+name: Asynchronous programming
+description: |
+  There are often situations in programming where the execution of an instruction needs to be delayed or delegated to another part of the code.
+  Instead of waiting for a task to complete, the program can continue performing other operations while monitoring the status of the asynchronous task separately.
+
+  Asyncronism allows for efficient execution time management, especially when dealing with latency, network requests, and I/O operations.

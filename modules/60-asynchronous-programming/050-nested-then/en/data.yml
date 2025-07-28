@@ -1,0 +1,13 @@
+---
+name: Get user orders with access check
+tips:
+  - >
+    [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  - >
+    [then](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+  - >
+    [catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch)
+definitions:
+  - name: Nested then()
+    description: |
+      Call .then() inside another .then() to process asynchronous operations sequentially, where the result of the first step affects the next.

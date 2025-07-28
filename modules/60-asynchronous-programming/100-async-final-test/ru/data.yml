@@ -1,0 +1,16 @@
+---
+name: Уведомление об неактивных пользователях
+tips:
+  - >
+    [async function](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/async_function)
+  - >
+    [await](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/await)
+  - >
+    [try...catch](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/try...catch)
+definitions:
+  - name: async function
+    description: Ключевое слово для объявления асинхронной функции, которая возвращает промис.
+  - name: await
+    description: Позволяет приостановить выполнение async-функции до разрешения промиса и получить его результат.
+  - name: try/catch
+    description: Конструкция для обработки ошибок в блоке try и перехвата исключений в catch, особенно полезна в async/await.

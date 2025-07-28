@@ -1,0 +1,16 @@
+---
+name: Notificar sobre usuarios inactivos
+tips:
+  - >
+    [async function](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/async_function)
+  - >
+    [await](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/await)
+  - >
+    [try...catch](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/try...catch)
+definitions:
+  - name: async function
+    description: Palabra clave para declarar una función asíncrona que devuelve una promesa.
+  - name: await
+    description: Permite pausar la ejecución de una función asíncrona hasta que se resuelva la promesa y se obtenga su resultado.
+  - name: try/catch
+    description: Una constante para gestionar errores en un bloque try y capturar excepciones en un catch, especialmente útil en async/await.
