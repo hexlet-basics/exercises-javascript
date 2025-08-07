@@ -11,9 +11,9 @@ theory: |
 
   Respuesta correcta:
 
-  <pre class='hexlet-basics-output'>
+  ```text
     1
-  </pre>
+  ```
 
   El operador **OR** funciona de tal manera que su ejecución (de izquierda a derecha) se detiene y devuelve el resultado del primer argumento que se pueda convertir en `true`.
 
@@ -23,9 +23,9 @@ theory: |
   console.log(0 && 1);
   ```
 
-  <pre class='hexlet-basics-output'>
+  ```text
     0
-  </pre>
+  ```
 
   El operador **AND** funciona de tal manera que su ejecución (de izquierda a derecha) se detiene y devuelve el resultado del primer argumento que se pueda convertir en `false`.
 

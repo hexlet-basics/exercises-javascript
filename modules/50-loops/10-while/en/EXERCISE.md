@@ -5,4 +5,8 @@ Edit the `printNumbers()` function so that it prints the numbers in reverse orde
 printNumbers(4);
 ```
 
-<pre class='hexlet-basics-output'>4<br>3<br>2<br>1<br>finished!</pre>
+```text4
+3
+2
+1
+finished!```

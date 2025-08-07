@@ -9,10 +9,10 @@ console.log('Dracarys!');
 
 When you run this code you will see two sentences on the screen, one after the other.
 
-<pre class='hexlet-basics-output'>
+```text
 Mother of Dragons.
 Dracarys!
-</pre>
+```
 
 Theoretically, it's possible to put multiple statements on the same string:
 

@@ -5,7 +5,7 @@
 const isInfant = (age) => age < 1;
 console.log(isInfant(3));
 ```
-<pre class='hexlet-basics-output'>false</pre>
+```textfalse```
 
 Подобные функции называют предикатами. Функции-предикаты (или функции-вопросы) отвечают на какой-то вопрос и всегда (без исключений!) возвращают либо `true`, либо `false`.
 
@@ -28,4 +28,4 @@ const isCastle = (type) => type === 'Castle';
 console.log(isCastle('Sea'));
 ```
 
-<pre class='hexlet-basics-output'>false</pre>
+```textfalse```

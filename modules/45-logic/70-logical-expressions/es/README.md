@@ -7,9 +7,9 @@ console.log(0 || 1);
 
 Respuesta correcta:
 
-<pre class='hexlet-basics-output'>
+```text
   1
-</pre>
+```
 
 El operador **OR** funciona de tal manera que su ejecución (de izquierda a derecha) se detiene y devuelve el resultado del primer argumento que se pueda convertir en `true`.
 
@@ -19,9 +19,9 @@ A continuación, un ejemplo con el operador **AND**:
 console.log(0 && 1);
 ```
 
-<pre class='hexlet-basics-output'>
+```text
   0
-</pre>
+```
 
 El operador **AND** funciona de tal manera que su ejecución (de izquierda a derecha) se detiene y devuelve el resultado del primer argumento que se pueda convertir en `false`.
 

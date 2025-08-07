@@ -2,8 +2,8 @@ Por lo general, el aprendizaje de un nuevo lenguaje de programación comienza co
 
 Este programa mostrará el siguiente texto en la pantalla:
 
-<pre class='hexlet-basics-output'>
+```text
   Hello, World!
-</pre>
+```
 
 Para mostrar algo en la pantalla, es necesario darle al ordenador un comando especial. En el lenguaje JavaScript, ese comando es `console.log()`.

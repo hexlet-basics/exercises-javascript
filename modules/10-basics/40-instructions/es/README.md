@@ -9,10 +9,10 @@ console.log('Dracarys!');
 
 Al ejecutar este código, se mostrarán en pantalla las dos frases de forma secuencial:
 
-<pre class='hexlet-basics-output'>
+```text
 Mother of Dragons.
 Dracarys!
-</pre>
+```
 
 Teóricamente, las instrucciones se pueden escribir una tras otra sin saltar de línea:
 

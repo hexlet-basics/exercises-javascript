@@ -7,6 +7,6 @@
 
 Программа должна в точности вывести на экран именно эту фразу. Обратите внимание на кавычки в начале и в конце фразы:
 
-<pre class='hexlet-basics-output'>
+```text
 "Khal Drogo's favorite word is "athjahakar""
-</pre>
+```

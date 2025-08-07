@@ -3,8 +3,8 @@
 
 После выполнения программы результат на экране должен выглядеть так:
 
-<pre class='hexlet-basics-output'>
+```text
 Targaryen
 and
 Dragon
-</pre>
+```

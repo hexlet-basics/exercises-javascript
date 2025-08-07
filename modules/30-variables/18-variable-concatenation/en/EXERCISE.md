@@ -9,10 +9,10 @@ For the email body, use the variables `info` and `intro`, with the second senten
 
 The result should look like this:
 
-<pre class='hexlet-basics-output'>
+```text
 Hello, Joffrey!
 Here is important information about your account security.
 We couldn't verify your mother's maiden name.
-</pre>
+```
 
 Complete the task using `console.log()` no more than twice.

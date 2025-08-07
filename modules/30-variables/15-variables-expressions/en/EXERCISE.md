@@ -3,10 +3,10 @@ Write a program that takes the initial amount of euros stored in the variable `e
 
 Sample output for 100 euros:
 
-<pre class='hexlet-basics-output'>
+```text
 125
 863.75
-</pre>
+```
 
 Suppose that:
 - 1 euro = 1.25 dollars

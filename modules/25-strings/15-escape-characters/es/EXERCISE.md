@@ -1,7 +1,7 @@
 
 Escribe un programa que muestre en la pantalla:
 
-```
+```text
 - Did Joffrey agree?
 - He did. He also said "I love using \n".
 ```

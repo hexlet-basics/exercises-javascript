@@ -36,12 +36,12 @@ theory: |
   printNumbers(3);
   ```
 
-  <pre class='hexlet-basics-output'>
+  ```text
   1
   2
   3
   finished!
-  </pre>
+  ```
 
 
   En el código de la función, se utiliza un bucle `while`. Este bucle consta de tres elementos:
@@ -114,7 +114,11 @@ instructions: |
   printNumbers(4);
   ```
 
-  <pre class='hexlet-basics-output'>4<br>3<br>2<br>1<br>finished!</pre>
+  ```text4
+3
+2
+1
+finished!```
 
 tips:
   - |

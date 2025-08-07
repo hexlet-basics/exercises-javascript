@@ -44,7 +44,7 @@ const isInfant = (age) => age < 1;
 console.log(isInfant(3));
 ```
 
-<pre class='hexlet-basics-output'>false</pre>
+```textfalse```
 
 А теперь проверим ребенка, которому полгода:
 
@@ -52,4 +52,4 @@ console.log(isInfant(3));
 console.log(isInfant(0.5));
 ```
 
-<pre class='hexlet-basics-output'>true</pre>
+```texttrue```

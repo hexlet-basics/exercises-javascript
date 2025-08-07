@@ -13,7 +13,7 @@ Es por eso que nuestro sitio dice "Pruebas aprobadas" cuando resuelves correctam
 
 Aquí tienes un ejemplo sencillo: en una de las futuras lecciones, tendrás que escribir una función que realice cálculos y devuelva una respuesta. Supongamos que cometiste un pequeño error y la función devuelve un número incorrecto. El sistema responderá algo como esto:
 
-<pre class='hexlet-basics-output'>
+```text
   ● test
 
   expect(received).toBe(expected) // Object.is equality
@@ -22,7 +22,7 @@ Aquí tienes un ejemplo sencillo: en una de las futuras lecciones, tendrás que 
     "Hello, World!"
   Received:
     "ello, World!"
-</pre>
+```
 
 Expected es el valor esperado y Received es el valor que devolvió tu código.
 

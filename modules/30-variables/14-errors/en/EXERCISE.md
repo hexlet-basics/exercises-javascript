@@ -3,8 +3,8 @@ Find an undeclared variable in the code and declare it by assigning the value 'D
 
 The result should look like this:
 
-<pre class='hexlet-basics-output'>
+```text
 Targaryen
 and
 Dragon
-</pre>
+```

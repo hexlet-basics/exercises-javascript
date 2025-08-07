@@ -59,9 +59,9 @@ let yuansCount = dollarsCount * yuansPerDollar; // 431.875
 console.log('The price is ' + yuansCount + ' yuans');
 ```
 
-<pre class='hexlet-basics-output'>
+```text
 The price is 431.875 yuans
-</pre>
+```
 
 Любая переменная может быть частью любого выражения. В момент вычисления, вместо имени переменной подставляется её значение.
 

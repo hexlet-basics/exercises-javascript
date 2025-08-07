@@ -3,7 +3,7 @@ Escribe un programa que tome una cantidad inicial de euros, almacenada en la var
 
 Ejemplo de salida para 100 euros:
 
-<pre class='hexlet-basics-output'>
+```text
 125
 863.75
-</pre>
+```

@@ -3,8 +3,8 @@ Encuentra la variable no declarada en el programa y declárala asignándole el v
 
 Después de ejecutar el programa, el resultado en la pantalla debería verse así:
 
-<pre class='hexlet-basics-output'>
+```text
 Targaryen
 and
 Dragon
-</pre>
+```

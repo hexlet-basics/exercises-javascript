@@ -59,9 +59,9 @@ let yuansCount = dollarsCount * yuansPerDollar; // 431.875
 console.log('The price is ' + yuansCount + ' yuans');
 ```
 
-<pre class='hexlet-basics-output'>
+```text
 The price is 431.875 yuans
-</pre>
+```
 
 Cualquier variable puede ser parte de cualquier expresión. En el momento de la evaluación, el valor de la variable se sustituye en lugar de su nombre.
 

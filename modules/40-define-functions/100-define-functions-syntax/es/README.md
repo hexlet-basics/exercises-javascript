@@ -18,7 +18,7 @@ Internamente, la realización de una llamada de este tipo tiene bastante lógica
 
 Creemos nuestra primera función. Su tarea es mostrar un saludo en la pantalla:
 
-<pre class='hexlet-basics-output'>Hello, Hexlet!</pre>
+```textHello, Hexlet!```
 
 ```javascript
 // Definición de la función

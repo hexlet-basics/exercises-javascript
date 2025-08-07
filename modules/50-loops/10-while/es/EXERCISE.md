@@ -5,4 +5,8 @@ Modifica la función `printNumbers()` para que muestre los números en orden inv
 printNumbers(4);
 ```
 
-<pre class='hexlet-basics-output'>4<br>3<br>2<br>1<br>finished!</pre>
+```text4
+3
+2
+1
+finished!```

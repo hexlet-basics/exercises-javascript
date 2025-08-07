@@ -9,10 +9,10 @@ Para el cuerpo del correo, utiliza las variables `info` e `intro`, asegurándote
 
 El resultado en la pantalla se verá así:
 
-<pre class='hexlet-basics-output'>
+```text
 Hello, Joffrey!
 Here is important information about your account security.
 We couldn't verify your mother's maiden name.
-</pre>
+```
 
 Realiza la tarea usando solamente dos `console.log()`.

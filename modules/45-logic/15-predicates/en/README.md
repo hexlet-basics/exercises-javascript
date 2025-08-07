@@ -6,7 +6,7 @@ const isInfant = (age) => age < 1;
 console.log(isInfant(3));
 ```
 
-<pre class='hexlet-basics-output'>false</pre>
+```textfalse```
 
 This kind of function is called a predicate. Predicate functions answer a question and always (without exception!) return either `true` or `false`.
 
@@ -29,4 +29,4 @@ const isCastle = (type) => type === 'Castle';
 console.log(isCastle('Sea'));
 ```
 
-<pre class='hexlet-basics-output'>false</pre>
+```textfalse```

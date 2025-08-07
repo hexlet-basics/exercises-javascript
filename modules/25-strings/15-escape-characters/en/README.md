@@ -46,11 +46,11 @@ Why is it done in this way? `\n` is just a way to write a line break symbol. Tha
 
 The Line Feed symbol is not something specific to programming. Anyone who has ever typed on a computer has used the line feed by clicking Enter. Many editors can display these invisible characters, you can use this feature to see where they are (though it's only for display, these characters are invisible, they have no graphical representation):
 
-<pre class='hexlet-basics-output'>
+```text
 - Hi!¶
 - Oh, hey!¶
 - What's up?
-</pre>
+```
 
 The device that outputs the corresponding text takes this character into account. For example, when the printer reaches the line feed, it pulls the paper up one line, and the text editor brings all subsequent text down one line as well.
 
@@ -82,10 +82,11 @@ Note:
 
     First the interpreter outputs the string "line feed", and then the normal string. The program will print it like this:
 
-    <pre class='hexlet-basics-output'>
-    <br>
+    ```text
+
+
     Dunsen
-    </pre>
+    ```
 
     Why are there two empty lines before the *Dunsen* line instead of one? The point is that `console.log()` automatically adds a line feed to the end when it outputs a value. So, we explicitly typed one line feed, passing this escape character as an argument in the function, and the second line feed is added automatically by the function itself.
 
@@ -102,13 +103,15 @@ Note:
 
     The result:
 
-    <pre class='hexlet-basics-output'>
+    ```text
     Polliver
-    Gregor Clegane<br>
-    Chiswyck<br>
+    Gregor Clegane
+
+    Chiswyck
+
 
     Dunsen
-    </pre>
+    ```
 
     Now you understand enough to figure out why the result was formed in this way.
 
@@ -120,8 +123,8 @@ console.log('Joffrey loves using \\n');
 
 The result:
 
-<pre class='hexlet-basics-output'>
+```text
 Joffrey loves using \n
-</pre>
+```
 
 A small but important note about Windows. Windows uses `\r\n` by default to enter a line break. This combination works well on Windows but creates problems when copied to other systems (for example, when the development team includes both Windows and Linux users). The point is that the sequence `\r\n` has a different interpretation depending on the encoding chosen (we discuss it later). For this reason, it's common among developers to always use `\n` without `\r`, since it means that LF is always interpreted the same way and works fine on any system. Remember to configure your editor to use `\n`.

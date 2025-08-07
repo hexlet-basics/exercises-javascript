@@ -49,11 +49,11 @@ theory: |
 
   El carácter de salto de línea no es algo específico de la programación. Todos los que han escrito en una computadora han utilizado el salto de línea al presionar Enter. En muchos editores hay una opción que permite mostrar los caracteres invisibles, lo que permite ver dónde se encuentran (aunque esto es solamente una representación esquemática, estos caracteres no tienen una representación gráfica; son invisibles):
 
-  <pre class='hexlet-basics-output'>
+  ```text
   - ¡Hola!¶
   - ¡Oh, hola!¶
   - ¿Cómo estás?
-  </pre>
+  ```
 
   El dispositivo que muestra el texto correspondiente tiene en cuenta este carácter. Por ejemplo, una impresora, al encontrar un LF, avanza el papel hacia arriba una línea, y un editor de texto mueve todo el texto siguiente hacia abajo, también una línea.
 
@@ -85,10 +85,11 @@ theory: |
 
       Aquí primero imprimimos una cadena "salto de línea" y luego imprimimos una cadena normal. El programa mostrará en la pantalla:
 
-      <pre class='hexlet-basics-output'>
-      <br>
+      ```text
+
+
       Dunsen
-      </pre>
+      ```
 
       ¿Por qué antes de la cadena *Dunsen* hay dos líneas vacías en lugar de una? El caso es que `console.log()` agrega automáticamente un carácter de salto de línea al final al imprimir un valor. Por lo tanto, especificamos un salto de línea explícitamente pasando este carácter como argumento a la función, y el segundo salto de línea se agrega automáticamente por la función.
 
@@ -105,13 +106,15 @@ theory: |
 
       La salida será la siguiente:
 
-      <pre class='hexlet-basics-output'>
+      ```text
       Polliver
-      Gregor Clegane<br>
-      Chiswyck<br>
+      Gregor Clegane
+
+      Chiswyck
+
 
       Dunsen
-      </pre>
+      ```
 
       Ahora tienes suficiente conocimiento para entender por qué se formó la salida de esta manera.
 
@@ -123,9 +126,9 @@ theory: |
 
   se mostrará en la pantalla:
 
-  <pre class='hexlet-basics-output'>
+  ```text
   Joffrey loves using \n
-  </pre>
+  ```
 
   Una pequeña pero importante nota sobre Windows. En Windows, por defecto se utiliza `\r\n` para el salto de línea. Esta combinación funciona bien solamente en Windows, pero crea problemas al transferir a otros sistemas (por ejemplo, cuando en un equipo de desarrollo hay usuarios tanto de Windows como de Linux). El caso es que la secuencia `\r\n` tiene diferentes interpretaciones dependiendo de la codificación seleccionada (esto se discutirá más adelante). Por esta razón, en el ámbito de desarrollo se acostumbra a usar siempre `\n` sin `\r`, ya que LF siempre se interpreta de la misma manera y funciona perfectamente en cualquier sistema. No olvides configurar tu editor para usar `\n`.
 

@@ -1,7 +1,7 @@
 
 Напишите программу, которая выводит на экран:
 
-```
+```text
 - Did Joffrey agree?
 - He did. He also said "I love using \n".
 ```

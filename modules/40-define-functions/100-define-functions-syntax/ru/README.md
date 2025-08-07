@@ -18,7 +18,7 @@ send(email, title, body);
 
 Создадим нашу первую функцию. Ее задача - вывести на экран приветствие:
 
-<pre class='hexlet-basics-output'>Hello, Hexlet!</pre>
+```textHello, Hexlet!```
 
 ```javascript
 // Определение функции

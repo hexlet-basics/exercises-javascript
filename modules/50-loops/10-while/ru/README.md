@@ -33,12 +33,12 @@ const printNumbers = (lastNumber) => {
 printNumbers(3);
 ```
 
-<pre class='hexlet-basics-output'>
+```text
 1
 2
 3
 finished!
-</pre>
+```
 
 В коде функции использован цикл `while`. Он состоит из трёх элементов:
 

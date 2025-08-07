@@ -13,7 +13,7 @@ That is why our website says “Tests passed” once you solve the task correctl
 
 One of your tasks in the following lessons will be to write a function that performs certain calculations and returns the result. As an example, let's assume you made a small mistake and the function returns the wrong value. In that case, the system will give you the following message:
 
-<pre class='hexlet-basics-output'>
+```text
   ● test
 
   expect(received).toBe(expected) // Object.is equality
@@ -22,7 +22,7 @@ One of your tasks in the following lessons will be to write a function that perf
     "Hello, World!"
   Received:
     "ello, World!"
-</pre>
+```
 
 In addition to our tests, it's very useful to experiment with code in the [browser console](https://developer.mozilla.org/en-US/docs/Tools/Browser_Console). When something isn't clear to you, or you want to experiment with code, feel free to do all of this in the console.
 

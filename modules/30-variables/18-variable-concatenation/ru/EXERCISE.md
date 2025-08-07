@@ -9,10 +9,10 @@
 
 Результат на экране будет выглядеть так:
 
-<pre class='hexlet-basics-output'>
+```text
 Hello, Joffrey!
 Here is important information about your account security.
 We couldn't verify your mother's maiden name.
-</pre>
+```
 
 Выполните задание, используя только два `console.log()`.

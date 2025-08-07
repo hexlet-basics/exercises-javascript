@@ -5,7 +5,7 @@ Recordemos la función `isInfant()` del tema anterior:
 const isInfant = (age) => age < 1;
 console.log(isInfant(3));
 ```
-<pre class='hexlet-basics-output'>false</pre>
+```textfalse```
 
 Estas funciones se llaman funciones booleanas. Los boolenos (o funciones de pregunta) responden a una pregunta y siempre (¡sin excepciones!) devuelven `true` o `false`.
 
@@ -28,4 +28,4 @@ const isCastle = (type) => type === 'Castle';
 console.log(isCastle('Sea'));
 ```
 
-<pre class='hexlet-basics-output'>false</pre>
+```textfalse```

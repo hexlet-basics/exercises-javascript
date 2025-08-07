@@ -14,9 +14,9 @@ Get rid of the magic numbers by creating new variables and print them.
 
 You'll get this:
 
-<pre class='hexlet-basics-output'>
+```text
 King Balon the 6th has 102 rooms.
-</pre>
+```
 
 The variable names should give the meaning of the numbers, but should also be short and succinct enough to be readable.
 
