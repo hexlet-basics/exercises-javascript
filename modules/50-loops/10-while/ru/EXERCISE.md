@@ -5,8 +5,9 @@
 printNumbers(4);
 ```
 
-```text4
+```text
 3
 2
 1
-finished!```
+finished!
+```
