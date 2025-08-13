@@ -15,7 +15,11 @@ compose-install:
 	docker-compose run --rm exercises npm ci
 
 code-lint:
-	npx eslint modules
+	npx tsc --build
+	npx @biomejs/biome check
+
+code-lint-fix:
+	npx @biomejs/biome check --fix
 
 compose-bash:
 	docker-compose run --rm exercises bash

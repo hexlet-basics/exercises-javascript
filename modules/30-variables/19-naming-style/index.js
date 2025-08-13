@@ -1,8 +1,8 @@
 /* eslint prefer-const: 0 */
 
 // BEGIN
-let firstNumber = 11;
-let secondNumber = -100;
+const firstNumber = 11;
+const secondNumber = -100;
 
 console.log(firstNumber * secondNumber);
 // END

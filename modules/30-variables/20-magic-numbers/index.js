@@ -1,9 +1,9 @@
-/* eslint prefer-const: 0, prefer-template: 0 */
+/** biome-ignore-all lint/style/useTemplate: - */
 
-let king = 'King Balon the 6th';
+const king = 'King Balon the 6th';
 
 // BEGIN
-let numberOfCastles = 6;
-let roomsPerCastle = 17;
+const numberOfCastles = 6;
+const roomsPerCastle = 17;
 console.log(king + ' has ' + numberOfCastles * roomsPerCastle + ' rooms.');
 // END

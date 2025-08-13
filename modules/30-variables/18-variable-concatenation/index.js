@@ -1,10 +1,10 @@
-/* eslint prefer-const: 0, prefer-template: 0 */
+/** biome-ignore-all lint/style/useTemplate: - */
 
-let info = "We couldn't verify your mother's maiden name.";
-let intro = 'Here is important information about your account security.';
+const info = "We couldn't verify your mother's maiden name.";
+const intro = 'Here is important information about your account security.';
 
-let firstName = 'Joffrey';
-let greeting = 'Hello';
+const firstName = 'Joffrey';
+const greeting = 'Hello';
 
 // BEGIN
 console.log(greeting + ', ' + firstName + '!');

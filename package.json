@@ -2,18 +2,15 @@
   "name": "hexlet-basics",
   "type": "module",
   "devDependencies": {
-    "@eslint/js": "^9.23.0",
-    "eslint": "^9.23.0",
-    "globals": "^16.0.0",
-    "npm-check-updates": "^17.1.16",
-    "typescript-eslint": "^8.29.0",
-    "vitest": "^3.1.1"
+    "@biomejs/biome": "2.1.4",
+    "globals": "^16.3.0",
+    "npm-check-updates": "^18.0.2",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
   },
   "exports": {
     "./got": "./src/hexlet/got.js",
     "./math": "./src/hexlet/math.js",
     "./string": "./src/hexlet/string.js"
-  },
-  "dependencies": {
   }
 }
