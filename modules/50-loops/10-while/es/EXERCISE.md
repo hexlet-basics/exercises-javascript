@@ -5,7 +5,8 @@ Modifica la función `printNumbers()` para que muestre los números en orden inv
 printNumbers(4);
 ```
 
-```text4
+```text
+4
 3
 2
 1

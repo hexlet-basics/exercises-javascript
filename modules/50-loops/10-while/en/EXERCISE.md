@@ -5,7 +5,8 @@ Edit the `printNumbers()` function so that it prints the numbers in reverse orde
 printNumbers(4);
 ```
 
-```text4
+```text
+4
 3
 2
 1
