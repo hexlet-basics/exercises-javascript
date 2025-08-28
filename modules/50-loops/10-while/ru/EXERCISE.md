@@ -6,6 +6,7 @@ printNumbers(4);
 ```
 
 ```text
+4
 3
 2
 1
