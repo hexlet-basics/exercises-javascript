@@ -1,7 +1,5 @@
-/* eslint operator-assignment: 0 */
-
 // BEGIN
-const even = (str) => {
+const getEvenChars = (str) => {
   let i = 0;
   let result = '';
   while (i < str.length) {
@@ -16,4 +14,4 @@ const even = (str) => {
 
 // END
 
-export default even;
+export default getEvenChars;
