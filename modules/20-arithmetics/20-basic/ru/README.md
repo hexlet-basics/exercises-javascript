@@ -25,11 +25,11 @@ console.log(3 + 4);
 ```
 
 ```text
-  console.log(3 + 4)
-              └─┬─┘
-                7
+console.log(3 + 4)
+            └─┬─┘
+              7
 
-  console.log(7)  →  7
+console.log(7)  →  7
 ```
 
 Результат выполнения:
