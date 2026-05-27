@@ -1,2 +1,2 @@
-console.log(3 ** 5);
-console.log(-8 / -4);
+console.log(2 ** 8);
+console.log(9 / 3);
