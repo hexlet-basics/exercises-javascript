@@ -1,1 +1,1 @@
-// You know nothing, Jon Snow!
+// TODO: добавить функцию приветствия

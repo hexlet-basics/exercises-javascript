@@ -8,5 +8,5 @@ test('hello world', async () => {
 
   const firstArg = consoleLogSpy.mock.calls.join('\n');
 
-  expect(firstArg).toBe('What Is Dead May Never Die');
+  expect(firstArg).toBe('Программа успешно запущена');
 });
