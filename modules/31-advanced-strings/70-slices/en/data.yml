@@ -1,0 +1,5 @@
+---
+name: String slices
+tips:
+  - >
+    [String.prototype.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)

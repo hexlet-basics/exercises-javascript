@@ -1,0 +1,5 @@
+---
+name: String characters
+tips:
+  - >
+    [String character access](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#character_access)

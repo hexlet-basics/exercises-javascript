@@ -1,0 +1,10 @@
+---
+name: Интерполяция
+tips:
+  - >
+    [Шаблонные строки](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Template_literals)
+definitions:
+  - name: Интерполяция
+    description: >-
+      способ вставки значений переменных непосредственно в строку-шаблон
+      с помощью синтаксиса ${}.

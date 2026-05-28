@@ -1,0 +1,10 @@
+---
+name: Многострочные строки
+tips:
+  - >
+    [Template literals](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Template_literals)
+definitions:
+  - name: Многострочная строка
+    description: >-
+      строка, содержащая символы перевода строки. В JavaScript создаётся
+      с помощью шаблонных строк (обратные кавычки).

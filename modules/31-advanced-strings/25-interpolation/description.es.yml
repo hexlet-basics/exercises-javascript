@@ -1,0 +1,17 @@
+---
+
+name: Interpolación
+theory: |
+  Los template literals usan backticks y `${}` para insertar variables:
+
+  ```javascript
+  const name = 'Ana';
+  console.log(`Hola, ${name}!`); // => Hola, Ana!
+  ```
+
+instructions: |
+  Usa interpolación para imprimir el mensaje de confirmación del pedido.
+
+tips:
+  - >
+    [Template literals](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Template_literals)

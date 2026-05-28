@@ -1,0 +1,15 @@
+---
+
+name: Extracción de caracteres
+theory: |
+  Accede a caracteres por índice empezando desde cero:
+
+  ```javascript
+  const word = 'hola';
+  console.log(word[0]); // => h
+  ```
+
+instructions: |
+  Imprime el último carácter de la constante dada.
+
+tips: []
