@@ -8,5 +8,5 @@ test('hello world', async () => {
 
   const firstArg = consoleLogSpy.mock.calls.join('\n');
 
-  expect(firstArg).toBe('"Khal Drogo\'s favorite word is "athjahakar""');
+  expect(firstArg).toBe('The file "user\'s_config.json" was not found.');
 });

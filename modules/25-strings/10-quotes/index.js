@@ -1,1 +1,1 @@
-console.log('"Khal Drogo\'s favorite word is "athjahakar""');
+console.log('The file "user\'s_config.json" was not found.');

@@ -8,5 +8,5 @@ test('hello world', async () => {
 
   const firstArg = consoleLogSpy.mock.calls.join('\n');
 
-  expect(firstArg).toBe('Winter came for the House of Frey.');
+  expect(firstArg).toBe('https://github.com/hexlet/exercises-javascript');
 });
