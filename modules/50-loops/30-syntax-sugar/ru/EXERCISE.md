@@ -1,8 +1,8 @@
-
-Реализуйте функцию `filterString()`, принимающую на вход строку и символ, и возвращающую новую строку, в которой удален переданный символ во всех его позициях. Регистр символов важен.
+Напишите функцию `filterString(str, char)`, которая возвращает строку без всех вхождений символа `char`.
 
 ```javascript
-const str = 'If I look back I am lost';
-filterString(str, 'I'); // 'f  look back  am lost'
-filterString('zz Zorro', 'z'); // ' Zorro'
+filterString('hello', 'l'); // => 'heo'
+filterString('banana', 'a'); // => 'bnn'
 ```
+
+Используйте `+=` для накопления результата.
