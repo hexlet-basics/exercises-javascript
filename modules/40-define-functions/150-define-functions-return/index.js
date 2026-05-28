@@ -1,8 +1,9 @@
 // BEGIN
-const sayHurrayThreeTimes = () => {
-  const word = 'hurray!';
-  return `${word} ${word} ${word}`;
-};
+function sayHurray() {
+  return 'hurray! hurray! hurray!';
+}
 // END
 
-export default sayHurrayThreeTimes;
+console.log(sayHurray());
+
+export default sayHurray;
