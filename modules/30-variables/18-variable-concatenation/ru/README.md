@@ -1,26 +1,21 @@
-
-Для закрепления предыдущей темы, попробуем использовать переменные с конкатенацией. Синтаксически ничего не меняется: мы умеем конкатенировать (склеивать) две строки:
-
-```javascript
-let what = 'Kings' + 'road';
-console.log(what); // => Kingsroad
-```
-
-… а значит сумеем конкатенировать строку и одну переменную, в которой записана строка:
+Переменные можно использовать в конкатенации так же, как и обычные строки.
 
 ```javascript
-let first = 'Kings';
-let what = first + 'road';
-
-console.log(what); // => Kingsroad
+const firstName = 'Kings';
+const lastName = 'road';
+console.log(firstName + lastName); // => Kingsroad
 ```
 
-… и даже конкатенировать две переменные, в которых записаны строки:
+## Пример с формированием текста
+
+Переменные особенно полезны, когда из нескольких частей нужно собрать готовый текст.
 
 ```javascript
-let first = 'Kings';
-let last = 'road';
+const greeting = 'Здравствуйте';
+const firstName = 'Анна';
 
-let what = first + last;
-console.log(what); // => Kingsroad
+console.log(greeting + ', ' + firstName + '!');
+// => Здравствуйте, Анна!
 ```
+
+Такой подход позволяет легко менять имя или форму обращения, не трогая остальной код.

@@ -9,6 +9,6 @@ test('hello world', async () => {
   const firstArg = consoleLogSpy.mock.calls.join('\n');
 
   expect(firstArg).toBe(
-    "Hello, Joffrey!\nHere is important information about your account security.\nWe couldn't verify your mother's maiden name.",
+    'Здравствуйте, Анна!\nСпасибо за ваш заказ.\nОжидаемая дата доставки — 3 рабочих дня.',
   );
 });
