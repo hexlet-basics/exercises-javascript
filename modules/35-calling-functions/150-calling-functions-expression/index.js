@@ -1,8 +1,5 @@
-import { length } from 'hexlet-basics/string';
-
-const text = 'Never forget what you are, for surely the world will not';
-
-// BEGIN
-const result = `First: ${text[0]}\nLast: ${text[length(text) - 1]}`;
-console.log(result);
-// END
+const text = 'Hexlet';
+const first = text[0];
+const last = text[text.length - 1];
+console.log(`First: ${first}`);
+console.log(`Last: ${last}`);
