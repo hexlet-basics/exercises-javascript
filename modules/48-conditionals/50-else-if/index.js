@@ -1,17 +1,13 @@
 // BEGIN
-const whoIsThisHouseToStarks = (houseName) => {
-  let status;
-
-  if (houseName === 'Karstark' || houseName === 'Tally') {
-    status = 'friend';
-  } else if (houseName === 'Lannister' || houseName === 'Frey') {
-    status = 'enemy';
+function getTrafficLightAction(color) {
+  if (color === 'red') {
+    return 'Stop';
+  } else if (color === 'yellow') {
+    return 'Prepare';
   } else {
-    status = 'neutral';
+    return 'Go';
   }
-
-  return status;
-};
+}
 // END
 
-export default whoIsThisHouseToStarks;
+export default getTrafficLightAction;

@@ -1,7 +1,9 @@
+Напишите функцию `guessNumber(guess)`, которая:
 
-Реализуйте функцию `guessNumber()`, которая принимает число и проверяет, равно ли число заданному (пусть это будет 42). Если равно, то функция должна вернуть строку `'You win!'`, в противном случае нужно вернуть строку `'Try again!'`.
+- возвращает `'You win!'`, если `guess === 42`
+- возвращает `'Try again!'` в противном случае
 
 ```javascript
-guessNumber(42) // You win!
-guessNumber(61) // Try again!
+guessNumber(42); // => 'You win!'
+guessNumber(7);  // => 'Try again!'
 ```
