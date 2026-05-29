@@ -1,2 +1,2 @@
-const maxLoginAttempts = 3;
-console.log(maxLoginAttempts);
+const MAX_LOGIN_ATTEMPTS = 3;
+console.log(MAX_LOGIN_ATTEMPTS);
