@@ -6,7 +6,10 @@ const joinNumbersFromRange = (start, finish) => {
   let result = '';
 
   while (i <= finish) {
-    result = `${result}${i}`;
+    if (result !== '') {
+      result += ', ';
+    }
+    result += i;
     i = i + 1;
   }
 

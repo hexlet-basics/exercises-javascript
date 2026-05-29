@@ -8,7 +8,6 @@ const printNumbers = (initialNumber) => {
     console.log(i);
     i = i - 1;
   }
-  console.log('finished!');
   // END
 };
 

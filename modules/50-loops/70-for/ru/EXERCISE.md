@@ -2,7 +2,7 @@
 
 ```javascript
 encrypt('abcd'); // => 'badc'
-encrypt('hello'); // => 'ehlol' (нечётный символ не меняется)
+encrypt('hello'); // => 'ehllo' (нечётный символ не меняется)
 ```
 
 Используйте цикл `for` с шагом 2.
