@@ -9,6 +9,6 @@ test('hello world', async () => {
   const firstArg = consoleLogSpy.mock.calls.join('\n');
 
   expect(firstArg).toBe(
-    '- Did Joffrey agree?\n- He did. He also said "I love using \\n".',
+    'Для разделения строк используйте "\\n"\nПример: console.log("строка1\\nстрока2")',
   );
 });
