@@ -2,11 +2,11 @@
   "name": "hexlet-basics",
   "type": "module",
   "devDependencies": {
-    "@biomejs/biome": "2.1.4",
-    "globals": "^16.3.0",
-    "npm-check-updates": "^18.0.2",
-    "typescript": "^5.9.2",
-    "vitest": "^3.2.4"
+    "@biomejs/biome": "2.4.16",
+    "globals": "^17.6.0",
+    "npm-check-updates": "^22.2.1",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.7"
   },
   "exports": {
     "./got": "./src/hexlet/got.js",
