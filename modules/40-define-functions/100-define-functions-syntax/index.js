@@ -1,8 +1,9 @@
 // BEGIN
-const printMotto = () => {
+function printMotto() {
   console.log('Winter is coming');
-};
+}
 // END
 
-// exports are studied on Hexlet
+printMotto();
+
 export default printMotto;
