@@ -2,7 +2,7 @@ import { expect, test } from 'vitest';
 import f from './index.js';
 
 test('test', () => {
-  expect(f('hey')).toBe('yeh');
-  expect(f('Hey')).toBe('Hey');
-  expect(f('')).toBe('');
+  expect(f('HELLO')).toBe('hello');
+  expect(f('hello')).toBe('HELLO');
+  expect(f('Hello')).toBe('HELLO');
 });
