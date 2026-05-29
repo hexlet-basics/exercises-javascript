@@ -1,12 +1,8 @@
-
-Реализуйте функцию `hasChar()`, которая проверяет (с учётом регистра), содержит ли строка указанную букву. Функция принимает два параметра:
-
-* Строка
-* Буква для поиска
+Напишите функцию `hasChar(str, char)`, которая возвращает `true`, если строка `str` содержит символ `char`, и `false` в противном случае.
 
 ```javascript
-hasChar('Hexlet', 'H'); // true
-hasChar('Hexlet', 'h'); // false
-hasChar('Awesomeness', 'm'); // true
-hasChar('Awesomeness', 'd'); // false
+hasChar('hello', 'e'); // => true
+hasChar('hello', 'z'); // => false
 ```
+
+Используйте цикл с ранним `return`.
