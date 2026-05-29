@@ -1,0 +1,12 @@
+---
+name: Явное преобразование типов
+tips:
+  - >
+    [Number()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/Number)
+  - >
+    [String()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/String)
+definitions:
+  - name: Явное преобразование типов
+    description: >-
+      намеренное приведение значения к другому типу с помощью функций
+      Number(), String(), Boolean().

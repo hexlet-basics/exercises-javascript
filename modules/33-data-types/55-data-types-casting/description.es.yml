@@ -1,0 +1,10 @@
+---
+
+name: Conversión de tipos explícita
+theory: |
+  Usa funciones Number(), String(), Boolean() para conversión explícita de tipos.
+
+instructions: |
+  Trunca la temperatura, conviértela a cadena y muestra el resultado con la unidad.
+
+tips: []
