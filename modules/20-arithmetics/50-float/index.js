@@ -1,1 +1,1 @@
-console.log(0.39 * 0.22);
+console.log(0.1 + 0.2);
