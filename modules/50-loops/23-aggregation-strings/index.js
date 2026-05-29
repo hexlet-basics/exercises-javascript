@@ -1,20 +1,17 @@
-/* eslint operator-assignment: 0 */
-
 // BEGIN
-const joinNumbersFromRange = (start, finish) => {
-  let i = start;
+const sanitizePhoneNumber = (phone) => {
   let result = '';
-
-  while (i <= finish) {
-    if (result !== '') {
-      result += ', ';
+  let i = 0;
+  while (i < phone.length) {
+    const char = phone[i];
+    if (!' ()-'.includes(char)) {
+      result += char;
     }
-    result += i;
-    i = i + 1;
+    i += 1;
   }
 
   return result;
 };
 // END
 
-export default joinNumbersFromRange;
+export default sanitizePhoneNumber;

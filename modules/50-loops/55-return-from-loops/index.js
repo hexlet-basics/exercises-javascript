@@ -1,8 +1,8 @@
 // BEGIN
-const hasChar = (str, char) => {
+const hasAtSymbol = (email) => {
   let i = 0;
-  while (i < str.length) {
-    if (str[i] === char) {
+  while (i < email.length) {
+    if (email[i] === '@') {
       return true;
     }
 
@@ -13,4 +13,4 @@ const hasChar = (str, char) => {
 };
 // END
 
-export default hasChar;
+export default hasAtSymbol;

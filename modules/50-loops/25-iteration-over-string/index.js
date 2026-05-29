@@ -1,13 +1,19 @@
-/* eslint operator-assignment: 0 */
-
 // BEGIN
-const printReversedWordBySymbol = (word) => {
-  let i = word.length - 1;
-  while (i >= 0) {
-    console.log(word[i]);
-    i = i - 1;
+const maskCardNumber = (cardNumber) => {
+  let result = '';
+  let i = 0;
+  const visiblePartStart = cardNumber.length - 4;
+  while (i < cardNumber.length) {
+    if (i < visiblePartStart) {
+      result += '*';
+    } else {
+      result += cardNumber[i];
+    }
+    i += 1;
   }
+
+  return result;
 };
 // END
 
-export default printReversedWordBySymbol;
+export default maskCardNumber;

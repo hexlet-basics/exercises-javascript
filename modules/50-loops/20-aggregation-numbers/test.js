@@ -2,11 +2,9 @@ import { expect, test } from 'vitest';
 import f from './index.js';
 
 test('test', () => {
-  expect(f(2, 2)).toEqual(2);
-  expect(f(1, 3)).toEqual(6);
-  expect(f(1, 5)).toEqual(120);
-  expect(f(2, 5)).toEqual(120);
-  expect(f(0, 5)).toEqual(0);
-  expect(f(-4, -2)).toEqual(-24);
-  expect(f(-4, -3)).toEqual(12);
+  expect(f(0)).toBe(0);
+  expect(f(80)).toBe(400);
+  expect(f(100)).toBe(500);
+  expect(f(150)).toBe(850);
+  expect(f(250)).toBe(1700);
 });

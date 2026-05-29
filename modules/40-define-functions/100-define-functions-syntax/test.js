@@ -9,5 +9,5 @@ test('hello world', async () => {
 
   const firstArg = consoleLogSpy.mock.calls.join('\n');
 
-  expect(firstArg).toBe('Winter is coming');
+  expect(firstArg).toBe('Hello, World!');
 });

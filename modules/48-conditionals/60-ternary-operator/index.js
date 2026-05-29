@@ -1,7 +1,5 @@
 // BEGIN
-function convertText(str) {
-  return str.toUpperCase() === str ? str.toLowerCase() : str.toUpperCase();
-}
+const flipFlop = (str) => (str === 'flip' ? 'flop' : 'flip');
 // END
 
-export default convertText;
+export default flipFlop;
