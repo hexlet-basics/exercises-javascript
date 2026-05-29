@@ -1,1 +1,1 @@
-console.log('What Is Dead May Never Die');
+console.log('Программа успешно запущена');
