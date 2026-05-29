@@ -34,3 +34,27 @@ result = `${result}hexlet`; // hexlet
 result = `${result}hexlet`; // hexlethexlet
 result = `${result}hexlet`; // hexlethexlethexlet
 ```
+
+Наглядно процесс наращивания строки выглядит так:
+
+```text
+repeat('hexlet', 3):
+
+i=1: result = ''             + 'hexlet' = 'hexlet'
+i=2: result = 'hexlet'       + 'hexlet' = 'hexlethexlet'
+i=3: result = 'hexlethexlet' + 'hexlet' = 'hexlethexlethexlet'
+                                            └── результат
+```
+
+## Нейтральный элемент
+
+Чтобы наращивание работало, нужно стартовое значение. Для строк таким значением является **пустая строка** `''`.
+
+Она называется нейтральным элементом, потому что при конкатенации ничего не меняет:
+
+```javascript
+console.log('' + 'abc'); // => abc
+console.log('abc' + ''); // => abc
+```
+
+Поэтому именно пустая строка всегда используется как начальное значение при агрегации строк.
