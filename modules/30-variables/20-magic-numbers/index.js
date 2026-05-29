@@ -1,9 +1,8 @@
-/** biome-ignore-all lint/style/useTemplate: - */
-
-const king = 'King Balon the 6th';
-
 // BEGIN
-const numberOfCastles = 6;
-const roomsPerCastle = 17;
-console.log(king + ' has ' + numberOfCastles * roomsPerCastle + ' rooms.');
+const label = 'Ящиков на складе:';
+const palletsCount = 6;
+const boxesPerPallet = 17;
+
+console.log(label);
+console.log(palletsCount * boxesPerPallet);
 // END

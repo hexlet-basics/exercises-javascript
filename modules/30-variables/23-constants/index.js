@@ -1,3 +1,2 @@
-const army = 'the white walkers';
-
-console.log(army);
+const maxLoginAttempts = 3;
+console.log(maxLoginAttempts);

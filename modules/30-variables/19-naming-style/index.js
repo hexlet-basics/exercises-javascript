@@ -1,8 +1,5 @@
-/* eslint prefer-const: 0 */
-
 // BEGIN
-const firstNumber = 11;
-const secondNumber = -100;
-
-console.log(firstNumber * secondNumber);
+const itemCount = 20;
+const itemPrice = 100;
+console.log(itemCount * itemPrice);
 // END

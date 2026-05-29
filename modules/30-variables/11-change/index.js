@@ -1,7 +1,5 @@
-let name = 'Brienna';
-
 // BEGIN
-name = 'anneirB';
+let deliveryStatus = 'в пути';
+deliveryStatus = 'доставлен';
+console.log(deliveryStatus);
 // END
-
-console.log(name);

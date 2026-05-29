@@ -1,12 +1,9 @@
-/** biome-ignore-all lint/style/useTemplate: - */
-
-const info = "We couldn't verify your mother's maiden name.";
-const intro = 'Here is important information about your account security.';
-
-const firstName = 'Joffrey';
-const greeting = 'Hello';
-
 // BEGIN
+const firstName = 'Анна';
+const greeting = 'Здравствуйте';
+const intro = 'Спасибо за ваш заказ.';
+const info = 'Ожидаемая дата доставки — 3 рабочих дня.';
+
 console.log(greeting + ', ' + firstName + '!');
 console.log(intro + '\n' + info);
 // END
