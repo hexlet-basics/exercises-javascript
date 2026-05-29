@@ -2,7 +2,9 @@ import { expect, test } from 'vitest';
 import f from './index.js';
 
 test('test', () => {
-  expect(f('red')).toBe('Stop');
-  expect(f('yellow')).toBe('Prepare');
-  expect(f('green')).toBe('Go');
+  expect(f('green')).toBe('go');
+  expect(f('yellow')).toBe('slow down');
+  expect(f('red')).toBe('stop');
+  expect(f('blue')).toBe('unknown');
+  expect(f('purple')).toBe('unknown');
 });

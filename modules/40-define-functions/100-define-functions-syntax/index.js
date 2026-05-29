@@ -1,9 +1,7 @@
 // BEGIN
-function printMotto() {
-  console.log('Winter is coming');
+function sayHello() {
+  console.log('Hello, World!');
 }
 // END
 
-printMotto();
-
-export default printMotto;
+export default sayHello;

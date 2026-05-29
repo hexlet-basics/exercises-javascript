@@ -8,5 +8,7 @@ test('hello world', async () => {
 
   const firstArg = consoleLogSpy.mock.calls.join('\n');
 
-  expect(firstArg).toBe('Robert\nStannis\nRenly');
+  expect(firstArg).toBe(
+    'Заказ №1337\nСтатус: доставляется\nПримерный срок: 2 дня',
+  );
 });

@@ -1,5 +1,7 @@
-// BEGIN
 let deliveryStatus = 'в пути';
+
+// BEGIN
 deliveryStatus = 'доставлен';
-console.log(deliveryStatus);
 // END
+
+console.log(deliveryStatus);

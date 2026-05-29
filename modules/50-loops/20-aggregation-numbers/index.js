@@ -1,17 +1,20 @@
-/* eslint operator-assignment: 0 */
-
 // BEGIN
-const multiplyNumbersFromRange = (start, finish) => {
-  let i = start;
-  let result = 1;
-
-  while (i <= finish) {
-    result = result * i;
-    i = i + 1;
+const calculateElectricityBill = (kwh) => {
+  let total = 0;
+  let current = 1;
+  while (current <= kwh) {
+    if (current <= 100) {
+      total += 5;
+    } else if (current <= 200) {
+      total += 7;
+    } else {
+      total += 10;
+    }
+    current += 1;
   }
 
-  return result;
+  return total;
 };
 // END
 
-export default multiplyNumbersFromRange;
+export default calculateElectricityBill;

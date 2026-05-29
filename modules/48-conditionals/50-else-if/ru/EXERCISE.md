@@ -1,11 +1,12 @@
-Напишите функцию `getTrafficLightAction(color)`, которая принимает цвет светофора и возвращает соответствующее действие:
+Реализуйте функцию `getTrafficLightAction(color)`, которая принимает цвет светофора и возвращает, что нужно делать водителю:
 
-- `'red'` → `'Stop'`
-- `'yellow'` → `'Prepare'`
-- `'green'` → `'Go'`
+- `'green'` → `'go'`
+- `'yellow'` → `'slow down'`
+- `'red'` → `'stop'`
+- любой другой цвет → `'unknown'`
 
 ```javascript
-getTrafficLightAction('red');    // => 'Stop'
-getTrafficLightAction('yellow'); // => 'Prepare'
-getTrafficLightAction('green');  // => 'Go'
+getTrafficLightAction('green');  // => 'go'
+getTrafficLightAction('red');    // => 'stop'
+getTrafficLightAction('purple'); // => 'unknown'
 ```
