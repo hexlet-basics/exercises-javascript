@@ -1,0 +1,15 @@
+---
+
+name: Cadenas multilínea
+theory: |
+  Los template literals preservan los saltos de línea:
+
+  ```javascript
+  const text = `Línea 1
+  Línea 2`;
+  ```
+
+instructions: |
+  Crea una variable con texto multilínea usando template literals.
+
+tips: []

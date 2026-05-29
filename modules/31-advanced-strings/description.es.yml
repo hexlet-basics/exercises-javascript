@@ -1,0 +1,5 @@
+---
+
+name: Cadenas avanzadas
+description: |
+  En este módulo aprenderemos a incrustar variables en cadenas mediante interpolación, extraer caracteres individuales por índice, trabajar con segmentos de cadenas y crear cadenas multilínea.

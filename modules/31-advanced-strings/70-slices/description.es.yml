@@ -1,0 +1,15 @@
+---
+
+name: Segmentos de cadena
+theory: |
+  Usa `slice()` para extraer parte de una cadena:
+
+  ```javascript
+  const text = 'Hello, World!';
+  console.log(text.slice(7, 12)); // => World
+  ```
+
+instructions: |
+  Extrae el dominio de una URL sin el protocolo usando slice().
+
+tips: []

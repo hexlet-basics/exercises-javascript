@@ -1,0 +1,5 @@
+---
+
+name: Advanced strings
+description: |
+  In this module we will learn to embed variables into strings using interpolation, extract individual characters by index, work with string slices, and create multiline strings.

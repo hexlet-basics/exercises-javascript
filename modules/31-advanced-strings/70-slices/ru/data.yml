@@ -1,0 +1,9 @@
+---
+name: Срезы строк
+tips:
+  - >
+    [String.prototype.slice()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
+definitions:
+  - name: Срез
+    description: >-
+      часть строки, извлечённая методом slice() по заданным индексам начала и конца.

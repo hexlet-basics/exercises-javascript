@@ -1,0 +1,5 @@
+---
+name: Segmentos de cadena
+tips:
+  - >
+    [String.prototype.slice()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
