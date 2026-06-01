@@ -1,3 +1,43 @@
+JavaScript admite la programación orientada a objetos (POO): de forma muy simplificada, es un enfoque en el que operamos no con datos y funciones, sino con objetos y métodos. No nos detendremos en detalle en este tema en este curso, porque es amplio y requiere cierta preparación. Pero no podemos ignorarlo por completo, porque los objetos aparecen en JavaScript casi de inmediato. Así que lo abordaremos solo en la medida en que lo requieran las tareas actuales.
+
+Hasta ahora trabajábamos con datos y les aplicábamos funciones. En la POO, en lugar de datos tenemos objetos sobre los que se llaman métodos. Por ejemplo, las cadenas en JavaScript son objetos y tienen un método `toUpperCase()` que convierte todas las letras a mayúsculas.
+
+```javascript
+const name = 'Robb';
+console.log(name.toUpperCase()); // => ROBB
+```
+
+A diferencia de las funciones, los métodos se llaman *sobre un objeto*. Primero se escribe el objeto (un valor, una variable o una constante), luego un punto y la llamada al método.
+
+## Propiedades
+
+Además de los métodos, los datos tienen propiedades. Una propiedad es un valor asociado a los datos, al que se accede con un punto después de la variable (o constante). Por ejemplo, las cadenas tienen una longitud: la propiedad `length`:
+
+```javascript
+const name = 'Robb';
+const len = name.length;
+console.log(len); // => 4
+```
+
+En muchos lenguajes la longitud de una cadena se calcula con una función especial, pero en JavaScript las propiedades están incorporadas directamente en el lenguaje. Las propiedades están asociadas a los datos de los que se obtienen. Para los tipos de datos primitivos, todas las propiedades están documentadas, como por ejemplo, las [cadenas de texto](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String). Sin embargo, los números no tienen propiedades.
+
+JavaScript permite acceder a propiedades que no existen (por ejemplo, debido a errores de escritura). En este caso, el valor de esas propiedades es `undefined`:
+
+```javascript
+const name = 'Robb';
+console.log(name.whatIsThat); // => undefined
+```
+
+*Pregunta de autoevaluación. ¿Qué imprimirá el código `console.log(name[name.length])` para `name`, definido anteriormente? ¿Por qué es esa la respuesta?*
+
+<details>
+<summary>Respuesta</summary>
+
+El código imprimirá `undefined`, porque se está accediendo a un índice que está fuera de los límites de la cadena. En este caso, `name.length` es 4, pero el índice del último carácter en la cadena es 3.
+
+</details>
+
+## Métodos
 
 Además de las propiedades, los datos también tienen métodos, los cuales son funciones que se encuentran dentro de las propiedades. Desde un punto de vista práctico, esto significa que un método funciona y se llama como una función, pero se accede a él como una propiedad, a través de un punto.
 
