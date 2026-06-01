@@ -530,98 +530,6 @@ La tilde es innecesaria según la norma actual. Con el sentido de «solamente» 
 Предлагаемые варианты:
 solo, solamente, únicamente
 ------------------------
-38-properties/500-properties-chain-of-methods/es/README.md:35:43:1
-...o normal se anidan unas dentro de otras f(f(f())), lo que dificulta mucho el anál...
-Se ha encontrado un posible error ortográfico.
-------------------------
-38-properties/500-properties-chain-of-methods/es/README.md:35:43:1
-...normal se anidan unas dentro de otras f(f(f())), lo que dificulta mucho el anális...
-Se ha encontrado un posible error ortográfico.
-------------------------
-38-properties/500-properties-chain-of-methods/es/README.md:35:43:1
-...rmal se anidan unas dentro de otras f(f(f())), lo que dificulta mucho el análisis...
-Se ha encontrado un posible error ortográfico.
-------------------------
-38-properties/500-properties-chain-of-methods/es/EXERCISE.md:3:43:5
-...na sin crear variables intermedias.  * [slice()](https://developer.mozilla.org/es/doc...
-Se ha encontrado un posible error ortográfico.
-Предлагаемые варианты:
-Sílice, Alice
-------------------------
-38-properties/500-properties-chain-of-methods/es/EXERCISE.md:4:43:4
-...ference/Global_Objects/String/slice) * [trim()](https://developer.mozilla.org/es/doc...
-Se ha encontrado un posible error ortográfico.
-Предлагаемые варианты:
-tris, tría, Rim, Tim, trío
-------------------------
-38-properties/400-properties-expressions/es/EXERCISE.md:4:43:5
-...to:  <pre class='hexlet-basics-output'> First: N Last: t </pre>  Tu tarea es extraer ...
-Se ha encontrado un posible error ortográfico.
-Предлагаемые варианты:
-Fiesta, Firma, Firmó, Firme, Irse, Friso, Farsa, Firmo, Oírse, Fiarse, Karst, Cirat, Tirso, Firmé, Frisa, Frise, Fíes, Firmat, Fort, Miret, Farsi, Fias, Fiase, Fiaste, Firmá, Fis, Fista, Fisto, Flirt, Flirts, Frisá, Frisé, Frisó, Fías, Fíat, Fíats, Fíese, Feist, Fiat, Typst
-------------------------
-38-properties/400-properties-expressions/es/EXERCISE.md:4:43:1
-...re class='hexlet-basics-output'> First: N Last: t </pre>  Tu tarea es extraer est...
-Se ha encontrado un posible error ortográfico.
-------------------------
-38-properties/400-properties-expressions/es/EXERCISE.md:5:43:4
-... class='hexlet-basics-output'> First: N Last: t </pre>  Tu tarea es extraer estos ca...
-Se ha encontrado un posible error ortográfico.
-Предлагаемые варианты:
-Las, Lasa, Laso, Laste, Lasta, Lasto, Lastá, Lasté, Lastó, Lat, Lats
-------------------------
-38-properties/400-properties-expressions/es/EXERCISE.md:5:43:1
-...='hexlet-basics-output'> First: N Last: t </pre>  Tu tarea es extraer estos carac...
-Se ha encontrado un posible error ortográfico.
-------------------------
-38-properties/200-properties-methods/es/README.md:8:43:2
-...ripción revela algunos detalles internos  de implementación que no son importantes...
-Posible error tipográfico: múltiples espacios en blanco
-Предлагаемые варианты:
- 
-------------------------
-38-properties/200-properties-methods/es/README.md:15:43:6
-...í, sino en los datos (objetos) del tipo Number. Los números que se asignan a variables...
-Se ha encontrado un posible error ortográfico.
-Предлагаемые варианты:
-Nombre, Número, Nueve, Cumbre, Nube, Nubes, Numero, Lumbar, Lumbre, Tumbar, Numen, Numera, Numeró, Púber, Rumbera, Rumbero, Tumbe, Rumbea, Rumbeo, Tumben, Zumbar, Zumben, Rumbear, Rumbeó, Zumbe, Denver, Gúmer, Humbert, Lumbier, Uber, Yumbel, Cumbe, Cumbes, Cumbé, Cumbés, Lamber, Nimbar, Nimbe, Nimben, Nimbes, Nimbé, Numbat, Numere, Numerá, Numeré, Rumbee, Rumbeá, Rumbeé, Súber, Tumbes, Tumbé, Zumbel, Zumbes, Zumbé, Tumblr
-------------------------
-38-properties/200-properties-methods/es/README.md:15:43:6
-...este momento se produce lo que se llama boxing.*  Surge una pregunta lógica: ¿por qué ...
-Se ha encontrado un posible error ortográfico.
-Предлагаемые варианты:
-Boeing
-------------------------
-38-properties/200-properties-methods/es/README.md:26:43:3
-...n detalle en los cursos [dedicados a la POO](https://ru.hexlet.io/programs/js-oop?some=param&utm_source=code-basics&utm_medium=referral&utm_campaign=blog&utm_content=lesson)....
-Se ha encontrado un posible error ortográfico.
-Предлагаемые варианты:
-POR, POCO, POP, POLO, POZO, PRO, ZOO, POMO, PORO, POSÓ, PON, POSO, PÍO, PODO, POTO, POYO, LOO, POBO, LOÓ, TOÓ, POA, PAO, POE, POIO, POL, POU, PEO, PIO, PODÓ, POOL, ROO, TOO
-------------------------
-38-properties/100-properties-syntax/es/README.md:22:43:7
-...mente? ¿Por qué es esa la respuesta?*  <details> <summary>Respuesta</summary>  El códig...
-Se ha encontrado un posible error ortográfico.
-Предлагаемые варианты:
-detalles, detalle, detalla, detalló, dejáis, detallas, detallo, datáis, debáis, decaías, dentáis, detal, detales, detallá, detallás, detallé, detasas, detraías, dotáis, emails, metáis, petáis, retail, retáis, vetáis
-------------------------
-38-properties/100-properties-syntax/es/README.md:23:43:7
-...r qué es esa la respuesta?*  <details> <summary>Respuesta</summary>  El código imprimir...
-Se ha encontrado un posible error ortográfico.
-Предлагаемые варианты:
-sumar, sumario, sumaria, sumará, sumara, Yumari, sumare, sumarie, sumariá, sumarié, sumarió, sumaré
-------------------------
-38-properties/100-properties-syntax/es/README.md:23:43:7
-...puesta?*  <details> <summary>Respuesta</summary>  El código imprimirá ``, porque se est...
-Se ha encontrado un posible error ortográfico.
-Предлагаемые варианты:
-sumar, sumario, sumaria, sumará, sumara, Yumari, sumare, sumarie, sumariá, sumarié, sumarió, sumaré
-------------------------
-38-properties/100-properties-syntax/es/README.md:27:43:7
-...l último carácter en la cadena es 3.  </details> 
-Se ha encontrado un posible error ortográfico.
-Предлагаемые варианты:
-detalles, detalle, detalla, detalló, dejáis, detallas, detallo, datáis, debáis, decaías, dentáis, detal, detales, detallá, detallás, detallé, detasas, detraías, dotáis, emails, metáis, petáis, retail, retáis, vetáis
-------------------------
 35-calling-functions/350-stdlib/es/README.md:1:43:4
 ... que quiere lograr. A partir de ahí, es sólo cuestión de técnica. Si se les quita in...
 La tilde es innecesaria según la norma actual. Con el sentido de «solamente» (adv.), cuando hay riesgo de ambigüedad con el adj. «solo», puede escribirse «sólo» (DRAE).
@@ -1666,10 +1574,6 @@ Hurray
 ...ов: «реализовать», «определить» и даже «заимплементить» (от слова implement). Все они встречаю...
 Возможно найдена орфографическая ошибка.
 ------------------------
-38-properties/500-properties-chain-of-methods/ru/README.md:35:43:17
-...еализуется через композицию функций или пайплайн-оператор, который, кстати говоря, постепенно нач...
-Возможно найдена орфографическая ошибка.
-------------------------
 20-arithmetics/60-infinity/ru/README.md:8:43:5
 ..., кто изучал высшую математику (привет, матан!), в этом нет ничего удивительного. Дел...
 Возможно найдена орфографическая ошибка.
@@ -1905,24 +1809,6 @@ pre-class
 Possible spelling mistake found.
 Предлагаемые варианты:
 hex let-basics-output
-------------------------
-38-properties/400-properties-expressions/en/EXERCISE.md:3:43:9
-... constant `` in the following format:  <pre class='hexlet-basics-output'> First: N Last: ...
-This word is normally spelled with a hyphen.
-Предлагаемые варианты:
-pre-class
-------------------------
-38-properties/400-properties-expressions/en/EXERCISE.md:3:43:20
-...` in the following format:  <pre class='hexlet-basics-output'> First: N Last: t </pre>  Your task is...
-Possible spelling mistake found.
-Предлагаемые варианты:
-hex let-basics-output
-------------------------
-38-properties/100-properties-syntax/en/README.md:18:43:10
-...their value is ``:  ```javascript ```  *Self-сheck. What will `` print for the variable ``...
-Possible spelling mistake found.
-Предлагаемые варианты:
-Spell-check
 ------------------------
 35-calling-functions/350-stdlib/en/README.md:11:43:2
 ...s functions. In particular, the module [fs](https://nodejs.org/api/fs.html) is req...
@@ -2587,24 +2473,6 @@ pre-class
 Possible spelling mistake found.
 Предлагаемые варианты:
 hex let-basics-output
-------------------------
-38-properties/400-properties-expressions/en/EXERCISE.md:3:43:9
-... constant `` in the following format:  <pre class='hexlet-basics-output'> First: N Last: ...
-This word is normally spelled with a hyphen.
-Предлагаемые варианты:
-pre-class
-------------------------
-38-properties/400-properties-expressions/en/EXERCISE.md:3:43:20
-...` in the following format:  <pre class='hexlet-basics-output'> First: N Last: t </pre>  Your task is...
-Possible spelling mistake found.
-Предлагаемые варианты:
-hex let-basics-output
-------------------------
-38-properties/100-properties-syntax/en/README.md:18:43:10
-...their value is ``:  ```javascript ```  *Self-сheck. What will `` print for the variable ``...
-Possible spelling mistake found.
-Предлагаемые варианты:
-Spell-check
 ------------------------
 35-calling-functions/350-stdlib/en/README.md:11:43:2
 ...s functions. In particular, the module [fs](https://nodejs.org/api/fs.html) is req...
@@ -3256,18 +3124,6 @@ This sentence does not start with an uppercase letter.
 Предлагаемые варианты:
 Hurray
 ------------------------
-38-properties/400-properties-expressions/en/EXERCISE.md:3:43:9
-... constant `` in the following format:  <pre class='hexlet-basics-output'> First: N Last: ...
-This word is normally spelled with a hyphen.
-Предлагаемые варианты:
-pre-class
-------------------------
-38-properties/400-properties-expressions/en/EXERCISE.md:3:43:20
-...` in the following format:  <pre class='hexlet-basics-output'> First: N Last: t </pre>  Your task is...
-Possible spelling mistake found.
-Предлагаемые варианты:
-hex let-basics-output
-------------------------
 40-define-functions/100-define-functions-syntax/en/README.md:10:43:9
 .... Its job is to print out a greeting:  <pre class='hexlet-basics-output'>Hello, Hexlet!</...
 This word is normally spelled with a hyphen.
@@ -3285,12 +3141,6 @@ hex let-basics-output
 Possible spelling mistake found.
 Предлагаемые варианты:
 FS, is, as, us, FM, ft, vs, FRS, CFS, FBS, FCS, FD, FP, FSA, FSU, TFS, WS, fr, ms, FSH, FSI, FSK, FSM, HFS, NFS, phi, sf, ts, LFS, fps, ifs, phys, PS, AFS, As, BFS, BS, CS, Cs, DFS, DS, EFS, ES, Es, F, FA, FAS, FB, FC, FCs, FDS, FES, FF, FFS, FG, FH, FHS, FI, FJ, FL, FLS, FMS, FMs, FN, FNS, FO, FOS, FPS, FPs, FR, FSB, FSC, FSD, FSE, FSF, FSG, FSN, FSP, FSR, FSS, FST, FSW, FW, FX, FY, Fe, Fm, Fr, GFS, HS, IFS, IS, JS, KS, Ks, LS, MFS, MS, Ms, NS, OFS, OS, Os, PFS, RFS, RS, S, SFS, SS, TS, UFS, US, VFS, XS, ZFS, Zs, cs, f, fa, ff, fl, gs, ks, ls, phis, rs, s, FT
-------------------------
-38-properties/100-properties-syntax/en/README.md:18:43:10
-...their value is ``:  ```javascript ```  *Self-сheck. What will `` print for the variable ``...
-Possible spelling mistake found.
-Предлагаемые варианты:
-Spell-check
 ------------------------
 35-calling-functions/150-calling-functions-expression/en/EXERCISE.md:3:43:9
 ...in the variable `` using this format:  <pre class='hexlet-basics-output'> First: N Last: ...

@@ -1,5 +1,0 @@
----
-name: Methods
-tips:
-  - >
-    [String.prototype.toLowerCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
