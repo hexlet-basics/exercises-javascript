@@ -1,6 +1,6 @@
 ---
 
-name: Parámetros por defecto
+name: Argumentos por defecto
 theory: |
 
   Veamos la función `round()`, que redondea un número entero:
