@@ -1,0 +1,5 @@
+---
+name: Modules
+tips:
+  - |
+    [Documentation on modules (import/export)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
