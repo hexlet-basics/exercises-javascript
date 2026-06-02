@@ -23,4 +23,4 @@ function length(s) {
   return s.length;
 }
 
-export { toUpperCase, toLowerCase, reverse, length };
+export { length, reverse, toLowerCase, toUpperCase };
