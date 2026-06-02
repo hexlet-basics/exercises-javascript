@@ -1,0 +1,5 @@
+---
+name: Пакеты
+tips:
+  - |
+    [О пакетах и модулях в npm](https://docs.npmjs.com/about-packages-and-modules)

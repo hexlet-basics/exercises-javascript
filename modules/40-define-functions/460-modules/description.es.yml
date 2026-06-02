@@ -1,0 +1,38 @@
+---
+
+name: Módulos
+theory: |
+
+  Mientras un programa es pequeño, todo el código cabe en un solo archivo. Pero con el tiempo el programa crece, y orientarse en un único archivo se vuelve difícil. Para dividir el código en partes lógicas, en JavaScript se usan los módulos: un archivo de código independiente es un módulo.
+
+  Un módulo decide qué entregar al exterior con la palabra clave `export`, y otro archivo lo conecta mediante `import`:
+
+  ```javascript
+  import { length } from 'hexlet-basics/string';
+
+  console.log(length('Hello!')); // => 6
+  ```
+
+  De un mismo módulo se pueden importar varios nombres a la vez:
+
+  ```javascript
+  import { reverse, toUpperCase } from 'hexlet-basics/string';
+
+  console.log(reverse('hexlet'));     // => telxeh
+  console.log(toUpperCase('hexlet')); // => HEXLET
+  ```
+
+instructions: |
+
+  Implementa la función `mirror()`. Recibe una cadena, la invierte y la convierte a mayúsculas, y devuelve el resultado.
+
+  Usa las funciones `reverse()` y `toUpperCase()` del módulo `hexlet-basics/string`. Escribe la importación tú mismo.
+
+  ```javascript
+  mirror('hello');  // => 'OLLEH'
+  mirror('Hexlet'); // => 'TELXEH'
+  ```
+
+tips:
+  - |
+    [Documentación sobre módulos (import/export)](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Modules)

@@ -1,0 +1,36 @@
+---
+
+name: Paquetes
+theory: |
+
+  A medida que un programa crece, aumenta no solo la cantidad de código, sino también la de módulos, y el código útil se quiere reutilizar en distintos proyectos. En el ecosistema de JavaScript, la unidad de reutilización y distribución es un **paquete** (un paquete de npm): un conjunto de módulos que se publica y se instala como un todo.
+
+  Un paquete se describe con `package.json` y se instala con `npm install` en `node_modules`. Su contenido se importa por el nombre del paquete:
+
+  ```javascript
+  import { round } from 'hexlet-basics/math';
+
+  console.log(round(3.14159, 2)); // => 3.14
+  ```
+
+  Un paquete suele contener varios módulos. Para elegir uno, se añade una ruta tras su nombre con `/`:
+
+  ```javascript
+  import { reverse } from 'hexlet-basics/string';
+  import { round } from 'hexlet-basics/math';
+  ```
+
+instructions: |
+
+  Implementa la función `formatPrice()`. Recibe un número y devuelve su representación como cadena, redondeada a dos decimales.
+
+  Usa la función `round()` del módulo `hexlet-basics/math`. Escribe la importación tú mismo.
+
+  ```javascript
+  formatPrice(12.3456); // => '12.35'
+  formatPrice(10);      // => '10.00'
+  ```
+
+tips:
+  - |
+    [Sobre paquetes y módulos en npm](https://docs.npmjs.com/about-packages-and-modules)
