@@ -458,73 +458,73 @@ Se ha encontrado un posible error ortográfico.
 Предлагаемые варианты:
 sílice, Alice
 ------------------------
-40-define-functions/150-define-functions-return/es/README.md:58:43:7
+40-define-functions/150-return/es/README.md:58:43:7
 ...uando se le llame?  ```javascript ```  <details> <summary>Respuesta</summary>  En la pa...
 Se ha encontrado un posible error ortográfico.
 Предлагаемые варианты:
 detalles, detalle, detalla, detalló, dejáis, detallas, detallo, datáis, debáis, decaías, dentáis, detal, detales, detallá, detallás, detallé, detasas, detraías, dotáis, emails, metáis, petáis, retail, retáis, vetáis
 ------------------------
-40-define-functions/150-define-functions-return/es/README.md:59:43:7
+40-define-functions/150-return/es/README.md:59:43:7
 ...e llame?  ```javascript ```  <details> <summary>Respuesta</summary>  En la pantalla se ...
 Se ha encontrado un posible error ortográfico.
 Предлагаемые варианты:
 sumar, sumario, sumaria, sumará, sumara, Yumari, sumare, sumarie, sumariá, sumarié, sumarió, sumaré
 ------------------------
-40-define-functions/150-define-functions-return/es/README.md:59:43:7
+40-define-functions/150-return/es/README.md:59:43:7
 ...ript ```  <details> <summary>Respuesta</summary>  En la pantalla se imprimirá ``.  </de...
 Se ha encontrado un posible error ortográfico.
 Предлагаемые варианты:
 sumar, sumario, sumaria, sumará, sumara, Yumari, sumare, sumarie, sumariá, sumarié, sumarió, sumaré
 ------------------------
-40-define-functions/150-define-functions-return/es/README.md:63:43:7
+40-define-functions/150-return/es/README.md:63:43:7
 ...ry>  En la pantalla se imprimirá ``.  </details>  https://replit.com/@hexlet/js-basics-...
 Se ha encontrado un posible error ortográfico.
 Предлагаемые варианты:
 detalles, detalle, detalla, detalló, dejáis, detallas, detallo, datáis, debáis, decaías, dentáis, detal, detales, detallá, detallás, detallé, detasas, detraías, dotáis, emails, metáis, petáis, retail, retáis, vetáis
 ------------------------
-40-define-functions/150-define-functions-return/es/EXERCISE.md:1:0:10
+40-define-functions/150-return/es/EXERCISE.md:1:0:10
 Implementa la función ``, que devuelve la cadena '...
 Símbolo desparejado: Parece que falta un ‘¡’
 Предлагаемые варианты:
 ¡Implementa
 ------------------------
-40-define-functions/150-define-functions-return/es/EXERCISE.md:1:43:6
+40-define-functions/150-return/es/EXERCISE.md:1:43:6
 ... la función ``, que devuelve la cadena 'hurray! hurray! hurray!'.  ```javascript ``` 
 Se ha encontrado un posible error ortográfico.
 Предлагаемые варианты:
 hurra, hurras, hurra y
 ------------------------
-40-define-functions/150-define-functions-return/es/EXERCISE.md:1:43:8
+40-define-functions/150-return/es/EXERCISE.md:1:43:8
 ...nción ``, que devuelve la cadena 'hurray! hurray! hurray!'.  ```javascript ``` 
 Posible error de puntuación o mayúsculas.
 Предлагаемые варианты:
 ! Hurray, !, hurray
 ------------------------
-40-define-functions/150-define-functions-return/es/EXERCISE.md:1:43:8
+40-define-functions/150-return/es/EXERCISE.md:1:43:8
 ..., que devuelve la cadena 'hurray! hurray! hurray!'.  ```javascript ``` 
 Posible error de puntuación o mayúsculas.
 Предлагаемые варианты:
 ! Hurray, !, hurray
 ------------------------
-40-define-functions/100-define-functions-syntax/es/README.md:10:43:1
+40-define-functions/100-define-function/es/README.md:10:43:1
 ...a es mostrar un saludo en la pantalla:  <pre class='hexlet-basics-output'>Hello, ...
 Símbolo desparejado: Parece que falta un ‘¡’
 Предлагаемые варианты:
 ¡<
 ------------------------
-40-define-functions/100-define-functions-syntax/es/README.md:10:43:5
+40-define-functions/100-define-function/es/README.md:10:43:5
 ...lla:  <pre class='hexlet-basics-output'>Hello, Hexlet!</pre>  ```javascript ```  http...
 Se ha encontrado un posible error ortográfico.
 Предлагаемые варианты:
 Ello, Sello, Bello, Huyó, Halló, Helio, Leyó, Hoyo, Selló, Vello, Huyo, Hallo, Heló, Melló, Pello, Hayo, Teyo, Fello, Peyo, Rello, Tello, Yeyo, Cello, Helalo, Holló, Huello, Mello, Peyó, H ello
 ------------------------
-40-define-functions/100-define-functions-syntax/es/README.md:34:43:9
+40-define-functions/100-define-function/es/README.md:34:43:9
 ... e incluso "implementar" (de la palabra implement). Todos ellos se encuentran en la práct...
 Se ha encontrado un posible error ortográfico.
 Предлагаемые варианты:
 implementa, implementó, implemente, implemento, implementá, implementé
 ------------------------
-40-define-functions/100-define-functions-syntax/es/EXERCISE.md:6:43:4
+40-define-functions/100-define-function/es/EXERCISE.md:6:43:4
 ... ejemplo de llamada anterior se muestra sólo para que entiendas cómo se utilizará tu...
 La tilde es innecesaria según la norma actual. Con el sentido de «solamente» (adv.), cuando hay riesgo de ambigüedad con el adj. «solo», puede escribirse «sólo» (DRAE).
 Предлагаемые варианты:
@@ -1402,7 +1402,7 @@ Ello, Sello, Bello, Huyó, Halló, Helio, Leyó, Hoyo, Selló, Vello, Huyo, Hall
 Предлагаемые варианты:
 Самвел, Сэм велл
 ------------------------
-50-loops/30-syntax-sugar/ru/README.md:1:43:5
+50-loops/30-syntactic-sugar/ru/README.md:1:43:5
 ...немного проще и приятнее, «подслащивая» его :)  Существуют сокращённые формы для всех...
 Перед знаками препинания не должно быть пробела: «его:»
 Предлагаемые варианты:
@@ -1558,19 +1558,19 @@ Ello, Sello, Bello, Huyó, Halló, Helio, Leyó, Hoyo, Selló, Vello, Huyo, Hall
 Предлагаемые варианты:
 авторизуют, фаворизируют, моторизируют
 ------------------------
-40-define-functions/150-define-functions-return/ru/EXERCISE.md:1:43:6
+40-define-functions/150-return/ru/EXERCISE.md:1:43:6
 ... ``, которая возвращает строку 'hurray! hurray! hurray!'.  ```javascript ``` 
 Это предложение не начинается с заглавной буквы.
 Предлагаемые варианты:
 Hurray
 ------------------------
-40-define-functions/150-define-functions-return/ru/EXERCISE.md:1:43:6
+40-define-functions/150-return/ru/EXERCISE.md:1:43:6
 ...орая возвращает строку 'hurray! hurray! hurray!'.  ```javascript ``` 
 Это предложение не начинается с заглавной буквы.
 Предлагаемые варианты:
 Hurray
 ------------------------
-40-define-functions/100-define-functions-syntax/ru/README.md:34:43:14
+40-define-functions/100-define-function/ru/README.md:34:43:14
 ...ов: «реализовать», «определить» и даже «заимплементить» (от слова implement). Все они встречаю...
 Возможно найдена орфографическая ошибка.
 ------------------------
@@ -1580,25 +1580,25 @@ Hurray
 Предлагаемые варианты:
 мотан, мутон, мотор, масон, батон, моток, бутон, затон, манон, мутант, натан, ротан, шатун, батан, батун, бутан, датун, фотон, футон, хатун, катан, кутан, латан, мётан, мадонн, майан, макан, мамон, манан, маран, марон, мартан, мата, матах, матам, маток, матом, матов, мату, матую, матуй, матуя, мазан, метан, мохон, моран, мота, мотаю, мотах, мотай, мотал, мотам, мотана, мотано, мотаны, мотая, мотав, мотою, мотой, мотом, мотов, моту, мошон, мултан, мутен, мутна, мутона, мутоне, мутону, мутоны, патан, путан, ротон, сатан, сутан, шатан, Датун, Хатун, Катан, Котон, Натан, Патон, Сатан, ма тан, мат ан, мата н
 ------------------------
-40-define-functions/150-define-functions-return/en/EXERCISE.md:1:43:6
+40-define-functions/150-return/en/EXERCISE.md:1:43:6
 ...tion ``, that returns a string 'hurray! hurray! hurray!'.  ```javascript ``` 
 This sentence does not start with an uppercase letter.
 Предлагаемые варианты:
 Hurray
 ------------------------
-40-define-functions/150-define-functions-return/en/EXERCISE.md:1:43:6
+40-define-functions/150-return/en/EXERCISE.md:1:43:6
 ... that returns a string 'hurray! hurray! hurray!'.  ```javascript ``` 
 This sentence does not start with an uppercase letter.
 Предлагаемые варианты:
 Hurray
 ------------------------
-40-define-functions/100-define-functions-syntax/en/README.md:10:43:9
+40-define-functions/100-define-function/en/README.md:10:43:9
 .... Its job is to print out a greeting:  <pre class='hexlet-basics-output'>Hello, Hexlet!</...
 This word is normally spelled with a hyphen.
 Предлагаемые варианты:
 pre-class
 ------------------------
-40-define-functions/100-define-functions-syntax/en/README.md:10:43:20
+40-define-functions/100-define-function/en/README.md:10:43:20
 ...s to print out a greeting:  <pre class='hexlet-basics-output'>Hello, Hexlet!</pre>  ```javascript ``...
 Possible spelling mistake found.
 Предлагаемые варианты:
@@ -2286,25 +2286,25 @@ Possible spelling mistake found.
 Предлагаемые варианты:
 hex let-basics-output
 ------------------------
-40-define-functions/150-define-functions-return/en/EXERCISE.md:1:43:6
+40-define-functions/150-return/en/EXERCISE.md:1:43:6
 ...tion ``, that returns a string 'hurray! hurray! hurray!'.  ```javascript ``` 
 This sentence does not start with an uppercase letter.
 Предлагаемые варианты:
 Hurray
 ------------------------
-40-define-functions/150-define-functions-return/en/EXERCISE.md:1:43:6
+40-define-functions/150-return/en/EXERCISE.md:1:43:6
 ... that returns a string 'hurray! hurray! hurray!'.  ```javascript ``` 
 This sentence does not start with an uppercase letter.
 Предлагаемые варианты:
 Hurray
 ------------------------
-40-define-functions/100-define-functions-syntax/en/README.md:10:43:9
+40-define-functions/100-define-function/en/README.md:10:43:9
 .... Its job is to print out a greeting:  <pre class='hexlet-basics-output'>Hello, Hexlet!</...
 This word is normally spelled with a hyphen.
 Предлагаемые варианты:
 pre-class
 ------------------------
-40-define-functions/100-define-functions-syntax/en/README.md:10:43:20
+40-define-functions/100-define-function/en/README.md:10:43:20
 ...s to print out a greeting:  <pre class='hexlet-basics-output'>Hello, Hexlet!</pre>  ```javascript ``...
 Possible spelling mistake found.
 Предлагаемые варианты:
@@ -3112,25 +3112,25 @@ Possible spelling mistake found.
 Предлагаемые варианты:
 hex let-basics-output
 ------------------------
-40-define-functions/150-define-functions-return/en/EXERCISE.md:1:43:6
+40-define-functions/150-return/en/EXERCISE.md:1:43:6
 ...tion ``, that returns a string 'hurray! hurray! hurray!'.  ```javascript ``` 
 This sentence does not start with an uppercase letter.
 Предлагаемые варианты:
 Hurray
 ------------------------
-40-define-functions/150-define-functions-return/en/EXERCISE.md:1:43:6
+40-define-functions/150-return/en/EXERCISE.md:1:43:6
 ... that returns a string 'hurray! hurray! hurray!'.  ```javascript ``` 
 This sentence does not start with an uppercase letter.
 Предлагаемые варианты:
 Hurray
 ------------------------
-40-define-functions/100-define-functions-syntax/en/README.md:10:43:9
+40-define-functions/100-define-function/en/README.md:10:43:9
 .... Its job is to print out a greeting:  <pre class='hexlet-basics-output'>Hello, Hexlet!</...
 This word is normally spelled with a hyphen.
 Предлагаемые варианты:
 pre-class
 ------------------------
-40-define-functions/100-define-functions-syntax/en/README.md:10:43:20
+40-define-functions/100-define-function/en/README.md:10:43:20
 ...s to print out a greeting:  <pre class='hexlet-basics-output'>Hello, Hexlet!</pre>  ```javascript ``...
 Possible spelling mistake found.
 Предлагаемые варианты:
