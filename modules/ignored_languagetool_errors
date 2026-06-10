@@ -368,24 +368,6 @@ Posible error tipográfico: múltiples espacios en blanco
 Предлагаемые варианты:
  
 ------------------------
-45-logic/15-predicates/es/README.md:6:43:5
-... ```  <pre class='hexlet-basics-output'>false</pre>  https://replit.com/@hexlet/js-ba...
-Si es pasado, se escribe con tilde. Si es imperativo, puede que falte una coma.
-Предлагаемые варианты:
- falsé, , false
-------------------------
-45-logic/15-predicates/es/README.md:10:43:8
-...ones se llaman funciones booleanas. Los boolenos (o funciones de pregunta) responden a u...
-Se ha encontrado un posible error ortográfico.
-Предлагаемые варианты:
-booleanos, bóllenos, viólenos
-------------------------
-45-logic/15-predicates/es/README.md:28:43:5
-... ```  <pre class='hexlet-basics-output'>false</pre> 
-Si es pasado, se escribe con tilde. Si es imperativo, puede que falte una coma.
-Предлагаемые варианты:
- falsé, , false
-------------------------
 45-logic/10-bool-type/es/README.md:1:43:5
 .... Esto se lee como una pregunta: "¿Es 5 mayor que 4?". En este caso, la respuesta es ...
 Posible error de concordancia. Revise la puntuación.
@@ -1548,10 +1530,6 @@ Ello, Sello, Bello, Huyó, Halló, Helio, Leyó, Hoyo, Selló, Vello, Huyo, Hall
 ...и запишем в переменную первый символ из строки-параметра 2. Сравним, равен ли символ своей больш...
 Возможно найдена орфографическая ошибка.
 ------------------------
-45-logic/15-predicates/ru/README.md:10:43:15
-...ают предикатами. Функции-предикаты (или функции-вопросы) отвечают на какой-то вопрос и всегда (...
-Возможно найдена орфографическая ошибка.
-------------------------
 45-logic/10-bool-type/ru/README.md:3:43:12
 ...лько если они есть, нас пускают внутрь (авторизируют).  Языки программирования адаптировали ...
 Возможно найдена орфографическая ошибка.
@@ -1725,30 +1703,6 @@ Possible typo: you repeated a whitespace
 Possible typo: you repeated a whitespace
 Предлагаемые варианты:
  
-------------------------
-45-logic/15-predicates/en/README.md:6:43:9
-...m the last lesson:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre>  Thi...
-This word is normally spelled with a hyphen.
-Предлагаемые варианты:
-pre-class
-------------------------
-45-logic/15-predicates/en/README.md:6:43:20
-...lesson:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre>  This kind of function is ...
-Possible spelling mistake found.
-Предлагаемые варианты:
-hex let-basics-output
-------------------------
-45-logic/15-predicates/en/README.md:26:43:9
-... it's the word ``:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre> 
-This word is normally spelled with a hyphen.
-Предлагаемые варианты:
-pre-class
-------------------------
-45-logic/15-predicates/en/README.md:26:43:20
-...ord ``:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre> 
-Possible spelling mistake found.
-Предлагаемые варианты:
-hex let-basics-output
 ------------------------
 45-logic/10-bool-type/en/README.md:39:43:9
 ...eturn that result.  ```javascript ```  <pre class='hexlet-basics-output'>false</pre>  Now...
@@ -2425,30 +2379,6 @@ Unpaired symbol: ‘"’ seems to be missing
 45-logic/20-logic-combine-expressions/en/README.md:34:43:1
 ...return the result of the equality check "*.  Another example: write a function to...
 Unpaired symbol: ‘"’ seems to be missing
-------------------------
-45-logic/15-predicates/en/README.md:6:43:9
-...m the last lesson:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre>  Thi...
-This word is normally spelled with a hyphen.
-Предлагаемые варианты:
-pre-class
-------------------------
-45-logic/15-predicates/en/README.md:6:43:20
-...lesson:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre>  This kind of function is ...
-Possible spelling mistake found.
-Предлагаемые варианты:
-hex let-basics-output
-------------------------
-45-logic/15-predicates/en/README.md:26:43:9
-... it's the word ``:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre> 
-This word is normally spelled with a hyphen.
-Предлагаемые варианты:
-pre-class
-------------------------
-45-logic/15-predicates/en/README.md:26:43:20
-...ord ``:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre> 
-Possible spelling mistake found.
-Предлагаемые варианты:
-hex let-basics-output
 ------------------------
 45-logic/10-bool-type/en/README.md:39:43:9
 ...eturn that result.  ```javascript ```  <pre class='hexlet-basics-output'>false</pre>  Now...
@@ -3015,30 +2945,6 @@ Unpaired symbol: ‘"’ seems to be missing
 45-logic/20-logic-combine-expressions/en/README.md:34:43:1
 ...return the result of the equality check "*.  Another example: write a function to...
 Unpaired symbol: ‘"’ seems to be missing
-------------------------
-45-logic/15-predicates/en/README.md:6:43:9
-...m the last lesson:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre>  Thi...
-This word is normally spelled with a hyphen.
-Предлагаемые варианты:
-pre-class
-------------------------
-45-logic/15-predicates/en/README.md:6:43:20
-...lesson:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre>  This kind of function is ...
-Possible spelling mistake found.
-Предлагаемые варианты:
-hex let-basics-output
-------------------------
-45-logic/15-predicates/en/README.md:26:43:9
-... it's the word ``:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre> 
-This word is normally spelled with a hyphen.
-Предлагаемые варианты:
-pre-class
-------------------------
-45-logic/15-predicates/en/README.md:26:43:20
-...ord ``:  ```javascript ```  <pre class='hexlet-basics-output'>false</pre> 
-Possible spelling mistake found.
-Предлагаемые варианты:
-hex let-basics-output
 ------------------------
 45-logic/25-logical-operators/en/README.md:33:43:2
 ...   | |-------| ------|----------| | TRUE  | TRUE  | **TRUE** | | TRUE  | FALSE | F...
