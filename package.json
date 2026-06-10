@@ -4,9 +4,9 @@
   "devDependencies": {
     "@biomejs/biome": "2.4.16",
     "globals": "^17.6.0",
-    "npm-check-updates": "^22.2.1",
+    "npm-check-updates": "^22.2.3",
     "typescript": "^6.0.3",
-    "vitest": "^4.1.7"
+    "vitest": "^4.1.8"
   },
   "exports": {
     "./got": "./src/hexlet/got.js",
