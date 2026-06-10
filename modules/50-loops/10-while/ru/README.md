@@ -12,7 +12,7 @@
 let counter = 0;
 while (counter < 5) {
   console.log('Hello!');
-  counter += 1;
+  counter = counter + 1;
 }
 
 // => Hello!
@@ -42,7 +42,7 @@ counter = 0
 │     true │
 │          ↓
 │    console.log('Hello!')
-│    counter += 1
+│    counter = counter + 1
 └──────────┘
       false → выход из цикла
 ```
@@ -55,13 +55,13 @@ counter = 0
 let counter = 0;
 while (counter < 2) {
   console.log('Hello!');
-  counter += 1;
+  counter = counter + 1;
 }
 
 console.log('End of loop');
 ```
 
-Здесь `console.log('Hello!')` и `counter += 1` находятся внутри цикла, а `console.log('End of loop')` стоит за его пределами, поэтому выполнится один раз после завершения цикла.
+Здесь `console.log('Hello!')` и `counter = counter + 1` находятся внутри цикла, а `console.log('End of loop')` стоит за его пределами, поэтому выполнится один раз после завершения цикла.
 
 ## Цикл внутри функции
 
@@ -72,7 +72,7 @@ const printNumbers = (n) => {
   let i = 1;
   while (i <= n) {
     console.log(i);
-    i += 1;
+    i = i + 1;
   }
   console.log('Finished!');
 };
