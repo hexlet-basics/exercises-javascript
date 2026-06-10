@@ -1,3 +1,4 @@
+/* eslint operator-assignment: 0 */
 // BEGIN
 const sanitizePhoneNumber = (phone) => {
   let result = '';
@@ -5,9 +6,9 @@ const sanitizePhoneNumber = (phone) => {
   while (i < phone.length) {
     const char = phone[i];
     if (!' ()-'.includes(char)) {
-      result += char;
+      result = result + char;
     }
-    i += 1;
+    i = i + 1;
   }
 
   return result;

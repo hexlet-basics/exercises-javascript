@@ -1,10 +1,11 @@
+/* eslint operator-assignment: 0 */
 // BEGIN
 const getEvenChars = (str) => {
   let i = 0;
   let result = '';
   while (i < str.length) {
     if (i % 2 !== 0) {
-      result = `${result}${str[i]}`;
+      result = result + str[i];
     }
     i = i + 1;
   }
