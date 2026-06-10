@@ -3,11 +3,11 @@ To add parameters to your function, simply specify them within parentheses when 
 
 ```javascript
 // str - parameter
-const getLastChar = (str) => {
+function getLastChar(str) {
   // calculate the index of the last character
   // extract it, and return it
   return str[str.length - 1];
-};
+}
 
 getLastChar('Hexlet'); // "t"
 getLastChar('Goo'); // "o"
@@ -24,9 +24,9 @@ A specific value can't be a parameter, the point of a parameter is that the valu
 A function can have two, three or more parameters. Below is an example of a function that finds the average between two numbers:
 
 ```javascript
-const average = (x, y) => {
+function average(x, y) {
   return (x + y) / 2;
-};
+}
 
 average(1, 5); // 3
 average(1, 2); // 1.5
