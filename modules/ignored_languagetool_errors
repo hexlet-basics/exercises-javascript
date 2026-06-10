@@ -410,36 +410,6 @@ Se ha encontrado un posible error ortográfico.
 Предлагаемые варианты:
 sílice, Alice
 ------------------------
-40-define-functions/320-define-functions-parameters/es/README.md:1:17:4
-Las funciones no sólo pueden devolver valores, sino también r...
-La tilde es innecesaria según la norma actual. Con el sentido de «solamente» (adv.), cuando hay riesgo de ambigüedad con el adj. «solo», puede escribirse «sólo» (DRAE).
-Предлагаемые варианты:
-solo, solamente, únicamente
-------------------------
-40-define-functions/320-define-functions-parameters/es/README.md:14:43:6
-...nción debe recibir un parámetro de tipo string * La función debe devolver un valor de ...
-Se ha encontrado un posible error ortográfico.
-Предлагаемые варианты:
-Sting
-------------------------
-40-define-functions/320-define-functions-parameters/es/README.md:15:43:6
-... función debe devolver un valor de tipo string  Definición de la función:  ```javascri...
-Se ha encontrado un posible error ortográfico.
-Предлагаемые варианты:
-Sting
-------------------------
-40-define-functions/320-define-functions-parameters/es/EXERCISE.md:13:43:4
-...tar esta función de diferentes maneras, sólo te daremos una pista. Para resolverlo d...
-La tilde es innecesaria según la norma actual. Con el sentido de «solamente» (adv.), cuando hay riesgo de ambigüedad con el adj. «solo», puede escribirse «sólo» (DRAE).
-Предлагаемые варианты:
-solo, solamente, únicamente
-------------------------
-40-define-functions/320-define-functions-parameters/es/EXERCISE.md:13:43:5
-...metro de la función. Utiliza el método [slice()](https://developer.mozilla.org/es/doc...
-Se ha encontrado un posible error ortográfico.
-Предлагаемые варианты:
-sílice, Alice
-------------------------
 40-define-functions/150-return/es/README.md:58:43:7
 ...uando se le llame?  ```javascript ```  <details> <summary>Respuesta</summary>  En la pa...
 Se ha encontrado un posible error ortográfico.
