@@ -1,0 +1,72 @@
+---
+
+name: Anotaciones de tipos
+theory: |
+  En JavaScript se puede pasar cualquier valor a una función. A veces esto complica la comprensión del código: no siempre queda claro qué espera la función y qué devuelve. La sintaxis de JavaScript no tiene anotaciones de tipos, pero existe un estándar de facto — **JSDoc**: comentarios especiales antes de la función que entienden los editores y las herramientas de verificación.
+
+  ## Cómo anotar los tipos de los parámetros
+
+  Un comentario JSDoc comienza con `/**` y se coloca justo antes de la definición de la función. El tipo de cada parámetro se declara con la etiqueta `@param`, y el tipo del valor de retorno con `@returns`. El tipo se escribe entre llaves:
+
+  ```javascript
+  /**
+   * @param {number} a
+   * @param {number} b
+   * @returns {number}
+   */
+  function add(a, b) {
+    return a + b;
+  }
+
+  console.log(add(2, 3)); // => 5
+  ```
+
+  Ahora el editor sabe que `add()` recibe dos números y devuelve un número. Si intentas pasar una cadena, el editor lo marcará como un problema.
+
+  ## Qué tipos se usan
+
+  En esta etapa basta con conocer las anotaciones de los tipos primitivos:
+
+  - `number` para números — JavaScript tiene un único tipo numérico para enteros y decimales
+  - `string` para cadenas
+  - `boolean` para valores lógicos (`true` o `false`)
+
+  Si una función no devuelve nada, se usa `void` como tipo de retorno. Para parámetros opcionales con valores por defecto, el nombre del parámetro se encierra entre corchetes: `@param {string} [greeting='Hello']`.
+
+  ## Anotaciones y verificación estática
+
+  JavaScript no verifica las anotaciones JSDoc durante la ejecución, pero hay herramientas que pueden hacerlo sin ejecutar el código — esto se llama **verificación estática**. En el mundo de JavaScript, el compilador de TypeScript puede leer archivos JS y entender los tipos de los comentarios JSDoc. Las anotaciones son opcionales, pero usarlas se considera una buena práctica. Cuando los tipos se vuelven numerosos, los desarrolladores suelen pasar a **TypeScript** — un superconjunto de JavaScript con anotaciones integradas en la sintaxis.
+
+instructions: |
+  La aplicación crea separadores de texto a partir de caracteres repetidos — por ejemplo, `-------` o `=====`. Implementa la función `wordMultiply()`. Recibe dos parámetros:
+
+  * Una cadena
+  * Un número que indica cuántas veces hay que repetir la cadena
+
+  Devuelve la cadena repetida n veces. Si se pasa cero, devuelve una cadena vacía.
+
+  ```javascript
+  const text = 'javascript';
+  console.log(wordMultiply(text, 2)); // => javascriptjavascript
+  console.log(wordMultiply(text, 0)); // =>
+  ```
+
+  Añade anotaciones de tipos JSDoc en la definición de la función: etiquetas `@param` para ambos parámetros y `@returns` para el valor de retorno.
+
+  ## Pistas
+
+  * El método de cadenas [repeat()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/repeat) resulta útil aquí
+  * No olvides la anotación del valor de retorno
+
+tips:
+  - >
+    [JSDoc en el manual de
+    TypeScript](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
+  - >
+    [Método
+    repeat()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
+definitions:
+  - name: Anotación de tipos
+    description: declaración explícita de los tipos de los parámetros y del valor de retorno de una función
+  - name: Verificación estática
+    description: comprobación de la corrección del código sin ejecutarlo

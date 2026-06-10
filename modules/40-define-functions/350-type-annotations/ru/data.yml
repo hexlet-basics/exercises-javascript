@@ -1,0 +1,14 @@
+---
+name: Аннотации типов
+tips:
+  - >
+    [JSDoc в справочнике
+    TypeScript](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
+  - >
+    [Метод
+    repeat()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
+definitions:
+  - name: Аннотация типов
+    description: явное указание типов параметров и возвращаемого значения функции
+  - name: Статическая проверка
+    description: проверка корректности кода без его запуска

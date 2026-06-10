@@ -1,0 +1,14 @@
+---
+name: Type annotations
+tips:
+  - >
+    [JSDoc in the TypeScript
+    handbook](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
+  - >
+    [repeat()
+    method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
+definitions:
+  - name: Type annotation
+    description: an explicit declaration of parameter and return value types of a function
+  - name: Static checking
+    description: verifying code correctness without running it
