@@ -8,7 +8,7 @@ while (number <= 10) {
   if (number % 2 === 0) {
     console.log(number);
   }
-  number += 1;
+  number = number + 1;
 }
 
 // => 2
@@ -51,10 +51,10 @@ const countChars = (str, char) => {
   while (i < str.length) {
     if (str[i] === char) {
       // Считаем только подходящие символы
-      count += 1;
+      count = count + 1;
     }
     // Счётчик увеличивается в любом случае
-    i += 1;
+    i = i + 1;
   }
 
   return count;

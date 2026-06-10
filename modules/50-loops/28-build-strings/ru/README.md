@@ -16,9 +16,7 @@ const reverse = (str) => {
   let result = '';
   while (i < str.length) {
     // Соединяем в обратном порядке
-    result = `${str[i]}${result}`;
-    // То же самое через конкатенацию
-    // result = str[i] + result;
+    result = str[i] + result;
     i = i + 1;
   }
 
