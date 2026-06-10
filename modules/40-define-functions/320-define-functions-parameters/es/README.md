@@ -33,18 +33,18 @@ De la descripción y los ejemplos de código, podemos hacer las siguientes concl
 Definición de la función:
 
 ```javascript
-const getLastChar = (text) => {
+function getLastChar(text) {
   // Calculamos el índice del último carácter como la longitud de la cadena - 1
   return text[text.length - 1];
-};
+}
 ```
 
 Analicémoslo. Entre paréntesis se especifica el nombre de la variable `text`, que es nuestro parámetro. El nombre del parámetro puede ser cualquier cosa. Lo importante es que refleje el significado del valor que contiene. Podríamos haber definido la función de esta manera:
 
 ```javascript
-const getLastChar = (str) => {
+function getLastChar(str) {
   return str[str.length - 1];
-};
+}
 ```
 
 El valor específico del parámetro dependerá de cómo se llame a esta función.
@@ -66,9 +66,9 @@ De la misma manera, se pueden especificar dos, tres o más parámetros. Cada par
 
 ```javascript
 // función para encontrar el número medio
-const average = (a, b) => {
+function average(a, b) {
   return (a + b) / 2;
-};
+}
 
 average(1, 5); // 3
 average(1, 2); // 1.5
@@ -85,9 +85,9 @@ Lo mismo se aplica a los métodos. Pueden requerir cualquier cantidad de paráme
 Para crear tales funciones y métodos, debemos especificar la cantidad necesaria de parámetros en la definición, separándolos por comas y dándoles nombres descriptivos. A continuación se muestra un ejemplo de la definición de la función `replace()`, que reemplaza una parte de una cadena por otra:
 
 ```javascript
-const replace = (text, from, to) => {
+function replace(text, from, to) {
   // aquí va el cuerpo de la función, pero lo omitimos para no distraernos
-};
+}
 
 replace('google', 'go', 'mo'); // moogle
 ```
