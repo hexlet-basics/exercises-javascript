@@ -16,7 +16,7 @@ const reverse = (str) => {
   let result = '';
   while (i < str.length) {
     // Connect it in reverse order
-    result = `${str[i]}${result}`;
+    result = str[i] + result;
     // Same through concatenation
     // result = str[i] + result;
     i = i + 1;
