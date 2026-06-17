@@ -2,31 +2,76 @@
 
 name: Errores de sintaxis
 theory: |
+  Si un programa en JavaScript está escrito en violación de las reglas, el intérprete detendrá la ejecución y mostrará un mensaje de error. Este mensaje indica:
 
-  Si un programa escrito en JavaScript tiene errores de sintaxis, el intérprete mostrará un mensaje correspondiente, así como una indicación del archivo y la línea en la que, según su opinión, se produjo el error. Un *error de sintaxis* ocurre cuando el código se ha escrito con violación de las reglas gramaticales. En los lenguajes humanos, la gramática es importante, pero generalmente se puede entender y leer el texto con errores. En la programación, todo es estricto. Cualquier error gramatical, por más mínimo que sea, y el programa ni siquiera se ejecutará. Un ejemplo puede ser un punto y coma olvidado, así como paréntesis mal colocados y otros detalles.
+  - el tipo de error,
+  - la línea en la que ocurrió,
+  - y (a menudo) el punto donde el intérprete "tropezó".
 
-  Aquí hay un ejemplo de código con un error de sintaxis:
+  ## ¿Qué es un error de sintaxis?
+
+  Un error de sintaxis (SyntaxError) es una violación de las reglas de escritura de código (reglas gramaticales) en un lenguaje de programación concreto. Estos errores ocurren cuando el código se escribe con una desviación del formato esperado: una cadena sin cerrar, un paréntesis que falta, un orden incorrecto de símbolos, etc.
+
+  A diferencia de los lenguajes naturales, donde un texto con errores se puede entender por el contexto, en la programación incluso la más mínima desviación hace que el código sea inutilizable.
+
+  ```text
+  Código con un error      Intérprete             Resultado
+  ┌────────────────────┐   ┌───────────┐   ┌──────────────────────┐
+  │ console.log('Hi'   │──→│JavaScript │──→│ SyntaxError:         │
+  └────────────────────┘   └───────────┘   │ missing ) after args │
+                                           └──────────────────────┘
+  ```
+
+  Veamos un ejemplo sencillo con un error de sintaxis:
 
   ```javascript
+  // La versión correcta es: console.log('Hodor')
   console.log('Hodor'
   ```
 
-  Si ejecutamos el código anterior, veremos el siguiente mensaje: `SyntaxError: missing ) after argument list`, así como una indicación de la línea y el archivo donde se produjo este error. Estos errores de sintaxis en JavaScript se clasifican como SyntaxError.
+  En este código el paréntesis no está cerrado, lo que hace que el programa sea incorrecto desde el punto de vista de la sintaxis. Intentemos ejecutar el programa, y el intérprete producirá un error:
 
-  Por un lado, los errores de SyntaxError son los más simples porque están relacionados exclusivamente con las reglas gramaticales de escritura de código, no con el significado del código en sí. Son fáciles de corregir: solamente necesitas encontrar la violación de las reglas gramaticales.
+  ```bash
+  node index.js
+  index.js:2
+  console.log('Hodor'
+             ^
 
-  Por otro lado, el intérprete no siempre puede señalar claramente estas infracciones. Por lo tanto, a veces sucede que hay que colocar el paréntesis olvidado no donde indica precisamente el mensaje de error.
+  SyntaxError: missing ) after argument list
+  ```
 
+  El texto puede resultar poco claro al principio, pero eso es normal: cuanto más te enfrentes a este tipo de errores, más rápido aprenderás a entender qué sucedió.
+
+  ## ¿Por qué estos errores se consideran simples?
+
+  Los errores de sintaxis:
+
+  - son fáciles de detectar: el código a menudo se resalta en el editor;
+  - son fáciles de corregir: basta con restaurar el símbolo que falta o corregir la estructura.
+
+  Pero hay una pega. El intérprete no siempre señala exactamente el lugar donde se cometió el error. A veces el problema está varias líneas más arriba. Por ejemplo, un paréntesis abierto pero no cerrado en una línea puede "romper" todo el código siguiente.
+
+  ## ¿Qué hacer ante un error de sintaxis?
+
+  - Lee el mensaje de error. Casi siempre contiene información útil.
+  - Comprueba la línea indicada en el mensaje, y la línea anterior: a veces el error está "escondido" un poco antes.
+  - Usa un [editor con resaltado de sintaxis](https://code.visualstudio.com/): te ayudará a notar los problemas de inmediato (por ejemplo, comillas o paréntesis sin cerrar).
 instructions: |
+  El programa se inicia e informa del resultado. Escribe un programa que muestre:
 
-  Esta tarea no está directamente relacionada con la lección. Pero será útil practicar la salida en la pantalla.
+  ```text
+  Программа успешно запущена
+  ```
 
-  Muestra en la pantalla *What Is Dead May Never Die*.
+  Después de que el programa funcione, rómpelo a propósito: comete uno de los errores de sintaxis:
 
+  - quita la comilla de cierre;
+  - quita el paréntesis de cierre.
+
+  Ejecuta el código y lee el mensaje de JavaScript. Verás estos mensajes con frecuencia, así que es importante aprender a leerlos. Luego restaura la versión que funciona para que el ejercicio pase la verificación.
 tips:
   - |
     [Errores en JavaScript](https://habr.com/ru/post/249525/)
-
 definitions:
   - name: "Error de sintaxis"
     description: "violación de las reglas gramaticales del lenguaje de programación."

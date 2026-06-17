@@ -1,17 +1,16 @@
 ---
 name: Statements
 tips:
-  - >
-    [More about
-    interpreters](https://en.wikipedia.org/wiki/Interpreter_(computing))
+  - |
+    [A bit about interpreters](https://en.wikipedia.org/wiki/Interpreter_(computing))
   - >
     [Statements and declarations by
-    category](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements)
+    category](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements)
 definitions:
   - name: Interpreter
-    description: |
-      is a program that executes the code in JavaScript.
+    description: >-
+      a program that executes JavaScript code.
   - name: Statement
-    description: >
-      is a command given to a computer. The JavaScript code is a set of
-      statements separated (most frequently) by `;`.
+    description: >-
+      a command for the computer, written in a programming language. JavaScript
+      code is a set of statements separated (most often) by the `;` character.

@@ -1,4 +1,12 @@
+The program starts and reports the result. Write a program that prints:
 
-This task isn't directly related to the lesson, but it would be useful to practice printing anyway.
+```text
+Программа успешно запущена
+```
 
-Print the following text `What Is Dead May Never Die`.
+After the program works, deliberately break it — make one of the syntax errors:
+
+- remove the closing quote;
+- remove the closing bracket.
+
+Run the code and read the JavaScript message. You will see such messages often — it's important to learn to read them. Then restore the working version so the exercise passes the check.

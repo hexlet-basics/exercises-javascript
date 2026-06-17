@@ -5,7 +5,8 @@ tips:
     [Errores en JavaScript](https://habr.com/ru/post/249525/)
 definitions:
   - name: Error de sintaxis
-    description: violación de las reglas gramaticales del lenguaje de programación.
+    description: >-
+      violación de las reglas gramaticales del lenguaje de programación.
   - name: SyntaxError (error de análisis)
     description: >-
       tipo de errores en JavaScript que ocurren cuando hay errores de sintaxis

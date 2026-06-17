@@ -1,9 +1,7 @@
-Muestra en pantalla, uno tras otro, estos tres nombres: *Robert*, *Stannis*, *Renly*. El resultado en pantalla debe ser:
+Muestra en pantalla el estado de entrega del paquete — tres líneas, cada una con una llamada `console.log()` separada:
 
 ```text
-Robert
-Stannis
-Renly
+Заказ №1337
+Статус: доставляется
+Примерный срок: 2 дня
 ```
-
-Utiliza una llamada `console.log()` para cada nombre.
