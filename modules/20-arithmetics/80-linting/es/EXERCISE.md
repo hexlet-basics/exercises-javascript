@@ -1,2 +1,7 @@
+Recibiste código de un colega: funciona correctamente, pero viola el estándar de formato. Corrige los espacios alrededor de los operadores sin cambiar la lógica:
 
-Muestra en pantalla el resultado de la siguiente operación: "la diferencia entre el cuadrado de cinco y el producto de tres y siete". Coloca los paréntesis de manera que no se viole la regla `no-mixed-operators`.
+```javascript
+console.log(    (5  **2)-(3*  7));
+```
+
+El resultado debe seguir siendo `4`.

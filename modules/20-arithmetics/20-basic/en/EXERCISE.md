@@ -1,2 +1,1 @@
-
-Print the result of dividing `81` by `9`.
+You walked into a wholesale store and saw a pack of 9 batteries for 81 rubles. In a regular store, one battery costs 12 rubles. Calculate and print the price of a single battery in the wholesale pack to figure out where it is cheaper to buy.

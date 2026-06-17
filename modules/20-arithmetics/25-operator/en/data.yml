@@ -1,15 +1,24 @@
 ---
 name: Operators
 tips:
+  - >-
+    Always separate arithmetic operators from their operands with spaces — this
+    is good programming style.
   - >
-    [JavaScript
-    operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+    [Operators in
+    JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
 definitions:
-  - name: Arithmetic operations
-    description: are addition, subtraction, multiplication and division.
+  - name: Arithmetic operation
+    description: addition, subtraction, multiplication, and division.
+  - name: Operator
+    description: >-
+      a special symbol that creates an operation. For example, `+` creates the
+      addition operation.
+  - name: Operand
+    description: 'an object that participates in an operation. `3 * 6`: here 3 and 6 are operands.'
   - name: Unary operation
     description: >-
-      is an operation with only one operand. For example, `-3` is an unary
-      operation to get the number which is opposite to 3.
+      an operation with a single operand. For example, `-3` is a unary
+      operation for getting the number opposite to three.
   - name: Binary operation
-    description: is an operation involving two operands. For example, `3 + 9`.
+    description: an operation with two operands. For example, `3 + 9`.

@@ -1,2 +1,3 @@
+Estás pagando dos productos en una tienda en línea: el primero cuesta 0.1 dólares, el segundo cuesta 0.2 dólares. Calcula y muestra el monto total.
 
-Calcula y muestra en pantalla el producto de dos números: *0.39* y *0.22*
+Esperas ver 0.3, pero JavaScript mostrará algo interesante.
