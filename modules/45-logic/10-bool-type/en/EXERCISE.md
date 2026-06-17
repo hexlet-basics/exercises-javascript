@@ -1,9 +1,6 @@
-
-Write a function, `isPensioner()`, which takes one parameter (a person's age), and check whether that person is retired or not. A pensioner is a person who has reached the age of 60 or higher.
-
-Examples:
+Write a function `isPensioner(age)` that returns `true` if the age `age` is 60 or greater, and `false` otherwise.
 
 ```javascript
-isPensioner(75); // true
-isPensioner(18); // false
+isPensioner(65); // => true
+isPensioner(30); // => false
 ```

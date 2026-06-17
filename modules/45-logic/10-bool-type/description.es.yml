@@ -2,78 +2,81 @@
 
 name: Tipo lógico
 theory: |
+  Además de las operaciones aritméticas, en matemáticas existen las operaciones de comparación, por ejemplo `5 > 4` o `3 < 1`. También existen en programación. Las comparaciones se usan con frecuencia en tareas del mundo real. Por ejemplo, cuando realizamos una compra en una tienda en línea, el sistema verifica si el usuario tiene suficiente dinero en su cuenta: si el monto en la cuenta es mayor o igual que el precio del producto, el pedido se confirma; de lo contrario, aparece un mensaje de fondos insuficientes.
 
-  Además de las operaciones aritméticas que conocemos desde la escuela, también existen las operaciones de comparación. Por ejemplo, `5 > 4`. Esto se lee como una pregunta: "¿Es 5 mayor que 4?". En este caso, la respuesta es "sí". En otros casos, la respuesta puede ser "no", por ejemplo, para `3 < 1`.
+  ## Comparación en programación
 
-  Las operaciones de comparación no están limitadas a números. Podemos comparar prácticamente cualquier cosa, como cadenas de texto. Cada vez que ingresamos a un sitio web, se realiza una comparación entre el nombre de usuario y la contraseña ingresados y los que están en la base de datos. Sólo si coinciden, se nos permite ingresar (autenticarnos).
-
-  Los lenguajes de programación han adaptado todas las operaciones matemáticas de comparación prácticamente sin cambios. La única diferencia importante son los operadores de igualdad y desigualdad. En matemáticas, se utiliza el signo de igual `=`, pero en programación esto no se ve muy a menudo. En muchos lenguajes, el símbolo `=` se utiliza para asignar valores a variables, por lo que para las comparaciones se utilizan `==` o `===`.
-
-  Aquí tienes una lista de las operaciones de comparación en JavaScript:
-
-  * `<` menor que
-  * `<=` menor o igual que
-  * `>` mayor que
-  * `>=` mayor o igual que
-  * `===` igual que
-  * `!==` no igual que
-
-  _Un pequeño comentario: también existen los operadores `==` y `!=` para igualdad y desigualdad, pero no los utilizaremos, debido al riesgo potencial. Hablaremos de esto en futuras lecciones._
-
-  Una operación lógica como `5 > 4` o `password === text` es una expresión y su resultado es un valor especial: `true` (verdadero) o `false` (falso). Este es un nuevo tipo de dato para nosotros: booleano. Solo puede tener uno de estos dos valores.
+  Empecemos con un ejemplo en el que se comparan dos números:
 
   ```javascript
-  const result = 5 > 4;
-  console.log(result); // => true
-  console.log('one' !== 'one'); // => false
+  console.log(5 > 4); // => true
+  console.log(4 > 4); // => false
   ```
 
-  Junto con las cadenas de texto (string), los números enteros y racionales (number), el tipo lógico (boolean) es uno de los tipos de datos primitivos en JavaScript.
-
-  ---
-
-  Intentemos escribir una función simple que tome la edad de un niño y determine si es un bebé. Consideramos bebés a los niños menores de un año:
+  El resultado de una comparación es un valor del tipo **boolean** (tipo lógico). Tiene solo dos valores posibles: `true` (verdadero) y `false` (falso). Son valores especiales del lenguaje y se pueden usar directamente:
 
   ```javascript
-  const isInfant = (age) => age < 1;
+  console.log(true);
+  console.log(false);
   ```
 
-  Aprovechamos el hecho de que cualquier operación es una expresión, por lo que en una sola línea de la función escribimos "devolver el resultado de la comparación `edad < 1`".
+  En la práctica, rara vez se usan de esta forma, pero sobre ellos se construye toda la lógica del comportamiento del programa. Nos encontramos con esto cada día: ingresamos códigos PIN y contraseñas, ejecutamos acciones cuyo resultado puede ser distinto. El programa razona más o menos así: *si es así — haz una cosa, si es de otro modo — haz otra*.
 
-  Dependiendo del argumento que se pase, la comparación será verdadera (`true`) o falsa (`false`), y `return` devolverá ese resultado.
+  En JavaScript están disponibles las siguientes operaciones de comparación:
+
+  | Operador | Significado |
+  |----------|-------------|
+  | `<` | menor que |
+  | `<=` | menor o igual que |
+  | `>` | mayor que |
+  | `>=` | mayor o igual que |
+  | `===` | estrictamente igual |
+  | `!==` | estrictamente distinto |
+
+  Los lenguajes de programación adoptaron las operaciones matemáticas de comparación casi sin cambios, excepto la igualdad y la desigualdad. En matemáticas se usa el `=` habitual, pero en programación el símbolo `=` ya está ocupado: asigna valores a las variables. Por eso, para la comparación de igualdad JavaScript usa `===` y para la desigualdad `!==` (el triple y el del signo de exclamación son la comparación "estricta", a la que volveremos más adelante).
 
   ```javascript
-  const isInfant = (age) => age < 1;
-
-  console.log(isInfant(3));
+  console.log(5 >= 3);  // => true
+  console.log(7 < 0);   // => false
+  console.log(5 > 5);   // => false
+  console.log(5 >= 5);  // => true
+  console.log(2 === 5); // => false
+  console.log(2 !== 5); // => true
   ```
 
-  ```textfalse```
-
-
-  Ahora probemos con un niño de seis meses:
+  Cuando en una comparación se usan valores concretos, la operación parece carecer de sentido: el resultado ya se conoce y siempre es el mismo. Pero todo cambia cuando los valores pueden ser distintos. Escribamos una función simple que reciba la edad de un niño y determine si es un bebé. Se consideran bebés a los niños menores de dos años (dos no se incluye):
 
   ```javascript
-  console.log(isInfant(0.5));
+  const isInfant = (age) => age < 2;
+
+  console.log(isInfant(3)); // => false
+  console.log(isInfant(2)); // => false
+  console.log(isInfant(1)); // => true
+  console.log(isInfant(0)); // => true
   ```
 
-  ```texttrue```
+  ## Predicados
 
+  Cuando las funciones devuelven el resultado de una comparación, suelen responder a la pregunta "sí" o "no". Tales funciones se llaman **predicados**. Son fáciles de reconocer: devuelven un valor lógico `true` o `false`, y su nombre a menudo contiene la afirmación que se comprueba (`is`, `has`, `can`). Aquí tienes una función que comprueba si un número es negativo:
+
+  ```javascript
+  const isNegative = (number) => number < 0;
+
+  console.log(isNegative(-5)); // => true
+  console.log(isNegative(7));  // => false
+  ```
+
+  Los nombres de los predicados se construyen de modo que la pregunta se lea directamente a partir del nombre: `hasChildren()` — "¿hay hijos?", `isEmpty()` — "¿la cadena está vacía?", `hasErrors()` — "¿hay errores?". Al mismo tiempo, se considera predicado solo a una función que devuelve precisamente un valor lógico, sin excepciones.
 instructions: |
-
-  Escribe una función llamada `isPensioner()` que reciba un parámetro, la edad de una persona, y determine si es jubilada. Se considera jubilada a una persona que tiene 60 años o más.
-
-  Ejemplos de uso:
+  Escribe una función `isPensioner(age)` que devuelva `true` si la edad `age` es 60 o mayor, y `false` en caso contrario.
 
   ```javascript
-  isPensioner(75); // true
-  isPensioner(18); // false
+  isPensioner(65); // => true
+  isPensioner(30); // => false
   ```
-
 tips:
   - |
     [Boolean en JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
-
 definitions:
-  - name: "Tipo lógico (booleano)"
-    description: "un tipo de dato con dos posibles valores: true (verdadero) y false (falso)."
+  - name: Tipo lógico (booleano)
+    description: 'un tipo de dato con dos posibles valores: true (verdadero) y false (falso).'

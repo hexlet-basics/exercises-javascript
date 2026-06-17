@@ -3,7 +3,7 @@
 name: Operadores lógicos
 theory: |
 
-  Las expresiones lógicas pueden combinarse entre sí para crear verificaciones más complejas. Un buen ejemplo es la verificación de contraseñas. Como sabes, algunos sitios web requieren contraseñas de entre 8 y 20 caracteres de longitud. Honestamente, esta es una restricción extraña, pero qué se le va a hacer. En matemáticas, escribiríamos `8 < x < 20` (donde `x` es la longitud de una contraseña específica), pero en JavaScript esto no funcionaría. Tendremos que hacer dos expresiones lógicas separadas y combinarlas con el operador especial "Y":
+  Las expresiones lógicas pueden combinarse entre sí para crear verificaciones cada vez más complejas. Un buen ejemplo es la verificación de contraseñas. Como sabes, algunos sitios web requieren contraseñas de entre 8 y 20 caracteres de longitud durante el registro. Honestamente, esta es una restricción extraña, pero qué se le va a hacer. En matemáticas, escribiríamos `8 < x < 20` (donde `x` es la longitud de una contraseña específica), pero en JavaScript esto no funcionaría. Tendremos que hacer dos expresiones lógicas separadas y combinarlas con el operador especial "Y":
 
   ```
   La contraseña es más larga de 8 caracteres **Y** más corta de 20 caracteres.
@@ -60,17 +60,16 @@ theory: |
   isGoodApartment(80, 'Main Street');    // true
   ```
 
-
   El área de las matemáticas que estudia los operadores lógicos se llama álgebra booleana. A continuación se muestran las "tablas de verdad" que permiten determinar el resultado de la aplicación de un operador:
 
   ## Y `&&`
 
   | A     | B     | A && B   |
   |-------| ------|----------|
-  | VERDADERO  | VERDADERO  | **VERDADERO** |
-  | VERDADERO  | FALSO | FALSO    |
-  | FALSO | VERDADERO  | FALSO    |
-  | FALSO | FALSO | FALSO    |
+  | TRUE  | TRUE  | **TRUE** |
+  | TRUE  | FALSE | FALSE    |
+  | FALSE | TRUE  | FALSE    |
+  | FALSE | FALSE | FALSE    |
 
   Algunos ejemplos:
 
@@ -86,10 +85,10 @@ theory: |
 
   | A     | B     | A &vert;&vert; B |
   |-------|-------|----------|
-  | VERDADERO  | VERDADERO  | **VERDADERO** |
-  | VERDADERO  | FALSO | **VERDADERO** |
-  | FALSO | VERDADERO  | **VERDADERO** |
-  | FALSO | FALSO | FALSO    |
+  | TRUE  | TRUE  | **TRUE** |
+  | TRUE  | FALSE | **TRUE** |
+  | FALSE | TRUE  | **TRUE** |
+  | FALSE | FALSE | FALSE    |
 
   Algunos ejemplos:
 
@@ -103,23 +102,17 @@ theory: |
 
 instructions: |
 
-  Implementa la función `isLeapYear()`, que determina si un año es bisiesto o no. Un año es bisiesto si es divisible (es decir, no tiene residuo) por 400 o si es divisible por 4 y no es divisible por 100. Como puedes ver, toda la lógica necesaria ya está incluida en la definición, sólo falta convertirla en código:
+  Escribe una función `isLeapYear(year)` que devuelva `true` si el año es bisiesto.
+
+  Un año es bisiesto si:
+  - es divisible por 4, **pero no** por 100, **o**
+  - es divisible por 400.
 
   ```javascript
-  isLeapYear(2018); // false
-  isLeapYear(2017); // false
-  isLeapYear(2016); // true
-  ```
-
-  Puedes verificar la divisibilidad de la siguiente manera:
-
-  ```javascript
-  // % - devuelve el residuo de la división del operando izquierdo por el operando derecho
-  // Verifica si number es divisible por 10
-  number % 10 === 0
-
-  // Verifica si number no es divisible por 10
-  number % 10 !== 0
+  isLeapYear(2000); // => true
+  isLeapYear(1900); // => false
+  isLeapYear(2024); // => true
+  isLeapYear(2023); // => false
   ```
 
 tips:
@@ -132,4 +125,4 @@ tips:
 
 definitions:
   - name: "Operadores lógicos"
-    description: "operadores 'Y' (&&) y 'O' (||) que permiten crear condiciones lógicas compuestas."
+    description: "los operadores 'Y' (&&) y 'O' (||) que permiten crear condiciones lógicas compuestas."

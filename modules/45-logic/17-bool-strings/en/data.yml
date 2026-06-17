@@ -1,0 +1,11 @@
+---
+name: String comparison
+tips:
+  - >
+    [String comparison in
+    JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than)
+definitions:
+  - name: Lexicographic comparison
+    description: >-
+      comparing strings character by character from left to right by the
+      numeric codes of the characters (Unicode).

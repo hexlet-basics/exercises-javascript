@@ -1,9 +1,6 @@
-
-Escribe una función llamada `isPensioner()` que reciba un parámetro, la edad de una persona, y determine si es jubilada. Se considera jubilada a una persona que tiene 60 años o más.
-
-Ejemplos de uso:
+Escribe una función `isPensioner(age)` que devuelva `true` si la edad `age` es 60 o mayor, y `false` en caso contrario.
 
 ```javascript
-isPensioner(75); // true
-isPensioner(18); // false
+isPensioner(65); // => true
+isPensioner(30); // => false
 ```
