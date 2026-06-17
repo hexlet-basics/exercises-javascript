@@ -1,3 +1,7 @@
 ---
 name: Composition of operations
 tips: []
+definitions:
+  - name: Composition
+    description: |
+      a method of combining several simple operations into one complex operation.

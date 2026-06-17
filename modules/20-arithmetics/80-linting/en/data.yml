@@ -1,3 +1,10 @@
 ---
 name: Linter
-tips: []
+tips:
+  - |
+    [Biome — a linter and formatter for JavaScript](https://biomejs.dev/)
+definitions:
+  - name: Linter
+    description: >-
+      a tool that analyzes code and reports violations of formatting
+      standards.

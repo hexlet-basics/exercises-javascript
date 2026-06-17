@@ -1,12 +1,21 @@
 ---
 name: Operadores
 tips:
+  - >-
+    Separa siempre los operadores aritméticos de sus operandos con espacios —
+    es un buen estilo de programación.
   - >
     [Operadores en
     JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Expressions_and_Operators)
 definitions:
   - name: Operación aritmética
     description: suma, resta, multiplicación y división.
+  - name: Operador
+    description: >-
+      símbolo especial que crea una operación. Por ejemplo, `+` crea la
+      operación de suma.
+  - name: Operando
+    description: 'objeto que participa en una operación. `3 * 6`: aquí 3 y 6 son operandos.'
   - name: Operación unaria
     description: >-
       operación con un solo operando. Por ejemplo, `-3` es una operación unaria

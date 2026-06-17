@@ -1,4 +1,8 @@
+You and 4 friends (5 people in total) ordered 2 pizzas at 300 rubles each and 4 drinks at 50 rubles each. You need to split the bill equally.
 
-Given the expression `70 * 3 + 4 / 8 + 2`.
+Write a one-line program with `console.log()`, placing parentheses so that the total amount is calculated first and then divided among everyone:
 
-Place parentheses so that both additions (`3 + 4`) and (`8 + 2`) will be calculated first. Print the result.
+```text
+without parentheses:   2 * 300 + 4 * 50 / 5  =  640  ← incorrect
+with parentheses:  (2 * 300 + 4 * 50) / 5  =  160  ← correct
+```

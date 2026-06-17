@@ -3,36 +3,92 @@
 name: Operadores
 theory: |
 
-  Antes de continuar, vamos a repasar la terminología básica. Un símbolo de operación, como `+`, se llama **operador**. Los operadores realizan operaciones en valores específicos, que se llaman **operandos**. Los operadores en sí suelen estar representados por uno o varios caracteres, aunque a veces también pueden ser palabras. La gran mayoría de los operadores corresponden a operaciones matemáticas.
+  En matemáticas y programación, a menudo usamos signos de operación como `+`, `-`, `*` y otros. En programación, estos signos se llaman operadores.
+
+  - Un operador es un símbolo o palabra que denota una acción.
+  - Los operandos son los valores a los que se aplica el operador.
+
+  Ejemplo:
 
   ```javascript
   console.log(8 + 2);
   ```
 
-  En este ejemplo, `+` es el **operador**, y los números `8` y `2` son los **operandos**.
+  Aquí:
 
-  En el caso de la suma, tenemos dos operandos: uno a la izquierda y otro a la derecha del símbolo `+`. Las operaciones que requieren dos operandos se llaman **binarias**. Si falta al menos uno de los operandos, por ejemplo, `3 + ;`, el programa mostrará un error de sintaxis.
+  - `+` es un operador
+  - `8` y `2` son operandos
+  - el resultado será `10`
 
-  Las operaciones (no los operadores) pueden ser no sólo binarias, sino también unarias (con un solo operando) e incluso ternarias (con tres operandos). Además, los operadores pueden tener la misma apariencia pero representar operaciones diferentes.
+  ```text
+  operando   operador   operando       resultado
+      8          +          2        →      10
+      5          -          3        →      2
+      4          *          3        →      12
+  ```
 
-    ```javascript
-    console.log(-3); // => -3
-    ```
+  ## Operadores unarios
 
-  En el ejemplo anterior, se aplica una operación unaria al número `3`. El operador de menos antes del tres le indica al intérprete que tome el número `3` y encuentre su opuesto, es decir, `-3`.
+  También existen operaciones unarias, que trabajan con un solo operando. Ejemplo:
 
-  Esto puede ser un poco confuso, ya que `-3` es tanto un número en sí mismo como un operador con un operando, pero es una estructura común en los lenguajes de programación.
+  ```javascript
+  console.log(-3); // => -3
+  ```
+
+  En este caso, `-` es un operador unario, y `3` es el operando. El intérprete recibe la orden: "toma el número 3 y cambia su signo".
+
+  El operador `-` puede usarse de diferentes maneras. Cuando se encuentra **entre dos números**, es una operación de resta:
+
+  ```javascript
+  console.log(5 - 2);   // => 3
+  console.log(10 - 7);  // => 3
+  ```
+
+  Esta diferencia es especialmente notable al trabajar con números negativos:
+
+  ```javascript
+  // menos por menos da más
+  console.log(5 - -2); // => 7
+  ```
+
+  Primero vemos la operación de resta: `5 - (...)`. Pero a la derecha hay un menos unario `-2`, que convierte el `2` en un número negativo. Como resultado, obtenemos: `5 - (-2) = 7`.
+
+  Así, el significado de `-` depende del contexto: si hay otro número a su lado, es una resta; de lo contrario, es un cambio de signo del número.
+
+  ## Errores en los cálculos
+
+  Si consideras `-3` como un único número, puedes no darte cuenta de que `-` es un operador independiente con su propia prioridad. Por ejemplo:
+
+  ```javascript
+  console.log(-3 ** 2); // => -9, ¡no 9!
+  ```
+
+  A primera vista, puede parecer que `-3` se eleva al cuadrado, y el resultado debería ser `9`. Pero el resultado será `-9`.
+
+  La razón está en el orden de los cálculos: primero se realiza la potenciación (`**`), y sólo después se aplica el menos unario. Es decir: `-(3 ** 2) = -9`. Hablaremos sobre la prioridad de las operaciones con más detalle en las siguientes lecciones.
 
 instructions: |
-  Escribe un programa que calcule la diferencia entre los números `6` y `-81` y muestre la respuesta en pantalla.
+
+  Un submarino se encuentra a una profundidad de -81 m. La cubierta del barco de rescate está situada a una altura de +6 m sobre el nivel del agua.
+
+  Calcula y muestra en pantalla:
+
+  1. La distancia total de ascenso en metros.
+  2. El tiempo de ascenso en minutos — el submarino asciende a una velocidad de 3 m/min.
 
 tips:
+  - |
+    Separa siempre los operadores aritméticos de sus operandos con espacios — es un buen estilo de programación.
   - |
     [Operadores en JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Expressions_and_Operators)
 
 definitions:
   - name: Operación aritmética
     description: suma, resta, multiplicación y división.
+  - name: Operador
+    description: símbolo especial que crea una operación. Por ejemplo, `+` crea la operación de suma.
+  - name: Operando
+    description: 'objeto que participa en una operación. `3 * 6`: aquí 3 y 6 son operandos.'
   - name: Operación unaria
     description: operación con un solo operando. Por ejemplo, `-3` es una operación unaria para obtener el número opuesto al número tres.
   - name: Operación binaria

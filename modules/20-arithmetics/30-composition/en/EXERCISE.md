@@ -1,8 +1,7 @@
+You are going to the store to buy gifts: 3 books at 200 rubles each and 2 pens at 30 rubles each. Calculate and print the total cost of the purchase.
 
-Write a program that calculates and prints the value of this expression:
-
+```text
+3 * 200  +  2 * 30
+    ↓           ↓
+   600    +    60    =  660
 ```
-8 / 2 + 5 - -3 / 2
-```
-
-Don't calculate anything manually, your program should do all the calculations on its own.
