@@ -1,9 +1,8 @@
 ---
 name: Determinismo
 tips:
-  - >
-    [Funciones
-    deterministas](https://es.wikipedia.org/wiki/Funci%C3%B3n_determinista)
+  - |
+    [Funciones deterministas](https://es.wikipedia.org/wiki/Pureza_de_funciones#Determinismo_de_la_funci%C3%B3n)
 definitions:
   - name: Efecto secundario
     description: >-

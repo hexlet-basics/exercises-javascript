@@ -1,5 +1,6 @@
+Functions in any programming language have fundamental properties. They help us understand how a function will behave in different situations, how to test it, and where to use it. One such property is **determinism**.
 
-Regardless of the programming language, functions possess certain fundamental properties. Knowing these properties makes it easier to predict the behavior of functions, as well as their testing and their usage. These properties include determinism. A function is deterministic when it returns the same result for the same input parameters. For example, a function counting the number of characters is deterministic:
+A **deterministic function** always returns the same result for the same input data. For example, a function that counts the number of characters can be called deterministic:
 
 ```javascript
 import { length } from 'hexlet-basics/string';
@@ -11,12 +12,32 @@ length('wow'); // 3
 length('wow'); // 3
 ```
 
-No matter how many times we call this function and pass `'hexlet'`, it will always return `6`. In turn, a function that returns a random number is not deterministic, as the same input (even if it is empty, i.e. without parameters) will always output a different result. How it differs doesn't matter, even if at least one of a million calls returns something different, this function is deemed non-deterministic.
+No matter how many times we call this function with the argument `'hexlet'`, it will always return `6`.
+
+## Non-deterministic functions
+
+The opposite type is **non-deterministic functions**. They can return different results for the same input data or in its absence (functions without parameters). A good example is a function that returns a random number:
 
 ```javascript
-// A function that returns a random number
 Math.random(); // 0.09856613113197676
 Math.random(); // 0.8839904367241888
 ```
 
-So what use is knowing that to us? Determinism seriously affects many different aspects. Deterministic functions are easy to work with, easy to optimize, and easy to test. If you can make a function deterministic, it's best to make it one.
+This function has no arguments, but the result is different every time. If even one call out of a million produces a different result, the function is considered non-deterministic.
+
+```text
+Deterministic:            Non-deterministic:
+length('abc') → always 3  Math.random() → 0.42
+length('abc') → always 3  Math.random() → 0.91
+length('abc') → always 3  Math.random() → 0.07
+```
+
+## Why this matters
+
+Determinism affects how we work with functions:
+
+- deterministic functions are easy to test and predict;
+- they are easier to optimize and reuse;
+- non-deterministic functions are harder to verify because the result changes.
+
+That is why, where possible, it is better to strive to make a function deterministic.

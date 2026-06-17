@@ -1,3 +1,14 @@
 ---
-name: Calling functions
-tips: []
+name: Functions and calling them
+tips:
+  - |
+    [Calling functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#calling_functions)
+definitions:
+  - name: Function
+    description: >-
+      an operation able to receive data and return a result; a function is
+      called like this: `foo()`.
+  - name: Argument
+    description: >-
+      the information a function receives when called. For example, `foo(42)` —
+      passing the argument `42` to the function `foo()`
