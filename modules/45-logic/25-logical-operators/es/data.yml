@@ -10,5 +10,5 @@ tips:
 definitions:
   - name: Operadores lógicos
     description: >-
-      operadores 'Y' (&&) y 'O' (||) que permiten crear condiciones lógicas
+      los operadores "Y" (&&) y "O" (||) que permiten crear condiciones lógicas
       compuestas.

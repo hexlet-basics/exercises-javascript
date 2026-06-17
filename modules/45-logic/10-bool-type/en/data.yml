@@ -1,5 +1,8 @@
 ---
 name: Boolean type
+tips:
+  - |
+    [Boolean in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 definitions:
-  - name: Logical type (boolean)
+  - name: Boolean type
     description: 'a data type with two possible values: true and false.'

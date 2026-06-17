@@ -1,0 +1,11 @@
+---
+name: Comparación de cadenas
+tips:
+  - >
+    [Comparación de cadenas en
+    JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Less_than)
+definitions:
+  - name: Comparación lexicográfica
+    description: >-
+      comparación de cadenas carácter por carácter de izquierda a derecha según
+      los códigos numéricos de los caracteres (Unicode).
