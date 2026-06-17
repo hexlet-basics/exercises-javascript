@@ -1,31 +1,85 @@
+Los programas trabajan con información diversa: texto, números, fechas, valores lógicos. Cada valor en un programa tiene un tipo.
 
-¿Qué sucede si intentamos multiplicar un número por una cadena de texto? JavaScript devuelve `NaN` (no es un número) - ese es el valor. Ocurre cuando se utilizan valores incompatibles juntos. En este caso, un número y una cadena de texto:
+Por ejemplo:
 
-```javascript
-3 * 'Dracarys'; // NaN
-```
+- `'Hello, World!'` es una cadena de texto (`string`);
+- `7`, `-198`, `0`, `3.14` son números (`number`);
+- `true` y `false` son valores lógicos (`boolean`).
 
-En los lenguajes de programación de alto nivel, los datos se dividen en tipos. Cualquier cadena de texto pertenece al tipo String, y los números pertenecen al tipo Number y BigInt (números muy grandes). ¿Para qué sirven los tipos? Para proteger el programa de errores difíciles de detectar. Los tipos determinan dos cosas:
+## ¿Qué es un tipo de datos?
 
-* Los valores posibles (permitidos). Por ejemplo, en JavaScript, los números se dividen en dos tipos: Number y BigInt. Los primeros son todos los números por debajo de un cierto umbral (que se puede ver); los segundos son los números más grandes. Esta división está relacionada con las características técnicas del hardware.
-* El conjunto de operaciones que se pueden realizar con este tipo. Por ejemplo, la operación de multiplicación tiene sentido para el tipo "números enteros". Pero no tiene sentido para el tipo "cadenas de texto": multiplicar la palabra "mamá" por la palabra "cuaderno" es absurdo.
+Un tipo de datos define:
 
-JavaScript se comporta de dos maneras cuando se encuentra con violaciones. En algunas situaciones, se queja de la invalidez de la operación y se detiene con un error. En otros casos, el programa sigue funcionando. En este caso, la operación no válida devuelve algo similar a `NaN`, como en el ejemplo anterior.
+- qué valores le pertenecen;
+- qué operaciones se pueden realizar con él.
 
-¿Cómo sabe JavaScript qué tipo de datos tiene delante? Es bastante simple. Cualquier valor se inicializa en algún lugar y, dependiendo de cómo se inicialice, se entiende qué es. Por ejemplo, los números son simplemente números sin caracteres adicionales, excepto el punto para los números racionales. Pero las cadenas de texto siempre están delimitadas por caracteres especiales (en JavaScript hay tres variantes diferentes). Por ejemplo, el valor `'234'` es una cadena de texto, a pesar de que contiene números.
-
-JavaScript permite conocer el tipo de datos con el operador `typeof`:
-
-```javascript
-typeof 3; // number
-typeof 'Juego'; // string
-```
-
-Los tipos de datos Number, BigInt y String son tipos *primitivos*. Pero hay otros. En JavaScript, hay un tipo compuesto llamado Object (y con base en él, arrays, fechas y otros). Con él, se pueden combinar datos de diferentes tipos en un solo valor, por ejemplo, podemos crear un usuario agregando un nombre y una edad.
+Por ejemplo, los números se pueden sumar, dividir y multiplicar. Las cadenas de texto se combinan de otra manera — mediante la concatenación. Multiplicar una cadena de texto por otra cadena de texto no tiene sentido:
 
 ```javascript
-// Esta sintaxis se aprende en Hexlet
-const user = { name: 'Toto', age: 33 };
+// Sin sentido: 'mamá' * 'cuaderno'
 ```
 
-En inglés, las cadenas de texto en programación se llaman "strings", y las líneas de los archivos de texto se llaman "lines". Por ejemplo, en el código anterior hay dos líneas (lines), pero solamente una cadena de texto (strings). En español, a veces puede haber confusión, por lo tanto, en todas las lecciones usaremos **cadena de texto** para referirnos al tipo de datos "cadena de texto", y **línea** para referirnos a las líneas (lines) en los archivos.
+## Los números y las cadenas de texto pertenecen a tipos distintos
+
+Un ejemplo de cómo mostrar un número:
+
+```javascript
+console.log(5);  // => 5
+console.log(-5); // => -5
+```
+
+Un ejemplo de cómo mostrar una cadena de texto:
+
+```javascript
+console.log('5');  // => 5
+console.log('-5'); // => -5
+```
+
+En la pantalla el resultado se ve igual, pero dentro del programa son cosas completamente diferentes:
+
+| Valor    | Tipo de datos               |
+|----------|-----------------------------|
+| `5`      | `number` (número)           |
+| `'5'`    | `string` (cadena de texto)  |
+
+## Los números en JavaScript
+
+En muchos lenguajes, los números enteros y los fraccionarios son tipos distintos (por ejemplo, en Python son `int` y `float`). En JavaScript no existe tal división: tanto los números enteros como los fraccionarios pertenecen a un solo tipo — `number`.
+
+```javascript
+console.log(10.234);     // => 10.234
+console.log(-0.4);       // => -0.4
+
+console.log(3.5 + 1.2);  // => 4.7
+console.log(5 / 2);      // => 2.5
+console.log(2.75 - 0.5); // => 2.25
+```
+
+## Tipos primitivos
+
+Los tipos como `string`, `number`, `boolean` se llaman primitivos — están integrados directamente en el lenguaje.
+
+```text
+Tipos primitivos de JavaScript
+├── number    : números (enteros y fraccionarios) (7, -3, 3.14)
+├── string    : cadenas de texto                  ('hello')
+├── boolean   : tipo lógico                         (true, false)
+├── null       : ausencia intencional de un valor
+└── undefined : el valor no está definido
+```
+
+Además de las cadenas de texto y los números, JavaScript tiene el tipo lógico `boolean` con los valores `true` y `false`, así como los valores especiales `null` y `undefined`. Los veremos con más detalle en el futuro.
+
+## Cómo averiguar el tipo de un valor
+
+El operador `typeof` devuelve el tipo en forma de cadena de texto:
+
+```javascript
+console.log(typeof 42);        // => 'number'
+console.log(typeof 'hello');   // => 'string'
+console.log(typeof true);      // => 'boolean'
+console.log(typeof undefined); // => 'undefined'
+console.log(typeof null);      // => 'object'  (un error histórico de JS)
+```
+
+También existen tipos compuestos — arrays, objetos y otros. Nos familiarizaremos con ellos más adelante. Es más, en JavaScript se pueden crear tus propios tipos (por ejemplo, clases), pero para empezar es importante comprender bien los primitivos.
