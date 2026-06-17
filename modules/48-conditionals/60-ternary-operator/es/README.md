@@ -1,5 +1,5 @@
 
-Echa un vistazo a la definición de una función que devuelve el valor absoluto de un número:
+Observa la definición de una función que devuelve el valor absoluto del número pasado:
 
 ```javascript
 const abs = (number) => {
@@ -14,11 +14,11 @@ abs(10); // 10
 abs(-10); // 10
 ```
 
-¿Se puede escribir de forma más concisa? Algo como `return <respuesta dependiendo de la condición>`? Para eso, a la derecha de `return` debe haber una expresión, pero `if` es una instrucción, no una expresión.
+¿Se puede escribir de forma más concisa? ¿Algo como `return <respuesta según la condición>`? Para eso, a la derecha de return debe haber una expresión, pero `if` es una instrucción, no una expresión.
 
-En JavaScript existe una construcción que es similar a la estructura *if-else*, pero a la vez es una expresión. Se llama **operador ternario**.
+En JavaScript existe una construcción que por su comportamiento es análoga a la construcción *if-else*, pero que a la vez es una expresión. Se llama **operador ternario**.
 
-El operador ternario es único en su tipo, ya que requiere tres operandos:
+El operador ternario es el único operador de su tipo que requiere tres operandos:
 
 ```javascript
 const abs = (number) => {
@@ -36,7 +36,7 @@ const abs = (number) => (number >= 0 ? number : -number);
 
 Ten en cuenta los paréntesis alrededor del operador ternario. No son obligatorios, pero el linter [recomienda encarecidamente](https://eslint.org/docs/rules/no-confusing-arrow) usarlos para evitar ambigüedades.
 
-Ahora reescribamos la función inicial `getTypeOfSentence()` de manera similar:
+Ahora reescribamos la versión inicial de `getTypeOfSentence()` de manera similar:
 
 Antes:
 
@@ -67,4 +67,4 @@ getTypeOfSentence('Hodor?'); // question
 
 ---
 
-Si recuerdas el poder de las expresiones, probablemente ya te hayas dado cuenta de que se puede anidar un operador ternario dentro de otro. **No hagas esto :)**. Este tipo de código es difícil de leer y depurar, y es una mala práctica.
+Si recuerdas el poder de las expresiones, probablemente ya te hayas dado cuenta de que se puede anidar un operador ternario dentro de otro. **No hagas esto :)** Este tipo de código es difícil de leer y depurar, y es una muy mala práctica.

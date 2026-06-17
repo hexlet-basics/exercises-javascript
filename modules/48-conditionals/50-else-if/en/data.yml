@@ -1,6 +1,9 @@
 ---
-name: else if statement
-tips: []
+name: The else if construct
+tips:
+  - >
+    [else
+    if](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else#using_else_if)
 definitions:
   - name: else if
-    description: is a way to set multiple alternate conditions
+    description: a way to specify several alternative conditions.

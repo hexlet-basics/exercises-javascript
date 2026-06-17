@@ -1,9 +1,9 @@
 ---
 
-name: Estructura else if
+name: La construcción else if
 theory: |
 
-  La función `getTypeOfSentence()` del ejercicio anterior sólo distingue entre oraciones interrogativas y oraciones normales. Intentemos agregar soporte para oraciones exclamativas:
+  La función `getTypeOfSentence()` de la lección anterior distingue solo entre preguntas y oraciones normales. Intentemos agregar soporte para oraciones exclamativas:
 
   ```javascript
   const getTypeOfSentence = (sentence) => {
@@ -28,13 +28,12 @@ theory: |
   getTypeOfSentence('No!');  // Sentence is exclamation
   ```
 
+  Agregamos una comprobación más. Técnicamente la función funciona, pero desde el punto de vista de la semántica hay problemas.
 
-  Hemos agregado otra verificación ("exclamation" se traduce como «exclamación»). Técnicamente, la función funciona, pero hay problemas desde el punto de vista semántico.
+  - La comprobación del signo de interrogación se ejecuta en cualquier caso, incluso si ya se detectó un signo de exclamación.
+  - La rama `else` está descrita solo para la primera condición, pero no para la segunda.
 
-  - La verificación de la presencia del signo de interrogación ocurre de todos modos, incluso si ya se ha detectado el signo de exclamación.
-  - La rama `else` está descrita sólo para la primera condición, pero no para la segunda.
-
-  Sería más correcto utilizar otra posibilidad de la estructura condicional:
+  Será más correcto usar una posibilidad más de la construcción condicional:
 
   ```javascript
   const getTypeOfSentence = (sentence) => {
@@ -57,39 +56,49 @@ theory: |
   getTypeOfSentence('No!');  // Sentence is exclamation
   ```
 
-  Ahora todas las condiciones están organizadas en una única estructura. `else if` significa "si la condición anterior no se cumple, pero la actual sí". La estructura es la siguiente:
+  Ahora todas las condiciones están organizadas en una única construcción. `else if` significa "si no se cumplió la condición anterior, pero se cumple la actual".
+
+  ```text
+    ┌─────────────────┐
+    │ ¿condición 1?   │
+    └────┬────────┬───┘
+    true │        │ false
+         ↓        ↓
+  ┌──────────┐  ┌─────────────────┐
+  │ cuerpo if│  │ ¿condición 2?   │
+  └──────────┘  └────┬────────┬───┘
+                true │        │ false
+                     ↓        ↓
+         ┌────────────────┐ ┌──────────────┐
+         │ cuerpo else if │ │ cuerpo else  │
+         └────────────────┘ └──────────────┘
+  ```
+
+  La lógica de la función resulta en el siguiente esquema:
 
   - si el último carácter es `?`, entonces `'question'`
   - de lo contrario, si el último carácter es `!`, entonces `'exclamation'`
-  - de lo contrario, `'normal'`
+  - de lo contrario `'normal'`
 
-  Sólo se ejecutará uno de los bloques de código relacionados con toda la estructura `if`.
-
+  Se ejecutará solo uno de los bloques de código que pertenecen a toda la construcción `if`.
 instructions: |
 
-  En el mapa electrónico de Westeros que Sam implementó, los aliados de los Stark se representan con un círculo verde, los enemigos con un círculo rojo y las familias neutrales con un círculo gris.
+  Implementa la función `getTrafficLightAction(color)`, que recibe un color de semáforo y devuelve lo que debe hacer el conductor:
 
-  Escribe una función para Sam llamada `whoIsThisHouseToStarks()` que reciba el apellido de una familia y devuelva uno de los tres valores: `'friend'`, `'enemy'`, `'neutral'`.
-
-  Reglas de determinación:
-
-  * Amigos (`'friend'`): 'Karstark', 'Tally'
-  * Enemigos (`'enemy'`): 'Lannister', 'Frey'
-  * Todas las demás familias se consideran neutrales
-
-  Ejemplos de llamadas:
+  - `'green'` → `'go'`
+  - `'yellow'` → `'slow down'`
+  - `'red'` → `'stop'`
+  - cualquier otro color → `'unknown'`
 
   ```javascript
-  whoIsThisHouseToStarks('Karstark'); // amigo
-  whoIsThisHouseToStarks('Frey');     // enemigo
-  whoIsThisHouseToStarks('Joar');     // neutral
-  whoIsThisHouseToStarks('Ivanov');   // neutral
+  getTrafficLightAction('green');  // => 'go'
+  getTrafficLightAction('red');    // => 'stop'
+  getTrafficLightAction('purple'); // => 'unknown'
   ```
-
 tips:
   - |
-    [else if](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/if...else#usando_else_if)
-
+    [else
+    if](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/if...else#usando_else_if)
 definitions:
-  - name: "else if"
-    description: "forma de establecer múltiples condiciones alternativas."
+  - name: else if
+    description: una forma de especificar varias condiciones alternativas.

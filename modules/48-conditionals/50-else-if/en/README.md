@@ -1,5 +1,5 @@
 
-The `getTypeOfSentence()` function from the previous lesson only distinguishes between questions and normal sentences. Let's try to extend it to exclamation sentences:
+The `getTypeOfSentence()` function from the previous lesson distinguishes only between questions and regular sentences. Let's try to add support for exclamatory sentences:
 
 ```javascript
 const getTypeOfSentence = (sentence) => {
@@ -19,17 +19,17 @@ const getTypeOfSentence = (sentence) => {
   return `Sentence is ${sentenceType}`;
 };
 
-getTypeOfSentence('Who?'); // 'Sentence is question'
-getTypeOfSentence('No');   // 'Sentence is normal'
-getTypeOfSentence('No!');  // 'Sentence is exclamation'
+getTypeOfSentence('Who?'); // Sentence is question
+getTypeOfSentence('No');   // Sentence is normal
+getTypeOfSentence('No!');  // Sentence is exclamation
 ```
 
-We added one more test. Technically the function works, but there are semantics issues.
+We added one more check. Technically the function works, but from a semantics standpoint there are problems.
 
-- It tests for the question mark in any case, regardless of whether an exclamation point was found or not
-- The `else` branch is defined for the first condition, not for the second
+- The check for a question mark runs in any case, even if an exclamation mark has already been detected.
+- The `else` branch is described for the first condition only, but not for the second.
 
-It would be better to use another condition feature:
+It would be more correct to use one more feature of the conditional construct:
 
 ```javascript
 const getTypeOfSentence = (sentence) => {
@@ -47,15 +47,33 @@ const getTypeOfSentence = (sentence) => {
   return `Sentence is ${sentenceType}`;
 };
 
-getTypeOfSentence('Who?'); // 'Sentence is question'
-getTypeOfSentence('No');   // 'Sentence is normal'
-getTypeOfSentence('No!');  // 'Sentence is exclamation'
+getTypeOfSentence('Who?'); // Sentence is question
+getTypeOfSentence('No');   // Sentence is normal
+getTypeOfSentence('No!');  // Sentence is exclamation
 ```
 
-Now all the conditions are framed in a single construction. `else if` means "if the previous condition is not satisfied, but this condition is". This is the scenario we get:
+Now all conditions are arranged into a single construct. `else if` means "if the previous condition was not met, but the current one is".
 
-- if the last character is `?`, then it's a `'question'`
-- else, if the last character is `!`, then it's an `'exclamation'`
-- else it's `'normal'`
+```text
+  ┌─────────────────┐
+  │ condition 1?    │
+  └────┬────────┬───┘
+  true │        │ false
+       ↓        ↓
+┌──────────┐  ┌─────────────────┐
+│ if body  │  │ condition 2?    │
+└──────────┘  └────┬────────┬───┘
+              true │        │ false
+                   ↓        ↓
+         ┌──────────────┐ ┌────────────┐
+         │ else if body │ │ else body  │
+         └──────────────┘ └────────────┘
+```
 
-Only one of the code blocks belonging to the entire `if` construct will be executed.
+The function logic results in the following scheme:
+
+- if the last character is `?`, then `'question'`
+- otherwise, if the last character is `!`, then `'exclamation'`
+- otherwise `'normal'`
+
+Only one of the code blocks belonging to the whole `if` construct will be executed.

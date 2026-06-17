@@ -1,4 +1,9 @@
 ---
-name: Conditionals (`if`)
-tips: []
-definitions: []
+name: Conditional statement (if)
+tips:
+  - >
+    [if](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+definitions:
+  - name: Conditional statements
+    description: |
+      change the behavior of a program depending on the conditions being checked
