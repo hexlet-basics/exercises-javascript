@@ -1,62 +1,104 @@
 ---
 
-name: Variables y Concatenación
+name: Variables y concatenación
 theory: |
 
-  Para reforzar el tema anterior, intentaremos utilizar variables con concatenación. Sintácticamente no cambia nada: sabemos cómo concatenar (unir) dos cadenas:
+  Anteriormente ya unimos cadenas directamente usando concatenación. Ahora haremos lo mismo, pero con variables. La buena noticia: la sintaxis sigue siendo la misma. Simplemente se sustituyen los valores de las variables.
+
+  ## Unir dos cadenas directamente
 
   ```javascript
-  let what = 'Kings' + 'road';
+  const what = 'Kings' + 'road';
   console.log(what); // => Kingsroad
   ```
 
-  ... lo que significa que también podemos concatenar una cadena y una variable en la que se almacena una cadena:
+  Aquí todo es sencillo: dos cadenas se unen en una. Así funciona la concatenación: el operador `+` suma las cadenas, creando una nueva cadena.
+
+  ## Unir una cadena y una variable
+
+  Si la variable `first` contiene la cadena `'Kings'`, podemos unirla tranquilamente con otra cadena:
 
   ```javascript
-  let primero = 'Kings';
-  let que = primero + 'road';
-
-  console.log(que); // => Kingsroad
+  const first = 'Kings';
+  const what = first + 'road';
+  console.log(what); // => Kingsroad
   ```
 
-  ... e incluso concatenar dos variables en las que se almacenan cadenas:
+  JavaScript sustituye el valor de la variable, ejecuta la operación y crea la cadena resultante.
+
+  ## Unir dos variables
+
+  De la misma manera, puedes combinar los valores de dos variables, si ambas contienen cadenas:
 
   ```javascript
-  let primero = 'Kings';
-  let ultimo = 'road';
-
-  let que = primero + ultimo;
-  console.log(que); // => Kingsroad
+  const first = 'Kings';
+  const last = 'road';
+  const what = first + last;
+  console.log(what); // => Kingsroad
   ```
 
+  También puedes agregar espacios:
+
+  ```javascript
+  const full = first + ' ' + last;
+  console.log(full); // => Kings road
+  ```
+
+  ```text
+  first = 'Kings'
+  last  = 'road'
+
+  first   +  ' '  +  last
+  └─┬──┘            └─┬┘
+  'Kings' + ' '  + 'road'
+  └────────┬─────────┘
+      'Kings road'
+  ```
+
+  ## ¿Y qué pasa si la variable contiene un número?
+
+  En JavaScript, el operador `+` se comporta de forma especial cuando de un lado hay una cadena y del otro un número. En ese caso, el número se convierte automáticamente en una cadena, y ocurre la concatenación:
+
+  ```javascript
+  const age = 42;
+  console.log('Age: ' + age); // => Age: 42
+  ```
+
+  Lo mismo ocurre con las variables que contienen resultados de cálculos:
+
+  ```javascript
+  const price = 50 * 1.25 * 6.91; // => 431.875
+  console.log('Price in yuans: ' + price); // => Price in yuans: 431.875
+  ```
+
+  También existe una conversión explícita de un número a una cadena mediante `String()`: la analizaremos en la lección sobre conversión de tipos.
 
 instructions: |
 
-  Los sitios web envían constantemente correos electrónicos a sus usuarios. Una tarea típica es enviar automáticamente un correo electrónico personalizado, donde el título contendrá el nombre del usuario. Si en algún lugar de la base de datos del sitio se almacena el nombre de la persona como una cadena, la tarea de generar el título se reduce a la concatenación: por ejemplo, es necesario unir la cadena `Hola` con la cadena que contiene el nombre.
+  Escribe un programa que genere y muestre una carta de bienvenida. Usa **solamente dos** llamadas a `console.log()`.
 
-  Escribe un programa que genere el título y el cuerpo del correo electrónico utilizando variables ya definidas, y muestra las cadenas resultantes en la pantalla.
+  Define las variables:
 
-  Para el título, utiliza las variables `firstname` y `greeting`, seguidas de una coma y un signo de exclamación. Muestra esto en la pantalla en el orden correcto.
+  - `firstName` = `'Anna'`
+  - `greeting` = `'Hello'`
+  - `intro` = `'Thank you for your order.'`
+  - `info` = `'Expected delivery date — 3 business days.'`
 
-  Para el cuerpo del correo, utiliza las variables `info` e `intro`, asegurándote de que la segunda oración esté en una nueva línea.
-
-  El resultado en la pantalla se verá así:
+  Salida esperada:
 
   ```text
-  Hello, Joffrey!
-  Here is important information about your account security.
-  We couldn't verify your mother's maiden name.
+  Hello, Anna!
+  Thank you for your order.
+  Expected delivery date — 3 business days.
   ```
-
-  Realiza la tarea usando solamente dos `console.log()`.
 
 tips:
   - |
-    Piensa en qué cadena y en qué orden debes concatenar las variables para obtener esa salida de dos líneas para el cuerpo del correo.
+    Piensa en qué cadena y en qué orden debes unir las variables para obtener esa salida de dos líneas del cuerpo de la carta.
   - |
-    Recuerda que puedes crear una cadena que contenga solo una secuencia de control `\n`.
+    Recuerda que puedes crear una cadena que contenga solo la secuencia de control `\n`.
 
 definitions:
   - name: Concatenación
     description: |
-      La operación de unir dos cadenas. Por ejemplo, `console.log("King's " + ' Landing');`
+      la operación de unir dos cadenas. Por ejemplo, `console.log("King's " + ' Landing');`

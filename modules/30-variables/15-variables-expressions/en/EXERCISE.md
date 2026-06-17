@@ -1,13 +1,6 @@
+Given the number of euros: `eurosCount = 100`. Write a program that:
 
-Write a program that takes the initial amount of euros stored in the variable `eurosCount`, converts euros to dollars, and prints it. Then, it should convert the result to yuan and print it on a new line.
+1. Converts euros to dollars at the rate of `1.25` and prints the result.
+2. Converts dollars to yuan at the rate of `6.91` and prints the result.
 
-Sample output for 100 euros:
-
-```text
-125
-863.75
-```
-
-Suppose that:
-- 1 euro = 1.25 dollars
-- 1 dollar = 6.91 yuan
+Use variables to store the intermediate values.

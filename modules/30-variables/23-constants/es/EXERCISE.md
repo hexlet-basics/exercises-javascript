@@ -1,2 +1,1 @@
-
-Crea una constante llamada `army`, asígnale el valor `the white walkers` e imprime su valor en la pantalla.
+Crea una constante `MAX_LOGIN_ATTEMPTS` con el valor `3` e imprímela en pantalla.

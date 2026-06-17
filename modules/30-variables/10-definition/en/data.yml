@@ -1,8 +1,9 @@
 ---
 name: What is a variable
 tips:
-  - >
+  - |
     [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 definitions:
   - name: Variable
-    description: is a way to save data under a name for later use in code.
+    description: |
+      a way to store information and give it a name for later use in code.

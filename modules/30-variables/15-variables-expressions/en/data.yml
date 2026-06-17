@@ -1,2 +1,9 @@
 ---
-name: Defining with expressions
+name: Expressions in definitions
+tips:
+  - |
+    [Expression](https://en.wikipedia.org/wiki/Expression_(computer_science))
+definitions:
+  - name: Variable
+    description: >-
+      a way to store information and give it a name for later use in the code.

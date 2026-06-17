@@ -1,31 +1,38 @@
-
-Recordemos una de las lecciones anteriores:
+Veamos un ejemplo de un programa que realiza la conversión de divisas:
 
 ```javascript
-let dollarsCount = 50 * 1.25; // 62.5
-let rublesCount = dollarsCount * 60; // 3750
+const eurosCount = 1000;
+const dollarsCount = eurosCount * 1.25; // => 1250
+const rublesCount = dollarsCount * 60;  // => 75000
 
 console.log(rublesCount);
 ```
 
-Desde el punto de vista del desarrollo profesional, este código "huele mal". Así es como se describe el código que es difícil de entender. Y la razón es la siguiente: en este momento, al ver los números `60` y `1.25`, es probable que te preguntes: "¿qué significan estos números?". ¡Imagínate cómo será dentro de un mes! Y cómo lo entenderá un nuevo programador que no haya visto el código antes. En nuestro ejemplo, el contexto se recupera gracias a una buena nomenclatura, pero en la vida real, el código es mucho más complicado, y a menudo, es imposible adivinar el significado de los números.
+Técnicamente, el código funciona. Pero desde el punto de vista del desarrollo profesional, este tipo de código se considera una mala práctica.
 
-Estos números que no se pueden entender sin un profundo conocimiento de lo que está sucediendo dentro de una parte específica del código se llaman Números mágicos.
+## ¿Cuál es el problema?
 
-La solución es simple: solamente necesitas crear variables con nombres adecuados y todo encajará en su lugar.
+En las expresiones se usan números poco claros: `1.25` y `60`. ¿Qué son estos valores? ¿Un tipo de cambio? ¿De dónde salieron? Dentro de un mes o un año, lo más probable es que no recuerdes qué significan estos números. Y si otro desarrollador abre el código, simplemente no entenderá de dónde sale todo. Estos números se llaman mágicos.
+
+Los números mágicos son valores numéricos cuyo significado no queda claro a partir del código. Por lo general, se usan directamente en expresiones matemáticas, sin variables con nombres comprensibles. Para entender su propósito, hay que profundizar en el contexto o leer documentación adicional. Los números mágicos dificultan la lectura, la comprensión y el mantenimiento del código.
+
+## Cómo evitar la magia
+
+La forma más sencilla consiste en extraer dichos valores a variables con nombres comprensibles. Entonces el significado se vuelve evidente:
 
 ```javascript
-let dollarsPerEuro = 1.25;
-let rublesPerDollar = 60;
+const dollarsPerEuro = 1.25;
+const rublesPerDollar = 60;
 
-let dollarsCount = 50 * dollarsPerEuro; // 62.5
-let rublesCount = dollarsCount * rublesPerDollar; // 3750
+const eurosCount = 1000;
+const dollarsCount = eurosCount * dollarsPerEuro;   // => 1250
+const rublesCount = dollarsCount * rublesPerDollar; // => 75000
 
 console.log(rublesCount);
 ```
 
-Presta atención a los siguientes detalles:
+Los números en sí no han desaparecido, pero ahora están almacenados en variables cuyos nombres indican sin ambigüedad qué son.
 
-* Nomenclatura en lowerCamelCase.
-* Las dos nuevas variables están separadas de los cálculos posteriores por una línea en blanco. Estas variables tienen sentido incluso sin los cálculos, por lo que esta separación es apropiada y mejora la legibilidad.
-* El código resultante es más largo que la versión anterior, pero eso es normal. El código debe ser legible.
+## Conclusión
+
+Los números mágicos hacen que el código sea poco claro y difícil de mantener. Para evitar este problema, hay que reemplazar dichos números por variables con nombres significativos. Esto hace que el código sea más legible, especialmente a largo plazo. El código claro siempre es más importante que la compacidad, incluso si el programa se vuelve un poco más largo.

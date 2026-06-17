@@ -1,10 +1,13 @@
 ---
-name: Naming a variable
+name: Choosing a variable name
 tips:
   - >
     [Naming in
-    programing](https://en.hexlet.io/blog/posts/code-complete-naming-in-programming)
+    programming](https://en.hexlet.io/blog/posts/code-complete-naming-in-programming)
   - >
     [Variable naming
     mistakes](https://en.hexlet.io/blog/posts/perfect-code-naming-mistakes-to-avoid-in-programming-i)
-definitions: []
+definitions:
+  - name: Variable
+    description: >-
+      a way to store information and give it a name for later use in the code.

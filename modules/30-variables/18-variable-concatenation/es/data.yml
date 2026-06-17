@@ -1,14 +1,14 @@
 ---
-name: Variables y Concatenación
+name: Variables y concatenación
 tips:
-  - >
-    Piensa en qué cadena y en qué orden debes concatenar las variables para
-    obtener esa salida de dos líneas para el cuerpo del correo.
-  - >
-    Recuerda que puedes crear una cadena que contenga solo una secuencia de
+  - |
+    Piensa en qué cadena y en qué orden debes unir las variables para obtener
+    esa salida de dos líneas del cuerpo de la carta.
+  - |
+    Recuerda que puedes crear una cadena que contenga solo la secuencia de
     control `\n`.
 definitions:
   - name: Concatenación
     description: >
-      La operación de unir dos cadenas. Por ejemplo, `console.log("King's " + '
+      la operación de unir dos cadenas. Por ejemplo, `console.log("King's " + '
       Landing');`
