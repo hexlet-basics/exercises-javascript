@@ -1,3 +1,3 @@
 console.log(
-  'Для разделения строк используйте "\\n"\nПример: console.log("строка1\\nстрока2")',
+  'Use "\\n" to separate lines\nExample: console.log("line1\\nline2")',
 );

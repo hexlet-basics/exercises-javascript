@@ -1,14 +1,13 @@
-
-En JavaScript, puedes "solicitar" y mostrar en pantalla cualquier carácter de la codificación ASCII. Por ejemplo:
+El programa recibe los códigos numéricos de los caracteres y los muestra en pantalla: esto es útil cuando un carácter es difícil de escribir con el teclado. Encuentra los caracteres con los códigos 126, 94 y 37 en la tabla ASCII y muestra cada uno en una línea distinta con la función `String.fromCharCode()`.
 
 ```javascript
-console.log(String.fromCharCode(63));
+console.log(String.fromCharCode(...));
+console.log(String.fromCharCode(...));
+console.log(String.fromCharCode(...));
 ```
 
-Esto mostrará en pantalla el carácter con el número 63, que es el signo de interrogación `?`. De esta manera, puedes mostrar cualquier carácter.
+Por ejemplo, el carácter `?` tiene el código 63:
 
-Encuentra una tabla de códigos ASCII en Internet. Puedes usar búsquedas como "tabla de códigos ASCII" o "ascii codes table". Por lo general, en estas tablas los códigos se muestran en varios sistemas de numeración: decimal, binario, octal y hexadecimal. Nos interesa el código decimal (*dec* o *decimal*).
-
-Utilizando el ejemplo anterior y la tabla que encontraste, muestra en pantalla los caracteres `~`, `^` y `%` (cada uno en su propia línea).
-
-(Por supuesto, puedes "engañar" las pruebas y simplemente hacer algo como `console.log('~')`, pero eso no sería interesante :)
+```javascript
+console.log(String.fromCharCode(63)); // salida: ?
+```

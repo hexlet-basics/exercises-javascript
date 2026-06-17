@@ -3,9 +3,9 @@ name: Escape sequences
 definitions:
   - name: Escape sequence
     description: >
-      is a special combination of characters in the text. For example, `\n` is a
-      line feed.
+      a special combination of characters in text. For example, `\n` is a line
+      break.
 tips:
   - >
-    [The History of
-    Newline](https://en.wikipedia.org/wiki/Newline#:~:text=External%20links-,History,-%5Bedit%5D)
+    [The history of the line
+    break](https://en.wikipedia.org/wiki/Newline#History)

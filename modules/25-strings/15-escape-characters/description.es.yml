@@ -3,51 +3,38 @@
 name: Secuencias de escape
 theory: |
 
-  Queremos mostrar un diálogo entre Daenerys Targaryen y su hijo:
+  Supongamos que queremos mostrar el texto de abajo en dos líneas.
 
-  ```
+  ```text
   - Are you hungry?
   - Aaaarrrgh!
   ```
 
-  Si imprimimos en la pantalla una cadena de texto con este contenido:
-
-  ```javascript
-  console.log('- Are you hungry?- ¡Aaaarrrgh!');
-  ```
-
-  obtendremos esto:
+  Si simplemente pasamos este texto a `console.log()`, JavaScript imprimirá todo en una sola línea. Técnicamente, podríamos escribir dos llamadas consecutivas a `console.log()`, pero imaginemos que queremos hacerlo con una sola.
 
   ```javascript
   console.log('- Are you hungry?- Aaaarrrgh!');
+  // => - Are you hungry?- Aaaarrrgh!
   ```
 
-  No es lo que queríamos. Las líneas están una al lado de la otra en lugar de estar una debajo de la otra. Necesitamos decirle al intérprete "presiona Enter" - haz un salto de línea después del signo de interrogación. Esto se puede hacer utilizando el carácter de salto de línea: `\n`.
+  Para que cada una de ellas empiece en una nueva línea, necesitamos agregar un salto de línea, es decir, "presionar Enter". En programación, esto se hace agregando caracteres especiales, en este caso `\n`. Sí, no es un error de escritura. A pesar de que aquí vemos dos caracteres, desde el punto de vista de JavaScript es un solo carácter.
 
   ```javascript
   console.log('- Are you hungry?\n- Aaaarrrgh!');
   ```
 
-  resultado:
+  El resultado será el siguiente.
 
-  ```
+  ```text
   - Are you hungry?
   - Aaaarrrgh!
   ```
 
-  `\n` es un carácter especial. En literatura a menudo se le llama *LF* (Line Feed). Es posible que ahora estés pensando que es un error de escritura, ya que aquí vemos dos caracteres `\` y `n`, pero no es así. Desde el punto de vista de la computadora, es un solo carácter de salto de línea invisible. Prueba de ello:
+  ## ¿Qué es `\n`?
 
-  ```javascript
-  // No hemos estudiado esto, pero debes saber la verdad
-  // A continuación hay un código que devuelve la longitud de una cadena
-  'a'.length;    // 1
-  '\n'.length;   // 1 !!!
-  '\n\n'.length; // 2 !!!
-  ```
+  `\n` es una secuencia de escape (en inglés, escape sequence; a veces se le llama "secuencia escapada"). Denota un salto de línea, pero no se muestra directamente. No verás `\n` en la salida del programa, ya que solo afecta a la disposición del texto.
 
-  ¿Por qué se hizo así? `\n` es simplemente una forma de escribir el carácter de salto de línea, pero el salto de línea en sí es un solo carácter, aunque invisible. Es por eso que surgió esta tarea. Necesitábamos encontrar una forma de representarlo en el teclado. Y dado que la cantidad de caracteres en el teclado es limitada y se reserva para los más importantes, todos los caracteres especiales se implementan como tales representaciones.
-
-  El carácter de salto de línea no es algo específico de la programación. Todos los que han escrito en una computadora han utilizado el salto de línea al presionar Enter. En muchos editores hay una opción que permite mostrar los caracteres invisibles, lo que permite ver dónde se encuentran (aunque esto es solamente una representación esquemática, estos caracteres no tienen una representación gráfica; son invisibles):
+  En los editores de texto, al presionar Enter se agrega un carácter invisible LF (Line Feed). Eso es precisamente lo que significa `\n`. A veces estos caracteres se pueden ver si activas la visualización de los caracteres especiales.
 
   ```text
   - ¡Hola!¶
@@ -55,97 +42,101 @@ theory: |
   - ¿Cómo estás?
   ```
 
-  El dispositivo que muestra el texto correspondiente tiene en cuenta este carácter. Por ejemplo, una impresora, al encontrar un LF, avanza el papel hacia arriba una línea, y un editor de texto mueve todo el texto siguiente hacia abajo, también una línea.
+  Las impresoras, los editores y los intérpretes de JavaScript entienden `\n` como una orden de empezar el texto en una nueva línea.
 
-  `\n` es un ejemplo de una **secuencia de escape** (escape sequence). También se les llama construcciones de control. Aunque hay más de una docena de estos caracteres, en programación a menudo solamente se encuentran unos pocos. Además del salto de línea, estos caracteres incluyen la tabulación (espacio que se obtiene al presionar la tecla Tab) y el retorno de carro (solo en Windows). A menudo, los programadores necesitamos usar el salto de línea `\n` para formatear correctamente el texto.
+  ## Ejemplos de uso de `\n`
 
-  ```javascript
-  console.log('Gregor Clegane\nDunsen\nPolliver\nChiswyck');
-  ```
-
-  Se mostrará en la pantalla:
-
-  ```
-  Gregor Clegane
-  Dunsen
-  Polliver
-  Chiswyck
-  ```
-
-  Ten en cuenta los siguientes puntos:
-
-  1. No importa lo que haya antes o después de `\n`: un carácter o una cadena vacía. El salto de línea se detectará y se realizará de todos modos.
-
-  2. Recuerda que una cadena puede contener un solo carácter o incluso cero caracteres. Y también una cadena puede contener solo `\n`. Analiza el siguiente ejemplo:
-
-      ```javascript
-      console.log('\n');
-      console.log('Dunsen');
-      ```
-
-      Aquí primero imprimimos una cadena "salto de línea" y luego imprimimos una cadena normal. El programa mostrará en la pantalla:
-
-      ```text
-
-
-      Dunsen
-      ```
-
-      ¿Por qué antes de la cadena *Dunsen* hay dos líneas vacías en lugar de una? El caso es que `console.log()` agrega automáticamente un carácter de salto de línea al final al imprimir un valor. Por lo tanto, especificamos un salto de línea explícitamente pasando este carácter como argumento a la función, y el segundo salto de línea se agrega automáticamente por la función.
-
-      Otro ejemplo de código:
-
-      ```javascript
-      console.log('Polliver');
-      console.log('Gregor Clegane');
-      console.log();
-      console.log('Chiswyck');
-      console.log('\n');
-      console.log('Dunsen');
-      ```
-
-      La salida será la siguiente:
-
-      ```text
-      Polliver
-      Gregor Clegane
-
-      Chiswyck
-
-
-      Dunsen
-      ```
-
-      Ahora tienes suficiente conocimiento para entender por qué se formó la salida de esta manera.
-
-  3. Si necesitamos imprimir `\n` como texto (dos caracteres de impresión separados), podemos usar el método de escape que ya conocemos, agregando otro `\` al principio. Es decir, la secuencia `\\n` se mostrará como los caracteres `\` y `n` uno tras otro.
-
-  ```javascript
-  console.log('Joffrey loves using \\n');
-  ```
-
-  se mostrará en la pantalla:
+  Así es como JavaScript procesa la secuencia de escape `\n`.
 
   ```text
-  Joffrey loves using \n
+  En el código   'Hello\nWorld'
+                       ↓
+  En pantalla    Hello
+                 World
   ```
 
-  Una pequeña pero importante nota sobre Windows. En Windows, por defecto se utiliza `\r\n` para el salto de línea. Esta combinación funciona bien solamente en Windows, pero crea problemas al transferir a otros sistemas (por ejemplo, cuando en un equipo de desarrollo hay usuarios tanto de Windows como de Linux). El caso es que la secuencia `\r\n` tiene diferentes interpretaciones dependiendo de la codificación seleccionada (esto se discutirá más adelante). Por esta razón, en el ámbito de desarrollo se acostumbra a usar siempre `\n` sin `\r`, ya que LF siempre se interpreta de la misma manera y funciona perfectamente en cualquier sistema. No olvides configurar tu editor para usar `\n`.
+  La posición de `\n` cambia la salida final.
+
+  ```javascript
+  console.log('Hello\nWorld');
+  // Hello
+  // World
+
+  console.log('Hello \nWorld');
+  // Hello
+  // World  (al final de la primera línea hay un espacio)
+
+  console.log('Hello\n World');
+  // Hello
+  //  World  (al principio de la segunda línea hay un espacio)
+
+  console.log('Hello\n\nWorld');
+  // Hello
+  //
+  // World  (una línea vacía entre ellas)
+  ```
+
+  Los espacios antes o después de `\n` también se tienen en cuenta. JavaScript los interpreta como caracteres ordinarios y los muestra en la salida.
+
+  También puedes insertar `\n` en cualquier parte de la cadena, antes, después, o incluso usarlo por sí solo.
+
+  ```javascript
+  console.log('First line');
+  console.log('\n');          // simplemente una línea vacía
+  console.log('Second line');
+  ```
+
+  El resultado será el siguiente.
+
+  ```text
+  First line
+
+  Second line
+  ```
+
+  ## Cómo mostrar el propio carácter `\n`
+
+  `\n` en JavaScript es una secuencia de escape. Controla la disposición del texto y no se muestra en pantalla como los caracteres ordinarios. Si necesitas mostrar precisamente los caracteres `\` y `n`, en lugar de un salto de línea, hay que escaparlos. Para ello, se agrega otra barra antes de la barra invertida.
+
+  ```javascript
+  console.log('Hello\\nWorld');
+  // Hello\nWorld
+
+  // Si te olvidas de indicar la segunda barra
+  console.log('Hello\nWorld');
+  // Hello
+  // World
+  ```
+
+  En este caso, JavaScript entiende `\\` como una barra invertida ordinaria y muestra la cadena sin salto de línea.
+
+  ## Otras secuencias de escape
+
+  Además de `\n`, en JavaScript existen otras secuencias de escape.
+
+  - `\t` denota una tabulación (el equivalente de la tecla Tab).
+  - `\r` denota un retorno de carro (se usa en Windows, pero rara vez se aplica en el código moderno).
+  - En programación, lo que más se usa es precisamente `\n`; es suficiente para la mayoría de las tareas.
+
+  ## Detalles importantes
+
+  - `\n` es un solo carácter, a pesar de que en el código se escribe como dos (`\` y `n`).
+  - En Windows, por defecto se utiliza la combinación `\r\n`, pero en JavaScript (y en el desarrollo multiplataforma en general) se acostumbra a usar solo `\n` para evitar problemas al transferir el código entre sistemas.
 
 instructions: |
 
-  Escribe un programa que muestre en la pantalla:
+  Estás escribiendo un programa que muestra al usuario una pista sobre cómo dividir el texto en líneas. Muestra la pista con una sola llamada a `console.log()`:
 
-  ```
-  - Did Joffrey agree?
-  - He did. He also said "I love using \n".
+  ```text
+  Use "\n" to separate lines
+  Example: console.log("line1\nline2")
   ```
 
-  El programa debe usar solo un `console.log()`, pero el resultado en la pantalla debe verse exactamente como se muestra arriba.
+  Ten en cuenta: `\n` en la primera línea es texto literal, no un salto de línea.
+
+tips: []
 
 definitions:
   - name: Secuencia de escape
     description: |
       una combinación especial de caracteres en un texto. Por ejemplo, `\n` es un salto de línea.
-
-tips: []

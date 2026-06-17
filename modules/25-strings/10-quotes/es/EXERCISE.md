@@ -1,12 +1,7 @@
-
-Escribe un programa que imprima en la pantalla:
-
-```
-"La palabra favorita de Khal Drogo es "athjahakar""
-```
-
-El programa debe imprimir exactamente esa frase. Presta atención a las comillas al principio y al final de la frase:
+El programa no encontró el archivo requerido e imprimió un mensaje con su nombre. Escribe un programa que imprima el mismo mensaje:
 
 ```text
-"Khal Drogo's favorite word is "athjahakar""
+The file "user's_config.json" was not found.
 ```
+
+La cadena contiene tanto un apóstrofe como comillas dobles: elige una forma adecuada de escribirlos.

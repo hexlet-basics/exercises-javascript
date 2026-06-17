@@ -1,8 +1,7 @@
+The site automatically generates links to repository pages by assembling them from separate parts. Assemble the link using concatenation and print it to the screen:
 
-Print the following code
-
+```text
+https://github.com/hexlet/exercises-javascript
 ```
-Winter came for the House of Frey.
-```
 
-using concatenation.
+Each URL component is a separate string: the protocol, the domain, the owner name, and the repository name.
