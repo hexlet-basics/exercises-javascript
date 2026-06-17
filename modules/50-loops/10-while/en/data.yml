@@ -1,12 +1,8 @@
 ---
-name: While loop
+name: The While Loop
 tips:
-  - >
-    [*while*
-    loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
+  - |
+    [The while loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
 definitions:
-  - name: |
-      *while* loop
-    description: >-
-      is a statement that repeatedly executes code as long as a given test
-      condition is true
+  - name: The While Loop
+    description: a statement for repeating code while some condition is satisfied.

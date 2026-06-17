@@ -1,13 +1,8 @@
-
-Edit the `printNumbers()` function so that it prints the numbers in reverse order. To do this, go from the upper bound to the lower bound. In other words, you should initialize the counter with the maximum value, and in the loop body, you should iterate it backwards down to the lower limit.
+Write a function `printNumbers(initialNumber)` that takes a number and prints all numbers from `initialNumber` down to `1` inclusive, each on its own line.
 
 ```javascript
-printNumbers(4);
+printNumbers(3);
+// 3
+// 2
+// 1
 ```
-
-```text
-4
-3
-2
-1
-finished!```

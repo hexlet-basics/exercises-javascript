@@ -1,3 +1,8 @@
 ---
-name: Data aggregation (numbers)
-tips: []
+name: Data Aggregation (Numbers)
+tips:
+  - |
+    [Iteration](https://en.wikipedia.org/wiki/Iteration)
+definitions:
+  - name: Aggregation
+    description: Accumulating a result during iterations and working with it after the loop.

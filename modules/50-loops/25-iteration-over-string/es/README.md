@@ -4,7 +4,7 @@ Los bucles no sólo son útiles para trabajar con números, sino también para t
 ```javascript
 const printNameBySymbol = (name) => {
   let i = 0;
-  // Esta condición se evaluará hasta el final de la cadena,
+  // Esta comprobación se ejecuta hasta el final de la cadena,
   // incluyendo el último carácter. Su índice es `length - 1`.
   while (i < name.length) {
     // Accedemos al carácter mediante su índice
@@ -22,3 +22,34 @@ printNameBySymbol(name);
 ```
 
 Lo más importante en este código es establecer la condición correcta en el `while`. Esto se puede hacer de dos formas: `i < name.length` o `i <= name.length - 1`. Ambas formas conducen al mismo resultado.
+
+El bucle recorre cada carácter de la cadena por turnos:
+
+```text
+'Arya'
+ │ │ │ │
+ A r y a
+ ↓ ↓ ↓ ↓
+cada carácter se procesa por turnos
+```
+
+## Invertir una cadena
+
+En lugar de imprimir, puedes construir una nueva cadena. Por ejemplo, escribamos una función que invierta una cadena:
+
+```javascript
+const reverseString = (text) => {
+  let result = '';
+  let i = text.length - 1;
+  while (i >= 0) {
+    result = `${result}${text[i]}`;
+    i -= 1;
+  }
+  return result;
+};
+
+console.log(reverseString('Arya'));   // => ayrA
+console.log(reverseString('hexlet')); // => telxeh
+```
+
+La variable `result` se inicializa con una cadena vacía como elemento neutro para la concatenación. El bucle comienza en el último índice (`text.length - 1`), avanza hacia cero y termina cuando el índice se vuelve menor que cero. En cada paso, el carácter actual se añade al resultado, y la cadena se construye en orden inverso.

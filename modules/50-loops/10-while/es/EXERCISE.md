@@ -1,13 +1,8 @@
-
-Modifica la función `printNumbers()` para que muestre los números en orden inverso. Para hacerlo, debes empezar desde el límite superior y disminuir el contador en lugar de aumentarlo en el cuerpo del bucle.
+Escribe una función `printNumbers(initialNumber)` que reciba un número y muestre todos los números desde `initialNumber` hasta `1` inclusive, cada uno en su propia línea.
 
 ```javascript
-printNumbers(4);
+printNumbers(3);
+// 3
+// 2
+// 1
 ```
-
-```text
-4
-3
-2
-1
-finished!```

@@ -6,7 +6,7 @@ const maskCardNumber = (cardNumber) => {
   const visiblePartStart = cardNumber.length - 4;
   while (i < cardNumber.length) {
     if (i < visiblePartStart) {
-      // biome-ignore lint/style/useTemplate: учебный пример до урока 30-syntax-sugar
+      // biome-ignore lint/style/useTemplate: teaching example before the 30-syntax-sugar lesson
       result = result + '*';
     } else {
       result = result + cardNumber[i];
