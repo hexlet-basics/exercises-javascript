@@ -1,130 +1,119 @@
+Suppose we want to print the text below across two lines.
 
-Imagine you want to print a dialogue between the Mother of Dragons and her child:
-
-```
+```text
 - Are you hungry?
 - Aaaarrrgh!
 ```
 
-If you print a string with this text:
+If we simply pass this text to `console.log()`, JavaScript will print everything on a single line. Technically, we could write two consecutive `console.log()` calls, but let's imagine we want to do it with a single one.
 
 ```javascript
 console.log('- Are you hungry?- Aaaarrrgh!');
+// => - Are you hungry?- Aaaarrrgh!
 ```
 
-then you'll see:
-
-```
-- Are you hungry?- Aaaarrrgh!
-```
-
-Not quite what we were looking for. The strings are written one after the other, it doesn't start a new line. We need to tell the interpreter to "press enter" as it were. In other words, it needs to put a line break after the question mark. You can do this with the new line symbol '\n'.
+For each of them to start on a new line, we need to add a line break, that is, to "press Enter". In programming, this is done by adding special characters, in this case `\n`. Yes, this is not a typo. Even though we see two characters here, from JavaScript's point of view this is a single character.
 
 ```javascript
 console.log('- Are you hungry?\n- Aaaarrrgh!');
 ```
 
-The result:
+The result will be as follows.
 
-```
+```text
 - Are you hungry?
 - Aaaarrrgh!
 ```
 
-`\n` is a special symbol. It's often referred to as *LF* (Line Feed, sometimes as line break or newline) in documentation. You may have initially thought it was a misprint, since there are two symbols - `\` and `n`, but this isn't the case. To the computer, this is no more than an invisible symbol to tell it to go to the next line. Proof:
+## What is `\n`?
 
-```javascript
-// We haven't studied it yet, but you should know the truth
-// Below is code that returns the length of a string
+`\n` is an escape sequence (sometimes also called an "escaped sequence"). It denotes a line break but is not displayed directly. You won't see `\n` in the program's output, as it only affects the placement of the text.
 
-'a'.length;    // 1
-'\n'.length;   // 1 !!!
-'\n\n'.length; // 2 !!!
-```
-
-Why is it done in this way? `\n` is just a way to write a line break symbol. That's why line feed is just one character, just invisible. And it's also why this problem has arisen. There had to be a way of representing it using a keyboard. And since the number of keyboard characters is limited, and they're all dedicated to very important things, special characters are entered using these escape sequences.
-
-The Line Feed symbol is not something specific to programming. Anyone who has ever typed on a computer has used the line feed by clicking Enter. Many editors can display these invisible characters, you can use this feature to see where they are (though it's only for display, these characters are invisible, they have no graphical representation):
+In text editors, pressing Enter adds an invisible LF (Line Feed) character. That is exactly what `\n` stands for. Sometimes such characters can be seen if you enable the display of special characters.
 
 ```text
-- Hi!¶
-- Oh, hey!¶
-- What's up?
+- Hello!¶
+- Oh, hi!¶
+- How are you?
 ```
 
-The device that outputs the corresponding text takes this character into account. For example, when the printer reaches the line feed, it pulls the paper up one line, and the text editor brings all subsequent text down one line as well.
+Printers, editors, and JavaScript interpreters understand `\n` as a command to start the text on a new line.
 
-`\n` is an example of an ** escape sequence**.  Although there are dozens of these characters, only a few of them are common in programming. Besides line feed, there is also indents (which you get from pressing Tab) and carriage return (Windows only). Programmers often need to use `\n` line break to format text properly.
+## Examples of using `\n`
 
-```javascript
-console.log('Gregor Clegane\nDunsen\nPolliver\nChiswyck');
-```
-
-The result:
-
-```
-Gregor Clegane
-Dunsen
-Polliver
-Chiswyck
-```
-
-Note:
-
-1. It does not matter what comes before or after `\n`, whether it's a character or an empty string. The line feed will be detected and executed either way
-
-2. Remember that a string can contain a single character or none at all. Additionally, a string can only contain `\n`. Analyze the following example:
-
-    ```javascript
-    console.log('\n');
-    console.log('Dunsen');
-    ```
-
-    First the interpreter outputs the string "line feed", and then the normal string. The program will print it like this:
-
-    ```text
-
-
-    Dunsen
-    ```
-
-    Why are there two empty lines before the *Dunsen* line instead of one? The point is that `console.log()` automatically adds a line feed to the end when it outputs a value. So, we explicitly typed one line feed, passing this escape character as an argument in the function, and the second line feed is added automatically by the function itself.
-
-    One more example:
-
-    ```javascript
-    console.log('Polliver');
-    console.log('Gregor Clegane');
-    console.log();
-    console.log('Chiswyck');
-    console.log('\n');
-    console.log('Dunsen');
-    ```
-
-    The result:
-
-    ```text
-    Polliver
-    Gregor Clegane
-
-    Chiswyck
-
-
-    Dunsen
-    ```
-
-    Now you understand enough to figure out why the result was formed in this way.
-
-3. If we need to print `\n` as a text (two separate characters), we can use the escape character, adding another `\` at the beginning. I.e., the sequence of `\n` will be printed as characters `\` and `n` following each other
-
-```javascript
-console.log('Joffrey loves using \\n');
-```
-
-The result:
+Here is how JavaScript handles the escape sequence `\n`.
 
 ```text
-Joffrey loves using \n
+In code      'Hello\nWorld'
+                   ↓
+On screen    Hello
+             World
 ```
 
-A small but important note about Windows. Windows uses `\r\n` by default to enter a line break. This combination works well on Windows but creates problems when copied to other systems (for example, when the development team includes both Windows and Linux users). The point is that the sequence `\r\n` has a different interpretation depending on the encoding chosen (we discuss it later). For this reason, it's common among developers to always use `\n` without `\r`, since it means that LF is always interpreted the same way and works fine on any system. Remember to configure your editor to use `\n`.
+The position of `\n` changes the resulting output.
+
+```javascript
+console.log('Hello\nWorld');
+// Hello
+// World
+
+console.log('Hello \nWorld');
+// Hello 
+// World  (there is a space at the end of the first line)
+
+console.log('Hello\n World');
+// Hello
+//  World  (there is a space at the beginning of the second line)
+
+console.log('Hello\n\nWorld');
+// Hello
+//
+// World  (an empty line between them)
+```
+
+Spaces before or after `\n` are also taken into account. JavaScript treats them as ordinary characters and displays them in the output.
+
+You can also insert `\n` into any part of the string, before, after, or even use it on its own.
+
+```javascript
+console.log('First line');
+console.log('\n');          // just an empty line
+console.log('Second line');
+```
+
+The result will be as follows.
+
+```text
+First line
+
+Second line
+```
+
+## How to print the `\n` character itself
+
+`\n` in JavaScript is an escape sequence. It controls the placement of the text and is not displayed on screen like ordinary characters. If you need to print exactly the characters `\` and `n`, rather than a line break, you need to escape them. To do this, you add another slash before the backslash.
+
+```javascript
+console.log('Hello\\nWorld');
+// Hello\nWorld
+
+// If you forget to add the second slash
+console.log('Hello\nWorld');
+// Hello
+// World
+```
+
+In this case, JavaScript understands `\\` as an ordinary backslash and shows the string without a line break.
+
+## Other escape sequences
+
+In addition to `\n`, JavaScript has other escape sequences as well.
+
+- `\t` denotes a tab (the equivalent of the Tab key).
+- `\r` denotes a carriage return (used on Windows, but rarely applied in modern code).
+- In programming, `\n` is used most often; it is enough for the majority of tasks.
+
+## Important details
+
+- `\n` is a single character, even though in the code it is written as two (`\` and `n`).
+- On Windows, the combination `\r\n` is used by default, but in JavaScript (and in cross-platform development in general) it is customary to use only `\n` to avoid problems when moving code between systems.

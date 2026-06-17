@@ -3,107 +3,130 @@
 name: Comillas
 theory: |
 
+  En la programación en JavaScript, las cadenas de texto se utilizan con mucha frecuencia y en las situaciones más diversas. Con su ayuda trabajamos con texto, mostramos mensajes en la pantalla, procesamos la entrada del usuario e interactuamos con sistemas externos.
+
+  Desde el punto de vista de JavaScript, una cadena de texto es simplemente un conjunto de caracteres encerrado entre comillas. Veamos algunos ejemplos.
+
   ```javascript
-  'Hola'
-  'Adiós'
+  'Hello'
+  'Goodbye'
   'G'
   ' '
   ''
   ```
 
-  ¿Cuáles de estas cinco opciones son cadenas de texto?
+  Todas estas opciones son cadenas de texto.
 
-  Con las primeras dos opciones está claro, son definitivamente cadenas de texto, ya hemos trabajado con construcciones similares y hemos dicho que las cadenas de texto son conjuntos de caracteres.
+  - `'Hello'`, `'Goodbye'` y `'G'` son cadenas de varios caracteres o de un solo carácter.
+  - `' '` es una cadena que consta de un solo espacio.
+  - `''` es una cadena vacía; no contiene ningún carácter. Cumple el mismo papel que el 0 en matemáticas.
 
-  Cualquier carácter individual entre comillas es una cadena de texto. Una cadena de texto vacía `''` también es una cadena de texto. Es decir, consideramos como cadena de texto todo lo que está dentro de comillas, incluso si es un espacio, un solo carácter o incluso la ausencia de caracteres.
+  Es decir, todo lo que está dentro de las comillas se considera una cadena de texto, incluso si solo hay un espacio o no hay nada.
 
-  Anteriormente, en las lecciones escribimos cadenas de texto entre comillas simples, pero esa no es la única forma. También se pueden usar comillas dobles:
+  Si mostramos las cadenas en la pantalla, `'Hello'` y `'Goodbye'` se verán claramente. Pero `' '` y `''` pueden resultar confusas, porque la salida de una cadena vacía parece una ausencia total, mientras que una cadena con un espacio muestra un "espacio vacío" que visualmente es difícil de distinguir. Aun así, JavaScript las distingue claramente. Una cadena vacía significa la ausencia de caracteres, mientras que una cadena con un espacio contiene un carácter de espacio concreto.
+
+  Pregunta de control. ¿Son estas las mismas cadenas o no?
 
   ```javascript
-  // El estándar de codificación de airbnb recomienda
-  // usar comillas simples siempre que sea posible
-  console.log("¡Dracarys!");
+  'hexlet'
+  ' hexlet'
   ```
 
-  Imagina que quieres imprimir la frase _Dragon's Mother_. El apóstrofe antes de la letra **s** es el mismo carácter que una comilla simple. Intentemos:
+  ## Terminología. ¿Cadena o línea?
+
+  En la programación existe una trampa terminológica.
+
+  - Una cadena (string) es un tipo de datos (el que analizamos arriba), por ejemplo `'hello'`.
+  - Una línea (line) es una línea de texto en un archivo o en el código.
+
+  Por ejemplo, en el código de abajo hay una línea, pero no una cadena.
 
   ```javascript
-  console.log('Dragon's Mother');
+  console.log(5);
+  ```
+
+  Para evitar confusiones, en este curso usaremos las siguientes formulaciones.
+
+  - Cadena, cuando hablamos del tipo de datos.
+  - Línea, cuando se trata de líneas de código.
+
+  ## Comillas simples y dobles
+
+  En JavaScript, las cadenas de texto se pueden escribir tanto entre comillas simples como entre comillas dobles.
+
+  ```javascript
+  console.log('Hello');
+  console.log("Hello");
+  ```
+
+  Por defecto, se acostumbra usar comillas simples `'` si no se requieren comillas dobles dentro de la cadena. Este estilo lo sigue el popular estándar de formato de código de [AirBnb](https://github.com/airbnb/javascript).
+
+  ## El problema con las comillas dentro de una cadena
+
+  Imagina que quieres imprimir la cadena *Dragon's mother*. Contiene un apóstrofe (*'s*) que coincide con el carácter de comilla simple. Intentemos así.
+
+  ```javascript
+  console.log('Dragon's mother');
   // Uncaught SyntaxError: missing ) after argument list
   ```
 
-  Este programa no funcionará. Desde el punto de vista de JavaScript, la cadena de texto comenzó con una comilla simple y luego terminó después de la letra **n**. Luego hubo caracteres `s mother` sin comillas, lo que significa que no es una cadena de texto. Y luego hubo una comilla de apertura de cadena que nunca se cerró: `');`. Este código es sintácticamente incorrecto (se puede ver incluso por cómo se resalta el código).
-
-  Aquí es donde las comillas dobles nos ayudan. Esta versión del programa funcionará correctamente:
+  JavaScript decidirá que la cadena termina después de la palabra `Dragon`, y no reconocerá el resto como código válido, lo que provocará un error de sintaxis. Para evitar esto, encerremos la cadena entre comillas dobles.
 
   ```javascript
-  console.log("Dragon's Mother");
+  console.log("Dragon's mother");
   ```
 
-  Ahora el intérprete sabe que la cadena de texto comenzó con una comilla doble, por lo que también debe terminar con una comilla doble. Y la comilla simple dentro se convirtió en parte de la cadena de texto.
+  Ahora JavaScript entiende que la comilla simple dentro de la cadena es un carácter común, y que la cadena en sí empieza y termina con comillas dobles.
 
-  Lo contrario también es cierto. Si queremos usar comillas dobles dentro de una cadena de texto, debemos hacer la cadena de texto con comillas simples. Y la cantidad de comillas dentro de la cadena de texto no importa.
+  Si necesitas comillas dobles dentro de la cadena y comillas simples fuera, tampoco habrá ningún problema.
 
-  ¿Y si queremos crear una cadena de texto como esta?
+  ```javascript
+  console.log('He said "No"');
+  ```
+
+  A veces aparecen ambos tipos de comillas en una cadena.
 
   ```
   Dragon's mother said "No"
   ```
 
-  En ella hay tanto comillas simples como comillas dobles. ¿Qué hacer en esta situación? De alguna manera tenemos que decirle al intérprete que cada comilla es parte de la cadena de texto y no el comienzo o el final de la cadena de texto.
-
-  Para esto se **escapan** los caracteres especiales. En nuestro caso, el carácter que indica el final y el comienzo de la cadena de texto es una comilla simple o una comilla doble, dependiendo de la situación. Para escapar se utiliza una barra invertida `\`.
+  En este caso, para que JavaScript no confunda las comillas dentro de la cadena con las exteriores, se utiliza el carácter de escape: la barra invertida `\`. Le indica al intérprete que el carácter que la sigue es parte de la cadena y no un carácter de control.
 
   ```javascript
-  // Solo se escapa ", ya que en esta situación
-  // las comillas dobles tienen un significado especial
   console.log("Dragon's mother said \"No\"");
   // => Dragon's mother said "No"
   ```
 
-  Mira atentamente: tuvimos que agregar `\` para las comillas dobles, pero no para la comilla simple (apóstrofe), porque la cadena de texto en sí se creó con comillas dobles. Si la cadena de texto se hubiera creado con comillas simples, entonces se habría necesitado un carácter de escape antes del apóstrofe, pero no antes de las comillas dobles.
+  Aquí escapamos las comillas dobles dentro de una cadena encerrada entre comillas dobles.
+
+  Ten en cuenta que JavaScript interpreta `\"` como un único carácter de comilla, no como dos caracteres. Lo mismo ocurre con `\'`, `\\`, `\n` y otras secuencias de escape. Se ven como dos caracteres en el código, pero en la cadena cuentan como uno.
+
+  Lo mismo funciona en el caso inverso.
 
   ```javascript
-  // \ no se muestra si después de él hay un carácter normal,
-  // no un carácter especial
-  console.log("Death is \so terribly final");
-  // => Death is so terribly final
+  console.log('Dragon\'s mother said "No"');
+  // => Dragon's mother said "No"
   ```
 
-  ¿Y si queremos imprimir la barra invertida en sí? De la misma manera que cualquier otro carácter especial, debemos escaparlo con el mismo carácter.
+  ## Cómo imprimir una barra invertida
+
+  Para imprimir la barra invertida en sí, también hay que escaparla.
 
   ```javascript
   console.log("\\");
   // => \
   ```
 
-  Pregunta de autoevaluación, ¿qué imprimirá este código?
-
-  ```javascript
-  console.log("\\ \\ \\\\ \\\ \'\"");
-  ```
-
-  <details>
-  <summary>Respuesta</summary>
-
-  Este código imprimirá la siguiente cadena de texto: `\ \ \\ \ '"`.
-
-  </details>
-
 instructions: |
 
-  Escribe un programa que imprima en la pantalla:
-
-  ```
-  "La palabra favorita de Khal Drogo es "athjahakar""
-  ```
-
-  El programa debe imprimir exactamente esa frase. Presta atención a las comillas al principio y al final de la frase:
+  El programa no encontró el archivo requerido e imprimió un mensaje con su nombre. Escribe un programa que imprima el mismo mensaje:
 
   ```text
-  "Khal Drogo's favorite word is "athjahakar""
+  The file "user's_config.json" was not found.
   ```
+
+  La cadena contiene tanto un apóstrofe como comillas dobles: elige una forma adecuada de escribirlos.
 
 tips:
   - |
-    [Cadenas de plantilla](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/template_strings)
+    [Cadenas en JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String)

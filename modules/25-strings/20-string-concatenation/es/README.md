@@ -1,46 +1,71 @@
+A menudo, las cadenas deben ensamblarse a partir de varias partes, por ejemplo, combinar un nombre y un apellido, agregar una unidad de medida o componer un texto a partir de una plantilla. Para ello se utiliza la operación de concatenación, es decir, el pegado de cadenas.
 
-En el desarrollo web, los programas operan constantemente con cadenas de texto. Todo lo que vemos en los sitios web está representado de alguna manera como texto. Este texto suele ser dinámico, es decir, se obtiene a partir de diferentes partes que se unen. La operación de unir cadenas en programación se llama **concatenación**.
+## Cómo combinar cadenas
+
+En JavaScript, las cadenas se combinan con el operador `+`. Aunque este operador también se usa para sumar números, en el caso de las cadenas significa combinar, es decir, pegar el contenido.
 
 ```javascript
-// El operador es el mismo que para sumar números
-// pero aquí tiene un significado diferente (semántica)
 console.log('Dragon' + 'stone');
 // => Dragonstone
 ```
 
-La concatenación de cadenas siempre ocurre en el mismo orden en el que se escriben los operandos. El operando izquierdo se convierte en la parte izquierda de la cadena, y el operando derecho en la parte derecha.
+El orden importa. Primero va la parte izquierda (`'Dragon'`), luego la parte derecha (`'stone'`). El resultado se obtiene en el orden en que se especifican los operandos.
 
-Aquí hay algunos ejemplos adicionales:
+Así funciona la combinación de varias cadenas:
 
-```javascript
-console.log('Kings' + 'wood');     // => Kingswood
-
-// Orden inverso de las palabras
-console.log('road' + 'Kings');     // => roadKings
-
-// Se pueden concatenar cadenas de cualquier tipo
-console.log("King's" + 'Landing'); // => King'sLanding
+```text
+'Hello' + ', ' + 'World!'
+└──┬──┘   └┬┘   └──┬───┘
+   └────┬───┘       │
+  'Hello, '    +  'World!'
+     └──────┬───────┘
+      'Hello, World!'
 ```
 
-Como puedes ver, puedes concatenar cadenas incluso si están escritas con diferentes tipos de comillas.
-
-En el último ejemplo, el nombre de la ciudad se escribió incorrectamente: *King's Landing* debe escribirse con un espacio. Pero en nuestras cadenas iniciales no había espacios, y los espacios en el código a la izquierda y a la derecha del símbolo `+` no importan, ya que no forman parte de las cadenas.
-
-Hay dos formas de solucionar esta situación:
+Ejemplos.
 
 ```javascript
-// Ambas formas son equivalentes
-
-// Agregar un espacio en la parte izquierda
-console.log("King's " + 'Landing'); //  => King's Landing
-// Agregar un espacio en la parte derecha
-console.log("King's" + ' Landing'); //  => King's Landing
+console.log('Kings' + 'wood');       // => Kingswood
+console.log('Kings' + 'road');       // => Kingsroad
+// Aquí usamos comillas dobles por fuera porque hay una comilla simple adentro
+console.log("King's" + 'Landing');   // => King'sLanding
 ```
 
-Un espacio es simplemente un símbolo más, al igual que los demás. Cuantos más espacios haya, más anchos serán los espacios:
+JavaScript permite combinar cadenas incluso si están escritas con comillas diferentes. Lo principal es que ambas partes sean cadenas.
+
+## Un espacio también es un carácter
+
+Al combinar, JavaScript no inserta espacios automáticamente. Si debe haber un espacio entre las partes, hay que indicarlo manualmente.
 
 ```javascript
-console.log("King's " + ' Landing');   // => King's  Landing
+// Espacio al final de la primera cadena
+console.log("King's " + 'Landing');  // => King's Landing
 
-console.log("King's  " + '  Landing'); // => King's    Landing
+// Espacio al principio de la segunda cadena
+console.log("King's" + ' Landing');  // => King's Landing
 ```
+
+El resultado será el mismo. Pero si no se agrega un espacio, las palabras se pegarán.
+
+## Secuencias de escape
+
+En las cadenas se pueden usar secuencias de escape, por ejemplo `\n` para un salto de línea o `\t` para una tabulación. Durante la concatenación, funcionan igual que cualquier otro carácter.
+
+```javascript
+console.log('Hello,' + '\n' + 'World!');
+// Hello,
+// World!
+```
+
+De la misma manera, se puede usar la tabulación `\t` para alinear la salida.
+
+```javascript
+console.log('A' + '\t' + 'B'); // => A	B
+```
+
+## Conclusión
+
+La concatenación es la combinación de cadenas mediante `+`, y las cadenas se pueden combinar independientemente del tipo de comillas.
+
+- El pegado ocurre estrictamente en orden de izquierda a derecha.
+- Los espacios no se agregan automáticamente; hay que incluirlos en las cadenas manualmente.

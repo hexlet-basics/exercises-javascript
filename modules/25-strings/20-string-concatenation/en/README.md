@@ -1,47 +1,71 @@
+Often, strings need to be assembled from several parts, for example, to combine a first and last name, add a unit of measurement, or compose text from a template. The concatenation operation, that is, gluing strings together, is used for this.
 
-In web development, programs use strings constantly. Everything we see on websites is represented as text in one way or another. This text is most often dynamic, it's made up of different connected pieces. In programming, the operation of joining one string to another is called **concatenation**.
+## How to combine strings
+
+In JavaScript, strings are combined using the `+` operator. Even though this operator is also used to add numbers, in the case of strings it means combining, that is, gluing the contents together.
 
 ```javascript
-// The operator is the same as for adding
-// but it has different semantics (meaning)
-
 console.log('Dragon' + 'stone');
-// => 'Dragonstone'
+// => Dragonstone
 ```
 
-Strings always concatenate in the same order in which the operands are written. The left operand becomes the left part of the string, and the right one becomes the right part.
+Order matters. First comes the left part (`'Dragon'`), then the right part (`'stone'`). The result comes out in the order in which the operands are specified.
 
-Here are a few more examples:
+Here is how combining several strings works:
+
+```text
+'Hello' + ', ' + 'World!'
+└──┬──┘   └┬┘   └──┬───┘
+   └────┬───┘       │
+  'Hello, '    +  'World!'
+     └──────┬───────┘
+      'Hello, World!'
+```
+
+Examples.
 
 ```javascript
-console.log('Kings' + 'wood');     // => Kingswood
-
-// Reverse word order
-console.log('road' + 'Kings');     // => roadKings
-
-// Any string can be concatenated
-console.log("King's" + 'Landing'); // => King'sLanding
+console.log('Kings' + 'wood');       // => Kingswood
+console.log('Kings' + 'road');       // => Kingsroad
+// Here we use double quotes on the outside because there is a single quote inside
+console.log("King's" + 'Landing');   // => King'sLanding
 ```
 
-As you can see, strings can concatenate even if they are written in different quotes.
+JavaScript lets you combine strings even if they are written with different quotes. The main thing is that both parts are strings.
 
-In the last example, the name of the city has a misprint: *King's Landing* should be written with a space. But there were no spaces at the beginning of our strings, and the spaces left and right of the `+` don't matter because they are not part of the strings.
+## A space is also a character
 
-There are two ways to fix this:
+When combining, JavaScript does not insert spaces automatically. If there should be a space between the parts, it must be specified manually.
 
 ```javascript
-// Both ways are functionally the same
+// Space at the end of the first string
+console.log("King's " + 'Landing');  // => King's Landing
 
-// Put space in the end of the left part
-console.log("King's " + 'Landing'); //  => King's Landing
-// Put space in the beginning of the right part
-console.log("King's" + ' Landing'); //  => King's Landing
+// Space at the beginning of the second string
+console.log("King's" + ' Landing');  // => King's Landing
 ```
 
-A space is also a symbol. The more spaces you put, the wider the indentation will be:
+The result will be the same. But if you do not add a space, the words will glue together.
+
+## Escape sequences
+
+In strings, you can use escape sequences, for example `\n` for a line break or `\t` for a tab. During concatenation, they work the same as any other characters.
 
 ```javascript
-console.log("King's " + ' Landing');   // => King's  Landing
-
-console.log("King's  " + '  Landing'); // => King's    Landing
+console.log('Hello,' + '\n' + 'World!');
+// Hello,
+// World!
 ```
+
+In the same way, you can use the tab `\t` to align output.
+
+```javascript
+console.log('A' + '\t' + 'B'); // => A	B
+```
+
+## Conclusion
+
+Concatenation is the combining of strings via `+`, and strings can be combined regardless of the type of quotes.
+
+- Gluing happens strictly in order from left to right.
+- Spaces are not added automatically; they must be included in the strings manually.

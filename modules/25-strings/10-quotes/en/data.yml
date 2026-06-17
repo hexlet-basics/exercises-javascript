@@ -1,6 +1,5 @@
 ---
-name: Quotation marks
+name: Quotes
 tips:
-  - >
-    [Template
-    strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+  - |
+    [Strings in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)

@@ -1,9 +1,8 @@
-
-Write a program that prints:
+You are writing a program that shows the user a hint about how to split text into lines. Print the hint with a single call to `console.log()`:
 
 ```text
-- Did Joffrey agree?
-- He did. He also said "I love using \n".
+Use "\n" to separate lines
+Example: console.log("line1\nline2")
 ```
 
-The program calls only one `console.log()`, but the result on the screen should look exactly like the one above.
+Note: `\n` in the first line is literal text, not a line break.
