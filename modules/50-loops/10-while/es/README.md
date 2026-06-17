@@ -1,102 +1,89 @@
+Además de las construcciones condicionales, la programación es imposible sin bucles. Este es un mecanismo especial que permite ejecutar cualquier acción varias veces. Casi todos los cálculos se basan en él, desde calcular la nota media de un grupo hasta procesar las solicitudes entrantes en los sitios web.
 
-Los programas que escribimos se vuelven cada vez más complejos y extensos. Aunque todavía están muy lejos de ser programas reales, que pueden tener decenas, cientos e incluso millones de líneas de código, la complejidad actual puede ser desafiante para aquellos sin experiencia. A partir de esta lección, entraremos en uno de los temas básicos más desafiantes de la programación: los bucles.
+Un bucle almacena una acción repetida en un solo lugar y la ejecuta de nuevo mientras la condición siga siendo verdadera.
 
-Todas las aplicaciones de software cumplen propósitos muy prácticos. Ayudan a gestionar a los empleados, las finanzas y, en última instancia, entretienen al público. A pesar de las diferencias, todos estos programas ejecutan algoritmos incorporados en ellos, y estos algoritmos tienden a ser muy similares entre sí. ¿Qué es un algoritmo? Un algoritmo es una secuencia de pasos (instrucciones) que nos lleva a un resultado esperado. En teoría, esta descripción podría aplicarse a cualquier programa, pero generalmente se refiere a algo más específico.
+## Primer ejemplo
 
-Imagina que tienes un libro y quieres encontrar una frase específica dentro de él. Conoces la frase, pero no sabes en qué página está. ¿Cómo encontrarías la página correcta? El enfoque más simple (aunque lento) sería revisar cada página secuencialmente hasta encontrarla. En el peor de los casos, tendrías que revisar todas las páginas, pero de todos modos obtendrías el resultado deseado. Esto es lo que se llama un algoritmo. Involucra verificaciones lógicas (¿encontraste la frase?) y la iteración a través de las páginas. Aunque el número de páginas que tendrías que revisar no se conoce de antemano, el proceso de revisión se realiza de la misma manera en cada iteración. Aquí es donde los bucles entran en juego. Cada repetición se llama una iteración.
+Supongamos que un programa debe mostrar la cadena `'Hello!'` cinco veces. Para detener la repetición en el momento adecuado, el programa necesita una variable que almacene el número del paso actual. A esa variable se le suele llamar contador.
 
-Supongamos que queremos escribir una función que muestre en pantalla todos los números del 1 al número especificado (usando un argumento):
+En el ejemplo, el contador se llama `counter`. Antes del bucle es igual a `0`. Después de cada salida de la cadena, lo incrementamos en uno.
 
 ```javascript
+let counter = 0;
+while (counter < 5) {
+  console.log('Hello!');
+  counter = counter + 1;
+}
+
+// => Hello!
+// => Hello!
+// => Hello!
+// => Hello!
+// => Hello!
+```
+
+Después de `while`, la condición se escribe entre paréntesis, y el cuerpo del bucle entre llaves. Mientras `counter < 5`, se ejecuta el cuerpo del bucle. Después de ejecutar el cuerpo, el motor vuelve a la condición y la comprueba de nuevo. Cuando la condición se vuelve falsa (`false`), el programa sale del bucle y continúa ejecutando el resto del código.
+
+Sin cambiar el contador, la condición nunca se volverá falsa, y el bucle se convertirá en un bucle **infinito**. Desde fuera, parece que el programa se ha colgado.
+
+## Cómo funciona el bucle paso a paso
+
+Antes de la primera repetición, `counter` es igual a `0`.
+
+**Paso 1.** Se comprueba la condición `counter < 5`. El valor `0` es menor que `5`, por lo que se ejecuta el cuerpo del bucle. Se muestra `Hello!` en la pantalla, y `counter` aumenta a `1`.
+
+**Paso 2.** La condición se comprueba de nuevo. El valor `1` sigue siendo menor que `5`, por lo que el cuerpo del bucle se ejecuta una vez más. Se muestra `Hello!` en la pantalla otra vez, y `counter` aumenta a `2`.
+
+Esto continúa hasta que `counter` se vuelve igual a `5`. En la siguiente comprobación, la condición `counter < 5` será falsa, por lo que el bucle terminará.
+
+```text
+counter = 0
+┌──→ counter < 5?
+│     true │
+│          ↓
+│    console.log('Hello!')
+│    counter = counter + 1
+└──────────┘
+      false → salir del bucle
+```
+
+## El cuerpo del bucle y la continuación del programa
+
+El cuerpo del bucle incluye todo lo que está dentro de las llaves. El código posterior al bucle se ejecuta una vez:
+
+```javascript
+let counter = 0;
+while (counter < 2) {
+  console.log('Hello!');
+  counter = counter + 1;
+}
+
+console.log('End of loop');
+```
+
+Aquí `console.log('Hello!')` y `counter = counter + 1` están dentro del bucle, mientras que `console.log('End of loop')` está fuera de él, por lo que se ejecuta una vez después de que el bucle termina.
+
+## Un bucle dentro de una función
+
+Ahora movamos el bucle a una función. Mostrará los números desde `1` hasta el valor pasado:
+
+```javascript
+const printNumbers = (n) => {
+  let i = 1;
+  while (i <= n) {
+    console.log(i);
+    i = i + 1;
+  }
+  console.log('Finished!');
+};
+
 printNumbers(3);
 // => 1
 // => 2
 // => 3
+// => Finished!
 ```
 
-Esta función no puede implementarse utilizando los conceptos que hemos aprendido hasta ahora, ya que el número de impresiones no es conocido de antemano. Sin embargo, con los bucles esto no es un problema:
+El bucle `while` muestra los números hasta que `i` se vuelve mayor que `n`. Después de eso, el programa sale del bucle y ejecuta `console.log('Finished!')`.
 
-```javascript
-const printNumbers = (lastNumber) => {
-  // i abreviatura de índice (número de serie)
-  // se usa por convención común en muchos idiomas
-  // como contador de bucle
-
-  while (i <= lastNumber) {
-    console.log(i);
-    i = i + 1;
-  }
-  console.log('finished!');
-};
-
-printNumbers(3);
-```
-
-```text
-1
-2
-3
-finished!
-```
-
-En el código de la función, se utiliza un bucle `while`. Este bucle consta de tres elementos:
-
-* La palabra clave `while`. Aunque se parece a una llamada de función, no es lo mismo.
-* El predicado. La condición especificada entre paréntesis después de `while`. Esta condición se evalúa y se verifica antes de ejecutar el cuerpo del bucle en cada iteración.
-* El cuerpo del bucle. El bloque de código dentro de las llaves. Este bloque es similar a los bloques en las funciones. Cualquier constante o variable definida dentro de este bloque sólo es visible dentro de este bloque.
-
-La estructura se lee así: "mientras la condición (predicado) `i <= lastNumber` sea verdadera, ejecutar lo que está en el cuerpo del bucle". Analicemos cómo funciona este código para la llamada `printNumbers(3)`:
-
-```javascript
-// Se inicializa i
-let i = 1;
-
-// El predicado es verdadero, por lo que se ejecuta el cuerpo del bucle
-while (1 <= 3)
-// console.log(1);
-// i = 1 + 1;
-
-// Se ha completado el cuerpo del bucle, por lo que se regresa al inicio
-while (2 <= 3)
-// console.log(2);
-// i = 2 + 1;
-
-// Se ha completado el cuerpo del bucle, por lo que se regresa al inicio
-while (3 <= 3)
-// console.log(3);
-// i = 3 + 1;
-
-// El predicado es falso, por lo que se sale del bucle
-while (4 <= 3)
-
-// console.log('finished!');
-// En este punto, i es igual a 4, pero ya no lo necesitamos
-// la función termina
-```
-
-Lo más importante en un bucle es asegurarse de que termine (es decir, salir del bucle). El proceso que impulsa el bucle debe detenerse eventualmente. La responsabilidad de detener el bucle recae completamente en el programador. Por lo general, esto se logra mediante la introducción de una variable llamada "contador de bucle". Inicialmente, el contador se establece en su valor inicial. Luego, en el predicado del bucle, se verifica si el contador ha alcanzado su valor máximo. Finalmente, el contador se actualiza en el cuerpo del bucle (por ejemplo, `i = i + 1`).
-
-Aquí es donde los novatos suelen cometer errores. Por ejemplo, olvidar actualizar el contador o verificar incorrectamente el predicado puede provocar un bucle infinito. Esto significa que el bucle seguirá ejecutándose indefinidamente y el programa nunca se detendrá. En este caso, a menudo es necesario detener el programa manualmente (quien sabe, tal vez cuando las aplicaciones reales se bloquean, están atrapadas en un bucle infinito).
-
-```javascript
-const printNumbers = (lastNumber) => {
-  let i = 1;
-
-  // Este bucle nunca se detendrá
-  // y siempre imprimirá el mismo valor
-  while (i <= lastNumber) {
-    console.log(i);
-  }
-  console.log('finished!');
-};
-```
-
-En algunos casos, los bucles infinitos pueden ser útiles. No discutiremos esos casos aquí, pero es bueno saber cómo se ve el código:
-
-```javascript
-while (true) {
-  // Hacer algo
-}
-```
-
-En resumen, ¿cuándo se necesitan bucles y cuándo se pueden evitar? No se puede evitar usar bucles cuando el algoritmo para resolver un problema requiere repetir ciertas acciones, como en el ejemplo del libro, y no se conoce de antemano cuántas operaciones se requerirán.
+La condición y el cambio del contador dependen de la tarea. El contador se puede incrementar en `1`, en `2` o en `10` de una vez. Se puede disminuir si el bucle va de un valor mayor a uno menor. Lo principal es que la condición eventualmente se vuelva falsa, de lo contrario el bucle se ejecutará indefinidamente.

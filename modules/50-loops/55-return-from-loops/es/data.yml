@@ -1,11 +1,8 @@
 ---
-name: Salida de Bucles
+name: Retorno desde bucles
 tips:
-  - >-
-    [Lista de números
-    primos](https://es.wikipedia.org/wiki/Anexo:N%C3%BAmeros_primos)
+  - |
+    [Lista de números primos](https://es.wikipedia.org/wiki/Número_primo)
 definitions:
   - name: Agregación
-    description: >-
-      Acumulación de resultados durante las iteraciones y trabajar con ellos
-      después del bucle.
+    description: Acumular un resultado durante las iteraciones y trabajar con él después del bucle.

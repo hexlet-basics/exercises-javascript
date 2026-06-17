@@ -1,12 +1,11 @@
+Implement the function `hasAtSymbol()`, which checks whether an email contains the `@` symbol.
 
-Write the `hasChar()` function that checks whether a string contains a given character (case-sensitive). The function takes two arguments:
-
-* String
-* Character to look for
+The function should return `true` as soon as it finds `@`. If the loop reaches the end of the string and the symbol is not found, return `false`.
 
 ```javascript
-hasChar('Hexlet', 'H'); // true
-hasChar('Hexlet', 'h'); // false
-hasChar('Awesomeness', 'm'); // true
-hasChar('Awesomeness', 'd'); // false
+hasAtSymbol('support@example.com'); // => true
+hasAtSymbol('wrong-email');         // => false
+hasAtSymbol('@admin');              // => true
 ```
+
+Use a loop with an early `return`.

@@ -1,14 +1,6 @@
-
-Implementa la función `printReversedWordBySymbol()`, que imprime la palabra pasada como argumento carácter por carácter, como se muestra en el ejemplo de la teoría, pero en orden inverso.
+Escribe una función `maskCardNumber()` que oculte el número de una tarjeta bancaria: reemplaza todos los caracteres de la cadena por `*`, excepto los últimos cuatro.
 
 ```javascript
-const word = 'Hexlet';
-
-printReversedWordBySymbol(word);
-// => t
-// => e
-// => l
-// => x
-// => e
-// => H
+maskCardNumber('1234567812345678'); // => '************5678'
+maskCardNumber('12345678');         // => '****5678'
 ```

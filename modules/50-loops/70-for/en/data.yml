@@ -1,3 +1,12 @@
 ---
-name: For loop
-tips: []
+name: The For Loop
+tips:
+  - |
+    [for](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+
+    [template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+
+    [Logical OR (||)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR)
+definitions:
+  - name: Aggregation
+    description: Accumulating a result during iterations and working with it after the loop.

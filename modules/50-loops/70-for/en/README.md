@@ -1,7 +1,7 @@
 
-A `while` loop works perfectly for situations where the number of iterations isn't known in advance, e.g., finding a prime number. When we know the number of iterations, it's better to use a `for` loop.
+The `while` loop is ideal for situations where the number of iterations is unknown in advance, for example, when searching for a prime number. When the number of iterations is known, it's preferable to use the `for` loop.
 
-Let's take a look at a function that reverses strings using a `for` loop:
+Let's look at the implementation of reversing a string using a `for` loop:
 
 ```javascript
 const reverseString = (str) => {
@@ -14,12 +14,58 @@ const reverseString = (str) => {
 };
 ```
 
-We could read it as follows: *a loop with index `i` repeats until `i < str.length` and after each step increases `i` by 1*.
+It can be read as follows: *the loop with index `i` repeats while `i < str.length` and increases `i` by 1 after each step*.
 
-When defining the `for` loop, we have three expressions in parentheses, separated by semicolons:
+Let's go through how the loop works step by step for the call `reverseString('go!')`:
 
-1. The initial counter value. This code runs exactly once before the first iteration.
-2. A predicate - the condition for the loop to iterate. It's executed on each iteration. Exactly like what we have with `while`.
-3. Description of the counter change. This code is executed at the end of each iteration.
+```text
+before the loop: result = ''
 
-Other than that, it works exactly the same as the `while` loop.
+i=0: result = `${str[0]}${result}` = 'g' + ''   = 'g'
+i=1: result = `${str[1]}${result}` = 'o' + 'g'  = 'og'
+i=2: result = `${str[2]}${result}` = '!' + 'og' = '!og'
+```
+
+Each new character is prepended to the left of the accumulated result, so the string is built in reverse order.
+
+In the definition of the `for` loop, there are three expressions inside the parentheses, separated by semicolons:
+
+1. The initial value of the counter. This code runs exactly once before the first iteration.
+2. The predicate — the condition for repeating the loops. It runs on every iteration. Just like in `while`.
+3. The description of how the counter changes. This code runs at the end of each iteration.
+
+In all other respects, the principle of operation is exactly the same as the `while` loop.
+
+## Another example: counting characters
+
+Let's count how many times a character occurs in a string, case-insensitively:
+
+```javascript
+const charsCount = (text, char) => {
+  let result = 0;
+  for (let i = 0; i < text.length; i += 1) {
+    // convert to lowercase so as not to depend on the case
+    if (text[i].toLowerCase() === char.toLowerCase()) {
+      result += 1;
+    }
+  }
+  return result;
+};
+
+charsCount('hexlet!', 'e'); // 2
+charsCount('hExlet!', 'E'); // 2
+charsCount('hexlet!', 'a'); // 0
+```
+
+Here `for` controls the iteration over characters, while the condition inside decides whether to increment the counter.
+
+In the `for` definition, you don't have to specify all three expressions. If you don't specify the loop repetition condition, the loop will run infinitely:
+
+```javascript
+let i = 1;
+// You don't even have to specify all three expressions
+for (;;) {
+  console.log(i);
+  i += 1;
+}
+```
