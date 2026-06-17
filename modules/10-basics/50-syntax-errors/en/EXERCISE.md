@@ -1,7 +1,7 @@
 The program starts and reports the result. Write a program that prints:
 
 ```text
-Программа успешно запущена
+Program started successfully
 ```
 
 After the program works, deliberately break it — make one of the syntax errors:

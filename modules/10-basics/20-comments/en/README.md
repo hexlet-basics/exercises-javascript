@@ -2,7 +2,7 @@
 In addition to code, source files can contain comments. This is text that is not part of the program and is used by programmers for notes. They are used to add explanations of how the code works, what bugs need to be fixed here, or as reminders to add something later.
 
 ```javascript
-// Удалить строку ниже после реализации задачи по регистрации
+// Remove the line below after implementing the registration task
 console.log(10);
 ```
 

@@ -1,1 +1,1 @@
-console.log('Программа успешно запущена');
+console.log('Program started successfully');

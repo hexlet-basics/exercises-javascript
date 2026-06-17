@@ -2,7 +2,7 @@
 Además del código, los archivos de código fuente pueden contener comentarios. Estos son textos que no forman parte del programa y son útiles para los programadores como notas. Con ellos se pueden agregar explicaciones sobre cómo funciona el código, qué errores hay que corregir aquí o recordatorios de agregar algo más adelante.
 
 ```javascript
-// Удалить строку ниже после реализации задачи по регистрации
+// Eliminar la línea de abajo después de implementar la tarea de registro
 console.log(10);
 ```
 

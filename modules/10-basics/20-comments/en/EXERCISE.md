@@ -3,7 +3,7 @@ You are writing a program and realize that one part needs to be finished later. 
 Add such a comment to the file:
 
 ```javascript
-// TODO: добавить функцию приветствия
+// TODO: add a greeting function
 ```
 
 When you come back to this place later, the comment will remind you that there is still unfinished work here.

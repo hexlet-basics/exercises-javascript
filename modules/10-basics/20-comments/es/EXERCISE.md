@@ -3,7 +3,7 @@ Estás escribiendo un programa y te das cuenta de que una parte debe terminarse 
 Agrega al archivo este comentario:
 
 ```javascript
-// TODO: добавить функцию приветствия
+// TODO: add a greeting function
 ```
 
 Cuando vuelvas a este lugar más tarde, el comentario te recordará que aquí todavía hay trabajo sin terminar.
