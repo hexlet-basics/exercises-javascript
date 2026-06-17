@@ -9,6 +9,6 @@ test('hello world', async () => {
   const firstArg = consoleLogSpy.mock.calls.join('\n');
 
   expect(firstArg).toBe(
-    'Здравствуйте, Анна!\nСпасибо за ваш заказ.\nОжидаемая дата доставки — 3 рабочих дня.',
+    'Hello, Anna!\nThank you for your order.\nExpected delivery date — 3 business days.',
   );
 });

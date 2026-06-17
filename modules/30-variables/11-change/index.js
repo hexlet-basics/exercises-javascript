@@ -1,7 +1,7 @@
-let deliveryStatus = 'в пути';
+let deliveryStatus = 'in transit';
 
 // BEGIN
-deliveryStatus = 'доставлен';
+deliveryStatus = 'delivered';
 // END
 
 console.log(deliveryStatus);

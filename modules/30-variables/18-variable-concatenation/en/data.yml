@@ -1,9 +1,14 @@
 ---
 name: Variables and concatenation
 tips:
-  - >
-    Consider how you should concatenate the variables (Which string? What
-    order?) to get the two-line output of the email body.
-  - >
-    Remember that you can create a string containing only the escape sequence
-    `\n`.
+  - |
+    Think about which string and in what order you need to join the variables
+    with to get this two-line body of the letter.
+  - |
+    Remember that you can create a string that contains only the escape
+    sequence `\n`.
+definitions:
+  - name: Concatenation
+    description: >
+      the operation of joining two strings. For example, `console.log("King's "
+      + ' Landing');`

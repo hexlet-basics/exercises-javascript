@@ -1,54 +1,54 @@
 ---
 
-name: Elección del nombre de la variable
+name: Elección del nombre de una variable
 theory: |
-
-  Imaginemos que el programa del último ejercicio se ve así:
+  Imagina que tenemos un programa como este:
 
   ```javascript
-  let x = 'Father!';
-  console.log(x);
+  const x = 'Father!';
   console.log(x);
   ```
 
-  Todavía funciona, pero el nombre de la variable ha cambiado a `x`. A la computadora no le importa cómo llamamos a las variables, es una máquina sin emociones, pero a los programadores sí nos importa. Leemos el código mucho más a menudo de lo que lo escribimos. Y no solamente nuestro propio código, sino también el código escrito por otras personas. La mitad del éxito en el análisis de código depende de la calidad y claridad de los nombres de las variables.
-
-  Es mejor tomarse el tiempo para pensar en un nombre que describa la esencia y el significado de la variable, en lugar de nombrarla al azar y tener que cambiarla en el futuro. Intente darles nombres que sean comprensibles sin contexto, sin tener que estudiar el código circundante.
-
-  Existe una regla generalmente aceptada: no utilice transliteraciones para los nombres; solamente use el idioma inglés. Si tiene dificultades con el inglés, utilice un traductor. Con el tiempo, al trabajar con código ajeno, formará conceptos adecuados para la nomenclatura.
-
-  Entre los desarrolladores hay un chiste: "lo más difícil de la programación son los nombres de las variables y la invalidación de la caché". De hecho, es difícil inventar nombres. ¿Cómo llamaría a una variable que almacena "la cantidad de pedidos impagos de clientes que tienen deudas en el trimestre anterior"?
-
-  <details>
-  <summary>Respuesta</summary>
-
-  No hay una respuesta correcta y unívoca a esta pregunta. Por ejemplo, se puede utilizar el nombre `unpaidOrdersFromDebtorsInPreviousQuarterCount`.
-
-  Este nombre describe bien el contenido de la variable y permite identificar fácilmente su significado en el código. Sin embargo, es demasiado largo y complicado, por lo que es mejor utilizar un nombre más corto, como `unpaidOrdersFromDebtorsCount` o `debtorsUnpaidOrdersCount`. En general, la elección del nombre de la variable depende del contexto de uso.
-  </details>
-
-  En JavaScript, en los nombres de las constantes y variables, cada palabra se escribe con mayúscula inicial, excepto la primera. Por ejemplo:
+  Desde el punto de vista técnico, todo funciona. Ya hemos visto ejemplos similares, pero aquí se usa una variable con el nombre `x`. Los nombres malos dificultan leer y entender el código. Aquí tienes algunos ejemplos de variables poco afortunadas:
 
   ```javascript
-  const firstName = 'John';
-  console.log(firstName); // => John
-
-  const playerNumber = 24;
-  console.log(playerNumber); // => 24
+  const a = 'John';
+  const n = 42;
+  const ddr = 'New York';
   ```
 
-  Autoevaluación. Piense en un nombre para una variable que almacene "la cantidad de hermanos y hermanas del rey". Escríbalo en un bloc de notas o envíelo por correo electrónico. No incluya nada más que el nombre de la variable. Volveremos a este tema en unas lecciones ;-)
+  ¿Qué son estas variables? ¿Qué almacenan? Para entenderlo, hay que leer todo el resto del código y adivinar por el contexto.
 
+  A la computadora le da igual cómo se llame la variable. Para ella, `x`, `abc`, `message` o `elephantInTheRoom` son simplemente etiquetas para almacenar datos. A las personas les importa otra cosa. Los programadores leen el código mucho más a menudo de lo que lo escriben. Por eso los nombres de las variables son una parte importante de la comunicación a través del código.
+
+  ## Buenos ejemplos
+
+  ```javascript
+  const userName = 'Arya Stark';
+  const unpaidOrdersCount = 3;
+  const maxAttempts = 5;
+  ```
+
+  Un buen nombre de variable ayuda a entender qué hace el programa sin tener que leer cada línea. Es especialmente importante dar nombres cuyo significado sea claro sin contexto, sin necesidad de leer todo el código alrededor.
+
+  Aquí tienes algunos consejos:
+
+  - Usa el inglés. Es el estándar internacional. Es mejor escribir `ordersCount` en lugar de `kolvoZakazov`. Si el inglés todavía te resulta difícil, usa un traductor, es normal. Con el tiempo se hará más fácil.
+  - Intenta que el nombre refleje el significado de la variable. Que sea un poco más largo, pero comprensible.
+  - No tengas miedo de dedicar tiempo a elegir un buen nombre. Es una inversión en la legibilidad y el mantenimiento del código.
+
+  Entre los programadores incluso hay una broma: «Algunos de los problemas más difíciles en programación son el almacenamiento en caché y poner nombres a las variables». A veces inventar un nombre adecuado es realmente difícil. Aquí tienes un ejemplo: ¿cómo llamarías a una variable que almacena la cantidad de pedidos no pagados de clientes con deuda del trimestre anterior?
+
+  Y ahora un pequeño ejercicio: inventa un nombre para una variable que almacenará «la cantidad de hermanos y hermanas del rey». Anótalo en una libreta o envíatelo por correo. Solo el nombre, sin explicaciones. Volveremos a esta tarea dentro de unas lecciones.
 instructions: |
-
-  Crea una variable que describa literalmente "la cantidad de mis hermanos" y asígnale el valor *2*. Imprime el contenido de la variable. Después de una verificación exitosa, compara tu nombre con el nombre utilizado en la solución del profesor.
-
+  Crea una variable que describa literalmente "la cantidad de mis hermanos", y asígnale el valor *2*. Imprime el contenido de la variable. Después de una comprobación exitosa, compara tu nombre con el nombre que se usa en la solución del profesor.
 tips:
   - |
     [Nomenclatura en programación](https://codica.la/blog/naming-in-programming)
   - |
     [Errores en la nomenclatura de variables](https://codica.la/blog/naming-errors-1)
-
 definitions:
   - name: Variable
-    description: una forma de almacenar información y darle un nombre para su uso posterior en el código.
+    description: >-
+      una forma de almacenar información y darle un nombre para su uso posterior
+      en el código.

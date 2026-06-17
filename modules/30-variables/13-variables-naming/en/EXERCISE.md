@@ -1,2 +1,2 @@
 
-Create a variable storing the number of my brothers and assign it a value of *2*. Print it. After completing the tests, compare your name with the teacher's variable name in the solution.
+Create a variable that literally describes "the number of my brothers", and assign it the value *2*. Print the contents of the variable. After a successful check, compare your name with the name used in the teacher's solution.

@@ -1,6 +1,8 @@
 ---
 name: Naming styles
-tips: []
+tips:
+  - |
+    [CamelCase](https://en.wikipedia.org/wiki/CamelCase)
 definitions:
-  - name: Coding standards
-    description: are a list of syntax and style conventions for code writing.
+  - name: Coding standard
+    description: A set of syntactic and stylistic rules for writing code.

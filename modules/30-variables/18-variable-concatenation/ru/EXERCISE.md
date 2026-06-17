@@ -2,15 +2,15 @@
 
 Определите переменные:
 
-- `firstName` = `'Анна'`
-- `greeting` = `'Здравствуйте'`
-- `intro` = `'Спасибо за ваш заказ.'`
-- `info` = `'Ожидаемая дата доставки — 3 рабочих дня.'`
+- `firstName` = `'Anna'`
+- `greeting` = `'Hello'`
+- `intro` = `'Thank you for your order.'`
+- `info` = `'Expected delivery date — 3 business days.'`
 
 Ожидаемый вывод:
 
 ```text
-Здравствуйте, Анна!
-Спасибо за ваш заказ.
-Ожидаемая дата доставки — 3 рабочих дня.
+Hello, Anna!
+Thank you for your order.
+Expected delivery date — 3 business days.
 ```

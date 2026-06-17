@@ -1,26 +1,69 @@
+Anteriormente ya unimos cadenas directamente usando concatenación. Ahora haremos lo mismo, pero con variables. La buena noticia: la sintaxis sigue siendo la misma. Simplemente se sustituyen los valores de las variables.
 
-Para reforzar el tema anterior, intentaremos utilizar variables con concatenación. Sintácticamente no cambia nada: sabemos cómo concatenar (unir) dos cadenas:
+## Unir dos cadenas directamente
 
 ```javascript
-let what = 'Kings' + 'road';
+const what = 'Kings' + 'road';
 console.log(what); // => Kingsroad
 ```
 
-... lo que significa que también podemos concatenar una cadena y una variable en la que se almacena una cadena:
+Aquí todo es sencillo: dos cadenas se unen en una. Así funciona la concatenación: el operador `+` suma las cadenas, creando una nueva cadena.
+
+## Unir una cadena y una variable
+
+Si la variable `first` contiene la cadena `'Kings'`, podemos unirla tranquilamente con otra cadena:
 
 ```javascript
-let primero = 'Kings';
-let que = primero + 'road';
-
-console.log(que); // => Kingsroad
+const first = 'Kings';
+const what = first + 'road';
+console.log(what); // => Kingsroad
 ```
 
-... e incluso concatenar dos variables en las que se almacenan cadenas:
+JavaScript sustituye el valor de la variable, ejecuta la operación y crea la cadena resultante.
+
+## Unir dos variables
+
+De la misma manera, puedes combinar los valores de dos variables, si ambas contienen cadenas:
 
 ```javascript
-let primero = 'Kings';
-let ultimo = 'road';
-
-let que = primero + ultimo;
-console.log(que); // => Kingsroad
+const first = 'Kings';
+const last = 'road';
+const what = first + last;
+console.log(what); // => Kingsroad
 ```
+
+También puedes agregar espacios:
+
+```javascript
+const full = first + ' ' + last;
+console.log(full); // => Kings road
+```
+
+```text
+first = 'Kings'
+last  = 'road'
+
+first   +  ' '  +  last
+└─┬──┘            └─┬┘
+'Kings' + ' '  + 'road'
+└────────┬─────────┘
+    'Kings road'
+```
+
+## ¿Y qué pasa si la variable contiene un número?
+
+En JavaScript, el operador `+` se comporta de forma especial cuando de un lado hay una cadena y del otro un número. En ese caso, el número se convierte automáticamente en una cadena, y ocurre la concatenación:
+
+```javascript
+const age = 42;
+console.log('Age: ' + age); // => Age: 42
+```
+
+Lo mismo ocurre con las variables que contienen resultados de cálculos:
+
+```javascript
+const price = 50 * 1.25 * 6.91; // => 431.875
+console.log('Price in yuans: ' + price); // => Price in yuans: 431.875
+```
+
+También existe una conversión explícita de un número a una cadena mediante `String()`: la analizaremos en la lección sobre conversión de tipos.

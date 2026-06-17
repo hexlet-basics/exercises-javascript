@@ -3,84 +3,101 @@
 name: Expresiones en definiciones
 theory: |
 
-  Las variables son útiles no solamente para almacenar y reutilizar información, sino también para simplificar cálculos complejos. Veamos un ejemplo: necesitamos convertir euros a yuanes a través de dólares. Los bancos a menudo realizan conversiones similares a través de una moneda intermedia al realizar compras en el extranjero.
+  Ya sabemos que las expresiones pueden estar compuestas por varias operaciones. Pero si escribimos todo el cálculo en una sola línea larga, el código rápidamente se vuelve difícil de leer.
 
-  Primero, convirtamos 50 euros a dólares. Supongamos que un euro equivale a 1.25 dólares:
+  Por ejemplo, esta forma funciona:
 
   ```javascript
-  let dollarsCount = 50 * 1.25;
+  const yuansCount = 50 * 1.25 * 6.91;
+  console.log(yuansCount); // => 431.875
+  ```
+
+  JavaScript evaluará fácilmente esta expresión. Pero para una persona ya no resulta tan cómodo leer este código. Surgen preguntas de inmediato:
+
+  - ¿Qué significa `1.25`?
+  - ¿Qué significa `6.91`?
+  - ¿Dónde termina un paso del cálculo y empieza el siguiente?
+
+  Para que estos cálculos sean más claros, las variables pueden usarse dentro de otras expresiones. Primero el programa guarda un resultado intermedio en una variable, y luego sustituye el valor de esa variable en el siguiente cálculo.
+
+  ## Expresiones
+
+  Cualquier valor que se pueda calcular es una expresión. A una variable se le puede asignar una expresión, no solo un valor ya preparado.
+
+  ```javascript
+  const sum = 3 + 4;          // => 7
+  const text = 'Hello' + '!'; // => 'Hello!'
+  const doubled = sum * 2;    // => 14
+  ```
+
+  JavaScript primero evalúa la expresión a la derecha de `=`, y luego guarda el resultado en la variable a la izquierda.
+
+  ## Conversión de moneda a través de una moneda intermedia
+
+  Imaginemos que necesitamos convertir euros a yuanes, pero el tipo de cambio directo no está disponible para nosotros. Entonces lo haremos en dos pasos: **euros → dólares → yuanes**. Así suelen funcionar los bancos al pagar compras en el extranjero.
+
+  ### Paso 1. Euros → Dólares
+
+  Supongamos que el tipo de cambio es: 1 euro = 1.25 dólares. Queremos convertir 50 euros:
+
+  ```javascript
+  const dollarsPerEuro = 1.25;
+  const dollarsCount = 50 * dollarsPerEuro;
   console.log(dollarsCount); // => 62.5
   ```
 
-  En la lección anterior, asignamos un valor específico a una variable. Pero aquí, `let dollarsCount = 50 * 1.25;`, a la derecha del signo igual, hay una **expresión**. El intérprete calculará el resultado, que es `62.5`, y lo asignará a la variable. Desde el punto de vista del intérprete, no importa si hay `62.5` o `50 * 1.25`, ambos son expresiones que deben evaluarse. Y se evalúan en el mismo valor, `62.5`.
+  En esta línea, `50 * dollarsPerEuro` es una expresión, y `dollarsCount` es la variable en la que se escribe el resultado. JavaScript primero evalúa la expresión, y solo después guarda el resultado en la variable.
 
-  Cualquier cadena de texto es una expresión. La concatenación de cadenas también es una expresión. Cuando el intérprete encuentra una expresión, la procesa y genera un resultado, que es el **valor de la expresión**. Aquí hay algunos ejemplos de expresiones y sus valores resultantes:
+  Al motor le da igual cómo esté escrita la expresión:
 
   ```javascript
-  62.5             // 62.5
-  50 * 1.25        // 62.5
-  120 / 10 * 2     // 24
-
-  'hello'          // hello
-  'Good' + 'will'  // Goodwill
+  const dollarsCount = 62.5;
   ```
 
-  Las reglas de construcción del código (gramática del lenguaje) permiten que en los lugares donde se espera una expresión, se pueda colocar cualquier cálculo (no solo matemático, sino también, por ejemplo, de concatenación de cadenas) y el programa seguirá funcionando. Por esta razón, no es posible describir y mostrar todos los casos de uso de todas las operaciones.
-
-  Los programas están compuestos por muchas combinaciones de expresiones, y comprender este concepto es uno de los pasos clave en tu camino.
-
-  Basándonos en lo dicho anteriormente, ¿crees que este código funcionará?
+  o
 
   ```javascript
-  let who = "dragon's" + 'mother';
-  console.log(who);
+  const dollarsCount = 50 * dollarsPerEuro;
   ```
 
-  <details>
-  <summary>Respuesta</summary>
+  El resultado será el mismo. Pero para una persona la segunda opción es más útil: por el nombre `dollarsCount` se ve de inmediato que en este paso obtuvimos la cantidad en dólares.
 
-  Sí, funcionará. Se imprimirá la cadena `dragon'smother`.
+  ### Paso 2. Dólares → Yuanes
 
-  </details>
-
-  Volvamos a nuestro programa de conversión de moneda. Guardemos el valor del dólar en yuanes como una variable separada. Calculemos el precio de 50 euros en dólares multiplicándolos por `1.25`. Supongamos que 1 dólar equivale a 6.91 yuanes:
+  Ahora convirtamos 50 euros a yuanes, usando el dólar como moneda intermedia. Supongamos que los tipos de cambio son: 1 dólar = 6.91 yuanes, 1 euro = 1.25 dólares.
 
   ```javascript
-  let yuansPerDollar = 6.91;
-  let dollarsCount = 50 * 1.25; // 62.5
-  let yuansCount = dollarsCount * yuansPerDollar; // 431.875
+  const dollarsPerEuro = 1.25;
+  const yuansPerDollar = 6.91;
+
+  const dollarsCount = 50 * dollarsPerEuro;
+  const yuansCount = dollarsCount * yuansPerDollar;
 
   console.log(yuansCount);
   ```
 
-  Ahora agreguemos texto a la salida utilizando concatenación:
+  Este código es más largo que la única línea `50 * 1.25 * 6.91`, pero es más fácil de leer:
 
-  ```javascript
-  let yuansPerDollar = 6.91;
-  let dollarsCount = 50 * 1.25; // 62.5
-  let yuansCount = dollarsCount * yuansPerDollar; // 431.875
+  - se ve que `1.25` es el tipo de cambio del euro al dólar;
+  - se ve que `6.91` es el tipo de cambio del dólar al yuan;
+  - se ve que `dollarsCount` es un resultado intermedio.
 
-  console.log('The price is ' + yuansCount + ' yuans');
-  ```
+  Esto se nota especialmente si no vuelves al código durante al menos una semana. Y ahora imagina que un proyecto tiene cientos de miles de líneas de código. Si en tales proyectos no hubiera variables y cálculos intermedios, sería imposible entenderlos.
 
-  ```text
-  The price is 431.875 yuans
-  ```
+  ## Qué hay que recordar
 
-  Cualquier variable puede ser parte de cualquier expresión. En el momento de la evaluación, el valor de la variable se sustituye en lugar de su nombre.
-
-  El intérprete calcula el valor de `dollarsCount` antes de que esta variable se utilice en otras expresiones. Cuando llega el momento de usar la variable, JavaScript "conoce" su valor porque ya lo ha calculado.
+  - Si una expresión resulta demasiado larga, es mejor dividirla en varios pasos.
+  - Las variables ayudan a guardar resultados intermedios y hacen los cálculos más claros.
+  - Cuando una variable se usa en una expresión, JavaScript sustituye su valor y continúa el cálculo.
 
 instructions: |
 
-  Escribe un programa que tome una cantidad inicial de euros, almacenada en la variable `eurosCount`, convierta los euros a dólares y los imprima en la pantalla. Luego, convierte el valor obtenido a yuanes e imprímelos en una nueva línea.
+  Dada la cantidad de euros: `eurosCount = 100`. Escribe un programa que:
 
-  Ejemplo de salida para 100 euros:
+  1. Convierta euros a dólares al tipo de cambio `1.25` e imprima el resultado.
+  2. Convierta dólares a yuanes al tipo de cambio `6.91` e imprima el resultado.
 
-  ```text
-  125
-  863.75
-  ```
+  Usa variables para almacenar los valores intermedios.
 
 tips:
   - |

@@ -1,9 +1,6 @@
+Dada la cantidad de euros: `eurosCount = 100`. Escribe un programa que:
 
-Escribe un programa que tome una cantidad inicial de euros, almacenada en la variable `eurosCount`, convierta los euros a dólares y los imprima en la pantalla. Luego, convierte el valor obtenido a yuanes e imprímelos en una nueva línea.
+1. Convierta euros a dólares al tipo de cambio `1.25` e imprima el resultado.
+2. Convierta dólares a yuanes al tipo de cambio `6.91` e imprima el resultado.
 
-Ejemplo de salida para 100 euros:
-
-```text
-125
-863.75
-```
+Usa variables para almacenar los valores intermedios.

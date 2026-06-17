@@ -1,31 +1,38 @@
-
-Let's remember one of the previous lessons:
+Let's look at an example of a program that performs currency conversion:
 
 ```javascript
-let dollarsCount = 50 * 1.25; // 62.5
-let rublesCount = dollarsCount * 60; // 3750
+const eurosCount = 1000;
+const dollarsCount = eurosCount * 1.25; // => 1250
+const rublesCount = dollarsCount * 60;  // => 75000
 
 console.log(rublesCount);
 ```
 
-From the developer's point of view, such code "smells". It means that the code is hard to comprehend. Even now, when you look at the numbers `60` and `1.25`now, you might find yourself asking, "What are those numbers?" Imagine reading it in a month from now! How could a new programmer who hasn't seen the code before understand it? In our example, you can reconstruct the context through proper naming, but in real life, the code is much more complicated, and it is often impossible to guess the meaning of numbers.
+Technically, the code works. But from a professional development standpoint, such code is considered bad practice.
 
-This "smell" is known as Magic Numbers. The numbers with an inexplicable origin, which you can only understand by digging deeper into the code.
+## What's the problem?
 
-The solution is simple: create variables with the right names, and everything will fall into place.
+The expressions use unclear numbers: `1.25` and `60`. What are these values? An exchange rate? Where did they come from? In a month or a year, you most likely won't remember what these numbers mean. And if another developer opens the code, they simply won't understand where everything comes from. Such numbers are called magic.
+
+Magic numbers are numeric values whose meaning is not clear from the code. They are usually used directly in mathematical expressions, without variables that have meaningful names. To understand their purpose, you have to dig into the context or read additional documentation. Magic numbers make code harder to read, understand, and maintain.
+
+## How to avoid the magic
+
+The simplest way is to extract such values into variables with clear names. Then the meaning becomes obvious:
 
 ```javascript
-let dollarsPerEuro = 1.25;
-let rublesPerDollar = 60;
+const dollarsPerEuro = 1.25;
+const rublesPerDollar = 60;
 
-let dollarsCount = 50 * dollarsPerEuro; // 62.5
-let rublesCount = dollarsCount * rublesPerDollar; // 3750
+const eurosCount = 1000;
+const dollarsCount = eurosCount * dollarsPerEuro;   // => 1250
+const rublesCount = dollarsCount * rublesPerDollar; // => 75000
 
 console.log(rublesCount);
 ```
 
-Note the following details:
+The numbers themselves haven't gone anywhere, but now they are stored in variables whose names unambiguously tell you what they are.
 
-* lowerCamelCase naming
-* The two new variables are separated from the following computations by an empty line. These variables are meaningful even without a computation involved, which is why this separation is suitable here: it improves readability
-* The code is well named and structured, but it is longer than the previous version. It happens every so often and that's okay. The code must be readable
+## Conclusion
+
+Magic numbers make code unclear and hard to maintain. To avoid this problem, you should replace such numbers with variables that have meaningful names. This makes the code more readable, especially in the long run. Clear code is always more important than compactness, even if the program becomes a bit longer.

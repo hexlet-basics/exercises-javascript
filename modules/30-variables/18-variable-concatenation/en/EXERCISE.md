@@ -1,18 +1,16 @@
+Write a program that builds and prints a greeting letter. Use **only two** `console.log()` calls.
 
-Websites are constantly sending emails to their users. A common task is to automatically send a personalized email with the user's name in the header. If you store a person's name as a string somewhere in a website database, the task of generating the header boils down to concatenation. For instance, you have to concatenate the string `Hello` with a string containing their name.
+Define the variables:
 
-Write a program that will create a header and a body of the email using ready-made variables and print the resulting strings.
+- `firstName` = `'Anna'`
+- `greeting` = `'Hello'`
+- `intro` = `'Thank you for your order.'`
+- `info` = `'Expected delivery date — 3 business days.'`
 
-For the header use the variables `firstName` and `greeting`, a comma, and an exclamation mark. Print it in the correct order.
-
-For the email body, use the variables `info` and `intro`, with the second sentence on a new line.
-
-The result should look like this:
+Expected output:
 
 ```text
-Hello, Joffrey!
-Here is important information about your account security.
-We couldn't verify your mother's maiden name.
+Hello, Anna!
+Thank you for your order.
+Expected delivery date — 3 business days.
 ```
-
-Complete the task using `console.log()` no more than twice.

@@ -1,7 +1,7 @@
 ---
 name: Constantes
 tips:
-  - >
+  - |
     [const](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/const)
-  - >
+  - |
     [TypeError](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/TypeError)

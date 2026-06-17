@@ -1,23 +1,13 @@
-
-Te has encontrado con el siguiente código que muestra la cantidad total de habitaciones en posesión del actual rey:
+En un almacén hay palés con cajas. Extrae los números "mágicos" `6` y `17` a variables con nombre e imprime el resultado.
 
 ```javascript
-let king = 'King Balon the 6th';
-console.log(king + ' has ' + (6 * 17) + ' rooms.');
+console.log('Boxes in stock:');
+console.log(6 * 17);
 ```
 
-Como puedes ver, estos son números mágicos: no está claro qué significa el 6 y qué significa el 17. Puedes adivinarlo si conoces la historia de la familia real: cada nuevo rey hereda todos los castillos de sus antepasados y construye un nuevo castillo, una copia exacta del castillo de sus padres.
-
-Esta extraña dinastía simplemente está multiplicando castillos idénticos...
-
-Elimina los números mágicos creando nuevas variables y muestra el texto en la pantalla.
-
-Debería verse así:
+Salida esperada:
 
 ```text
-King Balon the 6th has 102 rooms.
+Boxes in stock:
+102
 ```
-
-Los nombres de las variables deben transmitir el significado de los números, pero al mismo tiempo deben ser lo suficientemente cortos y concisos para una lectura cómoda.
-
-Recuerda: el código funcionará con cualquier nombre, y nuestro sistema siempre verifica solamente el resultado en la pantalla, por lo que completar esta tarea es tu responsabilidad.
