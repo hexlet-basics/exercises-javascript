@@ -3,15 +3,17 @@ name: Data types
 tips:
   - |
     [Literal](https://en.wikipedia.org/wiki/Literal_(computer_programming))
+  - |
+    [Article about fractional numbers](https://en.wikipedia.org/wiki/Floating-point_arithmetic)
 definitions:
   - name: Data type
     description: >-
-      is a set of data in code. For example, integers, rational numbers, and
-      strings are different data types. The data type determines what can be
-      done with the elements of a particular data.
+      a set of data in code (a kind of information). A type defines what can be
+      done with the elements of a particular set. For example, integers,
+      rational numbers, and strings are different data types.
   - name: Primitive data types
-    description: are simple types built into the programming language.
-  - name: A string
+    description: simple types built into the programming language itself.
+  - name: String (string)
     description: >
-      is a data type defining a set of characters (text). For example, `'text'`
-      or `"text"`.
+      a data type that describes a set of characters (in other words — text);
+      for example, `'text'` or `"text"`.
