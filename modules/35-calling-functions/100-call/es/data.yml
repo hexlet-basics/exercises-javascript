@@ -1,9 +1,8 @@
 ---
-name: Funciones y su llamado
+name: Funciones y su llamada
 tips:
-  - >
-    [Llamada a una
-    función](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Funciones#llamando_funciones)
+  - |
+    [Llamada a una función](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Functions#calling_functions)
 definitions:
   - name: Función
     description: >-
@@ -11,5 +10,5 @@ definitions:
       llama así: `foo()`.
   - name: Argumento
     description: >-
-      información que una función recibe al ser llamada. Por ejemplo, `foo(42)`
-      es pasar el argumento `42` a la función `foo()`.
+      la información que una función recibe al ser llamada. Por ejemplo,
+      `foo(42)` — pasar el argumento `42` a la función `foo()`

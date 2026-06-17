@@ -1,57 +1,141 @@
+Programming exists to perform all kinds of operations. Sometimes these are simple actions, like adding numbers or joining strings. But more often they are complex processes such as transferring money between accounts, placing an order in an online store, calculating taxes, or preparing a report.
 
-Addition, concatenation, finding the remainder, and the other operations discussed are all basic programming language features. Math is not limited to arithmetic, there are many other domains with their own operations, e.g., geometry. The same goes for strings: you can flip them, change a letter's case, delete extra characters – and that's just the tip of the iceberg. And finally, at a higher level, there is the applied logic of a particular program. Programs withdraw money, calculate taxes, and generate reports. The number of these jobs is endless and different for each program. And they all have to be somehow expressed in code.
+Such operations can't be expressed with a single command. An action like "transfer money" may hide dozens, hundreds, or even thousands of lines of code: checking the balance, deducting the amount, accounting for the fee, updating the database, sending a notification.
 
-The notion of a *function* expresses any arbitrary operation in programming. Functions can be both built-in and manually written by a programmer. We are already familiar with one built-in function, `log()`, when we call `console.log()`.
+To manage this code and not get lost in the details, we use functions. A function combines a block of code into a single whole, hides the implementation, and lets us focus on the meaning. The programmer only needs to call the function and trust it to do all the internal work.
 
-Functions are fundamental building blocks in programming, and it is impossible to accomplish anything without them. We need to get acquainted with them as soon as possible because future courses will deal almost exclusively with functions. First, we'll learn how to use the functions we have already defined, and we'll also learn to define our own functions.
-
-We will start with basic functions that handle strings. Below is an example of the `length()` function being called. This counts the number of characters in a string:
+Imagine a function that transfers money from one account to another. It may contain hundreds of lines of code inside, but we don't see them. From the outside, everything looks like one simple command:
 
 ```javascript
-// length is a function
+transferMoney('Alice', 'Bob', 100);
+```
+
+This line calls the `transferMoney()` function. It is passed the sender `Alice`, the recipient `Bob`, and the amount `100`.
+
+Here are a few more examples of function calls. Each one has its own name and its own set of data to work with:
+
+```javascript
+// Yes, console.log is a function too
+console.log('Hexlet!');
+
+// Sending an email to a user
+sendEmail('bob@example.com', 'Welcome!');
+
+// Calculating tax on the given amount
+calculateTax(5000, 'Florida');
+
+// Checking whether a user is in the system
+isRegistered('Alice');
+
+// Getting a random number from 1 to 10
+randomNumber(1, 10);
+
+// Creating a database backup
+backupDatabase();
+```
+
+In a function call, you first write its **name**, then the **parentheses**. The parentheses show that this is exactly a call - that's how we know we're dealing with a function and not a variable.
+
+Inside the parentheses you specify **arguments**, that is, the data the function receives to work with. There can be several of them, just one, or none at all.
+
+## Where do functions come from?
+
+Some functions are built into the language (built-in), others are created by programmers themselves.
+
+**Built-in functions** come together with JavaScript and can be used right away. An example is `console.log()`. As they say, it is available globally.
+
+**Functions defined by programmers** are created when you need to wrap your own logic into a separate block. Such a function can be given any name and used like a built-in one. We'll learn how to do this later.
+
+In addition, there are functions from separate libraries. To use them, you connect them with the import mechanism. We won't go into import in detail yet - it's enough to know that it lets you connect an external set of functions.
+
+## A function with one parameter
+
+Let's take the `length()` function, which returns the number of characters in a string. It is connected from the course's standard set of functions using import:
+
+```javascript
 import { length } from 'hexlet-basics/string';
 
-// length function call with 'Hello!' argument
-const result = length('Hello!');
-console.log(result); // => 6
+const message = 'Hello!';
+const count = length(message);
+console.log(count); // => 6
 ```
 
-A lyrical digression. The first line in this code is an imported function from another module. You will learn about importing and modules on Hexlet, and here they will be "as is" because we need to import to use functions defined in other files. Don't bother if you don't understand the meaning of this step, you can learn more about it in our course [Programming fundamentals](https://en.hexlet.io/courses/intro_to_programming).
+The string `'Hello!'` has six characters, so the call `length(message)` will return the number `6`.
 
-Parameters (or arguments) represent the data the function receives when you call it. This data is what the function uses to compute something and return a result.
+```text
+Argument           Function        Result
+┌──────────┐     ┌──────────┐     ┌──────────┐
+│ 'Hello!' │ ──→ │ length() │ ──→ │    6     │
+└──────────┘     └──────────┘     └──────────┘
+```
 
-We have defined a `result` constant and told the interpreter to assign it a result returned by the `length()` function call. In this sense, functions are like operations – they always return the result of their job. 
+## Returning a value
+
+Returning a value is one of the key principles of how functions work. If a function returns a value, it can be stored in a variable, passed to another function, or used in calculations:
 
 ```javascript
-// Calling length() returns the result (the string length)
-// which is written in a constant named result
-const result = length('Hello!');
+import { length } from 'hexlet-basics/string';
+
+const length1 = length('Hello!'); // store the result
+const length2 = length('World!');
+
+const combinedLength = length1 + length2; // use the result in an expression
+console.log(combinedLength); // => 12
 ```
 
-Writing `length('Hello!')` means that we call the function named *length* and it will take the parameter `'Hello!'`. The function `length()` counts the length of the string passed to it.
+If the function immediately printed the result to the screen (like `console.log()`), we would see the number but wouldn't be able to use it further - to add, store, or compare it. That's exactly why returning a value is so important: it lets you connect functions to each other. This is how big programs are built from small steps.
 
-The function being called is always indicated by parentheses `()` following the function name. There can be any number of parameters in parentheses, even nothing can be a parameter. The number of parameters depends on the function used. Consider the function `pow()` as an example. This raises a given number to a given power. It takes two parameters as input and raises the number passed in the first parameter to the power passed in the second parameter.
+## A function with several parameters
+
+Some functions take several values at once. For example, `Math.pow()` raises a number to a power: the first argument is the base, the second is the exponent.
 
 ```javascript
-import { pow } from 'hexlet-basics/math';
+// 2 to the 3rd power: 2 * 2 * 2
+console.log(Math.pow(2, 3)); // => 8
 
-// Calling pow(2, 3) returns the value of 2 to the power of 3
-const result = pow(2, 3); // 2 * 2 * 2
-console.log(result); // => 8
+// 5 to the 2nd power: 5 * 5
+console.log(Math.pow(5, 2)); // => 25
 ```
 
-Broadly speaking, operators and functions are the same things. The only key difference is how they are written. If you think of addition as a function, it might look like this:
+In terms of structure, a call with several arguments is no different from a call with one: the same function name, parentheses, and arguments separated by commas.
+
+`Math` is a set of functions built into JavaScript for working with numbers. It is available from any place in the program. For now, you can read `Math.pow(...)` as a "long function name": the `Math.` prefix says that the function belongs to this set. What the dot actually means we'll cover in the lessons about objects. It doesn't affect the function's behavior in any way.
+
+A full list of math functions is available in the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math).
+
+## Parameters and arguments
+
+In conversations about functions you'll come across the words **parameters** and **arguments**. They are related, but they are not the same thing.
+
+We talk about **parameters** when creating a function - these are variables inside the function into which the passed values go. We talk about **arguments** when calling - these are what we pass into the function. An argument can be a number, a variable, or any expression:
 
 ```javascript
-// Regular addition
-3 + 5; // 8
-// Addition represented as a function
-// It looks a bit strange, but it conveys the meaning of functions
-+(3, 5);
+console.log(Math.pow(2, 3)); // => 8, the arguments are numbers
+
+const x = 2;
+// an argument can be an expression, it is evaluated before being passed
+console.log(Math.pow(x + 1, 3)); // => 27
 ```
 
-## Summary
+You don't have to memorize this, but it will come in handy when reading English-language literature.
 
-Functions are called. They also return a result that may be used in further calculations or, for example, can be printed.  
+## How to learn about new functions
 
-Self-check. How can you find out what calling `console.log()` will return? Test it.
+Every function has a **signature** - its "description": the name, the list of parameters, and the type of the returned value. It is the signature that lets you understand how to use a function without reading its code. For example, the MDN documentation describes `Math.pow()` like this:
+
+```
+Math.pow(base, exponent)
+
+Parameters
+  base      — the base of the power
+  exponent  — the exponent of the power
+```
+
+From the signature it's immediately clear: the function takes two arguments and returns a number. Once you've learned to read signatures, you can work with any unfamiliar function.
+
+It's impossible to learn everything - and there's no need to. What matters is knowing where to look. For JavaScript there are two main sources:
+
+- **MDN** ([developer.mozilla.org](https://developer.mozilla.org/en-US/)) - documentation on the built-in features of the language and browser APIs.
+- **Node.js documentation** ([nodejs.org/api](https://nodejs.org/api/)) - the server side, functions for working with the file system, the network, and so on.
+
+Another way is to read other people's code: any package on npm is open, and in it you can often find techniques that aren't written about in textbooks.

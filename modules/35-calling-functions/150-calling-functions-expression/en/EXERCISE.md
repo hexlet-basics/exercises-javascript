@@ -1,9 +1,6 @@
-
-Print the first and last letters of the sentence stored in the variable `text` using this format:
+Given the string `text = 'Hexlet'`. Print the first and last characters in the format:
 
 ```text
-First: N
+First: H
 Last: t
 ```
-
-Try to create only one variable you want to assign the text to before you print it. In this lesson, we're practicing building a compound expression.

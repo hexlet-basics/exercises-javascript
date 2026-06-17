@@ -1,3 +1,8 @@
 ---
-name: Functions with variadic parameters
-tips: []
+name: Functions with a variable number of parameters
+tips:
+  - |
+    [Example of a function with a variable number of parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
+definitions:
+  - name: Default argument
+    description: an optional argument of a function.

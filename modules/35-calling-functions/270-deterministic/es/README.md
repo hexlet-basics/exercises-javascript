@@ -1,5 +1,6 @@
+Las funciones en cualquier lenguaje de programación tienen propiedades fundamentales. Nos ayudan a entender cómo se comportará una función en diferentes situaciones, cómo probarla y dónde aplicarla. Una de esas propiedades es el **determinismo**.
 
-Independientemente del lenguaje de programación utilizado, las funciones dentro de él tienen algunas propiedades fundamentales. Conocer estas propiedades facilita predecir el comportamiento de las funciones, las formas de probarlas y el lugar donde se utilizan. Una de estas propiedades es el determinismo. Una función se considera determinista cuando devuelve el mismo resultado para los mismos parámetros de entrada. Por ejemplo, la función que cuenta la cantidad de caracteres es determinista:
+Una **función determinista** siempre devuelve el mismo resultado para los mismos datos de entrada. Por ejemplo, se puede llamar determinista a una función que cuenta la cantidad de caracteres:
 
 ```javascript
 import { length } from 'hexlet-basics/string';
@@ -11,12 +12,32 @@ length('wow'); // 3
 length('wow'); // 3
 ```
 
-No importa cuántas veces llamemos a esta función pasando el valor `'hexlet'`, siempre devolverá `6`. Por otro lado, una función que devuelve un número aleatorio no es determinista, ya que para una misma entrada (incluso si está vacía, es decir, no se aceptan parámetros) siempre obtendremos un resultado diferente. No importa cuán diferente sea, incluso si una de cada millón de llamadas devuelve algo diferente, esta función se considera automáticamente no determinista.
+No importa cuántas veces llamemos a esta función con el argumento `'hexlet'`, siempre devolverá `6`.
+
+## Funciones no deterministas
+
+El tipo opuesto son las **funciones no deterministas**. Pueden devolver resultados diferentes para los mismos datos de entrada o en ausencia de ellos (funciones sin parámetros). Un buen ejemplo es una función que devuelve un número aleatorio:
 
 ```javascript
-// Función que devuelve un número aleatorio
 Math.random(); // 0.09856613113197676
 Math.random(); // 0.8839904367241888
 ```
 
-¿Por qué es importante saber esto? El determinismo afecta seriamente muchos aspectos. Las funciones deterministas son convenientes para trabajar, son fáciles de optimizar y de probar. Si es posible hacer que una función sea determinista, es mejor hacerlo así.
+Esta función no tiene argumentos, pero el resultado es diferente cada vez. Si aunque sea una llamada de un millón produce un resultado diferente, la función se considera no determinista.
+
+```text
+Determinista:              No determinista:
+length('abc') → siempre 3  Math.random() → 0.42
+length('abc') → siempre 3  Math.random() → 0.91
+length('abc') → siempre 3  Math.random() → 0.07
+```
+
+## Por qué esto importa
+
+El determinismo afecta cómo trabajamos con las funciones:
+
+- las funciones deterministas son fáciles de probar y predecir;
+- son más fáciles de optimizar y reutilizar;
+- las funciones no deterministas son más difíciles de verificar porque el resultado cambia.
+
+Por eso, siempre que sea posible, es mejor procurar que una función sea determinista.

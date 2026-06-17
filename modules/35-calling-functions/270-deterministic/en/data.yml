@@ -1,6 +1,10 @@
 ---
-name: Determinacy
+name: Determinism
 tips:
-  - >
-    [Deterministic
-    algorithm](https://en.wikipedia.org/wiki/Deterministic_algorithm)
+  - |
+    [Deterministic functions](https://en.wikipedia.org/wiki/Pure_function#Determinism)
+definitions:
+  - name: Side effect
+    description: >-
+      an action that changes the external environment (the execution
+      environment). For example, printing to the screen or sending an email.
