@@ -1,8 +1,8 @@
 // BEGIN
-const email = `Уважаемый клиент!
+const email = `Dear customer!
 
-Ваш заказ принят в обработку.
-Ожидаемая дата доставки — 3 рабочих дня.`;
+Your order has been accepted.
+Expected delivery: 3 business days.`;
 
 console.log(email);
 // END

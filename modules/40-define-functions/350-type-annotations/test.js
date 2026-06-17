@@ -1,4 +1,4 @@
-// @ts-nocheck — в tsconfig нет типов Node.js (types: []), а тест читает исходник через node:fs
+// @ts-nocheck -- tsconfig has no Node.js types (types: []), and the test reads the source via node:fs
 
 import { readFileSync } from 'node:fs';
 import { expect, test } from 'vitest';
@@ -9,11 +9,11 @@ test('test', () => {
   const paramAnnotations = source.match(/@param\s*\{/g) ?? [];
   expect(
     paramAnnotations.length,
-    'Укажите JSDoc-аннотации @param для обоих параметров',
+    'Add JSDoc @param annotations for both parameters',
   ).toBeGreaterThanOrEqual(2);
   expect(
     source,
-    'Укажите JSDoc-аннотацию @returns для возвращаемого значения',
+    'Add a JSDoc @returns annotation for the return value',
   ).toMatch(/@returns\s*\{/);
 
   expect(f('javascript', 1)).toBe('javascript');
