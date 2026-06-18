@@ -1,52 +1,52 @@
 
-One particular class of tasks that cannot be done without loops is data aggregation. These problems include searching for the maximum and minimum values, as well as finding sums and averages. Their main feature is that their result depends on the whole data set. Calculating the sum requires you to add **all** the numbers together, and calculating the maximum requires you to compare **all** the numbers.
+A separate class of problems that cannot do without loops is called data aggregation. Such problems include finding the maximum, the minimum, the sum, the arithmetic mean, and so on. Their main feature is that the result depends on the entire data set. To calculate the sum, you need to add up **all** the numbers; to find the maximum, you need to compare **all** the numbers.
 
-Anyone who deals with numbers, e.g., accountants or marketers, will be familiar with these tasks. It's usually done using spreadsheet software like Microsoft Excel or Google Tables.
+Everyone who works with numbers is well familiar with such problems, for example, accountants or marketers. They are usually solved in spreadsheets like Microsoft Excel or Google Tables.
 
-Let's consider a simple example: the sum of a set of numbers. We can implement a function to add numbers in a given range, including bounds. Here we have a range of numbers from a minimum value (lower bound) to a maximum (upper bound). For example, the range [1, 10] includes all integers from 1 to 10.
+Let's look at the simplest example – finding the sum of a set of numbers. We will implement a function that adds up the numbers in a given range, including the boundaries. A range in this case is a series of numbers from some beginning to a certain end. For example, the range [1, 10] includes all integers from 1 to 10.
 
 ```javascript
 sumNumbersFromRange(5, 7); // 5 + 6 + 7 = 18
 sumNumbersFromRange(1, 2); // 1 + 2 = 3
 
-// The range [1, 1] is also a range
-// it includes just one number, the bound of the range itself
+// [1, 1] a range with the same beginning and end is also a range
+// it includes exactly one number – the boundary of the range itself
 sumNumbersFromRange(1, 1); // 1
 sumNumbersFromRange(100, 100); // 100
 ```
 
-To implement this function, we need a loop because adding numbers is an iterative process (an iteration for each number), and the number of iterations depends on the size of the range. Before looking at the code, try answering the questions below:
+To implement this code, we will need a loop, since adding numbers is an iterative process (it repeats for each number), and the number of iterations depends on the size of the range. Before looking at the code, try to answer the questions below:
 
-* Which value should you initialize the counter with?
+* What value should the counter be initialized with?
 * How will it change?
 * When should the loop stop?
 
-Try and think through these questions first and then take a look at the code below:
+First try to think about these questions, and then look at the code below:
 
 ```javascript
 const sumNumbersFromRange = (start, finish) => {
-  // You can, of course, change the 'start' value
-  // But the input arguments must be left unchanged
-  // It makes the code easier to analyze
+  // Technically you can change start
+  // But the input arguments should be left at their original value
+  // This makes the code easier to analyze
   let i = start;
-  let sum = 0; // Sum initialization
+  let sum = 0; // Initializing the sum
 
-  while (i <= finish) { // Move to the end of the range
-    sum = sum + i; // Calculate sum for each number
-    i = i + 1; // Go to the next number in the range
+  while (i <= finish) { // Moving to the end of the range
+    sum = sum + i; // Computing the sum for each number
+    i = i + 1; // Moving to the next number in the range
   }
 
-  // Return loop result
+  // Returning the resulting value
   return sum;
 };
 ```
 
-The general structure of the loop here is standard. A counter initialized with a start value for the range, a loop with a condition to stop at the end of the range and, finally, a counter change at the end of the loop. The number of iterations in this type of loop is `finish - start + 1`. Thus, for the range from 5 to 7, it is 7 - 5 + 1, or three iterations.
+The general structure of the loop here is standard. There is a counter that is initialized with the starting value of the range, there is the loop itself with a stop condition when the end of the range is reached, and, finally, the change of the counter at the end of the loop body. The number of iterations in such a loop is equal to `finish - start + 1`. That is, for the range from 5 to 7 it is 7 - 5 + 1, which is 3 iterations.
 
-The main difference from regular processing is related to the logic of computing the result. In aggregation tasks, there is always a variable that stores the result of the loop. In the code above, it is `sum`. With each loop iteration, this variable changes, adding another number from the range: `sum = sum + i`. The whole process looks like this:
+The main differences from ordinary processing are related to the logic of computing the result. In aggregation problems, there is always some variable that stores the result of the loop's work inside itself. In the code above this is `sum`. On each iteration of the loop it changes, adding the next number in the range: `sum = sum + i`. The whole process looks like this:
 
 ```javascript
-// Calling sumNumbersFromRange(2, 5);
+// For the call sumNumbersFromRange(2, 5);
 let sum = 0;
 sum = sum + 2; // 2
 sum = sum + 3; // 5
@@ -55,19 +55,26 @@ sum = sum + 5; // 14
 // 14 – the result of adding the numbers in the range [2, 5]
 ```
 
-The `sum` variable has an initial value of 0. Why do you need to set the value at all? Any iterative operation starts with a value. You can't just declare an empty variable and start working with it within a loop. It will lead to an incorrect result:
+The variable `sum` has an initial value equal to 0. Why set a value at all? Any repeating operation starts with some value. You cannot just declare a variable and start working with it inside a loop. This will lead to an incorrect result:
 
 ```javascript
-// when there is no initial value
-// js sets it to undefined
+// the initial value is not set
+// js automatically makes it equal to undefined
 let sum;
 
-// first iteration
+// the first iteration of the loop
 sum = sum + 2; // ?
 ```
 
-It will result in `NaN`, i.e. not a number, in `sum`. It occurs due to an attempt to add `2` and `undefined`. So you need to have an initial value. Why is 0 chosen in the code above? Well, it is easy to check that all the other options would lead to the wrong result. If the initial value is 1, the sum will be 1 more than it should be.
+As a result of such a call, `sum` will contain `NaN`, that is, not a number. It arises from an attempt to add `2` and `undefined`. So some value is still needed. Why was 0 chosen in the code above? It is very easy to verify that all other options will lead to an incorrect result. If the initial value is equal to 1, then the result will be 1 more than needed.
 
-In mathematics, there is a concept of an **identity element/neutral element**, an element for each type of operation. Its meaning is easy to grasp. An operation with this element doesn't change the operand. In addition, any number plus zero results in the number itself. The same goes for subtraction. Even concatenation has a neutral element, which is an empty string: `'' + 'one'` will be 'one'.
+In mathematics there is the concept of a **neutral element of an operation** (each operation has its own element). This concept has a very simple meaning. An operation with this element does not change the value on which the operation is performed. In addition, any number plus zero gives the number itself. With subtraction it is the same. Even concatenation has a neutral element – it is the empty string: `'' + 'one'` will be 'one'.
 
-Self-check. What is the neutral element of a multiplication operation?
+A self-check question. What is the neutral element of the multiplication operation? To answer this question, find the number that does not change any other numbers when multiplied by it.
+
+<details>
+<summary>Answer</summary>
+
+The neutral element of multiplication is 1.
+
+</details>

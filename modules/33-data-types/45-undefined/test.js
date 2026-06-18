@@ -6,9 +6,9 @@ test('undefined', async () => {
   const consoleLogSpy = vi.spyOn(console, 'log').mockImplementation(() => {});
   await import('./index.js');
 
-  // console.log должен быть вызван, и ему должен быть передан аргумент undefined
+  // console.log must be called and must be passed an undefined argument
   expect(consoleLogSpy).toHaveBeenCalled();
   const [firstCall] = consoleLogSpy.mock.calls;
-  expect(firstCall.length).toBeGreaterThan(0);
-  expect(firstCall[0]).toBe(undefined);
+  expect(firstCall?.length).toBeGreaterThan(0);
+  expect(firstCall?.[0]).toBe(undefined);
 });

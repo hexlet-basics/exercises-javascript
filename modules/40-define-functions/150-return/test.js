@@ -4,6 +4,6 @@ import { expect, test } from 'vitest';
 import f from './index.js';
 
 test('test', () => {
-  expect(f('текст', 3)).toBe('тек...');
-  expect(f('и пошла вода', 5)).toBe('и пош...');
+  expect(f('text', 3)).toBe('tex...');
+  expect(f('hexlet learning', 6)).toBe('hexlet...');
 });

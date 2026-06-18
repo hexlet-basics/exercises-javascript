@@ -1,7 +1,3 @@
-Solamente es un ejercicio de práctica. Muestra en pantalla el número 9780262531962.
+En la tienda quedan 10 manzanas en el estante. Escribe un programa que muestre este número en pantalla.
 
-```text
-9780262531962
-```
-
-Experimenta con la salida. Pasa otro número o una cadena de texto. Observa la respuesta del sistema, intenta traducirla y entenderla.
+Luego intenta mostrar otro número y observa lo que muestra el sistema de verificación. Esto te ayudará a aprender a leer los mensajes de error de las pruebas.

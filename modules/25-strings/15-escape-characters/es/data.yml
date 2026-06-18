@@ -5,4 +5,7 @@ definitions:
     description: >
       una combinación especial de caracteres en un texto. Por ejemplo, `\n` es
       un salto de línea.
-tips: []
+tips:
+  - >
+    [La historia del salto de
+    línea](https://es.wikipedia.org/wiki/Nueva_l%C3%ADnea)

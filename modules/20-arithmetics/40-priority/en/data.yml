@@ -1,6 +1,11 @@
 ---
 name: Operator precedence
 tips:
-  - >
+  - |
     [Operator
     precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+definitions:
+  - name: Expression
+    description: >
+      a sequence of operations on data that produces some result that can be
+      used.

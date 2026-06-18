@@ -3,3 +3,8 @@ name: Negation
 tips:
   - |
     [De Morgan's laws](https://en.wikipedia.org/wiki/De_Morgan%27s_laws)
+definitions:
+  - name: Negation
+    description: >
+      a logical operation that flips a boolean value to its
+      opposite.

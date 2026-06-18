@@ -1,37 +1,77 @@
+At the most basic level, a computer works only with zeros and ones, which make up what is called binary code. Each one or zero is called a bit (from binary digit).
 
-At machine level, the computer operates only with the numbers `0` and `1`. This is called [binary code](https://en.wikipedia.org/wiki/Binary_code), the ones and zeros are called bits, which is derived from the term "binary digit".
+Any data in a computer is represented simply as a sequence of bits, for example images, music, and text. The familiar numbers from the decimal system can also be represented in binary form.
 
-The numbers that we usually use in the decimal system are encoded using binary numbers:
+- 0 → `0`
+- 1 → `1`
+- 2 → `10`
 
-- 0 ← 0
-- 1 ← 1
-- 2 ← 10
-- 3 ← 11
-- 4 ← 100
-- 5 ← 101
+## How to encode text?
 
-But does it deal with text? The computer isn't aware of letters, punctuation, and other text characters. All these characters are encoded by numbers too.
+A computer does not "understand" text. To work with letters and other characters, they also need to be turned into numbers. This is done using encodings, that is, tables in which each character corresponds to a specific number.
 
-We can take the English alphabet and give each letter a number, starting with one:
+The simplest way is to number the letters, starting from 1.
 
-- a ← 1
-- b ← 2
-- c ← 3
-- d ← 4
-- ...
-- z ← 26
+- `a` → `1`
+- `b` → `2`
+- ...and so on up to `z` → `26`
 
-Then you can teach the computer to understand this table and translate text into numbers and vice versa:
+Now we can represent the word `hello` as a set of numbers.
 
-- `hello` → `8` `5` `12` `12` `15`
-- `7` `15` `15` `4` → `good`
+```text
+h e l l o
+↓ ↓ ↓ ↓ ↓
+8 5 12 12 15
+```
 
-These tables that match letters and numbers are called encodings. Besides letters of the alphabet, encoding tables include punctuation marks and other useful characters. You've probably come across such encodings as [ASCII](https://en.wikipedia.org/wiki/ASCII) or [UTF-8](https://en.wikipedia.org/wiki/UTF-8).
+And `good` turns into the following sequence.
 
-Different encodings have different numbers of characters. At first, small tables like ASCII were enough for programmers. But they usually contain only Latin letters, a few simple characters like `%` and `?`, and special control characters like newline (/n).
+```text
+g o o d
+↓ ↓ ↓ ↓
+7 15 15 4
+```
 
-With the development of computers, different countries needed their own comprehensive tables. Including Cyrillic letters, hieroglyphs, Arabic script, additional mathematical and typographic characters, and even emojis as time went on.
+The program does not know that this is a word. It simply sees the instruction "display the character with code 8, then the one with code 5, and so on".
 
-One [Unicode standards](https://en.wikipedia.org/wiki/Unicode) standard in particular, *utf-8*, is the one used in most cases today. It includes characters from almost all the written languages found in the world. Therefore, a letter written by someone from China in Chinese can easily be opened and read natively on a computer in Finland (whether the reader would understand it or not is another question).
+## ASCII. The first mass encoding
 
-Programmers have to deal with encodings regularly. Unicode support in different programming languages is carried out on a different level. Moreover, encodings must be declared when working with databases and files.
+The first computers worked mostly with the English language. For it, in the 1960s the ASCII table was invented, including 128 characters, among them the Latin alphabet, digits, punctuation marks, special characters (`@`, `#`, `!`, `\n`), and control codes.
+
+This was enough for the first programs, but not for the whole world.
+
+When computers began to be used in other countries, a problem arose. ASCII has no Cyrillic, hieroglyphs, Arabic script, accents, currency symbols, and so on.
+
+Each country or company started making its own encoding based on ASCII.
+
+- Windows came up with Windows-1251 for Russian
+- Apple created Mac Roman
+- Countries in Eastern Europe, Asia, and the Middle East developed their own variants
+
+All these encodings were incompatible with each other. Code 226 in one encoding could be the letter é, in another a different letter, and in a third some technical character altogether. This led to real chaos.
+
+## What encoding problems looked like
+
+If you see this in a text.
+
+```text
+ÐÑÐ¸Ð²ÐµÑ!
+```
+
+It means that the program incorrectly determined the encoding of the text. It received a sequence of bytes but read them with the wrong table.
+
+This was the norm in the 1990s and 2000s. One program wrote text in Windows-1251, another read it as ISO-8859-1, and the result was garbage.
+
+## Unicode and UTF-8. The end of the mess
+
+To fix everything, in the 1990s work began on creating the universal Unicode table, which contains the characters of all the writing systems of the world, among them the Latin alphabet and Cyrillic, Chinese and Arabic script, mathematical signs, ancient Egyptian writing, and even emoji.
+
+Inside Unicode there are several storage formats. The most widespread of them is UTF-8. It compactly encodes English characters but can expand to fit any others.
+
+Today UTF-8 is the default standard on the internet, in JavaScript, Linux, databases, and code editors.
+
+## Why should a programmer know this?
+
+- You will work with text, and encoding errors still happen, especially when reading files, processing data, interacting with APIs and databases.
+- JavaScript uses Unicode for strings by default.
+- You need to be able to diagnose problems. For example, if you see "gibberish", it is almost certainly an encoding error.

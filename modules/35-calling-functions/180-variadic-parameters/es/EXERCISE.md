@@ -1,2 +1,1 @@
-
-Calcula programáticamente (no mentalmente) el número mínimo entre 3, 10, 22, -3, 0, y muéstralo en pantalla. Utiliza la función `Math.min()`, que funciona de manera similar a `Math.max()`.
+Encuentra el valor mínimo entre los números `3`, `-3`, `10`, `22`, `0` usando la función `Math.min()` e imprime el resultado en la pantalla.

@@ -1,8 +1,11 @@
 ---
 name: Ternary operator
-tips: []
+tips:
+  - >
+    [More about the ternary
+    operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 definitions:
   - name: Ternary operator
     description: >
-      is a way to convert a simple conditional statement into an expression,
-      e.g., `number >= 0 ? number : -number`
+      A way to turn a simple conditional statement into an expression, for
+      example, `number >= 0 ? number : -number`.

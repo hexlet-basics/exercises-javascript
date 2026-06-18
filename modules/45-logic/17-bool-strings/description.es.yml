@@ -1,0 +1,80 @@
+---
+
+name: Comparación de cadenas
+theory: |
+
+  Las operaciones de comparación funcionan no solo con números, sino también con cadenas. En JavaScript, las cadenas se comparan lexicográficamente: carácter por carácter de izquierda a derecha según los códigos numéricos de los caracteres (Unicode).
+
+  ```javascript
+  console.log('apple' < 'banana'); // => true
+  console.log('cat' > 'dog');      // => false
+  console.log('abc' === 'abc');    // => true
+  console.log('hello' !== 'world'); // => true
+  ```
+
+  Aquí `'apple' < 'banana'`, porque el código del carácter `a` (97) es menor que el código de `b` (98), y es el primer carácter diferente el que decide el resultado de la comparación. Puedes averiguar el código de un carácter con el método `charCodeAt()`:
+
+  ```javascript
+  console.log('a'.charCodeAt(0)); // => 97
+  console.log('b'.charCodeAt(0)); // => 98
+  ```
+
+  La comparación distingue entre mayúsculas y minúsculas: el código de `'Z'` (90) es menor que el código de `'a'` (97). Aquí hay algunos ejemplos donde las primeras letras están en distinto caso:
+
+  ```javascript
+  console.log('Zebra' < 'apple');  // => true  — 'Z'(90) < 'a'(97)
+  console.log('apple' < 'Banana'); // => false — 'a'(97) > 'B'(66)
+  console.log('Apple' < 'apple');  // => true  — 'A'(65) < 'a'(97)
+  ```
+
+  Escribamos una función que verifique si una palabra comienza con una letra dada. Para ello, tomamos el primer carácter de la cadena y lo comparamos con la letra requerida:
+
+  ```javascript
+  const startsWithLetter = (word, letter) => word[0] === letter;
+
+  console.log(startsWithLetter('apple', 'a'));  // => true
+  console.log(startsWithLetter('banana', 'a')); // => false
+  ```
+
+  Las operaciones de comparación son expresiones igual que las aritméticas. En ellas puedes sustituir valores ya preparados y otras expresiones, por ejemplo `word[0]` más arriba. También puedes usar la propiedad `.length`:
+
+  ```javascript
+  console.log('apple'.length > 3); // => true, porque la longitud es 5
+  console.log('hi'.length > 3);    // => false, porque la longitud es 2
+  ```
+
+  Primero se evalúa `'apple'.length` (que da el número `5`), y luego ese número se compara con `3`. Es decir, primero se calculan los operandos de la expresión y después se realiza la comparación.
+
+  ## Predicados útiles
+
+  Las cadenas en JavaScript tienen métodos predicados incorporados. Devuelven `true` o `false` y ayudan a verificar distintas propiedades de una cadena:
+
+  ```javascript
+  console.log('hello'.startsWith('he')); // => true — la cadena comienza con 'he'
+  console.log('hello'.endsWith('lo'));   // => true — la cadena termina con 'lo'
+  console.log('hello'.includes('ell'));  // => true — la cadena contiene 'ell'
+  ```
+
+  Estos métodos permiten verificar cadenas contra las condiciones requeridas directamente en el código, sin escribir funciones adicionales.
+
+instructions: |
+
+  Durante el registro en un sitio web, el programa verifica que la contraseña sea lo suficientemente larga — más de 5 caracteres. Escribe una función `isLongWord()` que devuelva `true` si la longitud de la palabra pasada es mayor a 5 caracteres, y `false` en caso contrario.
+
+  Ejemplo de uso:
+
+  ```javascript
+  isLongWord('apple');  // => false
+  isLongWord('banana'); // => true
+  ```
+
+tips:
+  - >
+    [Comparación de cadenas en
+    JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Less_than)
+
+definitions:
+  - name: Comparación lexicográfica
+    description: >-
+      comparación de cadenas carácter por carácter de izquierda a derecha según
+      los códigos numéricos de los caracteres (Unicode).

@@ -2,49 +2,79 @@
 
 name: Linter
 theory: |
-  Ahora que ya hemos aprendido a escribir programas simples, podemos hablar un poco sobre cómo hacer esta tarea.
 
-  El código del programa debe ser formateado de una manera específica para que sea lo suficientemente comprensible y fácil de mantener. Los conjuntos de reglas especiales, llamados estándares, describen varios aspectos de la escritura de código. En JavaScript, el estándar más común es el estándar de [AirBnb](https://github.com/airbnb/javascript).
+  Cuando distintos desarrolladores escriben código en estilos diferentes, el código se vuelve difícil de leer: aquí sobra un espacio, allí la indentación es distinta. Para evitar estos desacuerdos, los programadores acordaron seguir un único estilo de codificación. Este conjunto de reglas describe cómo debe verse el código: la colocación de espacios, el formato de las funciones y los nombres de las variables.
 
-  En cualquier lenguaje de programación, existen utilidades llamadas **linters**. Estas verifican el código para asegurarse de que cumpla con los estándares. En JavaScript, esto se hace con [eslint](https://eslint.org/).
+  Un estilo único significa un código igualmente comprensible para todos los miembros del equipo, sin importar quién lo haya escrito. Esto ahorra tiempo, reduce la cantidad de errores y facilita el trabajo en conjunto.
 
-  Echa un vistazo al ejemplo del tema anterior:
+  ## Estándares de codificación
+
+  En el ecosistema de JavaScript no existe un único estándar oficial, pero sí hay guías ampliamente aceptadas, por ejemplo la de [AirBnb](https://github.com/airbnb/javascript). Describen en detalle cómo formatear el código: qué indentación usar, cómo colocar los espacios, qué longitud deben tener las líneas, cómo nombrar las variables y mucho más.
+
+  Estas reglas son conocidas y utilizadas por los desarrolladores de JavaScript. A los principiantes les resulta útil consultarlas de vez en cuando y desarrollar buenos hábitos desde el principio. Sin embargo, no es necesario memorizarlo todo de golpe.
+
+  ## Linters: verificación automática del código
+
+  No es necesario memorizar todas las reglas a mano. Existen programas especiales que lo hacen por ti. Se llaman linters.
+
+  Un linter es una herramienta que analiza tu código e informa sobre las violaciones de los estándares. Te ayuda a:
+
+  - Eliminar los espacios sobrantes
+  - Mantener una indentación consistente
+  - Escribir expresiones legibles y limpias
+
+  ## Un linter moderno: Biome
+
+  Hoy en día, uno de los linters más rápidos y populares para JavaScript es [Biome](https://biomejs.dev/). Combina un linter y un formateador en una sola herramienta, funciona rápido y se desarrolla activamente.
+
+  Veamos un ejemplo:
 
   ```javascript
-  console.log(8/2+5 - -3 / 2); // => 10.5
+  const result = 1+ 3;
   ```
 
-  El linter mostrará errores relacionados con la violación de varias reglas:
+  Este código se ve descuidado, y el linter señalará con razón el error. Así se ve el proceso de verificación:
 
-    * [space-infix-ops](https://eslint.org/docs/rules/space-infix-ops) – Falta de espacios entre el operador y los operandos.
-    * [no-mixed-operators](https://eslint.org/docs/rules/no-mixed-operators) – Según el estándar, no se puede escribir código en el que diferentes operaciones se utilicen en una misma expresión sin separación explícita mediante paréntesis.
+  ```text
+  Código              Linter            Resultado
+  ┌──────────────┐    ┌──────────┐    ┌─────────────────────────┐
+  │ const result │ →  │  Biome   │ →  │ lint/style/noShoutyConst│
+  │   = 1+ 3     │    │          │    │ missing whitespace       │
+  └──────────────┘    └──────────┘    └─────────────────────────┘
+  ```
 
-  En la lección anterior, reconocimos que esta abundancia de números y símbolos puede ser confusa, por lo que decidimos agregar paréntesis solamente para facilitar la lectura:
+  Esto significa que faltan espacios antes y después de `+`. Según el estándar, debería verse así:
 
   ```javascript
-  console.log(((8 / 2) + 5) - (-3 / 2)); // => 10.5
+  const result = 1 + 3;
   ```
 
-  Esta versión no viola las reglas y el linter no mostrará errores.
+  ## Las reglas y su significado
 
-  En el ejercicio de la lección anterior, probablemente obtuviste algo como esto:
+  Cada mensaje del linter está vinculado a una regla concreta. Por ejemplo, algunas reglas se refieren a los espacios alrededor de los operadores, otras a las líneas en blanco entre bloques de código y otras a la longitud de las líneas. Cuando recién empiezas, estos detalles pueden parecer poco importantes. Pero con el tiempo queda claro que son justamente ellos los que forman un estilo único y legible.
 
-  ```javascript
-  console.log(70 * (3 + 4) / (8 + 2));
-  ```
+  Puedes consultar la lista completa de reglas de Biome en la [documentación oficial](https://biomejs.dev/linter/rules/).
 
-  ¿Hay alguna violación del estándar aquí?
+  ## Uso del linter en tus propios proyectos
 
-  Desafortunadamente, sí. En este caso, las operaciones `*` y `/` están en la misma expresión sin separación mediante paréntesis. Puedes resolver este problema agregando paréntesis adicionales. Sin embargo, en algún momento, la cantidad de paréntesis puede ser tan grande que el código se vuelva incómodo e incomprensible nuevamente. En ese momento, será más razonable dividir la expresión en partes separadas. Aprenderemos a hacer esto en las próximas lecciones.
-
-  [no-mixed-operators](https://eslint.org/docs/rules/no-mixed-operators) es solamente una de muchas reglas. Otras reglas describen la indentación, los nombres de las entidades creadas, los paréntesis, las operaciones matemáticas, la longitud de las cadenas y muchos otros aspectos. Cada regla individual puede parecer pequeña e insignificante, pero juntas forman la base de un buen código.
-
-  Actualmente, el sitio no verificará tu código con el linter, pero en tus futuras prácticas en [Hexlet](https://ru.hexlet.io) y en el desarrollo real, el linter funcionará y te informará sobre las violaciones.
+  Cuando empieces a escribir tus propios proyectos fuera de la plataforma de aprendizaje, el linter será un ayudante indispensable. Se puede configurar en cualquier editor de código, ejecutar en la terminal o integrar en la compilación del proyecto. El linter muestra los errores y sabe corregirlos automáticamente.
 
 instructions: |
 
-  Muestra en pantalla el resultado de la siguiente operación: "la diferencia entre el cuadrado de cinco y el producto de tres y siete". Coloca los paréntesis de manera que no se viole la regla `no-mixed-operators`.
+  Recibiste código de un colega: funciona correctamente, pero viola el estándar de formato. Corrige los espacios alrededor de los operadores sin cambiar la lógica:
+
+  ```javascript
+  console.log(    (5  **2)-(3*  7));
+  ```
+
+  El resultado debe seguir siendo `4`.
 
 tips:
   - |
-    [eslint](https://eslint.org/)
+    [Biome — un linter y formateador para JavaScript](https://biomejs.dev/)
+
+definitions:
+  - name: Linter
+    description: >-
+      una herramienta que analiza el código e informa sobre las violaciones
+      de los estándares de formato.

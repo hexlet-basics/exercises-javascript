@@ -2,7 +2,7 @@
 name: Logical operators
 tips:
   - |
-    [Boolean algebra](https://en.wikipedia.org/wiki/Boolean_algebra_(structure))
+    [Boolean algebra](https://en.wikipedia.org/wiki/Boolean_algebra)
   - |
     [Conjunction](https://en.wikipedia.org/wiki/Logical_conjunction)
   - |
@@ -10,5 +10,5 @@ tips:
 definitions:
   - name: Logical operators
     description: >-
-      are the AND (&&) and OR (||) operators, which allow you to create compound
+      the AND (&&) and OR (||) operators, which allow you to create compound
       logical conditions.

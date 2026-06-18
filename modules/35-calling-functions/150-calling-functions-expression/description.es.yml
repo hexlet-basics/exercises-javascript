@@ -1,77 +1,101 @@
 ---
 
-name: Llamada a una función - expresión
+name: Llamada a una función es una expresión
 theory: |
 
-  En programación, una expresión es algo que devuelve un resultado que se puede utilizar. Ya sabemos bastante sobre expresiones y los principios de su construcción. Las operaciones matemáticas (suma, resta), así como las operaciones de cadenas (concatenación), - todas estas son expresiones:
+  Cuando escribimos programas, necesitamos conectar acciones entre sí. La suma de números, la unión de cadenas y el trabajo con variables son ejemplos de cómo pasos simples se combinan en un comportamiento más complejo.
 
   ```javascript
-  1 + 5 * 3;
-  'Hex' + 'Let';
-  // Las variables pueden ser parte de una expresión
-  rate * 5;
+  const rate = 10;
+  const hours = 5;
+  const salary = rate * hours + 100;
+  console.log(salary); // => 150
   ```
 
-  La característica de las expresiones es que devuelven un resultado que se puede asignar a una constante o mostrar en pantalla. Por ejemplo:
+  En programación, para esto se usa el concepto de **expresión**: una construcción que se evalúa y produce un resultado. En el ejemplo anterior, `rate * hours + 100` es una expresión compuesta por variables, un literal numérico y operaciones aritméticas. El resultado se puede guardar en una variable o usar más adelante.
+
+  Las expresiones se pueden combinar infinitamente, complicando gradualmente la lógica. Cada nueva expresión se convierte en parte de una mayor:
 
   ```javascript
-  // Aquí la expresión es 1 + 5
-  const sum = 1 + 5;
-  console.log(1 + 5);
+  const bonus = 50;
+  const salary = (rate * hours + bonus) * 12 - 500;
+  console.log(salary);
   ```
 
-  Pero no todo en programación es una expresión. La declaración de una variable es una instrucción; no puede ser parte de una expresión. Es decir, este código dará un error:
+  Así es exactamente como se construyen los programas: los pasos pequeños se suman en grandes construcciones. Por eso es imposible memorizar de antemano todas las combinaciones; es mucho más importante entender cómo se conectan las expresiones entre sí.
+
+  ## Expresiones como argumentos de funciones
+
+  Un argumento de una función siempre es algún valor. Pero un valor no solo se puede escribir directamente, también se puede calcular. Y esto significa que en los argumentos de una función se pueden sustituir cualesquiera expresiones:
 
   ```javascript
-  // Código sin sentido que no funcionará
-  10 + const sum = 1 + 5;
+  // Aquí el argumento es el número 150
+  console.log(150);
+
+  // Y aquí el argumento es una expresión que primero se evalúa
+  console.log(10 * 15); // => 150
+
+  // Se puede combinar de forma más compleja
+  const rate = 10;
+  const hours = 15;
+  const bonus = 50;
+  console.log(rate * hours + bonus); // => 200
   ```
 
-  ¿Por qué es importante saber esto? Como verás más adelante, las expresiones se pueden combinar para obtener un comportamiento más complejo en lugares inesperados y de formas inesperadas. Entenderás mejor cómo se pueden combinar las partes del código para obtener el resultado deseado.
+  La función `console.log()` simplemente recibe un valor ya listo y lo muestra en pantalla. La forma de obtener ese valor le es indiferente a la función; por eso las llamadas a funciones combinan perfectamente con cualquier expresión.
 
-  Hablemos de las funciones. ¿Una llamada a una función es una expresión o no? Sabemos que las funciones devuelven un resultado, por lo tanto, sí, son expresiones. De esto se deduce automáticamente muchas cosas interesantes. Por ejemplo, podemos usar una llamada a una función directamente en operaciones matemáticas. Así es como se puede obtener el índice del último carácter en una palabra:
+  ## Llamada a una función dentro de una función
+
+  Como una llamada a una función es en sí misma una expresión, su resultado se puede pasar de inmediato a otra función:
+
+  ```javascript
+  // Math.abs(-5) devuelve 5
+  // Este resultado se usa de inmediato como argumento de console.log()
+  console.log(Math.abs(-5)); // => 5
+  ```
+
+  Aquí `Math.abs(-5)` se evalúa primero y devuelve `5`. Luego este valor se sustituye en la llamada a `console.log()`. Tal combinación puede ser tan profunda como se quiera:
+
+  ```text
+  console.log(Math.abs(-5))
+
+  Paso 1:  Math.abs(-5)  →  5
+  Paso 2:  console.log(5) →  muestra 5
+  ```
+
+  Primero se evalúan las llamadas anidadas, luego la externa. Por ejemplo, en `Math.round(Math.random() * 10)` primero se ejecuta `Math.random()`, luego la multiplicación y solo después `Math.round()`.
+
+  ## Uso de funciones como parte de expresiones
+
+  Las funciones devuelven valores, lo que significa que sus llamadas se pueden usar como parte de cualquier otra expresión. Para obtener la longitud de una cadena, usaremos la función `length()`:
 
   ```javascript
   import { length } from 'hexlet-basics/string';
 
-  const name = 'JavaScript';
-  // Los índices comienzan desde cero
-  // ¡Llamada al método y resta juntos!
+  const name = 'python';
+
+  // La longitud de la cadena menos 1: el índice del último carácter
   const lastIndex = length(name) - 1;
-  console.log(lastIndex); // 9
+  console.log(lastIndex); // => 5
+
+  // El resultado se puede usar en aritmética
+  const text = 'hexlet';
+  const double = length(text) * 2;
+  console.log(double); // => 12
   ```
 
-  En este código no hay una nueva sintaxis. Solamente hemos combinado partes conocidas basándonos en su naturaleza. Podemos ir aún más lejos:
-
-  ```javascript
-  console.log(length(name) - 1); // 9
-  ```
-
-  Todo esto es válido para cualquier función, por ejemplo, las funciones de cadenas:
-
-  ```javascript
-  import { length } from 'hexlet-basics/string';
-
-  const name = 'JavaScript';
-  // Se utiliza interpolación
-  console.log(`Último carácter: ${name[length(name) - 1]}`);
-  // 'Último carácter: t'
-  ```
+  Aquí `length(name)` y `length(text)` son expresiones completas: devuelven valores que se pueden combinar con números, variables y otras operaciones.
 
 instructions: |
 
-  Muestra en pantalla la primera y la última letra de la oración que está almacenada en la constante `text`, en el siguiente formato:
+  Dada la cadena `text = 'Hexlet'`. Muestra en pantalla el primer y el último carácter en el formato:
 
   ```text
-  First: N
+  First: H
   Last: t
   ```
-
-  Intenta crear solamente una constante en la que se almacene el texto necesario antes de imprimirlo en pantalla. En esta lección, estamos practicando la habilidad de construir una expresión compuesta.
-
-# tips: []
 
 definitions:
   - name: Expresión
     description: |
-      una secuencia de acciones sobre datos que conduce a un resultado que se puede utilizar.
+      una secuencia de acciones sobre datos que conduce a algún resultado que se puede utilizar.

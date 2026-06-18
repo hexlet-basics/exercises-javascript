@@ -1,3 +1,6 @@
+Strings in JavaScript programming are used very often and in a wide variety of situations. With their help, we work with text, display messages on the screen, process user input, and interact with external systems.
+
+From JavaScript's point of view, a string is simply a set of characters enclosed in quotes. Let's look at some examples.
 
 ```javascript
 'Hello'
@@ -7,77 +10,104 @@
 ''
 ```
 
-Which of these five items are strings?
+All of these options are strings.
 
-The first two are clearly strings, we've already worked with similar constructions and mentioned that strings are sets of characters.
+- `'Hello'`, `'Goodbye'`, and `'G'` are strings of several or a single character.
+- `' '` is a string consisting of a single space.
+- `''` is an empty string; it contains no characters at all. It plays the same role as 0 in mathematics.
 
-Any single character between parentheses is a string. The empty string `''` is also a string. So everything inside the quotation marks can be considered a string, even if it is a space, one character, or no characters at all.
+In other words, everything inside the quotes is considered a string, even if there is only a space or nothing at all.
 
-In previous lessons, we enclosed strings in single quotes, but you can also use double quotes:
+If you display strings on the screen, `'Hello'` and `'Goodbye'` will be clearly visible. But `' '` and `''` can be confusing, because the output of an empty string looks like complete absence, while a string with a space shows "empty space", which is visually hard to distinguish. At the same time, JavaScript clearly distinguishes between them. An empty string means the absence of characters, whereas a string with a space contains a specific space character.
+
+A check question. Are these the same strings or not?
 
 ```javascript
-// Coding airbnb standard recommends
-// using single quotes where possible
-
-console.log("Dracarys!");
+'hexlet'
+' hexlet'
 ```
 
-Imagine you want to print a string: _Dragon's mother_. The apostrophe before the letter **s** and a single quote are the same symbols. Let's print it:
+## Terminology. String or line?
+
+There is a terminological trap in programming.
+
+- A string is a data type (the one discussed above), for example `'hello'`.
+- A line is a line of text in a file or in code.
+
+For example, in the code below there is a line, but not a string.
+
+```javascript
+console.log(5);
+```
+
+To avoid confusion, in this course we will use the following wording.
+
+- String, when we talk about the data type.
+- Line, when we are talking about lines of code.
+
+## Single and double quotes
+
+In JavaScript, strings can be written in both single and double quotes.
+
+```javascript
+console.log('Hello');
+console.log("Hello");
+```
+
+By default, it is customary to use single quotes `'` if double quotes are not required inside the string. This style is followed by the popular code style standard from [AirBnb](https://github.com/airbnb/javascript).
+
+## The problem with quotes inside a string
+
+Imagine you want to print the string *Dragon's mother*. It contains an apostrophe (*'s*), which matches the single quote character. Let's try this.
 
 ```javascript
 console.log('Dragon's mother');
 // Uncaught SyntaxError: missing ) after argument list
 ```
 
-This program won't work. For JavaScript, the string begins with a single quote and ends after the letter **n**. Then comes some characters: `s mother` without quotes, which are not a string. And then there is one quote opening a string which is never closed: `');`. This code is syntactically incorrect (you can see it by the way the code is highlighted).
-
-It's a good idea here is to use double quotes. This version of the program will work correctly:
+JavaScript will decide that the string ends after the word `Dragon`, and it will not recognize the rest as valid code, which will cause a syntax error. To avoid this, let's wrap the string in double quotes.
 
 ```javascript
 console.log("Dragon's mother");
 ```
 
-Now the interpreter knows that the string begins with a double quote, so it should end with a double quote too. And the single quote inside has become the part of the string.
+Now JavaScript understands that the single quote inside the string is an ordinary character, and the string itself begins and ends with double quotes.
 
-It works the other way too. If you want to use double quotes inside a string, you should enclose the string in single quotes. And the number of quotes in a string doesn't matter.
+If you need double quotes inside the string and single quotes outside, there will be no problem either.
 
-Now, what if we want to create a string like this?
+```javascript
+console.log('He said "No"');
+```
+
+Sometimes both types of quotes appear in a string.
 
 ```
 Dragon's mother said "No"
 ```
 
-There are single and double quotes here. What can we do in this case? You need to somehow tell the interpreter to consider each quote as a part of the string, and not as its beginning or an end.
-
-To do this, you have to use **an escape character**. In our case, the character that starts and ends a string is either a single or a double quote, depending on the part of the code. Use a backslash `\` before the character you want to escape.
+In this case, to keep JavaScript from confusing the quotes inside the string with the outer ones, an escape character is used — the backslash `\`. It tells the interpreter that the character following it is part of the string, not a control character.
 
 ```javascript
-// Only " is escaped, because in this code
-// double quotes have a special meaning
-
 console.log("Dragon's mother said \"No\"");
 // => Dragon's mother said "No"
 ```
 
-Look closely: we had to use `\` for double quotes to escape them, and not for the single quote (apostrophe) because the string is written in double quotes. If the string were written in single quotes, the escape character would be used before the apostrophe, not before double quotes.
+Here we escape the double quotes inside a string enclosed in double quotes.
+
+Note that JavaScript treats `\"` as a single quote character, not two characters. The same applies to `\'`, `\\`, `\n`, and other escape sequences. They look like two characters in the code, but in the string they count as one.
+
+The same works in the opposite case.
 
 ```javascript
-// \ won't be printed if it is followed by a normal character,
-// not a special one
-
-console.log("Death is \so terribly final");
-// => Death is so terribly final
+console.log('Dragon\'s mother said "No"');
+// => Dragon's mother said "No"
 ```
 
-But what if you want to print the backslash? Just like any other special symbol, it escapes using a backslash too.
+## How to print a backslash
+
+To print the backslash itself, it also needs to be escaped.
 
 ```javascript
 console.log("\\");
 // => \
-```
-
-Self-test: what will be printed?
-
-```javascript
-console.log("\\ \\ \\\\ \\\ \'\"");
 ```

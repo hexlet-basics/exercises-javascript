@@ -1,5 +1,5 @@
 
-Además del código en sí, los archivos de código fuente pueden contener comentarios. Estos son textos que no forman parte del programa y son útiles para los programadores como notas. Con ellos se pueden agregar explicaciones sobre cómo funciona el código, qué errores corregir o qué agregar más adelante.
+Además del código, los archivos de código fuente pueden contener comentarios. Estos son textos que no forman parte del programa y son útiles para los programadores como notas. Con ellos se pueden agregar explicaciones sobre cómo funciona el código, qué errores hay que corregir aquí o recordatorios de agregar algo más adelante.
 
 ```javascript
 // Eliminar la línea de abajo después de implementar la tarea de registro
@@ -22,7 +22,7 @@ Un comentario puede ocupar toda una línea. Si una línea no es suficiente, se p
 Un comentario puede estar en una línea después de algún código:
 
 ```javascript
-console.log('Soy el Rey'); // For Lannisters!
+console.log('I am the King'); // For Lannisters!
 ```
 
 ## Comentarios de varias líneas
@@ -38,3 +38,23 @@ console.log('I am the King');
 ```
 
 Estos comentarios generalmente se utilizan para la documentación del código, por ejemplo, en el caso de las funciones.
+
+## Comentarios de servicio
+
+Durante el trabajo, te encontrarás con un código así en nuestro editor:
+
+```javascript
+// BEGIN
+
+// END
+```
+
+*BEGIN* y *END* aquí son comentarios comunes que no afectan en absoluto el funcionamiento del programa. Indican dónde escribir el código de la tarea.
+
+```javascript
+// BEGIN
+<aquí tu solución>
+// END
+```
+
+Cuando veas *BEGIN* y *END*, escribe tu código entre ellos y deja el resto sin cambios.

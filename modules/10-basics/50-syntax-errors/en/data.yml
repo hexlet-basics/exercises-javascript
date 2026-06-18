@@ -2,11 +2,12 @@
 name: Syntax errors
 tips:
   - |
-    [JavaScript errors](https://davidwalsh.name/fix-javascript-errors)
+    [Errors in JavaScript](https://habr.com/ru/post/249525/)
 definitions:
-  - name: Syntax errors
-    description: are grammar mistakes in a programming language.
-  - name: SyntaxError (Parse error)
+  - name: Syntax error
     description: >-
-      is a type of error in JavaScript which occurs when there are syntax errors
-      in the code.
+      a violation of the grammar rules of a programming language.
+  - name: SyntaxError (parsing error)
+    description: >-
+      a type of error in JavaScript that occurs when there are syntax errors in
+      the code.

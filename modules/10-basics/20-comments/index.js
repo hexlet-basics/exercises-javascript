@@ -1,1 +1,1 @@
-// TODO: добавить функцию приветствия
+// TODO: add a greeting function

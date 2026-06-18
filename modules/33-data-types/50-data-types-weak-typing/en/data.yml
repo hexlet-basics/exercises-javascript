@@ -1,3 +1,11 @@
 ---
 name: Weak typing
-tips: []
+tips:
+  - |
+    [Typing](https://en.wikipedia.org/wiki/Strong_and_weak_typing)
+definitions:
+  - name: Weak typing
+    description: >
+      this is typing in which the programming language performs many
+      implicit type conversions automatically, even if a loss of precision
+      may occur or the conversion is ambiguous.

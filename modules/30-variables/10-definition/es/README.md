@@ -1,47 +1,148 @@
-
-Imagina que tienes la tarea de imprimir en la pantalla la frase *¡Father!* dos veces, o incluso cinco veces. Puedes resolver este problema de manera directa:
+Imagina que necesitas imprimir la frase `Father!` dos veces:
 
 ```javascript
 console.log('Father!');
 console.log('Father!');
 ```
 
-En el caso más simple, esto funciona bien. Sin embargo, si la frase *¡Father!* se utiliza con más frecuencia, y en diferentes partes del programa, tendrás que repetirla en todas partes. Los problemas con este enfoque comienzan cuando necesitas cambiar la frase, lo cual ocurre con bastante frecuencia. Tendrás que encontrar todos los lugares donde se utiliza la frase *¡Father!* y realizar el cambio necesario. Pero hay otra forma de hacerlo. En lugar de copiar nuestra expresión, simplemente podemos crear una variable con esta frase.
+Este enfoque funciona bien si la frase aparece solo un par de veces. Pero ¿qué pasa si se utiliza con frecuencia, en diferentes partes del programa? Entonces tendrías que copiar la misma expresión una y otra vez.
+
+¿Y qué ocurre si necesitas cambiar la frase, por ejemplo reemplazar _Father!_ por _Mother!_? Tendrías que buscar y corregir todas las apariciones a mano. Esto es incómodo y conduce a errores.
+
+## Variables
+
+Para no duplicar la misma cadena, puedes guardarla en una variable e imprimir su contenido:
 
 ```javascript
-// greeting - se traduce como saludo
-let greeting = '¡Father!';
-console.log(greeting); // => Father!
-console.log(greeting); // => Father!
+const greeting = 'Father!';
+
+console.log(greeting);
+console.log(greeting);
 ```
 
-Una variable apunta a los datos que se le han asignado. Gracias a esto, los datos se pueden utilizar múltiples veces sin necesidad de duplicarlos constantemente. La variable en sí se crea y se llena con datos (se inicializa) utilizando la instrucción `let greeting = 'Father!'`.
+Resultado:
 
-Para el nombre de la variable, se puede utilizar cualquier conjunto de caracteres permitidos, que incluyen letras del alfabeto inglés, números, así como los símbolos *_* y *$*. Sin embargo, no se puede colocar un número al principio. Los nombres de las variables distinguen entre mayúsculas y minúsculas, es decir, `hello` y `heLLo` son dos nombres diferentes, y por lo tanto, dos variables diferentes. En JavaScript, el registro es importante, nunca lo olvides.
-
-No es necesario inicializar una variable con datos al momento de declararla. A veces, es necesario crearla y luego llenarla más adelante:
-
-```javascript
-let greeting;
-
-// Uso
-console.log(greeting); // undefined
-
-// Cambiar la variable en la siguiente lección
+```text
+Father!
+Father!
 ```
 
-Una variable declarada pero no inicializada contiene el valor `undefined`. Este es un valor especial que se utiliza cuando nada está definido.
+Una **variable** es un nombre detrás del cual se almacena un valor. En nuestro ejemplo creamos una variable llamada `greeting` y escribimos en ella la cadena `'Father!'`.
 
-No hay límite en la cantidad de variables que se pueden crear, los programas grandes contienen decenas o incluso cientos de miles de nombres de variables:
+```text
+const greeting = 'Father!';
+
+Variable         Valor
+┌──────────┐     ┌──────────┐
+│ greeting │ ──→ │ 'Father!'│
+└──────────┘     └──────────┘
+```
+
+La línea `const greeting = 'Father!'` se lee así: «toma el valor `'Father!'` y asígnalo a la variable llamada `greeting`». El signo `=` aquí es el operador de asignación, no una notación de igualdad como en matemáticas. Coloca el valor en la variable.
+
+Cuando escribimos `console.log(greeting)`, el motor sustituye el nombre `greeting` por el valor almacenado en ella. Como resultado, la cadena `'Father!'` se imprime en la pantalla.
+
+```text
+console.log(greeting)
+            |
+            v
+console.log('Father!')
+```
+
+## let y const
+
+En JavaScript, una variable debe declararse antes de usarse con una de las palabras clave — `const` o `let`:
+
+- `const` — para valores que no van a cambiar;
+- `let` — para valores que pueden cambiar durante la ejecución del programa.
 
 ```javascript
-let greeting1 = 'Father!';
+const greeting = 'Father!'; // no cambiará
+let score = 0;              // cambiará a medida que se ejecuta el programa
+```
+
+Si no sabes si el valor cambiará, usa `const`. Esta es una buena práctica: el código es más fácil de leer y más difícil de dañar accidentalmente. Volveremos a `let` y a las constantes en lecciones separadas.
+
+## Nombres de variables
+
+El programador es quien inventa los nombres de las variables. En JavaScript puedes usar:
+
+- letras latinas (a-z, A-Z),
+- dígitos (pero no al principio),
+- los símbolos `_` y `$`.
+
+Ejemplos de nombres válidos: `greeting`, `name1`, `helloWorld`. JavaScript distingue entre letras minúsculas y mayúsculas. Las variables `greeting`, `Greeting` y `GREETING` son tres variables diferentes.
+
+## Variables y literales
+
+En el código es importante distinguir dónde usamos una variable y dónde escribimos un valor directamente. Esto es especialmente notable en el ejemplo con `console.log()`:
+
+```javascript
+const greeting = 'Mother!';
+console.log(greeting);   // => Mother!
+console.log('greeting'); // => greeting
+```
+
+En el primer caso se usa la **variable** `greeting`, y el programa sustituye su valor. En el segundo caso `'greeting'` está entre comillas, por lo que es un **literal de cadena**, es decir, un valor ya hecho escrito directamente en el código. Aunque vemos la palabra `greeting` en ambos casos, desde el punto de vista del motor son cosas completamente diferentes.
+
+Los literales son datos escritos explícitamente (por ejemplo, `'Hello'`, `42`, `3.14`). Los identificadores son los nombres de variables y funciones (por ejemplo, `greeting`, `console`) que apuntan a valores o comandos ya existentes.
+
+## Orden de uso
+
+Una variable primero debe crearse (declararse y asignarle un valor), y solo después usarse. Si intentas acceder a una variable antes de crearla, el programa lanzará un error:
+
+```javascript
+console.log(name); // Error: la variable aún no está definida
+// ReferenceError: Cannot access 'name' before initialization
+const name = 'Alice';
+```
+
+Pero en el orden correcto todo funciona:
+
+```javascript
+const name = 'Alice';
+console.log(name); // => Alice
+```
+
+## Varias variables en un programa
+
+En un solo programa puedes crear tantas variables como quieras. Cada una almacena sus propios datos y no interfiere con las demás:
+
+```javascript
+const greeting1 = 'Father!';
 console.log(greeting1);
 console.log(greeting1);
 
-let greeting2 = 'Mother!';
+const greeting2 = 'Mother!';
 console.log(greeting2);
 console.log(greeting2);
 ```
 
-Para facilitar el análisis del programa, se recomienda crear variables lo más cerca posible del lugar donde se utilizan.
+¿Cómo saber cuándo se necesitan varias variables? La cantidad de variables depende de la lógica del programa. Este tema se trata en detalle más adelante, cuando nos encontremos con las funciones y las construcciones condicionales.
+
+## Dónde crear variables
+
+Los programadores intentan crear variables cerca del lugar donde se usan. Esto hace que el código sea más legible. Esto es especialmente importante en programas grandes, donde puede haber decenas y cientos de miles de variables.
+
+## Errores al trabajar con variables
+
+El orden de las instrucciones en el código con variables es de enorme importancia. Una variable debe definirse antes de usarse. A continuación se muestra un ejemplo de un error que los principiantes cometen muy a menudo:
+
+```javascript
+// Uncaught ReferenceError: greeting is not defined
+console.log(greeting);
+let greeting = 'Father!';
+```
+
+La ejecución de un programa con el código del ejemplo anterior termina con el error `ReferenceError: greeting is not defined`. `ReferenceError` es un error de referencia. Significa que el código usa un nombre (identificador) que no está definido. El mensaje lo dice directamente: `greeting is not defined`.
+
+Además del orden incorrecto de definición, en JavaScript también se dan erratas banales — tanto al usar una variable como al declararla. La cantidad de errores de este tipo se reduce con un editor configurado correctamente: resalta los nombres que se usan sin declaración y advierte sobre posibles problemas.
+
+Otro error común es intentar declarar una variable ya declarada con `let`:
+
+```javascript
+let greeting = 'Father!';
+let greeting = 'Father!'; // SyntaxError: Identifier 'greeting' has already been declared
+```
+
+No se puede declarar una variable dos veces. Si necesitas un valor diferente — crea una nueva variable con un nombre diferente, o simplemente reasigna el valor de una variable `let` existente sin la palabra clave.

@@ -1,3 +1,5 @@
 ---
 name: Iterating over a string
-tips: []
+tips:
+  - |
+    [Iteration](https://en.wikipedia.org/wiki/Iteration)

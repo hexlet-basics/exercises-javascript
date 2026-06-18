@@ -1,2 +1,7 @@
+You received some code from a colleague — it works correctly, but it violates the formatting standard. Fix the spaces around the operators without changing the logic:
 
-Print the result of "the difference between five squared and the product of three and seven". Place the parentheses to follow the `no-mixed-operators` rule.
+```javascript
+console.log(    (5  **2)-(3*  7));
+```
+
+The result must stay `4`.

@@ -2,9 +2,9 @@
 name: else
 tips:
   - >
-    [if...else](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/if...else)
+    [if...else](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/if...else)
 definitions:
   - name: else
     description: >-
-      forma de especificar un bloque de código que se ejecutará si la condición
-      del `if` no se cumple
+      una forma de definir un bloque de código que se ejecutará si la condición
+      con `if` no se cumple

@@ -1,55 +1,65 @@
+In addition to arithmetic operations, mathematics has comparison operations, for example `5 > 4` or `3 < 1`. They exist in programming too. Comparisons are often used in real-world tasks. For example, when we place an order in an online store, the system checks whether the user has enough money in their account: if the amount in the account is greater than or equal to the price of the item, the order is confirmed, otherwise a message about insufficient funds appears.
 
-As well as arithmetic operators, we also know comparison operators from school. For example, `5 > 4`. It sounds like a question, "Is 5 greater than 4?" The answer is "yes". In other cases, the answer may be "no", say, for `3 < 1`.
+## Comparison in programming
 
-Comparison operators aren't restricted to numbers. You can put them in almost anything, e.g., strings. Every time we visit a website, it compares the username and password we've entered with those in the database. If they exist, we are let in (authorized).
-
-Programming languages have borrowed all the comparison operators from math virtually unchanged. The only major change concerns the equality and inequality operators. In math, the usual equal sign is `=`, which is rare in programming. In many languages, the symbol `=` is used to assign values to variables, so you need to use `==` or `===` for comparison.
-
-List of comparison operators in JavaScript:
-
-* `<` less than
-* `<=` less than or equal to
-* `>` greater than
-* `>=` greater than or equal to
-* `===` equal to
-* `!==` not equal to
-
-_A tiny note: for equality and inequality, there are also `==` and `!=`, neither of which we'll use because of the possible risks. We'll discuss it later._
-
-A logical operation like `5 > 4` or `password === text` is an expression resulting in a special value, `true` or `false`. This is a new data type for us, which is called boolean. It has only these two values.
+Let's start with an example that compares two numbers:
 
 ```javascript
-const result = 5 > 4;
-console.log(result); // => true
-console.log('one' !== 'one'); // => false
+console.log(5 > 4); // => true
+console.log(4 > 4); // => false
 ```
 
-Along with strings and integers with rationals (which are numbers), the logical type (boolean) is one of JavaScript's primitive data types.
-
----
-
-Try to write a primitive function that takes a child's age as an input and decides whether they are an infant or not. Infants are defined as children under a year old:
+The result of a comparison is a value of the **boolean** type. It has only two possible values: `true` and `false`. These are special language values, and they can be used directly:
 
 ```javascript
-const isInfant = (age) => age < 1;
+console.log(true);
+console.log(false);
 ```
 
-We can take advantage of the fact that any operation is an expression, so the only line we need to write here is "return the value that results from `age < 1`".
+In practice, they are rarely used this way, but the entire logic of a program's behavior is built on them. We encounter this every day: we enter PIN codes and passwords, perform actions whose results may differ. The program reasons roughly like this: *if this — do one thing, if otherwise — do another*.
 
-Depending on the input, the comparison will either be true or false, and `return` will return that result.
+JavaScript provides the following comparison operations:
+
+| Operator | Meaning |
+|----------|---------|
+| `<` | less than |
+| `<=` | less than or equal to |
+| `>` | greater than |
+| `>=` | greater than or equal to |
+| `===` | strictly equal |
+| `!==` | strictly not equal |
+
+Programming languages adopted mathematical comparison operations almost without changes, except for equality and inequality. In mathematics, the ordinary `=` is used, but in programming the `=` symbol is already taken — it assigns values to variables. That is why JavaScript uses `===` for equality comparison and `!==` for inequality (the triple one and the one with the exclamation mark are "strict" comparison, which we will come back to).
 
 ```javascript
-const isInfant = (age) => age < 1;
-
-console.log(isInfant(3));
+console.log(5 >= 3);  // => true
+console.log(7 < 0);   // => false
+console.log(5 > 5);   // => false
+console.log(5 >= 5);  // => true
+console.log(2 === 5); // => false
+console.log(2 !== 5); // => true
 ```
 
-```textfalse```
-
-Now, perform the check on a child who is six months old:
+When specific values are used in a comparison, the operation seems pointless: the result is already known and is always the same. But everything changes when the values can be different. Let's write a simple function that takes a child's age and determines whether they are an infant. Children under two years old are considered infants (two is not included):
 
 ```javascript
-console.log(isInfant(0.5));
+const isInfant = (age) => age < 2;
+
+console.log(isInfant(3)); // => false
+console.log(isInfant(2)); // => false
+console.log(isInfant(1)); // => true
+console.log(isInfant(0)); // => true
 ```
 
-```texttrue```
+## Predicates
+
+When functions return the result of a comparison, they usually answer the question "yes" or "no". Such functions are called **predicates**. They are easy to recognize: they return a logical value `true` or `false`, and their name often contains the statement being checked (`is`, `has`, `can`). Here is a function that checks whether a number is negative:
+
+```javascript
+const isNegative = (number) => number < 0;
+
+console.log(isNegative(-5)); // => true
+console.log(isNegative(7));  // => false
+```
+
+Predicate names are built so that the question can be read directly from the name: `hasChildren()` — "are there any children?", `isEmpty()` — "is the string empty?", `hasErrors()` — "are there any errors?". At the same time, only a function that returns exactly a logical value is considered a predicate — without exceptions.

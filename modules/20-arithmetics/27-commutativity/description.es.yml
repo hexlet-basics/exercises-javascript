@@ -2,17 +2,71 @@
 
 name: Operación conmutativa
 theory: |
-  Todos recordamos de la escuela: "el resultado no cambia al modificar el orden de los sumandos". Este es uno de los principios básicos e intuitivos de la aritmética, se llama **ley conmutativa**.
 
-  Una operación binaria se considera conmutativa si al intercambiar los operandos se obtiene el mismo resultado. Es obvio que la suma es una operación conmutativa: *3 + 2 = 2 + 3*.
+  La frase "el resultado no cambia al modificar el orden de los sumandos" es familiar para todos desde la escuela. Este principio se llama ley conmutativa y es una de las leyes fundamentales de la aritmética.
 
-  Pero, ¿es la resta una operación conmutativa? Por supuesto que no: *2 - 3 ≠ 3 - 2*. En programación, esta ley funciona de la misma manera que en aritmética.
+  ## Qué es la conmutatividad
 
-  Además, la mayoría de las operaciones con las que nos encontramos en la vida real no son conmutativas. Por lo tanto, siempre preste atención al orden en el que trabaja.
+  Una operación se llama conmutativa si el orden de los operandos no afecta el resultado: si intercambias los valores, obtienes la misma respuesta. Un ejemplo de operación conmutativa es la suma.
+
+  ```javascript
+  console.log(3 + 2); // => 5
+  console.log(2 + 3); // => 5
+  ```
+
+  El resultado idéntico confirma que la operación es conmutativa.
+
+  ```text
+  2 + 3 = 5     3 + 2 = 5
+  └──────────┬─────────┘
+     mismo resultado
+
+  2 - 3 = -1    3 - 2 = 1
+  └──────────┬─────────┘
+   resultado diferente
+  ```
+
+  ## Operaciones no conmutativas
+
+  Pero no todas las operaciones tienen esta propiedad. Por ejemplo, la resta es una operación no conmutativa:
+
+  ```javascript
+  console.log(2 - 3); // => -1
+  console.log(3 - 2); // => 1
+  ```
+
+  Intercambiar los operandos da un resultado diferente.
+
+  ## En programación es exactamente igual
+
+  La conmutatividad en programación funciona exactamente igual que en aritmética. JavaScript sigue estrictamente las reglas matemáticas.
+
+  Otras operaciones no conmutativas:
+
+  - División: _8 / 2 ≠ 2 / 8_
+  - Exponenciación: _2 \*\*3 ≠ 3\*\* 2_
+
+  Ejemplos en código:
+
+  ```javascript
+  // División
+  console.log(8 / 2);  // 8 dividido por 2 = 4
+
+  // Exponenciación
+  console.log(3 ** 2); // 3 al cuadrado = 9
+  ```
+
+  Por lo tanto:
+
+  - Verifica siempre con cuidado el orden de los operandos, especialmente al trabajar con operaciones desconocidas;
+  - comprueba la conmutatividad de forma experimental en lugar de suponerla de antemano.
 
 instructions: |
 
-  Escriba un programa que calcule y muestre en pantalla los valores de las siguientes expresiones matemáticas: "3 elevado a la 5" y "-8 dividido por -4".
+  Escribe un programa que resuelva dos tareas y muestre las respuestas en pantalla, cada una en su propia línea.
+
+  1. Un pintor quiere pintar 8 secciones de una valla, cada una de uno de 2 colores. ¿Cuántas combinaciones de colores únicas existen? Usa el operador de exponenciación `**`.
+  2. Tú y dos amigos (3 personas en total) compraron 9 pasteles y quieren repartirlos por igual. ¿Cuántos le tocan a cada uno? Usa el operador de división `/`.
 
 tips:
   - |
@@ -20,5 +74,7 @@ tips:
 
 definitions:
   - name: Conmutatividad
-    description: |
-      propiedad de una operación en la que el cambio de orden de los operandos no afecta el resultado. Por ejemplo, la suma es una operación conmutativa: el resultado no cambia al modificar el orden de los sumandos.
+    description: >
+      propiedad de una operación en la que el cambio de orden de los operandos
+      no afecta el resultado. Por ejemplo, la suma es una operación conmutativa:
+      el resultado no cambia al modificar el orden de los sumandos.

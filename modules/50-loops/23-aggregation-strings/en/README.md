@@ -1,22 +1,22 @@
 
-You can use aggregation with strings as well as with numbers. In most cases, this applies to dynamic string generation, where you don't know in advance what size the string will be and what it will contain.
+Aggregation applies not only to numbers but also to strings. These are tasks in which a string is built dynamically, that is, it is not known in advance how big it will be or what it will contain.
 
-Imagine a function "multiplying" a string, that is, repeating a string a given number of times:
+Imagine a function that can "multiply" a string, that is, it repeats it a specified number of times:
 
 ```javascript
-repeat('hexlet', 3); // 'hexlethexlethexlet'
+repeat('hexlet', 3); // hexlethexlethexlet
 ```
 
-The core mechanism of this function is simple, the loop "increments" the string a given number of times:
+The way this function works is quite simple: in a loop, the string is "grown" the specified number of times:
 
 ```javascript
 const repeat = (text, times) => {
-  // A neutral element in terms of strings is an empty string
+  // The neutral element for strings is the empty string
   let result = '';
   let i = 1;
 
   while (i <= times) {
-    // Add a string on each iteration
+    // Each time we add the string to the result
     result = `${result}${text}`;
     i = i + 1;
   }
@@ -25,12 +25,36 @@ const repeat = (text, times) => {
 };
 ```
 
-Break down the code's execution into steps:
+Let's break down the execution of this code step by step:
 
 ```javascript
-// Calling repeat('hexlet', 3);
+// For the call repeat('hexlet', 3);
 let result = '';
 result = `${result}hexlet`; // hexlet
 result = `${result}hexlet`; // hexlethexlet
 result = `${result}hexlet`; // hexlethexlethexlet
 ```
+
+Visually, the process of growing the string looks like this:
+
+```text
+repeat('hexlet', 3):
+
+i=1: result = ''             + 'hexlet' = 'hexlet'
+i=2: result = 'hexlet'       + 'hexlet' = 'hexlethexlet'
+i=3: result = 'hexlethexlet' + 'hexlet' = 'hexlethexlethexlet'
+                                            └── result
+```
+
+## Neutral element
+
+For growing to work, a starting value is needed. For strings, this value is the **empty string** `''`.
+
+It is called the neutral element because it changes nothing during concatenation:
+
+```javascript
+console.log('' + 'abc'); // => abc
+console.log('abc' + ''); // => abc
+```
+
+That is why the empty string is always used as the initial value when aggregating strings.

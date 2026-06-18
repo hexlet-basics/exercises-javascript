@@ -8,5 +8,5 @@ test('hello world', async () => {
 
   const firstArg = consoleLogSpy.mock.calls.join('\n');
 
-  expect(firstArg).toBe('Программа успешно запущена');
+  expect(firstArg).toBe('Program started successfully');
 });

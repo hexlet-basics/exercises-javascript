@@ -1,12 +1,11 @@
+Implementa la función `hasAtSymbol()`, que comprueba si un email contiene el símbolo `@`.
 
-Implementa la función `hasChar()`, que verifica si una cadena contiene una letra específica (considerando la diferencia entre mayúsculas y minúsculas). La función toma dos parámetros:
-
-* Una cadena
-* La letra a buscar
+La función debe devolver `true` en cuanto encuentre `@`. Si el bucle llega al final de la cadena y el símbolo no se encuentra, devuelve `false`.
 
 ```javascript
-hasChar('Hexlet', 'H'); // true
-hasChar('Hexlet', 'h'); // false
-hasChar('Awesomeness', 'm'); // true
-hasChar('Awesomeness', 'd'); // false
+hasAtSymbol('support@example.com'); // => true
+hasAtSymbol('wrong-email');         // => false
+hasAtSymbol('@admin');              // => true
 ```
+
+Usa un bucle con un `return` temprano.

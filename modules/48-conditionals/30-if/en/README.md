@@ -1,41 +1,91 @@
-
-Conditional statements control the program's behavior depending on the conditions we want to test. They allow us to write complex programs that behave differently depending on the situation.
-
-Consider a function to which we can pass a sentence and determine what type of sentence it is. To begin with, it will distinguish between normal sentences and question sentences.
+Logical expressions let you check various conditions, but on their own they only return `true` or `false`. To make a program perform different actions depending on the result, JavaScript has a special construct called `if`.
 
 ```javascript
-const getTypeOfSentence = (sentence) => {
-  const lastChar = sentence[sentence.length - 1];
-  if (lastChar === '?') {
-    return 'question';
-  }
-
-  return 'general';
-};
-
-getTypeOfSentence('Hodor');  // general
-getTypeOfSentence('Hodor?'); // question
+if (5 > 3) {
+  console.log('Yes, it is true');
+}
 ```
 
-`if` is a construct that controls the procedure by which statements are executed. You need to pass predicate expression to it in parentheses and then define a block of code in curly brackets. This code block executes only if the predicate is true.
+Here the string `'Yes, it is true'` will be printed because the condition `5 > 3` is true.
 
-If the predicate is false, we skip the code block in curly brackets, and the function keeps executing. Here, the next line of code, `return 'general';`, causes the function to return a string and terminate.
+```text
+┌────────────┐
+│ condition? │
+└─────┬──────┘
+  true │
+      ↓
+┌────────────┐
+│ if body    │
+└────────────┘
+```
 
-As you can see, `return` can be anywhere in a function. Including the interior of a conditional code block.
+## Syntax
 
-If the curly brackets after `if` contains only one line of code, you can leave out the brackets:
+After `if`, the condition is written in parentheses, and the body goes in curly braces:
+
+```javascript
+if (condition) {
+  // the block runs if the condition is true
+}
+```
+
+A condition is any expression that is coerced to `true` or `false`.
+
+## Code blocks
+
+Everything inside the curly braces `{}` belongs to the body of the `if`. The code after the block runs in any case:
+
+```javascript
+if (10 === 10) {
+  console.log('First');
+  console.log('Second');
+}
+
+console.log('Goodbye!');
+```
+
+Here `First` and `Second` will be printed because the condition was met. And `Goodbye!` is always printed since this line is already outside the block. The principle is the same as in function definitions.
+
+## Using if inside a function
+
+Consider a function that determines the type of a given sentence. If it ends with a question mark, the function returns `'question'`, otherwise — `'normal'`:
 
 ```javascript
 const getTypeOfSentence = (sentence) => {
-  const lastChar = sentence[sentence.length - 1];
-  if (lastChar === '?')
+  if (sentence.endsWith('?')) {
     return 'question';
-
-  return 'general';
+  }
+  return 'normal';
 };
 
-console.log(getTypeOfSentence('Hodor'));  // => general
+console.log(getTypeOfSentence('Hodor'));  // => normal
 console.log(getTypeOfSentence('Hodor?')); // => question
 ```
 
-We advise against it and to **always use curly brackets**. That way you can clearly see where the conditional's body starts and ends. The code becomes clearer and more readable.
+Two `return` statements are used here. If the condition inside `if` is met, `return 'question'` fires and the function ends. If the condition is not met, control passes to the next line with `return 'normal'`.
+
+This way, the function has several possible exit points. This is a common practice: depending on the conditions, a function may end in different ways.
+
+Even though the `getTypeOfSentence` function uses `if`, it returns strings, which means it is not a predicate. As a predicate, let's consider a function that checks whether there is enough money for a purchase:
+
+```javascript
+const hasEnoughMoney = (balance, price) => {
+  if (balance >= price) {
+    return true;
+  }
+  return false;
+};
+
+console.log(hasEnoughMoney(100, 50)); // => true
+console.log(hasEnoughMoney(30, 50));  // => false
+```
+
+## if and logical expressions
+
+We wrote the `hasEnoughMoney` function using `if`. But in this form it could do without it, because the result of the comparison is itself a logical expression:
+
+```javascript
+const hasEnoughMoney = (balance, price) => balance >= price;
+```
+
+In simple cases, it is better to return such an expression right away. `if` is needed where additional actions are performed inside the block besides returning the result. The more complex the programs, the more often such situations will arise.

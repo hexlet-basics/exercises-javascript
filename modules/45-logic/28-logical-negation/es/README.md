@@ -1,7 +1,11 @@
+Junto con los operadores lógicos **Y** (`&&`) y **O** (`||`), se utiliza con frecuencia la operación de «**negación**». Esta invierte un valor booleano a su opuesto. En JavaScript, la negación corresponde al operador unario `!`:
 
-Junto con la conjunción (Y) y la disyunción (O), a menudo se utiliza la operación de "negación". La negación cambia el valor lógico al opuesto. En programación, se corresponde con el operador unario `!`.
+```javascript
+!true;  // false
+!false; // true
+```
 
-Si hay una función que verifica si un número es par, se puede realizar una verificación de si es impar utilizando la negación:
+Por ejemplo, si hay una función que comprueba si un número es par, con la negación se puede comprobar la imparidad:
 
 ```javascript
 const isEven = (number) => number % 2 === 0;
@@ -10,14 +14,65 @@ isEven(10);  // true
 !isEven(10); // false
 ```
 
-Es decir, simplemente agregamos `!` antes de llamar a la función y obtenemos la acción opuesta.
+Simplemente añadimos `!` a la izquierda de la llamada a la función y obtuvimos la acción inversa. La negación permite expresar las reglas previstas en el código sin escribir nuevas funciones.
 
-La negación es una herramienta poderosa que permite expresar reglas previstas de manera concisa en el código sin necesidad de escribir nuevas funciones.
+## Doble negación
 
-¿Y qué pasa si escribimos `!!isEven(10)`? Sorprendentemente, el código funcionará. En lógica, la doble negación es similar a la ausencia de negación en absoluto.
+¿Y qué pasa si se escribe `!!isEven(10)`? Sorprendentemente, el código funciona. En lógica, la doble negación equivale a la ausencia de negación:
 
 ```javascript
 isEven(10);   // true
 !isEven(10);  // false
 !!isEven(10); // true
 ```
+
+## Combinación con && y ||
+
+`!` se puede combinar con `&&` y `||`. Entre los operadores lógicos, la negación tiene la mayor prioridad, por lo que se aplica primero:
+
+```javascript
+!true || true;   // (!true) || true   => false || true  => true
+!true && false;  // (!true) && false  => false && false => false
+```
+
+Los paréntesis cambian el orden de evaluación:
+
+```javascript
+!(true || true);  // !true  => false
+!(true && false); // !false => true
+```
+
+Un ejemplo práctico: una función comprueba si un conductor puede ponerse al volante — se necesita licencia y sobriedad:
+
+```javascript
+const canDrive = (hasLicense, isDrunk) => hasLicense && !isDrunk;
+
+console.log(canDrive(true, false)); // => true  (tiene licencia, sobrio)
+console.log(canDrive(true, true));  // => false (tiene licencia, pero borracho)
+console.log(canDrive(false, false)); // => false (sin licencia)
+```
+
+## Leyes de De Morgan
+
+Al trabajar con expresiones lógicas complejas, a veces es necesario invertirlas o reescribirlas en una forma equivalente y más legible. Para esto existen las **leyes de De Morgan** — dos reglas que describen cómo se distribuye la negación sobre una expresión compuesta:
+
+```javascript
+!(a && b)  ===  !a || !b
+!(a || b)  ===  !a && !b
+```
+
+La primera ley: la negación de una conjunción es igual a la disyunción de las negaciones. Comprobémoslo:
+
+```javascript
+!(true && false);     // !false => true
+!true || !false;      // false || true => true
+```
+
+La segunda ley: la negación de una disyunción es igual a la conjunción de las negaciones:
+
+```javascript
+!(true || false);     // !true => false
+!true && !false;      // false && true => false
+```
+
+En la práctica, las leyes de De Morgan ayudan a simplificar condiciones. Por ejemplo, en lugar de `!(isAdmin || isModerator)` se puede escribir `!isAdmin && !isModerator` — que se lee como «no es administrador y no es moderador».

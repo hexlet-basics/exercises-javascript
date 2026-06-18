@@ -1,14 +1,6 @@
-
-Write the `printReversedWordBySymbol()` function that takes a word as input and prints it by character, just as in the example we gave, but does it in reverse order.
+Write a `maskCardNumber()` function that hides a bank card number: it replaces all characters of the string with `*`, except for the last four.
 
 ```javascript
-const word = 'Hexlet';
-
-printReversedWordBySymbol(word);
-// => 't'
-// => 'e'
-// => 'l'
-// => 'x'
-// => 'e'
-// => 'H'
+maskCardNumber('1234567812345678'); // => '************5678'
+maskCardNumber('12345678');         // => '****5678'
 ```

@@ -1,40 +1,53 @@
+A veces, un programa contiene valores que nunca deben cambiar. Por ejemplo:
 
-En todo el módulo, la gran mayoría de los ejemplos de código utilizaban variables como nombres (alias) de valores específicos, en lugar de usarlos como variables que cambian su valor con el tiempo.
+- la constante matemática π (pi);
+- el tipo de cambio del dólar en una fecha determinada;
+- una comisión fija del servicio.
 
-```javascript
-let dollarsInEuro = 1.25;
-let rublesInDollar = 60;
+Estos valores se denominan constantes, y es habitual distinguirlos de las variables normales para que no surja la tentación de cambiarlos.
 
-let dollarsCount = 50 * dollarsInEuro; // 62.5
-let rublesCount = dollarsCount * rublesInDollar; // 3750
-
-console.log(rublesCount);
-```
-
-En programación, se acostumbra llamar a estos nombres constantes, y muchos lenguajes admiten las constantes como una construcción. JavaScript, en particular, pertenece a esos lenguajes, y sus estándares de codificación [lo dicen claramente](https://eslint.org/docs/rules/prefer-const) - si el valor no cambia, entonces estamos tratando con una constante. Reescribamos el ejemplo anterior utilizando constantes:
+## Ejemplo: el número π
 
 ```javascript
-const dollarsInEuro = 1.25;
-const rublesInDollar = 60;
-
-const euros = 1000;
-const dollars = euros * dollarsInEuro;    // 1250
-const rubles = dollars * rublesInDollar; // 75000
-
-console.log(rubles);
+const PI = 3.14;
+console.log(PI); // => 3.14
 ```
 
-El único cambio es que la palabra clave `let` se ha reemplazado por `const`, pero esto es solo sintaxis. Ahora, si intentamos cambiar cualquier constante, obtendremos un mensaje de error. De lo contrario, se utilizan de la misma manera que las variables.
+Aquí `PI` es una constante que almacena el valor del número π. El sentido de una constante es que su valor no debe cambiar durante la ejecución del programa.
+
+## const en JavaScript
+
+En muchos lenguajes, una constante es una entidad del lenguaje independiente cuyo valor no se puede cambiar. En JavaScript existe la palabra clave `const` para esto. A diferencia de una variable normal, una constante declarada con `const` no se puede reasignar:
 
 ```javascript
-const pi = 3.14;
-pi = 5; // TypeError: Assignment to constant variable.
+const maxLoginAttempts = 3;
+maxLoginAttempts = 5; // TypeError: Assignment to constant variable.
 ```
 
-¿Por qué tanta complicación? ¿Por qué no dejar solamente las variables? Incluso si dejáramos solamente las variables, eso no cambiaría el hecho de que, a menudo, se usarían como constantes. Además, el código en JavaScript se puede escribir de manera idiomática sin usar variables en absoluto. Eche un vistazo a un ejemplo de [código real de Hexlet](https://github.com/Hexlet/hexlet-exercise-kit/blob/main/import-documentation/index.js). En esta etapa, es posible que no lo entienda, pero intente contar la cantidad de constantes y variables dentro de él, verá que solo hay una variable y un montón de constantes.
+## const vs let
 
-Las constantes son mucho más fáciles de analizar. Cuando vemos una constante en el código, inmediatamente entendemos que su valor siempre permanece igual. Al usar constantes, no hay concepto de tiempo. Con las variables, no es así, no podemos estar seguros de su valor, tenemos que analizar todo el código para comprender cómo podrían haber cambiado.
+```javascript
+let score = 0;   // cambiará
+const lives = 3; // no cambia
+```
 
-Las variables son absolutamente necesarias solamente en un caso (en todos los demás casos, se pueden evitar) - al trabajar con bucles, a los que aún no hemos llegado.
+Usa `const` de forma predeterminada. Cambia a `let` solo cuando sepas con certeza que el valor se reasignará. Las constantes son más fáciles de analizar: al ver `const`, el lector sabe de inmediato que el valor no cambiará en ningún lugar del código. Con `let` no existe esa certeza, y hay que rastrear todos los lugares donde la variable podría haberse modificado.
 
-En el futuro, preferiremos las constantes y solamente usaremos variables cuando sea necesario.
+## Convención de nomenclatura
+
+Técnicamente, cualquier variable declarada con `const` ya es una constante. Pero para las constantes globales — aquellas que definen los parámetros fundamentales de todo el programa — es habitual usar adicionalmente el estilo `UPPER_SNAKE_CASE` (también llamado SCREAMING_SNAKE_CASE):
+
+- todas las letras en mayúsculas;
+- las palabras se separan con el carácter de subrayado `_`.
+
+```javascript
+const MAX_USERS = 100;
+const DEFAULT_TIMEOUT = 30;
+const DEFAULT_LANGUAGE = 'ru';
+```
+
+Esto no es un requisito del lenguaje, sino una señal para el lector: ese valor no debe cambiar bajo ninguna circunstancia.
+
+## ¿Para qué sirven las constantes?
+
+Las constantes hacen que el código sea más claro y seguro. Ayudan a ver de inmediato qué valores del programa se consideran fijos. Esto es especialmente importante al trabajar con datos como constantes matemáticas y físicas, configuraciones predeterminadas o límites fijos. El uso de constantes reduce el riesgo de errores: por la declaración `const` se entiende de inmediato que estamos ante un valor que no debe cambiarse. Además, si el valor sí necesita cambiarse (por ejemplo, en la configuración), basta con cambiarlo en un solo lugar, y el cambio se aplica automáticamente en todo el programa.

@@ -45,7 +45,6 @@ theory: |
   };
   ```
 
-
   La estructura general del bucle aquí es estándar. Hay un contador que se inicializa con el valor inicial del rango, luego viene el bucle con la condición de detenerse cuando se alcanza el final del rango, y finalmente, se cambia el contador al final del cuerpo del bucle. El número de iteraciones en este bucle es igual a `finish - start + 1`. Es decir, para un rango de 5 a 7, esto es 7 - 5 + 1, es decir, 3 iteraciones.
 
   Las principales diferencias con el procesamiento normal están relacionadas con la lógica de cálculo del resultado. En los problemas de agregación, siempre hay una variable que almacena el resultado del bucle. En el código anterior, esta variable es `sum`. En cada iteración del bucle, se actualiza sumando el siguiente número en el rango: `sum = sum + i`. Todo el proceso se ve así:
@@ -83,21 +82,22 @@ theory: |
   El elemento neutro de la multiplicación es 1.
 
   </details>
-
 instructions: |
 
-  Implementa la función `multiplyNumbersFromRange()`, que multiplica los números en un rango especificado, incluyendo los límites del rango. Ejemplo de llamada:
+  Implementa la función `calculateElectricityBill()`, que recibe la cantidad de kilovatios-hora consumidos y devuelve el importe de la factura de electricidad.
+
+  Se aplica una tarifa escalonada: los primeros `100` kWh cuestan `5` rublos cada uno, los siguientes `100` kWh cuestan `7` rublos cada uno, y todos los kWh por encima de `200` cuestan `10` rublos cada uno.
+
+  Recorre el consumo con un bucle y acumula gradualmente el importe total.
 
   ```javascript
-  multiplyNumbersFromRange(1, 5); // 1 * 2 * 3 * 4 * 5 = 120
-  multiplyNumbersFromRange(2, 3); // 2 * 3 = 6
-  multiplyNumbersFromRange(6, 6); // 6
+  calculateElectricityBill(80);  // => 400
+  calculateElectricityBill(150); // => 850
+  calculateElectricityBill(250); // => 1700
   ```
-
 tips:
   - |
     [Iteración](https://es.wikipedia.org/wiki/Iteración)
-
 definitions:
   - name: Agregación
-    description: "Acumulación del resultado durante las iteraciones y trabajo con él después del bucle."
+    description: Acumulación del resultado durante las iteraciones y trabajo con él después del bucle.

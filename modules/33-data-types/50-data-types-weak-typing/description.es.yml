@@ -3,33 +3,56 @@
 name: Tipado débil
 theory: |
 
-  Sabemos que hay dos tipos de datos diferentes: números y cadenas de texto. Por ejemplo, podemos sumar números porque la operación de suma es una operación para el tipo "número".
+  Conocemos dos tipos de datos diferentes: números y cadenas de texto. Por ejemplo, podemos sumar números, porque la operación de suma es una operación para el tipo "números".
 
-  ¿Pero qué sucede si aplicamos esta operación a un número y una cadena de texto?
+  ¿Pero qué sucede si aplicamos esta operación no a dos números, sino a un número y una cadena de texto?
 
   ```javascript
   console.log(1 + '7'); // => 17
   ```
 
-  A pesar de que `'7'` es una cadena de texto y no un número, el intérprete de JavaScript devuelve el resultado `17`, como si estuviéramos concatenando dos cadenas de texto. Cuando JavaScript encuentra una incompatibilidad de tipos, intenta convertir la información por sí mismo. En este caso, convirtió el número `1` en la cadena de texto `'1'` y luego realizó la concatenación de `'1'` y `'7'`.
+  A pesar de que `'7'` es una cadena de texto y no un número, el intérprete de JavaScript devolvió la respuesta `'17'`, como si estuviéramos sumando dos cadenas de texto. Cuando JavaScript encuentra una incompatibilidad de tipos, intenta convertir la información por sí mismo. En este caso, convirtió el número `1` en la cadena de texto `'1'` y luego realizó tranquilamente la concatenación de `'1'` y `'7'`.
 
-  No todos los lenguajes hacen esto. JavaScript es un lenguaje con **tipado débil**. Conoce la existencia de diferentes tipos (números, cadenas de texto, etc.), pero no es muy estricto en su uso, intentando convertir la información cuando parece razonable. A veces, JavaScript incluso llega a extremos. La mayoría de las expresiones que no funcionan en otros lenguajes funcionan perfectamente en JavaScript. Prueba a realizar cualquier operación aritmética (excepto la suma) con cadenas de texto u otros tipos de datos (excepto cuando ambos operandos son números o cadenas de texto que contienen solo números) y verás que siempre funcionarán y devolverán `NaN`, lo cual es bastante lógico.
+  ## Tipado débil
+
+  No todos los lenguajes hacen esto. JavaScript es un lenguaje con **tipado débil**. Conoce la existencia de diferentes tipos (números, cadenas de texto y otros), pero trata su uso de forma poco estricta e intenta convertir los datos cuando le parece razonable.
+
+  A veces, JavaScript llega a extremos. La mayoría de las expresiones que no funcionan en otros lenguajes sí funcionan en JavaScript. Prueba a realizar cualquier operación aritmética, excepto la suma, sustituyendo allí cadenas de texto: verás que el código se ejecuta y devuelve `NaN` (Not a Number):
 
   ```javascript
-  const result = 'one' * 'two';
-  console.log(result); // => NaN
+  console.log('one' * 'two'); // => NaN
   ```
 
+  ```text
+  1 + '7'   →  '17'   (el número se convirtió en una cadena de texto, concatenación)
+  '7' - 1   →  6      (la cadena de texto se convirtió en un número, resta)
+  'one' * 2 →  NaN    (la cadena de texto no se puede convertir en un número)
+  ```
 
-  En los lenguajes con **tipado fuerte**, no se puede sumar un número y una cadena de texto.
+  ## ¿Y cómo es en los lenguajes estrictos?
 
-  JavaScript fue creado para Internet, y en Internet toda la información es una cadena de texto. Incluso cuando ingresas un número de teléfono o una fecha de nacimiento en un sitio web, esa información llega al servidor como una cadena de texto y no como un número. Por eso, los creadores del lenguaje decidieron que convertir automáticamente los tipos era correcto y conveniente.
+  En los lenguajes con **tipado estricto (fuerte)**, no se puede sumar un número con una cadena de texto: el programa se detendrá con un error. Por ejemplo, en Python o Ruby la expresión `1 + '7'` provocará un error de tipos: el lenguaje exige que indiques explícitamente cómo convertir los datos.
 
-  Esta conversión automática e implícita de tipos es, por un lado, realmente conveniente. Pero en la práctica, esta característica del lenguaje crea muchos errores y problemas difíciles de encontrar. El código puede funcionar a veces y no funcionar en otras ocasiones, dependiendo de si la conversión automática tuvo "suerte" en un caso particular. El programador no se dará cuenta de esto de inmediato.
+  Al mismo tiempo, los lenguajes no se dividen exactamente en dos bandos: "estrictos" y "débiles". Es más correcto decir que los distintos lenguajes tienen un **grado de estrictez diferente**: en algunos casi no hay conversiones implícitas, mientras que en otros hay muchas. JavaScript se encuentra en el extremo "débil" de esta escala.
 
-  En los próximos ejercicios, te encontrarás con este comportamiento en varias ocasiones. A menudo te preguntarás "¿por qué mi código no funciona como espero?".
+  ## Tipado estático y dinámico
 
-  El tipado débil es un tema recurrente en el desarrollo en JavaScript.
+  Existe otro concepto distinto: el tipado estático y dinámico. Describe **cuándo** se verifican los tipos. JavaScript pertenece a los lenguajes de tipado dinámico: los tipos se verifican durante la ejecución del programa. En los lenguajes de tipado estático, la verificación generalmente ocurre antes, incluso antes de ejecutar el código.
+
+  Es importante no confundir dos cosas:
+
+  - el tipado estático/dinámico responde a la pregunta "**cuándo** se verifican los tipos";
+  - el tipado fuerte/débil responde a la pregunta "**qué sucederá** si mezclas tipos diferentes sin una conversión explícita".
+
+  Estas son propiedades independientes. JavaScript es un lenguaje dinámico y de tipado débil.
+
+  ## Por qué JavaScript es así
+
+  JavaScript fue creado para Internet, y en Internet toda la información son cadenas de texto. Incluso cuando ingresas en un sitio web un número de teléfono o un año de nacimiento, esos datos llegan al servidor no como números, sino como cadenas de texto. Por eso, los autores del lenguaje decidieron que convertir los tipos automáticamente es conveniente.
+
+  Hay conveniencia, pero tiene un precio alto. En la práctica, las conversiones implícitas crean multitud de errores que son difíciles de encontrar: el código puede funcionar a veces y otras no, dependiendo de si en un caso concreto "hubo suerte" con la conversión automática. El programador no lo nota de inmediato.
+
+  En los próximos ejercicios te encontrarás con este comportamiento en más de una ocasión. A menudo surgirá la pregunta: "¿por qué mi código no funciona como espero?". El tipado débil es un hilo conductor a lo largo de todo el desarrollo en JavaScript.
 
 instructions: |
 
@@ -37,9 +60,11 @@ instructions: |
 
 tips:
   - |
-    [Tipado](https://en.wikipedia.org/wiki/Strong_and_weak_typing)
+    [Tipado](https://es.wikipedia.org/wiki/Sistema_de_tipos)
 
 definitions:
   - name: Tipado débil
-    description: |
-      es un tipo de tipado en el que el lenguaje de programación realiza muchas conversiones de tipos implícitas automáticamente, incluso si puede haber pérdida de precisión o ambigüedad en la conversión.
+    description: >
+      es un tipo de tipado en el que el lenguaje de programación realiza muchas
+      conversiones de tipos implícitas automáticamente, incluso si puede haber
+      pérdida de precisión o la conversión es ambigua.

@@ -2,7 +2,7 @@
 name: Operador ternario
 tips:
   - >
-    [Más información sobre el operador
+    [Más sobre el operador
     ternario](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 definitions:
   - name: Operador ternario

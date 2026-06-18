@@ -1,8 +1,11 @@
+Implementa la función `calculateElectricityBill()`, que recibe la cantidad de kilovatios-hora consumidos y devuelve el importe de la factura de electricidad.
 
-Implementa la función `multiplyNumbersFromRange()`, que multiplica los números en un rango especificado, incluyendo los límites del rango. Ejemplo de llamada:
+Se aplica una tarifa escalonada: los primeros `100` kWh cuestan `5` rublos cada uno, los siguientes `100` kWh cuestan `7` rublos cada uno, y todos los kWh por encima de `200` cuestan `10` rublos cada uno.
+
+Recorre el consumo con un bucle y acumula gradualmente el importe total.
 
 ```javascript
-multiplyNumbersFromRange(1, 5); // 1 * 2 * 3 * 4 * 5 = 120
-multiplyNumbersFromRange(2, 3); // 2 * 3 = 6
-multiplyNumbersFromRange(6, 6); // 6
+calculateElectricityBill(80);  // => 400
+calculateElectricityBill(150); // => 850
+calculateElectricityBill(250); // => 1700
 ```

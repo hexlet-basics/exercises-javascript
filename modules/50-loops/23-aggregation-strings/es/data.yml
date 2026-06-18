@@ -2,9 +2,7 @@
 name: Agregación de datos (Cadenas)
 tips:
   - |
-    [Iteración](https://es.wikipedia.org/wiki/Iteraci%C3%B3n)
+    [Iteración](https://es.wikipedia.org/wiki/Iteración)
 definitions:
   - name: Agregación
-    description: >-
-      Acumulación de resultados durante las iteraciones y manipulación de ellos
-      después del ciclo.
+    description: Acumulación del resultado durante las iteraciones y trabajo con él después del bucle.

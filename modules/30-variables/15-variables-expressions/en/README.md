@@ -1,61 +1,86 @@
+We already know that expressions can be made up of several operations. But if you write an entire calculation in one long line, the code quickly becomes hard to read.
 
-Variables are helpful not only for storing and reusing data but also for simplifying complex calculations. Consider an example: you need to convert euros into yuan through dollars. Banks often do this kind of conversion via an intermediate currency when shopping abroad.
-
-First, convert 50 euros into dollars. Suppose that one euro is $1.25:
+For example, this works:
 
 ```javascript
-let dollarsCount = 50 * 1.25;
+const yuansCount = 50 * 1.25 * 6.91;
+console.log(yuansCount); // => 431.875
+```
+
+JavaScript will easily evaluate this expression. But it is no longer convenient for a human to read such code. Questions immediately arise:
+
+- What does `1.25` mean?
+- What does `6.91` mean?
+- Where does one calculation step end and the next begin?
+
+To make such calculations clearer, variables can be used inside other expressions. First the program saves an intermediate result in a variable, and then it substitutes the value of that variable into the next calculation.
+
+## Expressions
+
+Any computable value is an expression. You can assign an expression to a variable, not just a ready-made value.
+
+```javascript
+const sum = 3 + 4;          // => 7
+const text = 'Hello' + '!'; // => 'Hello!'
+const doubled = sum * 2;    // => 14
+```
+
+JavaScript first evaluates the expression to the right of `=`, and then saves the result in the variable on the left.
+
+## Currency conversion through an intermediate currency
+
+Imagine we need to convert euros to yuan, but the direct rate is not available to us. Then we will do it in two steps: **euros → dollars → yuan**. This is often how banks work when paying for purchases abroad.
+
+### Step 1. Euros → Dollars
+
+Suppose the rate is: 1 euro = 1.25 dollars. We want to convert 50 euros:
+
+```javascript
+const dollarsPerEuro = 1.25;
+const dollarsCount = 50 * dollarsPerEuro;
 console.log(dollarsCount); // => 62.5
 ```
 
-Last lesson, we assigned a specific value to a variable. Here, when we declare our variable, `let dollarsCount = 50 * 1.25;` we have an **expression** to the right of the equals sign. The interpreter computes the result - `62.5`, and records it in a variable. An interpreter doesn't care about what is in front of it: `62.5` or `50 * 1.25`, both are expressions to compute. And they result in the same value, `62.5`.
+In this line, `50 * dollarsPerEuro` is an expression, and `dollarsCount` is the variable into which the result is written. JavaScript first evaluates the expression, and only then saves the result in the variable.
 
-Any string is an expression. The concatenation of strings is also an expression. The interpreter processes an encountered expression and produces, as a result, the **value of the expression**. Here are some sample expressions with comments on the right containing the resulting value.
-
-```javascript
-62.5             // 62.5
-50 * 1.25        // 62.5
-120 / 10 * 2     // 24
-
-'hello'          // "hello"
-'Good' + 'will'  // "Goodwill"
-```
-
-The code structure rules (language grammar) ensure that any calculation (not just math, but also things like string concatenation) can take place when an expression is expected, and the program will continue. For this reason, it's impossible to describe and show all use cases of all operations.
-
-Programs consist of numerous combinations of expressions and understanding this concept is a major step on your journey.
-
-Based on the above, consider whether this code will work?
+The engine does not care how the expression is written:
 
 ```javascript
-let who = "dragon's" + 'mother';
-console.log(who);
+const dollarsCount = 62.5;
 ```
 
-Now, back to our currency program. We'll record the dollar value in yuan as a separate variable. Calculate the value of 50 euros in dollars by multiplying them by `1.25`. Suppose that 1 dollar is 6.91 yuan:
+or
 
 ```javascript
-let yuanPerDollar = 6.91;
-let dollarsCount = 50 * 1.25; // 62.5
-let yuanCount = dollarsCount * yuanPerDollar; // 431.875
-
-console.log(yuanCount);
+const dollarsCount = 50 * dollarsPerEuro;
 ```
 
-Now, let's merge our output with some text via concatenation:
+The result will be the same. But for a human the second option is more useful: from the name `dollarsCount` it is immediately clear that at this step we got the amount in dollars.
+
+### Step 2. Dollars → Yuan
+
+Now let's convert 50 euros to yuan, using the dollar as an intermediate currency. Suppose the exchange rates are: 1 dollar = 6.91 yuan, 1 euro = 1.25 dollars.
 
 ```javascript
-let yuanPerDollar = 6.91;
-let dollarsCount = 50 * 1.25; // 62.5
-let yuanCount = dollarsCount * yuanPerDollar; // 431.875
+const dollarsPerEuro = 1.25;
+const yuansPerDollar = 6.91;
 
-console.log('The price is ' + yuanCount + ' yuan');
+const dollarsCount = 50 * dollarsPerEuro;
+const yuansCount = dollarsCount * yuansPerDollar;
+
+console.log(yuansCount);
 ```
 
-```text
-The price is 431.875 yuan
-```
+This code is longer than the single line `50 * 1.25 * 6.91`, but it is easier to read:
 
-Any variable can be part of any expression. During the computation, the variable's name is replaced with its value.
+- you can see that `1.25` is the euro-to-dollar rate;
+- you can see that `6.91` is the dollar-to-yuan rate;
+- you can see that `dollarsCount` is an intermediate result.
 
-The interpreter calculates the value of `dollarsCount` before using it in other expressions. When it comes to using the variable, Javascript "knows" the value it has already computed.
+This becomes especially noticeable if you don't come back to the code for at least a week. And now imagine that a project has hundreds of thousands of lines of code. If such projects had no intermediate variables and calculations, it would be impossible to make sense of them.
+
+## What to remember
+
+- If an expression turns out to be too long, it is better to break it into several steps.
+- Variables help save intermediate results and make calculations clearer.
+- When a variable is used in an expression, JavaScript substitutes its value and continues the calculation.

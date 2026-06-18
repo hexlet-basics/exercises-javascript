@@ -1,5 +1,6 @@
 ---
-name: Variable change
+name: Changing a variable
 definitions:
   - name: Variable
-    description: is a way to save data under a name for later use in code.
+    description: >-
+      a way to store information and give it a name for later use in code.

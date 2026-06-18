@@ -8,5 +8,5 @@ test('hello world', async () => {
 
   const firstArg = consoleLogSpy.mock.calls.join('\n');
 
-  expect(firstArg).toBe('Ящиков на складе:\n102');
+  expect(firstArg).toBe('Boxes in stock:\n102');
 });

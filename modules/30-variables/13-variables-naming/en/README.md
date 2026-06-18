@@ -1,24 +1,38 @@
-
-Imagine the code from the previous lesson looks like this:
+Imagine we have a program like this:
 
 ```javascript
-let x = 'Father!';
-console.log(x);
+const x = 'Father!';
 console.log(x);
 ```
 
-Although it works, the variable name is now `x`. A computer doesn't care about naming since it's a mindless machine, but developers do care. We are mostly read someone else's code, then write or read our own. Quality and clarity of variable names is half the battle when it comes to code analysis.
-
-It's best take a moment and come up with a name reflecting the essence and meaning of the variable than give it a random name and rename it later. Try to name variables to make them as comprehensive as possible without context, or without examining the surrounding code.
-
-A common joke among developers is that "the hardest part of programming is cache invalidation and naming things". Coming up with names is tough indeed. How would you name a variable that stores _the number of unpaid orders from customers in debt from the previous quarter?_
+Technically, everything works. We've already seen similar examples, but here we use a variable named `x`. Bad names make code hard to read and understand. Here are a few examples of poor variables:
 
 ```javascript
-const firstName = 'John';
-console.log(firstName); // => John
-
-const playerNumber = 24;
-console.log(playerNumber); // => 24
+const a = 'John';
+const n = 42;
+const ddr = 'New York';
 ```
 
-Self-сheck. Think of a name for the variable that would store _"the number of siblings the king has"_. Write it down in a notebook or send it to yourself. Don't put anything in there except the name of the variable. And we'll come back to this topic in a few lessons ;-)
+What are these variables? What do they store? To figure this out, you have to read all the surrounding code and guess from the context.
+
+The computer doesn't care what a variable is called. To it, `x`, `abc`, `message`, or `elephantInTheRoom` are just labels for storing data. People care about other things. Programmers read code far more often than they write it. That's why variable names are an important part of communicating through code.
+
+## Good examples
+
+```javascript
+const userName = 'Arya Stark';
+const unpaidOrdersCount = 3;
+const maxAttempts = 5;
+```
+
+A good variable name helps you understand what the program does without reading every line. It's especially important to choose names whose meaning is clear without context, without having to read all the code around them.
+
+Here are a few tips:
+
+- Use English. It's the international standard. It's better to write `ordersCount` instead of `kolvoZakazov`. If English is still difficult for you, use a translator, that's fine. Over time it will get easier.
+- Try to make the name reflect the meaning of the variable. Let it be a bit longer, but understandable.
+- Don't be afraid to spend time choosing a good name. It's an investment in the readability and maintainability of the code.
+
+Programmers even have a joke: "Some of the hardest problems in programming are caching and naming variables." Sometimes coming up with a fitting name really is hard. Here's an example: how would you name a variable that stores the number of unpaid orders from customers with outstanding debt from the previous quarter?
+
+And now a small exercise: come up with a name for a variable that will store "the number of the king's brothers and sisters". Write it down in a notepad or send it to yourself by email. Just the name, without explanations. We'll come back to this task in a few lessons.

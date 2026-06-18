@@ -1,2 +1,9 @@
 ---
-name: Floating-point numbers
+name: Floating point numbers
+tips:
+  - |
+    [What you need to know about floating point arithmetic](https://habr.com/post/112953/)
+definitions:
+  - name: Rational number
+    description: |
+      a number that can be represented as a common fraction.

@@ -1,9 +1,8 @@
-
-Escribe un programa que muestre en la pantalla:
+Estás escribiendo un programa que muestra al usuario una pista sobre cómo dividir el texto en líneas. Muestra la pista con una sola llamada a `console.log()`:
 
 ```text
-- Did Joffrey agree?
-- He did. He also said "I love using \n".
+Use "\n" to separate lines
+Example: console.log("line1\nline2")
 ```
 
-El programa debe usar solo un `console.log()`, pero el resultado en la pantalla debe verse exactamente como se muestra arriba.
+Ten en cuenta: `\n` en la primera línea es texto literal, no un salto de línea.

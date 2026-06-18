@@ -1,22 +1,23 @@
 ---
 name: Comments
-tips: []
+tips:
+  - |
+    [More about comments](https://www.w3schools.com/js/js_comments.asp)
 definitions:
   - name: Comment
-    description: >
-      is a piece of text that does not affect the execution of the program.
-      Programmers use comments to add notes for themselves or for their
-      colleagues.
+    description: >-
+      text in a program's code that does not affect functionality and is
+      added by programmers for themselves and their colleagues.
 
 
-      `// single line comment`
+      `// single-line comment`
 
 
       ```
 
       /*
-        multiline comment
-        multiline comment
+        multi-line comment
+        multi-line comment
       */
 
       ```

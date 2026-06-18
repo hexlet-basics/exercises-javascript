@@ -1,9 +1,9 @@
 ---
-name: Estructura else if
+name: La construcción else if
 tips:
   - >
     [else
     if](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/if...else#usando_else_if)
 definitions:
   - name: else if
-    description: forma de establecer múltiples condiciones alternativas.
+    description: una forma de especificar varias condiciones alternativas.

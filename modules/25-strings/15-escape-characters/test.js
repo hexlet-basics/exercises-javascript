@@ -9,6 +9,6 @@ test('hello world', async () => {
   const firstArg = consoleLogSpy.mock.calls.join('\n');
 
   expect(firstArg).toBe(
-    'Для разделения строк используйте "\\n"\nПример: console.log("строка1\\nстрока2")',
+    'Use "\\n" to separate lines\nExample: console.log("line1\\nline2")',
   );
 });

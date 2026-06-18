@@ -1,8 +1,11 @@
+Implement the function `calculateElectricityBill()`, which takes the number of kilowatt-hours consumed and returns the amount of the electricity bill.
 
-Write the `multiplyNumbersFromRange()` function that multiplies numbers in a given range, including its bounds. An example:
+A tiered tariff is in effect: the first `100` kWh cost `5` rubles each, the next `100` kWh cost `7` rubles each, and all kWh above `200` cost `10` rubles each.
+
+Iterate over the consumption with a loop and gradually accumulate the total amount.
 
 ```javascript
-multiplyNumbersFromRange(1, 5); // 1 * 2 * 3 * 4 * 5 = 120
-multiplyNumbersFromRange(2, 3); // 2 * 3 = 6
-multiplyNumbersFromRange(6, 6); // 6
+calculateElectricityBill(80);  // => 400
+calculateElectricityBill(150); // => 850
+calculateElectricityBill(250); // => 1700
 ```

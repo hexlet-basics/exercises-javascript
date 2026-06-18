@@ -1,1 +1,9 @@
-Create a single line comment with the following text: `You know nothing, Jon Snow!`.
+You are writing a program and realize that one part needs to be finished later. To avoid forgetting, programmers leave notes for themselves right in the code — TODO comments.
+
+Add such a comment to the file:
+
+```javascript
+// TODO: add a greeting function
+```
+
+When you come back to this place later, the comment will remind you that there is still unfinished work here.

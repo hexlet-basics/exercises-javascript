@@ -1,5 +1,5 @@
-Dadas `username = 'Ana'` y `orderNumber = 1337`, usa interpolación para imprimir:
+Dadas `username = 'Anna'` y `orderNumber = 1337`, usa interpolación para imprimir:
 
 ```text
-Hola, Ana! Tu pedido #1337 ha sido aceptado.
+Hello, Anna! Your order #1337 has been accepted.
 ```

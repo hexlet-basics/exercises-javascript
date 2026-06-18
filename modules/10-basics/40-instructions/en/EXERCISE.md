@@ -1,9 +1,7 @@
-Print these three names, one after the other: "Robert", "Stannis", "Renly". As a result, the editor should print:
+Print the parcel delivery status to the screen — three lines, each with a separate `console.log()` call:
 
 ```text
-Robert
-Stannis
-Renly
+Order #1337
+Status: in delivery
+Estimated time: 2 days
 ```
-
-Call `console.log()` for each name.

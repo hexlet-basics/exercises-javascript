@@ -2,4 +2,9 @@
 name: Linter
 tips:
   - |
-    [eslint](https://eslint.org/)
+    [Biome — un linter y formateador para JavaScript](https://biomejs.dev/)
+definitions:
+  - name: Linter
+    description: >-
+      una herramienta que analiza el código e informa sobre las violaciones
+      de los estándares de formato.

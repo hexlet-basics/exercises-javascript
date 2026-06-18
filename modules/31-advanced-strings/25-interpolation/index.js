@@ -1,5 +1,7 @@
-const username = 'Анна';
+const username = 'Anna';
 const orderNumber = 1337;
 // BEGIN
-console.log(`Здравствуйте, ${username}! Ваш заказ #${orderNumber} принят.`);
+console.log(
+  `Hello, ${username}! Your order #${orderNumber} has been accepted.`,
+);
 // END

@@ -1,25 +1,72 @@
-Una instrucción es una orden para que la computadora realice algo. El código en JavaScript es un conjunto de instrucciones que generalmente se separan entre sí con el símbolo `;`.
+Podemos llamar instrucción a `console.log('Hexlet')`; le indica al intérprete de JavaScript qué hacer. Puede haber tantas instrucciones como quieras. Cada una se ejecuta después de que la anterior haya terminado, y así, a partir de elementos simples, obtenemos un programa tan grande y complejo como queramos.
 
-Aquí tienes un ejemplo de código con dos instrucciones.
-
-```javascript
-console.log('Mother of Dragons.');
-console.log('Dracarys!');
+```text
+Instrucción 1: console.log('Hello')   →  ejecutada
+        ↓
+Instrucción 2: console.log('World')   →  ejecutada
+        ↓
+Instrucción 3: console.log('!')        →  ejecutada
 ```
 
-Al ejecutar este código, se mostrarán en pantalla las dos frases de forma secuencial:
+Aquí tienes un ejemplo de código con dos instrucciones. Estas líneas le indican a la computadora que muestre las frases en pantalla.
+
+```javascript
+console.log('Mother of Dragons.'); // Primera instrucción
+console.log('Dracarys!'); // Segunda instrucción
+```
+
+El resultado de la ejecución:
 
 ```text
 Mother of Dragons.
 Dracarys!
 ```
 
-Teóricamente, las instrucciones se pueden escribir una tras otra sin saltar de línea:
+## El orden importa
+
+El intérprete de JavaScript ejecuta el código estrictamente en el orden en el que lo escribiste. Si intercambias las líneas:
 
 ```javascript
-console.log('Mother of Dragons.'); console.log('Drakarys!');
+console.log('Dracarys!');
+console.log('Mother of Dragons.');
 ```
 
-El resultado en pantalla será el mismo, pero este tipo de código es incómodo de leer, por lo que las instrucciones se colocan una debajo de la otra.
+en la pantalla también aparecerán intercambiadas:
 
-¿Por qué es importante saber esto? Una instrucción es una unidad de ejecución. El intérprete, el programa que ejecuta el código en JavaScript, ejecuta estrictamente las instrucciones en orden. Como desarrolladores, debemos entender este orden y ser capaces de dividir mentalmente el programa en partes independientes que sean fáciles de analizar.
+```text
+Dracarys!
+Mother of Dragons.
+```
+
+## Una forma alternativa de escribirlo
+
+Normalmente las instrucciones se escriben en líneas separadas, pero también pueden escribirse en una sola línea separadas por `;`:
+
+```javascript
+console.log('Mother of Dragons.'); console.log('Dracarys!');
+```
+
+Ambas versiones funcionan igual, pero la segunda es más difícil de leer. Por eso, las instrucciones casi siempre se escriben una por línea.
+
+## Por qué es necesario
+
+Por ahora escribimos programas muy simples, pero con el tiempo empezarán a complicarse, y una de las habilidades más importantes que te ayudará a entenderlos es la capacidad de dividir (mentalmente) el programa en instrucciones independientes. Solo así se puede comprender lo que ocurre en el código. A continuación hay un ejemplo para llamar tu atención; no hace falta que lo entiendas todavía:
+
+```javascript
+const isPrime = (number) => {
+  if (number < 2) {
+    return false;
+  }
+
+  let divider = 2;
+
+  while (divider <= number / 2) {
+    if (number % divider === 0) {
+      return false;
+    }
+    divider += 1;
+  }
+
+  return true;
+};
+```
