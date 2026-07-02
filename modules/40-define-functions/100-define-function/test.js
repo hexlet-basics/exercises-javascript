@@ -3,7 +3,7 @@
 import { expect, test, vi } from 'vitest';
 import f from './index.js';
 
-test('hello world', async () => {
+test('define function', async () => {
   const consoleLogSpy = vi.spyOn(console, 'log');
   f();
 

@@ -1,7 +1,7 @@
 import { expect, test } from 'vitest';
 import f from './index.js';
 
-test('test', () => {
+test('logical operators', () => {
   expect(f(2016)).toBe(true);
   expect(f(2000)).toBe(true);
   expect(f(2017)).toBe(false);

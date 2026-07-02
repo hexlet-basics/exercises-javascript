@@ -3,7 +3,7 @@
 import { expect, test } from 'vitest';
 import f from './index.js';
 
-test('test', () => {
+test('define functions short syntax', () => {
   const expected1 = 'Daenerys';
   const actual1 = f('daenerys');
   expect(f(actual1)).toEqual(expected1);

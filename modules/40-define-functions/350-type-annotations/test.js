@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { expect, test } from 'vitest';
 import f from './index.js';
 
-test('test', () => {
+test('type annotations', () => {
   const source = readFileSync(new URL('./index.js', import.meta.url), 'utf8');
   const paramAnnotations = source.match(/@param\s*\{/g) ?? [];
   expect(

@@ -2,7 +2,7 @@
 
 import { expect, test, vi } from 'vitest';
 
-test('hello world', async () => {
+test('variables expressions', async () => {
   const consoleLogSpy = vi.spyOn(console, 'log');
   await import('./index.js');
 

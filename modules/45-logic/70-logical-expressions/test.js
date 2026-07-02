@@ -1,7 +1,7 @@
 import { expect, test } from 'vitest';
 import f from './index.js';
 
-test('test', () => {
+test('logical expressions', () => {
   const name = 'Hexlet';
   expect(f(name, 0)).toBe('');
   expect(f(name, 1)).toBe('H');

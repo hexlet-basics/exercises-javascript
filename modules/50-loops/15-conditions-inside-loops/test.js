@@ -1,7 +1,7 @@
 import { expect, test } from 'vitest';
 import f from './index.js';
 
-test('test', () => {
+test('conditions inside loops', () => {
   expect(f('axe', 'a')).toEqual(1);
   expect(f('', 'a')).toEqual(0);
   expect(f('OpPa', 'p')).toEqual(2);
