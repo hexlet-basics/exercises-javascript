@@ -3,7 +3,7 @@
 import { expect, test } from 'vitest';
 import f from './index.js';
 
-test('test', () => {
+test('logical negation', () => {
   expect(f('wow')).toBe(false);
   expect(f('hexlet')).toBe(true);
   expect(f('asdffdsa')).toBe(false);

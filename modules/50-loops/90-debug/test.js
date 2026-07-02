@@ -1,7 +1,7 @@
 import { expect, test } from 'vitest';
 import f from './index.js';
 
-test('test', () => {
+test('debug', () => {
   expect(f('aaabcccc')).toBe('a3bc4');
   expect(f('abcd')).toBe('abcd');
   expect(f('aabbaa')).toBe('a2b2a2');

@@ -2,8 +2,8 @@
 
 import { expect, test, vi } from 'vitest';
 
-test('hello world', async () => {
-  const consoleLogSpy = vi.spyOn(console, 'log').mockImplementation(() => {});
+test('constants', async () => {
+  const consoleLogSpy = vi.spyOn(console, 'log');
   await import('./index.js');
 
   const firstArg = consoleLogSpy.mock.calls.join('\n');
