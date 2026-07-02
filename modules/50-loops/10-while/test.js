@@ -4,7 +4,7 @@ import { expect, test, vi } from 'vitest';
 import f from './index.js';
 
 test('printNumbers', async () => {
-  const consoleLogSpy = vi.spyOn(console, 'log').mockImplementation(() => {});
+  const consoleLogSpy = vi.spyOn(console, 'log');
   f(6);
 
   const firstArg = consoleLogSpy.mock.calls.join('\n');
