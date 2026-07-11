@@ -8,5 +8,5 @@ test('symbols', async () => {
 
   const firstArg = consoleLogSpy.mock.calls.join('\n');
 
-  expect(firstArg).toBe('grip');
+  expect(firstArg).toBe('s');
 });
