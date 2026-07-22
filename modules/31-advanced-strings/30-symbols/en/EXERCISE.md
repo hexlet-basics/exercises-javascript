@@ -1,1 +1,1 @@
-Given `name = 'Na\nharis'`, print the last character (`s`). Remember: `\n` is one character.
+A secret word is hidden in the `text` string. Extract the needed characters from the `text` variable by their indexes, join them, and print the word `grip`.
