@@ -1,17 +1,17 @@
-JavaScript admite la programación orientada a objetos (POO): de forma muy simplificada, es un enfoque en el que operamos no con datos y funciones, sino con objetos y métodos. No nos detendremos en detalle en este tema en este curso, porque es amplio y requiere cierta preparación. Pero no podemos ignorarlo por completo, porque los objetos aparecen en JavaScript casi de inmediato. Así que lo abordaremos solo en la medida en que lo requieran las tareas actuales.
+JavaScript admite la programación orientada a objetos (POO): de forma muy simplificada, es un enfoque en el que operamos no con datos y funciones, sino con objetos y métodos. No pensamos detenernos en detalle en este tema en este curso, porque es amplio y su comprensión requiere cierto nivel de preparación. Ignorarlo por completo es imposible, porque los objetos aparecen literalmente de inmediato, en cuanto empezamos a escribir código en JavaScript. Por eso lo abordaremos, pero solo en la medida necesaria para las tareas actuales.
 
-Hasta ahora trabajábamos con datos y les aplicábamos funciones. En la POO, en lugar de datos tenemos objetos sobre los que se llaman métodos. Por ejemplo, las cadenas en JavaScript son objetos y tienen un método `toUpperCase()` que convierte todas las letras a mayúsculas.
+Hasta este momento trabajábamos con datos y les aplicábamos funciones. En la POO, en lugar de datos tenemos objetos sobre los que se llaman métodos. Por ejemplo, las cadenas en JavaScript son objetos y tienen un método `toUpperCase()`, que convierte todas las letras a mayúsculas.
 
 ```javascript
 const name = 'Robb';
 console.log(name.toUpperCase()); // => ROBB
 ```
 
-A diferencia de las funciones, los métodos se llaman *sobre un objeto*. Primero se escribe el objeto (un valor, una variable o una constante), luego un punto y la llamada al método.
+A diferencia de las funciones, los métodos se llaman *sobre un objeto*. Primero se escribe el objeto (un valor, una variable o una constante), y luego, después de un punto, la llamada al método. Aunque el método `toUpperCase()` no recibe argumentos, por dentro sabe sobre qué objeto se lo llama y tiene acceso al objeto mismo.
 
 ## Propiedades
 
-Además de los métodos, los datos tienen propiedades. Una propiedad es un valor asociado a los datos, al que se accede con un punto después de la variable (o constante). Por ejemplo, las cadenas tienen una longitud: la propiedad `length`:
+Además de los métodos, los datos tienen propiedades. Una propiedad es un valor asociado a los datos, al que se accede con un punto justo después de la variable o la constante. Por ejemplo, las cadenas tienen una longitud: la propiedad `length`:
 
 ```javascript
 const name = 'Robb';
@@ -19,59 +19,135 @@ const len = name.length;
 console.log(len); // => 4
 ```
 
-En muchos lenguajes la longitud de una cadena se calcula con una función especial, pero en JavaScript las propiedades están incorporadas directamente en el lenguaje. Las propiedades están asociadas a los datos de los que se obtienen. Para los tipos de datos primitivos, todas las propiedades están documentadas, como por ejemplo, las [cadenas de texto](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String). Sin embargo, los números no tienen propiedades.
+En los módulos anteriores, para obtener la longitud de una cadena usábamos la función didáctica `length()` de la biblioteca `hexlet-basics/string`:
 
-JavaScript permite acceder a propiedades que no existen (por ejemplo, debido a errores de escritura). En este caso, el valor de esas propiedades es `undefined`:
+```javascript
+import { length } from 'hexlet-basics/string';
+
+const name = 'Robb';
+console.log(length(name)); // => 4
+```
+
+Era un reemplazo temporal: en muchos lenguajes la longitud de una cadena se calcula realmente mediante una función especial. En JavaScript, en cambio, la longitud está incorporada directamente en el lenguaje como la propiedad `.length`. A partir de esta lección la función didáctica ya no hará falta: en todas partes usamos `.length`.
+
+Las propiedades están asociadas a los datos de los que se obtienen. Para los tipos primitivos, todas las propiedades están descritas en la documentación, como por ejemplo en las [cadenas](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String). Los números, en cambio, no tienen propiedades.
+
+JavaScript permite acceder a propiedades que no existen (por ejemplo, por errores de escritura). En ese caso su valor es `undefined`:
 
 ```javascript
 const name = 'Robb';
 console.log(name.whatIsThat); // => undefined
 ```
 
-*Pregunta de autoevaluación. ¿Qué imprimirá el código `console.log(name[name.length])` para `name`, definido anteriormente? ¿Por qué es esa la respuesta?*
+*Pregunta de autoevaluación. ¿Qué imprimirá el código `console.log(name[name.length])` para el `name` definido más arriba? ¿Por qué es esa la respuesta?*
 
 <details>
 <summary>Respuesta</summary>
 
-El código imprimirá `undefined`, porque se está accediendo a un índice que está fuera de los límites de la cadena. En este caso, `name.length` es 4, pero el índice del último carácter en la cadena es 3.
+El código imprimirá `undefined`, porque se está accediendo a un índice que queda fuera del límite de la cadena. En este caso `name.length` es 4, y el índice del último carácter de la cadena es 3.
 
 </details>
 
-## Métodos
+## Métodos de las cadenas
 
-Además de las propiedades, los datos también tienen métodos, los cuales son funciones que se encuentran dentro de las propiedades. Desde un punto de vista práctico, esto significa que un método funciona y se llama como una función, pero se accede a él como una propiedad, a través de un punto.
+Los datos suelen tener bastantes más métodos que propiedades. Las cadenas tienen varias docenas; estos son algunos de ellos.
 
 ```javascript
-const name = 'Robb';
-const upperName = name.toUpperCase();
-console.log(upperName); // => ROBB
+// Convertir todas las letras a mayúsculas
+console.log('hexlet'.toUpperCase()); // => HEXLET
+
+// Convertir todas las letras a minúsculas
+console.log('HeXleT'.toLowerCase()); // => hexlet
+
+// Eliminar los espacios al principio y al final de la cadena
+console.log('   hi   '.trim()); // => hi
 ```
 
-Los métodos incorporados siempre operan en los datos con los que están asociados. El método `.toUpperCase()` devuelve la misma cadena, pero convierte todos los caracteres a mayúsculas. Por lo general, hay muchos más métodos que propiedades para los datos, por ejemplo, para las cadenas hay [varias docenas](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String). A primera vista, en la documentación se describen de manera un poco extraña: *String.prototype.toLowerCase()*. Esta descripción revela algunos detalles internos  de implementación que no son importantes en este momento, y tampoco hemos estudiado toda la base necesaria para hablar sobre los prototipos.
+Algunos métodos reciben parámetros. Por ejemplo, en el método `replace()` el primer parámetro contiene la subcadena que hay que reemplazar, y el segundo la cadena de reemplazo.
 
-Los números también tienen métodos, como se muestra en [este enlace](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Number):
+```javascript
+const text = 'abracadabra';
+
+// Se reemplaza solo la primera aparición
+console.log(text.replace('a', 'o'));    // => obracadabra
+console.log(text.replace('abra', '!')); // => !cadabra
+```
+
+En JavaScript hay realmente muchos métodos, y no se aprenden de memoria. Normalmente los programadores, en el transcurso del trabajo, recuerdan qué operaciones necesitan y cómo se llaman aproximadamente esos métodos. Cuando surge una tarea, o recuerdan el método adecuado, o lo encuentran rápido en la documentación.
+
+## Los números también tienen métodos
 
 ```javascript
 const temperature = 22.93;
-// Redondear a un decimal
+// Redondeo a un decimal
 const roundedTemperature = temperature.toFixed(1);
 // El método devuelve una cadena que contiene el número convertido
 console.log(roundedTemperature); // => 22.9
 
-// También se puede llamar directamente así
+// Directamente se puede llamar así
 // Los paréntesis son obligatorios, de lo contrario no funcionará
 (22.93).toFixed(1); // 22.9
 ```
 
-*Nota para la anfitriona. Técnicamente, todo es un poco más complicado. Los métodos no están en los números en sí, sino en los datos (objetos) del tipo Number. Los números que se asignan a variables o constantes se convierten automáticamente a este tipo cuando se accede a ellos, en este momento se produce lo que se llama boxing.*
+*Nota al margen. Técnicamente todo es algo más complicado. Los métodos no están en los números en sí, sino en los datos (objetos) del tipo Number. Los números guardados en variables o constantes se convierten automáticamente a ese tipo cuando se accede a ellos; en ese momento ocurre lo que se llama boxing.*
 
-Surge una pregunta lógica: ¿por qué se necesitan métodos en lugar de simplemente funciones? Con los números, la situación es aún más complicada. Algunas operaciones se implementan como métodos de los propios números, por ejemplo, `.toFixed()`, y una gran parte se implementa como métodos disponibles a través de `Math`.
+## Método y función: comparación
 
-Hay dos razones por las que se hace así:
+Desde el punto de vista del código, los métodos y las funciones se comportan de forma parecida. Reciben valores y devuelven un resultado. Se diferencian solo en la **sintaxis** de la llamada.
 
-1. Históricamente, JavaScript se desarrolló muy rápido y, por lo tanto, no todo estaba bien pensado originalmente.
-2. No todas las funciones están relacionadas con un valor específico. Tomemos como ejemplo `Math.min()`. Esta función encuentra el número mínimo entre todos los que se le pasan. No tendría sentido hacer que esta función sea un método de un número específico, por ejemplo, así: `(1).min()`. No tiene ninguna relación con un número específico.
+```javascript
+// Llamada a una función
+Math.min(3, 5);
 
-Por otro lado, las funciones que trabajan con un número específico deben implementarse como métodos para mantener la uniformidad. Un ejemplo de estas funciones es obtener el módulo de un número. En lugar de llamarlo así `Math.abs(-10)`, sería lógico tener esto: `(-10).abs()`.
+// Llamada a un método
+'hexlet'.toUpperCase();
+```
 
-En cuanto a los métodos en general, no todo es tan claro. Hay lenguajes en los que no hay métodos y todo funciona bien; hay lenguajes en los que los métodos son la forma principal de trabajar con funciones, pero incluso en estos lenguajes siempre se utilizan funciones normales junto con los métodos. JavaScript es un lenguaje en el que ambos enfoques han prosperado; se utilizan tanto funciones normales como métodos de manera activa. Los pros y los contras de estos enfoques se explican en detalle en los cursos [dedicados a la POO](https://ru.hexlet.io/programs/js-oop).
+La función se llama desde fuera y recibe los argumentos entre paréntesis. El método es una operación incorporada en el valor mismo. Por debajo el valor se pasa hacia dentro, pero eso queda oculto para nosotros.
+
+Surge una pregunta lógica: ¿para qué hacen falta los métodos, por qué no simplemente funciones? Hay dos razones por las que resultó así:
+
+1. Históricamente salió así. JavaScript se desarrolló demasiado rápido, y por eso no todo quedó bien pensado.
+2. No todas las funciones tienen relación con un valor concreto. Tomemos como ejemplo `Math.min()`: encuentra el mínimo entre los números que se le pasan. Hacerla método de un número concreto, por ejemplo `(1).min()`, no es lógico: no está ligada a un número en particular.
+
+Por otro lado, las funciones que trabajan con un valor concreto es lógico implementarlas como métodos, por uniformidad. JavaScript es un lenguaje en el que han arraigado los dos enfoques: se usan activamente tanto las funciones normales como los métodos. Los pros y los contras de estos enfoques se explican en los cursos [dedicados a la POO](https://ru.hexlet.io/programs/js-oop).
+
+## Los métodos devuelven valores
+
+Igual que las funciones, los métodos **devuelven un resultado**. Se pueden usar dentro de expresiones.
+
+```javascript
+const name = 'hexlet';
+console.log(name.toUpperCase() + '!'); // => HEXLET!
+```
+
+Los métodos de las cadenas siempre devuelven una cadena nueva y dejan la original sin cambios. Ese comportamiento se llama inmutabilidad. Hablaremos de ello en la lección siguiente, pero por ahora es importante entender que la cadena queda igual y que el resultado del método es un valor nuevo.
+
+```javascript
+const name = 'hexlet';
+console.log(name.toUpperCase()); // => HEXLET
+console.log(name);               // => hexlet
+```
+
+## Propiedades y métodos en las expresiones
+
+Las propiedades y los métodos son expresiones igual que las variables, las constantes o las llamadas a funciones. Se pueden usar en operaciones aritméticas y pasar como argumentos a otras funciones.
+
+Uso en operaciones:
+
+```javascript
+const name = 'Shaya';
+console.log(name.length + 5);          // => 10
+console.log(`hi, ${name.toUpperCase()}!`); // => hi, SHAYA!
+```
+
+Uso como argumentos de funciones:
+
+```javascript
+const firstName = 'Robb';
+const lastName = 'Shaya';
+// Pasamos las propiedades directamente en la llamada a la función
+console.log(Math.min(firstName.length, lastName.length)); // => 4
+```
+
+Esto permite escribir código compacto y expresivo, sin guardar los resultados intermedios en variables aparte.

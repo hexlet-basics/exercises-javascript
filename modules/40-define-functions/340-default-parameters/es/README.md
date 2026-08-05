@@ -1,52 +1,75 @@
+Las funciones pueden recibir parámetros. A veces resulta cómodo fijar un valor ya en la definición de la función, para no indicarlo en cada llamada. Ese valor se llama **valor por defecto**.
 
-En programación, muchas funciones y métodos tienen parámetros que rara vez cambian. En estos casos, se les asignan valores predeterminados que se pueden cambiar según sea necesario. Esto reduce un poco la cantidad de código repetitivo. Por ejemplo:
-
-```javascript
-// Función de potencia
-// El segundo parámetro tiene un valor predeterminado de 2
-const pow = (x, base = 2) => {
-  return x ** base;
-};
-// 3 elevado a la segunda potencia (el 2 es el valor predeterminado)
-pow(3); // 9
-// tres elevado a la tercera potencia
-pow(3, 3); // 27
-```
-
-El valor predeterminado se ve como una asignación normal en la definición. Solamente se activa si el argumento no se pasa. Hay que acostumbrarse a esto. El valor predeterminado incluso puede estar presente cuando solo hay un parámetro:
+Si el argumento no se pasa, se usa ese valor. Si el argumento se indica, reemplaza al valor por defecto.
 
 ```javascript
-const print = (text = 'nada') => console.log(text);
+function greet(name = 'World') {
+  console.log(`Hello, ${name}!`);
+}
 
-print(); // "Nada"
-print("Hexlet"); // Hexlet
+greet('Alice'); // => Hello, Alice!
+greet();        // => Hello, World!  (se usó el valor por defecto)
 ```
 
-Puede haber cualquier cantidad de parámetros con valores predeterminados:
+## Ejemplo: repetir un texto
+
+Hagamos una función que repita una cadena varias veces. Que por defecto sea una vez, pero que se pueda indicar otra cantidad si se quiere. Para repetir una cadena, JavaScript tiene el método `repeat()`:
 
 ```javascript
-const f = (a = 5, b = 10, c = 100) => { ... }
+function repeat(text, times = 1) {
+  return text.repeat(times);
+}
+
+console.log(repeat('Hi'));    // => Hi
+console.log(repeat('Hi', 3)); // => HiHiHi
 ```
 
-Los valores predeterminados tienen una peculiaridad: deben ir al final de la lista de parámetros. Los valores pasados a la función siempre se asignan a los parámetros de izquierda a derecha, en el orden en que se pasan. Esto significa que si los valores predeterminados están a la izquierda en la lista de parámetros, antes de los parámetros normales, cuando se llama a la función con argumentos, los valores de los argumentos se colocarán en lugar de los valores predeterminados. Por ejemplo:
+```text
+function repeat(text, times = 1)   ← times tiene un valor por defecto
+
+repeat('go')      →  times = 1  (por defecto)
+repeat('go', 5)   →  times = 5  (indicado de forma explícita)
+```
+
+Los parámetros opcionales se indican siempre **al final** de la lista. Por eso primero va el parámetro obligatorio `text`, y solo después `times` con su valor por defecto.
+
+## Ejemplo: unir palabras con un separador
+
+Por defecto las palabras se unen con un espacio, pero se puede indicar otro carácter:
 
 ```javascript
-// Llamamos a esta función con los siguientes argumentos: f(1, 2, 3)
-const f = (a = 5, b = 10, c = 100, x) => { ... }
-// los parámetros tendrán los siguientes valores: a = 1, b = 2, c = 3, x = undefined
-// no pasamos nada a x, por lo que JS le asigna el valor undefined
+function joinWords(word1, word2, separator = ' ') {
+  return word1 + separator + word2;
+}
 
-// Por eso los parámetros con valores predeterminados deben ir a la derecha de los normales,
-// de lo contrario, se sobrescribirán o un parámetro normal puede quedar sin valor
-
-// Llamamos a la función, f(1, 2)
-const f = (a = 5, x, b = 10, c = 100) => { ... }
-
-// a = 1, x = 2, los demás parámetros obtienen los valores predeterminados
-
-// Aquí todo está bien, no hay sorpresas
-const f = (x, a = 5, b = 10, c = 100) => { ... }
-
-// Y aquí también
-const f = (x, y, a = 5, b = 10, c = 100) => { ... }
+console.log(joinWords('King', 'Road'));         // => King Road
+console.log(joinWords('Dragon', 'stone', '-')); // => Dragon-stone
 ```
+
+## Ejemplo: varios parámetros por defecto
+
+Una función puede tener más de un parámetro con valor por defecto. Hagamos una función que construya una línea separadora. Por defecto el carácter es el guion y la longitud es 10:
+
+```javascript
+function makeLine(symbol = '-', length = 10) {
+  return symbol.repeat(length);
+}
+
+console.log(makeLine());        // => ----------
+console.log(makeLine('*'));     // => **********
+console.log(makeLine('*', 5));  // => *****
+console.log(makeLine('#', 3));  // => ###
+```
+
+## Ejemplo: ocultar el número de una tarjeta
+
+```javascript
+function getHiddenCard(cardNumber, starsCount = 4) {
+  return '*'.repeat(starsCount) + cardNumber.slice(-4);
+}
+
+console.log(getHiddenCard('1234567890123456'));    // => ****3456
+console.log(getHiddenCard('1234567890123456', 2)); // => **3456
+```
+
+El parámetro `starsCount` es igual a `4` por defecto, pero se puede pasar otro valor.

@@ -13,4 +13,4 @@ Infinity - 4; // Infinity
 Infinity * Infinity; // Infinity
 ```
 
-Sin embargo, hay algunos ejemplos en los que el infinito es útil. Este tema se analiza en detalle en Hexlet.
+Sin embargo, hay algunos casos en los que el infinito resulta necesario. Por ejemplo, para fijar un límite superior e inferior o, al contrario, para quitarlo.

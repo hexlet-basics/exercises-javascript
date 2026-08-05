@@ -1,23 +1,52 @@
+Algunas funciones tienen **parámetros opcionales**. Eso significa que para ellos se ha fijado de antemano un valor por defecto, y al llamar a la función ese parámetro se puede omitir.
 
-Veamos la función `round()`, que redondea un número entero:
-
-```javascript
-const result = round(10.25, 0); // 10
-```
-
-Le pasamos dos parámetros: el número que queremos redondear y la precisión de redondeo. Un valor de `0` significa que se redondeará al número entero más cercano, es decir, se descarta la parte decimal.
-
-En la mayoría de los casos, queremos redondear al número entero (no a los décimos, por ejemplo), por lo que los creadores de la función `round()` hicieron el segundo parámetro **opcional** y le dieron un valor por defecto de `0`. Esto significa que no es necesario especificar el segundo parámetro y el resultado será el mismo:
+Veamos el método `toFixed()`, que redondea un número a una cantidad dada de decimales. `toFixed()` es un método, es decir, una función adjunta a un valor y llamada mediante el punto; los métodos los veremos en detalle en la lección sobre objetos.
 
 ```javascript
-const result = round(10.25); // 10
+const result = (10.25).toFixed(1); // => '10.3'
 ```
 
-Si necesitamos una precisión distinta, podemos pasar un parámetro:
+Fíjate en las comillas del resultado: `toFixed()` devuelve una **cadena**, no un número, por eso no se puede usar directamente en cálculos posteriores.
+
+Le pasamos un valor: la precisión del redondeo (1 decimal). Pero ese parámetro es opcional. Si no se indica, se usa el valor por defecto `0`, es decir, el redondeo a entero:
 
 ```javascript
-// redondeo a un decimal
-const result = round(10.25, 1); // 10.3
+console.log((10.25).toFixed()); // => '10'
 ```
 
-Si una función en JavaScript tiene parámetros opcionales, siempre se colocan después de los parámetros obligatorios. Pueden ser cualquier cantidad (dependiendo de la función en sí), pero siempre van juntos y al final de la lista de argumentos.
+Si hace falta otra precisión, se indica de forma explícita:
+
+```javascript
+console.log((3.14159).toFixed(2)); // => '3.14'
+console.log((3.14159).toFixed(4)); // => '3.1416'
+```
+
+```text
+(10.25).toFixed(1)  →  argumento: 1    →  '10.3'
+(10.25).toFixed()   →  argumento: (0)  →  '10'
+                                └── valor por defecto
+```
+
+La cantidad de parámetros opcionales depende de cada función, pero los obligatorios van siempre antes de los opcionales.
+
+## La firma de una función
+
+Cada función tiene una **firma**: la descripción de su nombre, sus parámetros y el orden en que se usan. La firma ayuda a entender qué datos espera la función y qué ocurrirá si los parámetros no se indican.
+
+En la documentación, los parámetros opcionales se muestran a menudo entre corchetes. Por ejemplo, la firma de `toFixed`:
+
+```text
+toFixed([digits])
+```
+
+Aquí `digits` es la cantidad de decimales. Los corchetes significan que el parámetro es opcional; si no se indica, por defecto será `0`.
+
+## Cómo trabajar con funciones nuevas
+
+Cuando te encuentras con una función nueva, resulta cómodo seguir un patrón simple:
+
+1. Abrir la documentación (por ejemplo, MDN) y buscar la firma de la función.
+2. Mirar los ejemplos de uso.
+3. Abrir la consola del navegador o de Node.js y probar a llamar a la función con distintos argumentos.
+
+Este enfoque ayuda a entender rápidamente qué parámetros de la función son obligatorios y cuáles opcionales, y qué resultados devuelve.

@@ -1,8 +1,9 @@
-
-Implementa una función llamada `printMotto()` que mostrará en la pantalla la frase *Winter is coming*.
+Un sitio muestra un saludo para cada visitante. Implementa la función `sayHello()`, que muestre en pantalla la frase `Hello, World!`.
 
 ```javascript
-printMotto(); // => Winter is coming
+sayHello(); // => Hello, World!
 ```
 
-En los ejercicios en los que se requiere implementar una función, no es necesario llamar a esa función. Las pruebas automatizadas se encargarán de llamarla y comprobar su funcionalidad. El ejemplo de llamada anterior se muestra sólo para que entiendas cómo se utilizará tu función.
+En las tareas donde hay que implementar una función, no hace falta llamarla: lo harán las pruebas automatizadas. El ejemplo de llamada se muestra solo para que entiendas cómo se usará la función.
+
+> **Nota:** en el archivo ya hay una línea `export default …`, es de servicio y la necesita el sistema de comprobación; qué es la exportación lo veremos en la lección sobre módulos.
