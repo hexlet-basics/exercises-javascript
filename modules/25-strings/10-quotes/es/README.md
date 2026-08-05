@@ -1,7 +1,5 @@
 En la programación en JavaScript, las cadenas de texto se utilizan con mucha frecuencia y en las situaciones más diversas. Con su ayuda trabajamos con texto, mostramos mensajes en la pantalla, procesamos la entrada del usuario e interactuamos con sistemas externos.
 
-![Cadenas de texto](./assets/strings.png)
-
 Desde el punto de vista de JavaScript, una cadena de texto es simplemente un conjunto de caracteres encerrado entre comillas. Veamos algunos ejemplos.
 
 ```javascript
