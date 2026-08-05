@@ -7,7 +7,7 @@ Math.max(1, 10, 3); // 10
 
 The `Math.max()` function finds the maximum value among the passed parameters. How many parameters do you think it expects as input? If you open the documentation for this function, you will see a strange construct:
 
-  ```
+  ```text
   Math.max([value1[, value2[, ...]]])
   ```
 

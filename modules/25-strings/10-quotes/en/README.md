@@ -81,7 +81,7 @@ console.log('He said "No"');
 
 Sometimes both types of quotes appear in a string.
 
-```
+```text
 Dragon's mother said "No"
 ```
 

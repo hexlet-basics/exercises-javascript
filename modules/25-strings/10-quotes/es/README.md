@@ -81,7 +81,7 @@ console.log('He said "No"');
 
 A veces aparecen ambos tipos de comillas en una cadena.
 
-```
+```text
 Dragon's mother said "No"
 ```
 

@@ -7,7 +7,7 @@ Math.max(1, 10, 3); // 10
 
 La función `Math.max()` encuentra el valor máximo entre los parámetros proporcionados. ¿Cuántos parámetros crees que espera como entrada? Si abres la documentación de esta función, verás una construcción extraña:
 
-  ```
+  ```text
   Math.max([value1[, value2[, ...]]])
   ```
 

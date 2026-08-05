@@ -123,7 +123,7 @@ You don't have to memorize this, but it will come in handy when reading English-
 
 Every function has a **signature** - its "description": the name, the list of parameters, and the type of the returned value. It is the signature that lets you understand how to use a function without reading its code. For example, the MDN documentation describes `Math.pow()` like this:
 
-```
+```text
 Math.pow(base, exponent)
 
 Parameters

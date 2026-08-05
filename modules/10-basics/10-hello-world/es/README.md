@@ -4,6 +4,8 @@ El aprendizaje de un nuevo lenguaje de programación comienza tradicionalmente c
 Hello, World!
 ```
 
+![Hello World](./assets/hello-world.png)
+
 Esta tradición tiene ya más de cuarenta años, y nosotros también comenzaremos con ella. En la primera lección escribiremos un programa `Hello, World!`. En JavaScript, este programa se ve así:
 
 ```javascript

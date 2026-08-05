@@ -123,7 +123,7 @@ No es obligatorio memorizar esto, pero será útil al leer literatura en inglés
 
 Cada función tiene una **firma**: su "descripción", es decir, el nombre, la lista de parámetros y el tipo de valor devuelto. Es la firma la que permite entender cómo usar una función sin leer su código. Por ejemplo, la documentación de MDN describe `Math.pow()` así:
 
-```
+```text
 Math.pow(base, exponent)
 
 Parámetros
