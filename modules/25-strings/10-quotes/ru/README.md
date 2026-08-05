@@ -83,7 +83,7 @@ console.log('He said "No"');
 
 Иногда в строке встречаются оба типа кавычек.
 
-```
+```text
 Dragon's mother said "No"
 ```
 
