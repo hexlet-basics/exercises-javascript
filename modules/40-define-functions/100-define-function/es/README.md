@@ -1,63 +1,115 @@
+Hasta este momento solo usábamos funciones ya hechas: `console.log()`, `Math.pow()` y otras. Pero en JavaScript se pueden crear funciones propias, y ha llegado el momento de aprender a hacerlo.
 
-La definición de funciones propias simplifica en gran medida la escritura y el mantenimiento de programas. Las funciones permiten combinar operaciones complejas en una sola. Por ejemplo, enviar un correo electrónico en un sitio web es un proceso bastante complejo que implica interactuar con sistemas externos (Internet). Gracias a la capacidad de definir funciones, toda esta complejidad puede estar oculta detrás de una función simple:
+## Para qué definir funciones
+
+Supongamos que tenemos varios fragmentos de código parecidos:
 
 ```javascript
-// Ejemplo hipotético
-// Lugar de donde se obtiene la función
-import { send } from 'mailer';
-
-const email = 'support@hexlet.io';
-const title = 'Ayuda';
-const body = 'He escrito una historia de éxito, ¿cómo puedo obtener un descuento?';
-
-// Una pequeña llamada - y mucha lógica interna
-send(email, title, body);
+console.log('Hello, Hexlet!');
+console.log('Hello, world!');
+console.log('Hello, JavaScript!');
 ```
 
-Internamente, la realización de una llamada de este tipo tiene bastante lógica. Se conecta al servidor de correo, forma una solicitud correcta basada en el encabezado y el cuerpo del mensaje, y luego lo envía, sin olvidar cerrar la conexión.
-
-Creemos nuestra primera función. Su tarea es mostrar un saludo en la pantalla:
-
-```textHello, Hexlet!```
+Para no repetir la misma plantilla, se la puede envolver en una función propia que reciba un parámetro e imprima la cadena necesaria:
 
 ```javascript
-// Definición de la función
-// La definición no llama ni ejecuta la función
-// Sólo estamos diciendo que ahora existe esta función
-const showGreeting = () => {
-  // Dentro del cuerpo, se indentan 2 espacios para facilitar la lectura
-  const text = 'Hello, Hexlet!';
-  console.log(text);
+function sayHello(name) {
+  console.log(`Hello, ${name}!`);
+}
+```
+
+Ahora se la puede llamar con distintos argumentos:
+
+```javascript
+sayHello('Hexlet');     // => Hello, Hexlet!
+sayHello('world');      // => Hello, world!
+sayHello('JavaScript'); // => Hello, JavaScript!
+```
+
+Parece que el código no se ha reducido, pero apareció otra ventaja: si la función se usa en distintos lugares, para cambiar el texto basta con corregir solo su definición. Cuanto más compleja es la tarea y más a menudo aparece, más importante es separar la lógica en funciones aparte.
+
+## La sintaxis de la definición
+
+```javascript
+function nombreDeLaFuncion(parámetros) {
+  cuerpo
+}
+```
+
+```text
+function greet(name) {           ← palabra clave, nombre y parámetro
+  return 'Hello, ' + name;       ← cuerpo de la función
+}
+```
+
+La definición empieza con la palabra clave `function`, después va el nombre de la función (con las mismas reglas que las variables), entre paréntesis la lista de parámetros separados por comas, y el cuerpo de la función se encierra entre llaves `{}`.
+
+## Definir una función no significa llamarla
+
+Definir una función no ejecuta su código. El cuerpo se ejecutará solo al llamarla. Mira el ejemplo:
+
+```javascript
+function sayHi() {
+  console.log('Hi!');
 }
 
-// Llamada a la función
-showGreeting(); // => Hello, Hexlet!
+console.log('El programa continúa…');
 ```
 
-A diferencia de los datos normales, las funciones realizan acciones, por lo que sus nombres casi siempre deben ser verbos: "construir algo", "dibujar algo", "abrir algo".
-
-Todo lo que se describe dentro de las llaves `{}` se llama cuerpo de la función. Dentro del cuerpo se puede escribir cualquier código. Considéralo como un pequeño programa independiente, un conjunto de instrucciones arbitrarias. El cuerpo se ejecuta exactamente en el momento en que se ejecuta la función. Además, cada llamada a la función ejecuta el cuerpo de forma independiente de otras llamadas. Por cierto, el cuerpo puede estar vacío:
+Aquí la función `sayHi()` está definida, pero su cuerpo no se ejecuta: en la pantalla aparecerá solo `El programa continúa…`. Para que `sayHi()` funcione, hay que llamarla de forma explícita:
 
 ```javascript
-// Definición mínima de una función
-const noop = () => {
-  // Aquí podría haber código, pero no lo hay
+function sayHi() {
+  console.log('Hi!');
 }
 
-noop();
+sayHi(); // => Hi!
+console.log('El programa continúa…');
 ```
 
-La definición de una función se parece sospechosamente a la creación de una constante. De hecho, en realidad, la definición de una función consta de dos partes: la definición en sí `() => { }` y la asignación a una constante:
+## Ejemplo: una función para imprimir la media aritmética
 
-1. Definición: `() => { }`
-2. Asignación: `const nameOfFunction = ...`
-
-Técnicamente, es posible crear una función que esté simplemente definida, pero que no se pueda utilizar porque no tiene nombre:
+Implementemos una función que **calcula e imprime la media aritmética** de dos números. La media aritmética es la suma de los números dividida por su cantidad. Por ejemplo, la media de 6 y 4: `(6 + 4) / 2 = 5`.
 
 ```javascript
-() => {
-  // Código funcional, pero inútil
-};
+function printAverage(a, b) {
+  const total = a + b;
+  const average = total / 2;
+  console.log(average);
+}
+
+printAverage(6, 4); // => 5
 ```
 
-El concepto de "crear una función" tiene muchos sinónimos: "declarar", "definir" e incluso "implementar" (de la palabra implement). Todos ellos se encuentran en la práctica diaria en este trabajo.
+Aquí `a` y `b` son los parámetros de entrada, `total` contiene su suma, `average` se obtiene dividiendo la suma por 2, y `console.log()` muestra el resultado.
+
+## Nombres y orden de los parámetros
+
+El nombre de un parámetro puede ser cualquiera; lo importante es que refleje el sentido del valor que llegará dentro. Con el código de fuera no está relacionado de ninguna manera:
+
+```javascript
+function getLastChar(str) {
+  return str[str.length - 1];
+}
+
+// Dentro de la función str será igual a 'Winter is coming'.
+// El nombre de la variable de fuera no está ligado al nombre del parámetro
+const text = 'Winter is coming';
+console.log(getLastChar(text)); // => g
+```
+
+Cuando hay dos parámetros o más, para la mayoría de las funciones pasa a importar el orden en que se pasan. Si se cambia, la función funcionará de otra manera:
+
+```javascript
+// El primer parámetro es qué buscamos, el segundo por qué lo cambiamos
+console.log('google'.replace('go', 'mo')); // => moogle
+
+// No se reemplazó nada: dentro de 'google' no hay 'mo'
+console.log('google'.replace('mo', 'go')); // => google
+```
+
+En JavaScript existe también otra forma abreviada de escribir funciones: la forma de flecha. Tiene una lección aparte más adelante en este módulo.
+
+## Reutilización y legibilidad
+
+Las funciones ayudan a evitar la duplicación y hacen los programas más claros. El propio nombre de la función dice qué hace. Esto es especialmente importante en proyectos grandes, donde el código lo leen otros programadores (o tú mismo un mes después).
