@@ -1,1 +1,7 @@
-Dada `url = 'https://hexlet.io'`, extrae e imprime el dominio sin el protocolo.
+Dada la constante `url = 'https://hexlet.io'`. Extrae y muestra en pantalla el nombre de dominio sin el protocolo:
+
+```text
+hexlet.io
+```
+
+Usa el método `slice()`.
