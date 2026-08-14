@@ -1,4 +1,3 @@
-/* eslint operator-assignment: 0 */
 // BEGIN
 const maskCardNumber = (cardNumber) => {
   let result = '';
@@ -6,7 +5,7 @@ const maskCardNumber = (cardNumber) => {
   const visiblePartStart = cardNumber.length - 4;
   while (i < cardNumber.length) {
     if (i < visiblePartStart) {
-      // biome-ignore lint/style/useTemplate: teaching example before the 30-syntax-sugar lesson
+      // teaching example before the 30-syntax-sugar lesson
       result = result + '*';
     } else {
       result = result + cardNumber[i];

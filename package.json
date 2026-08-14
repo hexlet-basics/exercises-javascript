@@ -2,9 +2,10 @@
   "name": "hexlet-basics",
   "type": "module",
   "devDependencies": {
-    "@biomejs/biome": "2.5.6",
     "globals": "^17.8.0",
     "npm-check-updates": "^23.0.0",
+    "oxfmt": "0.62.0",
+    "oxlint": "1.78.0",
     "typescript": "^7.0.2",
     "vitest": "^4.1.10"
   },

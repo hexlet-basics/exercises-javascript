@@ -1,0 +1,26 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "oxc", "import", "promise", "node", "vitest"],
+  "categories": {
+    "correctness": "error"
+  },
+  "env": {
+    "builtin": true,
+    "node": true
+  },
+  "ignorePatterns": ["**/node_modules/**"],
+  "overrides": [
+    {
+      "files": ["modules/10-basics/20-comments/index.js"],
+      "rules": {
+        "unicorn/no-empty-file": "off"
+      }
+    },
+    {
+      "files": ["modules/33-data-types/45-undefined/index.js"],
+      "rules": {
+        "no-unassigned-vars": "off"
+      }
+    }
+  ]
+}
