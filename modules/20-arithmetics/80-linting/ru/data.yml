@@ -2,7 +2,9 @@
 name: Линтер
 tips:
   - >
-    [Biome — линтер и форматтер для JavaScript](https://biomejs.dev/)
+    [oxlint, линтер для JavaScript](https://oxc.rs/docs/guide/usage/linter.html)
+  - >
+    [oxfmt, форматтер для JavaScript](https://oxc.rs/docs/guide/usage/formatter.html)
 definitions:
   - name: Линтер
     description: >-
