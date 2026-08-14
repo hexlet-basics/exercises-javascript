@@ -51,7 +51,18 @@ false || ''; // ''
 undefined || ''; // ''
 ```
 
-En una de las lecciones, vimos los operadores de comparación `===` y `!==` y mencionamos que en JavaScript también hay operadores `==` y `!=`, pero no se recomienda usarlos. Las diferencias radican precisamente en la conversión de tipos:
+Para esos casos JavaScript tiene un operador aparte, `??`. También sustituye el operando izquierdo por el derecho, pero solo se activa con `null` y `undefined`. El resto de los valores falsy los deja pasar como datos normales:
+
+```javascript
+0 ?? 100; // 0
+'' ?? 100; // ''
+null ?? 100; // 100
+undefined ?? 100; // 100
+```
+
+Por eso, cuando el valor por defecto sustituye precisamente a «nada», se usa `??`, y cuando sustituye a cualquier valor falsy, se usa `||`.
+
+La conversión de tipos explica también por qué en JavaScript hay dos clases de comparación. Además de los operadores estrictos `===` y `!==`, el lenguaje tiene los no estrictos `==` y `!=`. Se diferencian precisamente en la conversión de tipos:
 
 ```javascript
 console.log('' === false); // => false
@@ -106,12 +117,10 @@ value === ('first' || 'second')
 
 En nuestra mente, más o menos nos lo imaginamos así, pero los lenguajes funcionan de manera diferente, por lo que este código dará un resultado incorrecto. ¿Cómo se debe leer correctamente? Debemos recordar la prioridad de las operaciones. Primero se evalúa todo lo que está entre paréntesis, es decir, `'first' || 'second'`. Si ejecutas este código en el repl, la salida será así:
 
-```bash
-node
-'Welcome to Node.js v17.4.0.
+```console
+$ node
 > 'first' || 'second'
 'first'
->
 ```
 
 Ahora podemos reemplazar la expresión original por la parcialmente evaluada:

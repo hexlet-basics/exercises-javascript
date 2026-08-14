@@ -1,6 +1,6 @@
 A medida que un programa crece, no solo aumenta la cantidad de líneas de código, sino también la cantidad de módulos. En proyectos pequeños se pueden mantener decenas de archivos uno al lado del otro, pero las aplicaciones reales pueden tener cientos y miles de archivos. Además, el código útil se quiere reutilizar en distintos proyectos.
 
-En Python se usan los paquetes-directorios para agrupar módulos. En el ecosistema de JavaScript, la unidad de reutilización y distribución es un **paquete** (un paquete de npm). Un paquete es un conjunto de módulos que se publica y se instala como un todo.
+Para eso los módulos se agrupan. En el ecosistema de JavaScript, la unidad de reutilización y distribución es un **paquete** (un paquete de npm). Un paquete es un conjunto de módulos que se publica y se instala como un todo.
 
 ## Qué es un paquete
 

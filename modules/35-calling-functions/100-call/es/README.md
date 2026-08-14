@@ -138,4 +138,4 @@ Es imposible aprenderlo todo, y no hace falta. Lo importante es saber dónde bus
 - **MDN** ([developer.mozilla.org](https://developer.mozilla.org/es/)) - documentación sobre las capacidades incorporadas del lenguaje y las API del navegador.
 - **Documentación de Node.js** ([nodejs.org/api](https://nodejs.org/api/)) - la parte del servidor, funciones para trabajar con el sistema de archivos, la red, etc.
 
-Otra forma es leer el código de otras personas: cualquier paquete de npm es abierto, y en él a menudo se pueden encontrar técnicas de las que no se habla en los libros de texto.
+Otra forma de aprender cosas nuevas es leer el código de otras personas. El código fuente de las bibliotecas externas es abierto, y en él a menudo aparecen técnicas de las que no se habla en los libros de texto.

@@ -7,10 +7,11 @@ Calcula y muestra en pantalla tres valores, cada uno en una línea aparte:
 3. El costo del viaje para cada pasajero. Redondéalo a entero llamando a `toFixed()` sin argumento (el valor por defecto es 0 decimales).
 
 ```text
-distance ──────┐
-               ├──→ fuel ──────┐
-fuelConsumption ┘              ├──→ tripCost ──────┐
-                               │                   ├──→ perPerson
-fuelPrice ─────────────────────┘                   │
-passengers ─────────────────────────────────────────┘
+distance ───────┐
+                ├──→ fuel ──┐
+fuelConsumption ┘           │
+                            ├──→ tripCost ──┐
+fuelPrice ──────────────────┘               │
+                                            ├──→ perPerson
+passengers ─────────────────────────────────┘
 ```

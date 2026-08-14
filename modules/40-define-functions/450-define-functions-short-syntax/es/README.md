@@ -1,5 +1,4 @@
-
-En comparación con algunos lenguajes (principalmente funcionales), la definición de funciones en JavaScript puede parecer bastante verbosa:
+Una función de flecha en su forma completa se ve así:
 
 ```javascript
 const square = (x) => {
@@ -7,12 +6,12 @@ const square = (x) => {
 };
 ```
 
-Aquí se usan muchos símbolos adicionales y la palabra `return`. Desde la versión ES6, el lenguaje introdujo una sintaxis alternativa y simplificada que en algunas situaciones hace que el código sea más legible y reduce la cantidad de código.
+Aquí el cuerpo consiste en una sola instrucción `return`, y para ella hay que escribir las llaves y la propia palabra `return`. Para ese caso las funciones de flecha tienen una forma simplificada, que hace el código bastante más legible:
 
 ```javascript
-// Puede llevar tiempo acostumbrarse a esta forma
+// Puede llevar tiempo acostumbrarse a esta forma,
 // pero luego no podrás vivir sin ella
-const double = (x) => x ** 2;
+const square = (x) => x ** 2;
 ```
 
 Las diferencias con la versión completa son dos: desaparecieron las llaves y la instrucción `return`. La forma simplificada de una función realiza el retorno automáticamente. Se asume que dentro de dicha función solo hay una expresión que se evalúa y su resultado se devuelve directamente.

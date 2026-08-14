@@ -55,19 +55,21 @@ getTypeOfSentence('No!');  // Sentence is exclamation
 Ahora todas las condiciones están organizadas en una única construcción. `else if` significa "si no se cumplió la condición anterior, pero se cumple la actual".
 
 ```text
-  ┌─────────────────┐
-  │ ¿condición 1?   │
-  └────┬────────┬───┘
-  true │        │ false
-       ↓        ↓
-┌──────────┐  ┌─────────────────┐
-│ cuerpo if│  │ ¿condición 2?   │
-└──────────┘  └────┬────────┬───┘
-              true │        │ false
-                   ↓        ↓
-       ┌────────────────┐ ┌──────────────┐
-       │ cuerpo else if │ │ cuerpo else  │
-       └────────────────┘ └──────────────┘
+         ┌───────────────┐
+         │ ¿condición 1? │
+         └───────┬───────┘
+        ┌────────┴────────┐
+  true  │                 │ false
+        ↓                 ↓
+┌───────────────┐ ┌───────────────┐
+│   cuerpo if   │ │ ¿condición 2? │
+└───────────────┘ └───────┬───────┘
+                    ┌─────┴───────────┐
+               true │                 │ false
+                    ↓                 ↓
+            ┌────────────────┐ ┌─────────────┐
+            │ cuerpo else if │ │ cuerpo else │
+            └────────────────┘ └─────────────┘
 ```
 
 La lógica de la función resulta en el siguiente esquema:

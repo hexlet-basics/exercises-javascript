@@ -89,28 +89,27 @@ console.log(roundedTemperature); // => 22.9
 (22.93).toFixed(1); // 22.9
 ```
 
-*Nota al margen. Técnicamente todo es algo más complicado. Los métodos no están en los números en sí, sino en los datos (objetos) del tipo Number. Los números guardados en variables o constantes se convierten automáticamente a ese tipo cuando se accede a ellos; en ese momento ocurre lo que se llama boxing.*
+Puede parecer que el método `toFixed()` pertenece al número mismo. En realidad, durante la llamada JavaScript envuelve el número en un objeto `Number`, que sí tiene ese método. Gracias a esa envoltura los métodos se llaman directamente sobre los números. Con las cadenas ocurre lo mismo, solo que el objeto se llama `String`.
 
 ## Método y función: comparación
 
 Desde el punto de vista del código, los métodos y las funciones se comportan de forma parecida. Reciben valores y devuelven un resultado. Se diferencian solo en la **sintaxis** de la llamada.
 
 ```javascript
-// Llamada a una función
-Math.min(3, 5);
+// Llamada a una función: nombre y argumentos entre paréntesis
+Number('42');
 
-// Llamada a un método
+// Llamada a un método: primero el valor, luego el punto
 'hexlet'.toUpperCase();
 ```
 
-La función se llama desde fuera y recibe los argumentos entre paréntesis. El método es una operación incorporada en el valor mismo. Por debajo el valor se pasa hacia dentro, pero eso queda oculto para nosotros.
+La función se llama por su nombre y existe por sí misma. El método es una operación incorporada en el valor mismo. Por debajo el valor se pasa hacia dentro, pero eso queda oculto para nosotros.
 
-Surge una pregunta lógica: ¿para qué hacen falta los métodos, por qué no simplemente funciones? Hay dos razones por las que resultó así:
+Ahora también se puede explicar el punto en la escritura `Math.pow(2, 3)`. `Math` es un objeto, un conjunto de operaciones matemáticas, y `pow` es su método. En una conversación esas operaciones suelen llamarse funciones, porque no están ligadas a ningún valor concreto, pero por la sintaxis de la llamada son métodos.
 
-1. Históricamente salió así. JavaScript se desarrolló demasiado rápido, y por eso no todo quedó bien pensado.
-2. No todas las funciones tienen relación con un valor concreto. Tomemos como ejemplo `Math.min()`: encuentra el mínimo entre los números que se le pasan. Hacerla método de un número concreto, por ejemplo `(1).min()`, no es lógico: no está ligada a un número en particular.
+Surge una pregunta lógica: ¿para qué hacen falta los métodos, por qué no simplemente funciones? La cuestión es que no toda operación tiene relación con un valor concreto. Tomemos como ejemplo `Math.min()`, que encuentra el mínimo entre los números que se le pasan. Incorporarla a un número concreto, por ejemplo `(1).min(5)`, no es lógico: no pertenece a ninguno de ellos.
 
-Por otro lado, las funciones que trabajan con un valor concreto es lógico implementarlas como métodos, por uniformidad. JavaScript es un lenguaje en el que han arraigado los dos enfoques: se usan activamente tanto las funciones normales como los métodos. Los pros y los contras de estos enfoques se explican en los cursos [dedicados a la POO](https://ru.hexlet.io/programs/js-oop).
+En cambio, `toUpperCase()` trabaja justamente con la cadena sobre la que se lo llama, y por eso es lógico que viva dentro de ella. En JavaScript han arraigado los dos enfoques, y en el código se usan activamente tanto las funciones normales como los métodos. Los pros y los contras de estos enfoques se explican en los cursos [dedicados a la POO](https://ru.hexlet.io/programs/js-oop).
 
 ## Los métodos devuelven valores
 

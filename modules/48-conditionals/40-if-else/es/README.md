@@ -33,14 +33,15 @@ const getTypeOfSentence = (sentence) => {
 Agregamos la palabra clave `else` y un nuevo bloque con llaves. Este bloque se ejecuta solo si la condición en `if` es falsa.
 
 ```text
-      ┌───────────┐
-      │ condición?│
-      └─────┬─────┘
-  true │         │ false
-      ↓         ↓
-┌──────────┐ ┌──────────┐
-│ cuerpo if│ │cuerpo else│
-└──────────┘ └──────────┘
+        ┌─────────────┐
+        │ ¿condición? │
+        └──────┬──────┘
+       ┌───────┴───────┐
+  true │               │ false
+       ↓               ↓
+┌─────────────┐ ┌─────────────┐
+│  cuerpo if  │ │ cuerpo else │
+└─────────────┘ └─────────────┘
 ```
 
 ## Condiciones anidadas

@@ -12,10 +12,10 @@ Aquí se imprimirá la cadena `'Yes, it is true'` porque la condición `5 > 3` e
 ┌────────────┐
 │ ¿condición?│
 └─────┬──────┘
-  true │
+      │ true
       ↓
 ┌────────────┐
-│ cuerpo if  │
+│  cuerpo if │
 └────────────┘
 ```
 

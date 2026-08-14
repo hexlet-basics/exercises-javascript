@@ -108,7 +108,31 @@ console.log('google'.replace('go', 'mo')); // => moogle
 console.log('google'.replace('mo', 'go')); // => google
 ```
 
-En JavaScript existe también otra forma abreviada de escribir funciones: la forma de flecha. Tiene una lección aparte más adelante en este módulo.
+## Otras formas de escribir funciones
+
+Una función no solo se puede declarar con `function`: también se puede escribir como un valor y asignarla a una constante:
+
+```javascript
+const sayHello = function (name) {
+  console.log(`Hello, ${name}!`);
+};
+
+sayHello('Hexlet'); // => Hello, Hexlet!
+```
+
+Esa forma se llama expresión de función. Fíjate en el punto y coma del final: aquí tenemos una asignación normal a una constante, no una declaración de función.
+
+La expresión de función tiene una forma corta, la de flecha. En ella la palabra `function` se sustituye por la flecha `=>`, que se coloca después de la lista de parámetros:
+
+```javascript
+const sayHello = (name) => {
+  console.log(`Hello, ${name}!`);
+};
+
+sayHello('Hexlet'); // => Hello, Hexlet!
+```
+
+Para nuestras tareas las tres formas son equivalentes: la función se define y luego se llama por su nombre. La forma de flecha es la que más aparece en JavaScript, por eso más adelante en el curso los ejemplos están escritos así. Una lección aparte de este módulo mostrará cómo acortarla todavía más.
 
 ## Reutilización y legibilidad
 
