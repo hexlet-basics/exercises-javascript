@@ -14,41 +14,53 @@ There is no need to memorize all the rules by hand. There are special programs t
 
 A linter is a tool that analyzes your code and reports violations of standards. It helps you:
 
-- Get rid of extra spaces
-- Keep consistent indentation
+- Find suspicious places, for example a variable you declared and forgot to use
+- Follow the rules agreed on by the team
 - Write readable and clean expressions
 
-## A modern linter: Biome
+## A modern linter: oxlint
 
-Today, one of the fastest and most popular linters for JavaScript is [Biome](https://biomejs.dev/). It combines a linter and a formatter in a single tool, works fast, and is actively developed.
+Today, one of the fastest linters for JavaScript is [oxlint](https://oxc.rs/docs/guide/usage/linter.html). It is written in Rust, so it checks even large projects in a fraction of a second.
 
 Let's look at an example:
-
-```javascript
-const result = 1+ 3;
-```
-
-This code looks messy, and the linter will rightly point out the error. Here is what the checking process looks like:
-
-```text
-Code                Linter            Result
-┌──────────────┐    ┌──────────┐    ┌─────────────────────────┐
-│ const result │ →  │  Biome   │ →  │ lint/style/noShoutyConst│
-│   = 1+ 3     │    │          │    │ missing whitespace       │
-└──────────────┘    └──────────┘    └─────────────────────────┘
-```
-
-This means there are missing spaces before and after `+`. According to the standard, it should look like this:
 
 ```javascript
 const result = 1 + 3;
 ```
 
+The value was computed and stored in a variable, but then never used anywhere. The program works, but a line like this almost always means an error or unfinished code. The linter will report it:
+
+```text
+Code                    Linter          Result
+┌───────────────────┐   ┌────────┐   ┌──────────────────────────┐
+│ const result      │ → │ oxlint │ → │ eslint(no-unused-vars):  │
+│   = 1 + 3;        │   │        │   │ 'result' is never used   │
+└───────────────────┘   └────────┘   └──────────────────────────┘
+```
+
+## Formatting is checked by the formatter
+
+Placing spaces and indentation is a separate task, and the linter does not solve it. That is what a formatter is for, and in oxc it is [oxfmt](https://oxc.rs/docs/guide/usage/formatter.html). This code:
+
+```javascript
+const result = 1+ 3;
+```
+
+The formatter turns into this one:
+
+```javascript
+const result = 1 + 3;
+```
+
+That is the difference between the two tools. The formatter fixes formatting silently and automatically, while the linter reports problems that you will have to work through yourself.
+
+You will almost never have to place spaces by hand. But it is worth learning to notice them: that way you will remember faster what tidy code looks like, and start writing it that way from the beginning.
+
 ## Rules and their meaning
 
-Each linter message is tied to a specific rule. For example, some rules deal with spaces around operators, others with blank lines between code blocks, and still others with line length. When you are just starting out, such small things may seem unimportant. But over time it becomes clear that they are exactly what forms a single readable style.
+Each linter message is tied to a specific rule. Some rules forbid unused variables, others require comparing values with `===`, and still others limit the length of a function. When you are just starting out, such small things may seem unimportant. But over time it becomes clear that they are exactly what forms a single readable style.
 
-You can find the full list of Biome rules in the [official documentation](https://biomejs.dev/linter/rules/).
+You can find the full list of oxlint rules in the [official documentation](https://oxc.rs/docs/guide/usage/linter/rules.html).
 
 ## Using a linter in your own projects
 
