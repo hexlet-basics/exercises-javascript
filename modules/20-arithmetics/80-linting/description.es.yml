@@ -19,41 +19,53 @@ theory: |
 
   Un linter es una herramienta que analiza tu código e informa sobre las violaciones de los estándares. Te ayuda a:
 
-  - Eliminar los espacios sobrantes
-  - Mantener una indentación consistente
+  - Encontrar lugares sospechosos, por ejemplo una variable que declaraste y olvidaste usar
+  - Seguir las reglas acordadas en el equipo
   - Escribir expresiones legibles y limpias
 
-  ## Un linter moderno: Biome
+  ## Un linter moderno: oxlint
 
-  Hoy en día, uno de los linters más rápidos y populares para JavaScript es [Biome](https://biomejs.dev/). Combina un linter y un formateador en una sola herramienta, funciona rápido y se desarrolla activamente.
+  Hoy en día, uno de los linters más rápidos para JavaScript es [oxlint](https://oxc.rs/docs/guide/usage/linter.html). Está escrito en Rust, por eso revisa incluso proyectos grandes en fracciones de segundo.
 
   Veamos un ejemplo:
-
-  ```javascript
-  const result = 1+ 3;
-  ```
-
-  Este código se ve descuidado, y el linter señalará con razón el error. Así se ve el proceso de verificación:
-
-  ```text
-  Código              Linter            Resultado
-  ┌──────────────┐    ┌──────────┐    ┌─────────────────────────┐
-  │ const result │ →  │  Biome   │ →  │ lint/style/noShoutyConst│
-  │   = 1+ 3     │    │          │    │ missing whitespace       │
-  └──────────────┘    └──────────┘    └─────────────────────────┘
-  ```
-
-  Esto significa que faltan espacios antes y después de `+`. Según el estándar, debería verse así:
 
   ```javascript
   const result = 1 + 3;
   ```
 
+  El valor se calculó y se guardó en una variable, pero después no se usó en ninguna parte. El programa funciona, pero una línea así casi siempre significa un error o código sin terminar. El linter te avisará:
+
+  ```text
+  Código                  Linter          Resultado
+  ┌───────────────────┐   ┌────────┐   ┌──────────────────────────┐
+  │ const result      │ → │ oxlint │ → │ eslint(no-unused-vars):  │
+  │   = 1 + 3;        │   │        │   │ 'result' is never used   │
+  └───────────────────┘   └────────┘   └──────────────────────────┘
+  ```
+
+  ## El formato lo revisa el formateador
+
+  La colocación de espacios e indentación es una tarea aparte, y el linter no la resuelve. Para eso está el formateador, que en oxc es [oxfmt](https://oxc.rs/docs/guide/usage/formatter.html). Este código:
+
+  ```javascript
+  const result = 1+ 3;
+  ```
+
+  El formateador lo convierte en este otro:
+
+  ```javascript
+  const result = 1 + 3;
+  ```
+
+  Esa es la diferencia entre las dos herramientas. El formateador corrige el formato en silencio y de forma automática, mientras que el linter informa sobre problemas que tendrás que revisar tú.
+
+  Casi nunca tendrás que colocar los espacios a mano. Pero vale la pena aprender a notarlos con la vista: así recordarás más rápido cómo se ve un código prolijo y empezarás a escribirlo así desde el principio.
+
   ## Las reglas y su significado
 
-  Cada mensaje del linter está vinculado a una regla concreta. Por ejemplo, algunas reglas se refieren a los espacios alrededor de los operadores, otras a las líneas en blanco entre bloques de código y otras a la longitud de las líneas. Cuando recién empiezas, estos detalles pueden parecer poco importantes. Pero con el tiempo queda claro que son justamente ellos los que forman un estilo único y legible.
+  Cada mensaje del linter está vinculado a una regla concreta. Unas reglas prohíben las variables sin usar, otras exigen comparar valores con `===`, y otras limitan la longitud de una función. Cuando recién empiezas, estos detalles pueden parecer poco importantes. Pero con el tiempo queda claro que son justamente ellos los que forman un estilo único y legible.
 
-  Puedes consultar la lista completa de reglas de Biome en la [documentación oficial](https://biomejs.dev/linter/rules/).
+  Puedes consultar la lista completa de reglas de oxlint en la [documentación oficial](https://oxc.rs/docs/guide/usage/linter/rules.html).
 
   ## Uso del linter en tus propios proyectos
 
@@ -70,8 +82,10 @@ instructions: |
   El resultado debe seguir siendo `4`.
 
 tips:
-  - |
-    [Biome — un linter y formateador para JavaScript](https://biomejs.dev/)
+  - >
+    [oxlint, un linter para JavaScript](https://oxc.rs/docs/guide/usage/linter.html)
+  - >
+    [oxfmt, un formateador para JavaScript](https://oxc.rs/docs/guide/usage/formatter.html)
 
 definitions:
   - name: Linter

@@ -1,8 +1,10 @@
 ---
 name: Linter
 tips:
-  - |
-    [Biome — un linter y formateador para JavaScript](https://biomejs.dev/)
+  - >
+    [oxlint, un linter para JavaScript](https://oxc.rs/docs/guide/usage/linter.html)
+  - >
+    [oxfmt, un formateador para JavaScript](https://oxc.rs/docs/guide/usage/formatter.html)
 definitions:
   - name: Linter
     description: >-
