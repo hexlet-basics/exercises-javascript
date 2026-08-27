@@ -36,10 +36,10 @@ console.log("it's JavaScript"); // апостроф внутри, поэтому
 
 ```javascript
 console.log("it's JavaScript"
-console.log(it's JavaScript")
-consol.log("it's JavaScript")
-console.log('it's JavaScript")
-consolelog("it's JavaScript")
+console.log(it's JavaScript");
+consol.log("it's JavaScript");
+console.log('it's JavaScript");
+consolelog("it's JavaScript");
 ```
 
 Даже небольшое отличие, например одна лишняя буква или другой знак, может привести к тому, что программа не будет работать. Это относится и к регистру, то есть к различию между большими и маленькими буквами. Если в обычном тексте `Привет` и `привет` выглядят одинаково, то для JavaScript это разные слова. JavaScript считает `console.log`, `Console.Log` и `CONSOLE.LOG` разными командами, и сработает только первый вариант.
