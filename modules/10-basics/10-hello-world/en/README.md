@@ -7,13 +7,13 @@ Hello, World!
 This tradition is already more than forty years old, and we will start with it too. In the first lesson, we will write a `Hello, World!` program. In JavaScript, this program looks like this:
 
 ```javascript
-console.log('Hello, World!');
+console.log("Hello, World!");
 ```
 
 The `console.log()` command prints to the screen the text specified in parentheses. Instead of the example, you can write any other text.
 
 ```javascript
-console.log('Hexlet - programming school');
+console.log("Hexlet - programming school");
 ```
 
 The command stays the same, only the contents of the parentheses change. So that the program understands that this is exactly text, it is enclosed in quotes. You can use single `'...'` or double `"..."` quotes, but the opening and closing quotes must match.

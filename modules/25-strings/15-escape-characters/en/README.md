@@ -8,14 +8,14 @@ Suppose we want to print the text below across two lines.
 If we simply pass this text to `console.log()`, JavaScript will print everything on a single line. Technically, we could write two consecutive `console.log()` calls, but let's imagine we want to do it with a single one.
 
 ```javascript
-console.log('- Are you hungry?- Aaaarrrgh!');
+console.log("- Are you hungry?- Aaaarrrgh!");
 // => - Are you hungry?- Aaaarrrgh!
 ```
 
 For each of them to start on a new line, we need to add a line break, that is, to "press Enter". In programming, this is done by adding special characters, in this case `\n`. Yes, this is not a typo. Even though we see two characters here, from JavaScript's point of view this is a single character.
 
 ```javascript
-console.log('- Are you hungry?\n- Aaaarrrgh!');
+console.log("- Are you hungry?\n- Aaaarrrgh!");
 ```
 
 The result will be as follows.
@@ -53,19 +53,19 @@ On screen    Hello
 The position of `\n` changes the resulting output.
 
 ```javascript
-console.log('Hello\nWorld');
+console.log("Hello\nWorld");
 // Hello
 // World
 
-console.log('Hello \nWorld');
-// Hello 
+console.log("Hello \nWorld");
+// Hello
 // World  (there is a space at the end of the first line)
 
-console.log('Hello\n World');
+console.log("Hello\n World");
 // Hello
 //  World  (there is a space at the beginning of the second line)
 
-console.log('Hello\n\nWorld');
+console.log("Hello\n\nWorld");
 // Hello
 //
 // World  (an empty line between them)
@@ -76,9 +76,9 @@ Spaces before or after `\n` are also taken into account. JavaScript treats them 
 You can also insert `\n` into any part of the string, before, after, or even use it on its own.
 
 ```javascript
-console.log('First line');
-console.log('\n');          // just an empty line
-console.log('Second line');
+console.log("First line");
+console.log("\n"); // just an empty line
+console.log("Second line");
 ```
 
 The result will be as follows.
@@ -94,11 +94,11 @@ Second line
 `\n` in JavaScript is an escape sequence. It controls the placement of the text and is not displayed on screen like ordinary characters. If you need to print exactly the characters `\` and `n`, rather than a line break, you need to escape them. To do this, you add another slash before the backslash.
 
 ```javascript
-console.log('Hello\\nWorld');
+console.log("Hello\\nWorld");
 // Hello\nWorld
 
 // If you forget to add the second slash
-console.log('Hello\nWorld');
+console.log("Hello\nWorld");
 // Hello
 // World
 ```

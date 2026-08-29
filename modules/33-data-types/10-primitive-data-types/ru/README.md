@@ -24,15 +24,15 @@
 Пример вывода числа:
 
 ```javascript
-console.log(5);  // => 5
+console.log(5); // => 5
 console.log(-5); // => -5
 ```
 
 Пример вывода строки:
 
 ```javascript
-console.log('5');  // => 5
-console.log('-5'); // => -5
+console.log("5"); // => 5
+console.log("-5"); // => -5
 ```
 
 На экране результат выглядит одинаково, но внутри программы это совершенно разные вещи:
@@ -47,11 +47,11 @@ console.log('-5'); // => -5
 Во многих языках целые и дробные числа — это разные типы (например, в Python это `int` и `float`). В JavaScript такого деления нет: и целые, и дробные числа относятся к одному типу — `number`.
 
 ```javascript
-console.log(10.234);     // => 10.234
-console.log(-0.4);       // => -0.4
+console.log(10.234); // => 10.234
+console.log(-0.4); // => -0.4
 
-console.log(3.5 + 1.2);  // => 4.7
-console.log(5 / 2);      // => 2.5
+console.log(3.5 + 1.2); // => 4.7
+console.log(5 / 2); // => 2.5
 console.log(2.75 - 0.5); // => 2.25
 ```
 
@@ -75,11 +75,11 @@ console.log(2.75 - 0.5); // => 2.25
 Оператор `typeof` возвращает тип в виде строки:
 
 ```javascript
-console.log(typeof 42);        // => 'number'
-console.log(typeof 'hello');   // => 'string'
-console.log(typeof true);      // => 'boolean'
+console.log(typeof 42); // => 'number'
+console.log(typeof "hello"); // => 'string'
+console.log(typeof true); // => 'boolean'
 console.log(typeof undefined); // => 'undefined'
-console.log(typeof null);      // => 'object'  (историческая ошибка JS)
+console.log(typeof null); // => 'object'  (историческая ошибка JS)
 ```
 
 Существуют и составные типы — массивы, объекты и другие. С ними мы познакомимся позже. Более того, в JavaScript можно создавать и свои собственные типы (например, классы), но для начала важно хорошо разобраться с примитивами.

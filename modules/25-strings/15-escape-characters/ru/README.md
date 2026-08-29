@@ -8,14 +8,14 @@
 Если мы просто передадим этот текст в `console.log()`, то JavaScript напечатает всё в одну строчку. Технически можно написать два подряд идущих `console.log()`, но представим, что мы хотим это сделать с помощью одного.
 
 ```javascript
-console.log('- Are you hungry?- Aaaarrrgh!');
+console.log("- Are you hungry?- Aaaarrrgh!");
 // => - Are you hungry?- Aaaarrrgh!
 ```
 
 Чтобы каждая из них начиналась с новой строки, нужно добавить перевод строки, то есть «нажать Enter». В программировании это реализуется через добавление специальных символов, в данном случае `\n`. Да, это не опечатка. Несмотря на то, что мы видим здесь два символа, с точки зрения JavaScript это один символ.
 
 ```javascript
-console.log('- Are you hungry?\n- Aaaarrrgh!');
+console.log("- Are you hungry?\n- Aaaarrrgh!");
 ```
 
 Результат будет таким.
@@ -53,19 +53,19 @@ console.log('- Are you hungry?\n- Aaaarrrgh!');
 Местоположение `\n` меняет итоговый вывод.
 
 ```javascript
-console.log('Hello\nWorld');
+console.log("Hello\nWorld");
 // Hello
 // World
 
-console.log('Hello \nWorld');
-// Hello 
+console.log("Hello \nWorld");
+// Hello
 // World  (в конце первой строки есть пробел)
 
-console.log('Hello\n World');
+console.log("Hello\n World");
 // Hello
 //  World  (во второй строке в начале пробел)
 
-console.log('Hello\n\nWorld');
+console.log("Hello\n\nWorld");
 // Hello
 //
 // World  (пустая строка между ними)
@@ -76,9 +76,9 @@ console.log('Hello\n\nWorld');
 Вы также можете вставлять `\n` в любую часть строки, до, после или даже использовать его отдельно.
 
 ```javascript
-console.log('First line');
-console.log('\n');          // просто пустая строка
-console.log('Second line');
+console.log("First line");
+console.log("\n"); // просто пустая строка
+console.log("Second line");
 ```
 
 Результат будет таким.
@@ -94,11 +94,11 @@ Second line
 `\n` в JavaScript является управляющей последовательностью. Она управляет расположением текста и не выводится на экран как обычные символы. Если вам нужно вывести именно символы `\` и `n`, а не перевод строки, их нужно экранировать. Для этого перед обратным слешем добавляют ещё один слеш.
 
 ```javascript
-console.log('Hello\\nWorld');
+console.log("Hello\\nWorld");
 // Hello\nWorld
 
 // Если забыть указать второй слеш
-console.log('Hello\nWorld');
+console.log("Hello\nWorld");
 // Hello
 // World
 ```

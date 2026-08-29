@@ -8,14 +8,14 @@ Supongamos que queremos mostrar el texto de abajo en dos líneas.
 Si simplemente pasamos este texto a `console.log()`, JavaScript imprimirá todo en una sola línea. Técnicamente, podríamos escribir dos llamadas consecutivas a `console.log()`, pero imaginemos que queremos hacerlo con una sola.
 
 ```javascript
-console.log('- Are you hungry?- Aaaarrrgh!');
+console.log("- Are you hungry?- Aaaarrrgh!");
 // => - Are you hungry?- Aaaarrrgh!
 ```
 
 Para que cada una de ellas empiece en una nueva línea, necesitamos agregar un salto de línea, es decir, "presionar Enter". En programación, esto se hace agregando caracteres especiales, en este caso `\n`. Sí, no es un error de escritura. A pesar de que aquí vemos dos caracteres, desde el punto de vista de JavaScript es un solo carácter.
 
 ```javascript
-console.log('- Are you hungry?\n- Aaaarrrgh!');
+console.log("- Are you hungry?\n- Aaaarrrgh!");
 ```
 
 El resultado será el siguiente.
@@ -53,19 +53,19 @@ En pantalla    Hello
 La posición de `\n` cambia la salida final.
 
 ```javascript
-console.log('Hello\nWorld');
+console.log("Hello\nWorld");
 // Hello
 // World
 
-console.log('Hello \nWorld');
-// Hello 
+console.log("Hello \nWorld");
+// Hello
 // World  (al final de la primera línea hay un espacio)
 
-console.log('Hello\n World');
+console.log("Hello\n World");
 // Hello
 //  World  (al principio de la segunda línea hay un espacio)
 
-console.log('Hello\n\nWorld');
+console.log("Hello\n\nWorld");
 // Hello
 //
 // World  (una línea vacía entre ellas)
@@ -76,9 +76,9 @@ Los espacios antes o después de `\n` también se tienen en cuenta. JavaScript l
 También puedes insertar `\n` en cualquier parte de la cadena, antes, después, o incluso usarlo por sí solo.
 
 ```javascript
-console.log('First line');
-console.log('\n');          // simplemente una línea vacía
-console.log('Second line');
+console.log("First line");
+console.log("\n"); // simplemente una línea vacía
+console.log("Second line");
 ```
 
 El resultado será el siguiente.
@@ -94,11 +94,11 @@ Second line
 `\n` en JavaScript es una secuencia de escape. Controla la disposición del texto y no se muestra en pantalla como los caracteres ordinarios. Si necesitas mostrar precisamente los caracteres `\` y `n`, en lugar de un salto de línea, hay que escaparlos. Para ello, se agrega otra barra antes de la barra invertida.
 
 ```javascript
-console.log('Hello\\nWorld');
+console.log("Hello\\nWorld");
 // Hello\nWorld
 
 // Si te olvidas de indicar la segunda barra
-console.log('Hello\nWorld');
+console.log("Hello\nWorld");
 // Hello
 // World
 ```

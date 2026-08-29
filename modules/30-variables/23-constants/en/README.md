@@ -27,7 +27,7 @@ maxLoginAttempts = 5; // TypeError: Assignment to constant variable.
 ## const vs let
 
 ```javascript
-let score = 0;   // will change
+let score = 0; // will change
 const lives = 3; // does not change
 ```
 
@@ -43,7 +43,7 @@ Technically, any variable declared with `const` is already a constant. But for g
 ```javascript
 const MAX_USERS = 100;
 const DEFAULT_TIMEOUT = 30;
-const DEFAULT_LANGUAGE = 'ru';
+const DEFAULT_LANGUAGE = "ru";
 ```
 
 This is not a language requirement but a signal to the reader: such a value should not change under any circumstances.

@@ -20,9 +20,9 @@ Para que estos cálculos sean más claros, las variables pueden usarse dentro de
 Cualquier valor que se pueda calcular es una expresión. A una variable se le puede asignar una expresión, no solo un valor ya preparado.
 
 ```javascript
-const sum = 3 + 4;          // => 7
-const text = 'Hello' + '!'; // => 'Hello!'
-const doubled = sum * 2;    // => 14
+const sum = 3 + 4; // => 7
+const text = "Hello" + "!"; // => 'Hello!'
+const doubled = sum * 2; // => 14
 ```
 
 JavaScript primero evalúa la expresión a la derecha de `=`, y luego guarda el resultado en la variable a la izquierda.

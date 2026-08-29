@@ -26,7 +26,7 @@
 Стандартом для переменных в JavaScript является **lowerCamelCase**: первое слово строчными буквами, каждое последующее — с заглавной.
 
 ```javascript
-const userName = 'Daenerys';
+const userName = "Daenerys";
 const maxLength = 280;
 const totalOrdersCount = 17;
 ```

@@ -1,8 +1,8 @@
 Imagina que necesitas imprimir la frase `Father!` dos veces:
 
 ```javascript
-console.log('Father!');
-console.log('Father!');
+console.log("Father!");
+console.log("Father!");
 ```
 
 Este enfoque funciona bien si la frase aparece solo un par de veces. Pero ¿qué pasa si se utiliza con frecuencia, en diferentes partes del programa? Entonces tendrías que copiar la misma expresión una y otra vez.
@@ -14,7 +14,7 @@ Este enfoque funciona bien si la frase aparece solo un par de veces. Pero ¿qué
 Para no duplicar la misma cadena, puedes guardarla en una variable e imprimir su contenido:
 
 ```javascript
-const greeting = 'Father!';
+const greeting = "Father!";
 
 console.log(greeting);
 console.log(greeting);
@@ -57,8 +57,8 @@ En JavaScript, una variable debe declararse antes de usarse con una de las palab
 - `let` — para valores que pueden cambiar durante la ejecución del programa.
 
 ```javascript
-const greeting = 'Father!'; // no cambiará
-let score = 0;              // cambiará a medida que se ejecuta el programa
+const greeting = "Father!"; // no cambiará
+let score = 0; // cambiará a medida que se ejecuta el programa
 ```
 
 Si no sabes si el valor cambiará, usa `const`. Esta es una buena práctica: el código es más fácil de leer y más difícil de dañar accidentalmente. Volveremos a `let` y a las constantes en lecciones separadas.
@@ -78,9 +78,9 @@ Ejemplos de nombres válidos: `greeting`, `name1`, `helloWorld`. JavaScript dist
 En el código es importante distinguir dónde usamos una variable y dónde escribimos un valor directamente. Esto es especialmente notable en el ejemplo con `console.log()`:
 
 ```javascript
-const greeting = 'Mother!';
-console.log(greeting);   // => Mother!
-console.log('greeting'); // => greeting
+const greeting = "Mother!";
+console.log(greeting); // => Mother!
+console.log("greeting"); // => greeting
 ```
 
 En el primer caso se usa la **variable** `greeting`, y el programa sustituye su valor. En el segundo caso `'greeting'` está entre comillas, por lo que es un **literal de cadena**, es decir, un valor ya hecho escrito directamente en el código. Aunque vemos la palabra `greeting` en ambos casos, desde el punto de vista del motor son cosas completamente diferentes.
@@ -94,13 +94,13 @@ Una variable primero debe crearse (declararse y asignarle un valor), y solo desp
 ```javascript
 console.log(name); // Error: la variable aún no está definida
 // ReferenceError: Cannot access 'name' before initialization
-const name = 'Alice';
+const name = "Alice";
 ```
 
 Pero en el orden correcto todo funciona:
 
 ```javascript
-const name = 'Alice';
+const name = "Alice";
 console.log(name); // => Alice
 ```
 
@@ -109,11 +109,11 @@ console.log(name); // => Alice
 En un solo programa puedes crear tantas variables como quieras. Cada una almacena sus propios datos y no interfiere con las demás:
 
 ```javascript
-const greeting1 = 'Father!';
+const greeting1 = "Father!";
 console.log(greeting1);
 console.log(greeting1);
 
-const greeting2 = 'Mother!';
+const greeting2 = "Mother!";
 console.log(greeting2);
 console.log(greeting2);
 ```
@@ -131,7 +131,7 @@ El orden de las instrucciones en el código con variables es de enorme importanc
 ```javascript
 // Uncaught ReferenceError: greeting is not defined
 console.log(greeting);
-let greeting = 'Father!';
+let greeting = "Father!";
 ```
 
 La ejecución de un programa con el código del ejemplo anterior termina con el error `ReferenceError: greeting is not defined`. `ReferenceError` es un error de referencia. Significa que el código usa un nombre (identificador) que no está definido. El mensaje lo dice directamente: `greeting is not defined`.
@@ -141,8 +141,8 @@ Además del orden incorrecto de definición, en JavaScript también se dan errat
 Otro error común es intentar declarar una variable ya declarada con `let`:
 
 ```javascript
-let greeting = 'Father!';
-let greeting = 'Father!'; // SyntaxError: Identifier 'greeting' has already been declared
+let greeting = "Father!";
+let greeting = "Father!"; // SyntaxError: Identifier 'greeting' has already been declared
 ```
 
 No se puede declarar una variable dos veces. Si necesitas un valor diferente — crea una nueva variable con un nombre diferente, o simplemente reasigna el valor de una variable `let` existente sin la palabra clave.

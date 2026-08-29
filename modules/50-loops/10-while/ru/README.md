@@ -11,7 +11,7 @@
 ```javascript
 let counter = 0;
 while (counter < 5) {
-  console.log('Hello!');
+  console.log("Hello!");
   counter = counter + 1;
 }
 
@@ -54,11 +54,11 @@ counter = 0
 ```javascript
 let counter = 0;
 while (counter < 2) {
-  console.log('Hello!');
+  console.log("Hello!");
   counter = counter + 1;
 }
 
-console.log('End of loop');
+console.log("End of loop");
 ```
 
 Здесь `console.log('Hello!')` и `counter = counter + 1` находятся внутри цикла, а `console.log('End of loop')` стоит за его пределами, поэтому выполнится один раз после завершения цикла.
@@ -74,7 +74,7 @@ const printNumbers = (n) => {
     console.log(i);
     i = i + 1;
   }
-  console.log('Finished!');
+  console.log("Finished!");
 };
 
 printNumbers(3);

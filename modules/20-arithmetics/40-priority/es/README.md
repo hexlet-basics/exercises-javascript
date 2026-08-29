@@ -28,7 +28,7 @@ console.log(2 * 2 ** 3); // => 16, porque primero 2 ** 3 = 8, luego 8 * 2 = 16
 Si hay operaciones con la misma prioridad una al lado de la otra, se ejecutan de izquierda a derecha:
 
 ```javascript
-console.log(8 / 2 * 3); // => 12, porque primero 8 / 2 = 4, luego 4 * 3 = 12
+console.log((8 / 2) * 3); // => 12, porque primero 8 / 2 = 4, luego 4 * 3 = 12
 ```
 
 ## Controlar el orden de las operaciones
@@ -42,8 +42,8 @@ console.log((2 + 2) * 2); // => 8
 Los paréntesis se pueden colocar alrededor de cualquier parte de una expresión y anidarse unos dentro de otros:
 
 ```javascript
-console.log(3 ** (4 - 2));                       // => 9
-console.log(7 * 3 + (4 / 2) - (8 + (2 - 1)));   // => 14
+console.log(3 ** (4 - 2)); // => 9
+console.log(7 * 3 + 4 / 2 - (8 + (2 - 1))); // => 14
 ```
 
 La regla principal: cierra siempre los paréntesis. Los paréntesis sin pareja provocan errores: tanto los principiantes como los programadores experimentados a veces olvidan el paréntesis de cierre.
@@ -56,10 +56,10 @@ A veces una expresión funciona correctamente, pero se ve confusa. En esos casos
 
 ```javascript
 // Antes
-console.log(8 / 2 + 5 - -3 / 2);         // => 10.5
+console.log(8 / 2 + 5 - -3 / 2); // => 10.5
 
 // Después
-console.log(((8 / 2) + 5) - (-3 / 2));   // => 10.5
+console.log(8 / 2 + 5 - -3 / 2); // => 10.5
 ```
 
 Los programas los escriben personas, y también los leen personas. A la computadora no le importa lo comprensible que sea el código: solo necesita que sea sintácticamente correcto. Para una persona, un código claro y ordenado es la clave de la comodidad, especialmente cuando se trabaja en equipo o se depuran errores.

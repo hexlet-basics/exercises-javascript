@@ -13,7 +13,7 @@ const printNameBySymbol = (name) => {
   }
 };
 
-const name = 'Arya';
+const name = "Arya";
 printNameBySymbol(name);
 // => A
 // => r
@@ -39,7 +39,7 @@ En lugar de imprimir, puedes construir una nueva cadena. Por ejemplo, escribamos
 
 ```javascript
 const reverseString = (text) => {
-  let result = '';
+  let result = "";
   let i = text.length - 1;
   while (i >= 0) {
     result = `${result}${text[i]}`;
@@ -48,8 +48,8 @@ const reverseString = (text) => {
   return result;
 };
 
-console.log(reverseString('Arya'));   // => ayrA
-console.log(reverseString('hexlet')); // => telxeh
+console.log(reverseString("Arya")); // => ayrA
+console.log(reverseString("hexlet")); // => telxeh
 ```
 
 La variable `result` se inicializa con una cadena vacía como elemento neutro para la concatenación. El bucle comienza en el último índice (`text.length - 1`), avanza hacia cero y termina cuando el índice se vuelve menor que cero. En cada paso, el carácter actual se añade al resultado, y la cadena se construye en orden inverso.

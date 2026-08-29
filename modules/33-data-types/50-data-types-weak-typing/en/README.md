@@ -3,7 +3,7 @@ We know about two different data types: numbers and strings. We can, for example
 But what if we apply this operation not to two numbers, but to a number and a string?
 
 ```javascript
-console.log(1 + '7'); // => 17
+console.log(1 + "7"); // => 17
 ```
 
 Even though `'7'` is a string and not a number, the JavaScript interpreter returned the answer `'17'`, as if we were adding two strings. When JavaScript sees a type mismatch, it tries to convert the information on its own. In this case, it converted the number `1` into the string `'1'`, and then calmly concatenated `'1'` and `'7'`.
@@ -15,7 +15,7 @@ Not all languages do this. JavaScript is a language with **weak typing**. It kno
 Sometimes JavaScript goes to extremes. Most expressions that don't work in other languages do work in JavaScript. Try performing any arithmetic operation other than addition, substituting strings into it — you'll see that the code runs and returns `NaN` (Not a Number):
 
 ```javascript
-console.log('one' * 'two'); // => NaN
+console.log("one" * "two"); // => NaN
 ```
 
 ```text

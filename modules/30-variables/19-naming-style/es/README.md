@@ -26,7 +26,7 @@ Estos son algunos enfoques populares para escribir nombres compuestos:
 El estándar para las variables en JavaScript es **lowerCamelCase**: la primera palabra en minúsculas y cada palabra siguiente con mayúscula inicial.
 
 ```javascript
-const userName = 'Daenerys';
+const userName = "Daenerys";
 const maxLength = 280;
 const totalOrdersCount = 17;
 ```

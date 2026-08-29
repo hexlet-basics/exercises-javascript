@@ -3,10 +3,10 @@ Implement the `compress(str)` function that compresses a string using RLE (Run-L
 Algorithm: if a character repeats consecutively, replace it with the character and the count. Single characters are written without a number.
 
 ```javascript
-compress('aaabcccc'); // => 'a3bc4'
-compress('abcd');      // => 'abcd'
-compress('aabbaa');    // => 'a2b2a2'
-compress('');          // => ''
+compress("aaabcccc"); // => 'a3bc4'
+compress("abcd"); // => 'abcd'
+compress("aabbaa"); // => 'a2b2a2'
+compress(""); // => ''
 ```
 
 This algorithm is used in real compression formats — for example, in old fax protocols and BMP files.

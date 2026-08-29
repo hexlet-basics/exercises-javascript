@@ -34,7 +34,7 @@ const isPrime = (number) => {
   }
 
   return true;
-}
+};
 
 isPrime(1); // false
 isPrime(2); // true

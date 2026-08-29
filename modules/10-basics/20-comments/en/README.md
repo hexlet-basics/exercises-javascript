@@ -22,7 +22,7 @@ A comment can take up the whole line. If one line is not enough, several comment
 A comment can be placed on a line after some code:
 
 ```javascript
-console.log('I am the King'); // For Lannisters!
+console.log("I am the King"); // For Lannisters!
 ```
 
 ## Multi-line comments
@@ -34,7 +34,7 @@ console.log('I am the King'); // For Lannisters!
   The night is dark and
   full of terrors.
 */
-console.log('I am the King');
+console.log("I am the King");
 ```
 
 Such comments are usually used for documenting code, for example, functions.

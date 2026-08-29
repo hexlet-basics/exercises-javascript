@@ -31,7 +31,8 @@ const sumNumbersFromRange = (start, finish) => {
   let i = start;
   let sum = 0; // Initializing the sum
 
-  while (i <= finish) { // Moving to the end of the range
+  while (i <= finish) {
+    // Moving to the end of the range
     sum = sum + i; // Computing the sum for each number
     i = i + 1; // Moving to the next number in the range
   }

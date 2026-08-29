@@ -3,6 +3,6 @@ During registration on a website, the program checks that the password is long e
 Example usage:
 
 ```javascript
-isLongWord('apple');  // => false
-isLongWord('banana'); // => true
+isLongWord("apple"); // => false
+isLongWord("banana"); // => true
 ```

@@ -4,7 +4,7 @@
 Представьте себе функцию, которая умеет «умножать» строку, то есть она повторяет её указанное количество раз:
 
 ```javascript
-repeat('hexlet', 3); // hexlethexlethexlet
+repeat("hexlet", 3); // hexlethexlethexlet
 ```
 
 Принцип работы этой функции довольно простой: в цикле происходит «наращивание» строки указанное количество раз:
@@ -12,7 +12,7 @@ repeat('hexlet', 3); // hexlethexlethexlet
 ```javascript
 const repeat = (text, times) => {
   // Нейтральный элемент для строк – пустая строка
-  let result = '';
+  let result = "";
   let i = 1;
 
   while (i <= times) {
@@ -29,7 +29,7 @@ const repeat = (text, times) => {
 
 ```javascript
 // Для вызова repeat('hexlet', 3);
-let result = '';
+let result = "";
 result = `${result}hexlet`; // hexlet
 result = `${result}hexlet`; // hexlethexlet
 result = `${result}hexlet`; // hexlethexlethexlet
@@ -53,8 +53,8 @@ i=3: result = 'hexlethexlet' + 'hexlet' = 'hexlethexlethexlet'
 Она называется нейтральным элементом, потому что при конкатенации ничего не меняет:
 
 ```javascript
-console.log('' + 'abc'); // => abc
-console.log('abc' + ''); // => abc
+console.log("" + "abc"); // => abc
+console.log("abc" + ""); // => abc
 ```
 
 Поэтому именно пустая строка всегда используется как начальное значение при агрегации строк.

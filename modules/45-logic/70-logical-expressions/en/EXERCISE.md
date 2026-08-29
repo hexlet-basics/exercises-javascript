@@ -4,7 +4,7 @@ Write a function, `getLetter()`, to extract a certain character (by ordinal numb
 Examples:
 
 ```javascript
-const name = 'Hexlet';
+const name = "Hexlet";
 
 // Such a call returns undefined
 name[10]; // undefined

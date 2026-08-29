@@ -9,13 +9,13 @@ Hello, World!
 Esta tradición tiene ya más de cuarenta años, y nosotros también comenzaremos con ella. En la primera lección escribiremos un programa `Hello, World!`. En JavaScript, este programa se ve así:
 
 ```javascript
-console.log('Hello, World!');
+console.log("Hello, World!");
 ```
 
 El comando `console.log()` muestra en la pantalla el texto indicado entre paréntesis. En lugar del ejemplo puedes escribir cualquier otro texto.
 
 ```javascript
-console.log('Hexlet - escuela de programación');
+console.log("Hexlet - escuela de programación");
 ```
 
 El comando sigue siendo el mismo, solo cambia el contenido entre paréntesis. Para que el programa entienda que se trata precisamente de texto, este se encierra entre comillas. Puedes usar comillas simples `'...'` o dobles `"..."`, pero las comillas de apertura y de cierre deben coincidir.

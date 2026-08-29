@@ -13,9 +13,9 @@ const isStrongPassword = (password) => {
   return length > 8 && length < 20;
 };
 
-isStrongPassword('qwerty'); // false
-isStrongPassword('qwerty1234'); // true
-isStrongPassword('zxcvbnmasdfghjkqwertyui'); // false
+isStrongPassword("qwerty"); // false
+isStrongPassword("qwerty1234"); // true
+isStrongPassword("zxcvbnmasdfghjkqwertyui"); // false
 ```
 
 `&&` significa "Y" (en lógica matemática se llama conjunción). La expresión completa sólo se considera verdadera cuando cada operando es verdadero, es decir, cada una de las expresiones compuestas. En otras palabras, `&&` significa "y esto, y aquello".
@@ -43,17 +43,17 @@ Escribamos una función que verifique el apartamento. Toma dos argumentos: el á
 ```javascript
 const isGoodApartment = (area, street) => {
   // Usamos una variable para que la función no sea demasiado larga
-  const result = area >= 100 || (area >= 80 && street === 'Main Street');
+  const result = area >= 100 || (area >= 80 && street === "Main Street");
   return result;
 };
 
-isGoodApartment(91, 'Queens Street'); // false
-isGoodApartment(78, 'Queens Street'); // false
-isGoodApartment(70, 'Main Street');   // false
+isGoodApartment(91, "Queens Street"); // false
+isGoodApartment(78, "Queens Street"); // false
+isGoodApartment(70, "Main Street"); // false
 
-isGoodApartment(120, 'Queens Street'); // true
-isGoodApartment(120, 'Main Street');   // true
-isGoodApartment(80, 'Main Street');    // true
+isGoodApartment(120, "Queens Street"); // true
+isGoodApartment(120, "Main Street"); // true
+isGoodApartment(80, "Main Street"); // true
 ```
 
 El área de las matemáticas que estudia los operadores lógicos se llama álgebra booleana. A continuación se muestran las "tablas de verdad" que permiten determinar el resultado de la aplicación de un operador:
@@ -71,10 +71,10 @@ Algunos ejemplos:
 
 ```javascript
 // true && true;
-3 > 2 && 'wow'.startsWith('w'); // true
+3 > 2 && "wow".startsWith("w"); // true
 
 // true && false;
-'start' === 'start' && 8 < 3; // false
+"start" === "start" && 8 < 3; // false
 ```
 
 ## O `||`
@@ -90,8 +90,8 @@ Algunos ejemplos:
 
 ```javascript
 // true || true;
-3 > 2 || 'wow'.startsWith('w'); // true
+3 > 2 || "wow".startsWith("w"); // true
 
 // false || false;
-'start' === 'Start' || 3 < 3; // false
+"start" === "Start" || 3 < 3; // false
 ```

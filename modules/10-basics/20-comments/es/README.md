@@ -22,7 +22,7 @@ Un comentario puede ocupar toda una línea. Si una línea no es suficiente, se p
 Un comentario puede estar en una línea después de algún código:
 
 ```javascript
-console.log('I am the King'); // For Lannisters!
+console.log("I am the King"); // For Lannisters!
 ```
 
 ## Comentarios de varias líneas
@@ -34,7 +34,7 @@ Los *comentarios de varias líneas* comienzan con `/*` y terminan con `*/`.
   The night is dark and
   full of terrors.
 */
-console.log('I am the King');
+console.log("I am the King");
 ```
 
 Estos comentarios generalmente se utilizan para la documentación del código, por ejemplo, en el caso de las funciones.

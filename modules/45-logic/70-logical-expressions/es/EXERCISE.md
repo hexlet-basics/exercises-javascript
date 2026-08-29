@@ -4,7 +4,7 @@ Implementa la función `getLetter()`, que extrae el carácter especificado (por 
 Ejemplos de uso:
 
 ```javascript
-const name = 'Hexlet';
+const name = "Hexlet";
 
 // El acceso normal devuelve undefined
 name[10]; // undefined

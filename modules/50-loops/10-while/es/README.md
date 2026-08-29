@@ -11,7 +11,7 @@ En el ejemplo, el contador se llama `counter`. Antes del bucle es igual a `0`. D
 ```javascript
 let counter = 0;
 while (counter < 5) {
-  console.log('Hello!');
+  console.log("Hello!");
   counter = counter + 1;
 }
 
@@ -54,11 +54,11 @@ El cuerpo del bucle incluye todo lo que está dentro de las llaves. El código p
 ```javascript
 let counter = 0;
 while (counter < 2) {
-  console.log('Hello!');
+  console.log("Hello!");
   counter = counter + 1;
 }
 
-console.log('End of loop');
+console.log("End of loop");
 ```
 
 Aquí `console.log('Hello!')` y `counter = counter + 1` están dentro del bucle, mientras que `console.log('End of loop')` está fuera de él, por lo que se ejecuta una vez después de que el bucle termina.
@@ -74,7 +74,7 @@ const printNumbers = (n) => {
     console.log(i);
     i = i + 1;
   }
-  console.log('Finished!');
+  console.log("Finished!");
 };
 
 printNumbers(3);

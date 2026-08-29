@@ -20,9 +20,9 @@ To make such calculations clearer, variables can be used inside other expression
 Any computable value is an expression. You can assign an expression to a variable, not just a ready-made value.
 
 ```javascript
-const sum = 3 + 4;          // => 7
-const text = 'Hello' + '!'; // => 'Hello!'
-const doubled = sum * 2;    // => 14
+const sum = 3 + 4; // => 7
+const text = "Hello" + "!"; // => 'Hello!'
+const doubled = sum * 2; // => 14
 ```
 
 JavaScript first evaluates the expression to the right of `=`, and then saves the result in the variable on the left.

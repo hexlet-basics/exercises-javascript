@@ -3,11 +3,11 @@ En la programación en JavaScript, las cadenas de texto se utilizan con mucha fr
 Desde el punto de vista de JavaScript, una cadena de texto es simplemente un conjunto de caracteres encerrado entre comillas. Veamos algunos ejemplos.
 
 ```javascript
-'Hello'
-'Goodbye'
-'G'
-' '
-''
+"Hello";
+"Goodbye";
+"G";
+" ";
+"";
 ```
 
 Todas estas opciones son cadenas de texto.
@@ -23,8 +23,8 @@ Si mostramos las cadenas en la pantalla, `'Hello'` y `'Goodbye'` se verán clara
 Pregunta de control. ¿Son estas las mismas cadenas o no?
 
 ```javascript
-'hexlet'
-' hexlet'
+"hexlet";
+" hexlet";
 ```
 
 ## Terminología. ¿Cadena o línea?
@@ -50,7 +50,7 @@ Para evitar confusiones, en este curso usaremos las siguientes formulaciones.
 En JavaScript, las cadenas de texto se pueden escribir tanto entre comillas simples como entre comillas dobles.
 
 ```javascript
-console.log('Hello');
+console.log("Hello");
 console.log("Hello");
 ```
 
@@ -88,7 +88,7 @@ Dragon's mother said "No"
 En este caso, para que JavaScript no confunda las comillas dentro de la cadena con las exteriores, se utiliza el carácter de escape: la barra invertida `\`. Le indica al intérprete que el carácter que la sigue es parte de la cadena y no un carácter de control.
 
 ```javascript
-console.log("Dragon's mother said \"No\"");
+console.log('Dragon\'s mother said "No"');
 // => Dragon's mother said "No"
 ```
 

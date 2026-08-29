@@ -13,7 +13,7 @@ const printNameBySymbol = (name) => {
   }
 };
 
-const name = 'Arya';
+const name = "Arya";
 printNameBySymbol(name);
 // => A
 // => r
@@ -39,7 +39,7 @@ Instead of printing, you can build a new string. For example, let's write a func
 
 ```javascript
 const reverseString = (text) => {
-  let result = '';
+  let result = "";
   let i = text.length - 1;
   while (i >= 0) {
     result = `${result}${text[i]}`;
@@ -48,8 +48,8 @@ const reverseString = (text) => {
   return result;
 };
 
-console.log(reverseString('Arya'));   // => ayrA
-console.log(reverseString('hexlet')); // => telxeh
+console.log(reverseString("Arya")); // => ayrA
+console.log(reverseString("hexlet")); // => telxeh
 ```
 
 The `result` variable is initialized with an empty string as a neutral element for concatenation. The loop starts at the last index (`text.length - 1`), moves toward zero, and ends when the index becomes less than zero. At each step, the current character is added to the result — and the string is built in reverse order.

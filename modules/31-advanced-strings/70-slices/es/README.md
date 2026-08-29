@@ -14,7 +14,7 @@ Supongamos que tenemos una cadena con la fecha `'12-08-2034'`. Queremos obtener 
 El año empieza en el índice 6 y termina en el 9. Para extraerlo usamos `slice()`:
 
 ```javascript
-const value = '12-08-2034';
+const value = "12-08-2034";
 const year = value.slice(6, 10);
 console.log(year); // => 2034
 ```
@@ -30,11 +30,11 @@ cadena.slice(inicio, fin)
 El carácter cuyo índice se indica como «fin» no se incluye. Se puede entender como el número del carácter ante el cual hay que detenerse.
 
 ```javascript
-const value = 'code-basics';
+const value = "code-basics";
 
 console.log(value.slice(5, 11)); // => basics (del índice 5 al 10)
-console.log(value.slice(0, 7));  // => code-ba (del índice 0 al 6)
-console.log(value.slice(2, 6));  // => de-b
+console.log(value.slice(0, 7)); // => code-ba (del índice 0 al 6)
+console.log(value.slice(2, 6)); // => de-b
 ```
 
 ## El corte devuelve una cadena
@@ -42,10 +42,10 @@ console.log(value.slice(2, 6));  // => de-b
 `slice()` siempre devuelve una cadena, incluso si dentro solo hay dígitos. Eso significa que el resultado se puede usar como una cadena normal: concatenarlo, mostrarlo, pasarlo a funciones y volver a cortarlo:
 
 ```javascript
-const value = '01-12-9873';
+const value = "01-12-9873";
 
 const part = value.slice(3, 7); // => 12-9
-console.log(part.slice(0, 2));  // => 12
+console.log(part.slice(0, 2)); // => 12
 ```
 
 Primero obtuvimos la subcadena `'12-9'`, y después hicimos de ella un nuevo corte, `'12'`.
@@ -55,11 +55,11 @@ Primero obtuvimos la subcadena `'12-9'`, y después hicimos de ella un nuevo cor
 Si no se indica el segundo argumento, `slice()` devolverá todo desde el índice inicial hasta el final de la cadena. Y `slice(0)` o `slice()` sin argumentos devolverá la cadena completa:
 
 ```javascript
-const value = 'Hexlet';
+const value = "Hexlet";
 
-console.log(value.slice(3));  // => let     // del carácter 3 al final
+console.log(value.slice(3)); // => let     // del carácter 3 al final
 console.log(value.slice(0, 3)); // => Hex   // del principio al carácter 3
-console.log(value.slice());   // => Hexlet  // la cadena completa
+console.log(value.slice()); // => Hexlet  // la cadena completa
 ```
 
 ## Índices negativos
@@ -67,11 +67,11 @@ console.log(value.slice());   // => Hexlet  // la cadena completa
 `slice()` también sabe contar desde el final de la cadena. Para eso se usan índices negativos: `-1` corresponde al último carácter, `-2` al penúltimo y así sucesivamente. Es cómodo cuando no se conoce de antemano la longitud de la cadena, pero hay que tomar la «cola» o la «parte media» respecto al final:
 
 ```javascript
-const value = 'Hexlet';
+const value = "Hexlet";
 
-console.log(value.slice(-1));   // => t   // el último carácter
+console.log(value.slice(-1)); // => t   // el último carácter
 console.log(value.slice(3, -1)); // => le // del 3 al penúltimo
-console.log(value.slice(-3));   // => let // los últimos tres caracteres
+console.log(value.slice(-3)); // => let // los últimos tres caracteres
 ```
 
 ## Corte con variables
@@ -82,7 +82,7 @@ Los límites del corte no tienen que estar fijados con números. Se pueden usar 
 const start = 1;
 const end = 5;
 
-const value = 'Hexlet';
+const value = "Hexlet";
 console.log(value.slice(start, end)); // => exle
 ```
 
@@ -97,14 +97,14 @@ Existe también un método parecido, `substring()`. Funciona casi como `slice()`
 ## Chuleta rápida
 
 ```javascript
-const value = 'Hexlet';
+const value = "Hexlet";
 
-value.slice();      // Hexlet  — la cadena completa
-value.slice(0);     // Hexlet
-value.slice(5);     // t
-value.slice(0, 5);  // Hexle
-value.slice(-1);    // t       — el último carácter
-value.slice(-3);    // let     — los últimos tres caracteres
+value.slice(); // Hexlet  — la cadena completa
+value.slice(0); // Hexlet
+value.slice(5); // t
+value.slice(0, 5); // Hexle
+value.slice(-1); // t       — el último carácter
+value.slice(-3); // let     — los últimos tres caracteres
 value.slice(2, -1); // xle     — del tercero al penúltimo
 ```
 

@@ -43,7 +43,7 @@ Code                    Linter          Result
 Placing spaces and indentation is a separate task, and the linter does not solve it. That is what a formatter is for, and in oxc it is [oxfmt](https://oxc.rs/docs/guide/usage/formatter.html). This code:
 
 ```javascript
-const result = 1+ 3;
+const result = 1 + 3;
 ```
 
 The formatter turns into this one:

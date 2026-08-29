@@ -29,8 +29,8 @@ let sum = 0;
 let index = 1;
 
 while (index <= 5) {
-  sum += index;  // lo mismo que sum = sum + index
-  index += 1;    // lo mismo que index = index + 1
+  sum += index; // lo mismo que sum = sum + index
+  index += 1; // lo mismo que index = index + 1
 }
 
 console.log(sum); // => 15
@@ -50,8 +50,8 @@ while (index <= 5) {
 Esa forma de escribir funciona no solo con números. Para las cadenas se usa el operador de concatenación:
 
 ```javascript
-let text = 'Hello';
-text += ' World'; // lo mismo que text = text + ' World'
+let text = "Hello";
+text += " World"; // lo mismo que text = text + ' World'
 ```
 
 ## Abreviaturas admitidas

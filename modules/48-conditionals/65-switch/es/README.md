@@ -2,11 +2,11 @@
 Muchos lenguajes, además de la estructura condicional *if*, incluyen el **switch**. Es una versión especializada del *if*, diseñada para situaciones particulares. Por ejemplo, tiene sentido utilizarlo cuando hay una cadena de *if else* con comprobaciones de igualdad. Por ejemplo:
 
 ```javascript
-if (status === 'processing') {
+if (status === "processing") {
   // Hacer algo
-} else if (status === 'paid') {
+} else if (status === "paid") {
   // Hacer algo más
-} else if (status === 'new') {
+} else if (status === "new") {
   // Hacer algo diferente
 } else {
   // Hacer algo más
@@ -17,17 +17,17 @@ Esta comprobación compuesta tiene una característica distintiva: cada rama aqu
 
 ```javascript
 switch (status) {
-  case 'processing': // status === processing
+  case "processing": // status === processing
     // Hacer algo
     break;
-  case 'paid': // status === paid
+  case "paid": // status === paid
     // Hacer algo más
     break;
-  case 'new': // status === new
+  case "new": // status === new
     // Hacer algo diferente
     break;
   default: // else
-    // Hacer algo más
+  // Hacer algo más
 }
 ```
 
@@ -48,7 +48,7 @@ switch (count) {
     // Hacer algo útil
     break;
   default:
-    // Hacer algo
+  // Hacer algo
 }
 ```
 
@@ -64,10 +64,10 @@ La primera es crear una variable antes del switch, asignarle un valor en los `ca
   // Asignar un valor
   switch (count) {
     case 1:
-      result = 'one';
+      result = "one";
       break;
     case 2:
-      result = 'two';
+      result = "two";
       break;
     default:
       result = null;
@@ -84,9 +84,9 @@ La segunda forma es más simple y corta. En lugar de crear una variable, el `cas
 (count) => {
   switch (count) {
     case 1:
-      return 'one';
+      return "one";
     case 2:
-      return 'two';
+      return "two";
     default:
       return null;
   }

@@ -3,7 +3,7 @@ A veces el texto de un programa tiene que estar formado por varias líneas. Por 
 Por supuesto, se puede usar el carácter de salto de línea `\n`, como hacíamos antes:
 
 ```javascript
-const text = 'Un ejemplo de texto,\nformado por\nvarias líneas';
+const text = "Un ejemplo de texto,\nformado por\nvarias líneas";
 ```
 
 Al imprimirla, la cadena se verá así:
@@ -46,9 +46,9 @@ formado por
 varias líneas
 `;
 
-console.log('====');
+console.log("====");
 console.log(text);
-console.log('====');
+console.log("====");
 ```
 
 La salida:
@@ -85,8 +85,8 @@ const quote = `Aquí no hay que escapar ni las comillas 'simples' ni las "dobles
 Las plantillas de cadena combinan la multilínea y la interpolación, así que dentro se pueden sustituir valores de variables mediante `${}`:
 
 ```javascript
-const a = 'A';
-const b = 'B';
+const a = "A";
+const b = "B";
 
 const text = `${a} y ${b}
 en líneas distintas`;

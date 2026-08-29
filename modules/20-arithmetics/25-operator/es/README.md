@@ -35,8 +35,8 @@ En este caso, `-` es un operador unario, y `3` es el operando. El intérprete re
 El operador `-` puede usarse de diferentes maneras. Cuando se encuentra **entre dos números**, es una operación de resta:
 
 ```javascript
-console.log(5 - 2);   // => 3
-console.log(10 - 7);  // => 3
+console.log(5 - 2); // => 3
+console.log(10 - 7); // => 3
 ```
 
 Esta diferencia es especialmente notable al trabajar con números negativos:

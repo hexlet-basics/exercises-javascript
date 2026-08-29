@@ -35,10 +35,10 @@ Esta regla se aplica de la misma manera tanto al incremento como al decremento. 
 let x = 5;
 
 console.log(++x); // => 6
-console.log(x);   // => 6
+console.log(x); // => 6
 
 console.log(x++); // => 6
-console.log(x);   // => 7
+console.log(x); // => 7
 ```
 
 ¿Qué está sucediendo aquí?

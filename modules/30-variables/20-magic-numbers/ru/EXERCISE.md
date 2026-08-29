@@ -1,7 +1,7 @@
 На складе стоят поддоны с ящиками. Вынесите «магические» числа `6` и `17` в именованные переменные и выведите результат.
 
 ```javascript
-console.log('Boxes in stock:');
+console.log("Boxes in stock:");
 console.log(6 * 17);
 ```
 

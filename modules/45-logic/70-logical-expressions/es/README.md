@@ -33,11 +33,11 @@ En JavaScript hay dos reglas simples para las conversiones:
 Esto se utiliza activamente en el desarrollo, por ejemplo, para definir un valor predeterminado:
 
 ```javascript
-const value = name || '';
+const value = name || "";
 // Ejemplos
-234 || ''; // 234
-'hexlet' || ''; // 'hexlet'
-undefined || ''; // ''
+234 || ""; // 234
+"hexlet" || ""; // 'hexlet'
+undefined || ""; // ''
 ```
 
 Si `name` toma uno de los valores falsy, la constante `value` se le asignará una cadena vacía. En este caso, en el código posterior, podemos trabajar con `value` como si fuera una cadena.
@@ -46,16 +46,16 @@ Pero aquí hay un posible error. Si `name` contiene un valor falsy y la asignaci
 
 ```javascript
 // Oops
-false || ''; // ''
-0 || ''; // ''
-undefined || ''; // ''
+false || ""; // ''
+0 || ""; // ''
+undefined || ""; // ''
 ```
 
 Para esos casos JavaScript tiene un operador aparte, `??`. También sustituye el operando izquierdo por el derecho, pero solo se activa con `null` y `undefined`. El resto de los valores falsy los deja pasar como datos normales:
 
 ```javascript
 0 ?? 100; // 0
-'' ?? 100; // ''
+"" ?? 100; // ''
 null ?? 100; // 100
 undefined ?? 100; // 100
 ```
@@ -65,8 +65,8 @@ Por eso, cuando el valor por defecto sustituye precisamente a «nada», se usa `
 La conversión de tipos explica también por qué en JavaScript hay dos clases de comparación. Además de los operadores estrictos `===` y `!==`, el lenguaje tiene los no estrictos `==` y `!=`. Se diferencian precisamente en la conversión de tipos:
 
 ```javascript
-console.log('' === false); // => false
-console.log('' == false);  // => true
+console.log("" === false); // => false
+console.log("" == false); // => true
 ```
 
 La cadena vacía y `false` son valores diferentes, por lo que el operador `===` dice "¡falso! ¡no son iguales!".
@@ -87,15 +87,15 @@ console.log(!answer); // => false
 La negación funciona dentro de las expresiones:
 
 ```javascript
-!false || ''; // true
+!false || ""; // true
 ```
 
 Si envuelves la expresión entre paréntesis y colocas `!` delante de ellos, se negará toda la expresión:
 
 ```javascript
 // La expresión está entre paréntesis
-console.log(!('' === false)); // => true
-console.log(!('' == false));  // => false
+console.log(!("" === false)); // => true
+console.log(!("" == false)); // => false
 ```
 
 Con una doble negación `!!`, el valor final es igual al valor inicial:
@@ -112,7 +112,7 @@ Pero aquí puede haber una conversión de tipo adicional. Por lo tanto, el resul
 Imagina una tarea en la que necesitamos verificar si el valor es igual a uno u otro. Por ejemplo, la variable `value` debe contener uno de los dos valores: `first` o `second`. Los desarrolladores novatos a veces escriben esta expresión de la siguiente manera:
 
 ```javascript
-value === ('first' || 'second')
+value === ("first" || "second");
 ```
 
 En nuestra mente, más o menos nos lo imaginamos así, pero los lenguajes funcionan de manera diferente, por lo que este código dará un resultado incorrecto. ¿Cómo se debe leer correctamente? Debemos recordar la prioridad de las operaciones. Primero se evalúa todo lo que está entre paréntesis, es decir, `'first' || 'second'`. Si ejecutas este código en el repl, la salida será así:
@@ -126,7 +126,7 @@ $ node
 Ahora podemos reemplazar la expresión original por la parcialmente evaluada:
 
 ```javascript
-value === 'first'
+value === "first";
 ```
 
 No es exactamente lo que esperábamos. Y ahora volvamos al principio y escribamos la verificación correctamente:
@@ -134,5 +134,5 @@ No es exactamente lo que esperábamos. Y ahora volvamos al principio y escribamo
 ```javascript
 // Los paréntesis no son necesarios,
 // porque la prioridad de === es mayor que la de ||
-value === 'first' || value === 'second'
+value === "first" || value === "second";
 ```

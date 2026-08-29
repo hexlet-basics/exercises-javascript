@@ -4,7 +4,7 @@ Escriba una función `makeItFunny()` que reciba una cadena de texto y devuelva u
 Para determinar cada elemento n-ésimo, se utilizará el operador de resto `%`. Piense en cómo se puede utilizar.
 
 ```javascript
-const text = 'I never look back';
+const text = "I never look back";
 // Cada tercer elemento
 makeItFunny(text, 3); // 'I NevEr LooK bAck'
 ```

@@ -32,10 +32,10 @@ En JavaScript están disponibles las siguientes operaciones de comparación:
 Los lenguajes de programación adoptaron las operaciones matemáticas de comparación casi sin cambios, excepto la igualdad y la desigualdad. En matemáticas se usa el `=` habitual, pero en programación el símbolo `=` ya está ocupado: asigna valores a las variables. Por eso, para la comparación de igualdad JavaScript usa `===` y para la desigualdad `!==` (el triple y el del signo de exclamación son la comparación "estricta", a la que volveremos más adelante).
 
 ```javascript
-console.log(5 >= 3);  // => true
-console.log(7 < 0);   // => false
-console.log(5 > 5);   // => false
-console.log(5 >= 5);  // => true
+console.log(5 >= 3); // => true
+console.log(7 < 0); // => false
+console.log(5 > 5); // => false
+console.log(5 >= 5); // => true
 console.log(2 === 5); // => false
 console.log(2 !== 5); // => true
 ```
@@ -59,7 +59,7 @@ Cuando las funciones devuelven el resultado de una comparación, suelen responde
 const isNegative = (number) => number < 0;
 
 console.log(isNegative(-5)); // => true
-console.log(isNegative(7));  // => false
+console.log(isNegative(7)); // => false
 ```
 
 Los nombres de los predicados se construyen de modo que la pregunta se lea directamente a partir del nombre: `hasChildren()` — "¿hay hijos?", `isEmpty()` — "¿la cadena está vacía?", `hasErrors()` — "¿hay errores?". Al mismo tiempo, se considera predicado solo a una función que devuelve precisamente un valor lógico, sin excepciones.

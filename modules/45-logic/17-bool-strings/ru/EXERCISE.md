@@ -3,6 +3,6 @@
 Пример работы:
 
 ```javascript
-isLongWord('apple');  // => false
-isLongWord('banana'); // => true
+isLongWord("apple"); // => false
+isLongWord("banana"); // => true
 ```

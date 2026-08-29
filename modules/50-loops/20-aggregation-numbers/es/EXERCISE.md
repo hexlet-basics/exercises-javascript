@@ -5,7 +5,7 @@ Se aplica una tarifa escalonada: los primeros `100` kWh cuestan `5` rublos cada 
 Recorre el consumo con un bucle y acumula gradualmente el importe total.
 
 ```javascript
-calculateElectricityBill(80);  // => 400
+calculateElectricityBill(80); // => 400
 calculateElectricityBill(150); // => 850
 calculateElectricityBill(250); // => 1700
 ```

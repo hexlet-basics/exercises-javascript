@@ -4,7 +4,7 @@
 Примеры вызова:
 
 ```javascript
-const name = 'Hexlet';
+const name = "Hexlet";
 
 // Обычное обращение возвращает undefined
 name[10]; // undefined

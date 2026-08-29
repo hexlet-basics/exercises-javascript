@@ -21,14 +21,14 @@ Dividir caramelos entre personas:
 El operador `%` calcula el residuo de la división (no confundir con la división):
 
 ```javascript
-7 % 2;  // 1
+7 % 2; // 1
 21 % 3; // 0
 19 % 5; // 4
 
 // Verificación de paridad
 
-10 % 2 // 10 es par, ya que el residuo es 0
-9 % 2  // 9 es impar, ya que el residuo es 1
+10 % 2; // 10 es par, ya que el residuo es 0
+9 % 2; // 9 es impar, ya que el residuo es 1
 ```
 
 Escribamos una función para verificar la paridad:
@@ -37,7 +37,7 @@ Escribamos una función para verificar la paridad:
 const isEven = (number) => number % 2 === 0;
 
 isEven(10); // true
-isEven(3);  // false
+isEven(3); // false
 ```
 
 En una sola expresión hemos combinado el operador lógico `===` (verificación de igualdad) y el operador aritmético `%`.
@@ -60,6 +60,6 @@ const isFirstLetterInUpperCase = (string) => {
   return firstLetter.toUpperCase() === firstLetter;
 };
 
-isFirstLetterInUpperCase('marmont'); // false
-isFirstLetterInUpperCase('Robb');    // true
+isFirstLetterInUpperCase("marmont"); // false
+isFirstLetterInUpperCase("Robb"); // true
 ```

@@ -32,10 +32,10 @@ JavaScript provides the following comparison operations:
 Programming languages adopted mathematical comparison operations almost without changes, except for equality and inequality. In mathematics, the ordinary `=` is used, but in programming the `=` symbol is already taken — it assigns values to variables. That is why JavaScript uses `===` for equality comparison and `!==` for inequality (the triple one and the one with the exclamation mark are "strict" comparison, which we will come back to).
 
 ```javascript
-console.log(5 >= 3);  // => true
-console.log(7 < 0);   // => false
-console.log(5 > 5);   // => false
-console.log(5 >= 5);  // => true
+console.log(5 >= 3); // => true
+console.log(7 < 0); // => false
+console.log(5 > 5); // => false
+console.log(5 >= 5); // => true
 console.log(2 === 5); // => false
 console.log(2 !== 5); // => true
 ```
@@ -59,7 +59,7 @@ When functions return the result of a comparison, they usually answer the questi
 const isNegative = (number) => number < 0;
 
 console.log(isNegative(-5)); // => true
-console.log(isNegative(7));  // => false
+console.log(isNegative(7)); // => false
 ```
 
 Predicate names are built so that the question can be read directly from the name: `hasChildren()` — "are there any children?", `isEmpty()` — "is the string empty?", `hasErrors()` — "are there any errors?". At the same time, only a function that returns exactly a logical value is considered a predicate — without exceptions.

@@ -2,7 +2,7 @@ Las expresiones lógicas permiten comprobar distintas condiciones, pero por sí 
 
 ```javascript
 if (5 > 3) {
-  console.log('Yes, it is true');
+  console.log("Yes, it is true");
 }
 ```
 
@@ -37,11 +37,11 @@ Todo lo que está dentro de las llaves `{}` pertenece al cuerpo del `if`. El có
 
 ```javascript
 if (10 === 10) {
-  console.log('First');
-  console.log('Second');
+  console.log("First");
+  console.log("Second");
 }
 
-console.log('Goodbye!');
+console.log("Goodbye!");
 ```
 
 Aquí se imprimirán `First` y `Second` porque se cumplió la condición. Y `Goodbye!` se imprime siempre, ya que esta línea está fuera del bloque. El principio es el mismo que en la definición de funciones.
@@ -52,14 +52,14 @@ Consideremos una función que determina el tipo de una oración dada. Si termina
 
 ```javascript
 const getTypeOfSentence = (sentence) => {
-  if (sentence.endsWith('?')) {
-    return 'question';
+  if (sentence.endsWith("?")) {
+    return "question";
   }
-  return 'normal';
+  return "normal";
 };
 
-console.log(getTypeOfSentence('Hodor'));  // => normal
-console.log(getTypeOfSentence('Hodor?')); // => question
+console.log(getTypeOfSentence("Hodor")); // => normal
+console.log(getTypeOfSentence("Hodor?")); // => question
 ```
 
 Aquí se usan dos `return`. Si se cumple la condición dentro del `if`, se ejecuta `return 'question'` y la función termina. Si la condición no se cumple, el control pasa a la siguiente línea con `return 'normal'`.
@@ -77,7 +77,7 @@ const hasEnoughMoney = (balance, price) => {
 };
 
 console.log(hasEnoughMoney(100, 50)); // => true
-console.log(hasEnoughMoney(30, 50));  // => false
+console.log(hasEnoughMoney(30, 50)); // => false
 ```
 
 ## if y las expresiones lógicas

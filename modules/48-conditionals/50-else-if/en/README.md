@@ -6,22 +6,22 @@ const getTypeOfSentence = (sentence) => {
   const lastChar = sentence[sentence.length - 1];
   let sentenceType;
 
-  if (lastChar === '!') {
-    sentenceType = 'exclamation';
+  if (lastChar === "!") {
+    sentenceType = "exclamation";
   } else {
-    sentenceType = 'normal';
+    sentenceType = "normal";
   }
 
-  if (lastChar === '?') {
-    sentenceType = 'question';
+  if (lastChar === "?") {
+    sentenceType = "question";
   }
 
   return `Sentence is ${sentenceType}`;
 };
 
-getTypeOfSentence('Who?'); // Sentence is question
-getTypeOfSentence('No');   // Sentence is normal
-getTypeOfSentence('No!');  // Sentence is exclamation
+getTypeOfSentence("Who?"); // Sentence is question
+getTypeOfSentence("No"); // Sentence is normal
+getTypeOfSentence("No!"); // Sentence is exclamation
 ```
 
 We added one more check. Technically the function works, but from a semantics standpoint there are problems.
@@ -36,20 +36,20 @@ const getTypeOfSentence = (sentence) => {
   const lastChar = sentence[sentence.length - 1];
   let sentenceType;
 
-  if (lastChar === '?') {
-    sentenceType = 'question';
-  } else if (lastChar === '!') {
-    sentenceType = 'exclamation';
+  if (lastChar === "?") {
+    sentenceType = "question";
+  } else if (lastChar === "!") {
+    sentenceType = "exclamation";
   } else {
-    sentenceType = 'normal';
+    sentenceType = "normal";
   }
 
   return `Sentence is ${sentenceType}`;
 };
 
-getTypeOfSentence('Who?'); // Sentence is question
-getTypeOfSentence('No');   // Sentence is normal
-getTypeOfSentence('No!');  // Sentence is exclamation
+getTypeOfSentence("Who?"); // Sentence is question
+getTypeOfSentence("No"); // Sentence is normal
+getTypeOfSentence("No!"); // Sentence is exclamation
 ```
 
 Now all conditions are arranged into a single construct. `else if` means "if the previous condition was not met, but the current one is".

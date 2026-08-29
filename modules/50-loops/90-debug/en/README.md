@@ -83,7 +83,7 @@ const sumOfSeries = (start, finish) => {
   let result = 0;
   let n = start;
   while (n < finish) {
-    console.log('new iteration !!!!');
+    console.log("new iteration !!!!");
     console.log(n);
     result = result + n;
     n = n + 1;

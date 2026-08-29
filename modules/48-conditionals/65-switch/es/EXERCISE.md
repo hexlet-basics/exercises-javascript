@@ -8,8 +8,8 @@ Implementa la función `getNumberExplanation()`, que recibe un número como entr
 Ejemplos de llamadas a la función:
 
 ```javascript
-getNumberExplanation(8);   // just a number
+getNumberExplanation(8); // just a number
 getNumberExplanation(666); // devil number
-getNumberExplanation(42);  // answer for everything
-getNumberExplanation(7);   // prime number
+getNumberExplanation(42); // answer for everything
+getNumberExplanation(7); // prime number
 ```

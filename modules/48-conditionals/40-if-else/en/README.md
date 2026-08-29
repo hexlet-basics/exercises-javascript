@@ -2,8 +2,8 @@
 Let's write a function `getTypeOfSentence()` that analyzes text and returns a description of its tone: for ordinary sentences – *General sentence*, for interrogative ones – *Question sentence*.
 
 ```javascript
-  getTypeOfSentence('Hodor');  // General sentence
-  getTypeOfSentence('Hodor?'); // Question sentence
+getTypeOfSentence("Hodor"); // General sentence
+getTypeOfSentence("Hodor?"); // Question sentence
 ```
 
 The function implementation:
@@ -15,14 +15,14 @@ const getTypeOfSentence = (sentence) => {
   // A predicate that checks the end of the text
   // If it ends with the '?' character, it returns true,
   // otherwise false
-  if (sentence.endsWith('?')) {
+  if (sentence.endsWith("?")) {
     // If the condition above was met,
     // then this is an interrogative sentence.
     // Assign the corresponding value to sentenceType.
-    sentenceType = 'Question';
+    sentenceType = "Question";
   } else {
     // In all other cases the sentence is a general one
-    sentenceType = 'General';
+    sentenceType = "General";
   }
 
   // Using interpolation we build a string
@@ -51,12 +51,12 @@ Inside the `else` block (just like inside the `if` block) you can nest other con
 const number = 10;
 
 if (number > 10) {
-  console.log('Number is greater than 10');
+  console.log("Number is greater than 10");
 } else {
   if (number === 10) {
-    console.log('Number is exactly 10');
+    console.log("Number is exactly 10");
   } else {
-    console.log('Number is less than 10');
+    console.log("Number is less than 10");
   }
 }
 // => Number is exactly 10
@@ -71,10 +71,10 @@ const getTypeOfSentence = (sentence) => {
   let sentenceType;
   // A negation was added
   // The contents of else moved to if and vice versa
-  if (!sentence.endsWith('?')) {
-    sentenceType = 'General';
+  if (!sentence.endsWith("?")) {
+    sentenceType = "General";
   } else {
-    sentenceType = 'Question';
+    sentenceType = "Question";
   }
 
   return `${sentenceType} sentence`;

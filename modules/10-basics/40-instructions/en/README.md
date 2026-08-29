@@ -11,8 +11,8 @@ Statement 3: console.log('!')        →  executed
 Here is an example of code with two statements. These lines tell the computer to print phrases on the screen.
 
 ```javascript
-console.log('Mother of Dragons.'); // First statement
-console.log('Dracarys!'); // Second statement
+console.log("Mother of Dragons."); // First statement
+console.log("Dracarys!"); // Second statement
 ```
 
 The result:
@@ -27,8 +27,8 @@ Dracarys!
 The JavaScript interpreter runs code strictly in the order in which you wrote it. If you swap the lines:
 
 ```javascript
-console.log('Dracarys!');
-console.log('Mother of Dragons.');
+console.log("Dracarys!");
+console.log("Mother of Dragons.");
 ```
 
 they will be swapped on the screen as well:
@@ -43,7 +43,8 @@ Mother of Dragons.
 Usually statements are written on separate lines, but they can also be written on a single line separated by `;`:
 
 ```javascript
-console.log('Mother of Dragons.'); console.log('Dracarys!');
+console.log("Mother of Dragons.");
+console.log("Dracarys!");
 ```
 
 Both versions work the same way, but the second one is harder to read. That is why statements are almost always written one per line.

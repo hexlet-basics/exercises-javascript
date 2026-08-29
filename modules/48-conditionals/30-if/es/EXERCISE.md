@@ -5,5 +5,5 @@ Escribe una función `guessNumber(guess)` que:
 
 ```javascript
 guessNumber(42); // => 'You win!'
-guessNumber(7);  // => 'Try again!'
+guessNumber(7); // => 'Try again!'
 ```

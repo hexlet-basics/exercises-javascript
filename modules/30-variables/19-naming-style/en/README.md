@@ -26,7 +26,7 @@ Here are a few popular approaches to writing compound names:
 The standard for variables in JavaScript is **lowerCamelCase**: the first word is in lowercase letters, and each subsequent one starts with a capital letter.
 
 ```javascript
-const userName = 'Daenerys';
+const userName = "Daenerys";
 const maxLength = 280;
 const totalOrdersCount = 17;
 ```

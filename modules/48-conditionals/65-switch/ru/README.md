@@ -2,11 +2,11 @@
 Многие языки в дополнение к условной конструкции *if* включают в себя **switch**. Это специализированная версия *if*, созданная для некоторых особых ситуаций. Например, её имеет смысл использовать там, где есть цепочка *if else* с проверками на равенство. Например:
 
 ```javascript
-if (status === 'processing') {
+if (status === "processing") {
   // Делаем раз
-} else if (status === 'paid') {
+} else if (status === "paid") {
   // Делаем два
-} else if (status === 'new') {
+} else if (status === "new") {
   // Делаем три
 } else {
   // Делаем четыре
@@ -17,17 +17,17 @@ if (status === 'processing') {
 
 ```javascript
 switch (status) {
-  case 'processing': // status === processing
+  case "processing": // status === processing
     // Делаем раз
     break;
-  case 'paid': // status === paid
+  case "paid": // status === paid
     // Делаем два
     break;
-  case 'new': // status === new
+  case "new": // status === new
     // Делаем три
     break;
   default: // else
-    // Делаем четыре
+  // Делаем четыре
 }
 ```
 
@@ -48,7 +48,7 @@ switch (count) {
     // Делаем что-то полезное
     break;
   default:
-    // Что-то делаем
+  // Что-то делаем
 }
 ```
 
@@ -64,10 +64,10 @@ switch (count) {
   // Заполняем
   switch (count) {
     case 1:
-      result = 'one';
+      result = "one";
       break;
     case 2:
-      result = 'two';
+      result = "two";
       break;
     default:
       result = null;
@@ -84,9 +84,9 @@ switch (count) {
 (count) => {
   switch (count) {
     case 1:
-      return 'one';
+      return "one";
     case 2:
-      return 'two';
+      return "two";
     default:
       return null;
   }

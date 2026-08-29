@@ -2,11 +2,11 @@
 Many languages have a **switch** statement in addition to the conditional *if* statement. This is a specialized version of *if*, designed for certain cases. For example, you can use it where there is an *if else* chain with equality checks:
 
 ```javascript
-if (status === 'processing') {
+if (status === "processing") {
   // First
-} else if (status === 'paid') {
+} else if (status === "paid") {
   // Second
-} else if (status === 'new') {
+} else if (status === "new") {
   // Third
 } else {
   // Fourth
@@ -17,17 +17,17 @@ This compound check has one distinctive feature: each branch here is a check of 
 
 ```javascript
 switch (status) {
-  case 'processing': // status === processing
+  case "processing": // status === processing
     // First
     break;
-  case 'paid': // status === paid
+  case "paid": // status === paid
     // Second
     break;
-  case 'new': // status === new
+  case "new": // status === new
     // Third
     break;
   default: // else
-    // Fourth
+  // Fourth
 }
 ```
 
@@ -48,7 +48,7 @@ switch (count) {
     // Do something useful
     break;
   default:
-    // Do something
+  // Do something
 }
 ```
 
@@ -64,10 +64,10 @@ The first way. Create a variable before *switch*, fill it in *case*, and then re
   // Fill it
   switch (count) {
     case 1:
-      result = 'one';
+      result = "one";
       break;
     case 2:
-      result = 'two';
+      result = "two";
       break;
     default:
       result = null;
@@ -84,9 +84,9 @@ The second way is easier and shorter. Instead of creating a variable, *case* all
 (count) => {
   switch (count) {
     case 1:
-      return 'one';
+      return "one";
     case 2:
-      return 'two';
+      return "two";
     default:
       return null;
   }

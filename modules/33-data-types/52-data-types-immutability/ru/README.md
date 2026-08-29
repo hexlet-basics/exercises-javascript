@@ -1,8 +1,8 @@
 Представим, что у нас есть строка, и мы хотим заменить в ней один символ, например первую букву имени:
 
 ```javascript
-let greeting = 'Hello';
-greeting[0] = 'J';
+let greeting = "Hello";
+greeting[0] = "J";
 console.log(greeting); // => Hello (не изменилось!)
 ```
 
@@ -21,8 +21,8 @@ console.log(greeting); // => Hello (не изменилось!)
 Если нужно «изменить» строку, создают новую на основе старой и сохраняют её в ту же переменную. Например, заменим первую букву:
 
 ```javascript
-const word = 'hello';
-const fixed = 'H' + word.slice(1);
+const word = "hello";
+const fixed = "H" + word.slice(1);
 console.log(fixed); // => Hello
 ```
 
@@ -39,8 +39,8 @@ word[0] = 'H'  →  ничего не происходит, строки неи�
 Переприсвоить переменную целиком тоже можно — но это создаёт **новую** строку, а не меняет старую:
 
 ```javascript
-let greeting = 'Hello';
-greeting = 'Jello';
+let greeting = "Hello";
+greeting = "Jello";
 console.log(greeting); // => Jello
 ```
 
@@ -50,12 +50,12 @@ console.log(greeting); // => Jello
 
 ```javascript
 // Одна и та же строка, просто обновляем
-let name = 'Alexander';
-name = 'Blexander';
+let name = "Alexander";
+name = "Blexander";
 
 // Разные сущности — лучше разные переменные
-const firstName = 'Alexander';
-const correctedFirstName = 'Blexander';
+const firstName = "Alexander";
+const correctedFirstName = "Blexander";
 ```
 
 Попытка «запихать» все строки в одну переменную запутывает код: переменная перестаёт говорить, что в ней хранится.

@@ -6,7 +6,7 @@ Implement the `getTrafficLightAction(color)` function, which takes a traffic lig
 - any other color → `'unknown'`
 
 ```javascript
-getTrafficLightAction('green');  // => 'go'
-getTrafficLightAction('red');    // => 'stop'
-getTrafficLightAction('purple'); // => 'unknown'
+getTrafficLightAction("green"); // => 'go'
+getTrafficLightAction("red"); // => 'stop'
+getTrafficLightAction("purple"); // => 'unknown'
 ```

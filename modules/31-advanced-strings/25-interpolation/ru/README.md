@@ -1,10 +1,10 @@
 Вспомним, как работает конкатенация. Для этого мы соединяем нужные строки (или переменные со строками внутри) с помощью знака `+`:
 
 ```javascript
-const firstName = 'Joffrey';
-const greeting = 'Hello';
+const firstName = "Joffrey";
+const greeting = "Hello";
 
-console.log(greeting + ', ' + firstName + '!');
+console.log(greeting + ", " + firstName + "!");
 // => Hello, Joffrey!
 ```
 
@@ -13,8 +13,8 @@ console.log(greeting + ', ' + firstName + '!');
 По этой причине во многих языках существует операция, которая называется интерполяцией. Интерполяция представляет собой способ встраивать значения переменных прямо внутрь строки. В JavaScript для этого используют **шаблонные строки** (template literals). Они записываются в обратных кавычках `` ` ``, а переменные вставляются с помощью `${}`:
 
 ```javascript
-const firstName = 'Joffrey';
-const greeting = 'Hello';
+const firstName = "Joffrey";
+const greeting = "Hello";
 
 console.log(`${greeting}, ${firstName}!`);
 // => Hello, Joffrey!
@@ -36,7 +36,7 @@ greeting  = 'Hello'
 Сравните эти два примера рядом:
 
 ```javascript
-console.log(greeting + ', ' + firstName + '!');
+console.log(greeting + ", " + firstName + "!");
 console.log(`${greeting}, ${firstName}!`);
 ```
 
@@ -59,14 +59,14 @@ console.log(`Итого: ${price * count} рублей`);
 Шаблонная строка **обязательно** записывается в обратных кавычках `` ` ``. Одинарные или двойные кавычки для интерполяции не работают:
 
 ```javascript
-console.log('${firstName}'); // выведет буквально: ${firstName}
+console.log("${firstName}"); // выведет буквально: ${firstName}
 console.log(`${firstName}`); // выведет значение переменной
 ```
 
 ## Пример
 
 ```javascript
-const school = 'Hexlet';
+const school = "Hexlet";
 
 const whatIsIt = `${school} - online courses`;
 console.log(whatIsIt); // => Hexlet - online courses

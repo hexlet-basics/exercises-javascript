@@ -5,7 +5,7 @@ A menudo, las cadenas deben ensamblarse a partir de varias partes, por ejemplo, 
 En JavaScript, las cadenas se combinan con el operador `+`. Aunque este operador también se usa para sumar números, en el caso de las cadenas significa combinar, es decir, pegar el contenido.
 
 ```javascript
-console.log('Dragon' + 'stone');
+console.log("Dragon" + "stone");
 // => Dragonstone
 ```
 
@@ -25,10 +25,10 @@ Así funciona la combinación de varias cadenas:
 Ejemplos.
 
 ```javascript
-console.log('Kings' + 'wood');       // => Kingswood
-console.log('Kings' + 'road');       // => Kingsroad
+console.log("Kings" + "wood"); // => Kingswood
+console.log("Kings" + "road"); // => Kingsroad
 // Aquí usamos comillas dobles por fuera porque hay una comilla simple adentro
-console.log("King's" + 'Landing');   // => King'sLanding
+console.log("King's" + "Landing"); // => King'sLanding
 ```
 
 JavaScript permite combinar cadenas incluso si están escritas con comillas diferentes. Lo principal es que ambas partes sean cadenas.
@@ -39,10 +39,10 @@ Al combinar, JavaScript no inserta espacios automáticamente. Si debe haber un e
 
 ```javascript
 // Espacio al final de la primera cadena
-console.log("King's " + 'Landing');  // => King's Landing
+console.log("King's " + "Landing"); // => King's Landing
 
 // Espacio al principio de la segunda cadena
-console.log("King's" + ' Landing');  // => King's Landing
+console.log("King's" + " Landing"); // => King's Landing
 ```
 
 El resultado será el mismo. Pero si no se agrega un espacio, las palabras se pegarán.
@@ -52,7 +52,7 @@ El resultado será el mismo. Pero si no se agrega un espacio, las palabras se pe
 En las cadenas se pueden usar secuencias de escape, por ejemplo `\n` para un salto de línea o `\t` para una tabulación. Durante la concatenación, funcionan igual que cualquier otro carácter.
 
 ```javascript
-console.log('Hello,' + '\n' + 'World!');
+console.log("Hello," + "\n" + "World!");
 // Hello,
 // World!
 ```
@@ -60,7 +60,7 @@ console.log('Hello,' + '\n' + 'World!');
 De la misma manera, se puede usar la tabulación `\t` para alinear la salida.
 
 ```javascript
-console.log('A' + '\t' + 'B'); // => A	B
+console.log("A" + "\t" + "B"); // => A	B
 ```
 
 ## Conclusión

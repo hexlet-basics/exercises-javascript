@@ -3,7 +3,7 @@
 В JavaScript для доступа к символам строки используют индексацию. Индексация означает, что у каждого символа в строке есть свой номер, то есть индекс. Индексация начинается с нуля: у первого символа индекс `0`, у второго `1` и так далее. Представим, что у нас есть строка:
 
 ```javascript
-const firstName = 'Alexander';
+const firstName = "Alexander";
 ```
 
 Чтобы получить первую букву, указываем её позицию (индекс) в квадратных скобках:
@@ -22,9 +22,9 @@ console.log(firstName[0]); // => A
 Длина строки `Alexander` равна `9`, поэтому индекс последнего символа равен `8`, то есть `9 - 1`. Длину строки можно узнать с помощью функции `length()`:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-console.log(length(firstName));               // => 9
+console.log(length(firstName)); // => 9
 console.log(firstName[length(firstName) - 1]); // => r
 ```
 
@@ -47,9 +47,9 @@ console.log(firstName[9]); // => undefined
 В некоторых языках (например, в Python) для доступа к символам с конца используют отрицательные индексы. В JavaScript квадратные скобки отрицательные индексы **не** понимают — `firstName[-1]` вернёт `undefined`. Поэтому индекс символа с конца вычисляют через длину строки:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-const word = 'Hexlet';
+const word = "Hexlet";
 
 console.log(word[length(word) - 1]); // => t, последний символ
 console.log(word[length(word) - 2]); // => e, предпоследний символ
@@ -80,7 +80,7 @@ console.log(word[index]); // => H
 ## Подумайте: что выведет этот код?
 
 ```javascript
-const magic = '\nyou';
+const magic = "\nyou";
 console.log(magic[1]); // => ?
 ```
 

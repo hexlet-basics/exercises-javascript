@@ -31,7 +31,8 @@ const sumNumbersFromRange = (start, finish) => {
   let i = start;
   let sum = 0; // Инициализация суммы
 
-  while (i <= finish) { // Двигаемся до конца диапазона
+  while (i <= finish) {
+    // Двигаемся до конца диапазона
     sum = sum + i; // Считаем сумму для каждого числа
     i = i + 1; // Переходим к следующему числу в диапазоне
   }

@@ -3,7 +3,7 @@ Anteriormente ya unimos cadenas directamente usando concatenación. Ahora haremo
 ## Unir dos cadenas directamente
 
 ```javascript
-const what = 'Kings' + 'road';
+const what = "Kings" + "road";
 console.log(what); // => Kingsroad
 ```
 
@@ -14,8 +14,8 @@ Aquí todo es sencillo: dos cadenas se unen en una. Así funciona la concatenaci
 Si la variable `first` contiene la cadena `'Kings'`, podemos unirla tranquilamente con otra cadena:
 
 ```javascript
-const first = 'Kings';
-const what = first + 'road';
+const first = "Kings";
+const what = first + "road";
 console.log(what); // => Kingsroad
 ```
 
@@ -26,8 +26,8 @@ JavaScript sustituye el valor de la variable, ejecuta la operación y crea la ca
 De la misma manera, puedes combinar los valores de dos variables, si ambas contienen cadenas:
 
 ```javascript
-const first = 'Kings';
-const last = 'road';
+const first = "Kings";
+const last = "road";
 const what = first + last;
 console.log(what); // => Kingsroad
 ```
@@ -35,7 +35,7 @@ console.log(what); // => Kingsroad
 También puedes agregar espacios:
 
 ```javascript
-const full = first + ' ' + last;
+const full = first + " " + last;
 console.log(full); // => Kings road
 ```
 
@@ -56,14 +56,14 @@ En JavaScript, el operador `+` se comporta de forma especial cuando de un lado h
 
 ```javascript
 const age = 42;
-console.log('Age: ' + age); // => Age: 42
+console.log("Age: " + age); // => Age: 42
 ```
 
 Lo mismo ocurre con las variables que contienen resultados de cálculos:
 
 ```javascript
 const price = 50 * 1.25 * 6.91; // => 431.875
-console.log('Price in yuans: ' + price); // => Price in yuans: 431.875
+console.log("Price in yuans: " + price); // => Price in yuans: 431.875
 ```
 
 También existe una conversión explícita de un número a una cadena mediante `String()`: la analizaremos en la lección sobre conversión de tipos.

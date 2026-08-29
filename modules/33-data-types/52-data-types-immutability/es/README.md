@@ -1,8 +1,8 @@
 Imaginemos que tenemos una cadena y queremos reemplazar en ella un carácter, por ejemplo la primera letra de un nombre:
 
 ```javascript
-let greeting = 'Hello';
-greeting[0] = 'J';
+let greeting = "Hello";
+greeting[0] = "J";
 console.log(greeting); // => Hello (¡no cambió!)
 ```
 
@@ -21,8 +21,8 @@ Los tipos primitivos (cadenas, números, valores lógicos) en JavaScript no se p
 Si hace falta «cambiar» una cadena, se crea una nueva a partir de la anterior y se guarda en la misma variable. Por ejemplo, reemplacemos la primera letra:
 
 ```javascript
-const word = 'hello';
-const fixed = 'H' + word.slice(1);
+const word = "hello";
+const fixed = "H" + word.slice(1);
 console.log(fixed); // => Hello
 ```
 
@@ -39,8 +39,8 @@ word[0] = 'H'  →  no pasa nada, las cadenas son inmutables
 Reasignar la variable por completo también se puede, pero eso crea una cadena **nueva**, no modifica la anterior:
 
 ```javascript
-let greeting = 'Hello';
-greeting = 'Jello';
+let greeting = "Hello";
+greeting = "Jello";
 console.log(greeting); // => Jello
 ```
 
@@ -50,12 +50,12 @@ Vale la pena reutilizar una variable solo cuando se trata de una misma entidad. 
 
 ```javascript
 // La misma cadena, simplemente la actualizamos
-let name = 'Alexander';
-name = 'Blexander';
+let name = "Alexander";
+name = "Blexander";
 
 // Entidades distintas: mejor variables distintas
-const firstName = 'Alexander';
-const correctedFirstName = 'Blexander';
+const firstName = "Alexander";
+const correctedFirstName = "Blexander";
 ```
 
 Intentar «meter» todas las cadenas en una sola variable enreda el código: la variable deja de decir qué guarda.

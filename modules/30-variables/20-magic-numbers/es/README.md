@@ -3,7 +3,7 @@ Veamos un ejemplo de un programa que realiza la conversión de divisas:
 ```javascript
 const eurosCount = 1000;
 const dollarsCount = eurosCount * 1.25; // => 1250
-const rublesCount = dollarsCount * 60;  // => 75000
+const rublesCount = dollarsCount * 60; // => 75000
 
 console.log(rublesCount);
 ```
@@ -25,7 +25,7 @@ const dollarsPerEuro = 1.25;
 const rublesPerDollar = 60;
 
 const eurosCount = 1000;
-const dollarsCount = eurosCount * dollarsPerEuro;   // => 1250
+const dollarsCount = eurosCount * dollarsPerEuro; // => 1250
 const rublesCount = dollarsCount * rublesPerDollar; // => 75000
 
 console.log(rublesCount);

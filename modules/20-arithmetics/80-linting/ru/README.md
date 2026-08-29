@@ -43,7 +43,7 @@ const result = 1 + 3;
 Расстановка пробелов и отступов это отдельная задача, и линтер её не решает. Для неё есть форматтер, у oxlint это [oxfmt](https://oxc.rs/docs/guide/usage/formatter.html). Вот такой код:
 
 ```javascript
-const result = 1+ 3;
+const result = 1 + 3;
 ```
 
 Форматтер сам превратит в такой:

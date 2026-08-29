@@ -24,15 +24,15 @@ Por ejemplo, los números se pueden sumar, dividir y multiplicar. Las cadenas de
 Un ejemplo de cómo mostrar un número:
 
 ```javascript
-console.log(5);  // => 5
+console.log(5); // => 5
 console.log(-5); // => -5
 ```
 
 Un ejemplo de cómo mostrar una cadena de texto:
 
 ```javascript
-console.log('5');  // => 5
-console.log('-5'); // => -5
+console.log("5"); // => 5
+console.log("-5"); // => -5
 ```
 
 En la pantalla el resultado se ve igual, pero dentro del programa son cosas completamente diferentes:
@@ -47,11 +47,11 @@ En la pantalla el resultado se ve igual, pero dentro del programa son cosas comp
 En muchos lenguajes, los números enteros y los fraccionarios son tipos distintos (por ejemplo, en Python son `int` y `float`). En JavaScript no existe tal división: tanto los números enteros como los fraccionarios pertenecen a un solo tipo — `number`.
 
 ```javascript
-console.log(10.234);     // => 10.234
-console.log(-0.4);       // => -0.4
+console.log(10.234); // => 10.234
+console.log(-0.4); // => -0.4
 
-console.log(3.5 + 1.2);  // => 4.7
-console.log(5 / 2);      // => 2.5
+console.log(3.5 + 1.2); // => 4.7
+console.log(5 / 2); // => 2.5
 console.log(2.75 - 0.5); // => 2.25
 ```
 
@@ -75,11 +75,11 @@ Además de las cadenas de texto y los números, JavaScript tiene el tipo lógico
 El operador `typeof` devuelve el tipo en forma de cadena de texto:
 
 ```javascript
-console.log(typeof 42);        // => 'number'
-console.log(typeof 'hello');   // => 'string'
-console.log(typeof true);      // => 'boolean'
+console.log(typeof 42); // => 'number'
+console.log(typeof "hello"); // => 'string'
+console.log(typeof true); // => 'boolean'
 console.log(typeof undefined); // => 'undefined'
-console.log(typeof null);      // => 'object'  (un error histórico de JS)
+console.log(typeof null); // => 'object'  (un error histórico de JS)
 ```
 
 También existen tipos compuestos — arrays, objetos y otros. Nos familiarizaremos con ellos más adelante. Es más, en JavaScript se pueden crear tus propios tipos (por ejemplo, clases), pero para empezar es importante comprender bien los primitivos.

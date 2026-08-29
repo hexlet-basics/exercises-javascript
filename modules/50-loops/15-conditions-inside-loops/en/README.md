@@ -4,9 +4,9 @@ Both the loop body and function body are places where statements are executed. S
 Imagine a function that counts the number of times a letter appears in a sentence. Here's how it might work:
 
 ```javascript
-countChars('Fear cuts deeper than swords.', 'e'); // 4
+countChars("Fear cuts deeper than swords.", "e"); // 4
 // If there are no matches, the result is 0
-countChars('Sansa', 'y'); // 0
+countChars("Sansa", "y"); // 0
 ```
 
 Before examining its contents, answer these questions:

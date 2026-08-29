@@ -13,9 +13,9 @@ const isStrongPassword = (password) => {
   return length > 8 && length < 20;
 };
 
-isStrongPassword('qwerty'); // false
-isStrongPassword('qwerty1234'); // true
-isStrongPassword('zxcvbnmasdfghjkqwertyui'); // false
+isStrongPassword("qwerty"); // false
+isStrongPassword("qwerty1234"); // true
+isStrongPassword("zxcvbnmasdfghjkqwertyui"); // false
 ```
 
 `&&` - означает «И» (в математической логике это называют конъюнкцией). Всё выражение считается истинным только в том случае, когда истинен каждый операнд — каждое из составных выражений. Иными словами, `&&` означает «и то, и другое».
@@ -43,17 +43,17 @@ const isStrongPassword = (password) => {
 ```javascript
 const isGoodApartment = (area, street) => {
   // Через переменную, чтобы функция была не слишком длинной
-  const result = area >= 100 || (area >= 80 && street === 'Main Street');
+  const result = area >= 100 || (area >= 80 && street === "Main Street");
   return result;
 };
 
-isGoodApartment(91, 'Queens Street'); // false
-isGoodApartment(78, 'Queens Street'); // false
-isGoodApartment(70, 'Main Street');   // false
+isGoodApartment(91, "Queens Street"); // false
+isGoodApartment(78, "Queens Street"); // false
+isGoodApartment(70, "Main Street"); // false
 
-isGoodApartment(120, 'Queens Street'); // true
-isGoodApartment(120, 'Main Street');   // true
-isGoodApartment(80, 'Main Street');    // true
+isGoodApartment(120, "Queens Street"); // true
+isGoodApartment(120, "Main Street"); // true
+isGoodApartment(80, "Main Street"); // true
 ```
 
 Область математики, в которой изучаются логические операторы, называется булевой алгеброй. Ниже показаны «таблицы истинности» — по ним можно определить, каким будет результат применения оператора:
@@ -71,10 +71,10 @@ isGoodApartment(80, 'Main Street');    // true
 
 ```javascript
 // true && true;
-3 > 2 && 'wow'.startsWith('w'); // true
+3 > 2 && "wow".startsWith("w"); // true
 
 // true && false;
-'start' === 'start' && 8 < 3; // false
+"start" === "start" && 8 < 3; // false
 ```
 
 ## ИЛИ `||`
@@ -90,8 +90,8 @@ isGoodApartment(80, 'Main Street');    // true
 
 ```javascript
 // true || true;
-3 > 2 || 'wow'.startsWith('w'); // true
+3 > 2 || "wow".startsWith("w"); // true
 
 // false || false;
-'start' === 'Start' || 3 < 3; // false
+"start" === "Start" || 3 < 3; // false
 ```

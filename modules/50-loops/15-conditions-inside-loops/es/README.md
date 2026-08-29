@@ -37,9 +37,9 @@ En esos bucles resulta cómodo separar dos partes: el contador lleva el programa
 Veamos una función que cuenta cuántas veces aparece una letra en una oración:
 
 ```javascript
-countChars('Fear cuts deeper than swords.', 'e'); // 4
+countChars("Fear cuts deeper than swords.", "e"); // 4
 // Si no se encontró nada, el resultado es 0 coincidencias
-countChars('Sansa', 'y'); // 0
+countChars("Sansa", "y"); // 0
 ```
 
 La implementación:

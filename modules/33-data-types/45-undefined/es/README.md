@@ -9,7 +9,7 @@ console.log(name); // ?
 En la pantalla aparecerá `undefined`, un valor especial de tipo particular que significa la ausencia de valor. Undefined se utiliza activamente por JavaScript en diversas situaciones, por ejemplo, al acceder a un carácter inexistente de una cadena:
 
 ```javascript
-const name = 'Arya';
+const name = "Arya";
 console.log(name[8]);
 ```
 

@@ -11,8 +11,8 @@
 Вот пример кода с двумя инструкциями. Эти строки говорят компьютеру вывести фразы на экран.
 
 ```javascript
-console.log('Mother of Dragons.'); // Первая инструкция
-console.log('Dracarys!'); // Вторая инструкция
+console.log("Mother of Dragons."); // Первая инструкция
+console.log("Dracarys!"); // Вторая инструкция
 ```
 
 Результат выполнения:
@@ -27,8 +27,8 @@ Dracarys!
 Интерпретатор JavaScript выполняет код строго в том порядке, в котором вы его написали. Если поменять строки местами:
 
 ```javascript
-console.log('Dracarys!');
-console.log('Mother of Dragons.');
+console.log("Dracarys!");
+console.log("Mother of Dragons.");
 ```
 
 на экране они тоже поменяются:
@@ -43,7 +43,8 @@ Mother of Dragons.
 Обычно инструкции пишут на отдельных строках, но их можно записать и на одной строке через `;`:
 
 ```javascript
-console.log('Mother of Dragons.'); console.log('Dracarys!');
+console.log("Mother of Dragons.");
+console.log("Dracarys!");
 ```
 
 Обе версии работают одинаково, но второй вариант читать сложнее. Поэтому инструкции почти всегда пишут по одной на строку.

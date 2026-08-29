@@ -3,11 +3,11 @@ Strings in JavaScript programming are used very often and in a wide variety of s
 From JavaScript's point of view, a string is simply a set of characters enclosed in quotes. Let's look at some examples.
 
 ```javascript
-'Hello'
-'Goodbye'
-'G'
-' '
-''
+"Hello";
+"Goodbye";
+"G";
+" ";
+"";
 ```
 
 All of these options are strings.
@@ -23,8 +23,8 @@ If you display strings on the screen, `'Hello'` and `'Goodbye'` will be clearly 
 A check question. Are these the same strings or not?
 
 ```javascript
-'hexlet'
-' hexlet'
+"hexlet";
+" hexlet";
 ```
 
 ## Terminology. String or line?
@@ -50,7 +50,7 @@ To avoid confusion, in this course we will use the following wording.
 In JavaScript, strings can be written in both single and double quotes.
 
 ```javascript
-console.log('Hello');
+console.log("Hello");
 console.log("Hello");
 ```
 
@@ -88,7 +88,7 @@ Dragon's mother said "No"
 In this case, to keep JavaScript from confusing the quotes inside the string with the outer ones, an escape character is used — the backslash `\`. It tells the interpreter that the character following it is part of the string, not a control character.
 
 ```javascript
-console.log("Dragon's mother said \"No\"");
+console.log('Dragon\'s mother said "No"');
 // => Dragon's mother said "No"
 ```
 

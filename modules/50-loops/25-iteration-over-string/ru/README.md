@@ -13,7 +13,7 @@ const printNameBySymbol = (name) => {
   }
 };
 
-const name = 'Arya';
+const name = "Arya";
 printNameBySymbol(name);
 // => A
 // => r
@@ -39,7 +39,7 @@ printNameBySymbol(name);
 
 ```javascript
 const reverseString = (text) => {
-  let result = '';
+  let result = "";
   let i = text.length - 1;
   while (i >= 0) {
     result = `${result}${text[i]}`;
@@ -48,8 +48,8 @@ const reverseString = (text) => {
   return result;
 };
 
-console.log(reverseString('Arya'));   // => ayrA
-console.log(reverseString('hexlet')); // => telxeh
+console.log(reverseString("Arya")); // => ayrA
+console.log(reverseString("hexlet")); // => telxeh
 ```
 
 Переменная `result` инициализируется пустой строкой как нейтральным элементом для конкатенации. Цикл начинается с последнего индекса (`text.length - 1`), двигается к нулю и завершается, когда индекс становится меньше нуля. На каждом шаге к результату добавляется текущий символ — и строка собирается в обратном порядке.

@@ -5,7 +5,7 @@ En el ejercicio ya está definida la variable `deliveryStatus` con el valor `'in
 Ejemplo de reasignación de una variable:
 
 ```javascript
-let someVar = 'valor antiguo';
-someVar = 'valor nuevo';
+let someVar = "valor antiguo";
+someVar = "valor nuevo";
 console.log(someVar); // => valor nuevo
 ```

@@ -6,7 +6,7 @@ Implementa la función `getTrafficLightAction(color)`, que recibe un color de se
 - cualquier otro color → `'unknown'`
 
 ```javascript
-getTrafficLightAction('green');  // => 'go'
-getTrafficLightAction('red');    // => 'stop'
-getTrafficLightAction('purple'); // => 'unknown'
+getTrafficLightAction("green"); // => 'go'
+getTrafficLightAction("red"); // => 'stop'
+getTrafficLightAction("purple"); // => 'unknown'
 ```

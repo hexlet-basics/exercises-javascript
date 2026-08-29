@@ -44,11 +44,11 @@ Antes:
 const getTypeOfSentence = (sentence) => {
   const lastChar = sentence.slice(-1);
 
-  if (lastChar === '?') {
-      return 'question';
+  if (lastChar === "?") {
+    return "question";
   }
 
-  return 'normal';
+  return "normal";
 };
 ```
 
@@ -58,11 +58,11 @@ Después:
 const getTypeOfSentence = (sentence) => {
   const lastChar = sentence.slice(-1);
 
-  return (lastChar === '?') ? 'question' : 'normal';
+  return lastChar === "?" ? "question" : "normal";
 };
 
-getTypeOfSentence('Hodor');  // normal
-getTypeOfSentence('Hodor?'); // question
+getTypeOfSentence("Hodor"); // normal
+getTypeOfSentence("Hodor?"); // question
 ```
 
 ---

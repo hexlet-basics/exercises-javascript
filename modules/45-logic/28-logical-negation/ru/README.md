@@ -1,7 +1,7 @@
 Наряду с логическими операторами **И** (`&&`) и **ИЛИ** (`||`), часто используется операция «**отрицание**». Она меняет логическое значение на противоположное. В JavaScript отрицанию соответствует унарный оператор `!`:
 
 ```javascript
-!true;  // false
+!true; // false
 !false; // true
 ```
 
@@ -10,7 +10,7 @@
 ```javascript
 const isEven = (number) => number % 2 === 0;
 
-isEven(10);  // true
+isEven(10); // true
 !isEven(10); // false
 ```
 
@@ -21,8 +21,8 @@ isEven(10);  // true
 А что, если написать `!!isEven(10)`? Внезапно, но код сработает. В логике двойное отрицание равносильно отсутствию отрицания:
 
 ```javascript
-isEven(10);   // true
-!isEven(10);  // false
+isEven(10); // true
+!isEven(10); // false
 !!isEven(10); // true
 ```
 
@@ -31,14 +31,14 @@ isEven(10);   // true
 `!` можно комбинировать с `&&` и `||`. Среди логических операторов у отрицания наивысший приоритет, поэтому оно применяется первым:
 
 ```javascript
-!true || true;   // (!true) || true   => false || true  => true
-!true && false;  // (!true) && false  => false && false => false
+!true || true; // (!true) || true   => false || true  => true
+!true && false; // (!true) && false  => false && false => false
 ```
 
 Скобки меняют порядок вычисления:
 
 ```javascript
-!(true || true);  // !true  => false
+!(true || true); // !true  => false
 !(true && false); // !false => true
 ```
 
@@ -48,7 +48,7 @@ isEven(10);   // true
 const canDrive = (hasLicense, isDrunk) => hasLicense && !isDrunk;
 
 console.log(canDrive(true, false)); // => true  (есть права, трезвый)
-console.log(canDrive(true, true));  // => false (есть права, но пьяный)
+console.log(canDrive(true, true)); // => false (есть права, но пьяный)
 console.log(canDrive(false, false)); // => false (нет прав)
 ```
 
@@ -57,22 +57,22 @@ console.log(canDrive(false, false)); // => false (нет прав)
 При работе со сложными логическими выражениями бывает нужно инвертировать их или переписать в эквивалентную, более читаемую форму. Для этого существуют **законы де Моргана** — два правила, описывающих, как отрицание распределяется по составному выражению:
 
 ```javascript
-!(a && b)  ===  !a || !b
-!(a || b)  ===  !a && !b
+!(a && b) === !a || !b;
+!(a || b) === !a && !b;
 ```
 
 Первый закон: отрицание конъюнкции равно дизъюнкции отрицаний. Проверим:
 
 ```javascript
-!(true && false);     // !false => true
-!true || !false;      // false || true => true
+!(true && false); // !false => true
+!true || !false; // false || true => true
 ```
 
 Второй закон: отрицание дизъюнкции равно конъюнкции отрицаний:
 
 ```javascript
-!(true || false);     // !true => false
-!true && !false;      // false && true => false
+!(true || false); // !true => false
+!true && !false; // false && true => false
 ```
 
 На практике законы де Моргана помогают упрощать условия. Например, вместо `!(isAdmin || isModerator)` можно написать `!isAdmin && !isModerator` — читается как «не администратор и не модератор».

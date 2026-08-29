@@ -24,15 +24,15 @@ For example, numbers can be added, divided, and multiplied. Strings are combined
 An example of printing a number:
 
 ```javascript
-console.log(5);  // => 5
+console.log(5); // => 5
 console.log(-5); // => -5
 ```
 
 An example of printing a string:
 
 ```javascript
-console.log('5');  // => 5
-console.log('-5'); // => -5
+console.log("5"); // => 5
+console.log("-5"); // => -5
 ```
 
 On the screen the result looks the same, but inside the program these are completely different things:
@@ -47,11 +47,11 @@ On the screen the result looks the same, but inside the program these are comple
 In many languages, integers and fractional numbers are different types (for example, in Python they are `int` and `float`). JavaScript has no such division: both integers and fractional numbers belong to a single type — `number`.
 
 ```javascript
-console.log(10.234);     // => 10.234
-console.log(-0.4);       // => -0.4
+console.log(10.234); // => 10.234
+console.log(-0.4); // => -0.4
 
-console.log(3.5 + 1.2);  // => 4.7
-console.log(5 / 2);      // => 2.5
+console.log(3.5 + 1.2); // => 4.7
+console.log(5 / 2); // => 2.5
 console.log(2.75 - 0.5); // => 2.25
 ```
 
@@ -75,11 +75,11 @@ In addition to strings and numbers, JavaScript has the boolean type `boolean` wi
 The `typeof` operator returns the type as a string:
 
 ```javascript
-console.log(typeof 42);        // => 'number'
-console.log(typeof 'hello');   // => 'string'
-console.log(typeof true);      // => 'boolean'
+console.log(typeof 42); // => 'number'
+console.log(typeof "hello"); // => 'string'
+console.log(typeof true); // => 'boolean'
 console.log(typeof undefined); // => 'undefined'
-console.log(typeof null);      // => 'object'  (a historical JS bug)
+console.log(typeof null); // => 'object'  (a historical JS bug)
 ```
 
 There are also composite types — arrays, objects, and others. We will get acquainted with them later. Moreover, in JavaScript you can create your own types (for example, classes), but to start with it is important to understand primitives well.

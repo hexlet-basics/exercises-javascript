@@ -9,7 +9,7 @@ console.log(name); // ?
 `undefined` is a special value of its own type that denotes an absence of value. Undefined is used by JavaScript in many different cases, for example when calling a non-existent string character:
 
 ```javascript
-const name = 'Arya';
+const name = "Arya";
 console.log(name[8]);
 ```
 

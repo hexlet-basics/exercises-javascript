@@ -5,7 +5,7 @@ A tiered tariff is in effect: the first `100` kWh cost `5` rubles each, the next
 Iterate over the consumption with a loop and gradually accumulate the total amount.
 
 ```javascript
-calculateElectricityBill(80);  // => 400
+calculateElectricityBill(80); // => 400
 calculateElectricityBill(150); // => 850
 calculateElectricityBill(250); // => 1700
 ```

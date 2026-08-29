@@ -5,7 +5,7 @@
 В JavaScript строки объединяются с помощью оператора `+`. Несмотря на то, что этот оператор используется и для сложения чисел, в случае строк он означает объединение, то есть склеивание содержимого.
 
 ```javascript
-console.log('Dragon' + 'stone');
+console.log("Dragon" + "stone");
 // => Dragonstone
 ```
 
@@ -25,10 +25,10 @@ console.log('Dragon' + 'stone');
 Примеры.
 
 ```javascript
-console.log('Kings' + 'wood');       // => Kingswood
-console.log('Kings' + 'road');       // => Kingsroad
+console.log("Kings" + "wood"); // => Kingswood
+console.log("Kings" + "road"); // => Kingsroad
 // Здесь снаружи двойные кавычки, потому что внутри есть одиночная
-console.log("King's" + 'Landing');   // => King'sLanding
+console.log("King's" + "Landing"); // => King'sLanding
 ```
 
 JavaScript позволяет объединять строки, даже если они записаны в разных кавычках. Главное, чтобы обе части были строками.
@@ -39,10 +39,10 @@ JavaScript позволяет объединять строки, даже есл
 
 ```javascript
 // Пробел в конце первой строки
-console.log("King's " + 'Landing');  // => King's Landing
+console.log("King's " + "Landing"); // => King's Landing
 
 // Пробел в начале второй строки
-console.log("King's" + ' Landing');  // => King's Landing
+console.log("King's" + " Landing"); // => King's Landing
 ```
 
 Результат будет одинаковый. Но если пробел не добавить, то слова склеятся.
@@ -52,7 +52,7 @@ console.log("King's" + ' Landing');  // => King's Landing
 В строках можно использовать управляющие последовательности, например `\n` для переноса строки или `\t` для табуляции. При конкатенации они работают так же, как и любые другие символы.
 
 ```javascript
-console.log('Hello,' + '\n' + 'World!');
+console.log("Hello," + "\n" + "World!");
 // Hello,
 // World!
 ```
@@ -60,7 +60,7 @@ console.log('Hello,' + '\n' + 'World!');
 Точно так же можно использовать табуляцию `\t` для выравнивания вывода.
 
 ```javascript
-console.log('A' + '\t' + 'B'); // => A	B
+console.log("A" + "\t" + "B"); // => A	B
 ```
 
 ## Заключение

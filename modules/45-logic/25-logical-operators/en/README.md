@@ -13,9 +13,9 @@ const isStrongPassword = (password) => {
   return length > 8 && length < 20;
 };
 
-isStrongPassword('qwerty'); // false
-isStrongPassword('qwerty1234'); // true
-isStrongPassword('zxcvbnmasdfghjkqwertyui'); // false
+isStrongPassword("qwerty"); // false
+isStrongPassword("qwerty1234"); // true
+isStrongPassword("zxcvbnmasdfghjkqwertyui"); // false
 ```
 
 `&&` means "AND" (in mathematical logic this is called conjunction). The whole expression is considered true only when each operand is true — each of the component expressions. In other words, `&&` means "both one and the other".
@@ -43,17 +43,17 @@ Let's write a function that checks the apartment. It takes two arguments: the ar
 ```javascript
 const isGoodApartment = (area, street) => {
   // Via a variable so the function isn't too long
-  const result = area >= 100 || (area >= 80 && street === 'Main Street');
+  const result = area >= 100 || (area >= 80 && street === "Main Street");
   return result;
 };
 
-isGoodApartment(91, 'Queens Street'); // false
-isGoodApartment(78, 'Queens Street'); // false
-isGoodApartment(70, 'Main Street');   // false
+isGoodApartment(91, "Queens Street"); // false
+isGoodApartment(78, "Queens Street"); // false
+isGoodApartment(70, "Main Street"); // false
 
-isGoodApartment(120, 'Queens Street'); // true
-isGoodApartment(120, 'Main Street');   // true
-isGoodApartment(80, 'Main Street');    // true
+isGoodApartment(120, "Queens Street"); // true
+isGoodApartment(120, "Main Street"); // true
+isGoodApartment(80, "Main Street"); // true
 ```
 
 The branch of mathematics that studies logical operators is called Boolean algebra. Below are the "truth tables" — you can use them to determine the result of applying an operator:
@@ -71,10 +71,10 @@ A couple of examples:
 
 ```javascript
 // true && true;
-3 > 2 && 'wow'.startsWith('w'); // true
+3 > 2 && "wow".startsWith("w"); // true
 
 // true && false;
-'start' === 'start' && 8 < 3; // false
+"start" === "start" && 8 < 3; // false
 ```
 
 ## OR `||`
@@ -90,8 +90,8 @@ A couple of examples:
 
 ```javascript
 // true || true;
-3 > 2 || 'wow'.startsWith('w'); // true
+3 > 2 || "wow".startsWith("w"); // true
 
 // false || false;
-'start' === 'Start' || 3 < 3; // false
+"start" === "Start" || 3 < 3; // false
 ```

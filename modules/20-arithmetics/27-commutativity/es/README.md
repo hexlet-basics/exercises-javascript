@@ -45,7 +45,7 @@ Ejemplos en código:
 
 ```javascript
 // División
-console.log(8 / 2);  // 8 dividido por 2 = 4
+console.log(8 / 2); // 8 dividido por 2 = 4
 
 // Exponenciación
 console.log(3 ** 2); // 3 al cuadrado = 9

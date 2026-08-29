@@ -4,10 +4,10 @@
 
 ```javascript
 // greeting переводится как «приветствие»
-let greeting = 'Father!';
+let greeting = "Father!";
 console.log(greeting); // => Father!
 
-greeting = 'Mother!';
+greeting = "Mother!";
 console.log(greeting); // => Mother!
 ```
 
@@ -34,8 +34,8 @@ console.log(greeting); // => Mother!
 Не каждую переменную можно переприсвоить. Если переменная объявлена через `const`, её значение менять нельзя:
 
 ```javascript
-const greeting = 'Father!';
-greeting = 'Mother!'; // TypeError: Assignment to constant variable.
+const greeting = "Father!";
+greeting = "Mother!"; // TypeError: Assignment to constant variable.
 ```
 
 Поэтому для значений, которые будут меняться, используют `let`, а для постоянных — `const`. Так работает большинство современных языков программирования: значение, которое не должно меняться, помечают отдельно.

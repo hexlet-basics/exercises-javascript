@@ -29,8 +29,8 @@ let sum = 0;
 let index = 1;
 
 while (index <= 5) {
-  sum += index;  // то же самое, что sum = sum + index
-  index += 1;    // то же самое, что index = index + 1
+  sum += index; // то же самое, что sum = sum + index
+  index += 1; // то же самое, что index = index + 1
 }
 
 console.log(sum); // => 15
@@ -50,8 +50,8 @@ while (index <= 5) {
 Такая запись работает не только с числами. Для строк используется оператор конкатенации:
 
 ```javascript
-let text = 'Hello';
-text += ' World'; // то же самое, что text = text + ' World'
+let text = "Hello";
+text += " World"; // то же самое, что text = text + ' World'
 ```
 
 ## Поддерживаемые сокращения

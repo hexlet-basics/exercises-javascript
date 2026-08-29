@@ -6,22 +6,22 @@ const getTypeOfSentence = (sentence) => {
   const lastChar = sentence[sentence.length - 1];
   let sentenceType;
 
-  if (lastChar === '!') {
-    sentenceType = 'exclamation';
+  if (lastChar === "!") {
+    sentenceType = "exclamation";
   } else {
-    sentenceType = 'normal';
+    sentenceType = "normal";
   }
 
-  if (lastChar === '?') {
-    sentenceType = 'question';
+  if (lastChar === "?") {
+    sentenceType = "question";
   }
 
   return `Sentence is ${sentenceType}`;
 };
 
-getTypeOfSentence('Who?'); // Sentence is question
-getTypeOfSentence('No');   // Sentence is normal
-getTypeOfSentence('No!');  // Sentence is exclamation
+getTypeOfSentence("Who?"); // Sentence is question
+getTypeOfSentence("No"); // Sentence is normal
+getTypeOfSentence("No!"); // Sentence is exclamation
 ```
 
 Мы добавили ещё одну проверку ("exclamation" переводится «восклицание»). Технически функция работает, но с точки зрения семантики есть проблемы.
@@ -36,20 +36,20 @@ const getTypeOfSentence = (sentence) => {
   const lastChar = sentence[sentence.length - 1];
   let sentenceType;
 
-  if (lastChar === '?') {
-    sentenceType = 'question';
-  } else if (lastChar === '!') {
-    sentenceType = 'exclamation';
+  if (lastChar === "?") {
+    sentenceType = "question";
+  } else if (lastChar === "!") {
+    sentenceType = "exclamation";
   } else {
-    sentenceType = 'normal';
+    sentenceType = "normal";
   }
 
   return `Sentence is ${sentenceType}`;
 };
 
-getTypeOfSentence('Who?'); // Sentence is question
-getTypeOfSentence('No');   // Sentence is normal
-getTypeOfSentence('No!');  // Sentence is exclamation
+getTypeOfSentence("Who?"); // Sentence is question
+getTypeOfSentence("No"); // Sentence is normal
+getTypeOfSentence("No!"); // Sentence is exclamation
 ```
 
 Теперь все условия выстроены в единую конструкцию. `else if` — это «если не выполнено предыдущее условие, но выполнено текущее».

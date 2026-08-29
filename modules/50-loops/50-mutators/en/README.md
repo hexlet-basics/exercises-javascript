@@ -35,10 +35,10 @@ The rule works exactly the same for both incrementing and decrementing. For simp
 let x = 5;
 
 console.log(++x); // => 6
-console.log(x);   // => 6
+console.log(x); // => 6
 
 console.log(x++); // => 6
-console.log(x);   // => 7
+console.log(x); // => 7
 ```
 
 What's going on?

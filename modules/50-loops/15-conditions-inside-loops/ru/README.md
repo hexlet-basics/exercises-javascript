@@ -37,9 +37,9 @@ while (number <= 10) {
 Рассмотрим функцию, которая считает, сколько раз буква входит в предложение:
 
 ```javascript
-countChars('Fear cuts deeper than swords.', 'e'); // 4
+countChars("Fear cuts deeper than swords.", "e"); // 4
 // Если ничего не нашли, результат — 0 совпадений
-countChars('Sansa', 'y'); // 0
+countChars("Sansa", "y"); // 0
 ```
 
 Реализация:

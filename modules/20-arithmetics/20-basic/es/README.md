@@ -41,8 +41,8 @@ Resultado de la ejecución:
 Si escribimos la misma expresión como una cadena, obtenemos un resultado completamente diferente: se imprimirá la cadena "tal cual":
 
 ```javascript
-console.log('3 + 4'); // imprime: 3 + 4
-console.log(3 + 4);   // imprime: 7
+console.log("3 + 4"); // imprime: 3 + 4
+console.log(3 + 4); // imprime: 7
 ```
 
 ## Otras operaciones aritméticas
@@ -61,7 +61,7 @@ JavaScript admite todas las operaciones habituales más algunas específicas rel
 Así es como puedes imprimir el resultado de la división y de la potenciación:
 
 ```javascript
-console.log(8 / 2);  // => 4
+console.log(8 / 2); // => 4
 console.log(3 ** 2); // => 9
 ```
 

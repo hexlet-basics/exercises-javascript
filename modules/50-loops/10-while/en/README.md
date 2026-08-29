@@ -11,7 +11,7 @@ In the example, the counter is named `counter`. Before the loop it equals `0`. A
 ```javascript
 let counter = 0;
 while (counter < 5) {
-  console.log('Hello!');
+  console.log("Hello!");
   counter = counter + 1;
 }
 
@@ -54,11 +54,11 @@ The loop body includes everything inside the curly braces. The code after the lo
 ```javascript
 let counter = 0;
 while (counter < 2) {
-  console.log('Hello!');
+  console.log("Hello!");
   counter = counter + 1;
 }
 
-console.log('End of loop');
+console.log("End of loop");
 ```
 
 Here `console.log('Hello!')` and `counter = counter + 1` are inside the loop, while `console.log('End of loop')` is outside it, so it runs once after the loop finishes.
@@ -74,7 +74,7 @@ const printNumbers = (n) => {
     console.log(i);
     i = i + 1;
   }
-  console.log('Finished!');
+  console.log("Finished!");
 };
 
 printNumbers(3);

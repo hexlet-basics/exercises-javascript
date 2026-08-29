@@ -3,7 +3,7 @@ Conocemos dos tipos de datos diferentes: números y cadenas de texto. Por ejempl
 ¿Pero qué sucede si aplicamos esta operación no a dos números, sino a un número y una cadena de texto?
 
 ```javascript
-console.log(1 + '7'); // => 17
+console.log(1 + "7"); // => 17
 ```
 
 A pesar de que `'7'` es una cadena de texto y no un número, el intérprete de JavaScript devolvió la respuesta `'17'`, como si estuviéramos sumando dos cadenas de texto. Cuando JavaScript encuentra una incompatibilidad de tipos, intenta convertir la información por sí mismo. En este caso, convirtió el número `1` en la cadena de texto `'1'` y luego realizó tranquilamente la concatenación de `'1'` y `'7'`.
@@ -15,7 +15,7 @@ No todos los lenguajes hacen esto. JavaScript es un lenguaje con **tipado débil
 A veces, JavaScript llega a extremos. La mayoría de las expresiones que no funcionan en otros lenguajes sí funcionan en JavaScript. Prueba a realizar cualquier operación aritmética, excepto la suma, sustituyendo allí cadenas de texto: verás que el código se ejecuta y devuelve `NaN` (Not a Number):
 
 ```javascript
-console.log('one' * 'two'); // => NaN
+console.log("one" * "two"); // => NaN
 ```
 
 ```text

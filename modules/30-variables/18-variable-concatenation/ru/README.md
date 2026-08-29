@@ -3,7 +3,7 @@
 ## Склеиваем две строки напрямую
 
 ```javascript
-const what = 'Kings' + 'road';
+const what = "Kings" + "road";
 console.log(what); // => Kingsroad
 ```
 
@@ -14,8 +14,8 @@ console.log(what); // => Kingsroad
 Если в переменной `first` лежит строка `'Kings'`, мы можем спокойно склеить её с другой строкой:
 
 ```javascript
-const first = 'Kings';
-const what = first + 'road';
+const first = "Kings";
+const what = first + "road";
 console.log(what); // => Kingsroad
 ```
 
@@ -26,8 +26,8 @@ JavaScript подставит значение переменной, выпол�
 Точно так же можно объединить значения двух переменных, если обе содержат строки:
 
 ```javascript
-const first = 'Kings';
-const last = 'road';
+const first = "Kings";
+const last = "road";
 const what = first + last;
 console.log(what); // => Kingsroad
 ```
@@ -35,7 +35,7 @@ console.log(what); // => Kingsroad
 Можно добавлять и пробелы:
 
 ```javascript
-const full = first + ' ' + last;
+const full = first + " " + last;
 console.log(full); // => Kings road
 ```
 
@@ -56,14 +56,14 @@ first   +  ' '  +  last
 
 ```javascript
 const age = 42;
-console.log('Age: ' + age); // => Age: 42
+console.log("Age: " + age); // => Age: 42
 ```
 
 То же самое касается переменных с результатами вычислений:
 
 ```javascript
 const price = 50 * 1.25 * 6.91; // => 431.875
-console.log('Price in yuans: ' + price); // => Price in yuans: 431.875
+console.log("Price in yuans: " + price); // => Price in yuans: 431.875
 ```
 
 Существует и явное преобразование числа в строку с помощью `String()` — разберём его в уроке про приведение типов.

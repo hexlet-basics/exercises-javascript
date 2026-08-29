@@ -35,8 +35,8 @@ In this case, `-` is a unary operator, and `3` is the operand. The interpreter r
 The `-` operator can be used in different ways. When it stands **between two numbers**, it is a subtraction operation:
 
 ```javascript
-console.log(5 - 2);   // => 3
-console.log(10 - 7);  // => 3
+console.log(5 - 2); // => 3
+console.log(10 - 7); // => 3
 ```
 
 This difference is especially noticeable when working with negative numbers:

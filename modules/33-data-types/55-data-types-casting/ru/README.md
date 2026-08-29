@@ -7,24 +7,24 @@ JavaScript умеет преобразовывать типы автоматич
 Представим, что мы получили из формы строку `'345'`, а нам нужно сложить это число с другим:
 
 ```javascript
-const number = Number('345');
+const number = Number("345");
 console.log(number + 5); // => 350
 ```
 
 Функция `Number()` получает строку и превращает её в число. Такие функции называют функциями приведения типа (casting functions).
 
 ```javascript
-console.log(Number('0'));     // => 0
-console.log(Number('10'));    // => 10
-console.log(Number('3.14'));  // => 3.14
-console.log(Number('hello')); // => NaN  (не удалось преобразовать)
+console.log(Number("0")); // => 0
+console.log(Number("10")); // => 10
+console.log(Number("3.14")); // => 3.14
+console.log(Number("hello")); // => NaN  (не удалось преобразовать)
 ```
 
 Кроме `Number()`, есть функции `parseInt()` и `parseFloat()` — они «вытягивают» из строки целое или дробное число и умеют игнорировать лишние символы в конце:
 
 ```javascript
-console.log(parseInt('10px'));   // => 10
-console.log(parseFloat('3.5kg')); // => 3.5
+console.log(parseInt("10px")); // => 10
+console.log(parseFloat("3.5kg")); // => 3.5
 ```
 
 ## Преобразование в строку с помощью String()
@@ -32,16 +32,16 @@ console.log(parseFloat('3.5kg')); // => 3.5
 Если нужно превратить число или логическое значение в строку, используйте функцию `String()`:
 
 ```javascript
-console.log(String(10));   // => '10'
+console.log(String(10)); // => '10'
 console.log(String(true)); // => 'true'
-console.log(String(3.5));  // => '3.5'
+console.log(String(3.5)); // => '3.5'
 ```
 
 Это полезно при формировании текстов и сообщений:
 
 ```javascript
 const age = 42;
-console.log('Age: ' + String(age)); // => Age: 42
+console.log("Age: " + String(age)); // => Age: 42
 // Хотя здесь удобнее интерполяция: `Age: ${age}`
 ```
 
@@ -54,10 +54,10 @@ console.log('Age: ' + String(age)); // => Age: 42
 ## Преобразование в логическое значение с помощью Boolean()
 
 ```javascript
-console.log(Boolean(0));       // => false
-console.log(Boolean(''));      // => false
-console.log(Boolean('hello')); // => true
-console.log(Boolean(1));       // => true
+console.log(Boolean(0)); // => false
+console.log(Boolean("")); // => false
+console.log(Boolean("hello")); // => true
+console.log(Boolean(1)); // => true
 ```
 
 ## Отбрасывание дробной части с помощью Math.trunc()
@@ -67,7 +67,7 @@ console.log(Boolean(1));       // => true
 Иногда из дробного числа нужно получить целое, отбросив дробную часть. Для этого используют `Math.trunc()`:
 
 ```javascript
-console.log(Math.trunc(36.6));  // => 36
+console.log(Math.trunc(36.6)); // => 36
 console.log(Math.trunc(-36.6)); // => -36
 ```
 

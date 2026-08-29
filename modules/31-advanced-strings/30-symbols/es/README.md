@@ -3,7 +3,7 @@ A veces hace falta obtener un solo carácter de una cadena. Por ejemplo, si el s
 En JavaScript, para acceder a los caracteres de una cadena se usa la indexación. La indexación significa que cada carácter de la cadena tiene su propio número, es decir, su índice. La indexación empieza en cero: el primer carácter tiene el índice `0`, el segundo el `1` y así sucesivamente. Imaginemos que tenemos una cadena:
 
 ```javascript
-const firstName = 'Alexander';
+const firstName = "Alexander";
 ```
 
 Para obtener la primera letra, indicamos su posición (el índice) entre corchetes:
@@ -22,9 +22,9 @@ Carácter  A  l  e  x  a  n  d  e  r
 La longitud de la cadena `Alexander` es `9`, por eso el índice del último carácter es `8`, es decir, `9 - 1`. La longitud de una cadena se puede averiguar con la función `length()`:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-console.log(length(firstName));               // => 9
+console.log(length(firstName)); // => 9
 console.log(firstName[length(firstName) - 1]); // => r
 ```
 
@@ -47,9 +47,9 @@ Por eso, en programación se acostumbra a comprobar la longitud de la cadena y a
 En algunos lenguajes (por ejemplo, en Python) para acceder a los caracteres desde el final se usan índices negativos. En JavaScript los corchetes **no** entienden los índices negativos: `firstName[-1]` devolverá `undefined`. Por eso el índice de un carácter contado desde el final se calcula a través de la longitud de la cadena:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-const word = 'Hexlet';
+const word = "Hexlet";
 
 console.log(word[length(word) - 1]); // => t, el último carácter
 console.log(word[length(word) - 2]); // => e, el penúltimo carácter
@@ -80,7 +80,7 @@ Por ejemplo, en la cadena `'\nyou'` el primer carácter es `\n` (el salto de lí
 ## Piensa: ¿qué mostrará este código?
 
 ```javascript
-const magic = '\nyou';
+const magic = "\nyou";
 console.log(magic[1]); // => ?
 ```
 

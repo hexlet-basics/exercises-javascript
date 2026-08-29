@@ -2,7 +2,7 @@ Logical expressions let you check various conditions, but on their own they only
 
 ```javascript
 if (5 > 3) {
-  console.log('Yes, it is true');
+  console.log("Yes, it is true");
 }
 ```
 
@@ -37,11 +37,11 @@ Everything inside the curly braces `{}` belongs to the body of the `if`. The cod
 
 ```javascript
 if (10 === 10) {
-  console.log('First');
-  console.log('Second');
+  console.log("First");
+  console.log("Second");
 }
 
-console.log('Goodbye!');
+console.log("Goodbye!");
 ```
 
 Here `First` and `Second` will be printed because the condition was met. And `Goodbye!` is always printed since this line is already outside the block. The principle is the same as in function definitions.
@@ -52,14 +52,14 @@ Consider a function that determines the type of a given sentence. If it ends wit
 
 ```javascript
 const getTypeOfSentence = (sentence) => {
-  if (sentence.endsWith('?')) {
-    return 'question';
+  if (sentence.endsWith("?")) {
+    return "question";
   }
-  return 'normal';
+  return "normal";
 };
 
-console.log(getTypeOfSentence('Hodor'));  // => normal
-console.log(getTypeOfSentence('Hodor?')); // => question
+console.log(getTypeOfSentence("Hodor")); // => normal
+console.log(getTypeOfSentence("Hodor?")); // => question
 ```
 
 Two `return` statements are used here. If the condition inside `if` is met, `return 'question'` fires and the function ends. If the condition is not met, control passes to the next line with `return 'normal'`.
@@ -77,7 +77,7 @@ const hasEnoughMoney = (balance, price) => {
 };
 
 console.log(hasEnoughMoney(100, 50)); // => true
-console.log(hasEnoughMoney(30, 50));  // => false
+console.log(hasEnoughMoney(30, 50)); // => false
 ```
 
 ## if and logical expressions

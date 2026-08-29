@@ -3,6 +3,6 @@ Durante el registro en un sitio web, el programa verifica que la contraseña sea
 Ejemplo de uso:
 
 ```javascript
-isLongWord('apple');  // => false
-isLongWord('banana'); // => true
+isLongWord("apple"); // => false
+isLongWord("banana"); // => true
 ```

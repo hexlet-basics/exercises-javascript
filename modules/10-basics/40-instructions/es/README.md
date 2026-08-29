@@ -11,8 +11,8 @@ Instrucción 3: console.log('!')        →  ejecutada
 Aquí tienes un ejemplo de código con dos instrucciones. Estas líneas le indican a la computadora que muestre las frases en pantalla.
 
 ```javascript
-console.log('Mother of Dragons.'); // Primera instrucción
-console.log('Dracarys!'); // Segunda instrucción
+console.log("Mother of Dragons."); // Primera instrucción
+console.log("Dracarys!"); // Segunda instrucción
 ```
 
 El resultado de la ejecución:
@@ -27,8 +27,8 @@ Dracarys!
 El intérprete de JavaScript ejecuta el código estrictamente en el orden en el que lo escribiste. Si intercambias las líneas:
 
 ```javascript
-console.log('Dracarys!');
-console.log('Mother of Dragons.');
+console.log("Dracarys!");
+console.log("Mother of Dragons.");
 ```
 
 en la pantalla también aparecerán intercambiadas:
@@ -43,7 +43,8 @@ Mother of Dragons.
 Normalmente las instrucciones se escriben en líneas separadas, pero también pueden escribirse en una sola línea separadas por `;`:
 
 ```javascript
-console.log('Mother of Dragons.'); console.log('Dracarys!');
+console.log("Mother of Dragons.");
+console.log("Dracarys!");
 ```
 
 Ambas versiones funcionan igual, pero la segunda es más difícil de leer. Por eso, las instrucciones casi siempre se escriben una por línea.

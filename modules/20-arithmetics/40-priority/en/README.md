@@ -28,7 +28,7 @@ console.log(2 * 2 ** 3); // => 16, because first 2 ** 3 = 8, then 8 * 2 = 16
 If operations with the same precedence are next to each other, they are performed from left to right:
 
 ```javascript
-console.log(8 / 2 * 3); // => 12, because first 8 / 2 = 4, then 4 * 3 = 12
+console.log((8 / 2) * 3); // => 12, because first 8 / 2 = 4, then 4 * 3 = 12
 ```
 
 ## Controlling the order of operations
@@ -42,8 +42,8 @@ console.log((2 + 2) * 2); // => 8
 Parentheses can be placed around any part of an expression and nested within each other:
 
 ```javascript
-console.log(3 ** (4 - 2));                       // => 9
-console.log(7 * 3 + (4 / 2) - (8 + (2 - 1)));   // => 14
+console.log(3 ** (4 - 2)); // => 9
+console.log(7 * 3 + 4 / 2 - (8 + (2 - 1))); // => 14
 ```
 
 The main rule: always close your parentheses. Unmatched parentheses cause errors: both beginners and experienced programmers sometimes forget about the closing parenthesis.
@@ -56,10 +56,10 @@ Sometimes an expression works correctly but looks confusing. In such cases, pare
 
 ```javascript
 // Before
-console.log(8 / 2 + 5 - -3 / 2);         // => 10.5
+console.log(8 / 2 + 5 - -3 / 2); // => 10.5
 
 // After
-console.log(((8 / 2) + 5) - (-3 / 2));   // => 10.5
+console.log(8 / 2 + 5 - -3 / 2); // => 10.5
 ```
 
 Programs are written by people, and they are read by people too. The computer doesn't care how understandable the code is: it just needs to be syntactically correct. For a human, clear and tidy code is the key to convenience, especially when working in a team or debugging errors.

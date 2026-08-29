@@ -4,10 +4,10 @@ Escribe dos funciones:
 2. `isNotPalindrome(str)` — devuelve `true` si la cadena **no** es un palíndromo.
 
 ```javascript
-isPalindrome('level');    // => true
-isPalindrome('hello');    // => false
-isNotPalindrome('level'); // => false
-isNotPalindrome('hello'); // => true
+isPalindrome("level"); // => true
+isPalindrome("hello"); // => false
+isNotPalindrome("level"); // => false
+isNotPalindrome("hello"); // => true
 ```
 
 Usa los métodos `.split('')`, `.reverse()`, `.join('')` para invertir la cadena.

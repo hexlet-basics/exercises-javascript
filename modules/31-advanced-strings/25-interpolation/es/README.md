@@ -2,10 +2,10 @@
 Recordemos cómo funciona la concatenación. Para ello unimos las cadenas necesarias (o las variables con cadenas dentro) mediante el signo `+`:
 
 ```javascript
-const firstName = 'Joffrey';
-const greeting = 'Hello';
+const firstName = "Joffrey";
+const greeting = "Hello";
 
-console.log(greeting + ', ' + firstName + '!');
+console.log(greeting + ", " + firstName + "!");
 // => Hello, Joffrey!
 ```
 
@@ -14,8 +14,8 @@ Pero en expresiones complejas cuesta ver de inmediato qué texto se obtendrá al
 Por esa razón, en muchos lenguajes existe una operación llamada interpolación. La interpolación es una forma de insertar los valores de las variables directamente dentro de una cadena. En JavaScript, para eso se usan las **plantillas de cadena** (template literals). Se escriben entre comillas invertidas `` ` ``, y las variables se insertan con `${}`:
 
 ```javascript
-const firstName = 'Joffrey';
-const greeting = 'Hello';
+const firstName = "Joffrey";
+const greeting = "Hello";
 
 console.log(`${greeting}, ${firstName}!`);
 // => Hello, Joffrey!
@@ -37,7 +37,7 @@ greeting  = 'Hello'
 Compara estos dos ejemplos uno al lado del otro:
 
 ```javascript
-console.log(greeting + ', ' + firstName + '!');
+console.log(greeting + ", " + firstName + "!");
 console.log(`${greeting}, ${firstName}!`);
 ```
 
@@ -60,14 +60,14 @@ console.log(`Total: ${price * count}`);
 Una plantilla de cadena se escribe **obligatoriamente** entre comillas invertidas `` ` ``. Las comillas simples o dobles no funcionan para la interpolación:
 
 ```javascript
-console.log('${firstName}'); // mostrará literalmente: ${firstName}
+console.log("${firstName}"); // mostrará literalmente: ${firstName}
 console.log(`${firstName}`); // mostrará el valor de la variable
 ```
 
 ## Ejemplo
 
 ```javascript
-const school = 'Hexlet';
+const school = "Hexlet";
 
 const whatIsIt = `${school} - online courses`;
 console.log(whatIsIt); // => Hexlet - online courses

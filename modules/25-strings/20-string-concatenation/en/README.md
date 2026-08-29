@@ -5,7 +5,7 @@ Often, strings need to be assembled from several parts, for example, to combine 
 In JavaScript, strings are combined using the `+` operator. Even though this operator is also used to add numbers, in the case of strings it means combining, that is, gluing the contents together.
 
 ```javascript
-console.log('Dragon' + 'stone');
+console.log("Dragon" + "stone");
 // => Dragonstone
 ```
 
@@ -25,10 +25,10 @@ Here is how combining several strings works:
 Examples.
 
 ```javascript
-console.log('Kings' + 'wood');       // => Kingswood
-console.log('Kings' + 'road');       // => Kingsroad
+console.log("Kings" + "wood"); // => Kingswood
+console.log("Kings" + "road"); // => Kingsroad
 // Here we use double quotes on the outside because there is a single quote inside
-console.log("King's" + 'Landing');   // => King'sLanding
+console.log("King's" + "Landing"); // => King'sLanding
 ```
 
 JavaScript lets you combine strings even if they are written with different quotes. The main thing is that both parts are strings.
@@ -39,10 +39,10 @@ When combining, JavaScript does not insert spaces automatically. If there should
 
 ```javascript
 // Space at the end of the first string
-console.log("King's " + 'Landing');  // => King's Landing
+console.log("King's " + "Landing"); // => King's Landing
 
 // Space at the beginning of the second string
-console.log("King's" + ' Landing');  // => King's Landing
+console.log("King's" + " Landing"); // => King's Landing
 ```
 
 The result will be the same. But if you do not add a space, the words will glue together.
@@ -52,7 +52,7 @@ The result will be the same. But if you do not add a space, the words will glue 
 In strings, you can use escape sequences, for example `\n` for a line break or `\t` for a tab. During concatenation, they work the same as any other characters.
 
 ```javascript
-console.log('Hello,' + '\n' + 'World!');
+console.log("Hello," + "\n" + "World!");
 // Hello,
 // World!
 ```
@@ -60,7 +60,7 @@ console.log('Hello,' + '\n' + 'World!');
 In the same way, you can use the tab `\t` to align output.
 
 ```javascript
-console.log('A' + '\t' + 'B'); // => A	B
+console.log("A" + "\t" + "B"); // => A	B
 ```
 
 ## Conclusion

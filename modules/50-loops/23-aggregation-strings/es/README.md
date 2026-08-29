@@ -4,7 +4,7 @@ La agregación se aplica no solo a los números, sino también a las cadenas. Es
 Imagina una función que sabe "multiplicar" una cadena, es decir, la repite una cantidad determinada de veces:
 
 ```javascript
-repeat('hexlet', 3); // hexlethexlethexlet
+repeat("hexlet", 3); // hexlethexlethexlet
 ```
 
 El principio de funcionamiento de esta función es bastante simple: en un bucle se produce el "crecimiento" de la cadena la cantidad de veces indicada:
@@ -12,7 +12,7 @@ El principio de funcionamiento de esta función es bastante simple: en un bucle 
 ```javascript
 const repeat = (text, times) => {
   // El elemento neutro para las cadenas es la cadena vacía
-  let result = '';
+  let result = "";
   let i = 1;
 
   while (i <= times) {
@@ -29,7 +29,7 @@ Detallemos la ejecución de este código paso a paso:
 
 ```javascript
 // Para la llamada repeat('hexlet', 3);
-let result = '';
+let result = "";
 result = `${result}hexlet`; // hexlet
 result = `${result}hexlet`; // hexlethexlet
 result = `${result}hexlet`; // hexlethexlethexlet
@@ -53,8 +53,8 @@ Para que el crecimiento funcione, se necesita un valor inicial. Para las cadenas
 Se llama elemento neutro porque no cambia nada durante la concatenación:
 
 ```javascript
-console.log('' + 'abc'); // => abc
-console.log('abc' + ''); // => abc
+console.log("" + "abc"); // => abc
+console.log("abc" + ""); // => abc
 ```
 
 Por eso la cadena vacía siempre se usa como valor inicial al agregar cadenas.

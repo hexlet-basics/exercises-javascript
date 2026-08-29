@@ -1,16 +1,16 @@
 Представьте, что у нас есть такая программа:
 
 ```javascript
-const x = 'Father!';
+const x = "Father!";
 console.log(x);
 ```
 
 С технической точки зрения всё работает. Мы уже видели похожие примеры, но здесь используется переменная с названием `x`. Плохие имена мешают читать и понимать код. Вот несколько примеров неудачных переменных:
 
 ```javascript
-const a = 'John';
+const a = "John";
 const n = 42;
-const ddr = 'New York';
+const ddr = "New York";
 ```
 
 Что это за переменные? Что в них хранится? Чтобы это понять, нужно читать весь остальной код и догадываться по контексту.
@@ -20,7 +20,7 @@ const ddr = 'New York';
 ## Хорошие примеры
 
 ```javascript
-const userName = 'Arya Stark';
+const userName = "Arya Stark";
 const unpaidOrdersCount = 3;
 const maxAttempts = 5;
 ```

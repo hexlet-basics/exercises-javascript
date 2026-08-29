@@ -4,10 +4,10 @@ Aquí tienes un ejemplo sencillo:
 
 ```javascript
 // greeting significa un saludo
-let greeting = 'Father!';
+let greeting = "Father!";
 console.log(greeting); // => Father!
 
-greeting = 'Mother!';
+greeting = "Mother!";
 console.log(greeting); // => Mother!
 ```
 
@@ -34,8 +34,8 @@ En los programas reales, las variables cambian todo el tiempo. Aquí tienes algu
 No toda variable se puede reasignar. Si una variable se declara con `const`, su valor no se puede cambiar:
 
 ```javascript
-const greeting = 'Father!';
-greeting = 'Mother!'; // TypeError: Assignment to constant variable.
+const greeting = "Father!";
+greeting = "Mother!"; // TypeError: Assignment to constant variable.
 ```
 
 Por eso, para los valores que van a cambiar se usa `let`, y para los constantes, `const`. Así funciona la mayoría de los lenguajes de programación modernos: un valor que no debe cambiar se marca por separado.

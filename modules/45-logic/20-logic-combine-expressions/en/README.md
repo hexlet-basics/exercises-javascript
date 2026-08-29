@@ -21,14 +21,14 @@ Split some candies equally among individuals:
 The `%` operator calculates the remainder of a division (not to be confused with division itself):
 
 ```javascript
-7 % 2;  // 1
+7 % 2; // 1
 21 % 3; // 0
 19 % 5; // 4
 
 // Checking if even
 
-10 % 2 // 10 is even, i.e. remainder is 0
-9 % 2  // 9 odd, i.e. remainder is 1
+10 % 2; // 10 is even, i.e. remainder is 0
+9 % 2; // 9 odd, i.e. remainder is 1
 ```
 
 Write a function to check whether a number is even:
@@ -37,7 +37,7 @@ Write a function to check whether a number is even:
 const isEven = (number) => number % 2 === 0;
 
 isEven(10); // true
-isEven(3);  // false
+isEven(3); // false
 ```
 
 In one expression, we've combined the logical operator `===` (equality check) and the arithmetic operator `%`.
@@ -60,6 +60,6 @@ const isFirstLetterInUpperCase = (string) => {
   return firstLetter.toUpperCase() === firstLetter;
 };
 
-isFirstLetterInUpperCase('marmont'); // false
-isFirstLetterInUpperCase('Robb');    // true
+isFirstLetterInUpperCase("marmont"); // false
+isFirstLetterInUpperCase("Robb"); // true
 ```

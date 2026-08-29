@@ -33,11 +33,11 @@ There are two basic rules in JavaScript by which conversions take place:
 Developers use this extensively, for example, to define a default value:
 
 ```javascript
-const value = name || '';
+const value = name || "";
 // Examples
-234 || ''; // 234
-'hexlet' || ''; // 'hexlet'
-undefined || ''; // ''
+234 || ""; // 234
+"hexlet" || ""; // 'hexlet'
+undefined || ""; // ''
 ```
 
 If `name` is given one of the falsy values, an empty string will be assigned to the `value` constant. In that case, in subsequent code, we will be able to treat `value` as a string.
@@ -46,16 +46,16 @@ But there is a potential bug. If `name` contains a falsy value, and it's okay to
 
 ```javascript
 // Oops
-false || ''; // ''
-0 || ''; // ''
-undefined || ''; // ''
+false || ""; // ''
+0 || ""; // ''
+undefined || ""; // ''
 ```
 
 We covered the comparison operators `===` and `!==` in one of our lessons, and we mentioned that JavaScript also has the operators `==` and `!=`, though you shouldn't use them. The very difference lies in the type conversion:
 
 ```javascript
-console.log('' === false); // => false
-console.log('' == false);  // => true
+console.log("" === false); // => false
+console.log("" == false); // => true
 ```
 
 An empty string and `false` are different values, so the `===` operator says "False! They are not equal!".
@@ -87,7 +87,7 @@ However, this is where type conversions also take place. So the result of the do
 Imagine a task to check if a value is equal to either one thing or another. For instance, the variable `value` must contain one of two values: `first` or `second`. Novice developers sometimes write this expression this way:
 
 ```javascript
-value === ('first' || 'second')
+value === ("first" || "second");
 ```
 
 That's how we picture it in our minds, yet languages work differently, so this kind of code will lead to the wrong result. How do you read it correctly? We have to remember operator priority. The first thing to evaluate is wrapped in parentheses, i.e. `'first' || 'second'`. If we execute this code, the output will be:
@@ -103,7 +103,7 @@ node
 Now we can substitute the original expression with the partly evaluated one:
 
 ```javascript
-value === 'first'
+value === "first";
 ```
 
 Not what we expected at all. Now, back to the start. Let's write the test correctly:
@@ -111,5 +111,5 @@ Not what we expected at all. Now, back to the start. Let's write the test correc
 ```javascript
 // Parentheses are not necessary,
 // because === precedence is higher than that of ||
-value === 'first' || value === 'second'
+value === "first" || value === "second";
 ```

@@ -21,14 +21,14 @@
 Оператор `%` вычисляет остаток от деления (не путайте с делением):
 
 ```javascript
-7 % 2;  // 1
+7 % 2; // 1
 21 % 3; // 0
 19 % 5; // 4
 
 // Проверка четности
 
-10 % 2 // 10 чётное, так как остаток 0
-9 % 2  // 9 нечётное, так как остаток 1
+10 % 2; // 10 чётное, так как остаток 0
+9 % 2; // 9 нечётное, так как остаток 1
 ```
 
 Напишем функцию проверки чётности:
@@ -37,7 +37,7 @@
 const isEven = (number) => number % 2 === 0;
 
 isEven(10); // true
-isEven(3);  // false
+isEven(3); // false
 ```
 
 В одном выражении мы скомбинировали логический оператор `===` (проверка равенства) и арифметический оператор `%`.
@@ -60,6 +60,6 @@ const isFirstLetterInUpperCase = (string) => {
   return firstLetter.toUpperCase() === firstLetter;
 };
 
-isFirstLetterInUpperCase('marmont'); // false
-isFirstLetterInUpperCase('Robb');    // true
+isFirstLetterInUpperCase("marmont"); // false
+isFirstLetterInUpperCase("Robb"); // true
 ```

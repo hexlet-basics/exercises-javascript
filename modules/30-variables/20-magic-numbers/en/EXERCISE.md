@@ -1,7 +1,7 @@
 There are pallets with boxes in a warehouse. Extract the "magic" numbers `6` and `17` into named variables and print the result.
 
 ```javascript
-console.log('Boxes in stock:');
+console.log("Boxes in stock:");
 console.log(6 * 17);
 ```
 

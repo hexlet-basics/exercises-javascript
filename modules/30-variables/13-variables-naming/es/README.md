@@ -1,16 +1,16 @@
 Imagina que tenemos un programa como este:
 
 ```javascript
-const x = 'Father!';
+const x = "Father!";
 console.log(x);
 ```
 
 Desde el punto de vista técnico, todo funciona. Ya hemos visto ejemplos similares, pero aquí se usa una variable con el nombre `x`. Los nombres malos dificultan leer y entender el código. Aquí tienes algunos ejemplos de variables poco afortunadas:
 
 ```javascript
-const a = 'John';
+const a = "John";
 const n = 42;
-const ddr = 'New York';
+const ddr = "New York";
 ```
 
 ¿Qué son estas variables? ¿Qué almacenan? Para entenderlo, hay que leer todo el resto del código y adivinar por el contexto.
@@ -20,7 +20,7 @@ A la computadora le da igual cómo se llame la variable. Para ella, `x`, `abc`, 
 ## Buenos ejemplos
 
 ```javascript
-const userName = 'Arya Stark';
+const userName = "Arya Stark";
 const unpaidOrdersCount = 3;
 const maxAttempts = 5;
 ```

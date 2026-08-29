@@ -41,8 +41,8 @@ Execution result:
 If we write the same expression as a string, we get a completely different result — the string will be printed "as is":
 
 ```javascript
-console.log('3 + 4'); // prints: 3 + 4
-console.log(3 + 4);   // prints: 7
+console.log("3 + 4"); // prints: 3 + 4
+console.log(3 + 4); // prints: 7
 ```
 
 ## Other arithmetic operations
@@ -61,7 +61,7 @@ JavaScript supports all the usual operations plus a few specific ones related to
 Here is how you can print the result of division and exponentiation:
 
 ```javascript
-console.log(8 / 2);  // => 4
+console.log(8 / 2); // => 4
 console.log(3 ** 2); // => 9
 ```
 

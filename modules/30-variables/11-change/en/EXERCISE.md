@@ -5,7 +5,7 @@ The exercise already defines a variable `deliveryStatus` with the value `'in tra
 An example of reassigning a variable:
 
 ```javascript
-let someVar = 'old value';
-someVar = 'new value';
+let someVar = "old value";
+someVar = "new value";
 console.log(someVar); // => new value
 ```

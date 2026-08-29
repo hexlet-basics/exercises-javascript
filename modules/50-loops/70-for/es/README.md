@@ -5,7 +5,7 @@ Veamos la implementación de invertir una cadena utilizando el bucle `for`:
 
 ```javascript
 const reverseString = (str) => {
-  let result = '';
+  let result = "";
   for (let i = 0; i < str.length; i += 1) {
     result = `${str[i]}${result}`;
   }
@@ -52,9 +52,9 @@ const charsCount = (text, char) => {
   return result;
 };
 
-charsCount('hexlet!', 'e'); // 2
-charsCount('hExlet!', 'E'); // 2
-charsCount('hexlet!', 'a'); // 0
+charsCount("hexlet!", "e"); // 2
+charsCount("hExlet!", "E"); // 2
+charsCount("hexlet!", "a"); // 0
 ```
 
 Aquí `for` controla el recorrido de los caracteres, mientras que la condición interna decide si incrementar el contador.

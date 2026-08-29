@@ -2,8 +2,8 @@
 Escribamos una función `getTypeOfSentence()` que analiza un texto y devuelve una descripción de su tono: para las oraciones ordinarias – *General sentence*, para las interrogativas – *Question sentence*.
 
 ```javascript
-  getTypeOfSentence('Hodor');  // General sentence
-  getTypeOfSentence('Hodor?'); // Question sentence
+getTypeOfSentence("Hodor"); // General sentence
+getTypeOfSentence("Hodor?"); // Question sentence
 ```
 
 La implementación de la función:
@@ -15,14 +15,14 @@ const getTypeOfSentence = (sentence) => {
   // Un predicado que comprueba el final del texto
   // Si termina con el carácter '?', devuelve true,
   // de lo contrario false
-  if (sentence.endsWith('?')) {
+  if (sentence.endsWith("?")) {
     // Si la condición anterior se cumplió,
     // entonces es una oración interrogativa.
     // Asignamos a sentenceType el valor correspondiente.
-    sentenceType = 'Question';
+    sentenceType = "Question";
   } else {
     // En todos los demás casos la oración es ordinaria
-    sentenceType = 'General';
+    sentenceType = "General";
   }
 
   // Mediante la interpolación construimos una cadena
@@ -52,12 +52,12 @@ Dentro del bloque `else` (al igual que dentro del bloque `if`) se pueden anidar 
 const number = 10;
 
 if (number > 10) {
-  console.log('Number is greater than 10');
+  console.log("Number is greater than 10");
 } else {
   if (number === 10) {
-    console.log('Number is exactly 10');
+    console.log("Number is exactly 10");
   } else {
-    console.log('Number is less than 10');
+    console.log("Number is less than 10");
   }
 }
 // => Number is exactly 10
@@ -72,10 +72,10 @@ const getTypeOfSentence = (sentence) => {
   let sentenceType;
   // Se agregó una negación
   // El contenido de else se movió a if y viceversa
-  if (!sentence.endsWith('?')) {
-    sentenceType = 'General';
+  if (!sentence.endsWith("?")) {
+    sentenceType = "General";
   } else {
-    sentenceType = 'Question';
+    sentenceType = "Question";
   }
 
   return `${sentenceType} sentence`;

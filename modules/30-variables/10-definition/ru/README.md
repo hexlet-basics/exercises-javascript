@@ -1,8 +1,8 @@
 Представьте, что нужно вывести фразу `Father!` два раза:
 
 ```javascript
-console.log('Father!');
-console.log('Father!');
+console.log("Father!");
+console.log("Father!");
 ```
 
 Такой способ вполне подойдёт, если фраза встречается всего пару раз. Но что, если она будет использоваться часто, в разных частях программы? Тогда придётся копировать одно и то же выражение снова и снова.
@@ -14,7 +14,7 @@ console.log('Father!');
 Чтобы не дублировать одну и ту же строку, её можно сохранить в переменной и выводить её содержимое:
 
 ```javascript
-const greeting = 'Father!';
+const greeting = "Father!";
 
 console.log(greeting);
 console.log(greeting);
@@ -57,8 +57,8 @@ console.log('Father!')
 - `let` — для значений, которые в ходе работы программы могут поменяться.
 
 ```javascript
-const greeting = 'Father!'; // меняться не будет
-let score = 0;              // будет меняться по ходу программы
+const greeting = "Father!"; // меняться не будет
+let score = 0; // будет меняться по ходу программы
 ```
 
 Если не знаете, будет ли значение меняться, используйте `const`. Это хорошая практика: так код проще читать и сложнее случайно испортить данные. К `let` и константам мы ещё вернёмся в отдельных уроках.
@@ -78,9 +78,9 @@ let score = 0;              // будет меняться по ходу про�
 В коде важно различать, где мы используем переменную, а где записываем значение напрямую. Это особенно заметно на примере с `console.log()`:
 
 ```javascript
-const greeting = 'Mother!';
-console.log(greeting);   // => Mother!
-console.log('greeting'); // => greeting
+const greeting = "Mother!";
+console.log(greeting); // => Mother!
+console.log("greeting"); // => greeting
 ```
 
 В первом случае используется **переменная** `greeting`, и программа подставляет её значение. Во втором случае `'greeting'` заключено в кавычки, поэтому это **строковый литерал**, то есть готовое значение, написанное прямо в коде. Несмотря на то, что мы видим слово `greeting` в обоих случаях, с точки зрения движка это абсолютно разные вещи.
@@ -94,13 +94,13 @@ console.log('greeting'); // => greeting
 ```javascript
 console.log(name); // Ошибка: переменная ещё не определена
 // ReferenceError: Cannot access 'name' before initialization
-const name = 'Alice';
+const name = "Alice";
 ```
 
 А в правильном порядке всё работает:
 
 ```javascript
-const name = 'Alice';
+const name = "Alice";
 console.log(name); // => Alice
 ```
 
@@ -109,11 +109,11 @@ console.log(name); // => Alice
 В одной программе можно создать сколько угодно переменных. Каждая хранит свои данные и не мешает другим:
 
 ```javascript
-const greeting1 = 'Father!';
+const greeting1 = "Father!";
 console.log(greeting1);
 console.log(greeting1);
 
-const greeting2 = 'Mother!';
+const greeting2 = "Mother!";
 console.log(greeting2);
 console.log(greeting2);
 ```
@@ -131,7 +131,7 @@ console.log(greeting2);
 ```javascript
 // Uncaught ReferenceError: greeting is not defined
 console.log(greeting);
-let greeting = 'Father!';
+let greeting = "Father!";
 ```
 
 Запуск программы с кодом из примера выше завершается ошибкой `ReferenceError: greeting is not defined`. `ReferenceError` — это ошибка обращения. Она означает, что в коде используется имя (идентификатор), которое не определено. В самом сообщении об этом говорят прямо: `greeting is not defined` — «greeting не определён».
@@ -141,8 +141,8 @@ let greeting = 'Father!';
 Ещё одна распространённая ошибка — попытаться объявить уже объявленную переменную с помощью `let`:
 
 ```javascript
-let greeting = 'Father!';
-let greeting = 'Father!'; // SyntaxError: Identifier 'greeting' has already been declared
+let greeting = "Father!";
+let greeting = "Father!"; // SyntaxError: Identifier 'greeting' has already been declared
 ```
 
 Объявлять переменную дважды нельзя. Если нужно другое значение — создайте новую переменную с другим именем или просто переприсвойте значение уже существующей `let`-переменной без ключевого слова.

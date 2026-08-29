@@ -14,7 +14,7 @@
 Год начинается с индекса 6 и заканчивается на 9. Чтобы извлечь его, мы используем `slice()`:
 
 ```javascript
-const value = '12-08-2034';
+const value = "12-08-2034";
 const year = value.slice(6, 10);
 console.log(year); // => 2034
 ```
@@ -30,11 +30,11 @@ console.log(year); // => 2034
 Символ с индексом, указанным как «конец», не включается. Его можно воспринимать как порядковый номер символа, перед которым нужно остановиться.
 
 ```javascript
-const value = 'code-basics';
+const value = "code-basics";
 
 console.log(value.slice(5, 11)); // => basics (с 5 по 10 индекс)
-console.log(value.slice(0, 7));  // => code-ba (с 0 по 6 индекс)
-console.log(value.slice(2, 6));  // => de-b
+console.log(value.slice(0, 7)); // => code-ba (с 0 по 6 индекс)
+console.log(value.slice(2, 6)); // => de-b
 ```
 
 ## Срез возвращает строку
@@ -42,10 +42,10 @@ console.log(value.slice(2, 6));  // => de-b
 `slice()` всегда возвращает строку, даже если в ней только цифры. Это значит, что результат можно использовать как обычную строку: конкатенировать, выводить, передавать в функции и снова резать:
 
 ```javascript
-const value = '01-12-9873';
+const value = "01-12-9873";
 
 const part = value.slice(3, 7); // => 12-9
-console.log(part.slice(0, 2));  // => 12
+console.log(part.slice(0, 2)); // => 12
 ```
 
 Сначала мы получили подстроку `'12-9'`, а потом сделали из неё новый срез `'12'`.
@@ -55,11 +55,11 @@ console.log(part.slice(0, 2));  // => 12
 Если второй аргумент не указать, `slice()` вернёт всё от стартового индекса до конца строки. А `slice(0)` или `slice()` без аргументов вернёт строку целиком:
 
 ```javascript
-const value = 'Hexlet';
+const value = "Hexlet";
 
-console.log(value.slice(3));  // => let     // с 3 символа до конца
+console.log(value.slice(3)); // => let     // с 3 символа до конца
 console.log(value.slice(0, 3)); // => Hex   // от начала до 3 символа
-console.log(value.slice());   // => Hexlet  // вся строка
+console.log(value.slice()); // => Hexlet  // вся строка
 ```
 
 ## Отрицательные индексы
@@ -67,11 +67,11 @@ console.log(value.slice());   // => Hexlet  // вся строка
 `slice()` умеет считать и с конца строки. Для этого используются отрицательные индексы: `-1` соответствует последнему символу, `-2` — предпоследнему и так далее. Это удобно, когда заранее неизвестна длина строки, но нужно взять «хвост» или «середину» относительно конца:
 
 ```javascript
-const value = 'Hexlet';
+const value = "Hexlet";
 
-console.log(value.slice(-1));   // => t   // последний символ
+console.log(value.slice(-1)); // => t   // последний символ
 console.log(value.slice(3, -1)); // => le // от 3 до предпоследнего
-console.log(value.slice(-3));   // => let // последние три символа
+console.log(value.slice(-3)); // => let // последние три символа
 ```
 
 ## Срез с переменными
@@ -82,7 +82,7 @@ console.log(value.slice(-3));   // => let // последние три симв�
 const start = 1;
 const end = 5;
 
-const value = 'Hexlet';
+const value = "Hexlet";
 console.log(value.slice(start, end)); // => exle
 ```
 
@@ -97,14 +97,14 @@ console.log(value.slice(start, end)); // => exle
 ## Быстрая шпаргалка
 
 ```javascript
-const value = 'Hexlet';
+const value = "Hexlet";
 
-value.slice();      // Hexlet  — вся строка
-value.slice(0);     // Hexlet
-value.slice(5);     // t
-value.slice(0, 5);  // Hexle
-value.slice(-1);    // t       — последний символ
-value.slice(-3);    // let     — последние три символа
+value.slice(); // Hexlet  — вся строка
+value.slice(0); // Hexlet
+value.slice(5); // t
+value.slice(0, 5); // Hexle
+value.slice(-1); // t       — последний символ
+value.slice(-3); // let     — последние три символа
 value.slice(2, -1); // xle     — с третьего до предпоследнего
 ```
 

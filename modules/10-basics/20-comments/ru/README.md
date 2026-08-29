@@ -22,7 +22,7 @@ console.log(10);
 Комментарий может находиться на строчке после какого-нибудь кода:
 
 ```javascript
-console.log('I am the King'); // For Lannisters!
+console.log("I am the King"); // For Lannisters!
 ```
 
 ## Многострочные комментарии
@@ -34,7 +34,7 @@ console.log('I am the King'); // For Lannisters!
   The night is dark and
   full of terrors.
 */
-console.log('I am the King');
+console.log("I am the King");
 ```
 
 Такие комментарии, обычно, используют для документирования кода, например, функций.

@@ -27,7 +27,7 @@ maxLoginAttempts = 5; // TypeError: Assignment to constant variable.
 ## const vs let
 
 ```javascript
-let score = 0;   // будет меняться
+let score = 0; // будет меняться
 const lives = 3; // не меняется
 ```
 
@@ -43,7 +43,7 @@ const lives = 3; // не меняется
 ```javascript
 const MAX_USERS = 100;
 const DEFAULT_TIMEOUT = 30;
-const DEFAULT_LANGUAGE = 'ru';
+const DEFAULT_LANGUAGE = "ru";
 ```
 
 Это не требование языка, а сигнал читателю: такое значение не должно меняться ни при каких условиях.

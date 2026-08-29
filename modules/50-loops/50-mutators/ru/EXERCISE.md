@@ -4,7 +4,7 @@
 Для определения каждого n-ного элемента понадобится остаток от деления `%`. Подумайте, как его можно использовать.
 
 ```javascript
-const text = 'I never look back';
+const text = "I never look back";
 // Каждый третий элемент
 makeItFunny(text, 3); // 'I NevEr LooK bAck'
 ```
