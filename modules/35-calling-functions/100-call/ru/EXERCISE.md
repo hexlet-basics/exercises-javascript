@@ -3,5 +3,5 @@
 Функция уже подключена в заготовке:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 ```

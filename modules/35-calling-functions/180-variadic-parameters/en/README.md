@@ -28,6 +28,6 @@ The `Math.max()` function finds the maximum value among the passed parameters. H
 The `Math.min()` function works similarly, only it looks for the smallest value:
 
 ```javascript
-Math.min(1, 10, 3);       // 1
+Math.min(1, 10, 3); // 1
 Math.min(1, -3, 2, 3, 2); // -3
 ```

@@ -3,13 +3,13 @@
 **Детерминированная функция** всегда возвращает один и тот же результат при одинаковых входных данных. Например, детерминированной можно назвать функцию, которая считает количество символов:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-length('hexlet'); // 6
-length('hexlet'); // 6
+length("hexlet"); // 6
+length("hexlet"); // 6
 
-length('wow'); // 3
-length('wow'); // 3
+length("wow"); // 3
+length("wow"); // 3
 ```
 
 Сколько бы раз мы ни вызывали эту функцию с аргументом `'hexlet'`, она всегда вернёт `6`.

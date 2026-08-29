@@ -11,10 +11,10 @@ function shout(name) {
   return name.toUpperCase();
 }
 
-const result = shout('hexlet');
+const result = shout("hexlet");
 console.log(result); // => HEXLET
 
-const result2 = shout('code-basics');
+const result2 = shout("code-basics");
 console.log(result2); // => CODE-BASICS
 ```
 
@@ -49,7 +49,7 @@ function fullName(first, last) {
   return `${first} ${last}`;
 }
 
-const name = fullName('Aria', 'Stark');
+const name = fullName("Aria", "Stark");
 console.log(name); // => Aria Stark
 ```
 
@@ -66,7 +66,7 @@ function formatName(name) {
   return uppercased;
 }
 
-console.log(formatName('  hexlet  ')); // => HEXLET
+console.log(formatName("  hexlet  ")); // => HEXLET
 ```
 
 ## Код после return
@@ -75,8 +75,8 @@ console.log(formatName('  hexlet  ')); // => HEXLET
 
 ```javascript
 function example() {
-  return 'готово';
-  console.log('этот код никогда не выполнится');
+  return "готово";
+  console.log("этот код никогда не выполнится");
 }
 
 console.log(example()); // => готово

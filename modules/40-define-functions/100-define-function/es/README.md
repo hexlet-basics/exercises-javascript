@@ -5,9 +5,9 @@ Hasta este momento solo usábamos funciones ya hechas: `console.log()`, `Math.po
 Supongamos que tenemos varios fragmentos de código parecidos:
 
 ```javascript
-console.log('Hello, Hexlet!');
-console.log('Hello, world!');
-console.log('Hello, JavaScript!');
+console.log("Hello, Hexlet!");
+console.log("Hello, world!");
+console.log("Hello, JavaScript!");
 ```
 
 Para no repetir la misma plantilla, se la puede envolver en una función propia que reciba un parámetro e imprima la cadena necesaria:
@@ -21,9 +21,9 @@ function sayHello(name) {
 Ahora se la puede llamar con distintos argumentos:
 
 ```javascript
-sayHello('Hexlet');     // => Hello, Hexlet!
-sayHello('world');      // => Hello, world!
-sayHello('JavaScript'); // => Hello, JavaScript!
+sayHello("Hexlet"); // => Hello, Hexlet!
+sayHello("world"); // => Hello, world!
+sayHello("JavaScript"); // => Hello, JavaScript!
 ```
 
 Parece que el código no se ha reducido, pero apareció otra ventaja: si la función se usa en distintos lugares, para cambiar el texto basta con corregir solo su definición. Cuanto más compleja es la tarea y más a menudo aparece, más importante es separar la lógica en funciones aparte.
@@ -32,7 +32,7 @@ Parece que el código no se ha reducido, pero apareció otra ventaja: si la func
 
 ```javascript
 function nombreDeLaFuncion(parámetros) {
-  cuerpo
+  cuerpo;
 }
 ```
 
@@ -50,21 +50,21 @@ Definir una función no ejecuta su código. El cuerpo se ejecutará solo al llam
 
 ```javascript
 function sayHi() {
-  console.log('Hi!');
+  console.log("Hi!");
 }
 
-console.log('El programa continúa…');
+console.log("El programa continúa…");
 ```
 
 Aquí la función `sayHi()` está definida, pero su cuerpo no se ejecuta: en la pantalla aparecerá solo `El programa continúa…`. Para que `sayHi()` funcione, hay que llamarla de forma explícita:
 
 ```javascript
 function sayHi() {
-  console.log('Hi!');
+  console.log("Hi!");
 }
 
 sayHi(); // => Hi!
-console.log('El programa continúa…');
+console.log("El programa continúa…");
 ```
 
 ## Ejemplo: una función para imprimir la media aritmética
@@ -94,7 +94,7 @@ function getLastChar(str) {
 
 // Dentro de la función str será igual a 'Winter is coming'.
 // El nombre de la variable de fuera no está ligado al nombre del parámetro
-const text = 'Winter is coming';
+const text = "Winter is coming";
 console.log(getLastChar(text)); // => g
 ```
 
@@ -102,10 +102,10 @@ Cuando hay dos parámetros o más, para la mayoría de las funciones pasa a impo
 
 ```javascript
 // El primer parámetro es qué buscamos, el segundo por qué lo cambiamos
-console.log('google'.replace('go', 'mo')); // => moogle
+console.log("google".replace("go", "mo")); // => moogle
 
 // No se reemplazó nada: dentro de 'google' no hay 'mo'
-console.log('google'.replace('mo', 'go')); // => google
+console.log("google".replace("mo", "go")); // => google
 ```
 
 ## Otras formas de escribir funciones
@@ -117,7 +117,7 @@ const sayHello = function (name) {
   console.log(`Hello, ${name}!`);
 };
 
-sayHello('Hexlet'); // => Hello, Hexlet!
+sayHello("Hexlet"); // => Hello, Hexlet!
 ```
 
 Esa forma se llama expresión de función. Fíjate en el punto y coma del final: aquí tenemos una asignación normal a una constante, no una declaración de función.
@@ -129,7 +129,7 @@ const sayHello = (name) => {
   console.log(`Hello, ${name}!`);
 };
 
-sayHello('Hexlet'); // => Hello, Hexlet!
+sayHello("Hexlet"); // => Hello, Hexlet!
 ```
 
 Para nuestras tareas las tres formas son equivalentes: la función se define y luego se llama por su nombre. La forma de flecha es la que más aparece en JavaScript, por eso más adelante en el curso los ejemplos están escritos así. Una lección aparte de este módulo mostrará cómo acortarla todavía más.

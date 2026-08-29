@@ -5,8 +5,8 @@ Write the `getHiddenCard()` function that takes a credit card number (consisting
 // The credit card number is passed as a string
 getHiddenCard("1234567812345678", 2); // "**5678"
 getHiddenCard("1234567812345678", 3); // "***5678"
-getHiddenCard('1234567812345678');    // "****5678"
-getHiddenCard('2034399002121100', 1); // "*1100"
+getHiddenCard("1234567812345678"); // "****5678"
+getHiddenCard("2034399002121100", 1); // "*1100"
 ```
 
 To complete the task, you'll need the `repeat()` string method, which repeats a string a given number of times.

@@ -9,7 +9,7 @@ peopleCount.toString(); // 5
 Intenta responder la siguiente pregunta, ¿funcionará el siguiente código y, de ser así, qué imprimirá en la pantalla?
 
 ```javascript
-const name = 'Tirion';
+const name = "Tirion";
 console.log(name.length.toString());
 ```
 
@@ -18,7 +18,7 @@ La sintaxis de varios puntos seguidos la vemos por primera vez, pero todas las o
 La forma más sencilla de entender cómo funciona este código es dividir la cadena de llamadas en operaciones individuales:
 
 ```javascript
-const name = 'Tirion';
+const name = "Tirion";
 const len = name.length;
 console.log(len.toString());
 ```
@@ -37,14 +37,14 @@ Estos ejemplos son completamente equivalentes. Podemos realizar operaciones secu
 Otro ejemplo para reforzar los conocimientos:
 
 ```javascript
-const name = 'Tirion';
+const name = "Tirion";
 console.log(name.toUpperCase().toLowerCase());
 ```
 
 Este tipo de código requiere un poco de esfuerzo mental. Es importante entender que `.toLowerCase()` se aplica al resultado de llamar al método que está a la izquierda. Y el método `toUpperCase()` devuelve una cadena. Los principiantes a menudo cometen errores en las cadenas de llamadas, olvidando poner la llamada:
 
 ```javascript
-const name = 'Tirion';
+const name = "Tirion";
 // ¡Este código no funcionará correctamente!
 console.log(name.toUpperCase.toLowerCase());
 ```
@@ -61,7 +61,7 @@ console.log(name.toUpperCase().toLowerCase().length.toString().length);
 Los métodos se pueden llamar también después de otras operaciones, por ejemplo después de un corte de la cadena:
 
 ```javascript
-const text = '  Hello, Hexlet!  ';
+const text = "  Hello, Hexlet!  ";
 // Quitamos los espacios, tomamos una subcadena y pasamos a minúsculas
 console.log(text.trim().slice(7).toLowerCase()); // => hexlet!
 ```
@@ -73,7 +73,7 @@ Aquí primero se llama a `trim()`, que elimina los espacios. Después se toma el
 La cadena se puede continuar mientras el resultado siga siendo un valor que tenga los métodos necesarios. En cuanto un método o una propiedad devuelve un valor de otro tipo, el conjunto de métodos disponibles cambia:
 
 ```javascript
-const text = 'hexlet';
+const text = "hexlet";
 // .length devuelve un número — ya no tiene métodos de cadena
 console.log(text.length.toUpperCase()); // TypeError: ... is not a function
 ```

@@ -3,7 +3,7 @@ JavaScript supports object-oriented programming (OOP) — very simply, an approa
 Up to this point we worked with data and applied functions to it. In OOP, instead of data we have objects on which methods are called. For example, strings in JavaScript are objects, and they have a `toUpperCase()` method that converts all letters to uppercase.
 
 ```javascript
-const name = 'Robb';
+const name = "Robb";
 console.log(name.toUpperCase()); // => ROBB
 ```
 
@@ -14,7 +14,7 @@ Unlike functions, methods are called *on an object*. First comes the object (a v
 Besides methods, data also has properties. A property is a value linked with the data, accessed with a dot right after a variable (or a constant). For example, strings have a length — the `length` property:
 
 ```javascript
-const name = 'Robb';
+const name = "Robb";
 const len = name.length;
 console.log(len); // => 4
 ```
@@ -24,7 +24,7 @@ In many languages, string length is calculated with a special function, but in J
 JavaScript allows you to access properties that do not exist (e.g. in the case of typos). In this case their value is `undefined`:
 
 ```javascript
-const name = 'Robb';
+const name = "Robb";
 console.log(name.whatIsThat); // => undefined
 ```
 
@@ -35,7 +35,7 @@ _Self-check. What will `console.log(name[name.length])` print for the variable `
 In addition to properties, data has methods - functions within properties. Basically, it means that methods work and are called like functions, but do it like a property using a dot notation.
 
 ```javascript
-const name = 'Robb';
+const name = "Robb";
 const upperName = name.toUpperCase();
 console.log(upperName); // => 'ROBB'
 ```

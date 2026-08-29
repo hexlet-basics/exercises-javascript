@@ -7,7 +7,7 @@ Para gestionar este código y no perderse en los detalles, se utilizan las funci
 Imaginemos una función que transfiere dinero de una cuenta a otra. En su interior puede haber cientos de líneas de código, pero nosotros no las vemos. Desde fuera, todo parece un único comando sencillo:
 
 ```javascript
-transferMoney('Alice', 'Bob', 100);
+transferMoney("Alice", "Bob", 100);
 ```
 
 Esta línea llama a la función `transferMoney()`. Se le pasan el remitente `Alice`, el destinatario `Bob` y la cantidad `100`.
@@ -16,16 +16,16 @@ Aquí tienes algunos ejemplos más de llamadas a funciones. Cada una tiene su pr
 
 ```javascript
 // Sí, sí, console.log también es una función
-console.log('Hexlet!');
+console.log("Hexlet!");
 
 // Envío de un correo a un usuario
-sendEmail('bob@example.com', 'Welcome!');
+sendEmail("bob@example.com", "Welcome!");
 
 // Cálculo del impuesto sobre la cantidad indicada
-calculateTax(5000, 'Florida');
+calculateTax(5000, "Florida");
 
 // Comprobación de si un usuario está en el sistema
-isRegistered('Alice');
+isRegistered("Alice");
 
 // Obtención de un número aleatorio del 1 al 10
 randomNumber(1, 10);
@@ -53,9 +53,9 @@ Además, existen funciones de bibliotecas separadas. Para usarlas, se conectan m
 Tomemos la función `length()`, que devuelve la cantidad de caracteres de una cadena. Se conecta desde el conjunto estándar de funciones del curso mediante la importación:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-const message = 'Hello!';
+const message = "Hello!";
 const count = length(message);
 console.log(count); // => 6
 ```
@@ -74,10 +74,10 @@ Argumento          Función         Resultado
 La devolución de un valor es uno de los principios clave del funcionamiento de las funciones. Si una función devuelve un valor, este se puede guardar en una variable, pasar a otra función o usar en cálculos:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-const length1 = length('Hello!'); // guardamos el resultado
-const length2 = length('World!');
+const length1 = length("Hello!"); // guardamos el resultado
+const length2 = length("World!");
 
 const combinedLength = length1 + length2; // usamos el resultado en una expresión
 console.log(combinedLength); // => 12

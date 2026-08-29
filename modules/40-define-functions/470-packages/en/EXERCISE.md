@@ -4,8 +4,8 @@ Use the `round()` function from the `hexlet-basics/math` module — this is anot
 
 ```javascript
 formatPrice(12.3456); // => '12.35'
-formatPrice(2.5);     // => '2.50'
-formatPrice(10);      // => '10.00'
+formatPrice(2.5); // => '2.50'
+formatPrice(10); // => '10.00'
 ```
 
 ## Hint

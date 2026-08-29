@@ -5,9 +5,9 @@
 Допустим, у нас есть несколько похожих участков кода:
 
 ```javascript
-console.log('Hello, Hexlet!');
-console.log('Hello, world!');
-console.log('Hello, JavaScript!');
+console.log("Hello, Hexlet!");
+console.log("Hello, world!");
+console.log("Hello, JavaScript!");
 ```
 
 Чтобы не повторять один и тот же шаблон, его можно оформить в виде своей функции, которая принимает параметр и печатает нужную строку:
@@ -21,9 +21,9 @@ function sayHello(name) {
 Теперь её можно вызывать с разными аргументами:
 
 ```javascript
-sayHello('Hexlet');     // => Hello, Hexlet!
-sayHello('world');      // => Hello, world!
-sayHello('JavaScript'); // => Hello, JavaScript!
+sayHello("Hexlet"); // => Hello, Hexlet!
+sayHello("world"); // => Hello, world!
+sayHello("JavaScript"); // => Hello, JavaScript!
 ```
 
 Кода вроде бы не стало меньше, но появилось другое преимущество: если функция используется в разных местах, то для изменения текста достаточно поправить только её определение. Чем сложнее задача и чем чаще она встречается, тем важнее выделять логику в отдельные функции.
@@ -32,7 +32,7 @@ sayHello('JavaScript'); // => Hello, JavaScript!
 
 ```javascript
 function имяФункции(параметры) {
-  тело
+  тело;
 }
 ```
 
@@ -50,21 +50,21 @@ function greet(name) {           ← ключевое слово, имя и па
 
 ```javascript
 function sayHi() {
-  console.log('Hi!');
+  console.log("Hi!");
 }
 
-console.log('Программа продолжается…');
+console.log("Программа продолжается…");
 ```
 
 Здесь функция `sayHi()` определена, но её тело не выполняется — на экран попадёт только `Программа продолжается…`. Чтобы `sayHi()` сработала, её нужно явно вызвать:
 
 ```javascript
 function sayHi() {
-  console.log('Hi!');
+  console.log("Hi!");
 }
 
 sayHi(); // => Hi!
-console.log('Программа продолжается…');
+console.log("Программа продолжается…");
 ```
 
 ## Пример: функция для печати среднего арифметического
@@ -94,7 +94,7 @@ function getLastChar(str) {
 
 // Внутри функции str будет равна 'Winter is coming'.
 // Имя переменной снаружи не связано с именем параметра
-const text = 'Winter is coming';
+const text = "Winter is coming";
 console.log(getLastChar(text)); // => g
 ```
 
@@ -102,10 +102,10 @@ console.log(getLastChar(text)); // => g
 
 ```javascript
 // Первый параметр — что ищем, второй — на что меняем
-console.log('google'.replace('go', 'mo')); // => moogle
+console.log("google".replace("go", "mo")); // => moogle
 
 // Ничего не заменилось: внутри 'google' нет 'mo'
-console.log('google'.replace('mo', 'go')); // => google
+console.log("google".replace("mo", "go")); // => google
 ```
 
 ## Другие формы записи
@@ -117,7 +117,7 @@ const sayHello = function (name) {
   console.log(`Hello, ${name}!`);
 };
 
-sayHello('Hexlet'); // => Hello, Hexlet!
+sayHello("Hexlet"); // => Hello, Hexlet!
 ```
 
 Такую запись называют функциональным выражением. Обратите внимание на точку с запятой в конце: перед нами обычное присваивание константы, а не объявление функции.
@@ -129,7 +129,7 @@ const sayHello = (name) => {
   console.log(`Hello, ${name}!`);
 };
 
-sayHello('Hexlet'); // => Hello, Hexlet!
+sayHello("Hexlet"); // => Hello, Hexlet!
 ```
 
 Для наших задач все три записи равнозначны: функцию определяют, а потом вызывают по имени. Стрелочная форма в JavaScript встречается чаще остальных, поэтому дальше в курсе примеры записаны именно так. Отдельный урок этого модуля покажет, как сократить её ещё сильнее.

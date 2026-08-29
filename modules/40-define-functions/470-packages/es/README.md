@@ -11,7 +11,7 @@ Un paquete se describe con un archivo `package.json` y se instala con el comando
 Cuando un paquete está instalado, su contenido se importa por el nombre del paquete y no por la ruta a un archivo:
 
 ```javascript
-import { round } from 'hexlet-basics/math';
+import { round } from "hexlet-basics/math";
 
 console.log(round(3.14159, 2)); // => 3.14
 ```
@@ -21,8 +21,8 @@ console.log(round(3.14159, 2)); // => 3.14
 Un paquete suele contener más de un módulo. Para elegir un módulo concreto dentro de un paquete, se añade una ruta tras su nombre con `/`:
 
 ```javascript
-import { reverse } from 'hexlet-basics/string'; // el módulo string del paquete hexlet-basics
-import { round } from 'hexlet-basics/math';     // el módulo math del mismo paquete
+import { reverse } from "hexlet-basics/string"; // el módulo string del paquete hexlet-basics
+import { round } from "hexlet-basics/math"; // el módulo math del mismo paquete
 ```
 
 La parte antes de `/` es el nombre del paquete, y la parte posterior es el módulo dentro de él. Así, un mismo paquete puede agrupar muchos módulos organizados por tarea.

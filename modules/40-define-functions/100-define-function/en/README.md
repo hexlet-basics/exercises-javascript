@@ -4,10 +4,10 @@ Defining your own functions makes it much easier to write and maintain programs.
 ```javascript
 // A hypothetical example
 // A place where the function is taken from
-import { send } from 'mailer';
+import { send } from "mailer";
 
-const email = 'support@hexlet.io';
-const title = 'Help';
+const email = "support@hexlet.io";
+const title = "Help";
 const body = "I've written a success story, how can I get a discount?";
 
 // One little call and loads of logic inside
@@ -26,9 +26,9 @@ Let's create our first function. Its job is to print out a greeting:
 // We're just declaring this function exists now
 const showGreeting = () => {
   // Use 2-space indents inside the function body for readability
-  const text = 'Hello, Hexlet!';
+  const text = "Hello, Hexlet!";
   console.log(text);
-}
+};
 
 // Calling a function
 showGreeting(); // => "Hello, Hexlet!"
@@ -41,8 +41,8 @@ Anything described inside the curly brackets `{}` is called a function body. It 
 ```javascript
 // A minimal function definition
 const noop = () => {
-// There could be some code, but there isn't any
-}
+  // There could be some code, but there isn't any
+};
 
 noop();
 ```

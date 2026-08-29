@@ -3,8 +3,8 @@ Implementa la función `mirror()`. Recibe una cadena, la invierte y la convierte
 Usa las funciones `reverse()` y `toUpperCase()` del módulo `hexlet-basics/string`. Debes escribir la importación tú mismo.
 
 ```javascript
-mirror('hello');  // => 'OLLEH'
-mirror('Hexlet'); // => 'TELXEH'
+mirror("hello"); // => 'OLLEH'
+mirror("Hexlet"); // => 'TELXEH'
 ```
 
 ## Pista

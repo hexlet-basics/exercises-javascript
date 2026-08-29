@@ -3,7 +3,7 @@ JavaScript admite la programación orientada a objetos (POO): de forma muy simpl
 Hasta este momento trabajábamos con datos y les aplicábamos funciones. En la POO, en lugar de datos tenemos objetos sobre los que se llaman métodos. Por ejemplo, las cadenas en JavaScript son objetos y tienen un método `toUpperCase()`, que convierte todas las letras a mayúsculas.
 
 ```javascript
-const name = 'Robb';
+const name = "Robb";
 console.log(name.toUpperCase()); // => ROBB
 ```
 
@@ -14,7 +14,7 @@ A diferencia de las funciones, los métodos se llaman *sobre un objeto*. Primero
 Además de los métodos, los datos tienen propiedades. Una propiedad es un valor asociado a los datos, al que se accede con un punto justo después de la variable o la constante. Por ejemplo, las cadenas tienen una longitud: la propiedad `length`:
 
 ```javascript
-const name = 'Robb';
+const name = "Robb";
 const len = name.length;
 console.log(len); // => 4
 ```
@@ -22,9 +22,9 @@ console.log(len); // => 4
 En los módulos anteriores, para obtener la longitud de una cadena usábamos la función didáctica `length()` de la biblioteca `hexlet-basics/string`:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-const name = 'Robb';
+const name = "Robb";
 console.log(length(name)); // => 4
 ```
 
@@ -35,7 +35,7 @@ Las propiedades están asociadas a los datos de los que se obtienen. Para los ti
 JavaScript permite acceder a propiedades que no existen (por ejemplo, por errores de escritura). En ese caso su valor es `undefined`:
 
 ```javascript
-const name = 'Robb';
+const name = "Robb";
 console.log(name.whatIsThat); // => undefined
 ```
 
@@ -54,23 +54,23 @@ Los datos suelen tener bastantes más métodos que propiedades. Las cadenas tien
 
 ```javascript
 // Convertir todas las letras a mayúsculas
-console.log('hexlet'.toUpperCase()); // => HEXLET
+console.log("hexlet".toUpperCase()); // => HEXLET
 
 // Convertir todas las letras a minúsculas
-console.log('HeXleT'.toLowerCase()); // => hexlet
+console.log("HeXleT".toLowerCase()); // => hexlet
 
 // Eliminar los espacios al principio y al final de la cadena
-console.log('   hi   '.trim()); // => hi
+console.log("   hi   ".trim()); // => hi
 ```
 
 Algunos métodos reciben parámetros. Por ejemplo, en el método `replace()` el primer parámetro contiene la subcadena que hay que reemplazar, y el segundo la cadena de reemplazo.
 
 ```javascript
-const text = 'abracadabra';
+const text = "abracadabra";
 
 // Se reemplaza solo la primera aparición
-console.log(text.replace('a', 'o'));    // => obracadabra
-console.log(text.replace('abra', '!')); // => !cadabra
+console.log(text.replace("a", "o")); // => obracadabra
+console.log(text.replace("abra", "!")); // => !cadabra
 ```
 
 En JavaScript hay realmente muchos métodos, y no se aprenden de memoria. Normalmente los programadores, en el transcurso del trabajo, recuerdan qué operaciones necesitan y cómo se llaman aproximadamente esos métodos. Cuando surge una tarea, o recuerdan el método adecuado, o lo encuentran rápido en la documentación.
@@ -97,10 +97,10 @@ Desde el punto de vista del código, los métodos y las funciones se comportan d
 
 ```javascript
 // Llamada a una función: nombre y argumentos entre paréntesis
-Number('42');
+Number("42");
 
 // Llamada a un método: primero el valor, luego el punto
-'hexlet'.toUpperCase();
+"hexlet".toUpperCase();
 ```
 
 La función se llama por su nombre y existe por sí misma. El método es una operación incorporada en el valor mismo. Por debajo el valor se pasa hacia dentro, pero eso queda oculto para nosotros.
@@ -116,16 +116,16 @@ En cambio, `toUpperCase()` trabaja justamente con la cadena sobre la que se lo l
 Igual que las funciones, los métodos **devuelven un resultado**. Se pueden usar dentro de expresiones.
 
 ```javascript
-const name = 'hexlet';
-console.log(name.toUpperCase() + '!'); // => HEXLET!
+const name = "hexlet";
+console.log(name.toUpperCase() + "!"); // => HEXLET!
 ```
 
 Los métodos de las cadenas siempre devuelven una cadena nueva y dejan la original sin cambios. Ese comportamiento se llama inmutabilidad. Hablaremos de ello en la lección siguiente, pero por ahora es importante entender que la cadena queda igual y que el resultado del método es un valor nuevo.
 
 ```javascript
-const name = 'hexlet';
+const name = "hexlet";
 console.log(name.toUpperCase()); // => HEXLET
-console.log(name);               // => hexlet
+console.log(name); // => hexlet
 ```
 
 ## Propiedades y métodos en las expresiones
@@ -135,16 +135,16 @@ Las propiedades y los métodos son expresiones igual que las variables, las cons
 Uso en operaciones:
 
 ```javascript
-const name = 'Shaya';
-console.log(name.length + 5);          // => 10
+const name = "Shaya";
+console.log(name.length + 5); // => 10
 console.log(`hi, ${name.toUpperCase()}!`); // => hi, SHAYA!
 ```
 
 Uso como argumentos de funciones:
 
 ```javascript
-const firstName = 'Robb';
-const lastName = 'Shaya';
+const firstName = "Robb";
+const lastName = "Shaya";
 // Pasamos las propiedades directamente en la llamada a la función
 console.log(Math.min(firstName.length, lastName.length)); // => 4
 ```

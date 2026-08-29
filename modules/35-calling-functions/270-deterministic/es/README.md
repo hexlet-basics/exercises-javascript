@@ -3,13 +3,13 @@ Las funciones en cualquier lenguaje de programación tienen propiedades fundamen
 Una **función determinista** siempre devuelve el mismo resultado para los mismos datos de entrada. Por ejemplo, se puede llamar determinista a una función que cuenta la cantidad de caracteres:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-length('hexlet'); // 6
-length('hexlet'); // 6
+length("hexlet"); // 6
+length("hexlet"); // 6
 
-length('wow'); // 3
-length('wow'); // 3
+length("wow"); // 3
+length("wow"); // 3
 ```
 
 No importa cuántas veces llamemos a esta función con el argumento `'hexlet'`, siempre devolverá `6`.

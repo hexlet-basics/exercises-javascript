@@ -3,8 +3,8 @@
 Используйте функции `reverse()` и `toUpperCase()` из модуля `hexlet-basics/string`. Импорт нужно написать самостоятельно.
 
 ```javascript
-mirror('hello');  // => 'OLLEH'
-mirror('Hexlet'); // => 'TELXEH'
+mirror("hello"); // => 'OLLEH'
+mirror("Hexlet"); // => 'TELXEH'
 ```
 
 ## Подсказка

@@ -3,12 +3,12 @@
 Если аргумент не передан, используется это значение. Если аргумент указан, он заменяет умолчание.
 
 ```javascript
-function greet(name = 'World') {
+function greet(name = "World") {
   console.log(`Hello, ${name}!`);
 }
 
-greet('Alice'); // => Hello, Alice!
-greet();        // => Hello, World!  (использовано значение по умолчанию)
+greet("Alice"); // => Hello, Alice!
+greet(); // => Hello, World!  (использовано значение по умолчанию)
 ```
 
 ## Пример: повторение текста
@@ -20,8 +20,8 @@ function repeat(text, times = 1) {
   return text.repeat(times);
 }
 
-console.log(repeat('Hi'));    // => Hi
-console.log(repeat('Hi', 3)); // => HiHiHi
+console.log(repeat("Hi")); // => Hi
+console.log(repeat("Hi", 3)); // => HiHiHi
 ```
 
 ```text
@@ -38,12 +38,12 @@ repeat('go', 5)   →  times = 5  (явно указано)
 По умолчанию слова соединяются пробелом, но можно указать другой символ:
 
 ```javascript
-function joinWords(word1, word2, separator = ' ') {
+function joinWords(word1, word2, separator = " ") {
   return word1 + separator + word2;
 }
 
-console.log(joinWords('King', 'Road'));         // => King Road
-console.log(joinWords('Dragon', 'stone', '-')); // => Dragon-stone
+console.log(joinWords("King", "Road")); // => King Road
+console.log(joinWords("Dragon", "stone", "-")); // => Dragon-stone
 ```
 
 ## Пример: несколько параметров по умолчанию
@@ -51,25 +51,25 @@ console.log(joinWords('Dragon', 'stone', '-')); // => Dragon-stone
 Функция может содержать более одного параметра со значением по умолчанию. Сделаем функцию, которая строит строку-разделитель. По умолчанию символ — дефис, а длина равна 10:
 
 ```javascript
-function makeLine(symbol = '-', length = 10) {
+function makeLine(symbol = "-", length = 10) {
   return symbol.repeat(length);
 }
 
-console.log(makeLine());        // => ----------
-console.log(makeLine('*'));     // => **********
-console.log(makeLine('*', 5));  // => *****
-console.log(makeLine('#', 3));  // => ###
+console.log(makeLine()); // => ----------
+console.log(makeLine("*")); // => **********
+console.log(makeLine("*", 5)); // => *****
+console.log(makeLine("#", 3)); // => ###
 ```
 
 ## Пример: скрытие номера карты
 
 ```javascript
 function getHiddenCard(cardNumber, starsCount = 4) {
-  return '*'.repeat(starsCount) + cardNumber.slice(-4);
+  return "*".repeat(starsCount) + cardNumber.slice(-4);
 }
 
-console.log(getHiddenCard('1234567890123456'));    // => ****3456
-console.log(getHiddenCard('1234567890123456', 2)); // => **3456
+console.log(getHiddenCard("1234567890123456")); // => ****3456
+console.log(getHiddenCard("1234567890123456", 2)); // => **3456
 ```
 
 Параметр `starsCount` по умолчанию равен `4`, но можно передать другое значение.

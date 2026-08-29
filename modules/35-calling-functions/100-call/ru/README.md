@@ -7,7 +7,7 @@
 Представим функцию, которая переводит деньги с одного счёта на другой. Внутри неё может быть сотни строк кода, но мы этого не видим. Снаружи всё выглядит как одна простая команда:
 
 ```javascript
-transferMoney('Alice', 'Bob', 100);
+transferMoney("Alice", "Bob", 100);
 ```
 
 Эта строка вызывает функцию `transferMoney()`. Ей передаются отправитель `Alice`, получатель `Bob` и сумма `100`.
@@ -16,16 +16,16 @@ transferMoney('Alice', 'Bob', 100);
 
 ```javascript
 // Да-да, console.log тоже функция
-console.log('Хекслет!');
+console.log("Хекслет!");
 
 // Отправка письма пользователю
-sendEmail('bob@example.com', 'Добро пожаловать!');
+sendEmail("bob@example.com", "Добро пожаловать!");
 
 // Вычисление налога с указанной суммы
-calculateTax(5000, 'Florida');
+calculateTax(5000, "Florida");
 
 // Проверка, есть ли пользователь в системе
-isRegistered('Alice');
+isRegistered("Alice");
 
 // Получение случайного числа от 1 до 10
 randomNumber(1, 10);
@@ -53,9 +53,9 @@ backupDatabase();
 Возьмём функцию `length()`, которая возвращает количество символов в строке. Она подключается из стандартного набора функций курса с помощью импорта:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-const message = 'Hello!';
+const message = "Hello!";
 const count = length(message);
 console.log(count); // => 6
 ```
@@ -74,10 +74,10 @@ console.log(count); // => 6
 Возврат значения — один из ключевых принципов работы функций. Если функция возвращает значение, его можно сохранить в переменную, передать в другую функцию или использовать в вычислениях:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-const length1 = length('Hello!'); // сохраняем результат
-const length2 = length('World!');
+const length1 = length("Hello!"); // сохраняем результат
+const length2 = length("World!");
 
 const combinedLength = length1 + length2; // используем результат в выражении
 console.log(combinedLength); // => 12

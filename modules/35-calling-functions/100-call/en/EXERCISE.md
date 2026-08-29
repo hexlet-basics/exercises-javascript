@@ -3,5 +3,5 @@ A website checks whether the ads of two partner companies will fit on one line. 
 The function is already connected in the template:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 ```

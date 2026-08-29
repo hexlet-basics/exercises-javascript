@@ -2,7 +2,7 @@
 What will the last call print?
 
 ```javascript
-const name = 'Tirion';
+const name = "Tirion";
 console.log(name.toUpperCase()); // => TIRION
 console.log(name); // => ?
 ```
@@ -10,7 +10,7 @@ console.log(name); // => ?
 The answer to this question depends on how well you understood the lesson about the immutability of primitive data types. Calling the `.toUpperCase()` method returns a new value with all letters converted to uppercase but doesn't (and can't) change the original string. So the constant (or variable, it doesn't matter here) will contain the original `'Tirion'` value. This logic holds true for methods of all primitive types. Moreover, attempting to change the value of a property of this data will lead to nothing:
 
 ```javascript
-const name = 'Tirion';
+const name = "Tirion";
 console.log(name.length); // => 6
 name.length = 100;
 console.log(name.length); // => 6
@@ -19,7 +19,7 @@ console.log(name.length); // => 6
 You can _replace_ the value with a new one instead of changing it. This requires variables:
 
 ```javascript
-let name = 'Tirion';
+let name = "Tirion";
 name = name.toUpperCase();
 console.log(name); // => TIRION
 ```

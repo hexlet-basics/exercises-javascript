@@ -11,7 +11,7 @@ A package is described by a `package.json` file and installed with the `npm inst
 When a package is installed, its contents are imported by the package name rather than by a file path:
 
 ```javascript
-import { round } from 'hexlet-basics/math';
+import { round } from "hexlet-basics/math";
 
 console.log(round(3.14159, 2)); // => 3.14
 ```
@@ -21,8 +21,8 @@ console.log(round(3.14159, 2)); // => 3.14
 A package usually contains more than one module. To pick a specific module inside a package, you add a path after its name with `/`:
 
 ```javascript
-import { reverse } from 'hexlet-basics/string'; // the string module of the hexlet-basics package
-import { round } from 'hexlet-basics/math';     // the math module of the same package
+import { reverse } from "hexlet-basics/string"; // the string module of the hexlet-basics package
+import { round } from "hexlet-basics/math"; // the math module of the same package
 ```
 
 The part before `/` is the package name, and the part after it is the module inside it. This way a single package can bundle many modules grouped by task.

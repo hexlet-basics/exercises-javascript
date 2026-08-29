@@ -11,7 +11,7 @@
 Когда пакет установлен, его содержимое импортируют по имени пакета, а не по пути к файлу:
 
 ```javascript
-import { round } from 'hexlet-basics/math';
+import { round } from "hexlet-basics/math";
 
 console.log(round(3.14159, 2)); // => 3.14
 ```
@@ -21,8 +21,8 @@ console.log(round(3.14159, 2)); // => 3.14
 Пакет обычно содержит не один модуль, а несколько. Чтобы выбрать конкретный модуль внутри пакета, после его имени указывают путь через `/`:
 
 ```javascript
-import { reverse } from 'hexlet-basics/string'; // модуль string пакета hexlet-basics
-import { round } from 'hexlet-basics/math';     // модуль math того же пакета
+import { reverse } from "hexlet-basics/string"; // модуль string пакета hexlet-basics
+import { round } from "hexlet-basics/math"; // модуль math того же пакета
 ```
 
 Часть до `/` — это имя пакета, а часть после — модуль внутри него. Так один пакет может объединять много модулей, сгруппированных по задачам.

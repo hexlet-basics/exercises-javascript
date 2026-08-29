@@ -3,7 +3,7 @@ JavaScript поддерживает объектно-ориентированн�
 До этого момента мы работали с данными и применяли к ним функции. В ООП у нас вместо данных объекты, на которых вызываются методы. Например, строки в JavaScript являются объектами, и у них есть метод `toUpperCase()`, который переводит все буквы в верхний регистр.
 
 ```javascript
-const name = 'Robb';
+const name = "Robb";
 console.log(name.toUpperCase()); // => ROBB
 ```
 
@@ -14,7 +14,7 @@ console.log(name.toUpperCase()); // => ROBB
 Кроме методов, у данных есть свойства. Свойство — это связанное с данными значение, к которому обращаются через точку сразу после переменной или константы. Например, у строк есть длина — свойство `length`:
 
 ```javascript
-const name = 'Robb';
+const name = "Robb";
 const len = name.length;
 console.log(len); // => 4
 ```
@@ -22,9 +22,9 @@ console.log(len); // => 4
 В предыдущих модулях для получения длины строки мы использовали учебную функцию `length()` из библиотеки `hexlet-basics/string`:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-const name = 'Robb';
+const name = "Robb";
 console.log(length(name)); // => 4
 ```
 
@@ -35,7 +35,7 @@ console.log(length(name)); // => 4
 JavaScript позволяет обращаться к свойствам, которые не существуют (например, при опечатках). В таком случае их значением является `undefined`:
 
 ```javascript
-const name = 'Robb';
+const name = "Robb";
 console.log(name.whatIsThat); // => undefined
 ```
 
@@ -54,23 +54,23 @@ console.log(name.whatIsThat); // => undefined
 
 ```javascript
 // Перевод всех букв в верхний регистр
-console.log('hexlet'.toUpperCase()); // => HEXLET
+console.log("hexlet".toUpperCase()); // => HEXLET
 
 // Перевод всех букв в нижний регистр
-console.log('HeXleT'.toLowerCase()); // => hexlet
+console.log("HeXleT".toLowerCase()); // => hexlet
 
 // Удаление пробелов в начале и конце строки
-console.log('   hi   '.trim()); // => hi
+console.log("   hi   ".trim()); // => hi
 ```
 
 Некоторые методы принимают параметры. Например, у метода `replace()` первый параметр содержит подстроку, которую нужно заменить, а второй — строку-замену.
 
 ```javascript
-const text = 'abracadabra';
+const text = "abracadabra";
 
 // Заменяется только первое вхождение
-console.log(text.replace('a', 'o'));    // => obracadabra
-console.log(text.replace('abra', '!')); // => !cadabra
+console.log(text.replace("a", "o")); // => obracadabra
+console.log(text.replace("abra", "!")); // => !cadabra
 ```
 
 Методов в JavaScript действительно много, и их не учат наизусть. Обычно программисты в процессе работы запоминают, какие операции им вообще нужны и как примерно называются такие методы. При возникновении задачи они либо вспоминают подходящий метод, либо быстро находят его в документации.
@@ -97,10 +97,10 @@ console.log(roundedTemperature); // => 22.9
 
 ```javascript
 // Вызов функции: имя и аргументы в скобках
-Number('42');
+Number("42");
 
 // Вызов метода: сначала значение, затем точка
-'hexlet'.toUpperCase();
+"hexlet".toUpperCase();
 ```
 
 Функция вызывается по имени и существует сама по себе. Метод представляет собой операцию, встроенную в само значение. Под капотом значение передаётся внутрь, но это скрыто от нас.
@@ -116,16 +116,16 @@ Number('42');
 Как и функции, методы **возвращают результат**. Их можно использовать в составе выражений.
 
 ```javascript
-const name = 'hexlet';
-console.log(name.toUpperCase() + '!'); // => HEXLET!
+const name = "hexlet";
+console.log(name.toUpperCase() + "!"); // => HEXLET!
 ```
 
 Методы строк всегда возвращают новую строку, оставляя исходную без изменений. Это поведение называется иммутабельностью. Мы ещё поговорим об этом в следующем уроке, но пока важно понимать, что строка остаётся прежней, а результат метода является новым значением.
 
 ```javascript
-const name = 'hexlet';
+const name = "hexlet";
 console.log(name.toUpperCase()); // => HEXLET
-console.log(name);               // => hexlet
+console.log(name); // => hexlet
 ```
 
 ## Свойства и методы в выражениях
@@ -135,16 +135,16 @@ console.log(name);               // => hexlet
 Использование в операциях:
 
 ```javascript
-const name = 'Shaya';
-console.log(name.length + 5);          // => 10
+const name = "Shaya";
+console.log(name.length + 5); // => 10
 console.log(`hi, ${name.toUpperCase()}!`); // => hi, SHAYA!
 ```
 
 Использование как аргументов функций:
 
 ```javascript
-const firstName = 'Robb';
-const lastName = 'Shaya';
+const firstName = "Robb";
+const lastName = "Shaya";
 // Передаём свойства прямо в вызов функции
 console.log(Math.min(firstName.length, lastName.length)); // => 4
 ```

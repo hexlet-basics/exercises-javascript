@@ -7,7 +7,7 @@ The application builds text separators from repeating characters — for example
 It returns the string repeated n times. If zero is passed, it returns an empty string.
 
 ```javascript
-const text = 'javascript';
+const text = "javascript";
 console.log(wordMultiply(text, 2)); // => javascriptjavascript
 console.log(wordMultiply(text, 0)); // =>
 ```

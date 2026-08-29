@@ -16,7 +16,7 @@ pow(3, 3); // 27
 The default value looks like a normal assignment within the definition. It only works if the parameter is not passed. This is something you should get used to. There can even be a default value when there is only one parameter:
 
 ```javascript
-const print = (text = 'nothing') => console.log(text);
+const print = (text = "nothing") => console.log(text);
 
 print(); // "nothing"
 print("Hexlet"); // "Hexlet"

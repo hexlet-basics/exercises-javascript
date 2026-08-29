@@ -11,10 +11,10 @@ function shout(name) {
   return name.toUpperCase();
 }
 
-const result = shout('hexlet');
+const result = shout("hexlet");
 console.log(result); // => HEXLET
 
-const result2 = shout('code-basics');
+const result2 = shout("code-basics");
 console.log(result2); // => CODE-BASICS
 ```
 
@@ -49,7 +49,7 @@ function fullName(first, last) {
   return `${first} ${last}`;
 }
 
-const name = fullName('Aria', 'Stark');
+const name = fullName("Aria", "Stark");
 console.log(name); // => Aria Stark
 ```
 
@@ -66,7 +66,7 @@ function formatName(name) {
   return uppercased;
 }
 
-console.log(formatName('  hexlet  ')); // => HEXLET
+console.log(formatName("  hexlet  ")); // => HEXLET
 ```
 
 ## El código después de return
@@ -75,8 +75,8 @@ Cuando la ejecución llega a `return`, la función termina de inmediato. Todo lo
 
 ```javascript
 function example() {
-  return 'listo';
-  console.log('este código nunca se ejecutará');
+  return "listo";
+  console.log("este código nunca se ejecutará");
 }
 
 console.log(example()); // => listo

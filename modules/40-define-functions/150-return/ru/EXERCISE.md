@@ -11,17 +11,17 @@
 ```javascript
 // Передаём текст напрямую
 // Обрезаем текст, оставляя 2 символа
-truncate('hexlet', 2); // he...
+truncate("hexlet", 2); // he...
 
 // Через переменную
-const text = 'it works!';
+const text = "it works!";
 // Обрезаем текст, оставляя 4 символа
 truncate(text, 4); // it w...
 ```
 Вам нужно самостоятельно реализовать функцию `truncate()`, в JavaScript такой функции не существует. Реализовать эту функцию можно различными способами, подскажем лишь один из них. Для решения этим способом вам понадобится взять подстроку из строки, переданной первым параметром в функцию. Используйте для этого метод [slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice). Подумайте, исходя из задания, с какого индекса и по какой вам надо извлечь подстроку?
 
   ```javascript
-  const word = 'welcome';
+  const word = "welcome";
   // Передавать параметры в метод можно через переменные
   const index = 3;
   word.slice(0, index); // wel

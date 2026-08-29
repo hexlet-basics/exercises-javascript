@@ -27,6 +27,6 @@ La coma está dentro de los corchetes porque si no especificamos un parámetro, 
 La función `Math.min()` funciona de manera similar, sólo que busca el valor más pequeño:
 
 ```javascript
-Math.min(1, 10, 3);       // 1
+Math.min(1, 10, 3); // 1
 Math.min(1, -3, 2, 3, 2); // -3
 ```

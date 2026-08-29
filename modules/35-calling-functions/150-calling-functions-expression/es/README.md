@@ -65,16 +65,16 @@ Primero se evalúan las llamadas anidadas, luego la externa. Por ejemplo, en `Ma
 Las funciones devuelven valores, lo que significa que sus llamadas se pueden usar como parte de cualquier otra expresión. Para obtener la longitud de una cadena, usaremos la función `length()`:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-const name = 'python';
+const name = "python";
 
 // La longitud de la cadena menos 1: el índice del último carácter
 const lastIndex = length(name) - 1;
 console.log(lastIndex); // => 5
 
 // El resultado se puede usar en aritmética
-const text = 'hexlet';
+const text = "hexlet";
 const double = length(text) * 2;
 console.log(double); // => 12
 ```

@@ -9,7 +9,7 @@ peopleCount.toString(); // 5
 Попробуйте ответить на вопрос, заработает ли следующий код — и если да, то что он напечатает на экран?
 
 ```javascript
-const name = 'Tirion';
+const name = "Tirion";
 console.log(name.length.toString());
 ```
 
@@ -18,7 +18,7 @@ console.log(name.length.toString());
 Самый простой способ понять как работает этот код — разбить цепочку на отдельные операции:
 
 ```javascript
-const name = 'Tirion';
+const name = "Tirion";
 const len = name.length;
 console.log(len.toString());
 ```
@@ -37,14 +37,14 @@ console.log(len.toString());
 Ещё один пример для закрепления:
 
 ```javascript
-const name = 'Tirion';
+const name = "Tirion";
 console.log(name.toUpperCase().toLowerCase());
 ```
 
 Подобный код требует небольших умственных усилий. Важно понимать, что `.toLowerCase()` применяется к результату вызова метода, который находится левее. А метод `toUpperCase()` возвращает строку. Новички часто делают ошибки в цепочках с методами, забывая ставить вызов:
 
 ```javascript
-const name = 'Tirion';
+const name = "Tirion";
 // Этот код отработает неверно!
 console.log(name.toUpperCase.toLowerCase());
 ```
@@ -61,7 +61,7 @@ console.log(name.toUpperCase().toLowerCase().length.toString().length);
 Методы можно вызывать и после других операций, например после среза строки:
 
 ```javascript
-const text = '  Hello, Hexlet!  ';
+const text = "  Hello, Hexlet!  ";
 // Убираем пробелы, берём подстроку и переводим в нижний регистр
 console.log(text.trim().slice(7).toLowerCase()); // => hexlet!
 ```
@@ -73,7 +73,7 @@ console.log(text.trim().slice(7).toLowerCase()); // => hexlet!
 Цепочку можно продолжать, пока результат остаётся значением, у которого есть нужные методы. Как только метод или свойство возвращает значение другого типа, набор доступных методов меняется:
 
 ```javascript
-const text = 'hexlet';
+const text = "hexlet";
 // .length возвращает число — у него уже нет строковых методов
 console.log(text.length.toUpperCase()); // TypeError: ... is not a function
 ```

@@ -9,9 +9,9 @@ El módulo decide qué entregar al exterior. Para ello se usa la palabra clave `
 Probablemente ya hayas visto líneas como esta al comienzo de algunos ejercicios — ahora veamos qué significan:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-console.log(length('Hello!')); // => 6
+console.log(length("Hello!")); // => 6
 ```
 
 Esta línea conecta la función `length` del módulo `hexlet-basics/string` y la hace disponible en el archivo actual.
@@ -21,10 +21,10 @@ Esta línea conecta la función `length` del módulo `hexlet-basics/string` y la
 De un mismo módulo se pueden importar varios nombres a la vez, enumerándolos entre llaves:
 
 ```javascript
-import { reverse, toUpperCase } from 'hexlet-basics/string';
+import { reverse, toUpperCase } from "hexlet-basics/string";
 
-console.log(reverse('hexlet'));     // => telxeh
-console.log(toUpperCase('hexlet')); // => HEXLET
+console.log(reverse("hexlet")); // => telxeh
+console.log(toUpperCase("hexlet")); // => HEXLET
 ```
 
 Tras esta importación, las funciones se llaman directamente, por sus nombres. Esto es cómodo: no hace falta indicar cada vez de qué módulo proviene una función.
@@ -35,7 +35,7 @@ Para exportar algo, el módulo lo marca con la palabra `export`. Hay dos tipos d
 
 ```javascript
 // string.js
-const reverse = (s) => s.split('').reverse().join('');
+const reverse = (s) => s.split("").reverse().join("");
 const length = (s) => s.length;
 
 export { reverse, length };
@@ -53,7 +53,7 @@ export default sum;
 La importación por defecto se escribe sin llaves, y se le puede dar cualquier nombre:
 
 ```javascript
-import sum from './sum.js';
+import sum from "./sum.js";
 
 console.log(sum(2, 3)); // => 5
 ```
@@ -63,9 +63,9 @@ console.log(sum(2, 3)); // => 5
 A veces un nombre de un módulo ya está ocupado en el archivo actual. Para evitar el conflicto, la importación se puede renombrar con `as`:
 
 ```javascript
-import { reverse as reverseString } from 'hexlet-basics/string';
+import { reverse as reverseString } from "hexlet-basics/string";
 
-console.log(reverseString('hexlet')); // => telxeh
+console.log(reverseString("hexlet")); // => telxeh
 ```
 
 Ahora la función está disponible bajo el nombre `reverseString`, mientras que el nombre original `reverse` queda libre.
@@ -77,7 +77,7 @@ Cada lenguaje viene con un conjunto de funciones listas para usar. En JavaScript
 Pero JavaScript se ejecuta en distintos entornos. El entorno de servidor Node.js tiene módulos integrados que hay que importar. Se importan con el prefijo `node:` — por ejemplo, el módulo `node:fs` para trabajar con archivos:
 
 ```javascript
-import { readFile } from 'node:fs/promises';
+import { readFile } from "node:fs/promises";
 ```
 
 Las funciones listas se pueden tomar no solo de los módulos estándar, sino también de módulos de terceros. Hablaremos de cómo se distribuyen estos en la siguiente lección.

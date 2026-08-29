@@ -9,7 +9,7 @@ We assign a function output to the variable `message`. In order to make this cod
 
 ```javascript
 const greetHexlet = () => {
-  const message = 'Hello, Hexlet!';
+  const message = "Hello, Hexlet!";
   return message;
 };
 ```
@@ -18,9 +18,9 @@ const greetHexlet = () => {
 
 ```javascript
 const greetHexlet = () => {
-  const message = 'Hello, Hexlet!';
+  const message = "Hello, Hexlet!";
   return message;
-  console.log('I will never execute');
+  console.log("I will never execute");
 };
 ```
 
@@ -28,7 +28,7 @@ You don't necessarily need to use a variable to return. Since `return` works wit
 
 ```javascript
 const greetHexlet = () => {
-  return 'Hello, Hexlet!';
+  return "Hello, Hexlet!";
 };
 ```
 
@@ -43,11 +43,11 @@ const doubleFive = () => {
 But even if there is no `return` statement inside the function, it will still return something. By default, any function will return `undefined`. For example, the `console.log()` function prints text, but returns nothing. In this case, it returns `undefined`.
 
 ```javascript
-const result = console.log('You can put any text here');
+const result = console.log("You can put any text here");
 console.log(result); // => undefined
 
 // Or even easier, without creating an intermediate variable
-console.log(console.log('Wow')); // => undefined
+console.log(console.log("Wow")); // => undefined
 ```
 
 Why is this behavior needed? A function call is an expression, and an expression should always return a result, otherwise, there would constantly be errors in the code in places where there is no data to return.
@@ -59,7 +59,7 @@ Self-check. What will this code print?
 const run = () => {
   return 5;
   return 10;
-}
+};
 
 // Usage
 run(); // => ?

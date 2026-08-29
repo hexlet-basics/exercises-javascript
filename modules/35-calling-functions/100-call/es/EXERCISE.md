@@ -3,5 +3,5 @@ Un sitio web comprueba si los anuncios de dos empresas asociadas caben en una so
 La función ya está conectada en la plantilla:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 ```

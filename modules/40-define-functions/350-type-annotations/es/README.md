@@ -35,7 +35,7 @@ console.log(add(2, 3)); // => 5
 Ahora el editor de código sugerirá que la función `add()` recibe dos números y devuelve un número. Si se intenta pasar una cadena, el editor lo marcará como un problema y avisará:
 
 ```javascript
-add('2', 3); // Argument of type 'string' is not assignable to parameter of type 'number'
+add("2", 3); // Argument of type 'string' is not assignable to parameter of type 'number'
 ```
 
 ## Qué tipos se usan en las anotaciones
@@ -57,7 +57,7 @@ function describe(name, age, height) {
   return `${name}, ${age} años, altura ${height}`;
 }
 
-console.log(describe('Anna', 25, 1.7));
+console.log(describe("Anna", 25, 1.7));
 // => Anna, 25 años, altura 1.7
 ```
 
@@ -72,7 +72,7 @@ function printGreeting(name) {
   console.log(`Hello, ${name}!`);
 }
 
-printGreeting('Anna');
+printGreeting("Anna");
 // => Hello, Anna!
 ```
 
@@ -86,12 +86,12 @@ Las anotaciones funcionan igual tanto para los parámetros obligatorios como par
  * @param {string} [greeting='Hello']
  * @returns {string}
  */
-function greet(name, greeting = 'Hello') {
+function greet(name, greeting = "Hello") {
   return `${greeting}, ${name}`;
 }
 
-console.log(greet('Anna'));         // => Hello, Anna
-console.log(greet('Kirill', 'Hi')); // => Hi, Kirill
+console.log(greet("Anna")); // => Hello, Anna
+console.log(greet("Kirill", "Hi")); // => Hi, Kirill
 ```
 
 En este ejemplo `name` es un parámetro obligatorio, y `greeting` tiene un valor por defecto. Las anotaciones muestran los tipos de ambos parámetros y del resultado devuelto.

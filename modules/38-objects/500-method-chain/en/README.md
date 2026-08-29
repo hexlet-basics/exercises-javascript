@@ -9,7 +9,7 @@ peopleCount.toString(); // '5'
 Will the following code work, and if so, what will it print?
 
 ```javascript
-const name = 'Tirion';
+const name = "Tirion";
 console.log(name.length.toString());
 ```
 
@@ -18,7 +18,7 @@ It's the first time we've seen several consecutive periods, but all of the above
 The easiest way to understand how this code works is to break the chain into separate operations:
 
 ```javascript
-const name = 'Tirion';
+const name = "Tirion";
 const len = name.length;
 console.log(len.toString());
 ```
@@ -28,14 +28,14 @@ These examples all do the same thing. We can perform operations sequentially, cr
 One more example:
 
 ```javascript
-const name = 'Tirion';
+const name = "Tirion";
 console.log(name.toUpperCase().toLowerCase());
 ```
 
 You'll need a bit of mental effort for this code. It's important to understand that `.toLowerCase()` is applied to the result of the `.toUpperCase()` function. And `toUpperCase()` returns a string. Rookies often make mistakes with chains of methods; they forget to call them:
 
 ```javascript
-const name = 'Tirion';
+const name = "Tirion";
 // This code will work incorrectly.
 console.log(name.toUpperCase.toLowerCase());
 ```

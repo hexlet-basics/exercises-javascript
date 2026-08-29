@@ -3,8 +3,8 @@ Implement the `mirror()` function. It takes a string, reverses it, and converts 
 Use the `reverse()` and `toUpperCase()` functions from the `hexlet-basics/string` module. You need to write the import yourself.
 
 ```javascript
-mirror('hello');  // => 'OLLEH'
-mirror('Hexlet'); // => 'TELXEH'
+mirror("hello"); // => 'OLLEH'
+mirror("Hexlet"); // => 'TELXEH'
 ```
 
 ## Hint

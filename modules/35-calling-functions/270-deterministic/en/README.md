@@ -3,13 +3,13 @@ Functions in any programming language have fundamental properties. They help us 
 A **deterministic function** always returns the same result for the same input data. For example, a function that counts the number of characters can be called deterministic:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-length('hexlet'); // 6
-length('hexlet'); // 6
+length("hexlet"); // 6
+length("hexlet"); // 6
 
-length('wow'); // 3
-length('wow'); // 3
+length("wow"); // 3
+length("wow"); // 3
 ```
 
 No matter how many times we call this function with the argument `'hexlet'`, it will always return `6`.

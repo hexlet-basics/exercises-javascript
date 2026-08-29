@@ -1,7 +1,7 @@
 Что напечатает на экран последний вызов?
 
 ```javascript
-const name = 'Tirion';
+const name = "Tirion";
 console.log(name.toUpperCase()); // => TIRION
 console.log(name); // => ?
 ```
@@ -13,7 +13,7 @@ console.log(name); // => ?
 Когда мы вызываем метод у строки, кажется, что мы меняем её. На самом деле метод **возвращает новую строку**, а оригинал остаётся прежним:
 
 ```javascript
-const text = 'hexlet';
+const text = "hexlet";
 text.toUpperCase();
 console.log(text); // => hexlet
 ```
@@ -21,7 +21,7 @@ console.log(text); // => hexlet
 Чтобы не потерять результат, его нужно сохранить в переменную:
 
 ```javascript
-const text = 'hexlet';
+const text = "hexlet";
 const upperText = text.toUpperCase();
 console.log(upperText); // => HEXLET
 ```
@@ -29,16 +29,16 @@ console.log(upperText); // => HEXLET
 Если не сохранить результат метода, он просто потеряется. Другие методы работают так же. Например, `trim()` возвращает новую строку без пробелов по краям, а исходная остаётся прежней:
 
 ```javascript
-const text = '   hi   ';
+const text = "   hi   ";
 const cleaned = text.trim();
 console.log(cleaned); // => 'hi', без пробелов
-console.log(text);    // => '   hi   ', строка не изменилась
+console.log(text); // => '   hi   ', строка не изменилась
 ```
 
 Более того, попытка изменить значение свойства тоже ни к чему не приведёт:
 
 ```javascript
-const name = 'Tirion';
+const name = "Tirion";
 console.log(name.length); // => 6
 name.length = 100;
 console.log(name.length); // => 6
@@ -51,7 +51,7 @@ console.log(name.length); // => 6
 Вместо изменения значения его можно *заменить*. Для этого понадобится переменная (`let`):
 
 ```javascript
-let name = 'Tirion';
+let name = "Tirion";
 name = name.toUpperCase();
 console.log(name); // => TIRION
 ```
@@ -59,7 +59,7 @@ console.log(name); // => TIRION
 Записывать результат обратно в ту же переменную уместно, когда суть данных не меняется. После `trim()` это тот же текст, просто чище. Но если результат метода представляет другую сущность, лучше дать ей отдельное имя:
 
 ```javascript
-const fullName = 'John Doe';
+const fullName = "John Doe";
 const headerName = fullName.toUpperCase();
 ```
 

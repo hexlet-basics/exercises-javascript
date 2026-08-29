@@ -35,7 +35,7 @@ console.log(add(2, 3)); // => 5
 Теперь редактор кода будет подсказывать, что функция `add()` принимает два числа и возвращает число. Если попытаться передать строку, редактор подсветит это как проблему и предупредит:
 
 ```javascript
-add('2', 3); // Argument of type 'string' is not assignable to parameter of type 'number'
+add("2", 3); // Argument of type 'string' is not assignable to parameter of type 'number'
 ```
 
 ## Какие типы используются в аннотациях
@@ -57,7 +57,7 @@ function describe(name, age, height) {
   return `${name}, ${age} лет, рост ${height}`;
 }
 
-console.log(describe('Anna', 25, 1.7));
+console.log(describe("Anna", 25, 1.7));
 // => Anna, 25 лет, рост 1.7
 ```
 
@@ -72,7 +72,7 @@ function printGreeting(name) {
   console.log(`Hello, ${name}!`);
 }
 
-printGreeting('Anna');
+printGreeting("Anna");
 // => Hello, Anna!
 ```
 
@@ -86,12 +86,12 @@ printGreeting('Anna');
  * @param {string} [greeting='Hello']
  * @returns {string}
  */
-function greet(name, greeting = 'Hello') {
+function greet(name, greeting = "Hello") {
   return `${greeting}, ${name}`;
 }
 
-console.log(greet('Anna'));         // => Hello, Anna
-console.log(greet('Kirill', 'Hi')); // => Hi, Kirill
+console.log(greet("Anna")); // => Hello, Anna
+console.log(greet("Kirill", "Hi")); // => Hi, Kirill
 ```
 
 В этом примере `name` является обязательным параметром, а `greeting` имеет значение по умолчанию. Аннотации показывают типы обоих параметров и возвращаемого результата.

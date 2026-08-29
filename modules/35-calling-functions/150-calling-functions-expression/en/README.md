@@ -65,16 +65,16 @@ First the nested calls are evaluated, then the outer one. For example, in `Math.
 Functions return values, which means their calls can be used as part of any other expressions. To get the length of a string, we will use the `length()` function:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-const name = 'python';
+const name = "python";
 
 // The length of the string minus 1 — the index of the last character
 const lastIndex = length(name) - 1;
 console.log(lastIndex); // => 5
 
 // The result can be used in arithmetic
-const text = 'hexlet';
+const text = "hexlet";
 const double = length(text) * 2;
 console.log(double); // => 12
 ```

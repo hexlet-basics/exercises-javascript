@@ -7,7 +7,7 @@ To manage this code and not get lost in the details, we use functions. A functio
 Imagine a function that transfers money from one account to another. It may contain hundreds of lines of code inside, but we don't see them. From the outside, everything looks like one simple command:
 
 ```javascript
-transferMoney('Alice', 'Bob', 100);
+transferMoney("Alice", "Bob", 100);
 ```
 
 This line calls the `transferMoney()` function. It is passed the sender `Alice`, the recipient `Bob`, and the amount `100`.
@@ -16,16 +16,16 @@ Here are a few more examples of function calls. Each one has its own name and it
 
 ```javascript
 // Yes, console.log is a function too
-console.log('Hexlet!');
+console.log("Hexlet!");
 
 // Sending an email to a user
-sendEmail('bob@example.com', 'Welcome!');
+sendEmail("bob@example.com", "Welcome!");
 
 // Calculating tax on the given amount
-calculateTax(5000, 'Florida');
+calculateTax(5000, "Florida");
 
 // Checking whether a user is in the system
-isRegistered('Alice');
+isRegistered("Alice");
 
 // Getting a random number from 1 to 10
 randomNumber(1, 10);
@@ -53,9 +53,9 @@ In addition, there are functions from separate libraries. To use them, you conne
 Let's take the `length()` function, which returns the number of characters in a string. It is connected from the course's standard set of functions using import:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-const message = 'Hello!';
+const message = "Hello!";
 const count = length(message);
 console.log(count); // => 6
 ```
@@ -74,10 +74,10 @@ Argument           Function        Result
 Returning a value is one of the key principles of how functions work. If a function returns a value, it can be stored in a variable, passed to another function, or used in calculations:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-const length1 = length('Hello!'); // store the result
-const length2 = length('World!');
+const length1 = length("Hello!"); // store the result
+const length2 = length("World!");
 
 const combinedLength = length1 + length2; // use the result in an expression
 console.log(combinedLength); // => 12

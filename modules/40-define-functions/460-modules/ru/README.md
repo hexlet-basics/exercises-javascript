@@ -9,9 +9,9 @@
 Скорее всего, такие строки вы уже видели в начале некоторых заданий — теперь разберёмся, что они значат:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-console.log(length('Hello!')); // => 6
+console.log(length("Hello!")); // => 6
 ```
 
 Эта строчка подключает функцию `length` из модуля `hexlet-basics/string` и делает её доступной в текущем файле.
@@ -21,10 +21,10 @@ console.log(length('Hello!')); // => 6
 Из одного модуля можно импортировать сразу несколько имён, перечислив их в фигурных скобках:
 
 ```javascript
-import { reverse, toUpperCase } from 'hexlet-basics/string';
+import { reverse, toUpperCase } from "hexlet-basics/string";
 
-console.log(reverse('hexlet'));     // => telxeh
-console.log(toUpperCase('hexlet')); // => HEXLET
+console.log(reverse("hexlet")); // => telxeh
+console.log(toUpperCase("hexlet")); // => HEXLET
 ```
 
 После такого импорта к функциям обращаются напрямую, по их именам. Это удобно: не нужно каждый раз писать, из какого модуля взята функция.
@@ -35,7 +35,7 @@ console.log(toUpperCase('hexlet')); // => HEXLET
 
 ```javascript
 // string.js
-const reverse = (s) => s.split('').reverse().join('');
+const reverse = (s) => s.split("").reverse().join("");
 const length = (s) => s.length;
 
 export { reverse, length };
@@ -53,7 +53,7 @@ export default sum;
 Импорт по умолчанию пишется без фигурных скобок, и имя при импорте можно выбрать любое:
 
 ```javascript
-import sum from './sum.js';
+import sum from "./sum.js";
 
 console.log(sum(2, 3)); // => 5
 ```
@@ -63,9 +63,9 @@ console.log(sum(2, 3)); // => 5
 Иногда имя из модуля уже занято в текущем файле. Чтобы избежать конфликта, импорт можно переименовать через `as`:
 
 ```javascript
-import { reverse as reverseString } from 'hexlet-basics/string';
+import { reverse as reverseString } from "hexlet-basics/string";
 
-console.log(reverseString('hexlet')); // => telxeh
+console.log(reverseString("hexlet")); // => telxeh
 ```
 
 Теперь функция доступна под именем `reverseString`, а исходное имя `reverse` остаётся свободным.
@@ -77,7 +77,7 @@ console.log(reverseString('hexlet')); // => telxeh
 Но JavaScript исполняется в разных средах. В серверном окружении Node.js есть встроенные модули, которые нужно подключать. Их подключают с префиксом `node:` — например, модуль `node:fs` для работы с файлами:
 
 ```javascript
-import { readFile } from 'node:fs/promises';
+import { readFile } from "node:fs/promises";
 ```
 
 Готовые функции можно брать не только из стандартных, но и из сторонних модулей. О том, как они распространяются, поговорим в следующем уроке.

@@ -7,7 +7,7 @@ La aplicación crea separadores de texto a partir de caracteres repetidos — po
 Devuelve la cadena repetida n veces. Si se pasa cero, devuelve una cadena vacía.
 
 ```javascript
-const text = 'javascript';
+const text = "javascript";
 console.log(wordMultiply(text, 2)); // => javascriptjavascript
 console.log(wordMultiply(text, 0)); // =>
 ```

@@ -65,16 +65,16 @@ console.log(Math.abs(-5))
 Функции возвращают значения, а значит их вызовы можно использовать как часть любых других выражений. Для длины строки воспользуемся функцией `length()`:
 
 ```javascript
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-const name = 'python';
+const name = "python";
 
 // Длина строки минус 1 — индекс последнего символа
 const lastIndex = length(name) - 1;
 console.log(lastIndex); // => 5
 
 // Результат можно использовать в арифметике
-const text = 'hexlet';
+const text = "hexlet";
 const double = length(text) * 2;
 console.log(double); // => 12
 ```
