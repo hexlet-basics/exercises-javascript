@@ -1,12 +1,12 @@
 // @ts-check
 
-import { expect, test, vi } from 'vitest';
+import { expect, test, vi } from "vitest";
 
-test('interpolation', async () => {
-  const consoleLogSpy = vi.spyOn(console, 'log');
-  await import('./index.js');
+test("interpolation", async () => {
+  const consoleLogSpy = vi.spyOn(console, "log");
+  await import("./index.js");
 
-  const firstArg = consoleLogSpy.mock.calls.join('\n');
+  const firstArg = consoleLogSpy.mock.calls.join("\n");
 
-  expect(firstArg).toBe('Hello, Anna! Your order #1337 has been accepted.');
+  expect(firstArg).toBe("Hello, Anna! Your order #1337 has been accepted.");
 });

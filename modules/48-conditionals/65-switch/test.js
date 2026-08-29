@@ -1,9 +1,9 @@
-import { expect, test } from 'vitest';
-import f from './index.js';
+import { expect, test } from "vitest";
+import f from "./index.js";
 
-test('switch', () => {
-  expect(f(0)).toBe('just a number');
-  expect(f(666)).toBe('devil number');
-  expect(f(42)).toBe('answer for everything');
-  expect(f(7)).toBe('prime number');
+test("switch", () => {
+  expect(f(0)).toBe("just a number");
+  expect(f(666)).toBe("devil number");
+  expect(f(42)).toBe("answer for everything");
+  expect(f(7)).toBe("prime number");
 });

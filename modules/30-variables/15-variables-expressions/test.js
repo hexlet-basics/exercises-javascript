@@ -1,12 +1,12 @@
 // @ts-check
 
-import { expect, test, vi } from 'vitest';
+import { expect, test, vi } from "vitest";
 
-test('variables expressions', async () => {
-  const consoleLogSpy = vi.spyOn(console, 'log');
-  await import('./index.js');
+test("variables expressions", async () => {
+  const consoleLogSpy = vi.spyOn(console, "log");
+  await import("./index.js");
 
-  const firstArg = consoleLogSpy.mock.calls.join('\n');
+  const firstArg = consoleLogSpy.mock.calls.join("\n");
 
-  expect(firstArg).toBe('125\n863.75');
+  expect(firstArg).toBe("125\n863.75");
 });

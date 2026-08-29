@@ -1,12 +1,12 @@
 // @ts-check
 
-import { expect, test, vi } from 'vitest';
+import { expect, test, vi } from "vitest";
 
-test('calling functions default params', async () => {
-  const consoleLogSpy = vi.spyOn(console, 'log');
-  await import('./index.js');
+test("calling functions default params", async () => {
+  const consoleLogSpy = vi.spyOn(console, "log");
+  await import("./index.js");
 
-  const firstArg = consoleLogSpy.mock.calls.join('\n');
+  const firstArg = consoleLogSpy.mock.calls.join("\n");
 
-  expect(firstArg).toBe('37.8\n2426.76\n607');
+  expect(firstArg).toBe("37.8\n2426.76\n607");
 });

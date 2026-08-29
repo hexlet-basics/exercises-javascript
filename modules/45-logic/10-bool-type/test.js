@@ -1,7 +1,7 @@
-import { expect, test } from 'vitest';
-import f from './index.js';
+import { expect, test } from "vitest";
+import f from "./index.js";
 
-test('bool type', () => {
+test("bool type", () => {
   expect(f(23)).toBe(false);
   expect(f(70)).toBe(true);
   expect(f(60)).toBe(true);

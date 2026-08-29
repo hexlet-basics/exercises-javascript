@@ -2,7 +2,7 @@
 const hasAtSymbol = (email) => {
   let i = 0;
   while (i < email.length) {
-    if (email[i] === '@') {
+    if (email[i] === "@") {
       return true;
     }
 

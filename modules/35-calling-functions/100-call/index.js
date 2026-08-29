@@ -1,7 +1,7 @@
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-const company1 = 'Apple';
-const company2 = 'Samsung';
+const company1 = "Apple";
+const company2 = "Samsung";
 
 // BEGIN
 const company1Length = length(company1);

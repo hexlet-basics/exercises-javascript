@@ -1,4 +1,4 @@
-let firstName = '  Grigor   \n';
+let firstName = "  Grigor   \n";
 
 // BEGIN
 firstName = firstName.trim();

@@ -1,9 +1,9 @@
 // BEGIN
 function guessNumber(guess) {
   if (guess === 42) {
-    return 'You win!';
+    return "You win!";
   }
-  return 'Try again!';
+  return "Try again!";
 }
 // END
 

@@ -1,14 +1,14 @@
 // @ts-check
 
-import { expect, test, vi } from 'vitest';
+import { expect, test, vi } from "vitest";
 
-test('objects', async () => {
-  const consoleLogSpy = vi.spyOn(console, 'log');
-  await import('./index.js');
+test("objects", async () => {
+  const consoleLogSpy = vi.spyOn(console, "log");
+  await import("./index.js");
 
-  const firstArg = consoleLogSpy.mock.calls.join('\n');
+  const firstArg = consoleLogSpy.mock.calls.join("\n");
 
   expect(firstArg).toBe(
-    'a mind needs books as a sword needs a whetstone, if it is to keep its edge.',
+    "a mind needs books as a sword needs a whetstone, if it is to keep its edge.",
   );
 });

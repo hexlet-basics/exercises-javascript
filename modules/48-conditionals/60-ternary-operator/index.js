@@ -1,5 +1,5 @@
 // BEGIN
-const flipFlop = (str) => (str === 'flip' ? 'flop' : 'flip');
+const flipFlop = (str) => (str === "flip" ? "flop" : "flip");
 // END
 
 export default flipFlop;

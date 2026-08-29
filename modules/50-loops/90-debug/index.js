@@ -1,10 +1,10 @@
 // BEGIN
 const compress = (str) => {
-  if (str === '') {
-    return '';
+  if (str === "") {
+    return "";
   }
 
-  let result = '';
+  let result = "";
   let count = 1;
 
   for (let i = 1; i < str.length; i += 1) {

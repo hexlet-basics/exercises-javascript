@@ -2,13 +2,13 @@
 const getNumberExplanation = (number) => {
   switch (number) {
     case 666:
-      return 'devil number';
+      return "devil number";
     case 7:
-      return 'prime number';
+      return "prime number";
     case 42:
-      return 'answer for everything';
+      return "answer for everything";
     default:
-      return 'just a number';
+      return "just a number";
   }
 };
 // END

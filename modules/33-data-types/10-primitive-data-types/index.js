@@ -1,7 +1,7 @@
 const currentYear = 2026;
 
 // BEGIN
-const name = 'Anna';
+const name = "Anna";
 const birthYear = 1994;
 const age = currentYear - birthYear;
 const rating = 4.7;

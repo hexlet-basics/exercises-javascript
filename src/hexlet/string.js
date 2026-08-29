@@ -14,7 +14,7 @@ function toLowerCase(s) {
  * @param {string} s
  */
 function reverse(s) {
-  return s.split('').reverse().join('');
+  return s.split("").reverse().join("");
 }
 /**
  * @param {string | any[]} s

@@ -1,6 +1,6 @@
-import { length } from 'hexlet-basics/string';
+import { length } from "hexlet-basics/string";
 
-const text = 'Hexlet';
+const text = "Hexlet";
 
 // BEGIN
 const first = text[0];

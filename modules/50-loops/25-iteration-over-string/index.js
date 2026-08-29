@@ -1,12 +1,12 @@
 // BEGIN
 const maskCardNumber = (cardNumber) => {
-  let result = '';
+  let result = "";
   let i = 0;
   const visiblePartStart = cardNumber.length - 4;
   while (i < cardNumber.length) {
     if (i < visiblePartStart) {
       // teaching example before the 30-syntax-sugar lesson
-      result = result + '*';
+      result = result + "*";
     } else {
       result = result + cardNumber[i];
     }

@@ -1,13 +1,13 @@
 // @ts-check
 
-import { expect, test, vi } from 'vitest';
-import f from './index.js';
+import { expect, test, vi } from "vitest";
+import f from "./index.js";
 
-test('while', async () => {
-  const consoleLogSpy = vi.spyOn(console, 'log');
+test("while", async () => {
+  const consoleLogSpy = vi.spyOn(console, "log");
   f(6);
 
-  const firstArg = consoleLogSpy.mock.calls.join('\n');
+  const firstArg = consoleLogSpy.mock.calls.join("\n");
 
-  expect(firstArg).toBe('6\n5\n4\n3\n2\n1');
+  expect(firstArg).toBe("6\n5\n4\n3\n2\n1");
 });
