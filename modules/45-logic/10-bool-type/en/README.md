@@ -16,12 +16,12 @@ console.log(true);
 console.log(false);
 ```
 
-In practice, they are rarely used this way, but the entire logic of a program's behavior is built on them. We encounter this every day: we enter PIN codes and passwords, perform actions whose results may differ. The program reasons roughly like this: *if this — do one thing, if otherwise — do another*.
+In practice, they are rarely used this way, but the entire logic of a program's behavior is built on them. We encounter this every day: we enter PIN codes and passwords, perform actions whose results may differ. The program reasons roughly like this: _if this — do one thing, if otherwise — do another_.
 
 JavaScript provides the following comparison operations:
 
 | Operator | Meaning |
-|----------|---------|
+| ---------- | --------- |
 | `<` | less than |
 | `<=` | less than or equal to |
 | `>` | greater than |

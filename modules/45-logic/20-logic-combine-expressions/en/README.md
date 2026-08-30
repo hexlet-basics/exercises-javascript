@@ -3,9 +3,9 @@ Logical operations are expressions. So, you can combine them with other expressi
 
 Let's say, for example, we want to check if a number is even, i.e., a multiple of two. In programming we do this:
 
-  * check for a remainder when dividing by 2:
-  * if the remainder is 0, then the number is even
-  * if the remainder is not 0, then the number is odd
+- check for a remainder when dividing by 2:
+- if the remainder is 0, then the number is even
+- if the remainder is not 0, then the number is odd
 
 The remainder of a division is an elementary but crucial concept of arithmetic, algebra, and even number theory and cryptography. The idea is simple: divide a number into several equal groups, and if anything remains, it's the remainder of the division.
 
@@ -44,7 +44,7 @@ In one expression, we've combined the logical operator `===` (equality check) an
 
 Arithmetic operators have higher priority than logical ones. So, we first calculate the arithmetic expression `number % 2`, and then its output is used in the logical comparison.
 
-Literally, it means the following: *"calculate the remainder of dividing `number` by 2 and check if the remainder equals zero; then return the result of the equality check "*.
+Literally, it means the following: _"calculate the remainder of dividing `number` by 2 and check if the remainder equals zero; then return the result of the equality check "_.
 
 Another example: write a function to check the first letter of a string is uppercase.
 

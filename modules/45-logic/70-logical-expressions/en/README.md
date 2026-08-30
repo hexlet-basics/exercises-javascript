@@ -27,8 +27,8 @@ The **AND** operator works in such a way that its execution (left to right) inte
 
 There are two basic rules in JavaScript by which conversions take place:
 
-* `0`, `''`, `undefined`, `NaN`, and `null` are converted into `false`. Those values are considered [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
-* Everything else is converted into `true`
+- `0`, `''`, `undefined`, `NaN`, and `null` are converted into `false`. Those values are considered [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
+- Everything else is converted into `true`
 
 Developers use this extensively, for example, to define a default value:
 

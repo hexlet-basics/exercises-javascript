@@ -23,7 +23,7 @@ Y aunque el intérprete permite hacer esto, esto viola la semántica del valor `
 
 JavaScript es uno de los pocos lenguajes en los que el concepto de `undefined` está presente de forma explícita. En otros lenguajes, su papel lo desempeña el valor `null`, que, por cierto, también existe en JavaScript.
 
-*Pregunta de autoevaluación. ¿Por qué no se puede declarar una constante sin especificar un valor?*
+_Pregunta de autoevaluación. ¿Por qué no se puede declarar una constante sin especificar un valor?_
 
 <details>
 <summary>Respuesta</summary>

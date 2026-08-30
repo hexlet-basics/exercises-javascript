@@ -56,5 +56,5 @@ For example, the linter (the program that checks the code) in JavaScript immedia
 
 Usage guidelines:
 
-* Never mix operations/functions without side effects with operations/functions with side effects within a single expression
-* Use increment and decrement only if there is no difference between the prefix and postfix version. It should be separate from other expressions and on a separate line of code
+- Never mix operations/functions without side effects with operations/functions with side effects within a single expression
+- Use increment and decrement only if there is no difference between the prefix and postfix version. It should be separate from other expressions and on a separate line of code

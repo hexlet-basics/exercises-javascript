@@ -16,7 +16,7 @@ abs(-10); // 10
 
 Can we write it more concisely? Something like `return <answer depending on the condition>`? For this, there must be an expression to the right of return, but `if` is a statement, not an expression.
 
-In JavaScript there is a construct that behaves like the *if-else* construct but is itself an expression. It is called the **ternary operator**.
+In JavaScript there is a construct that behaves like the _if-else_ construct but is itself an expression. It is called the **ternary operator**.
 
 The ternary operator is the only operator of its kind that requires three operands:
 

@@ -9,5 +9,5 @@ mirror("Hexlet"); // => 'TELXEH'
 
 ## Pista
 
-* Al comienzo del archivo, importa las funciones que necesitas: `import { reverse, toUpperCase } from 'hexlet-basics/string';`
-* Primero invierte la cadena y luego convierte el resultado a mayúsculas
+- Al comienzo del archivo, importa las funciones que necesitas: `import { reverse, toUpperCase } from 'hexlet-basics/string';`
+- Primero invierte la cadena y luego convierte el resultado a mayúsculas

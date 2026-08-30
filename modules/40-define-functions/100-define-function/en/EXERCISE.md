@@ -1,5 +1,5 @@
 
-Implement the `printMotto()` function, which prints the phrase *Winter is coming*.
+Implement the `printMotto()` function, which prints the phrase _Winter is coming_.
 
 ```javascript
 printMotto(); // => "Winter is coming"

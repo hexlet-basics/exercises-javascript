@@ -58,7 +58,7 @@ By default, it is customary to use single quotes `'` if double quotes are not re
 
 ## The problem with quotes inside a string
 
-Imagine you want to print the string *Dragon's mother*. It contains an apostrophe (*'s*), which matches the single quote character. Let's try this.
+Imagine you want to print the string _Dragon's mother_. It contains an apostrophe (_'s_), which matches the single quote character. Let's try this.
 
 ```javascript
 console.log('Dragon's mother');

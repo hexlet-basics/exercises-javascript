@@ -10,5 +10,5 @@ formatPrice(10); // => '10.00'
 
 ## Pista
 
-* Al comienzo del archivo, importa la función: `import { round } from 'hexlet-basics/math';`
-* El segundo argumento de `round()` es la cantidad de decimales
+- Al comienzo del archivo, importa la función: `import { round } from 'hexlet-basics/math';`
+- El segundo argumento de `round()` es la cantidad de decimales

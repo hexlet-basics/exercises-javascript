@@ -1,7 +1,7 @@
 
 Logical expressions can be combined with one another, creating increasingly tricky checks. A good example is password validation. As you know, some websites require a password between 8 and 20 characters long during registration. Honestly, it's a strange restriction, but what can you do. In math, we would write `8 < x < 20` (where `x` is the length of a specific password), but in JavaScript this trick won't work. We will have to make two separate logical expressions and join them with a special "AND" operator:
 
-```
+```text
 The password is longer than 8 characters **AND** the password is shorter than 20 characters.
 ```
 
@@ -61,7 +61,7 @@ The branch of mathematics that studies logical operators is called Boolean algeb
 ## AND `&&`
 
 | A     | B     | A && B   |
-|-------| ------|----------|
+| ----- | ----- | -------- |
 | TRUE  | TRUE  | **TRUE** |
 | TRUE  | FALSE | FALSE    |
 | FALSE | TRUE  | FALSE    |
@@ -80,11 +80,11 @@ A couple of examples:
 ## OR `||`
 
 | A     | B     | A &vert;&vert; B |
-|-------|-------|----------|
-| TRUE  | TRUE  | **TRUE** |
-| TRUE  | FALSE | **TRUE** |
-| FALSE | TRUE  | **TRUE** |
-| FALSE | FALSE | FALSE    |
+| ----- | ----- | ---------------- |
+| TRUE  | TRUE  | **TRUE**         |
+| TRUE  | FALSE | **TRUE**         |
+| FALSE | TRUE  | **TRUE**         |
+| FALSE | FALSE | FALSE            |
 
 A couple of examples:
 

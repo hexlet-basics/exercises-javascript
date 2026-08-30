@@ -49,14 +49,14 @@ console.log(3 + 4); // imprime: 7
 
 JavaScript admite todas las operaciones habituales más algunas específicas relacionadas con la forma en que se almacenan y procesan los números en una computadora:
 
-| Operación        | Símbolo | Ejemplo   | Resultado |
-|------------------|---------|-----------|-----------|
-| Suma             | `+`     | `2 + 3`   | `5`       |
-| Resta            | `-`     | `7 - 2`   | `5`       |
-| Multiplicación   | `*`     | `4 * 3`   | `12`      |
-| División         | `/`     | `8 / 2`   | `4`       |
-| Potenciación     | `**`    | `3 ** 2`  | `9`       |
-| Resto            | `%`     | `7 % 3`   | `1`       |
+| Operación      | Símbolo | Ejemplo  | Resultado |
+| -------------- | ------- | -------- | --------- |
+| Suma           | `+`     | `2 + 3`  | `5`       |
+| Resta          | `-`     | `7 - 2`  | `5`       |
+| Multiplicación | `*`     | `4 * 3`  | `12`      |
+| División       | `/`     | `8 / 2`  | `4`       |
+| Potenciación   | `**`    | `3 ** 2` | `9`       |
+| Resto          | `%`     | `7 % 3`  | `1`       |
 
 Así es como puedes imprimir el resultado de la división y de la potenciación:
 
@@ -67,7 +67,7 @@ console.log(3 ** 2); // => 9
 
 ## Qué es el resto de la división (`%`)
 
-Esta operación se llama **obtención del resto de la división**. Muestra **lo que "queda"** cuando un número se divide por otro *de forma no exacta*. Ejemplo:
+Esta operación se llama **obtención del resto de la división**. Muestra **lo que "queda"** cuando un número se divide por otro _de forma no exacta_. Ejemplo:
 
 ```javascript
 console.log(7 % 3); // => 1

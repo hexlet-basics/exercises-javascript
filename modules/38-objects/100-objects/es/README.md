@@ -7,7 +7,7 @@ const name = "Robb";
 console.log(name.toUpperCase()); // => ROBB
 ```
 
-A diferencia de las funciones, los métodos se llaman *sobre un objeto*. Primero se escribe el objeto (un valor, una variable o una constante), y luego, después de un punto, la llamada al método. Aunque el método `toUpperCase()` no recibe argumentos, por dentro sabe sobre qué objeto se lo llama y tiene acceso al objeto mismo.
+A diferencia de las funciones, los métodos se llaman _sobre un objeto_. Primero se escribe el objeto (un valor, una variable o una constante), y luego, después de un punto, la llamada al método. Aunque el método `toUpperCase()` no recibe argumentos, por dentro sabe sobre qué objeto se lo llama y tiene acceso al objeto mismo.
 
 ## Propiedades
 
@@ -39,7 +39,7 @@ const name = "Robb";
 console.log(name.whatIsThat); // => undefined
 ```
 
-*Pregunta de autoevaluación. ¿Qué imprimirá el código `console.log(name[name.length])` para el `name` definido más arriba? ¿Por qué es esa la respuesta?*
+_Pregunta de autoevaluación. ¿Qué imprimirá el código `console.log(name[name.length])` para el `name` definido más arriba? ¿Por qué es esa la respuesta?_
 
 <details>
 <summary>Respuesta</summary>

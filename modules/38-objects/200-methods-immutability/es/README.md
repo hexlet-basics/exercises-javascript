@@ -48,7 +48,7 @@ Está hecho a propósito: los valores primitivos no se pueden modificar después
 
 ## Reasignar la variable
 
-En lugar de cambiar el valor, se lo puede *reemplazar*. Para eso hace falta una variable (`let`):
+En lugar de cambiar el valor, se lo puede _reemplazar_. Para eso hace falta una variable (`let`):
 
 ```javascript
 let name = "Tirion";

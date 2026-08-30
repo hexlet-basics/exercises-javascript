@@ -16,12 +16,12 @@ console.log(true);
 console.log(false);
 ```
 
-En la práctica, rara vez se usan de esta forma, pero sobre ellos se construye toda la lógica del comportamiento del programa. Nos encontramos con esto cada día: ingresamos códigos PIN y contraseñas, ejecutamos acciones cuyo resultado puede ser distinto. El programa razona más o menos así: *si es así — haz una cosa, si es de otro modo — haz otra*.
+En la práctica, rara vez se usan de esta forma, pero sobre ellos se construye toda la lógica del comportamiento del programa. Nos encontramos con esto cada día: ingresamos códigos PIN y contraseñas, ejecutamos acciones cuyo resultado puede ser distinto. El programa razona más o menos así: _si es así — haz una cosa, si es de otro modo — haz otra_.
 
 En JavaScript están disponibles las siguientes operaciones de comparación:
 
 | Operador | Significado |
-|----------|-------------|
+| ---------- | ------------- |
 | `<` | menor que |
 | `<=` | menor o igual que |
 | `>` | mayor que |

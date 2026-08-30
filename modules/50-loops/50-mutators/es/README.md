@@ -56,5 +56,5 @@ Por ejemplo, en JavaScript, el linter (un programa que verifica el código) comi
 
 Recomendaciones de uso:
 
-* Nunca mezcle operaciones/funciones sin efectos secundarios con operaciones/funciones que sí los tienen en el mismo expresión.
-* Utilice el incremento y el decremento solo donde no haya diferencia entre la forma prefija y la forma posfija: por separado de todo, en su propia línea de código.
+- Nunca mezcle operaciones/funciones sin efectos secundarios con operaciones/funciones que sí los tienen en el mismo expresión.
+- Utilice el incremento y el decremento solo donde no haya diferencia entre la forma prefija y la forma posfija: por separado de todo, en su propia línea de código.

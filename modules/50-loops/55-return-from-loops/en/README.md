@@ -57,4 +57,4 @@ The algorithm is built like this: if during the sequential division by numbers u
 
 And only if the loop has run completely and no number that divides without a remainder was found, can we conclude that the number is prime.
 
-*To be completely honest, checking numbers up to the square root of `number` is enough to solve the task. But here it's important for us to focus on understanding how to work with conditions and returning inside a loop.*
+_To be completely honest, checking numbers up to the square root of `number` is enough to solve the task. But here it's important for us to focus on understanding how to work with conditions and returning inside a loop._

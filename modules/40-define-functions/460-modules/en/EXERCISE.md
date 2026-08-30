@@ -9,5 +9,5 @@ mirror("Hexlet"); // => 'TELXEH'
 
 ## Hint
 
-* At the beginning of the file, import the functions you need: `import { reverse, toUpperCase } from 'hexlet-basics/string';`
-* First reverse the string, then convert the result to upper case
+- At the beginning of the file, import the functions you need: `import { reverse, toUpperCase } from 'hexlet-basics/string';`
+- First reverse the string, then convert the result to upper case

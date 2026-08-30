@@ -10,7 +10,7 @@ La función `Math.max()` encuentra el valor máximo entre los parámetros propor
 Math.max([value1[, value2[, ...]]])
 ```
 
-Esta notación indica que esta función acepta cualquier número de parámetros como entrada (e incluso puede ser llamada sin ellos). La opcionalidad de los parámetros proporcionados se describe con los corchetes *[ ]*, exactamente igual que se describen los parámetros opcionales que tienen valores por defecto. La posibilidad de pasar cualquier número de parámetros está codificada en esta parte *[, ...]*.
+Esta notación indica que esta función acepta cualquier número de parámetros como entrada (e incluso puede ser llamada sin ellos). La opcionalidad de los parámetros proporcionados se describe con los corchetes _[ ]_, exactamente igual que se describen los parámetros opcionales que tienen valores por defecto. La posibilidad de pasar cualquier número de parámetros está codificada en esta parte _[, ...]_.
 
 ```javascript
 Math.max(1, -3, 2, 3, 2); // 3
@@ -18,9 +18,9 @@ Math.max(1, -3, 2, 3, 2); // 3
 
 Todo lo que se indica entre corchetes es opcional. En esta notación `Math.max([value1[, value2[, ...]]])` hay varios de estos corchetes, y están anidados unos dentro de otros. Analicemos cada uno de ellos:
 
-* Los primeros corchetes contienen `[value1[, value2[, ...]]]`, lo que significa que se puede llamar a la función sin parámetros, ya que estos corchetes contienen todo lo que se pasa a la función. Si eliminas todo el contenido de estos corchetes y los corchetes mismos, queda `Math.max()` — una llamada sin parámetros.
-* Los segundos corchetes están anidados dentro de los primeros y contienen `[, value2[, ...]]`. Indican que si especificamos el primer parámetro, entonces podemos especificar opcionalmente un segundo parámetro. Sin estos corchetes y su contenido, la notación sería de la forma `Math.max([value1])`.
-* Los terceros corchetes están anidados dentro de los segundos y contienen `[, ...]`. Los puntos suspensivos indican que puede haber cualquier número de parámetros. Si eliminas estos corchetes y su contenido, obtienes una notación de la forma `Math.max([value1[, value2]])`.
+- Los primeros corchetes contienen `[value1[, value2[, ...]]]`, lo que significa que se puede llamar a la función sin parámetros, ya que estos corchetes contienen todo lo que se pasa a la función. Si eliminas todo el contenido de estos corchetes y los corchetes mismos, queda `Math.max()` — una llamada sin parámetros.
+- Los segundos corchetes están anidados dentro de los primeros y contienen `[, value2[, ...]]`. Indican que si especificamos el primer parámetro, entonces podemos especificar opcionalmente un segundo parámetro. Sin estos corchetes y su contenido, la notación sería de la forma `Math.max([value1])`.
+- Los terceros corchetes están anidados dentro de los segundos y contienen `[, ...]`. Los puntos suspensivos indican que puede haber cualquier número de parámetros. Si eliminas estos corchetes y su contenido, obtienes una notación de la forma `Math.max([value1[, value2]])`.
 
 La coma está dentro de los corchetes porque si no especificamos un parámetro, la coma no es necesaria. De lo contrario, una llamada con un solo parámetro se vería así `Math.max(value1,)`.
 

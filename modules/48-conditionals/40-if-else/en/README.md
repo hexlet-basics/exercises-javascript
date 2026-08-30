@@ -1,5 +1,5 @@
 
-Let's write a function `getTypeOfSentence()` that analyzes text and returns a description of its tone: for ordinary sentences – *General sentence*, for interrogative ones – *Question sentence*.
+Let's write a function `getTypeOfSentence()` that analyzes text and returns a description of its tone: for ordinary sentences – _General sentence_, for interrogative ones – _Question sentence_.
 
 ```javascript
 getTypeOfSentence("Hodor"); // General sentence
@@ -64,7 +64,7 @@ if (number > 10) {
 
 Here `number > 10` is checked first. The condition is false, so control passes to `else`, where the nested condition `number === 10` is checked. It is true — `Number is exactly 10` is printed.
 
-There are two ways to lay out an *if-else* construct. Using negation, you can swap the order of the blocks:
+There are two ways to lay out an _if-else_ construct. Using negation, you can swap the order of the blocks:
 
 ```javascript
 const getTypeOfSentence = (sentence) => {

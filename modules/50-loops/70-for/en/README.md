@@ -14,7 +14,7 @@ const reverseString = (str) => {
 };
 ```
 
-It can be read as follows: *the loop with index `i` repeats while `i < str.length` and increases `i` by 1 after each step*.
+It can be read as follows: _the loop with index `i` repeats while `i < str.length` and increases `i` by 1 after each step_.
 
 Let's go through how the loop works step by step for the call `reverseString('go!')`:
 

@@ -47,4 +47,4 @@ Following this idea, it's possible to build infinitely long (though, in this cas
 console.log(name.toUpperCase().toLowerCase().length.toString().length);
 ```
 
-_This trick won't work with functions because they are usually nested, f(f(f())), which complicates analysis. Yet this doesn't mean that you can't do it nicely - you can and should. Other languages implement it by composing functions or using a pipeline operator, which, incidentally, is starting to be used more and more in JavaScript: https://github.com/tc39/proposal-pipeline-operator.
+_This trick won't work with functions because they are usually nested, f(f(f())), which complicates analysis. Yet this doesn't mean that you can't do it nicely - you can and should. Other languages implement it by composing functions or using a pipeline operator, which, incidentally, is starting to be used more and more in JavaScript: <https://github.com/tc39/proposal-pipeline-operator>.

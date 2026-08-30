@@ -37,10 +37,10 @@ console.log("-5"); // => -5
 
 En la pantalla el resultado se ve igual, pero dentro del programa son cosas completamente diferentes:
 
-| Valor    | Tipo de datos               |
-|----------|-----------------------------|
-| `5`      | `number` (número)           |
-| `'5'`    | `string` (cadena de texto)  |
+| Valor | Tipo de datos              |
+| ----- | -------------------------- |
+| `5`   | `number` (número)          |
+| `'5'` | `string` (cadena de texto) |
 
 ## Los números en JavaScript
 

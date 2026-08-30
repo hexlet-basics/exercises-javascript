@@ -16,7 +16,7 @@ abs(-10); // 10
 
 ¿Se puede escribir de forma más concisa? ¿Algo como `return <respuesta según la condición>`? Para eso, a la derecha de return debe haber una expresión, pero `if` es una instrucción, no una expresión.
 
-En JavaScript existe una construcción que por su comportamiento es análoga a la construcción *if-else*, pero que a la vez es una expresión. Se llama **operador ternario**.
+En JavaScript existe una construcción que por su comportamiento es análoga a la construcción _if-else_, pero que a la vez es una expresión. Se llama **operador ternario**.
 
 El operador ternario es el único operador de su tipo que requiere tres operandos:
 

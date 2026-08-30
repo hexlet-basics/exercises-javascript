@@ -57,4 +57,4 @@ El algoritmo está construido así: si durante la división secuencial por los n
 
 Y solo si el bucle se ha ejecutado por completo y no se encontró ningún número que divida sin resto, podemos concluir que el número es primo.
 
-*Para ser totalmente honestos, para resolver la tarea basta con comprobar los números hasta la raíz cuadrada de `number`. Pero aquí lo importante para nosotros es centrarnos en entender cómo trabajar con condiciones y el retorno dentro de un bucle.*
+_Para ser totalmente honestos, para resolver la tarea basta con comprobar los números hasta la raíz cuadrada de `number`. Pero aquí lo importante para nosotros es centrarnos en entender cómo trabajar con condiciones y el retorno dentro de un bucle._

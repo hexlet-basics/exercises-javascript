@@ -11,8 +11,8 @@ countChars("Sansa", "y"); // 0
 
 Before examining its contents, answer these questions:
 
-* Is this an aggregate operation?
-* What will be the test condition for whether the character occurs?
+- Is this an aggregate operation?
+- What will be the test condition for whether the character occurs?
 
 ```javascript
 const countChars = (str, char) => {

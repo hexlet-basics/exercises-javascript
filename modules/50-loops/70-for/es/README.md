@@ -14,7 +14,7 @@ const reverseString = (str) => {
 };
 ```
 
-Se puede leer de la siguiente manera: *el bucle con el índice `i` se repite mientras `i < str.length` e incrementa `i` en 1 después de cada paso*.
+Se puede leer de la siguiente manera: _el bucle con el índice `i` se repite mientras `i < str.length` e incrementa `i` en 1 después de cada paso_.
 
 Analicemos cómo funciona el bucle paso a paso para la llamada `reverseString('go!')`:
 

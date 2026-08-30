@@ -49,14 +49,14 @@ console.log(3 + 4); // prints: 7
 
 JavaScript supports all the usual operations plus a few specific ones related to how numbers are stored and processed on a computer:
 
-| Operation        | Symbol | Example   | Result |
-|------------------|--------|-----------|--------|
-| Addition         | `+`    | `2 + 3`   | `5`    |
-| Subtraction      | `-`    | `7 - 2`   | `5`    |
-| Multiplication   | `*`    | `4 * 3`   | `12`   |
-| Division         | `/`    | `8 / 2`   | `4`    |
-| Exponentiation   | `**`   | `3 ** 2`  | `9`    |
-| Remainder        | `%`    | `7 % 3`   | `1`    |
+| Operation      | Symbol | Example  | Result |
+| -------------- | ------ | -------- | ------ |
+| Addition       | `+`    | `2 + 3`  | `5`    |
+| Subtraction    | `-`    | `7 - 2`  | `5`    |
+| Multiplication | `*`    | `4 * 3`  | `12`   |
+| Division       | `/`    | `8 / 2`  | `4`    |
+| Exponentiation | `**`   | `3 ** 2` | `9`    |
+| Remainder      | `%`    | `7 % 3`  | `1`    |
 
 Here is how you can print the result of division and exponentiation:
 
@@ -67,7 +67,7 @@ console.log(3 ** 2); // => 9
 
 ## What is the remainder of a division (`%`)
 
-This operation is called **taking the remainder of a division**. It shows **what is "left over"** when one number is divided by another *not evenly*. Example:
+This operation is called **taking the remainder of a division**. It shows **what is "left over"** when one number is divided by another _not evenly_. Example:
 
 ```javascript
 console.log(7 % 3); // => 1

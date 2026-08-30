@@ -10,5 +10,5 @@ formatPrice(10); // => '10.00'
 
 ## Hint
 
-* At the beginning of the file, import the function: `import { round } from 'hexlet-basics/math';`
-* The second argument of `round()` is the number of decimal places
+- At the beginning of the file, import the function: `import { round } from 'hexlet-basics/math';`
+- The second argument of `round()` is the number of decimal places

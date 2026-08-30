@@ -7,7 +7,7 @@ const name = "Robb";
 console.log(name.toUpperCase()); // => ROBB
 ```
 
-Unlike functions, methods are called *on an object*. First comes the object (a value, a variable, or a constant), then a dot, then the method call.
+Unlike functions, methods are called _on an object_. First comes the object (a value, a variable, or a constant), then a dot, then the method call.
 
 ## Properties
 

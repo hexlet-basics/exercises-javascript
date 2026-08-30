@@ -3,9 +3,9 @@ Las operaciones lógicas son expresiones. Esto significa que se pueden combinar 
 
 Por ejemplo, si queremos verificar si un número es par, es decir, si es divisible por dos, se utiliza el siguiente enfoque en programación:
 
-* Se verifica el residuo de la división por 2:
-  * Si el residuo es 0, entonces el número es par.
-  * Si el residuo no es 0, entonces el número es impar.
+- Se verifica el residuo de la división por 2:
+    - Si el residuo es 0, entonces el número es par.
+    - Si el residuo no es 0, entonces el número es impar.
 
 El residuo de la división es un concepto simple, pero muy importante en aritmética, álgebra e incluso en teoría de números y criptografía. La idea es dividir un número en grupos iguales y si queda algo al final, ese es el residuo de la división.
 
@@ -44,7 +44,7 @@ En una sola expresión hemos combinado el operador lógico `===` (verificación 
 
 Las operaciones aritméticas tienen mayor prioridad que las operaciones lógicas. Esto significa que primero se calcula la expresión aritmética `number % 2` y luego el resultado se utiliza en la comparación lógica.
 
-En palabras, esto se puede interpretar como: *«calcular el residuo de la división del número `number` por 2 y comparar si el residuo es igual a cero; luego devolver el resultado de la comparación de igualdad»*.
+En palabras, esto se puede interpretar como: _«calcular el residuo de la división del número `number` por 2 y comparar si el residuo es igual a cero; luego devolver el resultado de la comparación de igualdad»_.
 
 Otro ejemplo: escribamos una función que tome una cadena de texto y verifique si la primera letra es mayúscula.
 

@@ -10,7 +10,7 @@ Los comentarios en JavaScript pueden ser de dos tipos:
 
 ## Comentarios de una línea
 
-Los *comentarios de una línea* comienzan con `//`. Después de estos dos caracteres puede seguir cualquier texto, y toda la línea no será analizada ni ejecutada.
+Los _comentarios de una línea_ comienzan con `//`. Después de estos dos caracteres puede seguir cualquier texto, y toda la línea no será analizada ni ejecutada.
 
 Un comentario puede ocupar toda una línea. Si una línea no es suficiente, se pueden crear varios comentarios:
 
@@ -27,7 +27,7 @@ console.log("I am the King"); // For Lannisters!
 
 ## Comentarios de varias líneas
 
-Los *comentarios de varias líneas* comienzan con `/*` y terminan con `*/`.
+Los _comentarios de varias líneas_ comienzan con `/*` y terminan con `*/`.
 
 ```javascript
 /*
@@ -49,7 +49,7 @@ Durante el trabajo, te encontrarás con un código así en nuestro editor:
 // END
 ```
 
-*BEGIN* y *END* aquí son comentarios comunes que no afectan en absoluto el funcionamiento del programa. Indican dónde escribir el código de la tarea.
+_BEGIN_ y _END_ aquí son comentarios comunes que no afectan en absoluto el funcionamiento del programa. Indican dónde escribir el código de la tarea.
 
 ```javascript
 // BEGIN
@@ -57,4 +57,4 @@ Durante el trabajo, te encontrarás con un código así en nuestro editor:
 // END
 ```
 
-Cuando veas *BEGIN* y *END*, escribe tu código entre ellos y deja el resto sin cambios.
+Cuando veas _BEGIN_ y _END_, escribe tu código entre ellos y deja el resto sin cambios.

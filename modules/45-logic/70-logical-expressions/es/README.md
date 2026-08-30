@@ -27,8 +27,8 @@ El operador **AND** funciona de tal manera que su ejecución (de izquierda a der
 
 En JavaScript hay dos reglas simples para las conversiones:
 
-* `0`, `''`, `undefined`, `NaN`, `null` se convierten en `false`. Estos valores se llaman [falsy](https://developer.mozilla.org/es/docs/Glossary/Falsy).
-* Todo lo demás se convierte en `true`.
+- `0`, `''`, `undefined`, `NaN`, `null` se convierten en `false`. Estos valores se llaman [falsy](https://developer.mozilla.org/es/docs/Glossary/Falsy).
+- Todo lo demás se convierte en `true`.
 
 Esto se utiliza activamente en el desarrollo, por ejemplo, para definir un valor predeterminado:
 
@@ -105,7 +105,7 @@ const answer = true;
 console.log(!!answer); // => true
 ```
 
-Pero aquí puede haber una conversión de tipo adicional. Por lo tanto, el resultado de una doble negación siempre será un valor de tipo *booleano*. A veces se utiliza este truco para cambiar el tipo de datos.
+Pero aquí puede haber una conversión de tipo adicional. Por lo tanto, el resultado de una doble negación siempre será un valor de tipo _booleano_. A veces se utiliza este truco para cambiar el tipo de datos.
 
 ## Error de selección
 

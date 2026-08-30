@@ -1,5 +1,5 @@
 
-Muchos lenguajes, además de la estructura condicional *if*, incluyen el **switch**. Es una versión especializada del *if*, diseñada para situaciones particulares. Por ejemplo, tiene sentido utilizarlo cuando hay una cadena de *if else* con comprobaciones de igualdad. Por ejemplo:
+Muchos lenguajes, además de la estructura condicional _if_, incluyen el **switch**. Es una versión especializada del _if_, diseñada para situaciones particulares. Por ejemplo, tiene sentido utilizarlo cuando hay una cadena de _if else_ con comprobaciones de igualdad. Por ejemplo:
 
 ```javascript
 if (status === "processing") {
@@ -33,9 +33,9 @@ switch (status) {
 
 El switch es una estructura bastante compleja en términos de la cantidad de elementos que la componen:
 
-* Una descripción externa que incluye la palabra clave `switch`. La variable cuyos valores seleccionará el switch para determinar el comportamiento. Y llaves para las opciones de selección.
-* Las construcciones `case` y `default`, dentro de las cuales se describe el comportamiento para diferentes valores de la variable considerada. Cada `case` corresponde a un `if` en el ejemplo anterior. `default` es una situación especial que corresponde a la rama `else` en las estructuras condicionales. No es obligatorio especificar `default` (pero el linter siempre lo [recomienda](https://eslint.org/docs/rules/default-case)).
-* `break` se utiliza para evitar la "caída". Si no se especifica, después de ejecutar el `case` correspondiente, la ejecución pasará al siguiente `case`, y así sucesivamente hasta el siguiente `break` más cercano o hasta el final del switch.
+- Una descripción externa que incluye la palabra clave `switch`. La variable cuyos valores seleccionará el switch para determinar el comportamiento. Y llaves para las opciones de selección.
+- Las construcciones `case` y `default`, dentro de las cuales se describe el comportamiento para diferentes valores de la variable considerada. Cada `case` corresponde a un `if` en el ejemplo anterior. `default` es una situación especial que corresponde a la rama `else` en las estructuras condicionales. No es obligatorio especificar `default` (pero el linter siempre lo [recomienda](https://eslint.org/docs/rules/default-case)).
+- `break` se utiliza para evitar la "caída". Si no se especifica, después de ejecutar el `case` correspondiente, la ejecución pasará al siguiente `case`, y así sucesivamente hasta el siguiente `break` más cercano o hasta el final del switch.
 
 Las llaves en el switch no definen un bloque de código como en otros lugares. Dentro de él, sólo se permite la sintaxis que se muestra arriba. Es decir, se pueden usar `case` o `default`. Pero dentro de cada `case` (y `default`) la situación es diferente. Aquí se puede ejecutar cualquier código arbitrario:
 
@@ -93,4 +93,4 @@ La segunda forma es más simple y corta. En lugar de crear una variable, el `cas
 };
 ```
 
-Aunque el switch se encuentra en el código, técnicamente siempre se puede prescindir de él. El beneficio clave de su uso es que expresa mejor la intención del programador cuando se necesitan comprobar valores específicos de una variable. Aunque el código físicamente se vuelve un poco más largo, es más fácil de leer en comparación con los bloques *else if*.
+Aunque el switch se encuentra en el código, técnicamente siempre se puede prescindir de él. El beneficio clave de su uso es que expresa mejor la intención del programador cuando se necesitan comprobar valores específicos de una variable. Aunque el código físicamente se vuelve un poco más largo, es más fácil de leer en comparación con los bloques _else if_.

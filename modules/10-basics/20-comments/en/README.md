@@ -10,7 +10,7 @@ There are two types of comments in JavaScript:
 
 ## Single-line comments
 
-*Single-line comments* start with `//`. After these two characters, any text can follow; the entire line will not be analyzed or executed.
+_Single-line comments_ start with `//`. After these two characters, any text can follow; the entire line will not be analyzed or executed.
 
 A comment can take up the whole line. If one line is not enough, several comments are created:
 
@@ -27,7 +27,7 @@ console.log("I am the King"); // For Lannisters!
 
 ## Multi-line comments
 
-*Multi-line comments* start with `/*` and end with `*/`.
+_Multi-line comments_ start with `/*` and end with `*/`.
 
 ```javascript
 /*
@@ -49,7 +49,7 @@ While working, you will encounter such code in our editor:
 // END
 ```
 
-*BEGIN* and *END* here are ordinary comments that do not affect the program in any way. They show where to write the code for the task.
+_BEGIN_ and _END_ here are ordinary comments that do not affect the program in any way. They show where to write the code for the task.
 
 ```javascript
 // BEGIN
@@ -57,4 +57,4 @@ While working, you will encounter such code in our editor:
 // END
 ```
 
-When you see *BEGIN* and *END*, write your code between them and leave the rest unchanged.
+When you see _BEGIN_ and _END_, write your code between them and leave the rest unchanged.

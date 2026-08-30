@@ -1,7 +1,7 @@
 
 Las expresiones lógicas pueden combinarse entre sí para crear verificaciones cada vez más complejas. Un buen ejemplo es la verificación de contraseñas. Como sabes, algunos sitios web requieren contraseñas de entre 8 y 20 caracteres de longitud durante el registro. Honestamente, esta es una restricción extraña, pero qué se le va a hacer. En matemáticas, escribiríamos `8 < x < 20` (donde `x` es la longitud de una contraseña específica), pero en JavaScript esto no funcionaría. Tendremos que hacer dos expresiones lógicas separadas y combinarlas con el operador especial "Y":
 
-```
+```text
 La contraseña es más larga de 8 caracteres **Y** más corta de 20 caracteres.
 ```
 
@@ -61,7 +61,7 @@ El área de las matemáticas que estudia los operadores lógicos se llama álgeb
 ## Y `&&`
 
 | A     | B     | A && B   |
-|-------| ------|----------|
+| ----- | ----- | -------- |
 | TRUE  | TRUE  | **TRUE** |
 | TRUE  | FALSE | FALSE    |
 | FALSE | TRUE  | FALSE    |
@@ -80,11 +80,11 @@ Algunos ejemplos:
 ## O `||`
 
 | A     | B     | A &vert;&vert; B |
-|-------|-------|----------|
-| TRUE  | TRUE  | **TRUE** |
-| TRUE  | FALSE | **TRUE** |
-| FALSE | TRUE  | **TRUE** |
-| FALSE | FALSE | FALSE    |
+| ----- | ----- | ---------------- |
+| TRUE  | TRUE  | **TRUE**         |
+| TRUE  | FALSE | **TRUE**         |
+| FALSE | TRUE  | **TRUE**         |
+| FALSE | FALSE | FALSE            |
 
 Algunos ejemplos:
 

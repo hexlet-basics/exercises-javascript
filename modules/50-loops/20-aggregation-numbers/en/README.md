@@ -17,9 +17,9 @@ sumNumbersFromRange(100, 100); // 100
 
 To implement this code, we will need a loop, since adding numbers is an iterative process (it repeats for each number), and the number of iterations depends on the size of the range. Before looking at the code, try to answer the questions below:
 
-* What value should the counter be initialized with?
-* How will it change?
-* When should the loop stop?
+- What value should the counter be initialized with?
+- How will it change?
+- When should the loop stop?
 
 First try to think about these questions, and then look at the code below:
 

@@ -1,5 +1,5 @@
 
-Escribamos una función `getTypeOfSentence()` que analiza un texto y devuelve una descripción de su tono: para las oraciones ordinarias – *General sentence*, para las interrogativas – *Question sentence*.
+Escribamos una función `getTypeOfSentence()` que analiza un texto y devuelve una descripción de su tono: para las oraciones ordinarias – _General sentence_, para las interrogativas – _Question sentence_.
 
 ```javascript
 getTypeOfSentence("Hodor"); // General sentence
@@ -65,7 +65,7 @@ if (number > 10) {
 
 Aquí primero se comprueba `number > 10`. La condición es falsa, por lo que el control pasa a `else`, donde se comprueba la condición anidada `number === 10`. Es verdadera — se imprime `Number is exactly 10`.
 
-Existen dos maneras de organizar la construcción *if-else*. Mediante la negación se puede cambiar el orden de los bloques:
+Existen dos maneras de organizar la construcción _if-else_. Mediante la negación se puede cambiar el orden de los bloques:
 
 ```javascript
 const getTypeOfSentence = (sentence) => {

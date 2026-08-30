@@ -17,9 +17,9 @@ sumNumbersFromRange(100, 100); // 100
 
 Para implementar este código, necesitaremos un bucle, ya que la suma de números es un proceso iterativo (se repite para cada número) y el número de iteraciones depende del tamaño del rango. Antes de ver el código, intenta responder las siguientes preguntas:
 
-* ¿Con qué valor inicializar el contador?
-* ¿Cómo cambiará el contador?
-* ¿Cuándo debe detenerse el bucle?
+- ¿Con qué valor inicializar el contador?
+- ¿Cómo cambiará el contador?
+- ¿Cuándo debe detenerse el bucle?
 
 Primero, intenta pensar en estas preguntas y luego ve el código a continuación:
 
