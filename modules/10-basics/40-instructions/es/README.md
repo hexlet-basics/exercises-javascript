@@ -42,9 +42,10 @@ Mother of Dragons.
 
 Normalmente las instrucciones se escriben en líneas separadas, pero también pueden escribirse en una sola línea separadas por `;`:
 
-```javascript
-console.log("Mother of Dragons.");
-console.log("Dracarys!");
+<!-- NOTE: форма записи и есть предмет урока. text чтобы форматтер не разбил строку -->
+
+```text
+console.log("Mother of Dragons."); console.log("Dracarys!");
 ```
 
 Ambas versiones funcionan igual, pero la segunda es más difícil de leer. Por eso, las instrucciones casi siempre se escriben una por línea.

@@ -42,9 +42,10 @@ Mother of Dragons.
 
 Usually statements are written on separate lines, but they can also be written on a single line separated by `;`:
 
-```javascript
-console.log("Mother of Dragons.");
-console.log("Dracarys!");
+<!-- NOTE: форма записи и есть предмет урока. text чтобы форматтер не разбил строку -->
+
+```text
+console.log("Mother of Dragons."); console.log("Dracarys!");
 ```
 
 Both versions work the same way, but the second one is harder to read. That is why statements are almost always written one per line.
