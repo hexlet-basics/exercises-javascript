@@ -8,6 +8,11 @@ isPalindrome("level"); // => true
 isPalindrome("hello"); // => false
 isNotPalindrome("level"); // => false
 isNotPalindrome("hello"); // => true
+
+// Строки в функции могут быть переданы в любом регистре
+// Поэтому сначала приведите строку к нижнему регистру методом .toLowerCase()
+isPalindrome("Wow"); // => true
+isNotPalindrome("Wow"); // => false
 ```
 
 Используйте метод `.split('')`, `.reverse()`, `.join('')` для разворота строки.
