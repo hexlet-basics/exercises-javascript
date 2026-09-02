@@ -1,11 +1,15 @@
 // @ts-check
 
 import { expect, test } from "vitest";
-import f from "./index.js";
+import isNotPalindrome, { isPalindrome } from "./index.js";
 
 test("logical negation", () => {
-  expect(f("wow")).toBe(false);
-  expect(f("hexlet")).toBe(true);
-  expect(f("asdffdsa")).toBe(false);
-  expect(f("Wow")).toBe(false);
+  expect(isPalindrome("wow")).toBe(true);
+  expect(isPalindrome("hexlet")).toBe(false);
+  expect(isPalindrome("Wow")).toBe(true);
+
+  expect(isNotPalindrome("wow")).toBe(false);
+  expect(isNotPalindrome("hexlet")).toBe(true);
+  expect(isNotPalindrome("asdffdsa")).toBe(false);
+  expect(isNotPalindrome("Wow")).toBe(false);
 });

@@ -12,3 +12,4 @@ const isNotPalindrome = (word) => !isPalindrome(word);
 // END
 
 export default isNotPalindrome;
+export { isPalindrome };
