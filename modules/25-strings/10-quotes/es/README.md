@@ -49,12 +49,14 @@ Para evitar confusiones, en este curso usaremos las siguientes formulaciones.
 
 En JavaScript, las cadenas de texto se pueden escribir tanto entre comillas simples como entre comillas dobles.
 
-```javascript
-console.log("Hello");
+<!-- lint-code-blocks: skip — две формы записи кавычек это предмет урока, форматтер свёл бы их к одной -->
+
+```text
+console.log('Hello');
 console.log("Hello");
 ```
 
-Por defecto, se acostumbra usar comillas simples `'` si no se requieren comillas dobles dentro de la cadena. Este estilo lo sigue el popular estándar de formato de código de [AirBnb](https://github.com/airbnb/javascript).
+No hay una regla única en la comunidad de JavaScript: unas guías eligen las comillas simples y otras las dobles. Lo importante es mantener un solo estilo. En este curso usamos las dobles, y las simples cuando dentro de la cadena hay comillas dobles: ese es el estilo del formateador con el que se revisa el código de los ejercicios.
 
 ## El problema con las comillas dentro de una cadena
 
@@ -87,8 +89,10 @@ Dragon's mother said "No"
 
 En este caso, para que JavaScript no confunda las comillas dentro de la cadena con las exteriores, se utiliza el carácter de escape: la barra invertida `\`. Le indica al intérprete que el carácter que la sigue es parte de la cadena y no un carácter de control.
 
-```javascript
-console.log('Dragon\'s mother said "No"');
+<!-- lint-code-blocks: skip — экранирование двойной кавычки это предмет урока, форматтер переписал бы его в экранирование апострофа -->
+
+```text
+console.log("Dragon's mother said \"No\"");
 // => Dragon's mother said "No"
 ```
 

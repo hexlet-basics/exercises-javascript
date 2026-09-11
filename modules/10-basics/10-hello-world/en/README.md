@@ -18,14 +18,17 @@ console.log("Hexlet - programming school");
 
 The command stays the same, only the contents of the parentheses change. So that the program understands that this is exactly text, it is enclosed in quotes. You can use single `'...'` or double `"..."` quotes, but the opening and closing quotes must match.
 
-```javascript
-console.log("Hexlet - programming school");
+<!-- lint-code-blocks: skip — две формы записи кавычек это предмет урока, форматтер свёл бы их к одной -->
+
+```text
+console.log('Hexlet - programming school');
 ```
 
-According to the style accepted in the JavaScript community, single quotes are recommended for strings. If there is an apostrophe inside the string, single quotes will break the syntax, so in such cases double quotes are used.
+In this course we use double quotes: that is the style of the formatter that checks the code in the exercises. Single quotes are used when the string contains double quotes: a quote that matches the outer one ends the string too early.
 
 ```javascript
-console.log("it's JavaScript"); // apostrophe inside, so double quotes
+console.log("it's JavaScript"); // an apostrophe inside double quotes is an ordinary character
+console.log('He said "No"'); // double quotes inside, so single quotes outside
 ```
 
 ## The meaning of symbols
