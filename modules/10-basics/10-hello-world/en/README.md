@@ -31,6 +31,16 @@ console.log("it's JavaScript"); // an apostrophe inside double quotes is an ordi
 console.log('He said "No"'); // double quotes inside, so single quotes outside
 ```
 
+The outer quotes can also stay as they are: the inner one is marked with a backslash `\`, and then it no longer ends the string. This is called escaping.
+
+<!-- lint-code-blocks: skip — экранирование это предмет примера, форматтер переписал бы его на кавычки без слэша -->
+
+```text
+console.log('it\'s JavaScript'); // the apostrophe is escaped, the string continues
+```
+
+The formatter rewrites this form with quotes and no backslash, so you rarely see it in finished code. It is needed when a string contains both kinds of quotes at once.
+
 ## The meaning of symbols
 
 Code consists of commands, and each of them must be written in a specific form. Besides letters, quotes `'` and `"`, parentheses `()`, and punctuation marks are important in code. A missing or mixed-up sign will cause the program not to run. Try to determine what error was made in each of the lines?
