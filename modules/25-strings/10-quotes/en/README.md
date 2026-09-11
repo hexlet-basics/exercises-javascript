@@ -49,12 +49,14 @@ To avoid confusion, in this course we will use the following wording.
 
 In JavaScript, strings can be written in both single and double quotes.
 
-```javascript
-console.log("Hello");
+<!-- lint-code-blocks: skip — две формы записи кавычек это предмет урока, форматтер свёл бы их к одной -->
+
+```text
+console.log('Hello');
 console.log("Hello");
 ```
 
-By default, it is customary to use single quotes `'` if double quotes are not required inside the string. This style is followed by the popular code style standard from [AirBnb](https://github.com/airbnb/javascript).
+There is no single rule in the JavaScript community: some guides pick single quotes and others pick double ones. What matters is sticking to one style. In this course we use double quotes, and single ones when the string contains double quotes: that is the style of the formatter that checks the code in the exercises.
 
 ## The problem with quotes inside a string
 
@@ -87,8 +89,10 @@ Dragon's mother said "No"
 
 In this case, to keep JavaScript from confusing the quotes inside the string with the outer ones, an escape character is used — the backslash `\`. It tells the interpreter that the character following it is part of the string, not a control character.
 
-```javascript
-console.log('Dragon\'s mother said "No"');
+<!-- lint-code-blocks: skip — экранирование двойной кавычки это предмет урока, форматтер переписал бы его в экранирование апострофа -->
+
+```text
+console.log("Dragon's mother said \"No\"");
 // => Dragon's mother said "No"
 ```
 

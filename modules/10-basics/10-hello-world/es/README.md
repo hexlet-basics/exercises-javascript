@@ -20,14 +20,16 @@ console.log("Hexlet - escuela de programación");
 
 El comando sigue siendo el mismo, solo cambia el contenido entre paréntesis. Para que el programa entienda que se trata precisamente de texto, este se encierra entre comillas. Puedes usar comillas simples `'...'` o dobles `"..."`, pero las comillas de apertura y de cierre deben coincidir.
 
-```javascript
-console.log("Hexlet - escuela de programación");
+<!-- lint-code-blocks: skip — две формы записи кавычек это предмет урока, форматтер свёл бы их к одной -->
+
+```text
+console.log('Hexlet - escuela de programación');
 ```
 
-Según el estilo aceptado en la comunidad de JavaScript, se recomienda usar comillas simples para las cadenas. Si dentro de la cadena hay un apóstrofo, las comillas simples romperán la sintaxis, por lo que en esos casos se usan comillas dobles.
+En este curso usamos comillas dobles: ese es el estilo del formateador con el que se revisa el código de los ejercicios. Las simples las usamos cuando dentro de la cadena hay comillas dobles. Un apóstrofo dentro de comillas dobles no causa ningún problema:
 
 ```javascript
-console.log("it's JavaScript"); // apóstrofo dentro, por eso comillas dobles
+console.log("it's JavaScript"); // un apóstrofo dentro de comillas dobles es un carácter normal
 ```
 
 ## El significado de los símbolos
