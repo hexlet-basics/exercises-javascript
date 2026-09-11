@@ -33,16 +33,6 @@ console.log("it's JavaScript"); // un apóstrofo dentro de comillas dobles es un
 console.log('Él dijo "No"'); // comillas dobles dentro, por eso las exteriores son simples
 ```
 
-Las comillas exteriores también se pueden dejar como están: la de dentro se marca con una barra invertida `\` y entonces ya no termina la cadena. Esto se llama escapado.
-
-<!-- lint-code-blocks: skip — экранирование это предмет примера, форматтер переписал бы его на кавычки без слэша -->
-
-```text
-console.log('it\'s JavaScript'); // el apóstrofo está escapado, la cadena continúa
-```
-
-El formateador reescribe esa forma con comillas sin barra, así que en el código terminado se ve pocas veces. Sirve cuando la cadena contiene los dos tipos de comillas a la vez.
-
 ## El significado de los símbolos
 
 El código está formado por comandos, y cada uno de ellos debe escribirse de una forma determinada. Además de las letras, en el código son importantes las comillas `'` y `"`, los paréntesis `()` y los signos de puntuación. Un signo omitido o confundido hará que el programa no se ejecute. ¿Puedes intentar determinar qué error se cometió en cada una de las líneas?
