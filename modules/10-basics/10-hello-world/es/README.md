@@ -26,10 +26,11 @@ El comando sigue siendo el mismo, solo cambia el contenido entre paréntesis. Pa
 console.log('Hexlet - escuela de programación');
 ```
 
-En este curso usamos comillas dobles: ese es el estilo del formateador con el que se revisa el código de los ejercicios. Las simples las usamos cuando dentro de la cadena hay comillas dobles. Un apóstrofo dentro de comillas dobles no causa ningún problema:
+En este curso usamos comillas dobles: ese es el estilo del formateador con el que se revisa el código de los ejercicios. Las simples las usamos cuando dentro de la cadena hay comillas dobles: una comilla igual a la exterior termina la cadena antes de tiempo.
 
 ```javascript
 console.log("it's JavaScript"); // un apóstrofo dentro de comillas dobles es un carácter normal
+console.log('Él dijo "No"'); // comillas dobles dentro, por eso las exteriores son simples
 ```
 
 ## El significado de los símbolos
