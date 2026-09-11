@@ -42,8 +42,10 @@ Código                  Linter          Resultado
 
 La colocación de espacios e indentación es una tarea aparte, y el linter no la resuelve. Para eso está el formateador, que en oxc es [oxfmt](https://oxc.rs/docs/guide/usage/formatter.html). Este código:
 
-```javascript
-const result = 1 + 3;
+<!-- lint-code-blocks: skip — неаккуратный код это предмет урока, форматтер привёл бы его к стилю -->
+
+```text
+const result = 1+ 3;
 ```
 
 El formateador lo convierte en este otro:
