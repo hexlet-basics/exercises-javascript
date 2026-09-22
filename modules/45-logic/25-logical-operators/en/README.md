@@ -58,7 +58,7 @@ isGoodApartment(80, "Main Street"); // true
 
 The branch of mathematics that studies logical operators is called Boolean algebra. Below are the "truth tables" — you can use them to determine the result of applying an operator:
 
-## AND `&&`
+## AND &&
 
 | A     | B     | A && B   |
 | ----- | ----- | -------- |
@@ -77,7 +77,7 @@ A couple of examples:
 "start" === "start" && 8 < 3; // false
 ```
 
-## OR `||`
+## OR ||
 
 | A     | B     | A &vert;&vert; B |
 | ----- | ----- | ---------------- |

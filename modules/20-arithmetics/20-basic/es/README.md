@@ -65,7 +65,7 @@ console.log(8 / 2); // => 4
 console.log(3 ** 2); // => 9
 ```
 
-## Qué es el resto de la división (`%`)
+## Qué es el resto de la división (%)
 
 Esta operación se llama **obtención del resto de la división**. Muestra **lo que "queda"** cuando un número se divide por otro _de forma no exacta_. Ejemplo:
 

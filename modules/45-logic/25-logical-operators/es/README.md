@@ -58,7 +58,7 @@ isGoodApartment(80, "Main Street"); // true
 
 El área de las matemáticas que estudia los operadores lógicos se llama álgebra booleana. A continuación se muestran las "tablas de verdad" que permiten determinar el resultado de la aplicación de un operador:
 
-## Y `&&`
+## Y &&
 
 | A     | B     | A && B   |
 | ----- | ----- | -------- |
@@ -77,7 +77,7 @@ Algunos ejemplos:
 "start" === "start" && 8 < 3; // false
 ```
 
-## O `||`
+## O ||
 
 | A     | B     | A &vert;&vert; B |
 | ----- | ----- | ---------------- |

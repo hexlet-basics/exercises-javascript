@@ -25,7 +25,7 @@ The result will be as follows.
 - Aaaarrrgh!
 ```
 
-## What is `\n`?
+## What is \n?
 
 `\n` is an escape sequence (sometimes also called an "escaped sequence"). It denotes a line break but is not displayed directly. You won't see `\n` in the program's output, as it only affects the placement of the text.
 
@@ -39,7 +39,7 @@ In text editors, pressing Enter adds an invisible LF (Line Feed) character. That
 
 Printers, editors, and JavaScript interpreters understand `\n` as a command to start the text on a new line.
 
-## Examples of using `\n`
+## Examples of using \n
 
 Here is how JavaScript handles the escape sequence `\n`.
 
@@ -89,7 +89,7 @@ First line
 Second line
 ```
 
-## How to print the `\n` character itself
+## How to print the \n character itself
 
 `\n` in JavaScript is an escape sequence. It controls the placement of the text and is not displayed on screen like ordinary characters. If you need to print exactly the characters `\` and `n`, rather than a line break, you need to escape them. To do this, you add another slash before the backslash.
 

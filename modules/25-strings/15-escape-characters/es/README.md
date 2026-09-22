@@ -25,7 +25,7 @@ El resultado será el siguiente.
 - Aaaarrrgh!
 ```
 
-## ¿Qué es `\n`?
+## ¿Qué es \n?
 
 `\n` es una secuencia de escape (en inglés, escape sequence; a veces se le llama "secuencia escapada"). Denota un salto de línea, pero no se muestra directamente. No verás `\n` en la salida del programa, ya que solo afecta a la disposición del texto.
 
@@ -39,7 +39,7 @@ En los editores de texto, al presionar Enter se agrega un carácter invisible LF
 
 Las impresoras, los editores y los intérpretes de JavaScript entienden `\n` como una orden de empezar el texto en una nueva línea.
 
-## Ejemplos de uso de `\n`
+## Ejemplos de uso de \n
 
 Así es como JavaScript procesa la secuencia de escape `\n`.
 
@@ -89,7 +89,7 @@ First line
 Second line
 ```
 
-## Cómo mostrar el propio carácter `\n`
+## Cómo mostrar el propio carácter \n
 
 `\n` en JavaScript es una secuencia de escape. Controla la disposición del texto y no se muestra en pantalla como los caracteres ordinarios. Si necesitas mostrar precisamente los caracteres `\` y `n`, en lugar de un salto de línea, hay que escaparlos. Para ello, se agrega otra barra antes de la barra invertida.
 

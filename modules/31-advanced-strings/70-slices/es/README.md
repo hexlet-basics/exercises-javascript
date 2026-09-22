@@ -88,7 +88,7 @@ console.log(value.slice(start, end)); // => exle
 
 Esto resulta especialmente útil cuando los límites se calculan durante la ejecución del programa.
 
-## Lo que `slice()` no tiene
+## Lo que slice() no tiene
 
 En algunos lenguajes (por ejemplo, en Python) el corte tiene un tercer parámetro, el paso, y con él se puede tomar cada segundo carácter o invertir la cadena. El método `slice()` no tiene paso. Ese tipo de tareas en JavaScript se resuelven con bucles y otras herramientas a las que volveremos más adelante.
 

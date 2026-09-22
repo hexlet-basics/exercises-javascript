@@ -65,7 +65,7 @@ console.log(8 / 2); // => 4
 console.log(3 ** 2); // => 9
 ```
 
-## What is the remainder of a division (`%`)
+## What is the remainder of a division (%)
 
 This operation is called **taking the remainder of a division**. It shows **what is "left over"** when one number is divided by another _not evenly_. Example:
 
