@@ -51,7 +51,18 @@ false || ""; // ''
 undefined || ""; // ''
 ```
 
-We covered the comparison operators `===` and `!==` in one of our lessons, and we mentioned that JavaScript also has the operators `==` and `!=`, though you shouldn't use them. The very difference lies in the type conversion:
+For such cases JavaScript has a separate operator, `??`. It also substitutes the right operand for the left one, but it only triggers on `null` and `undefined`. Other falsy values pass through it as ordinary data:
+
+```javascript
+0 ?? 100; // 0
+"" ?? 100; // ''
+null ?? 100; // 100
+undefined ?? 100; // 100
+```
+
+So when a default value should replace only "nothing", use `??`, and when it should replace any falsy value, use `||`.
+
+Type conversion also explains why JavaScript has two kinds of comparison. Besides the strict operators `===` and `!==`, the language has the loose `==` and `!=`. The difference between them lies exactly in the type conversion:
 
 ```javascript
 console.log("" === false); // => false
@@ -92,12 +103,10 @@ value === ("first" || "second");
 
 That's how we picture it in our minds, yet languages work differently, so this kind of code will lead to the wrong result. How do you read it correctly? We have to remember operator priority. The first thing to evaluate is wrapped in parentheses, i.e. `'first' || 'second'`. If we execute this code, the output will be:
 
-```bash
-node
-'Welcome to Node.js v17.4.0.
+```console
+$ node
 > 'first' || 'second'
 'first'
->
 ```
 
 Now we can substitute the original expression with the partly evaluated one:

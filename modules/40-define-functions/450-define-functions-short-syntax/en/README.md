@@ -12,7 +12,7 @@ It uses a lot of extra characters and the word `return`. Since version ES6, an a
 ```javascript
 // It takes a little time to get used to it,
 // but after a while it'll save your life
-const double = (x) => x ** 2;
+const square = (x) => x ** 2;
 ```
 
 There are two differences from the full definition, it omits the curly brackets and the `return` statement. The shortened version carries out the return automatically. It means that there is exactly one computable expression inside such a function, and its result will be immediately returned.

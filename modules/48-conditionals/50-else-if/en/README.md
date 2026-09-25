@@ -55,19 +55,21 @@ getTypeOfSentence("No!"); // Sentence is exclamation
 Now all conditions are arranged into a single construct. `else if` means "if the previous condition was not met, but the current one is".
 
 ```text
-  ┌─────────────────┐
-  │ condition 1?    │
-  └────┬────────┬───┘
-  true │        │ false
-       ↓        ↓
-┌──────────┐  ┌─────────────────┐
-│ if body  │  │ condition 2?    │
-└──────────┘  └────┬────────┬───┘
-              true │        │ false
-                   ↓        ↓
-         ┌──────────────┐ ┌────────────┐
-         │ else if body │ │ else body  │
-         └──────────────┘ └────────────┘
+       ┌──────────────┐
+       │ condition 1? │
+       └──────┬───────┘
+      ┌───────┴───────┐
+ true │               │ false
+      ↓               ↓
+┌───────────┐ ┌──────────────┐
+│  if body  │ │ condition 2? │
+└───────────┘ └──────┬───────┘
+                ┌────┴──────────┐
+           true │               │ false
+                ↓               ↓
+        ┌──────────────┐ ┌───────────┐
+        │ else if body │ │ else body │
+        └──────────────┘ └───────────┘
 ```
 
 The function logic results in the following scheme:

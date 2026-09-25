@@ -15,10 +15,10 @@ Here is how combining several strings works:
 
 ```text
 'Hello' + ', ' + 'World!'
-└──┬──┘   └┬┘   └──┬───┘
-   └────┬───┘       │
-  'Hello, '    +  'World!'
-     └──────┬───────┘
+└──┬──┘   └┬─┘   └──┬───┘
+   └───┬───┘        │
+   'Hello, ' +   'World!'
+       └─────┬──────┘
       'Hello, World!'
 ```
 

@@ -33,14 +33,15 @@ const getTypeOfSentence = (sentence) => {
 We added the keyword `else` and a new block with curly braces. This block runs only if the condition in `if` is false.
 
 ```text
-      ┌───────────┐
-      │ condition?│
-      └─────┬─────┘
-  true │         │ false
-      ↓         ↓
-┌──────────┐ ┌──────────┐
-│ if body  │ │ else body│
-└──────────┘ └──────────┘
+       ┌────────────┐
+       │ condition? │
+       └──────┬─────┘
+      ┌───────┴──────┐
+ true │              │ false
+      ↓              ↓
+┌───────────┐ ┌───────────┐
+│  if body  │ │ else body │
+└───────────┘ └───────────┘
 ```
 
 ## Nested conditions

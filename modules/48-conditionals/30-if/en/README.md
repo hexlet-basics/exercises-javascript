@@ -12,10 +12,10 @@ Here the string `'Yes, it is true'` will be printed because the condition `5 > 3
 ┌────────────┐
 │ condition? │
 └─────┬──────┘
-  true │
+      │ true
       ↓
 ┌────────────┐
-│ if body    │
+│  if body   │
 └────────────┘
 ```
 

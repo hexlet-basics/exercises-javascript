@@ -56,7 +56,7 @@ console.log(roundedTemperature); // => '22.9'
 (22.93).toFixed(1); // '22.9'
 ```
 
-_FYI. Technically, it's a bit more complicated. It's not the numbers themselves that have methods, but the data (objects) of the Number type. Numbers written in variables or constants are automatically converted to this type when called, this process is called boxing._
+It may seem that the `toFixed()` method belongs to the number itself. In fact, for the duration of the call JavaScript wraps the number in a `Number` object, which has this method. Thanks to this wrapper, methods can be called directly on numbers. The same happens with strings, only the object is called `String`.
 
 Why do we need methods? Why not just use functions? The situation with numbers is even more complicated. Some operations are implemented as methods of numbers, such as `.toFixed()`, and most of them are implemented as methods accessible via `Math`.
 
