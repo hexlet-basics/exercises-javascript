@@ -68,13 +68,12 @@ theory: |
   La razón está en el orden de los cálculos: primero se realiza la potenciación (`**`), y sólo después se aplica el menos unario. Es decir: `-(3 ** 2) = -9`. Hablaremos sobre la prioridad de las operaciones con más detalle en las siguientes lecciones.
 
 instructions: |
+  Una carga se encuentra bajo el agua en la marca de −81 m respecto al nivel del agua. Una grúa la eleva hasta la cubierta de un barco, que está en la marca de +6 m. La carga se mueve verticalmente a una velocidad de 3 m/min.
 
-  Un submarino se encuentra a una profundidad de -81 m. La cubierta del barco de rescate está situada a una altura de +6 m sobre el nivel del agua.
+  Calcula y muestra en pantalla dos valores, cada uno en una línea aparte.
 
-  Calcula y muestra en pantalla:
-
-  1. La distancia total de ascenso en metros.
-  2. El tiempo de ascenso en minutos — el submarino asciende a una velocidad de 3 m/min.
+  1. La distancia que recorre la carga desde la marca inicial hasta la cubierta, en metros.
+  2. El tiempo de elevación en minutos.
 
 tips:
   - |

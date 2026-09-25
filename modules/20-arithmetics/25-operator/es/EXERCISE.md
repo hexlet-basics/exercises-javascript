@@ -1,6 +1,6 @@
-Un submarino se encuentra a una profundidad de -81 m. La cubierta del barco de rescate está situada a una altura de +6 m sobre el nivel del agua.
+Una carga se encuentra bajo el agua en la marca de −81 m respecto al nivel del agua. Una grúa la eleva hasta la cubierta de un barco, que está en la marca de +6 m. La carga se mueve verticalmente a una velocidad de 3 m/min.
 
-Calcula y muestra en pantalla:
+Calcula y muestra en pantalla dos valores, cada uno en una línea aparte.
 
-1. La distancia total de ascenso en metros.
-2. El tiempo de ascenso en minutos — el submarino asciende a una velocidad de 3 m/min.
+1. La distancia que recorre la carga desde la marca inicial hasta la cubierta, en metros.
+2. El tiempo de elevación en minutos.
