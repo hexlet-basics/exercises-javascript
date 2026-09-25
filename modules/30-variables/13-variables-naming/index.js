@@ -1,6 +1,6 @@
 /* eslint prefer-const: 0 */
 
 // BEGIN
-const myBrothersCount = 2;
-console.log(myBrothersCount);
+const maxLoginAttempts = 2;
+console.log(maxLoginAttempts);
 // END
