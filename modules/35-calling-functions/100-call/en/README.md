@@ -138,4 +138,4 @@ It's impossible to learn everything - and there's no need to. What matters is kn
 - **MDN** ([developer.mozilla.org](https://developer.mozilla.org/en-US/)) - documentation on the built-in features of the language and browser APIs.
 - **Node.js documentation** ([nodejs.org/api](https://nodejs.org/api/)) - the server side, functions for working with the file system, the network, and so on.
 
-Another way is to read other people's code: any package on npm is open, and in it you can often find techniques that aren't written about in textbooks.
+Another way to learn something new is to read other people's code. The source code of third-party libraries is open, and it often contains techniques that aren't written about in textbooks.

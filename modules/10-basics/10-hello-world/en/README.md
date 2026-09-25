@@ -37,10 +37,10 @@ Code consists of commands, and each of them must be written in a specific form. 
 
 ```javascript
 console.log("it's JavaScript"
-console.log(it's JavaScript")
-consol.log("it's JavaScript")
-console.log('it's JavaScript")
-consolelog("it's JavaScript")
+console.log(it's JavaScript");
+consol.log("it's JavaScript");
+console.log('it's JavaScript");
+consolelog("it's JavaScript");
 ```
 
 Even a small difference, for example one extra letter or a different sign, can cause the program not to work. This also applies to case, that is, to the difference between uppercase and lowercase letters. While in ordinary text `Hello` and `hello` look the same, for JavaScript these are different words. JavaScript considers `console.log`, `Console.Log`, and `CONSOLE.LOG` to be different commands, and only the first variant will work.

@@ -1,6 +1,6 @@
 As a program grows, it is not only the number of lines of code that increases, but also the number of modules. In small projects you can keep dozens of files side by side, but real applications can have hundreds and thousands of files. On top of that, useful code is something you want to reuse across different projects.
 
-In Python, packages-as-directories are used to group modules. In the JavaScript ecosystem, the unit of reuse and distribution is a **package** (an npm package). A package is a set of modules that is published and installed as a whole.
+To handle this, modules are grouped. In the JavaScript ecosystem, the unit of reuse and distribution is a **package** (an npm package). A package is a set of modules that is published and installed as a whole.
 
 ## What a package is
 
