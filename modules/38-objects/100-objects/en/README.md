@@ -51,9 +51,11 @@ const roundedTemperature = temperature.toFixed(1);
 // This method returns a string containing the rounded number
 console.log(roundedTemperature); // => '22.9'
 
-// They can be called directly like this
-// The brackets are necessary, or else it won't work
+// They can be called directly like this, a decimal doesn't need the brackets
 (22.93).toFixed(1); // '22.9'
+// An integer needs the brackets: without them JavaScript
+// reads the dot as the start of the fractional part
+(5).toFixed(1); // '5.0'
 ```
 
 It may seem that the `toFixed()` method belongs to the number itself. In fact, for the duration of the call JavaScript wraps the number in a `Number` object, which has this method. Thanks to this wrapper, methods can be called directly on numbers. The same happens with strings, only the object is called `String`.

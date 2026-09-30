@@ -84,9 +84,11 @@ const roundedTemperature = temperature.toFixed(1);
 // El método devuelve una cadena que contiene el número convertido
 console.log(roundedTemperature); // => 22.9
 
-// Directamente se puede llamar así
-// Los paréntesis son obligatorios, de lo contrario no funcionará
+// Directamente se puede llamar así, un decimal no necesita los paréntesis
 (22.93).toFixed(1); // 22.9
+// Un número entero necesita los paréntesis: sin ellos, JavaScript
+// lee el punto como el inicio de la parte decimal
+(5).toFixed(1); // 5.0
 ```
 
 Puede parecer que el método `toFixed()` pertenece al número mismo. En realidad, durante la llamada JavaScript envuelve el número en un objeto `Number`, que sí tiene ese método. Gracias a esa envoltura los métodos se llaman directamente sobre los números. Con las cadenas ocurre lo mismo, solo que el objeto se llama `String`.
