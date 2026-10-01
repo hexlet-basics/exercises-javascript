@@ -2,5 +2,6 @@
 
 ```javascript
 isPensioner(65); // => true
+isPensioner(60); // => true
 isPensioner(30); // => false
 ```
