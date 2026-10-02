@@ -14,3 +14,7 @@ Hello, Anna!
 Thank you for your order.
 Expected delivery date — 3 business days.
 ```
+
+## Подсказки
+
+- Второй вызов `console.log()` выводит две строки письма, и между ними нужен перевод строки `\n`. Его можно склеить с переменными так же, как любую другую строку.

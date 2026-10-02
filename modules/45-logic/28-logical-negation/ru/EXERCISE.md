@@ -3,6 +3,8 @@
 1. `isPalindrome(str)` — возвращает `true`, если строка является палиндромом (читается одинаково в обоих направлениях).
 2. `isNotPalindrome(str)` — возвращает `true`, если строка **не** является палиндромом.
 
+Регистр букв не учитывается, поэтому строка `"Wow"` тоже палиндром.
+
 ```javascript
 isPalindrome("level"); // => true
 isPalindrome("hello"); // => false
@@ -15,4 +17,4 @@ isPalindrome("Wow"); // => true
 isNotPalindrome("Wow"); // => false
 ```
 
-Используйте метод `.split('')`, `.reverse()`, `.join('')` для разворота строки.
+Строку разворачивает функция `reverse()`, которая уже есть в файле. Например, `reverse("hello")` возвращает `"olleh"`.

@@ -7,4 +7,7 @@
 const text = "I never look back";
 // Каждый третий элемент
 makeItFunny(text, 3); // 'I NevEr LooK bAck'
+
+// Каждый второй элемент, счёт идёт с первого символа
+makeItFunny("hello", 2); // 'hElLo'
 ```
