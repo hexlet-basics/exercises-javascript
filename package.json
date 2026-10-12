@@ -4,7 +4,7 @@
   "devDependencies": {
     "globals": "^17.8.0",
     "npm-check-updates": "^23.0.0",
-    "oxfmt": "0.62.0",
+    "oxfmt": "0.72.0",
     "oxlint": "1.78.0",
     "typescript": "^7.0.2",
     "vitest": "^4.1.10"
