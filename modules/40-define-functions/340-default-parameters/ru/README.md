@@ -3,9 +3,9 @@
 Если аргумент не передан, используется это значение. Если аргумент указан, он заменяет умолчание.
 
 ```javascript
-function greet(name = "World") {
+const greet = (name = "World") => {
   console.log(`Hello, ${name}!`);
-}
+};
 
 greet("Alice"); // => Hello, Alice!
 greet(); // => Hello, World!  (использовано значение по умолчанию)
@@ -16,16 +16,16 @@ greet(); // => Hello, World!  (использовано значение по у
 Сделаем функцию, которая повторяет строку несколько раз. По умолчанию пусть будет один раз, но при желании можно указать другое количество. Для повторения строки в JavaScript есть метод `repeat()`:
 
 ```javascript
-function repeat(text, times = 1) {
+const repeat = (text, times = 1) => {
   return text.repeat(times);
-}
+};
 
 console.log(repeat("Hi")); // => Hi
 console.log(repeat("Hi", 3)); // => HiHiHi
 ```
 
 ```text
-function repeat(text, times = 1)   ← times имеет значение по умолчанию
+const repeat = (text, times = 1) =>   ← times имеет значение по умолчанию
 
 repeat('go')      →  times = 1  (по умолчанию)
 repeat('go', 5)   →  times = 5  (явно указано)
@@ -38,9 +38,9 @@ repeat('go', 5)   →  times = 5  (явно указано)
 По умолчанию слова соединяются пробелом, но можно указать другой символ:
 
 ```javascript
-function joinWords(word1, word2, separator = " ") {
+const joinWords = (word1, word2, separator = " ") => {
   return word1 + separator + word2;
-}
+};
 
 console.log(joinWords("King", "Road")); // => King Road
 console.log(joinWords("Dragon", "stone", "-")); // => Dragon-stone
@@ -51,9 +51,9 @@ console.log(joinWords("Dragon", "stone", "-")); // => Dragon-stone
 Функция может содержать более одного параметра со значением по умолчанию. Сделаем функцию, которая строит строку-разделитель. По умолчанию символ — дефис, а длина равна 10:
 
 ```javascript
-function makeLine(symbol = "-", length = 10) {
+const makeLine = (symbol = "-", length = 10) => {
   return symbol.repeat(length);
-}
+};
 
 console.log(makeLine()); // => ----------
 console.log(makeLine("*")); // => **********
@@ -64,9 +64,9 @@ console.log(makeLine("#", 3)); // => ###
 ## Пример: скрытие номера карты
 
 ```javascript
-function getHiddenCard(cardNumber, starsCount = 4) {
+const getHiddenCard = (cardNumber, starsCount = 4) => {
   return "*".repeat(starsCount) + cardNumber.slice(-4);
-}
+};
 
 console.log(getHiddenCard("1234567890123456")); // => ****3456
 console.log(getHiddenCard("1234567890123456", 2)); // => **3456

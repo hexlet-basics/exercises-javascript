@@ -1,5 +1,5 @@
 // BEGIN
-function getTrafficLightAction(color) {
+const getTrafficLightAction = (color) => {
   if (color === "green") {
     return "go";
   } else if (color === "yellow") {
@@ -9,7 +9,7 @@ function getTrafficLightAction(color) {
   }
 
   return "unknown";
-}
+};
 // END
 
 export default getTrafficLightAction;

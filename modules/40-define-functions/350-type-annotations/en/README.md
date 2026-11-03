@@ -11,9 +11,9 @@ A JSDoc comment starts with `/**` and goes right before the function definition.
  * @param {number} b
  * @returns {number}
  */
-function add(a, b) {
+const add = (a, b) => {
   return a + b;
-}
+};
 
 console.log(add(2, 3)); // => 5
 ```

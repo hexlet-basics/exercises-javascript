@@ -17,9 +17,9 @@ Veámoslo con el ejemplo de una función que calcula la suma de dos valores reci
  * @param {number} b
  * @returns {number}
  */
-function add(a, b) {
+const add = (a, b) => {
   return a + b;
-}
+};
 
 console.log(add(2, 3)); // => 5
 ```
@@ -53,9 +53,9 @@ En esta etapa basta con conocer las anotaciones de los tipos de datos simples, l
  * @param {number} height
  * @returns {string}
  */
-function describe(name, age, height) {
+const describe = (name, age, height) => {
   return `${name}, ${age} años, altura ${height}`;
-}
+};
 
 console.log(describe("Anna", 25, 1.7));
 // => Anna, 25 años, altura 1.7
@@ -68,9 +68,9 @@ Si la función no devuelve nada, como tipo devuelto se indica `void`. Por ejempl
  * @param {string} name
  * @returns {void}
  */
-function printGreeting(name) {
+const printGreeting = (name) => {
   console.log(`Hello, ${name}!`);
-}
+};
 
 printGreeting("Anna");
 // => Hello, Anna!
@@ -86,9 +86,9 @@ Las anotaciones funcionan igual tanto para los parámetros obligatorios como par
  * @param {string} [greeting='Hello']
  * @returns {string}
  */
-function greet(name, greeting = "Hello") {
+const greet = (name, greeting = "Hello") => {
   return `${greeting}, ${name}`;
-}
+};
 
 console.log(greet("Anna")); // => Hello, Anna
 console.log(greet("Kirill", "Hi")); // => Hi, Kirill

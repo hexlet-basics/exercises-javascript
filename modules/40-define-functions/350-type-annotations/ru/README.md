@@ -17,9 +17,9 @@ JSDoc-комментарий начинается с `/**` и располага
  * @param {number} b
  * @returns {number}
  */
-function add(a, b) {
+const add = (a, b) => {
   return a + b;
-}
+};
 
 console.log(add(2, 3)); // => 5
 ```
@@ -53,9 +53,9 @@ add("2", 3); // Argument of type 'string' is not assignable to parameter of type
  * @param {number} height
  * @returns {string}
  */
-function describe(name, age, height) {
+const describe = (name, age, height) => {
   return `${name}, ${age} лет, рост ${height}`;
-}
+};
 
 console.log(describe("Anna", 25, 1.7));
 // => Anna, 25 лет, рост 1.7
@@ -68,9 +68,9 @@ console.log(describe("Anna", 25, 1.7));
  * @param {string} name
  * @returns {void}
  */
-function printGreeting(name) {
+const printGreeting = (name) => {
   console.log(`Hello, ${name}!`);
-}
+};
 
 printGreeting("Anna");
 // => Hello, Anna!
@@ -86,9 +86,9 @@ printGreeting("Anna");
  * @param {string} [greeting='Hello']
  * @returns {string}
  */
-function greet(name, greeting = "Hello") {
+const greet = (name, greeting = "Hello") => {
   return `${greeting}, ${name}`;
-}
+};
 
 console.log(greet("Anna")); // => Hello, Anna
 console.log(greet("Kirill", "Hi")); // => Hi, Kirill

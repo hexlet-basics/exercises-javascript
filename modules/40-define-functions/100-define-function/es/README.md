@@ -13,9 +13,9 @@ console.log("Hello, JavaScript!");
 Para no repetir la misma plantilla, se la puede envolver en una función propia que reciba un parámetro e imprima la cadena necesaria:
 
 ```javascript
-function sayHello(name) {
+const sayHello = (name) => {
   console.log(`Hello, ${name}!`);
-}
+};
 ```
 
 Ahora se la puede llamar con distintos argumentos:
@@ -31,27 +31,27 @@ Parece que el código no se ha reducido, pero apareció otra ventaja: si la func
 ## La sintaxis de la definición
 
 ```javascript
-function nombreDeLaFuncion(parámetros) {
+const nombreDeLaFuncion = (parámetros) => {
   cuerpo;
-}
+};
 ```
 
 ```text
-function greet(name) {           ← palabra clave, nombre y parámetro
-  return 'Hello, ' + name;       ← cuerpo de la función
-}
+const greet = (name) => {         ← nombre, parámetro y flecha
+  return 'Hello, ' + name;        ← cuerpo de la función
+};
 ```
 
-La definición empieza con la palabra clave `function`, después va el nombre de la función (con las mismas reglas que las variables), entre paréntesis la lista de parámetros separados por comas, y el cuerpo de la función se encierra entre llaves `{}`.
+La definición tiene dos partes. A la derecha del signo `=` está la propia función. Entre paréntesis va la lista de parámetros separados por comas, después la flecha `=>`, y el cuerpo de la función se encierra entre llaves `{}`. A la izquierda está el nombre, y la función se guarda en una constante con las mismas reglas que cualquier otro valor. Por eso al final de la definición va un punto y coma, igual que después de una asignación normal.
 
 ## Definir una función no significa llamarla
 
 Definir una función no ejecuta su código. El cuerpo se ejecutará solo al llamarla. Mira el ejemplo:
 
 ```javascript
-function sayHi() {
+const sayHi = () => {
   console.log("Hi!");
-}
+};
 
 console.log("El programa continúa…");
 ```
@@ -59,9 +59,9 @@ console.log("El programa continúa…");
 Aquí la función `sayHi()` está definida, pero su cuerpo no se ejecuta: en la pantalla aparecerá solo `El programa continúa…`. Para que `sayHi()` funcione, hay que llamarla de forma explícita:
 
 ```javascript
-function sayHi() {
+const sayHi = () => {
   console.log("Hi!");
-}
+};
 
 sayHi(); // => Hi!
 console.log("El programa continúa…");
@@ -72,11 +72,11 @@ console.log("El programa continúa…");
 Implementemos una función que **calcula e imprime la media aritmética** de dos números. La media aritmética es la suma de los números dividida por su cantidad. Por ejemplo, la media de 6 y 4: `(6 + 4) / 2 = 5`.
 
 ```javascript
-function printAverage(a, b) {
+const printAverage = (a, b) => {
   const total = a + b;
   const average = total / 2;
   console.log(average);
-}
+};
 
 printAverage(6, 4); // => 5
 ```
@@ -88,9 +88,9 @@ Aquí `a` y `b` son los parámetros de entrada, `total` contiene su suma, `avera
 El nombre de un parámetro puede ser cualquiera; lo importante es que refleje el sentido del valor que llegará dentro. Con el código de fuera no está relacionado de ninguna manera:
 
 ```javascript
-function getLastChar(str) {
+const getLastChar = (str) => {
   return str[str.length - 1];
-}
+};
 
 // Dentro de la función str será igual a 'Winter is coming'.
 // El nombre de la variable de fuera no está ligado al nombre del parámetro
@@ -110,29 +110,21 @@ console.log("google".replace("mo", "go")); // => google
 
 ## Otras formas de escribir funciones
 
-Una función no solo se puede declarar con `function`: también se puede escribir como un valor y asignarla a una constante:
+En la documentación y en el código de otras personas la función se define a menudo con la palabra clave `function`:
 
-```javascript
-const sayHello = function (name) {
+<!-- lint-code-blocks: skip — объявление function показано как другая форма записи, правило js-function-declaration переписало бы его в стрелочную -->
+
+```text
+function sayHello(name) {
   console.log(`Hello, ${name}!`);
-};
+}
 
 sayHello("Hexlet"); // => Hello, Hexlet!
 ```
 
-Esa forma se llama expresión de función. Fíjate en el punto y coma del final: aquí tenemos una asignación normal a una constante, no una declaración de función.
+Esa forma se llama declaración de función. También aparece la expresión de función `const sayHello = function (name) { … };`, que está construida como la función de flecha, solo que en lugar de la flecha lleva la palabra `function`.
 
-La expresión de función tiene una forma corta, la de flecha. En ella la palabra `function` se sustituye por la flecha `=>`, que se coloca después de la lista de parámetros:
-
-```javascript
-const sayHello = (name) => {
-  console.log(`Hello, ${name}!`);
-};
-
-sayHello("Hexlet"); // => Hello, Hexlet!
-```
-
-Para nuestras tareas las tres formas son equivalentes: la función se define y luego se llama por su nombre. La forma de flecha es la que más aparece en JavaScript, por eso más adelante en el curso los ejemplos están escritos así. Una lección aparte de este módulo mostrará cómo acortarla todavía más.
+Para nuestras tareas las tres formas son equivalentes, porque la función se define y luego se llama por su nombre. La forma de flecha es la que más aparece en JavaScript, por eso en el curso los ejemplos están escritos así. Una lección aparte de este módulo mostrará cómo acortarla todavía más.
 
 ## Reutilización y legibilidad
 
