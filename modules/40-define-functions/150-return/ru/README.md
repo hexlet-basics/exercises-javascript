@@ -7,9 +7,9 @@
 Вот функция, которая делает текст заглавным:
 
 ```javascript
-function shout(name) {
+const shout = (name) => {
   return name.toUpperCase();
-}
+};
 
 const result = shout("hexlet");
 console.log(result); // => HEXLET
@@ -26,14 +26,14 @@ console.log(result2); // => CODE-BASICS
 
 ```javascript
 // Эта функция выводит, но ничего не возвращает
-function printSum(a, b) {
+const printSum = (a, b) => {
   console.log(a + b);
-}
+};
 
 // Эта функция возвращает результат
-function getSum(a, b) {
+const getSum = (a, b) => {
   return a + b;
-}
+};
 
 // Возвращённый результат можно использовать дальше
 const sum = getSum(3, 4);
@@ -45,9 +45,9 @@ console.log(sum * 2); // => 14
 В `return` обычно указывают **выражение**, которое сначала вычисляется, а потом результат передаётся наружу:
 
 ```javascript
-function fullName(first, last) {
+const fullName = (first, last) => {
   return `${first} ${last}`;
-}
+};
 
 const name = fullName("Aria", "Stark");
 console.log(name); // => Aria Stark
@@ -60,11 +60,11 @@ console.log(name); // => Aria Stark
 Иногда в теле функции нужно сделать несколько шагов, прежде чем получить результат. Тогда пишут несколько строк, а в конце используют `return`. Например, функция форматирует имя: убирает пробелы по краям и переводит буквы в верхний регистр.
 
 ```javascript
-function formatName(name) {
+const formatName = (name) => {
   const clean = name.trim();
   const uppercased = clean.toUpperCase();
   return uppercased;
-}
+};
 
 console.log(formatName("  hexlet  ")); // => HEXLET
 ```
@@ -74,10 +74,10 @@ console.log(formatName("  hexlet  ")); // => HEXLET
 Когда выполнение доходит до `return`, функция немедленно завершается. Всё, что написано после него внутри функции, **не выполнится**:
 
 ```javascript
-function example() {
+const example = () => {
   return "готово";
   console.log("этот код никогда не выполнится");
-}
+};
 
 console.log(example()); // => готово
 ```

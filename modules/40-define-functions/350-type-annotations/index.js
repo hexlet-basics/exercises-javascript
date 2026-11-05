@@ -4,9 +4,9 @@
  * @param {number} repetitions
  * @returns {string}
  */
-function wordMultiply(text, repetitions) {
+const wordMultiply = (text, repetitions) => {
   return text.repeat(repetitions);
-}
+};
 // END
 
 export default wordMultiply;

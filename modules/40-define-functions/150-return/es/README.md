@@ -7,9 +7,9 @@ Para que una función entregue un resultado se usa la palabra clave especial `re
 Aquí tienes una función que pone el texto en mayúsculas:
 
 ```javascript
-function shout(name) {
+const shout = (name) => {
   return name.toUpperCase();
-}
+};
 
 const result = shout("hexlet");
 console.log(result); // => HEXLET
@@ -26,14 +26,14 @@ A diferencia de `console.log()`, `return` no imprime nada. Simplemente devuelve 
 
 ```javascript
 // Esta función imprime, pero no devuelve nada
-function printSum(a, b) {
+const printSum = (a, b) => {
   console.log(a + b);
-}
+};
 
 // Esta función devuelve el resultado
-function getSum(a, b) {
+const getSum = (a, b) => {
   return a + b;
-}
+};
 
 // El resultado devuelto se puede usar después
 const sum = getSum(3, 4);
@@ -45,9 +45,9 @@ console.log(sum * 2); // => 14
 En `return` normalmente se indica una **expresión**, que primero se evalúa y después se pasa el resultado hacia fuera:
 
 ```javascript
-function fullName(first, last) {
+const fullName = (first, last) => {
   return `${first} ${last}`;
-}
+};
 
 const name = fullName("Aria", "Stark");
 console.log(name); // => Aria Stark
@@ -60,11 +60,11 @@ Primero se evalúa la plantilla de cadena, y ya el valor listo se devuelve hacia
 A veces en el cuerpo de la función hay que dar varios pasos antes de obtener el resultado. Entonces se escriben varias líneas, y al final se usa `return`. Por ejemplo, una función que formatea un nombre: quita los espacios de los extremos y pasa las letras a mayúsculas.
 
 ```javascript
-function formatName(name) {
+const formatName = (name) => {
   const clean = name.trim();
   const uppercased = clean.toUpperCase();
   return uppercased;
-}
+};
 
 console.log(formatName("  hexlet  ")); // => HEXLET
 ```
@@ -74,10 +74,10 @@ console.log(formatName("  hexlet  ")); // => HEXLET
 Cuando la ejecución llega a `return`, la función termina de inmediato. Todo lo que esté escrito después, dentro de la función, **no se ejecutará**:
 
 ```javascript
-function example() {
+const example = () => {
   return "listo";
   console.log("este código nunca se ejecutará");
-}
+};
 
 console.log(example()); // => listo
 ```
