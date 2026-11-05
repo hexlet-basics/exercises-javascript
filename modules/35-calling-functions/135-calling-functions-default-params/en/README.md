@@ -48,13 +48,13 @@ The table matches the parts of the reference to the arguments of this call.
 | --- | --- | --- |
 | `toFixed` | Method name | We call `toFixed()` on the number `10.25` |
 | `digits` | Number of decimal places | We pass `1` |
-| The Optional label next to `digits` | The parameter is optional, `0` is used without it | We pass `1` instead of the default value |
+| The Optional label next to `digits` | The argument can be omitted | We pass `1`, though we could leave it out |
 
 The Optional label sits in the Parameters section next to the parameter name. It tells you the argument can be omitted. The text under the name explains what happens then. For `toFixed()`, a missing `digits` is treated as `0`, so the number is rounded to an integer.
 
 The Return value section describes the result. The `toFixed()` reference says the method returns a string representing the number in fixed-point notation. The signature shows a valid call, and the description of the result explains why the answer is in quotes.
 
-Let's check both cases in the interactive Node.js shell (REPL), which starts with the `node` command. The `>` sign is the shell prompt, and after each call the shell prints the result.
+Let's check both cases in the [browser console](https://developer.chrome.com/docs/devtools/console/). The `>` sign marks the input line, and the console prints the result under each call.
 
 ```console
 > (10.25).toFixed(1)
@@ -73,9 +73,8 @@ References mark optional parameters in different ways. These marks help you read
 | --- | --- |
 | Two lines, `toFixed()` and `toFixed(digits)` | The method is called without an argument or with the `digits` argument |
 | `toFixed([digits])` | Another way to mark an optional argument. The square brackets are not part of the call |
-| `toFixed(fractionDigits?: number): string` | This is how the editor's hint shows the signature. The `?` sign marks an optional parameter, and the types of the parameter and the result follow the colons |
 
-The `toFixed([digits])` notation appears in older references. The call `(10.25).toFixed(1)` passes the number `1` without brackets. Neither the name `digits` nor the square brackets go into the call.
+The `toFixed([digits])` notation appears in third-party references and articles. The call `(10.25).toFixed(1)` passes the number `1` without brackets. Neither the name `digits` nor the square brackets go into the call.
 
 If your browser translates the page, check function names, parameter names, and symbols in the signature against the original. Code uses the original names from the documentation.
 

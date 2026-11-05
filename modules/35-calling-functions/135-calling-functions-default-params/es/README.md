@@ -48,13 +48,13 @@ La tabla relaciona las partes de la referencia con los argumentos de esa llamada
 | --- | --- | --- |
 | `toFixed` | Nombre del método | Llamamos a `toFixed()` sobre el número `10.25` |
 | `digits` | Cantidad de decimales | Pasamos `1` |
-| Etiqueta Optional junto a `digits` | El parámetro es opcional, sin él se usa `0` | Pasamos `1` en lugar del valor por defecto |
+| Etiqueta Optional junto a `digits` | El argumento se puede omitir | Pasamos `1`, aunque podríamos no pasarlo |
 
 La etiqueta Optional aparece en la sección Parameters junto al nombre del parámetro. Indica que el argumento se puede omitir. Qué pasa al omitirlo lo explica el texto bajo el nombre. En `toFixed()`, si falta `digits`, se toma como `0`, es decir, el número se redondea a entero.
 
 La sección Return value describe el resultado. La expresión inglesa return value significa «valor devuelto». La referencia de `toFixed()` dice que el método devuelve una cadena con el número en notación de punto fijo. La firma muestra una llamada válida, y la descripción del resultado explica por qué la respuesta aparece entre comillas.
 
-Comprobemos los dos casos en la consola interactiva de Node.js (REPL), que se inicia con el comando `node`. El signo `>` es el indicador de la consola, y después de cada llamada la consola imprime el resultado.
+Comprobemos los dos casos en la [consola del navegador](https://developer.chrome.com/docs/devtools/console/). El signo `>` marca la línea de entrada, y debajo de cada llamada la consola imprime el resultado.
 
 ```console
 > (10.25).toFixed(1)
@@ -73,9 +73,8 @@ Las referencias marcan los parámetros opcionales de distintas formas. Estas mar
 | --- | --- |
 | Dos líneas, `toFixed()` y `toFixed(digits)` | El método se llama sin argumento o con el argumento `digits` |
 | `toFixed([digits])` | Otra forma de marcar un argumento opcional. Los corchetes no forman parte de la llamada |
-| `toFixed(fractionDigits?: number): string` | Así muestra la firma la ayuda del editor. El signo `?` marca un parámetro opcional, y tras los dos puntos aparecen los tipos del parámetro y del resultado |
 
-La notación `toFixed([digits])` aparece en referencias antiguas. La llamada `(10.25).toFixed(1)` pasa el número `1` sin corchetes. Ni el nombre `digits` ni los corchetes se copian en la llamada.
+La notación `toFixed([digits])` aparece en referencias y artículos de terceros. La llamada `(10.25).toFixed(1)` pasa el número `1` sin corchetes. Ni el nombre `digits` ni los corchetes se copian en la llamada.
 
 Si el navegador traduce la página, hay que comparar los nombres de funciones y parámetros y los símbolos de la firma con el original. En el código se usan los nombres originales de la documentación. Por ejemplo, traducir `digits` como «dígitos» ayuda a entender la descripción, pero en la llamada se sigue poniendo el valor `1`.
 
