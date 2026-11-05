@@ -33,26 +33,38 @@ The only parameter of `toFixed()`, `digits`, is optional. Another function may h
 
 Documentation describes what data a function accepts and what result it returns. The reference for JavaScript's built-in functions lives on [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference). A function's page is split into sections. The Syntax section shows the function's name, its parameters, and their order. The Parameters section explains what each parameter is for, and the Return value section describes the result. You need all three sections to write a call.
 
-Let's look at the [reference for `toFixed()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed). The Syntax section has two lines.
+Let's look at the [reference for `toFixed()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed). Below are its Syntax, Parameters, and Return value sections, with part of the text omitted.
 
 ```text
-toFixed()
-toFixed(digits)
+Syntax
+  toFixed()
+  toFixed(digits)
+
+Parameters
+  digits Optional
+    The number of digits to appear after the decimal point; should be
+    a value between 0 and 100, inclusive. If this argument is omitted,
+    it is treated as 0.
+
+Return value
+  A string representing the given number using fixed-point notation.
+  ...
 ```
 
-Each line describes a valid call. You can call the method with no arguments or with one argument, `digits`. The name `digits` stands for a parameter, and in a call you put a concrete value in its place, for example `(10.25).toFixed(1)`.
+Read the description from top to bottom, step by step.
 
-The table matches the parts of the reference to the arguments of this call.
+1. The Syntax section lists the valid calls, one per line. You can call the method with no arguments or with one argument, `digits`.
+2. The Parameters section explains each parameter by the name used in Syntax. The Optional label means the argument can be omitted. The last sentence of the description says that a missing `digits` is treated as `0`.
+3. The Return value section describes the result. The method returns a string, which is why the answer is in quotes.
+4. Further down, the page covers exceptions and other details. You can skip them on a first read.
+
+The name `digits` stands for a parameter, and in a call you put a concrete value in its place, for example `(10.25).toFixed(1)`. The table matches the parts of the reference to the arguments of this call.
 
 | Part of the reference | What it means | In the call `(10.25).toFixed(1)` |
 | --- | --- | --- |
 | `toFixed` | Method name | We call `toFixed()` on the number `10.25` |
 | `digits` | Number of decimal places | We pass `1` |
 | The Optional label next to `digits` | The argument can be omitted | We pass `1`, though we could leave it out |
-
-The Optional label sits in the Parameters section next to the parameter name. It tells you the argument can be omitted. The text under the name explains what happens then. For `toFixed()`, a missing `digits` is treated as `0`, so the number is rounded to an integer.
-
-The Return value section describes the result. The `toFixed()` reference says the method returns a string representing the number in fixed-point notation. The signature shows a valid call, and the description of the result explains why the answer is in quotes.
 
 Let's check both cases in the [browser console](https://developer.chrome.com/docs/devtools/console/). The `>` sign marks the input line, and the console prints the result under each call.
 

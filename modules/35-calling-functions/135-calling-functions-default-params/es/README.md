@@ -33,26 +33,38 @@ En `toFixed()` el único parámetro, `digits`, es opcional. Otra función puede 
 
 La documentación describe qué datos recibe una función y qué resultado devuelve. La referencia de las funciones integradas de JavaScript está en [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference). La página de una función se divide en secciones. La sección Syntax muestra el nombre de la función, sus parámetros y su orden; la sección Parameters explica para qué sirve cada parámetro, y la sección Return value describe el resultado. Para escribir una llamada hacen falta las tres secciones.
 
-Veamos la [referencia de `toFixed()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed). En la sección Syntax hay dos líneas.
+Veamos la [referencia de `toFixed()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed). Abajo están sus secciones Syntax, Parameters y Return value; una parte del texto se ha omitido.
 
 ```text
-toFixed()
-toFixed(digits)
+Syntax
+  toFixed()
+  toFixed(digits)
+
+Parameters
+  digits Optional
+    The number of digits to appear after the decimal point; should be
+    a value between 0 and 100, inclusive. If this argument is omitted,
+    it is treated as 0.
+
+Return value
+  A string representing the given number using fixed-point notation.
+  ...
 ```
 
-Cada línea describe una llamada válida. El método se puede llamar sin argumentos o con un argumento `digits`. El nombre `digits` designa un parámetro, y en la llamada se sustituye por un valor concreto, por ejemplo `(10.25).toFixed(1)`.
+La descripción se lee de arriba abajo, paso a paso.
 
-La tabla relaciona las partes de la referencia con los argumentos de esa llamada.
+1. La sección Syntax enumera las llamadas válidas, una por línea. El método se puede llamar sin argumentos o con un argumento `digits`.
+2. La sección Parameters explica cada parámetro por el nombre que aparece en Syntax. La etiqueta Optional indica que el argumento se puede omitir. La última frase de la descripción dice que, si falta `digits`, se toma como `0`.
+3. La sección Return value describe el resultado. La expresión inglesa return value significa «valor devuelto». El método devuelve una cadena (string), por eso la respuesta aparece entre comillas.
+4. Más abajo la página trata las excepciones y otros detalles. En una primera lectura se pueden saltar.
+
+El nombre `digits` designa un parámetro, y en la llamada se sustituye por un valor concreto, por ejemplo `(10.25).toFixed(1)`. La tabla relaciona las partes de la referencia con los argumentos de esa llamada.
 
 | Parte de la referencia | Qué significa | En la llamada `(10.25).toFixed(1)` |
 | --- | --- | --- |
 | `toFixed` | Nombre del método | Llamamos a `toFixed()` sobre el número `10.25` |
 | `digits` | Cantidad de decimales | Pasamos `1` |
 | Etiqueta Optional junto a `digits` | El argumento se puede omitir | Pasamos `1`, aunque podríamos no pasarlo |
-
-La etiqueta Optional aparece en la sección Parameters junto al nombre del parámetro. Indica que el argumento se puede omitir. Qué pasa al omitirlo lo explica el texto bajo el nombre. En `toFixed()`, si falta `digits`, se toma como `0`, es decir, el número se redondea a entero.
-
-La sección Return value describe el resultado. La expresión inglesa return value significa «valor devuelto». La referencia de `toFixed()` dice que el método devuelve una cadena con el número en notación de punto fijo. La firma muestra una llamada válida, y la descripción del resultado explica por qué la respuesta aparece entre comillas.
 
 Comprobemos los dos casos en la [consola del navegador](https://developer.chrome.com/docs/devtools/console/). El signo `>` marca la línea de entrada, y debajo de cada llamada la consola imprime el resultado.
 
